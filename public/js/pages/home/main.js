@@ -146,7 +146,7 @@
       });
     }
 
-    let currentLang = 'zh-TW';
+    let currentLang = TabiLang.get();
     let I18N = {};
 
     function toggleLangDropdown(e) {
@@ -249,6 +249,11 @@
     });
 
     function setLanguage(lang) {
+      lang = TabiLang.normalize(lang) || TabiLang.get();
+      if (lang !== TabiLang.get()) {
+        TabiLang.set(lang);
+        return;
+      }
       currentLang = lang;
 
       const t = I18N[lang] || I18N['zh-TW'];
@@ -279,9 +284,7 @@
         }
       });
 
-      try {
-        localStorage.setItem('tabi_selected_lang', lang);
-      } catch (e) { }
+      TabiLang.refresh();
 
       renderCards();
       renderCommunityFeeds();
@@ -3192,6 +3195,8 @@
       }
       return _tabiDataPromise;
     }
+
+    TabiLang.onChange(setLanguage);
 
     loadAllData().then(function () {
       renderDynamicRegionBar();

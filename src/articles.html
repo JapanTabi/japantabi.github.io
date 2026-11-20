@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
+  <script src="/js/lang_switcher.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>日本報報 ｜ Deep-Dive Articles</title>
@@ -50,7 +51,7 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
   <div class="nav-r">
     <a class="home" href="index.html" id="homeLink">返回首頁</a>
     <select class="lang-sw" id="langSwitch" aria-label="Language">
-      <option value="zh-tw">🌐 繁體中文 (zh-TW)</option>
+      <option value="zh-TW">🌐 繁體中文 (zh-TW)</option>
       <option value="en">🌐 English (en)</option>
       <option value="ja">🌐 日本語 (ja)</option>
     </select>
@@ -70,7 +71,7 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
 <script src="/data/articles/articles_zh-tw.js"></script>
 <script src="/data/articles/articles_en.js"></script>
 <script src="/data/articles/articles_ja.js"></script>
-<script src="/js/lang_switcher.js"></script>
+
 <script>
 (function(){
   var $=function(i){return document.getElementById(i)};
@@ -82,7 +83,7 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
              "en":{base:"https://www.trip.com/",extra:"&locale=en-US"},
              "ja":{base:"https://jp.trip.com/",extra:"&locale=ja-JP"} };
   function affUrl(lang){
-    var h=HOST[lang];
+    var h=HOST[lang.toLowerCase()] || HOST["zh-tw"];
     var target=h.base+"hotels/";
     return h.base+"?Allianceid=9507030&SID=325761227&trip_sub1="+encodeURIComponent("日本報報_深度文章_"+lang)+"&trip_sub3=D20905663"+h.extra+"&redirect_url="+encodeURIComponent(target);
   }
@@ -96,7 +97,7 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
   function render(){
     var lang=TabiLang.get();
     // 嚴格語系隔離：只取目前語言的文章
-    var list=window.articlesDatabase.filter(function(a){return a.lang===lang});
+    var list=window.articlesDatabase.filter(function(a){return TabiLang.normalize(a.lang)===lang});
     renderPills(list);
     var shown=list.filter(function(a){return cat==="all"||a.category===cat});
     $("title").textContent=TabiLang.t("articlesTitle");
@@ -122,6 +123,13 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
   $("langSwitch").addEventListener("change",function(){cat="all";TabiLang.set(this.value)});
   $("pills").addEventListener("click",function(e){
     var b=e.target.closest(".pill");if(!b)return;cat=b.dataset.cat;render();
+  });
+  $("langSwitch").replaceChildren();
+  TabiLang.SUPPORTED.forEach(function (language) {
+    var option = document.createElement('option');
+    option.value = language;
+    option.textContent = TabiLang.names[language];
+    $("langSwitch").appendChild(option);
   });
   TabiLang.onChange(render);
   TabiLang.init();

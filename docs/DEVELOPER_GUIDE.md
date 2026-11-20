@@ -38,3 +38,15 @@
 `ci.yml` 負責所有分支及 PR 的檢查；只有 `main` 會透過 Pages 流程發佈。`tests/serve-site.mjs` 在測試中模擬嚴格靜態託管，不會對不存在的資源回傳首頁；Playwright 分別測試 `/` 與 `/jp_report/`，用來抓出子目錄下的錯誤絕對路徑。
 
 Actions 自動提交雪況需要 repository contents 寫入權限，Pages 發佈使用 pages 與 OIDC 權限，皆已在 workflow 按工作設定。若分支保護拒絕機器人提交，需依儲存庫規則允許此資料更新；目前流程不會繞過分支保護。
+
+## 共用語系
+
+正式頁面在頁面腳本前載入 `public/js/lang_switcher.js`。以 `TabiLang.get()` 取得語言、`TabiLang.set(code)` 切換、`TabiLang.onChange(render)` 更新畫面；請勿另外存取或寫入語言偏好。`tabi_core.js` 統一處理頁首選單與文章語言按鈕，首頁仍用原資料與渲染函式。
+
+語言代碼統一為 `zh-TW`、`zh-CN`、`en`、`ja`、`ko`、`th`、`vi`、`hi`、`es`。`TabiLang.normalize()` 可處理大小寫、底線及區域代碼；既有文章 JSON 的小寫鍵不需搬移，讀取時轉換。繁體香港／澳門語系歸入 `zh-TW`，簡體中文歸入 `zh-CN`。
+
+語言來源依序為網址 `?lang=`、`localStorage.tabi_selected_lang`、舊版 `current_lang`、瀏覽器語言、繁體中文。初始化時自動遷移並移除 `current_lang`，網址與 `<html lang>` 同步更新。網址明確指定語言時也會更新偏好，跨頁沿用。
+
+語言選項不代表所有內容均有翻譯：首頁與文章介面缺少文案時使用繁體中文；文章列表僅列出相同語言的文章，缺少時顯示空清單。現有專欄保留原本的翻譯資料與回退規則。櫻花設計預覽頁仍為獨立原型，未接入正式語系流程。
+
+本次統一前台語系狀態，尚未加入後台機器翻譯或原文變更追蹤；後台編輯現有翻譯 JSON 後，仍按一般建置流程發佈。

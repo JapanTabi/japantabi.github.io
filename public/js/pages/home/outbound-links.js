@@ -49,22 +49,3 @@
       }
     });
 
-    // 🌐 首次載入自動偵測外國旅客語系 (泰文、日文、英文)
-    document.addEventListener('DOMContentLoaded', function () {
-      try {
-        const saved = localStorage.getItem('tabi_selected_lang');
-        if (saved) {
-          if (saved !== 'zh-TW' && typeof setLanguage === 'function') setLanguage(saved);
-        } else {
-          const navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-          if (navLang.startsWith('th') && typeof selectLanguage === 'function') {
-            selectLanguage('th', 'ไทย');
-          } else if (navLang.startsWith('ja') && typeof selectLanguage === 'function') {
-            selectLanguage('ja', '日本語');
-          } else if (navLang.startsWith('en') && typeof selectLanguage === 'function') {
-            selectLanguage('en', 'English');
-          }
-        }
-      } catch (e) { }
-    });
-  

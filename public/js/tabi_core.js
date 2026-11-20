@@ -36,7 +36,7 @@
   };
 
   function getTripHotelUrl(cityName) {
-    const l = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+    const l = TabiLang.get();
     let c = (cityName || 'tokyo').toLowerCase();
     let cityPath = 'tokyo-hotels-list-294';
     for (const k in TRIP_HOTEL_CITY_MAP) {
@@ -607,16 +607,7 @@
   function initAffiliateRouter() {
     // 取得當前用戶語系：先讀 localStorage，次讀 navigator.language
     function detectUserLocale() {
-      var saved = localStorage.getItem('tabi_selected_lang');
-      if (saved) return saved.toLowerCase();
-      var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
-      if (nav.startsWith('zh-tw') || nav.startsWith('zh-hk')) return 'zh-tw';
-      if (nav.startsWith('zh')) return 'zh-cn';
-      if (nav.startsWith('ja')) return 'ja';
-      if (nav.startsWith('th')) return 'th';
-      if (nav.startsWith('ko')) return 'ko';
-      if (nav.startsWith('en')) return 'en';
-      return 'zh-tw'; // default
+      return TabiLang.get().toLowerCase();
     }
 
     // 監聽全站所有點擊連結事件
@@ -809,29 +800,31 @@
     if (wrap) wrap.classList.toggle('open', show);
   };
 
-  if (typeof window.selectLanguage !== 'function') window.selectLanguage = function (langCode, langName) {
-    var lbl = document.getElementById('currentLangLabel');
-    if (lbl) lbl.textContent = langName;
-    closeMenu();
-
-    document.querySelectorAll('.lang-menu-opt').forEach(function (opt) {
-      opt.classList.toggle('active', opt.getAttribute('data-lang') === langCode);
-    });
-
-    try { localStorage.setItem('tabi_selected_lang', langCode); } catch (e) {}
-
-    // 深度文章多語系橋接 (special_edition 等頁面)
-    if (typeof window.setArticleLang === 'function') {
-      var key = String(langCode).toLowerCase();
-      var pill = document.querySelector('.btn-trans-choice[data-lang="' + key + '"]');
-      window.setArticleLang(key, pill);
+  // One entry point for headers and article language pills.
+  var articleRenderer = window.setArticleLang;
+  function renderLanguage(language) {
+    if (articleRenderer) {
+      var key = language.toLowerCase();
+      articleRenderer(key, document.querySelector('.btn-trans-choice[data-lang="' + key + '"]'));
     }
-
-    // 頁面專屬後續行為 (例如查機票重新渲染)
     if (typeof window.TabiOnLanguageChange === 'function') {
-      window.TabiOnLanguageChange(langCode, langName);
+      window.TabiOnLanguageChange(language, TabiLang.names[language]);
     }
+    TabiLang.refresh();
+  }
+  if (articleRenderer) window.setArticleLang = function (language) {
+    var normalized = TabiLang.normalize(language);
+    if (normalized === TabiLang.get()) renderLanguage(normalized);
+    else TabiLang.set(language);
   };
+  window.selectLanguage = function (language) {
+    TabiLang.set(language);
+    closeMenu();
+  };
+  TabiLang.onChange(renderLanguage);
+  document.addEventListener('DOMContentLoaded', function () {
+    renderLanguage(TabiLang.get());
+  });
 
   window.addEventListener('click', function (e) {
     var wrap = document.getElementById('langSelectorWrap');

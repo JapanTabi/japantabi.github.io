@@ -15,6 +15,12 @@ npm run dev
 
 開啟終端顯示的網址，預設為 `http://127.0.0.1:5173/`。需使用 HTTP 伺服器，請勿以 `file://` 開啟頁面。
 
+## 本機管理後台
+
+執行 `npm run admin`，開啟 **http://127.0.0.1:4175/**，即可管理 `public/data/` 的 29 份 JSON，支援搜尋、表單／JSON 編輯、新增、複製、刪除與備份還原。
+
+儲存會寫入本機資料檔；推送至 `main` 並部署成功後才會更新正式網站。管理後台獨立運作，不會發佈到 GitHub Pages。完整操作見 [管理後台指南](docs/ADMIN_GUIDE.md)。
+
 ## 專案結構
 
 ```text
@@ -28,6 +34,8 @@ public/                 原樣複製到網站根目錄的資源
   js/                   現有共用與相容腳本
     pages/home/         從首頁拆出的頁面邏輯
 scripts/                資料維護與檢查工具
+admin/                  本機資料管理介面與儲存服務
+tests/                  網站與後台測試
 config/                 聯盟設定範本
 backend_scrapers/       舊氣象查詢示範，未接入網站更新
 database/              預留 Supabase SQL，未接入目前頁面
@@ -43,6 +51,8 @@ dist/                  建置產物（不提交 Git）
 | 指令 | 用途 |
 | --- | --- |
 | `npm run dev` | 本地開發與自動更新 |
+| `npm run admin` | 本機內容管理後台 |
+| `npm run test:admin` | 後台儲存、備份、衝突與瀏覽器測試 |
 | `npm run check` | 檢查 JSON、腳本語法、本地連結與資料路徑 |
 | `npm run build` | 建置全部 HTML 頁面到 `dist/` |
 | `npm run check:dist` | 檢查建置後的資源與頁面 |

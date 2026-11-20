@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>內容管理｜日本旅遊報報</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/main.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/">日旅報報 <span>JAPAN TABI</span></a>
+    <p class="sidebar-caption">內容管理工作室</p>
+    <nav id="navigation" aria-label="資料分類"></nav>
+    <div class="sidebar-foot"><span class="status-dot"></span>本機資料管理<br><small>儲存後，推送 GitHub 即可發佈。</small></div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <div><span class="eyebrow">CONTENT STUDIO</span><h1 id="page-title">載入資料中…</h1></div>
+      <div class="top-actions"><span id="save-status" role="status">尚未修改</span><button id="save" class="primary" disabled>儲存變更</button></div>
+    </header>
+    <div id="notice" class="notice" role="alert" hidden></div>
+    <div class="file-select"><label for="file-select">選擇資料</label><select id="file-select"></select></div>
+    <section class="overview">
+      <div><span class="eyebrow" id="group-label">資料管理</span><h2>讓每一份旅遊情報，保持新鮮。</h2><p id="file-description">選擇一份資料開始編輯。</p></div>
+      <div class="overview-stat"><strong id="record-count">—</strong><span>筆資料</span></div>
+    </section>
+    <p id="file-note" class="file-note" hidden></p>
+    <section class="workspace">
+      <aside class="records">
+        <div class="records-head"><h2>資料列表</h2><button id="add" class="small">＋ 新增</button></div>
+        <input id="search" type="search" placeholder="搜尋名稱、ID、地區…" aria-label="搜尋資料">
+        <p id="search-count" class="muted"></p>
+        <div id="record-list" role="list" aria-label="資料列表"></div>
+      </aside>
+      <div class="editor">
+        <div class="editor-toolbar">
+          <div class="tabs" role="tablist"><button id="form-tab" role="tab" aria-selected="true">表單編輯</button><button id="json-tab" role="tab" aria-selected="false">整份 JSON</button></div>
+          <div class="record-actions"><button id="duplicate" class="small">複製</button><button id="delete" class="small danger">刪除</button></div>
+        </div>
+        <div id="form-panel" role="tabpanel"><h2 id="record-title"></h2><p id="record-key" class="muted"></p><div id="fields"></div></div>
+        <div id="json-panel" role="tabpanel" hidden><label for="json-editor">整份檔案內容</label><p class="muted">適合批次修改或新增欄位；儲存前會檢查 JSON 格式。此處修改的是整份檔案。</p><textarea id="json-editor" spellcheck="false"></textarea><p id="json-error" class="error" role="status"></p></div>
+        <footer class="editor-footer"><button id="reload">捨棄變更／重新載入</button><button id="export">匯出草稿 JSON</button><button id="history">備份與還原</button></footer>
+      </div>
+    </section>
+    <p class="footnote">變更會直接儲存到本機專案。正式網站會在你推送到 main 並部署成功後更新。</p>
+  </main>
+  <dialog id="add-dialog"><form method="dialog"><h2 id="add-title">新增資料</h2><label for="new-key" id="new-key-label">資料識別碼</label><input id="new-key" required autocomplete="off"><p class="muted">請使用不重複的名稱；新資料會沿用所選項目的欄位。</p><div class="dialog-actions"><button value="cancel" formnovalidate>取消</button><button id="confirm-add" value="add" class="primary">新增</button></div></form></dialog>
+  <dialog id="history-dialog"><h2>備份與還原</h2><p class="muted">每次儲存都會備份前一版本。還原前也會保留目前版本。</p><div id="history-list"></div><div class="dialog-actions"><button id="close-history">關閉</button></div></dialog>
+</body>
+</html>

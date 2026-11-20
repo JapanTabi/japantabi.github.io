@@ -2,6 +2,7 @@
 <html lang="zh-TW">
 
 <head>
+  <script src="/js/lang_switcher.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>沖繩海島自駕攻略 ｜ 親子・海景・和牛・5天4夜不繞路 ｜ 日旅報報 JAPAN TABI</title>
@@ -2598,7 +2599,7 @@
       const a = e.target.closest('a');
       if (!a || !a.href) return;
       const href = a.href;
-      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+      const savedLang = TabiLang.get();
 
       if (href.includes('trip.com')) {
         a.target = '_blank';

@@ -2,6 +2,7 @@
 <html lang="zh-TW">
 
 <head>
+  <script src="/js/lang_switcher.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/images/japan_tabi_logo.png">
@@ -2011,7 +2012,7 @@
     }
 
     function getRouteUrl(r, originKey) {
-      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+      const savedLang = TabiLang.get();
       const domMap = {
         'zh-TW': 'https://tw.trip.com',
         'en': 'https://www.trip.com',
@@ -3010,7 +3011,7 @@
     };
 
     function buildTripHotelRedirectUrl(cityKey) {
-      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+      const savedLang = TabiLang.get();
       const c = (cityKey || 'tokyo').toLowerCase();
       const cityPath = TRIP_HOTEL_CITY_MAP[c] || 'tokyo-hotels-list-294';
 
@@ -3108,14 +3109,6 @@
       const menu = document.getElementById('langDropdownMenu');
       if (menu) menu.classList.toggle('show');
     }
-    function selectLanguage(langCode, langName) {
-      const lbl = document.getElementById('currentLangLabel');
-      if (lbl) lbl.textContent = langName;
-      const menu = document.getElementById('langDropdownMenu');
-      if (menu) menu.classList.remove('show');
-      localStorage.setItem('tabi_selected_lang', langCode);
-      // renderRoutesGrid(currentOriginTab);
-    }
     window.addEventListener('click', function (e) {
       const wrap = document.getElementById('langSelectorWrap');
       const menu = document.getElementById('langDropdownMenu');
@@ -3161,7 +3154,7 @@
       const a = e.target.closest('a');
       if (!a || !a.href) return;
       const href = a.href;
-      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+      const savedLang = TabiLang.get();
 
       if (href.includes('trip.com')) {
         a.target = '_blank';

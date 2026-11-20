@@ -17,6 +17,8 @@
     "node": ">=22.12.0"
   },
   "scripts": {
+    "admin": "node admin/server.mjs",
+    "test:admin": "node --test tests/admin-store.test.mjs && playwright test --config playwright.admin.config.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",

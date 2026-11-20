@@ -28,6 +28,8 @@
 
 ## 編輯與預覽
 
+可以執行 `npm run admin`，以表單管理以下資料。詳見 [本機後台指南](ADMIN_GUIDE.md)。
+
 1. 編輯 `public/data/` 內對應 JSON，保持原有欄位名稱、`id` 與結構。`theme_park_tickets.json` 的鍵要對應 `theme_parks.json` 的 `id`；`resorts.json` 的鍵要對應 `ski_resorts_list.json` 的 `id`。
 2. 執行 `npm run dev` 預覽，無需複製資料。
 3. 執行 `npm run check` 檢查 JSON、JavaScript 語法與頁面本地資源路徑。

@@ -2,6 +2,7 @@
 <html lang="zh-TW">
 
 <head>
+  <script src="/js/lang_switcher.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/images/japan_tabi_logo.png">
@@ -1301,7 +1302,7 @@
         document.querySelectorAll('.btn-trans-choice').forEach(b => {
           b.classList.toggle('active', b.getAttribute('data-lang') === k);
         });
-        const d = FUJI_PAGE_TRANSLATIONS[k] || FUJI_PAGE_TRANSLATIONS['zh-tw'];
+        const d = FUJI_PAGE_TRANSLATIONS[k] || FUJI_PAGE_TRANSLATIONS['zh-tw'] || {};
         const setEl = (id, txt) => {
           const el = document.getElementById(id);
           if (el && txt) el.textContent = txt;
@@ -1319,15 +1320,6 @@
         const menu = document.getElementById('langDropdownMenu');
         if (menu) menu.classList.toggle('show');
       }
-      function selectLanguage(langCode, langName) {
-        const lbl = document.getElementById('currentLangLabel');
-        if (lbl) lbl.textContent = langName;
-        const menu = document.getElementById('langDropdownMenu');
-        if (menu) menu.classList.remove('show');
-        if (window.setArticleLang) {
-          window.setArticleLang(langCode.toLowerCase());
-        }
-      }
       window.addEventListener('click', function (e) {
         const wrap = document.getElementById('langSelectorWrap');
         const menu = document.getElementById('langDropdownMenu');
@@ -1341,6 +1333,7 @@
         try {
           const res = await fetch('data/fuji_page_translations.json', { cache: 'no-store' });
           FUJI_PAGE_TRANSLATIONS = await res.json();
+          window.setArticleLang(TabiLang.get());
         } catch (e) {
           console.error('富士頁翻譯資料載入失敗:', e);
         }
@@ -1354,7 +1347,7 @@
         const a = e.target.closest('a');
         if (!a || !a.href) return;
         const href = a.href;
-        const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+        const savedLang = TabiLang.get();
 
         if (href.includes('trip.com')) {
           a.target = '_blank';

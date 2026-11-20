@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="/js/lang_switcher.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/images/japan_tabi_logo.png">
@@ -5098,7 +5099,7 @@
 
   <script>
     let activeVol = 1;
-    let currentLang = 'zh-tw';
+    let currentLang = TabiLang.get().toLowerCase();
 
     
     // 🗻 文章 2 (富士五湖與本栖湖) 7 國多語言字典
@@ -5156,6 +5157,7 @@
         ]);
         ARTICLE_TRANSLATIONS = await aRes.json();
         FUJI_TRANSLATIONS = await fRes.json();
+        window.setArticleLang(TabiLang.get());
       } catch (e) {
         console.error('專欄翻譯資料載入失敗:', e);
       }
@@ -5187,7 +5189,7 @@
       const d = ARTICLE_TRANSLATIONS[k] || 
                 ARTICLE_TRANSLATIONS[langKey] || 
                 ARTICLE_TRANSLATIONS['zh-tw'] || 
-                ARTICLE_TRANSLATIONS['en'];
+                ARTICLE_TRANSLATIONS['en'] || {};
 
       const safeSet = (id, txt) => {
         const el = document.getElementById(id);
@@ -5303,7 +5305,7 @@
       const a = e.target.closest('a');
       if (!a || !a.href) return;
       const href = a.href;
-      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+      const savedLang = TabiLang.get();
       
       if (href.includes('trip.com')) {
         a.target = '_blank';

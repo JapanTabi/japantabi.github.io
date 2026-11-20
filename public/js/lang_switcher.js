@@ -1,6 +1,6 @@
-/* 三語系切換核心 (zh-tw / en / ja)
+/* 全站共用語系：使用標準語言代碼，兼容既有小寫資料鍵。
  * 用法：載入後，頁面可使用 TabiLang.get() / TabiLang.set(lang) / TabiLang.t(key) / TabiLang.onChange(fn)
- * 語言來源優先序：網址 ?lang= > localStorage.current_lang > 瀏覽器語言 > zh-tw
+ * 語言來源優先序：網址 ?lang= > localStorage.tabi_selected_lang（自動遷移 current_lang） > 瀏覽器語言 > zh-tw
  */
 (function () {
   var SUPPORTED = ["zh-tw", "en", "ja"];
@@ -30,40 +30,84 @@
     }
   };
 
-  function normalize(l) {
-    l = String(l || "").toLowerCase();
-    if (l === "zh" || l === "zh-tw" || l === "zh-hant" || l.indexOf("zh-") === 0) return "zh-tw";
-    if (l === "en" || l.indexOf("en-") === 0) return "en";
-    if (l === "ja" || l.indexOf("ja-") === 0) return "ja";
-    return null;
+  var NAMES = {
+    'zh-TW': '繁體中文', 'zh-CN': '简体中文', 'en': 'English',
+    'ja': '日本語', 'ko': '한국어', 'th': 'ไทย',
+    'vi': 'Tiếng Việt', 'hi': 'हिन्दी', 'es': 'Español'
+  };
+  SUPPORTED = Object.keys(NAMES);
+  var STORAGE_KEY = 'tabi_selected_lang';
+  function normalize(value) {
+    var l = String(value || '').replace(/_/g, '-').toLowerCase();
+    if (/^zh-(cn|sg|hans)(-|$)/.test(l)) return 'zh-CN';
+    if (l === 'zh' || /^zh-(tw|hk|mo|hant)(-|$)/.test(l)) return 'zh-TW';
+    var base = l.split('-')[0];
+    return SUPPORTED.indexOf(base) >= 0 ? base : null;
   }
   function detect() {
-    var q = normalize(new URLSearchParams(location.search).get("lang"));
+    var q = normalize(new URLSearchParams(location.search).get('lang'));
     if (q) return q;
-    try { var s = normalize(localStorage.getItem("current_lang")); if (s) return s; } catch (e) {}
-    var b = normalize(navigator.language);
-    return b || "zh-tw";
+    try {
+      var saved = normalize(localStorage.getItem(STORAGE_KEY)) || normalize(localStorage.getItem('current_lang'));
+      if (saved) return saved;
+    } catch (e) {}
+    return normalize(navigator.language) || 'zh-TW';
   }
-
   var current = detect();
-
-  function apply(lang, push) {
-    current = lang;
-    try { localStorage.setItem("current_lang", lang); } catch (e) {}
+  function syncState() {
+    try {
+      localStorage.setItem(STORAGE_KEY, current);
+      localStorage.removeItem('current_lang');
+    } catch (e) {}
     var u = new URL(location.href);
-    u.searchParams.set("lang", lang);
-    history.replaceState(null, "", u.toString());
-    document.documentElement.lang = lang === "zh-tw" ? "zh-Hant" : lang;
-    listeners.forEach(function (fn) { fn(lang); });
+    u.searchParams.set('lang', current);
+    history.replaceState(null, '', u.toString());
+    document.documentElement.lang = current;
+    var label = document.getElementById('currentLangLabel');
+    if (label) label.textContent = NAMES[current];
+    document.querySelectorAll('.lang-menu-opt, .btn-trans-choice').forEach(function (el) {
+      var active = normalize(el.dataset.lang) === current;
+      el.classList.toggle('active', active);
+      var check = el.querySelector('.lang-check');
+      if (check) check.textContent = active ? '✓' : '';
+    });
   }
-
+  function apply(lang) {
+    lang = normalize(lang);
+    if (!lang) return;
+    var changed = current !== lang;
+    current = lang;
+    syncState();
+    if (changed) listeners.forEach(function (fn) { fn(current); });
+  }
+  function dictionary() { return DICT[current.toLowerCase()] || DICT['zh-tw']; }
   window.TabiLang = {
     SUPPORTED: SUPPORTED,
+    names: NAMES,
+    normalize: normalize,
     get: function () { return current; },
-    set: function (l) { l = normalize(l); if (l) apply(l); },
-    t: function (key) { return (DICT[current] && DICT[current][key]) || key; },
-    cat: function (c) { return (DICT[current].cat && DICT[current].cat[c]) || c; },
+    set: apply,
+    t: function (key) { return dictionary()[key] || DICT['zh-tw'][key] || key; },
+    cat: function (c) { return dictionary().cat[c] || DICT['zh-tw'].cat[c] || c; },
     onChange: function (fn) { listeners.push(fn); },
-    init: function () { apply(current); }
+    refresh: syncState,
+    init: function () { syncState(); listeners.forEach(function (fn) { fn(current); }); }
   };
+  // Persist detection before page-specific scripts read the preference.
+  syncState();
+  document.addEventListener('DOMContentLoaded', function () {
+    var menu = document.getElementById('langDropdownMenu');
+    if (menu) SUPPORTED.forEach(function (language) {
+      if (Array.from(menu.querySelectorAll('[data-lang]')).some(function (el) {
+        return normalize(el.dataset.lang) === language;
+      })) return;
+      var button = document.createElement('button');
+      button.className = 'lang-menu-opt';
+      button.dataset.lang = language;
+      button.textContent = NAMES[language];
+      button.addEventListener('click', function () { window.selectLanguage(language, NAMES[language]); });
+      menu.appendChild(button);
+    });
+    syncState();
+  });
 })();
