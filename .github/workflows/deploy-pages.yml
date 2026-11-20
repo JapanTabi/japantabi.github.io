@@ -66,12 +66,27 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pages: write
       id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Check Pages configuration
+        run: node scripts/check-pages.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5.0.1
+      - name: Diagnose failed Pages deployment
+        if: failure() && steps.deployment.outcome == 'failure'
+        continue-on-error: true
+        run: node scripts/check-pages.mjs deployment
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
