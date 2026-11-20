@@ -100,7 +100,7 @@ try {
 }
 
 const json = JSON.stringify(value, null, 2);
-const out = outFile || `data/${varName.toLowerCase()}.json`;
+const out = outFile || `public/data/${varName.toLowerCase()}.json`;
 fs.mkdirSync(new URL('.', 'file://' + process.cwd() + '/').pathname, { recursive: true });
 fs.writeFileSync(out, json + '\n');
 

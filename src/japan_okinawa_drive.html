@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沖繩海島自駕攻略 ｜ 親子・海景・和牛・5天4夜不繞路 ｜ 日旅報報 JAPAN TABI</title>
+  <meta name="description"
+    content="2026 沖繩自駕手帖！告別死板觀光書，實戰 MapCode 一鍵複製、免費停車情報、溜滑梯遮陽度與和牛免排隊秘技。依北部水族館、中部恩納、南部Outlet與那霸市區順路排列。">
+  <!-- Editorial Typography: Kinfolk & Cereal Aesthetic (與 japan_special_edition.html 同步) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Shippori+Mincho:wght@400;600;700&family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Serif+SC:wght@300;400;600;900&family=Noto+Serif+Thai:wght@400;600&family=Noto+Serif+Devanagari:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --ocean-blue: #0284C7;
+      --ocean-sky: #0EA5E9;
+      --ocean-light: #E0F2FE;
+      --ocean-mist: #F0F9FF;
+      --coral-orange: #FF6B4A;
+      --coral-deep: #EA580C;
+      --emerald-green: #10B981;
+      --text-main: #0F172A;
+      --text-sub: #475569;
+      --text-light: #64748B;
+      --bg-cream: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border-color: #E2E8F0;
+      --border-sky: #BAE6FD;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 6px 18px rgba(2, 132, 199, 0.08);
+      --shadow-coral: 0 4px 16px rgba(234, 88, 12, 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: #F8FAFC;
+      color: var(--text-main);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .brand-title-zh {
+      font-family: var(--font-kanji);
+    }
+
+
+
+
+    /* 🫧 沖繩蔚藍海洋夢幻向上漂浮泡泡特效 (Dreamy Upward Ocean Bubbles) */
+    .ocean-bubbles-container {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .ocean-bubble {
+      position: absolute;
+      bottom: -40px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 32% 30%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.4) 25%, rgba(186, 230, 253, 0.25) 55%, rgba(14, 165, 233, 0.4) 95%);
+      box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.8), 0 2px 10px rgba(2, 132, 199, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      animation: floatUpward linear infinite;
+      backdrop-filter: blur(0.5px);
+    }
+
+    .ocean-bubble::after {
+      content: '';
+      position: absolute;
+      top: 18%;
+      left: 22%;
+      width: 25%;
+      height: 25%;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.85);
+      filter: blur(0.5px);
+    }
+
+    @keyframes floatUpward {
+      0% {
+        transform: translateY(0) translateX(0) scale(0.6);
+        opacity: 0;
+      }
+
+      12% {
+        opacity: 0.85;
+      }
+
+      50% {
+        transform: translateY(-240px) translateX(18px) scale(0.95);
+        opacity: 0.9;
+      }
+
+      80% {
+        transform: translateY(-380px) translateX(-12px) scale(1.05);
+        opacity: 0.85;
+      }
+
+      100% {
+        transform: translateY(-520px) translateX(16px) scale(1.15);
+        opacity: 0;
+      }
+    }
+
+    /* 🌊 1. 頂部橫幅 Hero：全景蔚藍珊瑚礁背景 ＋ 詩意文案 ＋ 底部壓邊半透明菜單 */
+    .okinawa-hero-luminous {
+      position: relative;
+      background: linear-gradient(180deg, rgba(12, 74, 110, 0.45) 0%, rgba(12, 74, 110, 0.25) 45%, rgba(12, 74, 110, 0.65) 100%),
+        url('/images/okinawa_hero_banner.jpg') center 35% / cover no-repeat;
+      padding: 30px 24px;
+      overflow: hidden;
+      min-height: 540px;
+      height: 64vh;
+      max-height: 680px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    /* 🏛️ 全站統一標準日雜刊頭排版 (Unified Editorial Hero Typography) */
+    .mag-vertical-title-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* 頂部斜線小標 ＼ ... ／ */
+    .mag-title-eyebrow {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 5px;
+      margin-bottom: 14px;
+      opacity: 0.95;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    /* 第一行主標 */
+    .mag-title-main {
+      font-family: 'Shippori Mincho', 'Noto Serif TC', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #FFFFFF;
+      letter-spacing: 0.18em;
+      line-height: 1.15;
+      margin: 0;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    /* 分隔連接豎線 ｜ */
+    .mag-title-divider-line {
+      display: block;
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 6px 0;
+      line-height: 1;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    /* 第二行副標 */
+    .mag-title-sub-jp {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      letter-spacing: 0.22em;
+      line-height: 1.25;
+      margin: 0;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 640px) {
+      .okinawa-hero-luminous {
+        min-height: 420px;
+        height: 50vh;
+      }
+
+      .mag-title-eyebrow {
+        font-size: 0.76rem;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+      }
+
+      .mag-title-main {
+        font-size: 2.05rem;
+        letter-spacing: 0.12em;
+      }
+
+      .mag-title-divider-line {
+        font-size: 1.1rem;
+        margin: 4px 0;
+      }
+
+      .mag-title-sub-jp {
+        font-size: 1.3rem;
+        letter-spacing: 0.15em;
+      }
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* 🕊️ 左側歐美法式文青純文字 (無透明色塊，純粹優雅) */
+    .hero-editorial-wrap {
+      max-width: 680px;
+      text-align: left;
+    }
+
+    .hero-tag-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: #BAE6FD;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+
+    .hero-quote-en {
+      font-family: 'Cormorant Garamond', 'Playfair Display', Didot, 'Bodoni MT', Georgia, serif;
+      font-style: italic;
+      font-size: 1.22rem;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.95);
+      line-height: 1.45;
+      letter-spacing: 0.02em;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero-quote-zh {
+      font-family: 'Noto Serif TC', 'Shippori Mincho', serif;
+      font-size: 1.72rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      line-height: 1.48;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+      text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-quote-sub {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.88);
+      line-height: 1.6;
+      font-weight: 500;
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .okinawa-hero-luminous {
+        padding: 45px 16px 85px 16px;
+        min-height: 380px;
+      }
+
+      .hero-quote-zh {
+        font-size: 1.35rem;
+      }
+
+      .hero-quote-en {
+        font-size: 1.05rem;
+      }
+    }
+
+    /* 🧭 2. 一體成型大圓角覆蓋板塊 (Seamless Unified Content Sheet - 參考首頁) */
+    .okinawa-main-sheet {
+      position: relative;
+      z-index: 10;
+      margin-top: -65px;
+      background: #FAF9F7;
+      border-radius: 36px 36px 0 0;
+      box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.08);
+      padding: 32px 24px 60px;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 600px) {
+      .okinawa-main-sheet {
+        margin-top: -45px;
+        border-radius: 28px 28px 0 0;
+        padding: 20px 12px 40px;
+      }
+    }
+
+    /* 菜單雙層乾淨排版 (Organic Minimalism 和風現代極簡) */
+    .okinawa-filter-control-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 60px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #E2E8F0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .okinawa-filter-control-wrap {
+        margin-top: 42px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .okinawa-primary-nav-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      width: 100%;
+    }
+
+    .dock-category-scroll {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+      flex: 1;
+    }
+
+    .dock-category-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cat-stamp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid #E2E8F0;
+      background: #FFFFFF;
+      color: #475569;
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    .cat-stamp-btn:hover {
+      background: #F8FAFC;
+      color: #1E293B;
+      border-color: #CBD5E1;
+      transform: translateY(-1px);
+    }
+
+    .cat-stamp-btn.active {
+      background: #1E293B;
+      color: #FFFFFF;
+      border-color: #1E293B;
+      box-shadow: 0 3px 10px rgba(30, 41, 59, 0.22);
+    }
+
+    /* 右側地區極簡微型切換器 (下拉選單) */
+    .region-dropdown-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .region-select-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 16px;
+      border-radius: 20px;
+      border: 1.5px solid #1E293B;
+      background: #FFFFFF;
+      color: #1E293B;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .region-select-trigger:hover {
+      background: #F1F5F9;
+      border-color: #0F172A;
+    }
+
+    .region-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      background: #FFFFFF;
+      border-radius: 14px;
+      border: 1px solid #E2E8F0;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+      width: 190px;
+      padding: 6px 0;
+      z-index: 1000;
+      display: none;
+    }
+
+    .region-dropdown-menu.show {
+      display: block;
+    }
+
+    .region-menu-item {
+      padding: 9px 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .region-menu-item:hover {
+      background: #F8FAFC;
+      color: #1E293B;
+    }
+
+    .region-menu-item.active {
+      background: #F1F5F9;
+      color: #0F172A;
+      font-weight: 800;
+    }
+
+    /* 📅 3. 拯救「5天4夜行程算盤」：時光軸連環手帳 (Timeline Card Scroll) */
+
+    /* 🕊️ 法式文青文人詩意引言 (French Poetic Editorial Quote) */
+    .hero-poetic-quote-wrap {
+      margin-top: 6px;
+      margin-bottom: 0;
+      padding: 24px 28px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-left: 4px solid #0284C7;
+      border-radius: 0 16px 16px 0;
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.08);
+      position: relative;
+    }
+
+    .poetic-quote-zh {
+      font-family: 'Noto Serif TC', 'Songti TC', serif;
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: #0C4A6E;
+      line-height: 1.78;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .poetic-quote-en {
+      font-family: 'Cormorant Garamond', 'Playfair Display', Didot, 'Bodoni MT', Georgia, serif;
+      font-style: italic;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #0369A1;
+      line-height: 1.5;
+      letter-spacing: 0.025em;
+    }
+
+    /* 💡 客群專屬貼心提醒 (Pro-Tips) */
+    .itinerary-protip-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #F0F9FF;
+      border: 1px solid #BAE6FD;
+      border-radius: 12px;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      font-size: 0.84rem;
+      color: #0369A1;
+      font-weight: 700;
+      box-shadow: 0 2px 6px rgba(2, 132, 199, 0.05);
+      transition: all 0.25s ease;
+    }
+
+    .timeline-handbook-section {
+      max-width: 1140px;
+      margin: 24px auto 0 auto;
+      padding: 0 16px;
+    }
+
+    .handbook-card-main {
+      background: #FFFFFF;
+      border-radius: 18px;
+      padding: 22px 24px;
+      border: 1px solid var(--border-sky);
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    .handbook-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #F1F5F9;
+      padding-bottom: 14px;
+    }
+
+    .handbook-title-box h3 {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: #0F172A;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .handbook-title-box p {
+      font-size: 0.78rem;
+      color: #64748B;
+      margin-top: 2px;
+    }
+
+    .plan-switch-pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .plan-chip-btn {
+      padding: 6px 14px;
+      border-radius: 16px;
+      background: #F8FAFC;
+      border: 1px solid #CBD5E1;
+      color: #334155;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .plan-chip-btn:hover {
+      background: #F1F5F9;
+      color: #0F172A;
+    }
+
+    .plan-chip-btn.active {
+      background: #0284C7;
+      color: #FFFFFF;
+      border-color: #0284C7;
+      box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
+    }
+
+    /* 橫向手帳卷軸 Scroll Snap */
+    .timeline-cards-row {
+      display: grid;
+      grid-template-columns: repeat(var(--itinerary-cols, 5), minmax(0, 1fr));
+      gap: 12px;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 992px) {
+      .timeline-cards-row {
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .timeline-cards-row {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 8px;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .timeline-journal-card {
+        min-width: 210px;
+        flex: 0 0 210px;
+        scroll-snap-align: start;
+      }
+    }
+
+    .timeline-journal-card {
+      background: #FFFFFF;
+      border-radius: 12px;
+      border: 1px solid #E2E8F0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      transition: all 0.25s ease;
+    }
+
+    .timeline-journal-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(2, 132, 199, 0.09);
+      border-color: #7DD3FC;
+    }
+
+    .journal-img-header {
+      position: relative;
+      height: 95px;
+      overflow: hidden;
+    }
+
+    .journal-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .journal-day-tag {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: #0284C7;
+      color: #FFFFFF;
+      font-size: 0.66rem;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .journal-body {
+      padding: 10px 12px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .journal-title {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+
+    .journal-stops-line {
+      font-size: 0.74rem;
+      color: #475569;
+      line-height: 1.5;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .journal-stop-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .journal-drive-box {
+      margin-top: auto;
+      font-size: 0.68rem;
+      background: #E0F2FE;
+      color: #0369A1;
+      padding: 3px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      width: fit-content;
+    }
+
+    /* 🏖️ 4. 下方景點卡片：強化「實戰生存筆記」視覺重量 (MapCode一鍵複製 + 亮點指標) */
+    /* 🌟 5 欄一排大方歐美排版 (5 Columns Spot Grid) */
+    /* 🏖️ 4. 下方景點卡片：四個一排黃金舒適排版 (4 Columns Spot Grid) */
+    .okinawa-main-grid {
+      max-width: 1440px;
+      margin: 24px auto 60px auto;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 1180px) {
+      .okinawa-main-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .okinawa-main-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .okinawa-main-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .spot-card {
+      background: #FFFFFF;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .spot-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.12);
+      border-color: #BAE6FD;
+    }
+
+    .spot-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 148px;
+      overflow: hidden;
+      background: #E2E8F0;
+    }
+
+    .spot-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .spot-card:hover .spot-img {
+      transform: scale(1.06);
+    }
+
+    .spot-body {
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .spot-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.3;
+      margin-bottom: 2px;
+    }
+
+    .spot-sub {
+      font-size: 0.72rem;
+      color: #0284C7;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .spot-desc {
+      font-size: 0.76rem;
+      color: #475569;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    /* 🌿 去框線、加間距、極簡高質感資訊條目 (無雜亂 Emoji) */
+    .spot-info-clean-list {
+      background: #FFFFFF;
+      border-top: 1px solid #F1F5F9;
+      border-bottom: 1px solid #F1F5F9;
+      padding: 10px 0;
+      margin: 8px 0 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .spot-info-clean-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      font-size: 0.74rem;
+      line-height: 1.45;
+    }
+
+    .spot-info-icon {
+      color: #94A3B8;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .spot-info-clean-label {
+      font-weight: 700;
+      color: #334155;
+      flex-shrink: 0;
+    }
+
+    .spot-info-clean-val {
+      color: #475569;
+      font-weight: 500;
+    }
+
+    .tip-highlight-text {
+      color: #C2410C !important;
+      font-weight: 600 !important;
+    }
+
+    /* 🎯 沖繩景點卡片 4 顆簡約純文字按鈕 (一整排，精緻文青風：map/租車自駕/推薦住宿/包車 - 無邊框扁平設計) */
+    .spot-actions-4col {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      margin-top: 14px;
+      padding-top: 6px;
+      border-top: none;
+    }
+
+    .btn-spot-col {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 2px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      white-space: nowrap;
+      border: none !important;
+      transition: all 0.2s ease;
+    }
+
+    /* 灰色：map ＆ 包車 */
+    .btn-spot-gray {
+      background: #F1F5F9;
+      color: #64748B !important;
+      border: none !important;
+    }
+
+    .btn-spot-gray:hover {
+      background: #E2E8F0;
+      color: #1E293B !important;
+      transform: translateY(-1px);
+    }
+
+    /* 淺藍：租車自駕 */
+    .btn-spot-lightblue {
+      background: #E0F2FE;
+      color: #0284C7 !important;
+      border: none !important;
+    }
+
+    .btn-spot-lightblue:hover {
+      background: #BAE6FD;
+      color: #0369A1 !important;
+      transform: translateY(-1px);
+    }
+
+    /* 深藍：推薦住宿 */
+    .btn-spot-darkblue {
+      background: #EEF2FF;
+      color: #1E40AF !important;
+      border: none !important;
+    }
+
+    .btn-spot-darkblue:hover {
+      background: #DBEAFE;
+      color: #172554 !important;
+      transform: translateY(-1px);
+    }
+
+    /* 🏷️ 二級細分標籤微膠囊列 (獨立整排，乾淨水平滾動，文青細緻) */
+    .okinawa-tier2-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 8px 0 2px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+    }
+
+    .okinawa-tier2-pills::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cat-tier2-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 14px;
+      border-radius: 16px;
+      border: 1px solid #E2E8F0;
+      background: #FFFFFF;
+      color: #64748B;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    }
+
+    .cat-tier2-btn:hover {
+      background: #F8FAFC;
+      border-color: #CBD5E1;
+      color: #1E293B;
+    }
+
+    .cat-tier2-btn.active {
+      background: #0284C7;
+      border-color: #0284C7;
+      color: #FFFFFF;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);
+    }
+
+    /* 📅 行程推薦手帳區塊樣式 (文青優雅版) */
+    .handbook-header-clean {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #F1F5F9;
+      flex-wrap: wrap;
+    }
+
+    .handbook-subbar-clean {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .handbook-quick-services {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .quick-service-pill {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: #334155;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    }
+
+    .quick-service-pill:hover {
+      border-color: #0284C7;
+      color: #0284C7;
+      transform: translateY(-1px);
+    }
+
+    .qs-arrow {
+      color: #0284C7;
+      font-weight: bold;
+    }
+
+    /* 照片右上角極簡定位標籤 */
+    .spot-corner-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(6px);
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    /* 🛡️ 沖繩自駕手冊彈出視窗 (Modal Backdrop & Dialog - 完美置中無跑版設計) */
+    .sop-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 10000;
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 30px 16px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    .sop-modal-backdrop.active {
+      display: flex !important;
+    }
+
+    .sop-modal-dialog {
+      background: #FFFFFF;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+      border: 1.5px solid #BAE6FD;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sop-modal-header {
+      background: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+      border-bottom: 1.5px solid #E2E8F0;
+      gap: 16px;
+      box-sizing: border-box;
+    }
+
+    .sop-modal-pill {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: #0284C7;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .sop-modal-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: #0F172A;
+      margin: 0;
+      line-height: 1.35;
+    }
+
+    .sop-modal-close {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #F1F5F9;
+      border: none;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #64748B;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+
+    .sop-modal-close:hover {
+      background: #EF4444;
+      color: #FFFFFF;
+    }
+
+    .sop-modal-body {
+      padding: 24px;
+      overflow-y: auto;
+      max-height: calc(85vh - 75px);
+      box-sizing: border-box;
+    }
+
+    .okinawa-sop-btn-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .btn-sop-tocoo {
+      padding: 9px 18px;
+      background: #0284C7;
+      color: #FFFFFF !important;
+      font-size: 0.82rem;
+      font-weight: 800;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(2, 132, 199, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .btn-sop-tocoo:hover {
+      background: #0369A1;
+      transform: translateY(-1px);
+    }
+
+    .btn-sop-klook {
+      padding: 9px 18px;
+      background: linear-gradient(135deg, #FF5B00 0%, #EA580C 100%);
+      color: #FFFFFF !important;
+      font-size: 0.82rem;
+      font-weight: 800;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(234, 88, 12, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn-sop-klook:hover {
+      background: linear-gradient(135deg, #FF6A1A 0%, #C2410C 100%);
+      transform: translateY(-1px);
+    }
+
+    .btn-sop-sim {
+      padding: 9px 16px;
+      background: #F8FAFC;
+      color: #334155 !important;
+      font-size: 0.82rem;
+      font-weight: 800;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid #CBD5E1;
+      transition: all 0.2s ease;
+    }
+
+    .btn-sop-sim:hover {
+      background: #E2E8F0;
+      transform: translateY(-1px);
+    }
+
+    .okinawa-sop-alert {
+      background: #FEF3C7;
+      border-left: 4px solid #D97706;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 22px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      box-sizing: border-box;
+    }
+
+    .okinawa-sop-alert-badge {
+      background: #D97706;
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.76rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .okinawa-sop-alert-text {
+      font-size: 0.85rem;
+      color: #92400E;
+      line-height: 1.65;
+    }
+
+    .okinawa-sop-alert-text b {
+      color: #78350F;
+    }
+
+    .okinawa-sop-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-bottom: 22px;
+      box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+      .okinawa-sop-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .okinawa-sop-card {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-sizing: border-box;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .okinawa-sop-card:hover {
+      border-color: #BAE6FD;
+      transform: translateY(-2px);
+    }
+
+    .sop-card-tag {
+      color: #0284C7;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .sop-card-h4 {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #0F172A;
+      margin-bottom: 8px;
+    }
+
+    .sop-card-p {
+      font-size: 0.84rem;
+      color: #475569;
+      line-height: 1.65;
+    }
+
+    .sop-card-tip {
+      background: #FEF2F2;
+      border-left: 3px solid #EF4444;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: #991B1B;
+      line-height: 1.5;
+    }
+
+    .okinawa-sop-footer-tip {
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-sizing: border-box;
+    }
+
+    .sop-footer-left {
+      font-size: 0.86rem;
+      color: #166534;
+      line-height: 1.55;
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .btn-sop-sim-action {
+      padding: 8px 16px;
+      background: #16A34A;
+      color: #FFFFFF !important;
+      font-weight: 700;
+      font-size: 0.82rem;
+      border-radius: 6px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .btn-sop-sim-action:hover {
+      background: #15803D;
+    }
+  </style>
+  <link rel="stylesheet" href="./styles/shared/tabi-core.css">
+</head>
+
+<body>
+
+  <!-- 全站統一 Header (單行不折行、高度齊平) -->
+  <header class="app-header">
+    <div class="header-left">
+      <!-- 左側平衡留白，保障中央品牌在視覺上精準居中 -->
+    </div>
+
+    <!-- 🌟 官網正中間品牌標誌與文字排版 (54px 官方雙環 Logo，精準居中對齊) -->
+    <div class="header-center">
+      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI">
+        <div class="fuji-logo-box">
+          <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo" class="brand-tabi-logo">
+        </div>
+        <div class="brand-text">
+          <h1 id="brandTitle">
+            <span class="brand-title-zh" id="brandTitleZh">日旅報報</span>
+          </h1>
+          <div class="brand-sub-official-wrap">
+            <span class="brand-title-en" id="brandTitleEn">JAPAN TABI</span>
+            <span class="brand-tag-official" id="brandTag">日本觀光情報</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 🌟 頂部右側統一功能按鈕群 (純文字無外框無ICON ＋ 🌐 Language 保留外框與ICON) -->
+    <div class="header-right">
+      <div class="header-nav-scroll">
+        <a href="japan_entry_rules.html" class="header-entry-pill" title="最新日本入境規範、免稅新制與海關申報手冊"
+          style="background:#EA580C; color:#FFFFFF; font-weight:700; font-size:0.82rem; padding:5px 12px; border-radius:999px; text-decoration:none; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; margin-right:4px;">
+          <span>最新入境規範</span>
+        </a>
+        <a href="japan_flight_deals.html" class="header-nav-link " title="日本空港手帖・機場探索指南">
+          <span>查機票</span>
+        </a>
+        <a href="japan_charter_rental.html" class="header-nav-link " title="日本客製包車 ＆ 自駕租車指南">
+          <span>包車/租車</span>
+        </a>
+        <a href="japan_okinawa_drive.html" class="header-nav-link active" title="沖繩海島不繞路自駕攻略">
+          <span>沖繩自駕</span>
+        </a>
+        <a href="japan_inbound_rankings.html" class="header-nav-link " title="日本排行榜">
+          <span>日本排行</span>
+        </a>
+        <a href="japan_special_edition.html" class="header-nav-link " title="深度文章・高質感日本文化與戶外誌">
+          <span>深度文章</span>
+        </a>
+
+      </div>
+
+      <!-- 🌐 前台多國語言切換器 (Language Selector) -->
+      <div class="lang-selector-dropdown-wrap" id="langSelectorWrap">
+        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言">
+          <span class="util-btn-icon">🌐</span>
+          <span id="currentLangLabel">Language</span>
+          <span class="lang-arrow" id="langArrow">▾</span>
+        </button>
+        <div class="lang-dropdown-menu" id="langDropdownMenu">
+          <button class="lang-menu-opt active" data-lang="zh-TW" onclick="selectLanguage('zh-TW', '繁體中文')">
+            <span class="lang-flag">🇹🇼</span>
+            <span class="lang-name">繁體中文</span>
+            <span class="lang-check">✓</span>
+          </button>
+          <button class="lang-menu-opt" data-lang="en" onclick="selectLanguage('en', 'English')">
+            <span class="lang-flag">🇺🇸</span>
+            <span class="lang-name">English</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="ko" onclick="selectLanguage('ko', '한국어')">
+            <span class="lang-flag">🇰🇷</span>
+            <span class="lang-name">한국어</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="zh-CN" onclick="selectLanguage('zh-CN', '简体中文')">
+            <span class="lang-flag">🇨🇳</span>
+            <span class="lang-name">简体中文</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="th" onclick="selectLanguage('th', 'ไทย')">
+            <span class="lang-flag">🇹🇭</span>
+            <span class="lang-name">ไทย</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="ja" onclick="selectLanguage('ja', '日本語')">
+            <span class="lang-flag">🇯🇵</span>
+            <span class="lang-name">日本語</span>
+            <span class="lang-check"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 🌊 1. 頂部橫幅 Hero：全景蔚藍珊瑚礁背景 ＋ 詩意文案 ＋ 底部壓邊半透明菜單 -->
+  <!-- 🌊 1. 頂部橫幅 Hero (全景珊瑚礁 ＋ 左側純粹法式文青文字，無底色塊) -->
+  <header class="okinawa-hero-luminous" id="okinawaHero">
+    <!-- 🫧 蔚藍海洋向上飄浮夢幻泡泡容器 -->
+    <div class="ocean-bubbles-container" id="oceanBubbles"></div>
+    <div class="mag-vertical-title-wrap">
+      <div class="mag-title-eyebrow">＼ 青い海と風が誘う島路 ／</div>
+      <h1 class="mag-title-main">沖繩自駕手帖</h1>
+      <span class="mag-title-divider-line">｜</span>
+      <div class="mag-title-sub-jp">島風と碧海の記憶</div>
+    </div>
+  </header>
+
+  <!-- 🧭 2. 一體成型大圓角覆蓋主容器 (Seamless Unified Sheet - 參考首頁設計) -->
+  <main class="okinawa-main-sheet">
+
+    <!-- 📅 3. 拯救「5天4夜行程算盤」：時光軸連環手帳 (Timeline Card) -->
+    <section class="timeline-handbook-section">
+      <div class="handbook-card-main">
+        <!-- 頂部文青標題與天數切換按鈕列 (同一排精緻對齊) -->
+        <div class="handbook-header-clean">
+          <div class="handbook-title-box">
+            <h3
+              style="font-family:'Shippori Mincho', serif; font-size:1.22rem; font-weight:800; color:#0F172A; margin:0;">
+              沖繩行程推薦</h3>
+          </div>
+          <div class="plan-switch-pills">
+            <button class="plan-chip-btn active" onclick="switchItineraryPlan('family', this)">親子 5 日</button>
+            <button class="plan-chip-btn" onclick="switchItineraryPlan('senior', this)">孝親 4 日</button>
+            <button class="plan-chip-btn" onclick="switchItineraryPlan('dive', this)">浮潛 4 日</button>
+            <button class="plan-chip-btn" onclick="switchItineraryPlan('shopping', this)">購物 3 日</button>
+          </div>
+        </div>
+
+        <!-- 貼心配套功能列 (自駕安全手冊 ＋ 機場專車 ＋ 行李直送) -->
+        <div class="handbook-subbar-clean">
+          <button type="button" class="btn-sop-modal-trigger" onclick="openOkinawaSopModal()"
+            title="日本自駕取還車、保險理賠與緊急救援指南"
+            style="padding:7px 16px; border-radius:20px; font-size:0.78rem; font-weight:700; background:#ECFDF5; border:none; color:#065F46; cursor:pointer; transition:all 0.2s ease;">
+            <span>沖繩自駕安全、保險理賠 ＆ 緊急救援指南</span>
+            <span style="color:#059669; margin-left:4px;">查看手冊 ▾</span>
+          </button>
+
+          <div class="handbook-quick-services">
+            <a href="https://www.klook.com/zh-TW/airport-transfers/service/oka-naha-airport/?aid=123436&utm_medium=affiliate-alwayson"
+              target="_blank" rel="noopener noreferrer" class="quick-service-pill"
+              style="background:#E0F2FE; color:#0284C7; border:none; font-weight:700;">
+              <span>那霸機場專車接送</span> <span class="qs-arrow">➔</span>
+            </a>
+            <a href="https://www.klook.com/zh-TW/search/result/?query=%E6%B2%96%E7%B9%A4+%E8%A1%8C%E6%9D%8E%E9%81%9E%E9%80%81&aid=123436&utm_medium=affiliate-alwayson"
+              target="_blank" rel="noopener noreferrer" class="quick-service-pill"
+              style="border:none; font-weight:700;">
+              <span>行李當日直送飯店</span> <span class="qs-arrow">➔</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 客群專屬貼心提醒 (Pro-Tips) -->
+        <div class="itinerary-protip-box" id="itineraryProTipBox">
+          <span class="protip-text" id="itineraryProTipText">小提醒：日本自駕 6 歲以下幼兒依法必須租用安全座椅，建議預先向租車公司預約。</span>
+        </div>
+
+        <div class="timeline-cards-row" id="itineraryTimelineRow">
+          <!-- JS 動態生成帶圖片的時光軸卡片 -->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 🚙 專屬模組 2: 沖繩租車自駕安全手冊與救援專區 (海島大自然冒險配色、高專業信賴感) -->
+
+
+    <!-- 菜單控制區塊 (雙層乾淨排版：第一層主分類與地區，第二層二級子分類膠囊) -->
+    <div class="okinawa-filter-control-wrap">
+      <div class="okinawa-primary-nav-bar">
+        <!-- 🌺 沖繩一級主分類橫軸 (簡潔 5 大主題) -->
+        <div class="dock-category-scroll" id="dockCategoryScroll">
+          <button class="cat-stamp-btn active" onclick="switchTier1('all', this)">
+            <span>🌺 全島精選</span>
+          </button>
+          <button class="cat-stamp-btn" onclick="switchTier1('food', this)">
+            <span>🍱 沖繩美饌</span>
+          </button>
+          <button class="cat-stamp-btn" onclick="switchTier1('outdoor', this)">
+            <span>🌊 海島活動・親子</span>
+          </button>
+          <button class="cat-stamp-btn" onclick="switchTier1('leisure', this)">
+            <span>☕ 崖景咖啡・逛街</span>
+          </button>
+          <button class="cat-stamp-btn" onclick="switchTier1('stay', this)">
+            <span>🏨 度假村・溫泉</span>
+          </button>
+        </div>
+
+        <!-- 地區篩選 (右側極簡微型切換) -->
+        <div class="region-dropdown-wrap">
+          <button class="region-select-trigger" id="regionTriggerBtn" onclick="toggleRegionMenu(event)">
+            <span>📍</span>
+            <span id="currentRegionLabel">全部地區</span>
+            <span>▾</span>
+          </button>
+          <div class="region-dropdown-menu" id="regionDropdownMenu">
+            <div class="region-menu-item active" onclick="selectRegion('all', '全部地區', this)">🌐 全島所有地區</div>
+            <div class="region-menu-item" onclick="selectRegion('north', '北部：水族館・名護', this)">🚗 北部：水族館・名護</div>
+            <div class="region-menu-item" onclick="selectRegion('central', '中部：恩納・美國村', this)">🌊 中部：恩納・美國村</div>
+            <div class="region-menu-item" onclick="selectRegion('south', '南部：系滿・Outlet', this)">🛍️ 南部：系滿・Outlet</div>
+            <div class="region-menu-item" onclick="selectRegion('naha', '那霸：國際通・首里', this)">🏮 那霸：國際通・首里</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🏷️ 二級細分標籤微膠囊列 (獨立整排，乾淨水平滾動，不與上方下拉擠壓) -->
+      <div class="okinawa-tier2-pills" id="okinawaTier2Pills"></div>
+    </div>
+
+
+
+    <!-- 🏖️ 4. 下方景點卡片：強化「實戰生存筆記」視覺重量 -->
+    <section class="okinawa-main-grid" id="okinawaCardsGrid">
+      <!-- JS 動態生成 -->
+    </section>
+
+  </main>
+
+  <!-- 頁尾 -->
+
+  <footer class="tabi-footer"
+    style="background:#FAF8F5; border-top:1px solid #1E293B; padding:72px 24px 48px; margin-top:80px; position:relative; z-index:10;">
+    <style>
+      .tabi-footer-manifesto-box {
+        max-width: 1200px;
+        margin: 0 auto 56px;
+        padding: 36px 40px;
+        background: #FFFFFF;
+        border: 1px solid #E2E8F0;
+        border-radius: 20px;
+        box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .tabi-footer-cols {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 40px;
+        padding-bottom: 48px;
+        border-bottom: 1px solid #E2E8F0;
+      }
+
+      .footer-nav-link {
+        font-size: 0.84rem;
+        color: #334155;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.2s;
+      }
+
+      .footer-nav-link:hover {
+        color: #C2410C;
+        padding-left: 4px;
+      }
+
+      .footer-nav-link .footer-nav-arrow {
+        color: #94A3B8;
+        transition: transform 0.2s, color 0.2s;
+      }
+
+      .footer-nav-link:hover .footer-nav-arrow {
+        color: #C2410C;
+        transform: translate(2px, -2px);
+      }
+
+      @media (max-width: 960px) {
+        .tabi-footer-manifesto-box {
+          grid-template-columns: 1fr !important;
+          padding: 28px 20px !important;
+          gap: 20px !important;
+        }
+
+        .tabi-footer-vertical-text {
+          display: none !important;
+        }
+
+        .tabi-footer-cols {
+          grid-template-columns: 1fr 1fr !important;
+          gap: 32px 20px !important;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .tabi-footer-cols {
+          grid-template-columns: 1fr !important;
+        }
+      }
+    </style>
+
+    <!-- 🌸 《日旅報報》品牌創立精神 (BRAND MANIFESTO - 深度圖案美學特刊版) -->
+    <div class="tabi-footer-manifesto-box">
+      <div class="tabi-footer-manifesto-left"
+        style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; padding-right:32px; border-right:1px solid #E2E8F0;">
+        <span
+          style="font-family:'Cinzel', serif; font-size:0.68rem; font-weight:700; letter-spacing:2.5px; color:#92400E;">BRAND
+          MANIFESTO</span>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; overflow:hidden; flex-shrink:0;"><img
+              src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
+              style="width:100%; height:100%; object-fit:cover;"></div>
+          <div>
+            <div
+              style="font-family:'Shippori Mincho', serif; font-size:1.05rem; font-weight:700; color:#0F172A; letter-spacing:1px; line-height:1.2;">
+              JAPAN TABI</div>
+            <div style="font-size:0.7rem; color:#64748B; margin-top:2px;">日旅報報 品牌創立</div>
+          </div>
+        </div>
+      </div>
+      <div class="tabi-footer-manifesto-right">
+        <h3
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.05rem; font-weight:700; color:#0F172A; margin:0 0 10px; letter-spacing:1px;">
+          《日旅報報》品牌創立：</h3>
+        <p
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:0.9rem; color:#1E293B; line-height:1.8; margin:0 0 4px;">
+          「因為太喜歡日本，想把四季最動人、最真實的美麗，完整介紹給全世界熱愛旅行的人。」</p>
+        <p
+          style="font-family:'Shippori Mincho', serif; font-size:0.8rem; color:#64748B; font-style:italic; line-height:1.8; margin:0;">
+          「日本が大好きだからこそ、四季折々の息をのむ美しさを、世界中の旅人へ届けたい。」</p>
+      </div>
+    </div>
+
+
+    <div class="tabi-footer-cols">
+
+      <!-- 第 1 欄：品牌官方認證 -->
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+          <div style="width:32px; height:32px; border-radius:50%; overflow:hidden; border:1px solid #E2E8F0;">
+            <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <h4
+            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;">
+            日旅報報 JAPAN TABI</h4>
+        </div>
+        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;">
+          日本の四季を彩る花期前線・夏の夜空を彩る花火大会・パウダースノー観測・名所特約ガイド。現地取材に基づき厳選された観光情報を、最高水準の自由旅行へお届けします。
+        </p>
+        <div
+          style="padding:12px 16px; background:#FFFFFF; border-left:3.5px solid #92400E; border-top:1px solid #E2E8F0; border-right:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0; border-radius:8px; font-size:0.76rem; color:#64748B; line-height:1.65; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
+          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;">🏅 官方特約觀測現地取材認證</div>
+          <div>全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
+        </div>
+        <div
+          style="font-size:0.78rem; color:#64748B; line-height:1.75; padding:10px 14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
+          <div>✉️ <strong>《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
+              style="color:#92400E; text-decoration:none; font-weight:700;">himydream.studio0220@gmail.com</a></div>
+          <div style="margin-top:3px;">📍 <strong>日本連絡處：</strong>東京都港区 ｜ JAPAN TABI 編集室 企画推進部</div>
+        </div>
+      </div>
+
+      <!-- 第 2 欄：核心專欄導覽 (完整串連頁面連結) -->
+      <div>
+        <h4
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          探索日本
+        </h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+          <li><a href="index.html" class="footer-nav-link"><span>首頁情報 ｜ 賞花玩雪最前線</span></a></li>
+          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span>機場手帖 ｜ 11大空港散策中心</span></a></li>
+          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span>私人包車 ｜ 彈性包車自由行</span></a></li>
+          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span>沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
+          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span>美食指南 ｜ 必吃米其林百名店</span></a></li>
+          <li><a href="japan_special_edition.html" class="footer-nav-link"
+              style="color:#92400E; font-weight:700;"><span>深度報導 ｜ 日本文化特刊報導</span></a></li>
+        </ul>
+      </div>
+
+      <!-- 第 3 欄：專題企劃 ＆ 攻略指南 -->
+      <div>
+        <h4
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          實用專區
+        </h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+          <li><a href="japan_ski_resorts.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;">全日本 27
+                大雪場・中文教練・即時雪況速報</small></a></li>
+          <li><a href="japan_entry_rules.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">最新入境規範專頁</strong><small style="color:#64748B;">2025/2026 免稅新制・VJW
+                申報手冊</small></a></li>
+          <li><a href="japan_theme_parks.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">遊樂園攻略</strong><small style="color:#64748B;">迪士尼・環球影城
+                USJ・吉卜力公園</small></a></li>
+          <li><a href="japan_train_tour.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">火車和搭車指南</strong><small style="color:#64748B;">新幹線・JR
+                Pass・觀光列車乘車券</small></a></li>
+          <li><a href="japan_flight_deals.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;">全日本 11
+                大核心機場・必吃美食・展望台・免稅伴手禮</small></a></li>
+        </ul>
+      </div>
+
+      <!-- 第 4 欄：特別刊號推薦 (深度文章直達連結) -->
+      <div>
+        <h4
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          日本精選
+        </h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">沖繩自駕特刊</strong><small
+                style="color:#64748B;">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">日本米其林和牛</strong><small
+                style="color:#64748B;">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">溫泉名湯特輯</strong><small
+                style="color:#64748B;">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">日本世界遺產</strong><small
+                style="color:#64748B;">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- 底部版權宣告與社群連結 -->
+    <div
+      style="max-width:1200px; margin:28px auto 0; display:flex; justify-content:space-between; align-items:center; font-size:0.78rem; color:#64748B; flex-wrap:wrap; gap:16px;">
+      <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+        <span style="font-weight:700; color:#334155;">© JAPAN TABI ジャパン・タビ ｜ 全日本観光情報局 All Rights Reserved.</span>
+        <a href="japan_privacy_policy.html"
+          style="color:#64748B; text-decoration:none; margin-left:8px; font-weight:600; transition:color 0.2s;"
+          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'">隱私權政策</a>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》官方 Instagram"
+            style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
+            onmouseout="this.style.color='#64748B'">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <!-- Threads -->
+          <a href="https://www.threads.net" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》Threads"
+            style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
+            onmouseout="this.style.color='#64748B'">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 3.328 0 6.273-1.624 8.077-4.116-.367-.375-.72-.764-1.057-1.168-1.47 2.05-3.9 3.384-6.65 3.384-4.524 0-8.2-3.676-8.2-8.2s3.676-8.2 8.2-8.2 8.2 3.676 8.2 8.2c0 2.39-.77 4.542-2.316 5.867-1.18.995-2.766 1.433-4.534 1.258-2.678-.266-4.59-2.368-4.59-5.045 0-2.88 2.21-5.18 5.14-5.18 1.94 0 3.518.95 4.19 2.52.17.41.31.85.4 1.3h-1.85c-.08-.3-.21-.58-.38-.83-.45-.66-1.3-1.09-2.36-1.09-1.85 0-3.24 1.45-3.24 3.28 0 1.74 1.25 3.14 3.01 3.31 1.28.13 2.37-.18 3.12-.81.98-.83 1.5-2.22 1.5-3.96 0-5.4-4.32-9.8-9.67-9.8z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button onclick="window.scrollTo({top:0, behavior:'smooth'})"
+        style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:999px; padding:6px 16px; font-weight:700; cursor:pointer; color:#334155; transition:all 0.2s;"
+        onmouseover="this.style.borderColor='#92400E'; this.style.color='#92400E';"
+        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';">
+        ▲ 回到頂部
+      </button>
+    </div>
+  </footer>
+
+  <script>
+
+    function getHeartSvg(isActive, size) {
+      size = size || 12;
+      if (isActive) {
+        return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="#E11D48" stroke="#E11D48" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>';
+      }
+      return '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>';
+    }
+
+    function isFavorite(id) {
+      try {
+        const favs = JSON.parse(localStorage.getItem('TABI_FAVORITES_V1') || '[]');
+        return favs.some(item => String(item.id) === String(id));
+      } catch (e) { return false; }
+    }
+
+    function toggleOkinawaFavorite(spotName, event) {
+      if (event) event.stopPropagation();
+      let found = null;
+      if (typeof OKINAWA_SPOTS !== 'undefined') {
+        for (let r in OKINAWA_SPOTS) {
+          const s = OKINAWA_SPOTS[r].find(x => x.name === spotName);
+          if (s) { found = s; break; }
+        }
+      }
+      if (!found) return;
+      if (typeof toggleFavorite === 'function') {
+        toggleFavorite(found.name, 'okinawa', found.name, found.img, found.region || '', found.cat || '', {
+          desc: found.desc,
+          location: found.sub,
+          navUrl: found.mapUrl
+        });
+      }
+    }
+    // const OKINAWA_RENTAL_AFF_URL defined below
+
+    // 22 大核心精選名所 (文字精簡提煉，突出實戰數據)
+    // 🌺 沖繩自駕全島 50+ 實戰生存名所資料庫 (9大分類・分潤齊全)
+    const OKINAWA_RENTAL_AFF_URL = "https://afflink.one/s/FruK8";
+    const KLOOK_AFF_PREFIX = "https://www.klook.com/zh-TW/activity/?aid=123436&utm_medium=affiliate-alwayson";
+    const KLOOK_AFF_PARAMS = "?aid=123436&utm_medium=affiliate-alwayson";
+
+    let OKINAWA_SPOTS = [];
+
+    // 客群專屬貼心提醒
+    const ITINERARY_PROTIPS = {
+      family: "💡 小提醒：日本自駕 6 歲以下幼兒依法必須租用安全座椅，建議預先向租車公司預約。",
+      senior: "💡 小提醒：所有景點皆已篩選附設無障礙電梯與平緩步道，車程單趟不超過 30 分鐘，保留充足午後休憩。",
+      dive: "💡 小提醒：深潛活動後 18 小時內嚴禁搭乘飛機，回程當天請勿安排深潛；晨潛 08:00 前水質透明度最高！",
+      shopping: "💡 小提醒：大型購物商場與 Outlet 退稅櫃台通常於打烊前 30 分鐘截止，後車廂預留行李空間。"
+    };
+
+    // 時光軸手帳行程 (帶專屬小縮圖與導航路線)
+    let ITINERARY_DATA = {};
+
+    // 渲染手帳時光軸卡片 (Timeline Handbook Cards)
+    function renderTimelineHandbook(planKey) {
+      const container = document.getElementById('itineraryTimelineRow');
+      const protipEl = document.getElementById('itineraryProTipText');
+      if (!container) return;
+      const key = planKey || 'family';
+      const list = ITINERARY_DATA[key] || ITINERARY_DATA['family'];
+      if (protipEl && ITINERARY_PROTIPS[key]) {
+        protipEl.textContent = ITINERARY_PROTIPS[key];
+      }
+
+      container.style.setProperty('--itinerary-cols', list.length);
+
+      let html = '';
+      list.forEach(item => {
+        let stopsHtml = '';
+        item.stops.forEach(s => {
+          stopsHtml += `<div class="journal-stop-item"><span class="stop-dot" style="color:#0284C7; font-weight:bold;">•</span> <span>${s.text}</span></div>`;
+        });
+
+        html += `
+          <div class="timeline-journal-card">
+            <div class="journal-img-header">
+              <img src="${item.img}" alt="${item.title}" class="journal-img" loading="lazy">
+              <span class="journal-day-tag">${item.day}</span>
+            </div>
+            <div class="journal-body">
+              <div class="journal-title">${item.title}</div>
+              <div class="journal-stops-line">
+                ${stopsHtml}
+              </div>
+              <div class="journal-drive-box"><span>車程 ${item.drive}</span></div>
+            </div>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    function switchItineraryPlan(planKey, btn) {
+      document.querySelectorAll('.plan-chip-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderTimelineHandbook(planKey);
+    }
+
+
+    // 狀態變數：一級主題、二級細分與區域篩選
+    let currentTier1 = 'all';
+    let currentTier2 = 'all';
+    let currentRegion = 'all';
+
+    const OKINAWA_TIER2_CONFIG = {
+      'all': [
+        { id: 'all', label: '全島精選' },
+        { id: 'beef', label: '和牛燒肉' },
+        { id: 'michelin', label: '米其林百名店' },
+        { id: 'ramen', label: '沖繩麵與拉麵' },
+        { id: 'izakaya', label: '在地居酒屋' },
+        { id: 'dive', label: '慶良間浮潛' },
+        { id: 'kids', label: '親子溜滑梯' },
+        { id: 'cafe', label: '崖景海邊咖啡' },
+        { id: 'shop', label: '逛街商場' },
+        { id: 'resort', label: '海景度假村' }
+      ],
+      'food': [
+        { id: 'all', label: '全部美饌' },
+        { id: 'beef', label: '頂級和牛燒肉' },
+        { id: 'michelin', label: '米其林百名店' },
+        { id: 'ramen', label: '沖繩麵與名店拉麵' },
+        { id: 'izakaya', label: '在地民謠居酒屋' }
+      ],
+      'outdoor': [
+        { id: 'all', label: '全部戶外活動' },
+        { id: 'dive', label: '慶良間浮潛・深潛' },
+        { id: 'summer', label: '夏日沙灘水上' },
+        { id: 'kids', label: '親子溜滑梯公園' }
+      ],
+      'leisure': [
+        { id: 'all', label: '全部休閒體驗' },
+        { id: 'cafe', label: '崖景海邊咖啡' },
+        { id: 'shop', label: '逛街購物商場' }
+      ],
+      'stay': [
+        { id: 'all', label: '全部度假住宿' },
+        { id: 'resort', label: '頂級海景度假村' },
+        { id: 'winter', label: '冬季溫泉旬味' }
+      ]
+    };
+
+    function switchTier1(tier1Key, btn) {
+      currentTier1 = tier1Key;
+      currentTier2 = 'all';
+      document.querySelectorAll('#dockCategoryScroll .cat-stamp-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      renderTier2Pills();
+      renderOkinawaCards();
+    }
+
+    function renderTier2Pills() {
+      const container = document.getElementById('okinawaTier2Pills');
+      if (!container) return;
+
+      const pills = OKINAWA_TIER2_CONFIG[currentTier1] || OKINAWA_TIER2_CONFIG['all'];
+      container.innerHTML = pills.map(p => `
+        <button class="cat-tier2-btn ${currentTier2 === p.id ? 'active' : ''}" onclick="switchTier2('${p.id}', this)">
+          <span>${p.label}</span>
+        </button>
+      `).join('');
+    }
+
+    function switchTier2(subId, btn) {
+      currentTier2 = subId;
+      document.querySelectorAll('#okinawaTier2Pills .cat-tier2-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderOkinawaCards();
+    }
+
+    function filterByCategory(catKey, btn) {
+      switchTier1(catKey, btn);
+    }
+
+    function filterBySubCategory(subKey, btn) {
+      switchTier2(subKey, btn);
+    }
+
+    function ensureOkinawaBookingAff(url) {
+      if (!url) return 'https://www.booking.com/searchresults.zh-tw.html?ss=Okinawa&aid=2422002';
+      if (!url.includes('booking.com')) return url;
+      if (url.includes('aid=')) return url;
+      const sep = url.includes('?') ? '&' : '?';
+      return url + sep + 'aid=2422002';
+    }
+
+    function ensureOkinawaKlookAff(url) {
+      if (!url) return 'https://www.klook.com/zh-TW/city/38-okinawa-things-to-do/?aid=123436&utm_medium=affiliate-alwayson';
+      if (!url.includes('klook.com')) return url;
+      if (url.includes('aid=123436')) return url;
+      const sep = url.includes('?') ? '&' : '?';
+      return url + sep + 'aid=123436&utm_medium=affiliate-alwayson';
+    }
+
+    function renderOkinawaCards() {
+      const container = document.getElementById('okinawaCardsGrid');
+      if (!container) return;
+
+      let list = OKINAWA_SPOTS;
+      if (currentRegion !== 'all') {
+        list = list.filter(item => item.region === currentRegion);
+      }
+      if (currentTier1 !== 'all') {
+        list = list.filter(item => item.tier1 === currentTier1 || item.cat === currentTier1);
+      }
+      if (currentTier2 !== 'all') {
+        list = list.filter(item => item.subCat === currentTier2 || item.cat === currentTier2);
+      }
+
+      if (list.length === 0) {
+        container.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding:48px 20px; background:#FFF; border-radius:16px; border:1px dashed #BAE6FD; color:#64748B;">此分類在此區域暫無項目，建議切換「全島精選」或選擇其他主題查看。</div>';
+        return;
+      }
+
+      let html = '';
+      list.forEach(spot => {
+        const regionLabel = spot.region === 'north' ? '📍 北部名護' : (spot.region === 'central' ? '🌊 中部恩納' : (spot.region === 'south' ? '🛍️ 南部系滿' : '🏮 那霸市區'));
+        const catMap = {
+          kids: '🦖 親子公園',
+          dive: '🤿 慶良間浮潛',
+          beef: '🥩 頂級和牛',
+          izakaya: '🏮 民謠居酒屋',
+          michelin: '⭐ 米其林百名店',
+          ramen: '🍜 沖繩麵拉麵',
+          seafood: '🦞 漁港海鮮',
+          cafe: '☕ 海景咖啡',
+          shop: '🛍️ 逛街商場',
+          resort: '🏨 海景度假村',
+          summer: '☀️ 夏日玩法',
+          winter: '❄️ 冬季溫泉'
+        };
+        const catLabel = catMap[spot.subCat] || catMap[spot.cat] || '🌺 沖繩必訪';
+        const isResort = (spot.subCat === 'resort' || spot.cat === 'resort');
+        const hotelLink = ensureOkinawaBookingAff(spot.hotelUrl || 'https://www.booking.com/searchresults.zh-tw.html?ss=Okinawa');
+        const rawCtaUrl = ensureOkinawaKlookAff(ensureOkinawaBookingAff(spot.ctaUrl || 'https://www.klook.com/zh-TW/city/38-okinawa-things-to-do/?aid=123436&utm_medium=affiliate-alwayson'));
+        let cleanCtaText = spot.ctaText || '預約行程';
+        if (!isResort && !cleanCtaText.includes('Klook') && !cleanCtaText.includes('Booking')) {
+          cleanCtaText = cleanCtaText.replace(/[^\u4e00-\u9fa5]/g, '');
+          if (cleanCtaText.includes('一日包車') || cleanCtaText.includes('專車包車')) cleanCtaText = '親子包車';
+          else if (cleanCtaText.includes('租車自駕')) cleanCtaText = '預約自駕';
+          else if (cleanCtaText.includes('行程預訂')) cleanCtaText = '預約行程';
+          else if (cleanCtaText.length > 6) cleanCtaText = cleanCtaText.substring(0, 5);
+        }
+        const bookingBtnText = isResort ? 'Booking訂房' : 'Booking住宿';
+        const ctaBtnText = isResort ? 'Klook訂房' : cleanCtaText;
+        const isFav = typeof isFavorite === 'function' && isFavorite(spot.name);
+
+        html += `
+          <div class="spot-card">
+            <!-- 乾淨照片區：移除多餘貼紙，僅保留右上方精緻分類標籤 -->
+            <div class="spot-img-wrap">
+              <img class="spot-img" src="${spot.img}" alt="${spot.name}" loading="lazy">
+              <span class="spot-corner-tag">📍 ${regionLabel.replace(/^[^\s]+\s*/, '')} ｜ ${catLabel.replace(/^[^\s]+\s*/, '')}</span>
+              <button class="btn-card-fav ${isFav ? 'active' : ''}" data-fav-id="${spot.name}" onclick="toggleOkinawaFavorite('${spot.name}', event)" title="${isFav ? '已在行程收藏本' : '加入我的行程收藏'}">
+                ${getHeartSvg(isFav, 12)}
+              </button>
+            </div>
+            <div class="spot-body">
+              <div>
+                <h3 class="spot-title">${spot.name}</h3>
+                <div class="spot-sub">${spot.sub}</div>
+                <p class="spot-desc">${spot.desc}</p>
+              </div>
+
+              <!-- 底部行動按鈕：map / 租車自駕 / 推薦住宿 / 包車 (一整排文青極簡無框四鍵) -->
+              <div class="spot-actions-4col">
+                <a href="${spot.mapUrl}" target="_blank" rel="noopener noreferrer" class="btn-spot-col btn-spot-gray" title="Google Maps 導航">map</a>
+                <a href="https://afflink.one/s/FruK8" target="_blank" rel="noopener noreferrer" class="btn-spot-col btn-spot-lightblue" title="ToCoo! 沖繩自駕租車預約">租車自駕</a>
+                <a href="${hotelLink}" target="_blank" rel="noopener noreferrer" class="btn-spot-col btn-spot-darkblue" title="Booking.com 推薦住宿">推薦住宿</a>
+                <a href="${rawCtaUrl}" target="_blank" rel="noopener noreferrer" class="btn-spot-col btn-spot-gray" title="Klook 沖繩專車包車">包車</a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      container.innerHTML = html;
+    }
+
+    // 分類快篩切換
+    function filterByCategory(catKey, btn) {
+      currentCategory = catKey;
+      document.querySelectorAll('.cat-stamp-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderOkinawaCards();
+    }
+
+    // 地區切換選單邏輯
+    function toggleRegionMenu(e) {
+      if (e) e.stopPropagation();
+      const menu = document.getElementById('regionDropdownMenu');
+      if (menu) menu.classList.toggle('show');
+    }
+
+    function selectRegion(regionKey, label, item) {
+      currentRegion = regionKey;
+      const labelElem = document.getElementById('currentRegionLabel');
+      if (labelElem) labelElem.innerText = label;
+
+      document.querySelectorAll('.region-menu-item').forEach(m => m.classList.remove('active'));
+      if (item) item.classList.add('active');
+
+      const menu = document.getElementById('regionDropdownMenu');
+      if (menu) menu.classList.remove('show');
+
+      renderOkinawaCards();
+    }
+
+    // 點擊空白處關閉選單
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('regionDropdownMenu');
+      const trigger = document.getElementById('regionTriggerBtn');
+      if (menu && menu.classList.contains('show')) {
+        if (!menu.contains(e.target) && !trigger.contains(e.target)) {
+          menu.classList.remove('show');
+        }
+      }
+    });
+
+    // 一鍵複製 MapCode
+    function copyMapCode(code, btn) {
+      if (!code) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(() => {
+          showCopyToast(`已複製 MapCode: ${code} 🚀 車機導航直接貼上！`);
+          if (btn) {
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>✅ 已複製</span>';
+            btn.style.background = '#10B981';
+            btn.style.color = '#FFFFFF';
+            btn.style.borderColor = '#10B981';
+            setTimeout(() => {
+              btn.innerHTML = originalText;
+              btn.style.background = '';
+              btn.style.color = '';
+              btn.style.borderColor = '';
+            }, 2000);
+          }
+        }).catch(err => {
+          fallbackCopy(code);
+        });
+      } else {
+        fallbackCopy(code);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showCopyToast(`已複製 MapCode: ${text} 🚀`);
+      } catch (e) {
+        alert('MapCode: ' + text);
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showCopyToast(msg) {
+      const toast = document.getElementById('copyToast');
+      const textElem = document.getElementById('copyToastText');
+      if (!toast || !textElem) return;
+      textElem.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        const [spotsRes, itinRes] = await Promise.all([
+          fetch('data/okinawa_spots.json', { cache: 'no-store' }),
+          fetch('data/okinawa_itinerary.json', { cache: 'no-store' })
+        ]);
+        OKINAWA_SPOTS = await spotsRes.json();
+        ITINERARY_DATA = await itinRes.json();
+      } catch (e) {
+        console.error('沖繩資料載入失敗:', e);
+      }
+      renderTimelineHandbook('family');
+      renderOkinawaCards();
+      initOceanBubbles();
+    });
+
+    // 🫧 沖繩蔚藍海洋自動生成飄浮泡泡邏輯
+    function initOceanBubbles() {
+      const container = document.getElementById('oceanBubbles');
+      if (!container) return;
+
+      const bubbleCount = 22; // 常駐泡泡數量，優雅不卡頓
+      for (let i = 0; i < bubbleCount; i++) {
+        createBubble(container, true);
+      }
+
+      // 每隔 1.2 秒持續隨機冒出新生小泡泡
+      setInterval(() => {
+        if (container.children.length < 32) {
+          createBubble(container, false);
+        }
+      }, 1200);
+
+      // 滑鼠移動互動冒泡 (微量驚喜感)
+      const hero = document.getElementById('okinawaHero');
+      if (hero) {
+        let lastSpawn = 0;
+        hero.addEventListener('mousemove', (e) => {
+          const now = Date.now();
+          if (now - lastSpawn > 250) { // 限流避免過多
+            lastSpawn = now;
+            const rect = hero.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            createInteractiveBubble(container, x, y);
+          }
+        });
+      }
+    }
+
+    function createBubble(container, isInit) {
+      const bubble = document.createElement('div');
+      bubble.className = 'ocean-bubble';
+
+      const size = Math.floor(Math.random() * 26) + 10; // 10px ~ 36px
+      const left = Math.random() * 96 + 2; // 2% ~ 98%
+      const duration = (Math.random() * 6 + 7).toFixed(1); // 7s ~ 13s
+      const delay = isInit ? (Math.random() * 8).toFixed(1) : '0';
+
+      bubble.style.width = `${size}px`;
+      bubble.style.height = `${size}px`;
+      bubble.style.left = `${left}%`;
+      bubble.style.animationDuration = `${duration}s`;
+      bubble.style.animationDelay = `${delay}s`;
+
+      bubble.addEventListener('animationend', () => {
+        bubble.remove();
+      });
+      container.appendChild(bubble);
+    }
+
+    function createInteractiveBubble(container, x, y) {
+      const bubble = document.createElement('div');
+      bubble.className = 'ocean-bubble';
+      const size = Math.floor(Math.random() * 16) + 8;
+      bubble.style.width = `${size}px`;
+      bubble.style.height = `${size}px`;
+      bubble.style.left = `${x}px`;
+      bubble.style.bottom = `${container.clientHeight - y}px`;
+      bubble.style.animationDuration = '5.5s';
+      bubble.style.opacity = '0.9';
+      bubble.addEventListener('animationend', () => {
+        bubble.remove();
+      });
+      container.appendChild(bubble);
+    }
+
+    // 啟動泡泡
+    setTimeout(initOceanBubbles, 100);
+
+
+    function openOkinawaSopModal() {
+      const modal = document.getElementById('modalOkinawaSop');
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+    function closeOkinawaSopModal() {
+      const modal = document.getElementById('modalOkinawaSop');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+    function closeOkinawaSopModalOnBackdrop(e) {
+      if (e.target.id === 'modalOkinawaSop') {
+        closeOkinawaSopModal();
+      }
+    }
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        closeOkinawaSopModal();
+      }
+    });
+
+  </script>
+
+  <!-- 🛡️ 沖繩租車自駕注意、保險理賠 ＆ 緊急救援完整手冊彈出視窗 (Modal) -->
+  <div id="modalOkinawaSop" class="sop-modal-backdrop" onclick="closeOkinawaSopModalOnBackdrop(event)">
+    <div class="sop-modal-dialog">
+      <div class="sop-modal-header">
+        <div>
+          <div class="sop-modal-pill">🏝️ OKINAWA ROAD TRIP GUIDE ｜ 沖繩自駕安全防護手冊</div>
+          <h3 class="sop-modal-title">沖繩租車自駕注意、保險理賠 ＆ 緊急救援完整指南</h3>
+        </div>
+        <button type="button" class="sop-modal-close" onclick="closeOkinawaSopModal()" aria-label="關閉視窗">✕</button>
+      </div>
+
+      <div class="sop-modal-body">
+        <div class="okinawa-sop-btn-group" style="margin-bottom: 20px;">
+          <a href="https://afflink.one/s/FruK8" target="_blank" class="btn-sop-tocoo">前往 ToCoo! 租車比價</a>
+          <a href="https://www.klook.com/zh-TW/car-rentals/?aid=123436&utm_medium=affiliate-alwayson" target="_blank"
+            class="btn-sop-klook">Klook 租車比價</a>
+          <a href="https://www.klook.com/zh-TW/search/result/?query=%E6%97%A5%E6%9C%AC%E7%B6%B2%E5%8D%A1+%E9%80%9A%E8%A9%B1&aid=123436&utm_medium=affiliate-alwayson"
+            target="_blank" class="btn-sop-sim">可打電話網卡/eSIM</a>
+        </div>
+
+        <!-- 🚨 法律強制性警示卡 -->
+        <div class="okinawa-sop-alert">
+          <div class="okinawa-sop-alert-badge">⚠️ 法律強制規定</div>
+          <div class="okinawa-sop-alert-text">
+            <b>【小擦撞未報警，保險依法全額不予理賠】</b><br>
+            依據日本《道路交通法》第 72 條規定，不論車損多輕微（例如倒車擦撞牆角、刮傷後視鏡、自撞電線桿），<b>駕駛人均負有立即通報警察之法定義務</b>。<br>
+            若未於事故現場立即撥打 110 報警取得<b>「交通事故證明編號」</b>而逕自離去，依法視同「肇事逃逸（当て逃げ）」，<b>所有購買之 CDW、NOC
+              及信用卡旅遊不便險依法完全失效，所有修復費用與營業損失全由駕駛人承擔</b>！
+          </div>
+        </div>
+
+        <!-- 6 大核心自駕手冊模組 -->
+        <div class="okinawa-sop-grid">
+          <!-- 模組 1: 依國籍動態審查證件 -->
+          <script>
+            window.switchLicenseCountry = function (countryKey, btn) {
+              try {
+                var card = btn.closest('#license-sop-card') || document.getElementById('license-sop-card');
+                if (!card) return;
+
+                // 按鈕切換
+                var btns = card.querySelectorAll('.btn-lic-tab');
+                for (var i = 0; i < btns.length; i++) {
+                  btns[i].style.background = 'transparent';
+                  btns[i].style.color = '#64748B';
+                }
+                btn.style.background = '#0284C7';
+                btn.style.color = '#FFFFFF';
+
+                // 面板切換
+                var panels = card.querySelectorAll('.lic-panel');
+                for (var j = 0; j < panels.length; j++) {
+                  panels[j].style.display = 'none';
+                }
+                var target = document.getElementById('lic-panel-' + countryKey);
+                if (target) {
+                  target.style.display = 'block';
+                }
+              } catch (e) {
+                console.error('switchLicenseCountry error:', e);
+              }
+            };
+          </script>
+          <div class="okinawa-sop-card" id="license-sop-card">
+            <div class="sop-card-tag">MODULE 01 ｜ 證件審查（依國籍選擇）</div>
+            <h4 class="sop-card-h4" style="margin-bottom:12px;">必備正本證件查詢</h4>
+
+            <!-- 多國籍動態切換 Tab 按鈕 -->
+            <div
+              style="display:flex; gap:6px; margin-bottom:14px; background:#F1F5F9; padding:4px; border-radius:10px; flex-wrap:wrap;">
+              <button type="button" onclick="switchLicenseCountry('tw', this)" class="btn-lic-tab active"
+                style="flex:1; min-width:85px; padding:7px 10px; font-size:0.8rem; font-weight:700; border:none; border-radius:7px; cursor:pointer; background:#0284C7; color:#FFFFFF; transition:all 0.2s;">
+                🇹🇼 台灣
+              </button>
+              <button type="button" onclick="switchLicenseCountry('hkmoc', this)" class="btn-lic-tab"
+                style="flex:1; min-width:85px; padding:7px 10px; font-size:0.8rem; font-weight:700; border:none; border-radius:7px; cursor:pointer; background:transparent; color:#64748B; transition:all 0.2s;">
+                🇭🇰 港澳
+              </button>
+              <button type="button" onclick="switchLicenseCountry('idp', this)" class="btn-lic-tab"
+                style="flex:1; min-width:85px; padding:7px 10px; font-size:0.8rem; font-weight:700; border:none; border-radius:7px; cursor:pointer; background:transparent; color:#64748B; transition:all 0.2s;">
+                🇸🇬 歐美/新加
+              </button>
+              <button type="button" onclick="switchLicenseCountry('eu', this)" class="btn-lic-tab"
+                style="flex:1; min-width:85px; padding:7px 10px; font-size:0.8rem; font-weight:700; border:none; border-radius:7px; cursor:pointer; background:transparent; color:#64748B; transition:all 0.2s;">
+                🇩🇪 德/法/瑞
+              </button>
+              <button type="button" onclick="switchLicenseCountry('cn', this)" class="btn-lic-tab"
+                style="flex:1; min-width:85px; padding:7px 10px; font-size:0.8rem; font-weight:700; border:none; border-radius:7px; cursor:pointer; background:transparent; color:#64748B; transition:all 0.2s;">
+                🇨🇳 中國
+              </button>
+            </div>
+
+            <!-- 內容面版：台灣 -->
+            <div id="lic-panel-tw" class="lic-panel" style="display:block;">
+              <div style="font-size:0.88rem; color:#334155; line-height:1.75; margin-bottom:12px;">
+                <div
+                  style="font-weight:800; color:#0369A1; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                  <span>🇹🇼 台灣旅客 ｜ 必備 3 樣正本證件</span>
+                  <span
+                    style="font-size:0.72rem; padding:1px 6px; background:#E0F2FE; color:#0369A1; border-radius:4px;">雙邊互惠協定</span>
+                </div>
+                • <b>台灣護照正本</b>（入境效期內）。<br>
+                • <b>台灣駕照正本</b>（過期請務必至監理所更換新版無期限證照）。<br>
+                • <b>監理所核發之「日文譯本正本」</b>（紙本正本，出國前至各地監理所申辦 100元）。
+              </div>
+              <div class="sop-card-tip"
+                style="background:#FFF1F2; border:1px solid #FECDD3; padding:10px 12px; border-radius:8px; font-size:0.8rem; color:#BE123C; line-height:1.5;">
+                ⚠️ <b>國際駕照 (IDP) 在日本完全無效！</b>日本依雙邊協議僅承認「台灣駕照正本 ＋ 日文譯本」，持台灣國際駕照門市將直接拒絕出車。
+              </div>
+            </div>
+
+            <!-- 內容面版：香港 / 澳門 -->
+            <div id="lic-panel-hkmoc" class="lic-panel" style="display:none;">
+              <div style="font-size:0.88rem; color:#334155; line-height:1.75; margin-bottom:12px;">
+                <div
+                  style="font-weight:800; color:#0F766E; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                  <span>🇭🇰 香港 / 🇲🇴 澳門旅客 ｜ 必備 3 樣正本證件</span>
+                  <span
+                    style="font-size:0.72rem; padding:1px 6px; background:#CCFBF1; color:#0F766E; border-radius:4px;">1949日內瓦公約</span>
+                </div>
+                • <b>香港／澳門特區護照正本</b>（有效期內）。<br>
+                • <b>香港／澳門正式駕駛執照正本</b>（不接受暫准駕駛執照 P牌）。<br>
+                • <b>國際駕駛許可證 (IDP) 正本</b>（必須符合 1949 年日內瓦公約版本，有效期 1 年）。
+              </div>
+              <div
+                style="background:#F0FDF4; border:1px solid #BBF7D0; padding:10px 12px; border-radius:8px; font-size:0.8rem; color:#15803D; line-height:1.5;">
+                ✅ <b>港澳旅客須知：</b>取車時門市人員會同時核對「本國駕駛執照」與「國際駕照 (IDP)」，兩者皆為必備，缺一不可。
+              </div>
+            </div>
+
+            <!-- 內容面版：歐美 / 新加坡 / 國際公約國 -->
+            <div id="lic-panel-idp" class="lic-panel" style="display:none;">
+              <div style="font-size:0.88rem; color:#334155; line-height:1.75; margin-bottom:12px;">
+                <div
+                  style="font-weight:800; color:#2563EB; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                  <span>🇸🇬 新加坡 / 🇺🇸 美國 / 🇬🇧 英國 / 🇦🇺 澳洲等</span>
+                  <span
+                    style="font-size:0.72rem; padding:1px 6px; background:#DBEAFE; color:#2563EB; border-radius:4px;">1949日內瓦公約國</span>
+                </div>
+                • <b>本國護照正本</b>（具有效入境日本許可／免簽資格）。<br>
+                • <b>本國有效正式駕駛執照正本</b>。<br>
+                • <b>國際駕照 (International Driving Permit) 正本</b>（必須蓋有 1949 年 Geneva Convention 印章）。
+              </div>
+              <div
+                style="background:#EFF6FF; border:1px solid #BFDBFE; padding:10px 12px; border-radius:8px; font-size:0.8rem; color:#1E40AF; line-height:1.5;">
+                ℹ️ <b>公約版本核對：</b>日本僅承認 1949 年日內瓦公約版本 IDP；若持有的是 1968 年維也納公約版本 IDP 則無法在日本使用。
+              </div>
+            </div>
+
+            <!-- 內容面版：德 / 法 / 瑞 / 比 / 摩納哥 -->
+            <div id="lic-panel-eu" class="lic-panel" style="display:none;">
+              <div style="font-size:0.88rem; color:#334155; line-height:1.75; margin-bottom:12px;">
+                <div
+                  style="font-weight:800; color:#7C3AED; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                  <span>🇩🇪 德國 / 🇫🇷 法國 / 🇨🇭 瑞士 / 🇧🇪 比利時 / 🇲🇨 摩納哥</span>
+                  <span
+                    style="font-size:0.72rem; padding:1px 6px; background:#F3E8FF; color:#7C3AED; border-radius:4px;">官方指定譯本制</span>
+                </div>
+                • <b>本國護照正本</b>。<br>
+                • <b>本國駕駛執照正本</b>。<br>
+                • <b>官方認可機構核發之日文翻譯本</b>（由各國駐日大使館、領事館或日本汽車聯盟 JAF 出具）。
+              </div>
+              <div
+                style="background:#FAF5FF; border:1px solid #E9D5FF; padding:10px 12px; border-radius:8px; font-size:0.8rem; color:#6B21A8; line-height:1.5;">
+                ℹ️ <b>特定國家專用：</b>上述 5 國與台灣相同，不適用本國國際駕照，必須持「本國駕照 ＋ 官方指定日文譯本」出車。
+              </div>
+            </div>
+
+            <!-- 內容面版：中國大陸 -->
+            <div id="lic-panel-cn" class="lic-panel" style="display:none;">
+              <div style="font-size:0.88rem; color:#334155; line-height:1.75; margin-bottom:12px;">
+                <div
+                  style="font-weight:800; color:#DC2626; margin-bottom:6px; display:flex; align-items:center; gap:6px;">
+                  <span>🇨🇳 中國大陸旅客 ｜ 日本駕照規範說明</span>
+                  <span
+                    style="font-size:0.72rem; padding:1px 6px; background:#FEE2E2; color:#DC2626; border-radius:4px;">無法直接租車</span>
+                </div>
+                • 中國大陸尚未加入 1949 年《日內瓦道路交通公約》，因此<b>中國駕照在出國辦理的任何「國際駕照翻譯認證件 / KIDA / IDL」在日本皆無法律效力</b>。<br>
+                • 日本所有正規租車門市<b>均無法接受中國駕照或翻譯公證件取車</b>。
+              </div>
+              <div
+                style="background:#FFF1F2; border:1px solid #FECDD3; padding:10px 12px; border-radius:8px; font-size:0.8rem; color:#BE123C; line-height:1.5;">
+                💡 <b>建議出行方案：</b>建議預約本站提供之<b>「包車一日遊 / 專車接送」</b>服務，由日本綠牌專業司機隨行接送，無需自駕也能舒適遊覽全日本！
+              </div>
+            </div>
+
+            <!-- 跳轉 ToCoo! 預約比價連結條 -->
+            <div
+              style="margin-top:14px; padding-top:12px; border-top:1px dashed #BAE6FD; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.78rem; color:#0369A1; font-weight:700;">🚗 證件備齊立即比價租車：</span>
+              <a href="https://afflink.one/s/FruK8" target="_blank" rel="noopener noreferrer"
+                style="font-size:0.82rem; font-weight:800; color:#0284C7; text-decoration:none; display:inline-flex; align-items:center; gap:4px; padding:3px 8px; border-radius:6px; background:#E0F2FE; transition:all 0.2s;"
+                onmouseover="this.style.background='#0284C7'; this.style.color='#FFF';"
+                onmouseout="this.style.background='#E0F2FE'; this.style.color='#0284C7';">
+                前往 ToCoo! 租車比價 ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- 模組 2: 取還流程 -->
+          <div class="okinawa-sop-card">
+            <div class="sop-card-tag">MODULE 02 ｜ 取還流程</div>
+            <h4 class="sop-card-h4">取車交車 ＆ 加油還車 SOP</h4>
+            <div class="sop-card-p">
+              • <b>交車 360 度錄影存證</b>：取車時會同店員以手機錄影車身刮痕、輪框磨損、擋風玻璃小石痕，避免還車糾紛。<br>
+              • <b>滿油還車（満タン返却）</b>：還車前務必於門市 5 公里內的正規加油站加滿指定油品（紅色 Regular），並<b>妥善保留加油收據</b>供店員查驗時間。
+            </div>
+            <div
+              style="margin-top:14px; padding-top:10px; border-top:1px dashed #E2E8F0; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.76rem; color:#64748B;">全日本跨區還車方案</span>
+              <a href="https://afflink.one/s/FruK8" target="_blank" rel="noopener noreferrer"
+                style="font-size:0.8rem; font-weight:700; color:#0284C7; text-decoration:none;">
+                ToCoo! 異地還車預約 ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- 模組 3: 保險 CDW vs NOC -->
+          <div class="okinawa-sop-card">
+            <div class="sop-card-tag">MODULE 03 ｜ 保險剖析</div>
+            <h4 class="sop-card-h4">CDW 免責與 NOC 營業損失</h4>
+            <div class="sop-card-p">
+              • <b>CDW (免責補償)</b>：免除物損與車損的自負額（約 5~10 萬日圓）。<br>
+              • <b>NOC (營業損失)</b>：車輛進廠維修期間租車公司的營業補償（自力開回賠 2 萬日圓，需拖吊賠 5 萬日圓）。<br>
+              • <b>最佳解法</b>：預訂時加購<b>全額全險（CDW + NOC 雙免除）</b>，達成真正的 0 自負額無痛安心自駕。
+            </div>
+            <div
+              style="margin-top:14px; padding-top:10px; border-top:1px dashed #E2E8F0; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.76rem; color:#64748B;">含 T.A.S. 零自負額全險方案</span>
+              <a href="https://afflink.one/s/FruK8" target="_blank" rel="noopener noreferrer"
+                style="font-size:0.8rem; font-weight:700; color:#0284C7; text-decoration:none;">
+                ToCoo! 預訂安心全險 ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- 模組 4: 幼兒法規 -->
+          <div class="okinawa-sop-card">
+            <div class="sop-card-tag">MODULE 04 ｜ 幼兒法規</div>
+            <h4 class="sop-card-h4">未滿 6 歲強制兒童汽座</h4>
+            <div class="sop-card-p">
+              • 依日本道路交通法，<b>未滿 6 歲幼兒乘車依法強制安裝兒童安全座椅</b>。<br>
+              • 租車公司若發現有幼童隨行但未預約安裝汽座，<b>依法有權直接拒絕出車</b>！<br>
+              • 分類：嬰兒提籃 (0~1歲)、幼兒座椅 (1~4歲)、學童增高墊 (4歲以上)。
+            </div>
+            <div
+              style="margin-top:14px; padding-top:10px; border-top:1px dashed #E2E8F0; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.76rem; color:#64748B;">預訂享免費／優惠加選汽座</span>
+              <a href="https://afflink.one/s/FruK8" target="_blank" rel="noopener noreferrer"
+                style="font-size:0.8rem; font-weight:700; color:#0284C7; text-decoration:none;">
+                ToCoo! 汽座家庭車預約 ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- 模組 5: 爆胎失竊 -->
+          <div class="okinawa-sop-card">
+            <div class="sop-card-tag">MODULE 05 ｜ 爆胎失竊</div>
+            <h4 class="sop-card-h4">輪胎破損與車內物品遭竊</h4>
+            <div class="sop-card-p">
+              • <b>行駛爆胎</b>：切換危險燈靠邊停，放置三角反光牌於車後 50m，撥打保險救援卡上的 JAF 救援專線。<br>
+              • <b>物品遭竊</b>：在景點或海灘切勿留護照或現金於車內；若遭破窗竊盜，立即撥打 110 取得<b>「盜難證明 (Tounan Shomei)」</b>以利申請旅遊不便險。
+            </div>
+            <div
+              style="margin-top:14px; padding-top:10px; border-top:1px dashed #E2E8F0; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.76rem; color:#64748B;">自駕附 24H 道路救援保證</span>
+              <a href="https://afflink.one/s/FruK8" target="_blank" rel="noopener noreferrer"
+                style="font-size:0.8rem; font-weight:700; color:#0284C7; text-decoration:none;">
+                ToCoo! 專屬救援方案 ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- 模組 6: 通訊聯絡 -->
+          <div class="okinawa-sop-card">
+            <div class="sop-card-tag">MODULE 06 ｜ 通訊聯絡</div>
+            <h4 class="sop-card-h4">緊急聯絡與必備通話網卡</h4>
+            <div class="sop-card-p">
+              • <b>警察 110 ｜ 救護 119 ｜ JAF 救援 #8139</b><br>
+              • <b>台灣駐那霸辦事處急難救助電話</b>：090-1942-1107（24H）<br>
+              • <b>強烈建議</b>：自駕請務必備妥<b>「可打電話的日本 SIM / eSIM 網卡」</b>（撥打 110/119 與救援無法靠純上網卡！）。
+            </div>
+            <div
+              style="margin-top:14px; padding-top:10px; border-top:1px dashed #E2E8F0; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:0.76rem; color:#64748B;">全日本比價特惠預約</span>
+              <a href="https://afflink.one/s/FruK8" target="_blank" rel="noopener noreferrer"
+                style="font-size:0.8rem; font-weight:700; color:#0284C7; text-decoration:none;">
+                前往 ToCoo! 即時比價 ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 救命口譯救援錦囊 -->
+        <div class="okinawa-sop-footer-tip">
+          <div class="sop-footer-left">
+            <b>💡 事故現場不會日文怎麼辦？</b> 先說：「<b>Tourist, English please.</b>」並朗讀身旁最近電線桿或公車站牌上的綠色地名編號。
+          </div>
+          <a href="https://www.klook.com/zh-TW/search/result/?query=%E6%97%A5%E6%9C%AC%E7%B6%B2%E5%8D%A1+%E9%80%9A%E8%A9%B1&aid=123436&utm_medium=affiliate-alwayson"
+            target="_blank" class="btn-sop-sim-action">預約日本通話網卡 ➔</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    // 🌐 全站外跳連結多國語系安全攔截器 (保證 100% 帶入專屬分潤參數與正確目標語言)
+    document.addEventListener('click', function (e) {
+      const a = e.target.closest('a');
+      if (!a || !a.href) return;
+      const href = a.href;
+      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+
+      if (href.includes('trip.com')) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        if (href.includes('/t/fgyJcXow1X2')) return;
+        const domMap = { 'en': 'https://www.trip.com', 'th': 'https://th.trip.com', 'ja': 'https://jp.trip.com', 'ko': 'https://kr.trip.com', 'zh-CN': 'https://hk.trip.com', 'zh-TW': 'https://tw.trip.com' };
+        const base = domMap[savedLang] || 'https://tw.trip.com';
+        let newHref = href.replace(/https:\/\/(tw|jp|th|kr|hk|www)\.trip\.com/, base);
+        if (!newHref.includes('Allianceid=')) {
+          const sep = newHref.includes('?') ? '&' : '?';
+          newHref += `${sep}Allianceid=9507030&SID=325761227&trip_sub1=%E6%97%A5%E6%9C%AC%E5%A0%B1%E5%A0%B1&trip_sub3=D20905663&linkhub_token=sl_fgyJcXow1X2`;
+        }
+        a.href = newHref;
+      } else if (href.includes('klook.com')) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        const locMap = { 'en': 'en-US', 'th': 'th', 'ja': 'ja', 'ko': 'ko', 'zh-CN': 'zh-CN', 'zh-TW': 'zh-TW' };
+        const loc = locMap[savedLang] || 'zh-TW';
+        let newHref = href.replace(/klook\.com\/[a-zA-Z_\-]+(\/|$)/, `klook.com/${loc}/`);
+        if (!newHref.includes('aid=')) {
+          const sep = newHref.includes('?') ? '&' : '?';
+          newHref += `${sep}aid=123436&utm_medium=affiliate-alwayson`;
+        }
+        a.href = newHref;
+      } else if (href.includes('booking.com')) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        const locMap = { 'en': 'en-gb', 'th': 'th', 'ja': 'ja', 'ko': 'ko', 'zh-CN': 'zh-cn', 'zh-TW': 'zh-tw' };
+        const curMap = { 'en': 'USD', 'th': 'THB', 'ja': 'JPY', 'ko': 'KRW', 'zh-CN': 'CNY', 'zh-TW': 'TWD' };
+        const loc = locMap[savedLang] || 'zh-tw';
+        const cur = curMap[savedLang] || 'TWD';
+        let newHref = href.replace(/searchresults\.[a-z\-]+\.html/, `searchresults.${loc}.html`);
+        if (!newHref.includes('aid=')) {
+          const sep = newHref.includes('?') ? '&' : '?';
+          newHref += `${sep}aid=2422002`;
+        }
+        if (!newHref.includes('selected_currency=')) {
+          newHref += `&selected_currency=${cur}`;
+        }
+        a.href = newHref;
+      }
+    });
+  </script>
+
+  <script src="/js/tabi_core.js"></script>
+
+  <script>
+    function switchLicenseCountry(countryKey, btn) {
+      const container = btn.closest('#license-sop-card') || document;
+      container.querySelectorAll('.btn-lic-tab').forEach(b => {
+        b.style.background = 'transparent';
+        b.style.color = '#64748B';
+      });
+      btn.style.background = '#0284C7';
+      btn.style.color = '#FFFFFF';
+
+      container.querySelectorAll('.lic-panel').forEach(p => p.style.display = 'none');
+      const targetPanel = container.querySelector('#lic-panel-' + countryKey);
+      if (targetPanel) {
+        targetPanel.style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

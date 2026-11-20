@@ -1,0 +1,27 @@
+{
+  "name": "jp_report",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qn5566/jp_report.git"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "parse5": "^8.1.1",
+    "vite": "^8.3.8"
+  },
+  "private": true,
+  "type": "module",
+  "description": "日本旅遊報報：旅遊攻略與聯盟導購多頁式網站",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check-project.mjs",
+    "check:dist": "node scripts/check-project.mjs dist",
+    "test": "playwright test"
+  }
+}

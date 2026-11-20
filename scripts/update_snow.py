@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""每日更新靜態雪況數據 -> data/snow_today.json
+"""每日更新靜態雪況數據 -> public/data/snow_today.json
 
 資料來源：Open-Meteo 免費預報 API（免 API Key）。
 只使用 Python 標準函式庫，無需安裝任何套件。
@@ -25,8 +25,7 @@ LOCATIONS = [
 ]
 
 API = "https://api.open-meteo.com/v1/forecast"
-OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "snow_today.json")
-OUT_APP = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "app", "data", "snow_today.json")
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "public", "data", "snow_today.json")
 
 
 def fetch(loc):
@@ -89,11 +88,10 @@ def main():
         },
     }
 
-    for path in (OUT, OUT_APP):
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(out, f, ensure_ascii=False, indent=2)
-            f.write("\n")
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+        f.write("\n")
     print(json.dumps(out, ensure_ascii=False, indent=2))
 
 

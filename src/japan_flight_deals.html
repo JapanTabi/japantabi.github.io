@@ -1,0 +1,3212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/images/japan_tabi_logo.png">
+  <title>日本空港手帖 ｜ 旅の始まりと終わり ｜ 日旅報報 JAPAN TABI 官方推薦</title>
+
+  <meta name="description"
+    content="全網 500+ 航空公司直連比價！即時查詢台北飛東京、台北飛大阪、泰國曼谷飛日本、香港飛札幌特惠機票。提供直飛航班價格日曆、廉航比價、行李額度與 30 天安心低價保障。">
+  <meta name="keywords" content="日本機票, 台北飛東京機票, 台北飛大阪機票, 曼谷飛日本機票, Trip.com機票比價, 日本廉價航空, 成田機場特價, 關西機場機票, 札幌新千歲機票">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="日本空港手帖 ｜ 旅の始まりと終わり ｜ 日旅報報">
+  <meta property="og:description" content="即時查詢台北、曼谷、香港直飛日本各航點最平機票！500+航空即時比價，30天安心開票保障。">
+  <meta property="og:image" content="./images/flight_deals_hero_fuji.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- JSON-LD 結構化資料 (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "日旅報報 JAPAN TABI 機票比價專區",
+    "description": "即時全網搜尋全球飛往日本各航點最優票價，提供台北、泰國、香港直飛日本比價服務",
+    "url": "https://tw.trip.com",
+    "priceRange": "NT$ 4,120 - NT$ 28,000",
+    "currenciesAccepted": "TWD, THB, HKD, JPY, USD"
+  }
+  </script>
+
+  <!-- Editorial Typography: Kinfolk & Cereal Aesthetic (與 japan_special_edition.html 同步) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Shippori+Mincho:wght@400;600;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@400;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+/* 🌟 日之丸朱紅雙環 Logo (54px) */
+
+/* 🌐 前台多國語言切換器 (保留外框與地球 ICON) */
+
+@keyframes langFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+/* 🎨 四大精確莫蘭迪色號規範 (Strict 4-Palette Specification) */
+    :root {
+      --font-serif: 'Cormorant Garamond', 'Noto Serif TC', Georgia, serif;
+      --font-kanji: 'Shippori Mincho', 'Noto Serif TC', serif;
+      --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-main: 'Outfit', 'Shippori Mincho', 'Noto Serif TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-en: 'Cormorant Garamond', 'Outfit', serif;
+
+      --ink-charcoal: #2D3748;
+      --sub-morandi: #718096;
+
+      /* 02 | Smoky Pink */
+      --color-smoky-100: #F2E9E7;
+      --color-smoky-200: #E4D6D6;
+      --color-smoky-300: #CBAEAE;
+      --color-smoky-400: #9A8282;
+
+      /* 03 | Greige */
+      --color-greige-100: #E9E6E0;
+      --color-greige-200: #D2CCC2;
+      --color-greige-300: #B1A89C;
+      --color-greige-400: #7F776E;
+
+      /* 06 | Warm Gray */
+      --color-warmgray-100: #EDEAE6;
+      --color-warmgray-200: #D8D2C8;
+      --color-warmgray-300: #B9B1A6;
+      --color-warmgray-400: #8A8377;
+
+      /* 07 | Terracotta (核心轉換下單色) */
+      --color-terracotta-100: #F3E6E2;
+      --color-terracotta-200: #E2C4BA;
+      --color-terracotta-300: #D19989;
+      --color-terracotta-400: #B46B5E;
+
+      --washi-warm-bg: #FAF9F6;
+      --border-morandi: #D2CCC2;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      color: var(--ink-charcoal);
+      min-height: 100vh;
+      background: var(--washi-warm-bg);
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .brand-title-zh {
+      font-family: var(--font-kanji);
+    }
+
+.header-util-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #475569;
+      text-decoration: none;
+      background: #FFFFFF;
+      border: 1px solid var(--border-morandi);
+      transition: all 0.2s;
+    }
+
+    .header-util-btn:hover {
+      background: var(--color-warmgray-100);
+      color: #1E293B;
+    }
+
+    .header-util-btn.active {
+      background: var(--color-terracotta-100);
+      border-color: var(--color-terracotta-200);
+      color: var(--color-terracotta-400);
+      font-weight: 800;
+    }
+
+    /* 🏔️ 英雄視覺背景區塊 (使用 Image 2 寬幅雪山森林美景) */
+    /* ===============================================================
+       ⛩️ 專業型旅遊特刊：神社樓門大封面 Hero (Cover Editorial - 圖一風格)
+       =============================================================== */
+    .temple-hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 540px;
+      height: 64vh;
+      max-height: 680px;
+      background: #1E293B url('/images/hero_kyoto_ruriko_autumn.jpg') center center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 24px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    /* 刊頭完全無底色塊，純粹乾淨日雜文字排版 (Pure Editorial Typography) */
+    .mag-vertical-title-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0;
+    }
+
+.mag-title-eyebrow {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 5px;
+      margin-bottom: 14px;
+      opacity: 0.95;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    /* 第一行主標：日本空港手帖 */
+    .mag-title-main {
+      font-family: 'Shippori Mincho', 'Noto Serif TC', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #FFFFFF;
+      letter-spacing: 0.18em;
+      line-height: 1.15;
+      margin: 0;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    /* 分隔連接豎線 ｜ */
+    .mag-title-divider-line {
+      display: block;
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 6px 0;
+      line-height: 1;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    /* 第二行副標：旅の始まりと終わり */
+    .mag-title-sub-jp {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      letter-spacing: 0.22em;
+      line-height: 1.25;
+      margin: 0;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 640px) {
+      .temple-hero-section {
+        min-height: 420px;
+        height: 50vh;
+      }
+
+      .mag-title-eyebrow {
+        font-size: 0.76rem;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+      }
+
+      .mag-title-main {
+        font-size: 2.05rem;
+        letter-spacing: 0.12em;
+      }
+
+      .mag-title-divider-line {
+        font-size: 1.1rem;
+        margin: 4px 0;
+      }
+
+      .mag-title-sub-jp {
+        font-size: 1.3rem;
+        letter-spacing: 0.15em;
+      }
+    }
+
+    /* ===============================================================
+   📰 日雜感左欄畫廊排版 (Airport Editorial Gallery & Collage)
+   =============================================================== */
+    .airport-showcase-grid {
+      display: grid;
+      grid-template-columns: 46% 54%;
+      gap: 26px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .airport-showcase-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .airport-left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* 主大圖 (Hero Feature Card) */
+    .airport-hero-photo-card {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      height: 270px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      background: #0F172A;
+    }
+
+    .airport-hero-photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .airport-hero-photo-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .airport-photo-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(15, 23, 42, 0.8);
+      color: #FFFFFF;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      z-index: 2;
+    }
+
+    .airport-photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 24px 16px 12px 16px;
+      background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.85) 100%);
+      color: #FFFFFF;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    /* 雙格日雜次圖剪影 (Two-Column Editorial Sub-Cards) */
+    .airport-gallery-sub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .airport-sub-photo-card {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 140px;
+      background: #0F172A;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+      border: 1px solid #E2E8F0;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .airport-sub-photo-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+      border-color: #CBD5E1;
+    }
+
+    .airport-sub-photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .airport-sub-photo-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .sub-photo-badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: rgba(15, 23, 42, 0.75);
+      color: #FFFFFF;
+      backdrop-filter: blur(4px);
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    .sub-photo-meta {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px 10px 8px 10px;
+      background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.9) 100%);
+      color: #FFFFFF;
+      z-index: 2;
+    }
+
+    .sub-photo-title {
+      font-size: 0.8rem;
+      font-weight: 900;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sub-photo-desc {
+      font-size: 0.68rem;
+      color: #CBD5E1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* 日雜風微語錄詩句 (Editorial Micro-Quote Banner) */
+    .airport-editorial-quote-box {
+      background: #FAF8F5;
+      border-left: 3px solid #1E3A8A;
+      border-radius: 0 12px 12px 0;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .quote-jp-text {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #1E293B;
+      letter-spacing: 1px;
+    }
+
+    .quote-zh-text {
+      font-size: 0.74rem;
+      color: #64748B;
+      font-weight: 500;
+    }
+
+/* ===============================================================
+       🗾 全日本空港專區 ＆ 散策特惠中心完整專業樣式 (Airport Editorial Hub)
+       =============================================================== */
+    .airport-magazine-hub-section {
+      max-width: 1200px;
+      margin: 40px auto 70px auto;
+      padding: 0 20px;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .airport-magazine-main-card {
+      background: #FFFFFF;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 24px;
+      box-shadow: 0 16px 45px rgba(30, 41, 59, 0.07);
+      overflow: hidden;
+    }
+
+    /* ⛩️ 地區切換頂列 (Region Switch Bar) */
+    .airport-region-bar-wrap {
+      background: #FFFFFF;
+      border-bottom: 1.5px solid #E2E8F0;
+      padding: 0 20px;
+      display: flex;
+      align-items: stretch;
+      gap: 24px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .airport-region-bar-wrap::-webkit-scrollbar {
+      display: none;
+    }
+
+    .airport-region-tab-btn {
+      background: transparent;
+      border: none;
+      border-bottom: 2.5px solid transparent;
+      padding: 14px 4px 12px 4px;
+      border-radius: 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #64748B;
+      cursor: pointer;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.2s ease;
+      box-shadow: none;
+      position: relative;
+    }
+
+    .airport-region-tab-btn:hover {
+      background: transparent;
+      border-color: #CBD5E1;
+      color: #0F172A;
+    }
+
+    .airport-region-tab-btn.active {
+      background: transparent;
+      color: #1E3A8A;
+      font-weight: 900;
+      border-bottom: 2.5px solid #1E3A8A;
+      box-shadow: none;
+    }
+
+    /* ✈️ 該地區所屬空港按鈕列 (Airport Selector Pill Bar) */
+    .airport-selector-bar {
+      padding: 14px 20px;
+      background: #FFFFFF;
+      border-bottom: 1.5px solid #F1F5F9;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .airport-pill-btn {
+      background: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 12px;
+      padding: 9px 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: #334155;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    }
+
+    .airport-pill-btn:hover {
+      border-color: #3B82F6;
+      background: #EFF6FF;
+      color: #1D4ED8;
+      transform: translateY(-1px);
+    }
+
+    .airport-pill-btn.active {
+      background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 100%);
+      color: #FFFFFF;
+      border-color: #1E3A8A;
+      box-shadow: 0 4px 14px rgba(29, 78, 216, 0.3);
+    }
+
+    .airport-pill-btn .pill-price {
+      font-size: 0.78rem;
+      font-weight: 900;
+      color: #E11D48;
+      background: #FFF1F2;
+      padding: 2px 7px;
+      border-radius: 999px;
+      border: 1px solid #FECDD3;
+    }
+
+    .airport-pill-btn.active .pill-price {
+      background: rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      border-color: rgba(255, 255, 255, 0.35);
+    }
+
+    /* 📖 【空港散策＆特惠中心】主展示區塊 (Featured Showcase) */
+    .airport-showcase-container {
+      padding: 26px 28px 36px 28px;
+    }
+
+    .airport-showcase-title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #F1F5F9;
+    }
+
+    .airport-showcase-h3 {
+      font-family: 'Shippori Mincho', 'Noto Serif TC', serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #0F172A;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .airport-terminal-badge-list {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .airport-terminal-badge {
+      background: #EFF6FF;
+      color: #1D4ED8;
+      border: 1px solid #BFDBFE;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    /* 左右雙欄排版 (2-Column Magazine Layout) */
+    .airport-showcase-grid {
+      display: grid;
+      grid-template-columns: 46% 54%;
+      gap: 26px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .airport-showcase-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .airport-left-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* 主大圖 (Hero Feature Card) */
+    .airport-hero-photo-card {
+      position: relative;
+      border-radius: 18px;
+      overflow: hidden;
+      height: 270px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      background: #0F172A;
+    }
+
+    .airport-hero-photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .airport-hero-photo-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .airport-photo-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(15, 23, 42, 0.8);
+      color: #FFFFFF;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      z-index: 2;
+    }
+
+    .airport-photo-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 24px 16px 12px 16px;
+      background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.85) 100%);
+      color: #FFFFFF;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+    /* 雙格日雜次圖剪影 (Two-Column Editorial Sub-Cards) */
+    .airport-gallery-sub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .airport-sub-photo-card {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 140px;
+      background: #0F172A;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+      border: 1px solid #E2E8F0;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .airport-sub-photo-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+      border-color: #CBD5E1;
+    }
+
+    .airport-sub-photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .airport-sub-photo-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .sub-photo-badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: rgba(15, 23, 42, 0.75);
+      color: #FFFFFF;
+      backdrop-filter: blur(4px);
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-size: 0.68rem;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    .sub-photo-meta {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px 10px 8px 10px;
+      background: linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.9) 100%);
+      color: #FFFFFF;
+      z-index: 2;
+    }
+
+    .sub-photo-title {
+      font-size: 0.8rem;
+      font-weight: 900;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sub-photo-desc {
+      font-size: 0.68rem;
+      color: #CBD5E1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* 日雜風微語錄詩句 (Editorial Micro-Quote Banner) */
+    .airport-editorial-quote-box {
+      background: #FAF8F5;
+      border-left: 3px solid #1E3A8A;
+      border-radius: 0 12px 12px 0;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border: 1px solid #E2E8F0;
+      border-left-width: 3px;
+    }
+
+    .quote-jp-text {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: #1E293B;
+      letter-spacing: 1px;
+    }
+
+    .quote-zh-text {
+      font-size: 0.74rem;
+      color: #64748B;
+      font-weight: 500;
+    }
+
+    /* 限時機票促銷小卡 (Promo Deal Card) */
+    .airport-promo-card {
+      background: linear-gradient(135deg, #FFF1F2 0%, #FFF8F5 100%);
+      border: 1.5px solid #FECDD3;
+      border-radius: 16px;
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 4px 14px rgba(225, 29, 72, 0.06);
+    }
+
+    .promo-card-left {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .promo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      font-weight: 900;
+      color: #BE123C;
+      letter-spacing: 0.5px;
+    }
+
+    .promo-route {
+      font-size: 1.05rem;
+      font-weight: 900;
+      color: #1E293B;
+    }
+
+    .promo-price {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #E11D48;
+    }
+
+    .promo-action-btn {
+      background: linear-gradient(135deg, #E11D48 0%, #BE123C 100%);
+      color: #FFFFFF !important;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 800;
+      padding: 10px 18px;
+      border-radius: 12px;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
+    }
+
+    .promo-action-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(225, 29, 72, 0.35);
+    }
+
+    /* 右欄：必買/必吃/設施 + 機場交通包車按鈕 (Right Column) */
+    .airport-right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* 三大精選項目清單 (Shopping / Gourmet / Facility List) */
+    .airport-editorial-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .highlight-item-box {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: background 0.15s ease;
+    }
+
+    .highlight-item-box:hover {
+      background: #F1F5F9;
+    }
+
+    .highlight-icon-wrap {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .highlight-icon-buy {
+      background: #FEF3C7;
+    }
+
+    .highlight-icon-food {
+      background: #FEE2E2;
+    }
+
+    .highlight-icon-facility {
+      background: #E0E7FF;
+    }
+
+    .highlight-text-wrap {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* 🏨 精緻日雜感：航廈直通 ＆ 周邊精選住宿清單 */
+    .airport-hotel-guide-card {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.02);
+    }
+
+    .airport-hotel-guide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #F1F5F9;
+    }
+
+    .airport-hotel-guide-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #0F172A;
+      letter-spacing: -0.2px;
+    }
+
+    .airport-hotel-guide-sub {
+      font-size: 0.7rem;
+      color: #64748B;
+      font-weight: 500;
+    }
+
+    .airport-hotel-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .airport-hotel-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 8px 10px;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      transition: all 0.18s ease;
+    }
+
+    .airport-hotel-item:hover {
+      background: #FFFFFF;
+      border-color: #CBD5E1;
+      transform: translateX(2px);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+
+    .airport-hotel-info {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .airport-hotel-name-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .airport-hotel-tag {
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .hotel-tag-terminal {
+      background: #E0F2FE;
+      color: #0369A1;
+    }
+
+    .hotel-tag-shuttle {
+      background: #FEF3C7;
+      color: #92400E;
+    }
+
+    .hotel-tag-spa {
+      background: #FCE7F3;
+      color: #9D174D;
+    }
+
+    .airport-hotel-name {
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: #0F172A;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .airport-hotel-highlights {
+      font-size: 0.72rem;
+      color: #64748B;
+      margin-top: 2px;
+      line-height: 1.35;
+    }
+
+    .airport-hotel-link {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: #0284C7;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: color 0.15s ease;
+    }
+
+    .airport-hotel-link:hover {
+      color: #0369A1;
+    }
+
+    /* 🛋️ 機場貴賓室推薦專區 (Airport Lounge Section - 極簡輕盈無厚框) */
+    .airport-lounge-guide-card {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: #FEFCE8;
+      border: 1px solid #FEF08A;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(234, 179, 8, 0.04);
+    }
+
+    .airport-lounge-guide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #FEF9C3;
+    }
+
+    .airport-lounge-guide-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #854D0E;
+      letter-spacing: -0.2px;
+    }
+
+    .airport-lounge-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .airport-lounge-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 10px;
+      background: #FFFFFF;
+      border: 1px solid #FEF08A;
+      border-radius: 10px;
+      transition: all 0.18s ease;
+    }
+
+    .airport-lounge-item:hover {
+      background: #FFFDF0;
+      border-color: #FACC15;
+      transform: translateX(2px);
+      box-shadow: 0 2px 6px rgba(202, 138, 4, 0.08);
+    }
+
+    .airport-lounge-info {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .airport-lounge-name-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .lounge-tag-gold {
+      background: #FEF3C7;
+      color: #B45309;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .lounge-tag-blue {
+      background: #EFF6FF;
+      color: #1D4ED8;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .airport-lounge-name {
+      font-size: 0.83rem;
+      font-weight: 800;
+      color: #0F172A;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .airport-lounge-details-row {
+      font-size: 0.72rem;
+      color: #64748B;
+      margin-top: 2px;
+      line-height: 1.4;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .airport-lounge-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .lounge-link-clean {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: #0284C7;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      white-space: nowrap;
+      transition: color 0.15s ease;
+      cursor: pointer;
+    }
+
+    .lounge-link-clean:hover {
+      color: #0369A1;
+    }
+
+    .lounge-link-clean.klook {
+      color: #D97706;
+    }
+
+    .lounge-link-clean.klook:hover {
+      color: #B45309;
+    }
+
+    /* 🛍️ 免稅伴手禮選品推薦 (日雜專欄卡片排版) */
+    .souvenir-ranking-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .souvenir-rank-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 9px 12px;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 10px;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.02);
+    }
+
+    .souvenir-rank-row:hover {
+      border-color: #CBD5E1;
+      transform: translateX(2px);
+      box-shadow: 0 3px 8px rgba(15, 23, 42, 0.05);
+    }
+
+    .souvenir-rank-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .souvenir-rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      height: 22px;
+      padding: 0 6px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .rank-badge-1 {
+      background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+      color: #B45309;
+      border: 1px solid #FCD34D;
+    }
+
+    .rank-badge-2 {
+      background: linear-gradient(135deg, #F1F5F9 0%, #E2E8F0 100%);
+      color: #334155;
+      border: 1px solid #CBD5E1;
+    }
+
+    .rank-badge-3 {
+      background: linear-gradient(135deg, #FFEDD5 0%, #FED7AA 100%);
+      color: #C2410C;
+      border: 1px solid #FDBA74;
+    }
+
+    .rank-badge-n {
+      background: #F8FAFC;
+      color: #64748B;
+      border: 1px solid #E2E8F0;
+    }
+
+    .souvenir-rank-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+      flex: 1;
+    }
+
+    .souvenir-rank-name {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: #0F172A;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .souvenir-rank-loc {
+      font-size: 0.68rem;
+      font-weight: 700;
+      background: #EFF6FF;
+      color: #1D4ED8;
+      padding: 1px 6px;
+      border-radius: 4px;
+      border: 1px solid #DBEAFE;
+    }
+
+    .souvenir-rank-desc {
+      font-size: 0.75rem;
+      color: #64748B;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .souvenir-rank-link {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: #BF1A2F;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      padding: 4px 6px;
+      transition: color 0.15s ease;
+    }
+
+    .souvenir-rank-link:hover {
+      color: #991B1B;
+    }
+
+    /* 🚗 機場周邊交通與特約服務直連 (Editorial Quick Cards) */
+    .transport-editorial-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    @media (max-width: 640px) {
+      .transport-editorial-nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .transport-pill-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 12px;
+      background: #FFFFFF;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.02);
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .transport-pill-link:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(15, 23, 42, 0.06);
+    }
+
+    .transport-pill-link.pill-rental {
+      border-left: 3.5px solid #0284C7;
+    }
+
+    .transport-pill-link.pill-rental:hover {
+      border-color: #0284C7;
+      background: #F0F9FF;
+    }
+
+    .transport-pill-link.pill-charter {
+      border-left: 3.5px solid #D97706;
+    }
+
+    .transport-pill-link.pill-charter:hover {
+      border-color: #D97706;
+      background: #FFFBEB;
+    }
+
+    .transport-pill-link.pill-rail {
+      border-left: 3.5px solid #059669;
+    }
+
+    .transport-pill-link.pill-rail:hover {
+      border-color: #059669;
+      background: #ECFDF5;
+    }
+
+    .transport-pill-link.pill-esim {
+      border-left: 3.5px solid #7C3AED;
+    }
+
+    .transport-pill-link.pill-esim:hover {
+      border-color: #7C3AED;
+      background: #F5F3FF;
+    }
+
+    .transport-pill-main {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .transport-pill-icon {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .transport-pill-text {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: #0F172A;
+    }
+
+    .transport-pill-arrow {
+      font-size: 0.76rem;
+      color: #94A3B8;
+      font-weight: 700;
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    .transport-pill-link:hover .transport-pill-arrow {
+      color: #0F172A;
+      transform: translateX(2px);
+    }
+
+    /* 各國自駕駕照切換按鈕狀態樣式 */
+    .license-tab-btn {
+      background: #FFFFFF !important;
+      border: 1.5px solid #E2E8F0 !important;
+      color: #475569 !important;
+      padding: 5px 12px !important;
+      border-radius: 8px !important;
+      font-size: 0.74rem !important;
+      font-weight: 800 !important;
+      cursor: pointer !important;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 4px !important;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+      outline: none !important;
+    }
+
+    .license-tab-btn:hover {
+      background: #F8FAFC !important;
+      border-color: #CBD5E1 !important;
+      color: #1E293B !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .license-tab-btn.active {
+      background: #EFF6FF !important;
+      border-color: #3B82F6 !important;
+      color: #1D4ED8 !important;
+      box-shadow: 0 2px 6px rgba(59, 130, 246, 0.22) !important;
+      font-weight: 900 !important;
+      transform: translateY(-1px) !important;
+    }
+
+    /* ✈️ 成田機場 8 大精選圖文卡牌 (Magazine 8-Card Showcase Grid) */
+    .narita-guide-section {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 2px dashed #E2E8F0;
+    }
+
+    .narita-guide-header {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .narita-guide-title {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: #0F172A;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .narita-guide-subtitle {
+      font-size: 0.8rem;
+      color: #64748B;
+      font-weight: 600;
+    }
+
+    .narita-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    @media (max-width: 1024px) {
+      .narita-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .narita-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .narita-card-item {
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .narita-card-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+      border-color: #CBD5E1;
+    }
+
+    .narita-card-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 140px;
+      overflow: hidden;
+      background: #F1F5F9;
+    }
+
+    .narita-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .narita-card-item:hover .narita-card-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .narita-chip-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(8px);
+    }
+
+    .chip-food {
+      background: rgba(255, 241, 242, 0.95);
+      color: #E11D48;
+      border: 1px solid #FECDD3;
+    }
+
+    .chip-spot {
+      background: rgba(240, 249, 255, 0.95);
+      color: #0284C7;
+      border: 1px solid #BAE6FD;
+    }
+
+    .chip-shop {
+      background: rgba(254, 243, 199, 0.95);
+      color: #D97706;
+      border: 1px solid #FDE68A;
+    }
+
+    .narita-card-body {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+    }
+
+    .narita-card-title {
+      font-size: 0.95rem;
+      font-weight: 900;
+      color: #0F172A;
+      margin-bottom: 4px;
+      line-height: 1.35;
+    }
+
+    .narita-card-loc {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #64748B;
+      background: #F8FAFC;
+      border-radius: 4px;
+      padding: 2px 6px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .narita-card-intro {
+      font-size: 0.78rem;
+      color: #475569;
+      line-height: 1.55;
+      margin-bottom: 14px;
+      flex: 1 1 auto;
+    }
+
+    .narita-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: #0284C7 !important;
+      text-decoration: none;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      padding: 4px 0 0;
+      margin-top: auto;
+      transition: all 0.15s ease;
+      line-height: 1.4;
+      border-bottom: 1px dashed transparent;
+    }
+
+    .narita-card-link:hover {
+      color: #0369A1 !important;
+      border-bottom-color: #0284C7;
+      transform: translateX(2px);
+    }
+
+    .narita-card-link.btn-alert {
+      color: #475569 !important;
+    }
+
+    .narita-card-link.btn-alert:hover {
+      color: #0F172A !important;
+      border-bottom-color: #64748B;
+    }
+</style>
+  <link rel="stylesheet" href="./styles/shared/tabi-core.css">
+</head>
+
+<body>
+
+  <!-- 頂部與首頁一致的 Header (中央 LOGO 點選即回首頁) -->
+  <header class="app-header">
+    <div class="header-left">
+      <!-- 左側平衡留白，保障中央品牌在視覺上精準居中 -->
+    </div>
+
+    <!-- 🌟 官網正中間品牌標誌與文字排版 (54px 官方雙環 Logo，精準居中對齊) -->
+    <div class="header-center">
+      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI">
+        <div class="fuji-logo-box">
+          <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo" class="brand-tabi-logo">
+        </div>
+        <div class="brand-text">
+          <h1 id="brandTitle">
+            <span class="brand-title-zh" id="brandTitleZh">日旅報報</span>
+          </h1>
+          <div class="brand-sub-official-wrap">
+            <span class="brand-title-en" id="brandTitleEn">JAPAN TABI</span>
+            <span class="brand-tag-official" id="brandTag">日本觀光情報</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- 🌟 頂部右側統一功能按鈕群 (純文字無外框無ICON ＋ 🌐 Language 保留外框與ICON) -->
+    <div class="header-right">
+      <div class="header-nav-scroll">
+        <a href="japan_entry_rules.html" class="header-entry-pill" title="最新日本入境規範、免稅新制與海關申報手冊"
+          style="background:#EA580C; color:#FFFFFF; font-weight:700; font-size:0.82rem; padding:5px 12px; border-radius:999px; text-decoration:none; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; margin-right:4px;">
+          <span>最新入境規範</span>
+        </a>
+        <a href="japan_flight_deals.html" class="header-nav-link active" title="日本空港手帖・機場探索指南">
+          <span>查機票</span>
+        </a>
+        <a href="japan_charter_rental.html" class="header-nav-link " title="日本客製包車 ＆ 自駕租車指南">
+          <span>包車/租車</span>
+        </a>
+        <a href="japan_okinawa_drive.html" class="header-nav-link " title="沖繩海島不繞路自駕攻略">
+          <span>沖繩自駕</span>
+        </a>
+        <a href="japan_inbound_rankings.html" class="header-nav-link " title="日本排行榜">
+          <span>日本排行</span>
+        </a>
+        <a href="japan_special_edition.html" class="header-nav-link " title="深度文章・高質感日本文化與戶外誌">
+          <span>深度文章</span>
+        </a>
+      </div>
+
+      <!-- 🌐 前台多國語言切換器 (Language Selector) -->
+      <div class="lang-selector-dropdown-wrap" id="langSelectorWrap">
+        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言">
+          <span class="util-btn-icon">🌐</span>
+          <span id="currentLangLabel">Language</span>
+          <span class="lang-arrow" id="langArrow">▾</span>
+        </button>
+        <div class="lang-dropdown-menu" id="langDropdownMenu">
+          <button class="lang-menu-opt active" data-lang="zh-TW" onclick="selectLanguage('zh-TW', '繁體中文')">
+            <span class="lang-flag">🇹🇼</span>
+            <span class="lang-name">繁體中文</span>
+            <span class="lang-check">✓</span>
+          </button>
+          <button class="lang-menu-opt" data-lang="en" onclick="selectLanguage('en', 'English')">
+            <span class="lang-flag">🇺🇸</span>
+            <span class="lang-name">English</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="ko" onclick="selectLanguage('ko', '한국어')">
+            <span class="lang-flag">🇰🇷</span>
+            <span class="lang-name">한국어</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="zh-CN" onclick="selectLanguage('zh-CN', '简体中文')">
+            <span class="lang-flag">🇨🇳</span>
+            <span class="lang-name">简体中文</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="th" onclick="selectLanguage('th', 'ไทย')">
+            <span class="lang-flag">🇹🇭</span>
+            <span class="lang-name">ไทย</span>
+            <span class="lang-check"></span>
+          </button>
+          <button class="lang-menu-opt" data-lang="ja" onclick="selectLanguage('ja', '日本語')">
+            <span class="lang-flag">🇯🇵</span>
+            <span class="lang-name">日本語</span>
+            <span class="lang-check"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 🏔️ 英雄視覺雪山背景區塊 (Image 2 + Image 1 融合) -->
+    <!-- 🏔️ 機場特輯全新頂部視覺 Banner (Editorial Lifestyle Hero & Arrival Memo) -->
+    <!-- 🏔️ 日雜手感特大 Banner（高知日雜拼貼手繪風・氣質大圖排版） -->
+    <!-- ⛩️ 圖一風格：神社寺廟大封面 Hero (Large Temple Shrine Gate Editorial Cover) -->
+    <!-- ⛩️ 頂部精緻極簡刊頭：只呈現『日本空港手帖 ｜ 旅の始まりと終わり』 -->
+    <!-- ⛩️ 頂部精緻刊頭：無底色塊・由上到下日雜文字排版 -->
+    <section class="temple-hero-section">
+      <div class="mag-vertical-title-wrap">
+        <div class="mag-title-eyebrow">＼ 日本の空の玄関口 ／</div>
+        <h1 class="mag-title-main">日本空港手帖</h1>
+        <span class="mag-title-divider-line">｜</span>
+        <div class="mag-title-sub-jp">旅の始まりと終わり</div>
+      </div>
+    </section>
+
+
+
+    <!-- 🗾 第二部分：航空所有機場專區（地區切換列 ＋ 空港選單 ＋ 雜誌感散策＆特惠中心） -->
+
+
+
+    <section class="airport-magazine-hub-section" id="airportHubSection">
+      <div class="airport-magazine-main-card">
+        <!-- ⛩️ 地區切換列 (關東、關西、北海道、九州、沖繩、中部北陸、東北、中國四國) -->
+        <div class="airport-region-bar-wrap" id="hubRegionBar">
+          <!-- 由 JS 動態生成 -->
+        </div>
+
+        <!-- ✈️ 該地區所屬空港按鈕列 [ ✈️ 羽田機場 (HND) 4,980起 ] [ ✈️ 成田機場 (NRT) 5,888起 ] -->
+        <div class="airport-selector-bar" id="hubAirportSelectorBar">
+          <!-- 由 JS 動態生成 -->
+        </div>
+
+        <!-- 📖 【成田國際機場 (NRT) 散策＆特惠中心】主展示區塊 -->
+        <div class="airport-showcase-container" id="hubAirportShowcaseContainer">
+          <!-- 由 JS 動態渲染左右雙欄精美排版 -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 頁尾 -->
+
+
+  <footer class="tabi-footer"
+    style="background:#FAF8F5; border-top:1px solid #1E293B; padding:72px 24px 48px; margin-top:80px; position:relative; z-index:10;">
+    <style>
+      .tabi-footer-manifesto-box {
+        max-width: 1200px;
+        margin: 0 auto 56px;
+        padding: 36px 40px;
+        background: #FFFFFF;
+        border: 1px solid #E2E8F0;
+        border-radius: 20px;
+        box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .tabi-footer-cols {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 40px;
+        padding-bottom: 48px;
+        border-bottom: 1px solid #E2E8F0;
+      }
+
+      .footer-nav-link {
+        font-size: 0.84rem;
+        color: #334155;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.2s;
+      }
+
+      .footer-nav-link:hover {
+        color: #C2410C;
+        padding-left: 4px;
+      }
+
+      .footer-nav-link .footer-nav-arrow {
+        color: #94A3B8;
+        transition: transform 0.2s, color 0.2s;
+      }
+
+      .footer-nav-link:hover .footer-nav-arrow {
+        color: #C2410C;
+        transform: translate(2px, -2px);
+      }
+
+      @media (max-width: 960px) {
+        .tabi-footer-manifesto-box {
+          grid-template-columns: 1fr !important;
+          padding: 28px 20px !important;
+          gap: 20px !important;
+        }
+
+        .tabi-footer-vertical-text {
+          display: none !important;
+        }
+
+        .tabi-footer-cols {
+          grid-template-columns: 1fr 1fr !important;
+          gap: 32px 20px !important;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .tabi-footer-cols {
+          grid-template-columns: 1fr !important;
+        }
+      }
+</style>
+
+    <!-- 🌸 《日旅報報》品牌創立精神 (BRAND MANIFESTO - 深度圖案美學特刊版) -->
+    <div class="tabi-footer-manifesto-box">
+      <div class="tabi-footer-manifesto-left"
+        style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; padding-right:32px; border-right:1px solid #E2E8F0;">
+        <span
+          style="font-family:'Cinzel', serif; font-size:0.68rem; font-weight:700; letter-spacing:2.5px; color:#92400E;">BRAND
+          MANIFESTO</span>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; overflow:hidden; flex-shrink:0;"><img
+              src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
+              style="width:100%; height:100%; object-fit:cover;"></div>
+          <div>
+            <div
+              style="font-family:'Shippori Mincho', serif; font-size:1.05rem; font-weight:700; color:#0F172A; letter-spacing:1px; line-height:1.2;">
+              JAPAN TABI</div>
+            <div style="font-size:0.7rem; color:#64748B; margin-top:2px;">日旅報報 品牌創立</div>
+          </div>
+        </div>
+      </div>
+      <div class="tabi-footer-manifesto-right">
+        <h3
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.05rem; font-weight:700; color:#0F172A; margin:0 0 10px; letter-spacing:1px;">
+          《日旅報報》品牌創立：</h3>
+        <p
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:0.9rem; color:#1E293B; line-height:1.8; margin:0 0 4px;">
+          「因為太喜歡日本，想把四季最動人、最真實的美麗，完整介紹給全世界熱愛旅行的人。」</p>
+        <p
+          style="font-family:'Shippori Mincho', serif; font-size:0.8rem; color:#64748B; font-style:italic; line-height:1.8; margin:0;">
+          「日本が大好きだからこそ、四季折々の息をのむ美しさを、世界中の旅人へ届けたい。」</p>
+      </div>
+    </div>
+
+
+    <div class="tabi-footer-cols">
+
+      <!-- 第 1 欄：品牌官方認證 -->
+      <div>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+          <div style="width:32px; height:32px; border-radius:50%; overflow:hidden; border:1px solid #E2E8F0;">
+            <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <h4
+            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;">
+            日旅報報 JAPAN TABI</h4>
+        </div>
+        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;">
+          日本の四季を彩る花期前線・夏の夜空を彩る花火大会・パウダースノー観測・名所特約ガイド。現地取材に基づき厳選された観光情報を、最高水準の自由旅行へお届けします。
+        </p>
+        <div
+          style="padding:12px 16px; background:#FFFFFF; border-left:3.5px solid #92400E; border-top:1px solid #E2E8F0; border-right:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0; border-radius:8px; font-size:0.76rem; color:#64748B; line-height:1.65; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
+          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;">🏅 官方特約觀測現地取材認證</div>
+          <div>全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
+        </div>
+        <div
+          style="font-size:0.78rem; color:#64748B; line-height:1.75; padding:10px 14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
+          <div>✉️ <strong>《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
+              style="color:#92400E; text-decoration:none; font-weight:700;">himydream.studio0220@gmail.com</a></div>
+          <div style="margin-top:3px;">📍 <strong>日本連絡處：</strong>東京都港区 ｜ JAPAN TABI 編集室 企画推進部</div>
+        </div>
+      </div>
+
+      <!-- 第 2 欄：核心專欄導覽 (完整串連頁面連結) -->
+      <div>
+        <h4
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          探索日本
+        </h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+          <li><a href="index.html" class="footer-nav-link"><span>首頁情報 ｜ 賞花玩雪最前線</span></a></li>
+          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span>機場手帖 ｜ 11大空港散策中心</span></a></li>
+          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span>私人包車 ｜ 彈性包車自由行</span></a></li>
+          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span>沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
+          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span>美食指南 ｜ 必吃米其林百名店</span></a></li>
+          <li><a href="japan_special_edition.html" class="footer-nav-link"
+              style="color:#92400E; font-weight:700;"><span>深度報導 ｜ 日本文化特刊報導</span></a></li>
+        </ul>
+      </div>
+
+      <!-- 第 3 欄：專題企劃 ＆ 攻略指南 -->
+      <div>
+        <h4
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          實用專區
+        </h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+          <li><a href="japan_ski_resorts.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;">全日本 27
+                大雪場・中文教練・即時雪況速報</small></a></li>
+          <li><a href="japan_entry_rules.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">最新入境規範專頁</strong><small style="color:#64748B;">2025/2026 免稅新制・VJW
+                申報手冊</small></a></li>
+          <li><a href="japan_theme_parks.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">遊樂園攻略</strong><small style="color:#64748B;">迪士尼・環球影城
+                USJ・吉卜力公園</small></a></li>
+          <li><a href="japan_train_tour.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">火車和搭車指南</strong><small style="color:#64748B;">新幹線・JR
+                Pass・觀光列車乘車券</small></a></li>
+          <li><a href="japan_flight_deals.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;">全日本 11
+                大核心機場・必吃美食・展望台・免稅伴手禮</small></a></li>
+        </ul>
+      </div>
+
+      <!-- 第 4 欄：特別刊號推薦 (深度文章直達連結) -->
+      <div>
+        <h4
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          日本精選
+        </h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">沖繩自駕特刊</strong><small
+                style="color:#64748B;">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">日本米其林和牛</strong><small
+                style="color:#64748B;">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">溫泉名湯特輯</strong><small
+                style="color:#64748B;">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
+          <li><a href="japan_special_edition.html"
+              style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
+                style="display:block; color:#0F172A;">日本世界遺產</strong><small
+                style="color:#64748B;">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- 底部版權宣告與社群連結 -->
+    <div
+      style="max-width:1200px; margin:28px auto 0; display:flex; justify-content:space-between; align-items:center; font-size:0.78rem; color:#64748B; flex-wrap:wrap; gap:16px;">
+      <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+        <span style="font-weight:700; color:#334155;">© JAPAN TABI ジャパン・タビ ｜ 全日本観光情報局 All Rights Reserved.</span>
+        <a href="japan_privacy_policy.html"
+          style="color:#64748B; text-decoration:none; margin-left:8px; font-weight:600; transition:color 0.2s;"
+          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'">隱私權政策</a>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》官方 Instagram"
+            style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
+            onmouseout="this.style.color='#64748B'">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <!-- Threads -->
+          <a href="https://www.threads.net" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》Threads"
+            style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
+            onmouseout="this.style.color='#64748B'">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 3.328 0 6.273-1.624 8.077-4.116-.367-.375-.72-.764-1.057-1.168-1.47 2.05-3.9 3.384-6.65 3.384-4.524 0-8.2-3.676-8.2-8.2s3.676-8.2 8.2-8.2 8.2 3.676 8.2 8.2c0 2.39-.77 4.542-2.316 5.867-1.18.995-2.766 1.433-4.534 1.258-2.678-.266-4.59-2.368-4.59-5.045 0-2.88 2.21-5.18 5.14-5.18 1.94 0 3.518.95 4.19 2.52.17.41.31.85.4 1.3h-1.85c-.08-.3-.21-.58-.38-.83-.45-.66-1.3-1.09-2.36-1.09-1.85 0-3.24 1.45-3.24 3.28 0 1.74 1.25 3.14 3.01 3.31 1.28.13 2.37-.18 3.12-.81.98-.83 1.5-2.22 1.5-3.96 0-5.4-4.32-9.8-9.67-9.8z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button onclick="window.scrollTo({top:0, behavior:'smooth'})"
+        style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:999px; padding:6px 16px; font-weight:700; cursor:pointer; color:#334155; transition:all 0.2s;"
+        onmouseover="this.style.borderColor='#92400E'; this.style.color='#92400E';"
+        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';">
+        ▲ 回到頂部
+      </button>
+    </div>
+  </footer>
+
+  <script>
+    // Trip.com 官方認證專屬分潤追蹤參數與短網址 (30 天 Cookie 歸因鎖定機制)
+    const TRIP_CONFIG = {
+      shortUrl: "https://www.trip.com/t/fgyJcXow1X2",
+      allianceId: "9507030",
+      sid: "325761227",
+      tripSub1: "%E6%97%A5%E6%9C%AC%E5%A0%B1%E5%A0%B1",
+      adId: "D20905663",
+      token: "sl_fgyJcXow1X2"
+    };
+
+    const TRIP_AFFILIATE_QUERY = `Allianceid=${TRIP_CONFIG.allianceId}&SID=${TRIP_CONFIG.sid}&trip_sub1=${TRIP_CONFIG.tripSub1}&trip_sub3=${TRIP_CONFIG.adId}&linkhub_token=${TRIP_CONFIG.token}`;
+
+    function buildTripDeepLink(path) {
+      if (!path) return TRIP_CONFIG.shortUrl;
+      const base = path.startsWith('http') ? path : `https://tw.trip.com${path}`;
+      const sep = base.includes('?') ? '&' : '?';
+      return `${base}${sep}${TRIP_AFFILIATE_QUERY}`;
+    }
+
+    function getRouteUrl(r, originKey) {
+      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+      const domMap = {
+        'zh-TW': 'https://tw.trip.com',
+        'en': 'https://www.trip.com',
+        'ja': 'https://jp.trip.com',
+        'th': 'https://th.trip.com',
+        'ko': 'https://kr.trip.com',
+        'zh-CN': 'https://hk.trip.com'
+      };
+      const domain = domMap[savedLang] || 'https://tw.trip.com';
+
+      if (r && r.routePath) {
+        return `${domain}${r.routePath}?${TRIP_AFFILIATE_QUERY}`;
+      }
+
+      const airportMap = {
+        'tokyo': 'tyo', 'osaka': 'osa', 'sapporo': 'spk', 'okinawa': 'oka', 'fukuoka': 'fuk', 'nagoya': 'ngo', 'sendai': 'sdj'
+      };
+      const countryFromMap = { 'taiwan': 'tpe', 'thailand': 'bkk', 'singapore': 'sin', 'hongkong': 'hkg', 'korea': 'icn' };
+      const fromC = (r && r.fromCode) || countryFromMap[originKey] || 'tpe';
+      const toC = (r && airportMap[r.destCode]) || 'tyo';
+      return `${domain}/flights/airtickets-${fromC}-${toC}?${TRIP_AFFILIATE_QUERY}`;
+    }
+
+    // 多國直飛航線資料庫
+    // 🛫 全日本空港導航資料庫 (Airport Directory Database)
+    // ===============================================================
+    // 🗾 全日本空港專區 ＆ 散策特惠中心資料庫 (Airport Editorial Database)
+    // ===============================================================
+    // ===============================================================
+    // ===============================================================
+    // ===============================================================
+    // 💼 第五階段：全站分潤渠道自動掛載規格書（Affiliate Linking Standards）
+    // 嚴格遵守全站分潤代碼設定規範，禁止出現任何無追蹤參數之裸網址！
+    // ===============================================================
+    const AFFILIATE_STANDARDS = {
+      // 1. 機場直通飯店 / 膠囊旅館 (Trip.com)
+      hotel: {
+        platform: "Trip.com",
+        getUrl: (cityKey) => `https://tw.trip.com/hotels/list?city=${cityKey || 'tokyo'}&Allianceid=9507030&SID=325761227&trip_sub3=D20272275`,
+        btnLabel: (hotelName) => `🏨 Trip.com 查看「${hotelName}」空房與優惠 ↗`
+      },
+      // 2. 自駕租車比價 (主力：ToCoo! 租車 / 跨國：Trip.com 租車)
+      rentalCar: {
+        tocoo: {
+          url: "https://afflink.one/s/FruK8",
+          btnLabel: "🚗 ToCoo! 預約雪胎與自駕方案 ↗"
+        },
+        trip: {
+          url: "https://tw.trip.com/car-rentals/?Allianceid=9507030&SID=325761227&trip_sub3=D20272275",
+          btnLabel: "🚗 Trip.com 全球車行中文預約 ↗"
+        }
+      },
+      // 3. 私人機場包車接送 (Klook 官方 aid=123436)
+      charter: {
+        url: "https://www.klook.com/zh-TW/airport-transfers/?aid=123436",
+        btnLabel: "🚐 Klook 專屬中文司機機場接送 ↗"
+      },
+      // 4. 鐵路特急 / 利木津巴士 (Klook 官方 aid=123436)
+      railExpress: {
+        skyliner_limousine: "https://www.klook.com/zh-TW/search/result/?query=Skyliner&aid=123436",
+        jr_pass: "https://www.klook.com/zh-TW/search/result/?query=JR+Pass&aid=123436",
+        btnLabel: "🎟️ Klook 預訂 Skyliner / 利木津車票 ↗"
+      },
+      // 5. 赴日上網 eSIM / SIM卡 (Klook 官方追蹤 aid=123436)
+      esim: {
+        url: "https://www.klook.com/zh-TW/search/result/?query=%E6%97%A5%E6%9C%AC+eSIM&aid=123436&utm_medium=affiliate-alwayson",
+        btnLabel: "📶 Klook 日本免換卡 5G eSIM ↗"
+      },
+      // 6. 限定手信周邊直送 (日本樂天 Rakuten 專屬追蹤碼)
+      rakuten: {
+        trackingCode: "592df26a.c525acf4.592df26b.012fa32d",
+        getUrl: (keyword) => `https://hb.afl.rakuten.co.jp/hgc/592df26a.c525acf4.592df26b.012fa32d/?pc=${encodeURIComponent('https://search.rakuten.co.jp/search/mall/' + keyword + '/')}`,
+        btnLabel: "🛍️ 樂天直送台灣・免出國補貨 ↗"
+      }
+    };
+
+    // 🚗 1. 租車比價專用跳轉參數 ＆ 取車 SOP 守則
+    // ===============================================================
+    // ===============================================================
+    // 🌐 多國籍旅客赴日自駕駕照規定速查資料庫 (Global Driving License Guide)
+    // ===============================================================
+    const GLOBAL_LICENSE_RULES = {
+      tw: {
+        country: "🇹🇼 台灣旅客 (Taiwan)",
+        moduleBadge: "🌊 MODULE 01 ｜ 證件審查",
+        title: "必備 3 樣正本證件",
+        items: [
+          "台灣護照正本（入境效期內）。",
+          "台灣駕照正本（過期請務必至監理所更換新版無限期證照）。",
+          "監理所核發之「日文譯本正本」（紙本正本）。"
+        ],
+        warning: "⚠️ 國際駕照 (IDP) 在日本完全無效！日本依雙邊協議僅承認「台灣駕照正本 ＋ 日文譯本」，持國際駕照門市將拒絕出車。"
+      },
+      hk_mo: {
+        country: "🇭🇰 香港 ＆ 🇲🇴 澳門旅客",
+        moduleBadge: "🌊 MODULE 01 ｜ 證件審查",
+        title: "必備 3 樣正本證件",
+        items: [
+          "特區護照 / BNO / 澳門護照正本（有效期內）。",
+          "香港運輸署 / 澳門發行之「1949日內瓦公約國際駕駛許可證 (IDP)」正本。",
+          "香港 / 澳門本地有效正式駕照正本（需持有滿 1 年以上）。"
+        ],
+        warning: "⚠️ IDP 有效期必須完全涵蓋在日租車全期間；日本嚴格拒絕「暫准駕駛執照 (P牌)」與電子影印本。"
+      },
+      my_sg: {
+        country: "🇲🇾 馬來西亞 ＆ 🇸🇬 新加坡旅客",
+        moduleBadge: "🌊 MODULE 01 ｜ 證件審查",
+        title: "必備 3 樣正本證件",
+        items: [
+          "馬來西亞 / 新加坡有效正式護照正本。",
+          "由該國汽車協會發行之「1949日內瓦公約國際駕照 (IDP)」紙本正本。",
+          "馬來西亞 (JPJ) / 新加坡 (SPF) 原國籍正式駕照正本（英文版）。"
+        ],
+        warning: "⚠️ 國際駕照與原國駕照上的英文拼音、生日必須與護照 100% 完全相符，不可有任一字母差異。"
+      },
+      us_ca_au: {
+        country: "🇺🇸 美國 / 🇨🇦 加拿大 / 🇦🇺 澳洲旅客",
+        moduleBadge: "🌊 MODULE 01 ｜ 證件審查",
+        title: "必備 3 樣正本證件",
+        items: [
+          "該國有效正式護照正本。",
+          "AAA (美國) / CAA (加拿大) / 各州 RAC (澳洲) 發行之「1949日內瓦國際駕照 (IDP)」正本。",
+          "該國各州發行之正式有效本國駕駛執照正本。"
+        ],
+        warning: "⚠️ 日本僅承認 1949 年公約格式（封面清楚標註 1949）；1968 年維也納公約格式日本依法不予受理。"
+      },
+      eu_fr_de: {
+        country: "🇫🇷 法國 / 🇩🇪 德國 / 🇨🇭 瑞士 / 🇧🇪 比利時等",
+        moduleBadge: "🌊 MODULE 01 ｜ 證件審查",
+        title: "必備 3 樣正本證件",
+        items: [
+          "該國正式護照正本。",
+          "該國有效駕照正本。",
+          "日本官方認可之「法文/德文/義大利文官方日文翻譯件」（如 JAF 或該國駐日使領館核發）。"
+        ],
+        warning: "⚠️ 法、德、瑞士等國旅客無須 IDP，但必須持有法定指定機構簽發之「官方日文翻譯件」，未備者門市拒絕出車。"
+      }
+    };
+
+    let curLicenseCountry = 'tw';
+
+    function switchLicenseTab(key) {
+      curLicenseCountry = key;
+      document.querySelectorAll('.license-tab-btn').forEach(btn => {
+        const isActive = (btn.dataset.country === key);
+        if (isActive) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      const data = GLOBAL_LICENSE_RULES[key];
+      const box = document.getElementById('licenseRuleContentBox');
+      if (box && data) {
+        const itemsHtml = (data.items || []).map(it => `
+          <div style="font-size:0.86rem; color:#475569; line-height:1.8; margin-bottom:4px;">
+            • ${it}
+          </div>
+        `).join('');
+
+        box.innerHTML = `
+          <div style="background:#FFFFFF; border:1.5px solid #BAE6FD; border-radius:16px; padding:20px 22px; margin-top:8px; box-shadow:0 8px 24px rgba(2, 132, 199, 0.06);">
+            <div style="color:#0284C7; font-size:0.75rem; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+              <span>${data.moduleBadge || '🌊 MODULE 01 ｜ 證件審查'}</span>
+              <span style="font-size:0.72rem; font-weight:800; color:#0369A1; background:#E0F2FE; padding:2px 10px; border-radius:12px;">${data.country}</span>
+            </div>
+            <h4 style="font-size:1.18rem; font-weight:900; color:#0F172A; margin:0 0 14px 0; letter-spacing:0.02em;">
+              ${data.title || '必備 3 樣正本證件'}
+            </h4>
+            <div style="margin-bottom:14px;">
+              ${itemsHtml}
+            </div>
+            <div style="background:#FFF1F2; border:1px solid #FECDD3; padding:12px 14px; border-radius:10px; font-size:0.82rem; color:#BE123C; line-height:1.6;">
+              ${data.warning}
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    const RENTAL_CAR_CONFIG = {
+      tocoo: {
+        name: "ToCoo! 日本租車 (雪胎保證・ETC卡・全中文方案)",
+        url: "https://afflink.one/s/FruK8",
+        note: "深度自駕首選，冬季保證雪胎車款與 Expressway Pass 高速吃到飽卡"
+      },
+      trip: {
+        name: "Trip.com 全球車行比價 (Toyota/Nissan/Times中文客服)",
+        url: "https://tw.trip.com/car-rentals/?Allianceid=9507030&SID=325761227&trip_sub3=D20272275",
+        note: "大廠牌快速比價，整合機票行程一鍵管理"
+      },
+      pickup_sop: [
+        "步驟 1：出境提領行李後，前往入境大廳 1F 租車櫃檯（Toyota、Times、ORIX 等）報到。",
+        "步驟 2：出示「台灣駕照正本 + 監理所日文譯本 + 護照實體」，核對憑證領取號碼牌。",
+        "步驟 3：至航廈外指定接駁站（Shuttle Bus），免費搭乘 5~10 分鐘抵達機場外營業所正式點車出發！"
+      ],
+      driving_tips: [
+        "⚠️ 駕照要求：台灣國際駕照 (IDP) 在日本無效！務必攜帶「台灣駕照原件 + 日文譯本」！",
+        "⚠️ 事故 SOP：日本發生任何輕微擦撞，依法必須打 110 報警開立「事故證明書」，否則保險完全拒賠！"
+      ]
+    };
+
+    // ===============================================================
+    // 🚂 2. JR 鐵道攻略專題跳轉規範
+    // ===============================================================
+    const RAIL_PORTAL_BUTTON = {
+      label: "🚂 進入全日本 30 大觀光列車 ＆ JR Pass 劃位攻略專題 ➔",
+      action: "openTrainPortal()", // 或跳轉至 /japan_train_tour.html
+      klook_pass_url: "https://www.klook.com/zh-TW/search/result/?query=JR+Pass&aid=123436"
+    };
+
+    function openTrainPortal() {
+      window.location.href = "japan_train_tour.html";
+    }
+
+    // ===============================================================
+    // 💴 3. 即時日幣匯率模組
+    // ===============================================================
+    async function updateJpyRateWidget() {
+      try {
+        const res = await fetch('https://open.er-api.com/v6/latest/JPY');
+        const data = await res.json();
+        const twdRate = data.rates.TWD;
+        const elem = document.getElementById('jpy-rate-val');
+        if (elem) {
+          elem.innerText = `1 JPY ≈ NT$ ${twdRate.toFixed(4)}`;
+        }
+      } catch (err) {
+        const elem = document.getElementById('jpy-rate-val');
+        if (elem) {
+          elem.innerText = `1 JPY ≈ NT$ 0.2100 (離線參考值)`;
+        }
+      }
+    }
+
+    // 📖 空港深度案內資料庫 (AIRPORT_DETAILS) - 精準對應官方必吃必買與設施住宿
+    // ===============================================================
+    let AIRPORT_DETAILS = {};
+
+    // ===============================================================
+    // 📸 空港日雜風多圖排版畫廊資料庫 (Airport Editorial Gallery)
+    // ===============================================================
+
+    // ===============================================================
+    // 🛋️ 機場貴賓室精選資料庫 (AIRPORT_LOUNGES) - 各機場 1~3 選 (位置/設施/票券預約)
+    // ===============================================================
+    let AIRPORT_LOUNGES = {};
+
+    let AIRPORT_TRANSIT_GUIDES = {};
+
+    let AIRPORT_EDITORIAL_GALLERY = {};
+
+    let AIRPORT_MAGAZINE_DATA = {};
+
+    let curMagRegionId = "kanto";
+    let curMagAirportCode = "NRT";
+
+    function initAirportMagazineHub() {
+      renderMagRegionBar();
+      renderMagAirportPills();
+      renderMagShowcase();
+    }
+
+    // 1. 渲染頂部地區切換列
+    function renderMagRegionBar() {
+      const container = document.getElementById('hubRegionBar');
+      if (!container) return;
+      container.innerHTML = AIRPORT_MAGAZINE_DATA.regions.map(r => `
+        <button class="airport-region-tab-btn ${r.id === curMagRegionId ? 'active' : ''}" 
+                onclick="switchMagRegion('${r.id}')">
+          ${r.name}
+        </button>
+      `).join('');
+    }
+
+    // 2. 切換地區
+    function switchMagRegion(regionId) {
+      curMagRegionId = regionId;
+      const region = AIRPORT_MAGAZINE_DATA.regions.find(r => r.id === regionId);
+      if (region && region.airports.length > 0) {
+        curMagAirportCode = region.airports[0].code;
+      }
+      renderMagRegionBar();
+      renderMagAirportPills();
+      renderMagShowcase();
+    }
+
+    // 3. 渲染該地區下的空港選單膠囊列
+    function renderMagAirportPills() {
+      const container = document.getElementById('hubAirportSelectorBar');
+      if (!container) return;
+      const region = AIRPORT_MAGAZINE_DATA.regions.find(r => r.id === curMagRegionId);
+      if (!region) return;
+
+      container.innerHTML = region.airports.map(ap => `
+        <button class="airport-pill-btn ${ap.code === curMagAirportCode ? 'active' : ''}" 
+                onclick="switchMagAirport('${ap.code}')">
+          <span>✈️ ${ap.name}</span>
+          <span class="pill-price">NT$ ${ap.price.toLocaleString()} 起</span>
+        </button>
+      `).join('');
+    }
+
+    // 4. 切換空港
+    function switchMagAirport(airportCode) {
+      curMagAirportCode = airportCode;
+      renderMagAirportPills();
+      renderMagShowcase();
+    }
+
+    // 5. 渲染精美的左右雙欄【散策＆特惠中心】主展示區
+
+    // 1. 成田機場 8 張圖文卡牌資料庫
+
+    // 1. 各大空港 8 張圖文卡牌資料庫 (全日本核心空港完整收錄)
+    // 1. 全日本 11 大機場 8 張圖文卡牌資料庫 (全機場完整覆蓋)
+    let ALL_AIRPORTS_GALLERY_DB = {};
+
+    function renderAirportGalleryCards(airportCode, airportName) {
+      const cards = ALL_AIRPORTS_GALLERY_DB[airportCode];
+      if (!cards || cards.length === 0) return '';
+
+      const cleanName = airportName || airportCode;
+
+      return `
+        <div class="narita-guide-section">
+          <div class="narita-guide-header">
+            <div class="narita-guide-title">
+              <span>${cleanName} 探索指南 ｜ 8 大設施、購物與住宿指南</span>
+            </div>
+            <div class="narita-guide-subtitle">登機前必逛必吃・超值折價券一鍵領取</div>
+          </div>
+          <div class="narita-cards-grid">
+            ${cards.map(card => {
+        // 移除多餘符號與 emoji，乾淨文字連結
+        const cleanText = (card.btnText || '').replace(/[🎟️↗➔]/g, '').trim();
+        const btnHtml = card.btnLink
+          ? `<a href="${card.btnLink}" target="_blank" rel="noopener noreferrer" class="narita-card-link">${cleanText} ➔</a>`
+          : `<button onclick="${card.btnAction}" class="narita-card-link btn-alert" type="button">${cleanText} ➔</button>`;
+
+        // 移除卡片標籤 emoji
+        const cleanType = (card.type || '').replace(/^[^\w一-龥]+\s*/, '');
+        const cleanLoc = (card.loc || '').replace(/^[📍\s]+/, '');
+
+        return `
+                <div class="narita-card-item">
+                  <div class="narita-card-img-wrap">
+                    <span class="narita-chip-tag ${card.chipClass}">${cleanType}</span>
+                    <img src="${card.img}" alt="${card.name}" loading="lazy">
+                  </div>
+                  <div class="narita-card-body">
+                    <div class="narita-card-title">${card.name}</div>
+                    <div class="narita-card-loc">${cleanLoc}</div>
+                    <div class="narita-card-intro">${card.intro}</div>
+                    ${btnHtml}
+                  </div>
+                </div>
+              `;
+      }).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderMagShowcase() {
+      const container = document.getElementById('hubAirportShowcaseContainer');
+      if (!container) return;
+
+      let targetAirport = null;
+      for (const reg of AIRPORT_MAGAZINE_DATA.regions) {
+        const found = reg.airports.find(a => a.code === curMagAirportCode);
+        if (found) { targetAirport = found; break; }
+      }
+      if (!targetAirport) return;
+
+      const terminalsHtml = targetAirport.terminals.map(t => `<span class="airport-terminal-badge">${t}</span>`).join('');
+
+      // 檢查 AIRPORT_DETAILS 中是否有深度結構化案內
+      const details = AIRPORT_DETAILS[curMagAirportCode];
+
+      let dutyFreeHtml = '';
+      let diningHtml = '';
+      let restHtml = '';
+      let hotelHtml = '';
+      let loungeHtml = '';
+
+      if (details) {
+        // 🛍️ 必買伴手禮 (日雜排行榜清單模式 Top 5 Ranking List + Rakuten直送)
+        dutyFreeHtml = `
+          <div class="souvenir-ranking-list">
+            ${details.duty_free.map(df => {
+          const rakutenBuyUrl = AFFILIATE_STANDARDS.rakuten.getUrl(df.name);
+          const rankBadge = df.rank ? `<span class="souvenir-rank-badge ${df.rankCls || 'rank-badge-n'}">${df.rank}</span>` : '';
+          const locBadge = df.loc ? `<span class="souvenir-rank-loc">${df.loc}</span>` : '';
+          return `
+                <div class="souvenir-rank-row">
+                  <div class="souvenir-rank-left">
+                    ${rankBadge}
+                    <div class="souvenir-rank-info">
+                      <div class="souvenir-rank-name">${df.name} ${locBadge}</div>
+                      <div class="souvenir-rank-desc">${df.desc || df.note || ''}</div>
+                    </div>
+                  </div>
+                  <a href="${rakutenBuyUrl}" target="_blank" rel="noopener noreferrer" class="souvenir-rank-link" title="樂天市場官方直送">
+                    樂天 ↗
+                  </a>
+                </div>
+              `;
+        }).join('')}
+          </div>
+        `;
+
+        // 🍜 必吃
+        diningHtml = details.dining.map(d => `
+          <div style="margin-bottom:6px;">
+            🍜 <b>${d.name}</b> <span style="font-size:0.75rem; background:#EFF6FF; color:#1D4ED8; padding:2px 6px; border-radius:4px; font-weight:700;">${d.loc}</span>
+            <div style="font-size:0.82rem; color:#475569; margin-top:2px;">↳ ${d.highlight}</div>
+          </div>
+        `).join('');
+
+        // 🚿 設施與休息 (精緻間距、膠囊徽章與醒目層次)
+        restHtml = `
+          <div style="display:flex; flex-direction:column; gap:8px;">
+            <div style="display:flex; align-items:flex-start; gap:8px; line-height:1.5;">
+              <span style="font-size:0.7rem; font-weight:800; color:#0284C7; background:#E0F2FE; border:1px solid #BAE6FD; padding:1px 7px; border-radius:5px; white-space:nowrap; flex-shrink:0;">🚿 淋浴洗澡</span>
+              <span style="font-size:0.8rem; color:#334155; font-weight:600;">${details.showers_and_rest.shower}</span>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:8px; line-height:1.5;">
+              <span style="font-size:0.7rem; font-weight:800; color:#D97706; background:#FEF3C7; border:1px solid #FDE68A; padding:1px 7px; border-radius:5px; white-space:nowrap; flex-shrink:0;">🛌 小睡溫泉</span>
+              <span style="font-size:0.8rem; color:#334155; font-weight:600;">${details.showers_and_rest.nap}</span>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:8px; line-height:1.5;">
+              <span style="font-size:0.7rem; font-weight:800; color:#059669; background:#D1FAE5; border:1px solid #A7F3D0; padding:1px 7px; border-radius:5px; white-space:nowrap; flex-shrink:0;">🔌 充電休息</span>
+              <span style="font-size:0.8rem; color:#334155; font-weight:600;">${details.showers_and_rest.power_seats}</span>
+            </div>
+          </div>
+        `;
+
+        // 🏨 航廈直通 ＆ 周邊精選住宿清單 (Trip.com 官方分潤跳轉)
+        if (details.hotels && details.hotels.length > 0) {
+          hotelHtml = `
+            <div class="airport-hotel-guide-card">
+              <div class="airport-hotel-guide-header">
+                <span class="airport-hotel-guide-title">航廈直通 ＆ 機場周邊推薦住宿 (3 選)：</span>
+                <span class="airport-hotel-guide-sub">含免費接駁／溫泉／購物商場直達</span>
+              </div>
+              <div class="airport-hotel-list">
+                ${details.hotels.map(h => `
+                  <div class="airport-hotel-item">
+                    <div class="airport-hotel-info">
+                      <div class="airport-hotel-name-row">
+                        <span class="airport-hotel-tag ${h.tagCls || 'hotel-tag-terminal'}">${h.tag}</span>
+                        <span class="airport-hotel-name">${h.name}</span>
+                      </div>
+                      <div class="airport-hotel-highlights">${h.highlights}</div>
+                    </div>
+                    <a href="${h.link}" target="_blank" rel="noopener noreferrer" class="airport-hotel-link" title="Trip.com 查詢空房與即時優惠">
+                      查空房 ↗
+                    </a>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+        } else if (details.hotel_transit) {
+          const hotelUrl = AFFILIATE_STANDARDS.hotel.getUrl(details.hotel_transit.city_key);
+          hotelHtml = `
+            <div class="airport-hotel-guide-card">
+              <div class="airport-hotel-item">
+                <div class="airport-hotel-info">
+                  <div class="airport-hotel-name-row">
+                    <span class="airport-hotel-tag hotel-tag-terminal">航廈直通</span>
+                    <span class="airport-hotel-name">${details.hotel_transit.hotel_name}</span>
+                  </div>
+                </div>
+                <a href="${hotelUrl}" target="_blank" rel="noopener noreferrer" class="airport-hotel-link">
+                  查空房 ↗
+                </a>
+              </div>
+            </div>
+          `;
+        }
+      } else {
+        dutyFreeHtml = targetAirport.buy;
+        diningHtml = targetAirport.food;
+        restHtml = targetAirport.facilities;
+      }
+
+      // 🛋️ 機場貴賓室精選專區 (1~3 選，位置、設施、簡短介紹，支援 Trip / Klook 跳轉購票)
+      const loungeList = AIRPORT_LOUNGES[curMagAirportCode] || [];
+      if (loungeList.length > 0) {
+        loungeHtml = `
+          <div class="airport-lounge-guide-card">
+            <div class="airport-lounge-guide-header">
+              <span class="airport-lounge-guide-title">航廈精選機場貴賓室 (${loungeList.length} 選)：</span>
+            </div>
+            <div class="airport-lounge-list">
+              ${loungeList.map(lg => `
+                <div class="airport-lounge-item">
+                  <div class="airport-lounge-info">
+                    <div class="airport-lounge-name-row">
+                      <span class="${lg.tagCls || 'lounge-tag-blue'}">${lg.tag}</span>
+                      <span class="airport-lounge-name">${lg.name}</span>
+                    </div>
+                    <div class="airport-lounge-details-row">
+                      <span>📍 ${lg.loc}</span> ｜ <span>☕ ${lg.facilities}</span>
+                    </div>
+                  </div>
+                  <div class="airport-lounge-links">
+                    <a href="${lg.tripLink}" target="_blank" rel="noopener noreferrer" class="lounge-link-clean" title="Trip.com 機場貴賓室預約">
+                      預約 ↗
+                    </a>
+                    <a href="${lg.klookLink}" target="_blank" rel="noopener noreferrer" class="lounge-link-clean klook" title="Klook 預訂貴賓室使用券">
+                      買券 ↗
+                    </a>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+
+      // 質感日雜風格特約服務直連卡片
+      const transportEditorialNav = `
+        <div class="transport-editorial-nav">
+          <a href="${AFFILIATE_STANDARDS.rentalCar.tocoo.url}" target="_blank" rel="noopener noreferrer" class="transport-pill-link pill-rental" title="ToCoo! / Trip 日本租車預約">
+            <div class="transport-pill-main">
+              <span class="transport-pill-icon">🚗</span>
+              <span class="transport-pill-text">租車自駕</span>
+            </div>
+            <span class="transport-pill-arrow">↗</span>
+          </a>
+          <a href="${AFFILIATE_STANDARDS.charter.url}" target="_blank" rel="noopener noreferrer" class="transport-pill-link pill-charter" title="Klook 機場包車接送">
+            <div class="transport-pill-main">
+              <span class="transport-pill-icon">🚐</span>
+              <span class="transport-pill-text">專車接送</span>
+            </div>
+            <span class="transport-pill-arrow">↗</span>
+          </a>
+          <a href="${AFFILIATE_STANDARDS.railExpress.skyliner_limousine}" target="_blank" rel="noopener noreferrer" class="transport-pill-link pill-rail" title="Skyliner / 巴士車票預約">
+            <div class="transport-pill-main">
+              <span class="transport-pill-icon">🚆</span>
+              <span class="transport-pill-text">鐵道特急</span>
+            </div>
+            <span class="transport-pill-arrow">↗</span>
+          </a>
+          <a href="${AFFILIATE_STANDARDS.esim.url}" target="_blank" rel="noopener noreferrer" class="transport-pill-link pill-esim" title="Klook 5G 免換卡 eSIM">
+            <div class="transport-pill-main">
+              <span class="transport-pill-icon">📶</span>
+              <span class="transport-pill-text">5G eSIM</span>
+            </div>
+            <span class="transport-pill-arrow">↗</span>
+          </a>
+        </div>
+      `;
+
+
+      // 機場大眾交通乘車案內（電車/巴士搭乘處 - 呼吸感卡片）
+      const transitInfo = AIRPORT_TRANSIT_GUIDES[curMagAirportCode] || AIRPORT_TRANSIT_GUIDES.NRT;
+      const transitGuideHtml = `
+        <div class="transit-guide-card" style="margin: 12px 0 14px 0; padding: 14px 16px; background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; box-shadow:0 2px 8px rgba(15,23,42,0.02);">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px; padding-bottom:6px; border-bottom:1px solid #F1F5F9;">
+            <span style="font-size:0.83rem; font-weight:900; color:#0F172A; letter-spacing:-0.2px;">🚆 機場大眾運輸搭乘指南</span>
+            <span style="font-size:0.7rem; color:#64748B;">電車 ＆ 巴士速查</span>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:10px; padding:10px 12px;">
+              <div style="font-size:0.82rem; font-weight:800; color:#0F172A; display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+                <span>🚆 ${transitInfo.train.title}</span>
+                <span style="font-size:0.71rem; color:#1D4ED8; background:#EFF6FF; border:1px solid #BFDBFE; padding:2px 8px; border-radius:5px; font-weight:800;">${transitInfo.train.floor}</span>
+              </div>
+              <div style="font-size:0.76rem; color:#475569; line-height:1.55;">${transitInfo.train.desc}</div>
+            </div>
+            <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:10px; padding:10px 12px;">
+              <div style="font-size:0.82rem; font-weight:800; color:#0F172A; display:flex; align-items:center; justify-content:space-between; margin-bottom:4px;">
+                <span>🚌 ${transitInfo.bus.title}</span>
+                <span style="font-size:0.71rem; color:#B45309; background:#FEF3C7; border:1px solid #FDE68A; padding:2px 8px; border-radius:5px; font-weight:800;">${transitInfo.bus.floor}</span>
+              </div>
+              <div style="font-size:0.76rem; color:#475569; line-height:1.55;">${transitInfo.bus.desc}</div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // 畫廊資料 (Gallery Sub-cards + Quote)
+      const galleryData = AIRPORT_EDITORIAL_GALLERY[curMagAirportCode] || AIRPORT_EDITORIAL_GALLERY.NRT;
+      const subCardsHtml = galleryData.subPhotos.map(sp => `
+        <div class="airport-sub-photo-card">
+          <span class="sub-photo-badge">${sp.badge}</span>
+          <img src="${sp.img}" alt="${sp.title}" loading="lazy">
+          <div class="sub-photo-meta">
+            <div class="sub-photo-title">${sp.title}</div>
+            <div class="sub-photo-desc">${sp.desc}</div>
+          </div>
+        </div>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="airport-showcase-title-wrap">
+          <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+            <h3 class="airport-showcase-h3">
+              <span>【${targetAirport.name} 散策＆特惠中心】</span>
+            </h3>
+            <!-- 即時日幣匯率徽章 -->
+            <div style="display:inline-flex; align-items:center; gap:6px; background:#FEF3C7; border:1px solid #FDE68A; border-radius:999px; padding:4px 12px; font-size:0.78rem; font-weight:800; color:#92400E;">
+              <span>即時匯率：</span>
+              <span id="jpy-rate-val">查詢中...</span>
+            </div>
+          </div>
+          <div class="airport-terminal-badge-list">
+            <span style="font-size:0.75rem; color:#64748B; font-weight:700; align-self:center;">航廈分類：</span>
+            ${terminalsHtml}
+          </div>
+        </div>
+
+        <div class="airport-showcase-grid">
+          <!-- 左欄：日雜多圖畫廊 ＋ 微語錄 ＋ 限時促銷小卡 ＋ 【航廈直通 ＆ 機場周邊推薦住宿 (3 選)】 -->
+          <div class="airport-left-col">
+            <!-- 1. 航廈代表主大圖 -->
+            <div class="airport-hero-photo-card">
+              <span class="airport-photo-tag">航廈代表實景・日雜特刊</span>
+              <img src="${targetAirport.image}" alt="${targetAirport.name}" loading="lazy">
+              <div class="airport-photo-caption">${targetAirport.photoCaption}</div>
+            </div>
+
+            <!-- 2. 日雜感雙圖精選拼貼 (美食/溫泉/設施實景) -->
+            <div class="airport-gallery-sub-grid">
+              ${subCardsHtml}
+            </div>
+
+            <!-- 3. 日雜微語錄金句 -->
+            <div class="airport-editorial-quote-box">
+              <div>
+                <div class="quote-jp-text">${galleryData.quoteJp}</div>
+                <div class="quote-zh-text">${galleryData.quoteZh}</div>
+              </div>
+            </div>
+
+            <!-- 4. 限時促銷小卡 -->
+            <div class="airport-promo-card">
+              <div class="promo-card-left">
+                <span class="promo-badge">限時機票促銷直連</span>
+                <span class="promo-route">${targetAirport.promoRoute}</span>
+                <span class="promo-price">NT$ ${targetAirport.price.toLocaleString()} <span style="font-size:0.8rem; font-weight:700; color:#64748B;">起</span></span>
+              </div>
+              <a href="${targetAirport.promoDealUrl}" target="_blank" rel="noopener noreferrer" class="promo-action-btn">
+                <span>搶票 ➔</span>
+              </a>
+            </div>
+
+            <!-- 5. 航廈直通 ＆ 機場周邊推薦住宿 (3 選) 放在截圖機票促銷卡正下方 -->
+            ${hotelHtml}
+
+            <!-- 6. 航廈精選機場貴賓室 (最多 3 選) 支援 Trip / Klook 票券跳轉 -->
+            ${loungeHtml}
+          </div>
+
+          <!-- 右欄：必買伴手禮、必吃名店、貼心設施 ＋ 【機場交通與預約服務 ＆ 各國自駕要求專區】 -->
+          <div class="airport-right-col">
+            <div class="airport-editorial-highlights">
+              <!-- 必買 -->
+              <div class="highlight-item-box">
+                <div class="highlight-text-wrap">
+                  <div class="highlight-label">免稅伴手禮選品推薦</div>
+                  <div class="highlight-content" style="font-size:0.88rem; font-weight:500; line-height:1.6;">${dutyFreeHtml}</div>
+                </div>
+              </div>
+
+              <!-- 必吃 -->
+              <div class="highlight-item-box">
+                <div class="highlight-text-wrap">
+                  <div class="highlight-label">航廈必吃名店指南</div>
+                  <div class="highlight-content" style="font-size:0.88rem; font-weight:600; line-height:1.6;">${diningHtml}</div>
+                </div>
+              </div>
+
+              <!-- 設施 -->
+              <div class="highlight-item-box">
+                <div class="highlight-text-wrap">
+                  <div class="highlight-label">航廈設施與休憩服務</div>
+                  <div class="highlight-content" style="font-size:0.84rem; font-weight:500; line-height:1.6; color:#334155;">${restHtml}</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 機場交通與預約服務 ＆ 各國自駕要求專區 -->
+            <div class="airport-transport-hub">
+              <div class="transport-hub-title">
+                <span>機場交通與預約服務：</span>
+                <span style="font-size:0.7rem; color:#94A3B8;">官方特約直連 ＆ 乘車案內</span>
+              </div>
+              
+              <!-- 1. 電車 ＆ 巴士大眾運輸乘車處案內 -->
+              ${transitGuideHtml}
+
+              <!-- 2. 官方預約與服務直連 (極簡藥丸) -->
+              <div style="margin-bottom:10px;">
+                <div style="font-size:0.78rem; font-weight:900; color:#1E293B; margin-bottom:7px; display:flex; align-items:center; gap:6px;"><span>⚡ 機場直通預約服務：</span></div>
+                ${transportEditorialNav}
+              </div>
+
+              <!-- 3. 免折疊直接顯示：各國旅客自駕駕照要求 ＆ 取車 SOP -->
+              <div class="license-info-card" style="margin-top:12px; padding:14px 16px; background:#FFFFFF; border:1.5px solid #E2E8F0; border-radius:14px; box-shadow:0 2px 8px rgba(15,23,42,0.02);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                  <span style="font-size:0.82rem; font-weight:900; color:#0F172A;">各國自駕駕照要求速查：</span>
+                  <span style="font-size:0.7rem; color:#64748B;">即時切換國籍</span>
+                </div>
+                <div style="display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px;">
+                  <button type="button" class="license-tab-btn active" data-country="tw" onclick="switchLicenseTab('tw')">🇹🇼 台灣</button>
+                  <button type="button" class="license-tab-btn" data-country="hk_mo" onclick="switchLicenseTab('hk_mo')">🇭🇰 香港 / 🇲🇴 澳門</button>
+                  <button type="button" class="license-tab-btn" data-country="my_sg" onclick="switchLicenseTab('my_sg')">🇲🇾 馬來 / 🇸🇬 新加坡</button>
+                  <button type="button" class="license-tab-btn" data-country="us_ca_au" onclick="switchLicenseTab('us_ca_au')">🇺🇸 美國 / 🇨🇦 加 / 🇦🇺 澳</button>
+                  <button type="button" class="license-tab-btn" data-country="eu_fr_de" onclick="switchLicenseTab('eu_fr_de')">🇪🇺 法德瑞等歐洲</button>
+                </div>
+                <div id="licenseRuleContentBox">
+                  <!-- 動態切換顯示該國駕照要求 -->
+                </div>
+
+                <!-- 取車 3 步驟與事故 SOP (呼吸感視覺卡片) -->
+                <div style="border-top:1px dashed #E2E8F0; margin-top:10px; padding-top:10px;">
+                  <div style="font-size:0.79rem; font-weight:900; color:#0F172A; margin-bottom:6px; display:flex; align-items:center; gap:5px;">
+                    <span>📋 機場取車 3 步驟流程：</span>
+                  </div>
+                  <div style="display:flex; flex-direction:column; gap:5px; margin-bottom:8px;">
+                    <div style="font-size:0.76rem; color:#334155; line-height:1.5; background:#FFFFFF; border:1px solid #E2E8F0; padding:6px 10px; border-radius:6px;">
+                      <b style="color:#0284C7;">STEP 1 報到：</b>出境提領行李後，前往入境大廳 1F 租車櫃檯（Toyota、Times、ORIX 等）報到。
+                    </div>
+                    <div style="font-size:0.76rem; color:#334155; line-height:1.5; background:#FFFFFF; border:1px solid #E2E8F0; padding:6px 10px; border-radius:6px;">
+                      <b style="color:#0284C7;">STEP 2 核對：</b>出示「該國指定駕照正本 ＋ 官方譯本/IDP ＋ 護照實體」，核對憑證領取乘車號碼牌。
+                    </div>
+                    <div style="font-size:0.76rem; color:#334155; line-height:1.5; background:#FFFFFF; border:1px solid #E2E8F0; padding:6px 10px; border-radius:6px;">
+                      <b style="color:#0284C7;">STEP 3 接駁：</b>至航廈外專用接駁站搭乘免費 Shuttle Bus，5~10 分鐘直達營業所點車出發！
+                    </div>
+                  </div>
+                  <div style="padding:8px 10px; background:#FEF2F2; border:1px solid #FECACA; border-radius:7px; font-size:0.74rem; color:#991B1B; font-weight:700; line-height:1.45;">
+                    🚨 <b>事故零容忍：</b>日本發生任何微小擦碰，依法皆須立即打 <b>110 報警</b>取得「事故證明書」，否則所有保險 100% 拒賠！
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        ${renderAirportGalleryCards(curMagAirportCode, targetAirport.name)}
+      `;
+
+      // 更新匯率與預設台灣自駕規則
+      updateJpyRateWidget();
+      switchLicenseTab(curLicenseCountry || 'tw');
+    }
+
+    let ROUTES_DATA = {};
+
+    let currentOriginTab = 'taiwan';
+
+    function switchOriginTab(originKey, btn) {
+      currentOriginTab = originKey;
+      document.querySelectorAll('.origin-tab-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      renderRoutesGrid(originKey);
+    }
+
+    function renderRoutesGrid(originKey) {
+      const container = document.getElementById('routesGridContainer');
+      if (!container) return;
+      const routes = ROUTES_DATA[originKey] || [];
+
+      container.innerHTML = routes.map(r => {
+        const link = getRouteUrl(r, originKey);
+        return `
+          <a href="${link}" target="_blank" rel="noopener noreferrer" class="route-card">
+            <div class="route-img-wrap">
+              <img class="route-img" src="${r.img}" alt="${r.city}" loading="lazy">
+              <span class="route-tag-badge ${r.tagClass}">${r.tag}</span>
+            </div>
+            <div class="route-body">
+              <div>
+                <div class="route-city-line">
+                  <span class="route-city-name">${r.city}</span>
+                  <span class="route-price-tag">${r.price} 起</span>
+                </div>
+                <div class="route-flight-meta">
+                  <span>✈️ ${r.airport}</span> ｜ <span>${r.meta}</span>
+                </div>
+              </div>
+              <div class="route-action-cta">
+                <span>前往 Trip 即時搶票 ↗</span>
+              </div>
+            </div>
+          </a>
+        `;
+      }).join('');
+    }
+
+    // 對調出發與目的地
+    function swapOriginDest() {
+      const fromSel = document.getElementById('flightFrom');
+      const toSel = document.getElementById('flightTo');
+      // 切換為熱門選項
+      const curFrom = fromSel.value;
+      if (curFrom === 'taipei') fromSel.value = 'bangkok';
+      else fromSel.value = 'taipei';
+    }
+
+    // 🌟 四大服務格子按鈕連動切換 (Tab Switch)
+    let currentTab = 'flights';
+    function switchSearchTab(tabKey, btn) {
+      currentTab = tabKey;
+      document.querySelectorAll('.search-tab-pill').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const formGrid = document.getElementById('flightSearchForm');
+      if (!formGrid) return;
+
+      if (tabKey === 'flights') {
+        formGrid.style.gridTemplateColumns = '';
+        formGrid.innerHTML = `
+          <!-- 出發地 -->
+          <div class="form-field-box">
+            <span class="field-label">出發地 (From)</span>
+            <select id="flightFrom" class="field-select">
+              <option value="taipei" selected>🇹🇼 台北 (TPE / TSA)</option>
+              <option value="kaohsiung">🇹🇼 高雄 (KHH)</option>
+              <option value="bangkok">🇹🇭 曼谷 (BKK / DMK)</option>
+              <option value="hongkong">🇭🇰 香港 (HKG)</option>
+              <option value="singapore">🇸🇬 新加坡 (SIN)</option>
+              <option value="kualalumpur">🇲🇾 吉隆坡 (KUL)</option>
+            </select>
+          </div>
+
+          <!-- 對調按鈕 -->
+          <div class="swap-btn-wrap">
+            <button class="btn-swap" onclick="swapOriginDest()" title="對調出發與抵達地">⇄</button>
+          </div>
+
+          <!-- 目的地 -->
+          <div class="form-field-box">
+            <span class="field-label">目的地 (To 日本航點)</span>
+            <select id="flightTo" class="field-select">
+              <option value="tokyo" selected>🗼 東京 全部機場 (NRT/HND)</option>
+              <option value="osaka">🐙 大阪 關西 (KIX)</option>
+              <option value="sapporo">❄️ 札幌 新千歲 (CTS)</option>
+              <option value="fukuoka">🍜 福岡 (FUK)</option>
+              <option value="okinawa">🌺 沖繩 那霸 (OKA)</option>
+              <option value="nagoya">🏔️ 名古屋 中部 (NGO)</option>
+              <option value="sendai">🌲 仙台 (SDJ)</option>
+            </select>
+          </div>
+
+          <!-- 出發日期 -->
+          <div class="form-field-box">
+            <span class="field-label">出發日期 (Depart)</span>
+            <input type="date" id="flightDepartDate" class="field-input">
+          </div>
+
+          <!-- 回程日期 -->
+          <div class="form-field-box">
+            <span class="field-label">回程日期 (Return)</span>
+            <input type="date" id="flightReturnDate" class="field-input">
+          </div>
+
+          <!-- 人數與艙等 -->
+          <div class="form-field-box">
+            <span class="field-label">人數與艙等</span>
+            <select id="flightClass" class="field-select">
+              <option value="1_econ" selected>1位成人, 經濟艙</option>
+              <option value="2_econ">2位成人, 經濟艙</option>
+              <option value="family">2位成人 + 1位兒童</option>
+              <option value="1_biz">1位成人, 商務艙</option>
+            </select>
+          </div>
+
+          <!-- 搜尋按鈕 (Trip.com 亮藍漸層) -->
+          <div>
+            <button class="btn-search-flights" onclick="executeFlightSearch()">
+              <span>搜尋機票 🚀</span>
+            </button>
+          </div>
+        `;
+        setDefaultDates();
+      } else if (tabKey === 'hotels') {
+        formGrid.style.gridTemplateColumns = '1.8fr 1fr 1fr 1.2fr minmax(140px, auto)';
+        formGrid.innerHTML = `
+          <div class="form-field-box">
+            <span class="field-label">入住目的地 (City)</span>
+            <select id="hotelCity" class="field-select">
+              <option value="tokyo" selected>🗼 東京 (新宿/銀座/澀谷/淺草)</option>
+              <option value="osaka">🐙 大阪 (難波/心齋橋/梅田)</option>
+              <option value="kyoto">🍵 京都 (祇園/京都車站/河原町)</option>
+              <option value="sapporo">❄️ 札幌・北海道 (薄野/小樽/富良野)</option>
+              <option value="fukuoka">🍜 福岡・九州 (博多/天神)</option>
+              <option value="okinawa">🌺 沖繩 (那霸/美國村/恩納村)</option>
+            </select>
+          </div>
+          <div class="form-field-box">
+            <span class="field-label">入住日期 (Check-in)</span>
+            <input type="date" id="hotelCheckIn" class="field-input">
+          </div>
+          <div class="form-field-box">
+            <span class="field-label">退房日期 (Check-out)</span>
+            <input type="date" id="hotelCheckOut" class="field-input">
+          </div>
+          <div class="form-field-box">
+            <span class="field-label">房型與人數</span>
+            <select id="hotelGuests" class="field-select">
+              <option value="2_adults" selected>1 間客房, 2 位成人</option>
+              <option value="1_adult">1 間客房, 1 位成人</option>
+              <option value="family">1 間客房, 2 大 1 小</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn-search-flights" onclick="executeHotelSearch()">
+              <span>搜尋超值飯店 🏨</span>
+            </button>
+          </div>
+        `;
+        setHotelDefaultDates();
+      } else if (tabKey === 'charter') {
+        formGrid.style.gridTemplateColumns = '2fr 1.2fr 1.4fr minmax(150px, auto)';
+        formGrid.innerHTML = `
+          <div class="form-field-box">
+            <span class="field-label">抵達機場與路線 (Airport Transfer)</span>
+            <select id="charterAirport" class="field-select">
+              <option value="NRT" selected>✈️ 成田國際機場 (NRT) ➔ 東京市區/富士山</option>
+              <option value="HND">✈️ 羽田國際機場 (HND) ➔ 東京市區/箱根</option>
+              <option value="KIX">✈️ 關西國際機場 (KIX) ➔ 大阪/京都/奈良</option>
+              <option value="FUK">✈️ 福岡國際機場 (FUK) ➔ 福岡市區/由布院</option>
+              <option value="CTS">✈️ 新千歲國際機場 (CTS) ➔ 札幌/二世谷</option>
+            </select>
+          </div>
+          <div class="form-field-box">
+            <span class="field-label">接送日期</span>
+            <input type="date" id="charterDate" class="field-input">
+          </div>
+          <div class="form-field-box">
+            <span class="field-label">車型與人數</span>
+            <select class="field-select">
+              <option selected>1~6 人座 (Alphard 豪華商務車)</option>
+              <option>5~9 人座 (Toyota Hiace 海獅大空間)</option>
+              <option>自駕租車比價 (ToCoo! / Klook)</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn-search-flights" onclick="window.location.href='japan_charter_rental.html'">
+              <span>前往包車專頁 🚗</span>
+            </button>
+          </div>
+        `;
+        const d = new Date(); d.setDate(d.getDate() + 7);
+        const el = document.getElementById('charterDate');
+        if (el) el.value = d.toISOString().split('T')[0];
+      } else if (tabKey === 'jrpass') {
+        formGrid.style.gridTemplateColumns = '2.2fr 1.2fr minmax(140px, auto) minmax(140px, auto)';
+        formGrid.innerHTML = `
+          <div class="form-field-box">
+            <span class="field-label">周遊券與觀光列車 (JR Pass & Scenic Trains)</span>
+            <select id="jrPassType" class="field-select">
+              <option value="all_japan" selected>🚄 全日本 JR PASS 鐵路周遊券 (7/14/21日)</option>
+              <option value="jr_east">🍁 JR 東日本鐵路周遊券 (東北地區 / 長野新潟)</option>
+              <option value="jr_west">🐙 JR 關西廣域周遊券 (大阪/京都/城崎溫泉/岡山)</option>
+              <option value="jr_kyushu">🌋 JR 九州鐵路周遊券 (由布院之森/雙星4047)</option>
+              <option value="hokkaido">❄️ JR 北海道鐵路周遊券 (札幌/函館/富良野)</option>
+            </select>
+          </div>
+          <div class="form-field-box">
+            <span class="field-label">預計啟用日期</span>
+            <input type="date" id="jrPassDate" class="field-input">
+          </div>
+          <div>
+            <button class="btn-search-flights" onclick="window.location.href='japan_train_tour.html'" style="background:linear-gradient(135deg,#059669 0%,#047857 100%);">
+              <span>51+ 觀光列車圖鑑 🚅</span>
+            </button>
+          </div>
+          <div>
+            <button class="btn-search-flights" onclick="executeJrPassSearch()">
+              <span>購買 JR Pass 🎫</span>
+            </button>
+          </div>
+        `;
+        const d = new Date(); d.setDate(d.getDate() + 7);
+        const el = document.getElementById('jrPassDate');
+        if (el) el.value = d.toISOString().split('T')[0];
+      }
+    }
+
+    const TRIP_HOTEL_CITY_MAP = {
+      'tokyo': 'tokyo-hotels-list-294',
+      'osaka': 'osaka-hotels-list-219',
+      'kyoto': 'kyoto-hotels-list-734',
+      'okinawa': 'okinawa-hotels-list-614',
+      'sapporo': 'sapporo-hotels-list-704',
+      'hokkaido': 'sapporo-hotels-list-704',
+      'fukuoka': 'fukuoka-hotels-list-267'
+    };
+
+    function buildTripHotelRedirectUrl(cityKey) {
+      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+      const c = (cityKey || 'tokyo').toLowerCase();
+      const cityPath = TRIP_HOTEL_CITY_MAP[c] || 'tokyo-hotels-list-294';
+
+      let domain = 'https://tw.trip.com';
+      let sub1 = '%E6%97%A5%E6%9C%AC%E5%A0%B1%E5%A0%B1_%E4%BD%8F%E5%AE%BF';
+
+      if (savedLang === 'en') {
+        domain = 'https://www.trip.com';
+        sub1 = '%E6%97%A5%E6%9C%AC%E5%A0%B1%E5%A0%B1_EN_Hotel';
+      } else if (savedLang === 'ja') {
+        domain = 'https://jp.trip.com';
+        sub1 = '%E6%97%A5%E6%9C%AC%E5%A0%B1%E5%A0%B1_JP_Hotel';
+      }
+
+      const targetUrl = `${domain}/hotels/${cityPath}/`;
+      return `${domain}/?Allianceid=9507030&SID=325761227&trip_sub1=${sub1}&trip_sub3=D20905663&redirect_url=${encodeURIComponent(targetUrl)}`;
+    }
+
+    function executeHotelSearch() {
+      const city = document.getElementById('hotelCity')?.value || 'tokyo';
+      const url = buildTripHotelRedirectUrl(city);
+      window.open(url, '_blank');
+    }
+
+    function executeJrPassSearch() {
+      const pass = document.getElementById('jrPassType')?.value || 'all_japan';
+      const url = buildTripDeepLink(`/trains/japan-rail-pass?type=${pass}`);
+      window.open(url, '_blank');
+    }
+
+    function setHotelDefaultDates() {
+      const today = new Date();
+      const inDate = new Date(today);
+      inDate.setDate(today.getDate() + 7);
+      const outDate = new Date(inDate);
+      outDate.setDate(inDate.getDate() + 5);
+
+      const inEl = document.getElementById('hotelCheckIn');
+      const outEl = document.getElementById('hotelCheckOut');
+      if (inEl) inEl.value = inDate.toISOString().split('T')[0];
+      if (outEl) outEl.value = outDate.toISOString().split('T')[0];
+    }
+
+    function setDefaultDates() {
+      const today = new Date();
+      const nextTue = new Date(today);
+      const dayOffset = (2 - today.getDay() + 7) % 7 || 7;
+      nextTue.setDate(today.getDate() + dayOffset + 7);
+      const nextSun = new Date(nextTue);
+      nextSun.setDate(nextTue.getDate() + 5);
+
+      const dInput = document.getElementById('flightDepartDate');
+      const rInput = document.getElementById('flightReturnDate');
+      if (dInput) dInput.value = nextTue.toISOString().split('T')[0];
+      if (rInput) rInput.value = nextSun.toISOString().split('T')[0];
+    }
+
+    function executeFlightSearch() {
+      const from = document.getElementById('flightFrom')?.value || 'taipei';
+      const to = document.getElementById('flightTo')?.value || 'tokyo';
+      const dDate = document.getElementById('flightDepartDate')?.value;
+      const rDate = document.getElementById('flightReturnDate')?.value;
+
+      const codeMap = {
+        'taipei': { code: 'tpe', slug: 'taipei' },
+        'kaohsiung': { code: 'khh', slug: 'kaohsiung' },
+        'bangkok': { code: 'bkk', slug: 'bangkok' },
+        'singapore': { code: 'sin', slug: 'singapore' },
+        'hongkong': { code: 'hkg', slug: 'hong-kong' },
+        'kualalumpur': { code: 'kul', slug: 'kuala-lumpur' },
+        'tokyo': { code: 'tyo', slug: 'tokyo' },
+        'osaka': { code: 'osa', slug: 'osaka' },
+        'sapporo': { code: 'spk', slug: 'sapporo' },
+        'fukuoka': { code: 'fuk', slug: 'fukuoka' },
+        'okinawa': { code: 'oka', slug: 'okinawa' },
+        'nagoya': { code: 'ngo', slug: 'nagoya' },
+        'sendai': { code: 'sdj', slug: 'sendai' }
+      };
+      const fromInfo = codeMap[from.toLowerCase()] || { code: 'tpe', slug: 'taipei' };
+      const toInfo = codeMap[to.toLowerCase()] || { code: 'tyo', slug: 'tokyo' };
+
+      const r = {
+        routePath: `/flights/${fromInfo.slug}-to-${toInfo.slug}/tickets-${fromInfo.code}-${toInfo.code}`
+      };
+      let finalUrl = getRouteUrl(r, 'taiwan');
+      if (dDate) {
+        finalUrl += `&dcity=${fromInfo.code}&acity=${toInfo.code}&ddate=${dDate}`;
+        if (rDate) finalUrl += `&rdate=${rDate}`;
+      }
+      window.open(finalUrl, '_blank');
+    }
+
+    function toggleLangDropdown(event) {
+      if (event) event.stopPropagation();
+      const menu = document.getElementById('langDropdownMenu');
+      if (menu) menu.classList.toggle('show');
+    }
+    function selectLanguage(langCode, langName) {
+      const lbl = document.getElementById('currentLangLabel');
+      if (lbl) lbl.textContent = langName;
+      const menu = document.getElementById('langDropdownMenu');
+      if (menu) menu.classList.remove('show');
+      localStorage.setItem('tabi_selected_lang', langCode);
+      // renderRoutesGrid(currentOriginTab);
+    }
+    window.addEventListener('click', function (e) {
+      const wrap = document.getElementById('langSelectorWrap');
+      const menu = document.getElementById('langDropdownMenu');
+      if (wrap && menu && !wrap.contains(e.target)) {
+        menu.classList.remove('show');
+      }
+    });
+
+    // 初始化日期預設值與預設台灣航線
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        const [
+          airportDetails, airportLounges, airportTransit, airportGallery,
+          magazineData, allGallery, routesData
+        ] = await Promise.all([
+          fetch('data/airport_details.json', { cache: 'no-store' }).then(r => r.json()),
+          fetch('data/airport_lounges.json', { cache: 'no-store' }).then(r => r.json()),
+          fetch('data/airport_transit_guides.json', { cache: 'no-store' }).then(r => r.json()),
+          fetch('data/airport_editorial_gallery.json', { cache: 'no-store' }).then(r => r.json()),
+          fetch('data/airport_magazine_data.json', { cache: 'no-store' }).then(r => r.json()),
+          fetch('data/all_airports_gallery_db.json', { cache: 'no-store' }).then(r => r.json()),
+          fetch('data/routes_data.json', { cache: 'no-store' }).then(r => r.json())
+        ]);
+        AIRPORT_DETAILS = airportDetails;
+        AIRPORT_LOUNGES = airportLounges;
+        AIRPORT_TRANSIT_GUIDES = airportTransit;
+        AIRPORT_EDITORIAL_GALLERY = airportGallery;
+        AIRPORT_MAGAZINE_DATA = magazineData;
+        ALL_AIRPORTS_GALLERY_DB = allGallery;
+        ROUTES_DATA = routesData;
+      } catch (e) {
+        console.error('機場資料載入失敗:', e);
+      }
+      setDefaultDates();
+      // renderRoutesGrid('taiwan');
+      initAirportMagazineHub();
+    });
+  </script>
+
+  <script>
+    // 🌐 全站外跳連結多國語系安全攔截器 (保證 100% 帶入專屬分潤參數與正確目標語言)
+    document.addEventListener('click', function (e) {
+      const a = e.target.closest('a');
+      if (!a || !a.href) return;
+      const href = a.href;
+      const savedLang = localStorage.getItem('tabi_selected_lang') || 'zh-TW';
+
+      if (href.includes('trip.com')) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        if (href.includes('/t/fgyJcXow1X2')) return;
+        const domMap = { 'en': 'https://www.trip.com', 'th': 'https://th.trip.com', 'ja': 'https://jp.trip.com', 'ko': 'https://kr.trip.com', 'zh-CN': 'https://hk.trip.com', 'zh-TW': 'https://tw.trip.com' };
+        const base = domMap[savedLang] || 'https://tw.trip.com';
+        let newHref = href.replace(/https:\/\/(tw|jp|th|kr|hk|www)\.trip\.com/, base);
+        if (!newHref.includes('Allianceid=')) {
+          const sep = newHref.includes('?') ? '&' : '?';
+          newHref += `${sep}${TRIP_AFFILIATE_QUERY}`;
+        }
+        a.href = newHref;
+      } else if (href.includes('klook.com')) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        const locMap = { 'en': 'en-US', 'th': 'th', 'ja': 'ja', 'ko': 'ko', 'zh-CN': 'zh-CN', 'zh-TW': 'zh-TW' };
+        const loc = locMap[savedLang] || 'zh-TW';
+        let newHref = href.replace(/klook\.com\/[a-zA-Z_\-]+(\/|$)/, `klook.com/${loc}/`);
+        if (!newHref.includes('aid=')) {
+          const sep = newHref.includes('?') ? '&' : '?';
+          newHref += `${sep}aid=123436&utm_medium=affiliate-alwayson`;
+        }
+        a.href = newHref;
+      } else if (href.includes('booking.com')) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        const locMap = { 'en': 'en-gb', 'th': 'th', 'ja': 'ja', 'ko': 'ko', 'zh-CN': 'zh-cn', 'zh-TW': 'zh-tw' };
+        const curMap = { 'en': 'USD', 'th': 'THB', 'ja': 'JPY', 'ko': 'KRW', 'zh-CN': 'CNY', 'zh-TW': 'TWD' };
+        const loc = locMap[savedLang] || 'zh-tw';
+        const cur = curMap[savedLang] || 'TWD';
+        let newHref = href.replace(/searchresults\.[a-z\-]+\.html/, `searchresults.${loc}.html`);
+        if (!newHref.includes('aid=')) {
+          const sep = newHref.includes('?') ? '&' : '?';
+          newHref += `${sep}aid=2422002`;
+        }
+        if (!newHref.includes('selected_currency=')) {
+          newHref += `&selected_currency=${cur}`;
+        }
+        a.href = newHref;
+      }
+    });
+  </script>
+
+  <script src="/js/tabi_core.js"></script>
+</body>
+
+</html>

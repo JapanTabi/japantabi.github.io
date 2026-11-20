@@ -1,0 +1,4 @@
+/* Preserve the original cascade: page styles, shared controls, then footer. */
+@import './main.css';
+@import '../shared/tabi-core.css';
+@import './footer.css';
