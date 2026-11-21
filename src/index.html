@@ -258,6 +258,58 @@
             <span class="deal-item-arrow">➔</span>
           </div>
         </div>
+
+        <!-- 6. 日本名湯 ♨️ -->
+        <div class="deal-big-card" id="dealCard_hotspring" onclick="document.getElementById('hotSpringSection').scrollIntoView({behavior:'smooth'})"
+          title="日本名湯百選・草津箱根有馬登別・日歸入浴與一泊二食">
+          <div class="deal-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=600&q=80" alt="日本名湯" loading="lazy">
+          </div>
+          <div class="deal-card-bottom-bar">
+            <h3 class="deal-item-name">♨️ 日本名湯</h3>
+            <span class="deal-item-arrow">➔</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ♨️ 日本名湯特輯 (HOT SPRINGS SHOWCASE) -->
+    <section class="hotspring-showcase-section" id="hotSpringSection" style="margin: 28px 0 16px 0;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
+        <div>
+          <div style="font-size:0.75rem; font-weight:800; color:#0284C7; letter-spacing:0.05em; text-transform:uppercase;">JAPAN ONSEN SELECTION</div>
+          <h2 style="font-size:1.35rem; font-weight:900; color:#0F172A; margin:2px 0 0 0; display:flex; align-items:center; gap:8px;">
+            <span>♨️ 日本名湯百選 ｜ 極上溫泉案內</span>
+          </h2>
+        </div>
+        <div style="font-size:0.8rem; color:#64748B; font-weight:600;">
+          草津・箱根・有馬・城崎・由布院 ｜ 官方泉質與日歸外湯指南
+        </div>
+      </div>
+
+      <!-- 橫向滑動名湯卡片容器 -->
+      <div id="hotSpringCardsScroller" style="display:grid; grid-auto-flow:column; grid-auto-columns:minmax(280px, 320px); gap:16px; overflow-x:auto; padding-bottom:12px; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
+        <!-- 由 JS 動態讀取 /data/hot_springs.json 渲染 -->
+      </div>
+    </section>
+
+    <!-- 🎆 日本花火大會與傳統祭典曆 (FESTIVALS & FIREWORKS) -->
+    <section class="festival-showcase-section" id="festivalSection" style="margin: 24px 0 20px 0;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
+        <div>
+          <div style="font-size:0.75rem; font-weight:800; color:#D97706; letter-spacing:0.05em; text-transform:uppercase;">TRADITIONAL FESTIVALS & FIREWORKS</div>
+          <h2 style="font-size:1.35rem; font-weight:900; color:#0F172A; margin:2px 0 0 0; display:flex; align-items:center; gap:8px;">
+            <span>🎆 2026 日本花火大會 ＆ 傳統祭典全典</span>
+          </h2>
+        </div>
+        <div style="font-size:0.8rem; color:#64748B; font-weight:600;">
+          長岡祭・大曲花火・隅田川・淀川・祇園祭 ｜ 萬發連發觀覽席指南
+        </div>
+      </div>
+
+      <!-- 橫向滑動祭典卡片容器 -->
+      <div id="festivalCardsScroller" style="display:grid; grid-auto-flow:column; grid-auto-columns:minmax(290px, 330px); gap:16px; overflow-x:auto; padding-bottom:12px; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
+        <!-- 由 JS 動態讀取 /data/festivals.json 渲染 -->
       </div>
     </section>
 
@@ -6909,73 +6961,6 @@
           <span>🛫</span> <span>台北 ⇄ 札幌機票</span>
         </button>
         <button onclick="window.open(buildTripHotelUrl('東京'), '_blank')"
-          style="background:#FFF; border:1px solid #D9C9B8; color:#4A3E31; padding:7px 14px; border-radius:20px; font-size:0.78rem; font-weight:800; cursor:pointer; display:inline-flex; align-items:center; gap:4px; transition:all 0.2s;"
-          onmouseover="this.style.background='#F5EBE1'" onmouseout="this.style.background='#FFF'">
-          <span>🏨</span> <span>日本優質飯店 (5.5%回饋)</span>
-        </button>
-      </div>
-
-      <!-- 小巧優雅的折價券提示 -->
-      <div
-        style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; font-size:0.74rem; color:#8C6D58; padding-top:10px; border-top:1px dashed #E2D5C7;">
-        <div>
-          <span>🎟️ 專屬折扣代碼：</span>
-          <code
-            style="background:#FFF; border:1px solid #D9C9B8; padding:2px 6px; border-radius:4px; font-weight:800; color:#2E261F;">TRIPFLYJP</code>
-          (機票) ｜
-          <code
-            style="background:#FFF; border:1px solid #D9C9B8; padding:2px 6px; border-radius:4px; font-weight:800; color:#2E261F;">TRIPHOTEL55</code>
-          (飯店5.5%)
-        </div>
-        <span style="font-size:0.72rem; color:#A8927E;">結帳直接自動帶入，無須跳出搜尋防失效</span>
-      </div>
-    </div>
-
-
-  </div>
-  </div>
-
-  <!-- 🚆 列車詳細報導專屬抽屜彈窗 (Train Detail Modal) -->
-  <div class="train-detail-drawer" id="trainDetailModal">
-    <div class="train-drawer-content">
-      <button class="train-drawer-close" onclick="closeTrainDetail()">✕</button>
-      <div id="trainDetailBody" style="padding:32px 36px;">
-        <!-- 動態渲染列車深度資訊 -->
-      </div>
-    </div>
-  </div>
-
-
-  <!-- 特派員報導抽屜 -->
-  <div class="reading-sheet" id="readingSheet">
-    <div class="sheet-top-nav">
-      <div style="display:flex; align-items:center; gap:8px;">
-        <span style="font-size:18px;">📖</span>
-        <span style="font-size:0.85rem; font-weight:900; color:#2D3748;">特派員報導 ｜ 實地手記</span>
-      </div>
-      <button onclick="closeReadingSheet()"
-        style="width:30px; height:30px; border-radius:50%; border:1px solid #CBD5E1; background:#FFF; cursor:pointer;">✕</button>
-    </div>
-    <div class="sheet-scroll-body" id="sheetContent"></div>
-  </div>
-
-  <!-- 官方品牌願景宣告 Footer (ONESTORY 深度文章雜誌風格) -->
-
-
-
-  <footer class="tabi-footer"
-    style="background:#FAF8F5; border-top:1px solid #1E293B; padding:72px 24px 48px; margin-top:80px; position:relative; z-index:10;">
-
-    <!-- 🌸 《日旅報報》品牌創立精神 (BRAND MANIFESTO - 深度圖案美學特刊版) -->
-    <div class="tabi-footer-manifesto-box">
-      <div class="tabi-footer-manifesto-left"
-        style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; padding-right:32px; border-right:1px solid #E2E8F0;">
-        <span
-          style="font-family:'Cinzel', serif; font-size:0.68rem; font-weight:700; letter-spacing:2.5px; color:#92400E;">BRAND
-          MANIFESTO</span>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <div style="width:40px; height:40px; border-radius:50%; overflow:hidden; flex-shrink:0;"><img
-              src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
           <div style="width:32px; height:32px; border-radius:50%; overflow:hidden; border:1px solid #E2E8F0;">
             <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
@@ -7479,23 +7464,81 @@
         });
 
       // 自動讀取 public/data/weather_today.json 更新主要城市天氣
-      fetch('/data/weather_today.json', { cache: 'no-store' })
+      // 自動讀取 public/data/hot_springs.json 渲染名湯模組
+      fetch('/data/hot_springs.json', { cache: 'no-store' })
         .then(function(res) { return res.json(); })
-        .then(function(data) {
-          if (data && data.cities && data.cities.length) {
-            var container = document.getElementById('heroWeatherList');
-            if (container) {
-              container.innerHTML = data.cities.map(function(c) {
-                var tempStr = c.temp_min && c.temp_max && c.temp_min !== '--' ? (c.temp_min + ' ~ ' + c.temp_max) : (c.temp_max || '');
-                return '<span title="' + c.name + '降雨率 ' + c.pop + '">' +
-                  c.name + ' ' + c.icon + ' ' + tempStr +
-                '</span>';
-              }).join('<span style="color:#E2E8F0;">•</span>');
-            }
+        .then(function(springs) {
+          var container = document.getElementById('hotSpringCardsScroller');
+          if (container && Array.isArray(springs)) {
+            container.innerHTML = springs.map(function(s) {
+              return '<div style="background:#FFF; border-radius:18px; border:1px solid #E2E8F0; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.04); display:flex; flex-direction:column; scroll-snap-align:start;">' +
+                '<div style="position:relative; height:150px; overflow:hidden;">' +
+                  '<img src="' + s.image + '" alt="' + s.name + '" style="width:100%; height:100%; object-fit:cover;" loading="lazy">' +
+                  '<span style="position:absolute; top:10px; left:10px; background:rgba(15,23,42,0.75); color:#FFF; font-size:0.7rem; font-weight:700; padding:3px 8px; border-radius:999px; backdrop-filter:blur(4px);">' +
+                    '#' + s.rank + ' ' + s.pref +
+                  '</span>' +
+                '</div>' +
+                '<div style="padding:14px; display:flex; flex-direction:column; flex:1;">' +
+                  '<div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">' +
+                    '<h4 style="margin:0; font-size:1.05rem; font-weight:800; color:#0F172A;">' + s.name + '</h4>' +
+                    '<span style="font-size:0.75rem; color:#64748B;">' + s.jp + '</span>' +
+                  '</div>' +
+                  '<div style="font-size:0.72rem; color:#0284C7; font-weight:700; margin-bottom:8px;">' + s.spring_quality + '</div>' +
+                  '<p style="font-size:0.78rem; color:#475569; margin:0 0 12px 0; line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; flex:1;">' +
+                    s.highlights +
+                  '</p>' +
+                  '<div style="background:#F8FAFC; border-radius:8px; padding:6px 10px; font-size:0.72rem; color:#334155; margin-bottom:12px;">' +
+                    '<span style="font-weight:700; color:#0F172A;">♨️ 日歸推薦：</span>' + s.day_trip +
+                  '</div>' +
+                  '<a href="https://tw.trip.com/?Allianceid=9507030&SID=325761227&trip_sub1=' + encodeURIComponent(s.booking_keyword) + '" target="_blank" rel="noopener sponsored" ' +
+                    'style="display:block; text-align:center; padding:8px 0; background:#FFF1F2; border:1px solid #FECDD3; color:#E11D48; border-radius:10px; font-size:0.8rem; font-weight:800; text-decoration:none; transition:all 0.2s;">' +
+                    '查詢 ' + s.name + ' 一泊二食空房 ➔' +
+                  '</a>' +
+                '</div>' +
+              '</div>';
+            }).join('');
           }
         })
         .catch(function(err) {
-          console.debug('Weather fetch skipped:', err);
+          console.debug('Hot springs fetch skipped:', err);
+        });
+
+      // 自動讀取 public/data/festivals.json 渲染花火大會與傳統祭典
+      fetch('/data/festivals.json', { cache: 'no-store' })
+        .then(function(res) { return res.json(); })
+        .then(function(festivals) {
+          var container = document.getElementById('festivalCardsScroller');
+          if (container && Array.isArray(festivals)) {
+            container.innerHTML = festivals.map(function(f) {
+              return '<div style="background:#FFF; border-radius:18px; border:1px solid #E2E8F0; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.04); display:flex; flex-direction:column; scroll-snap-align:start;">' +
+                '<div style="position:relative; height:150px; overflow:hidden;">' +
+                  '<img src="' + f.image + '" alt="' + f.name + '" style="width:100%; height:100%; object-fit:cover;" loading="lazy">' +
+                  '<span style="position:absolute; top:10px; left:10px; background:rgba(217,119,6,0.9); color:#FFF; font-size:0.7rem; font-weight:800; padding:3px 8px; border-radius:999px; backdrop-filter:blur(4px);">' +
+                    f.scale.split('・')[0] + ' ｜ ' + f.date_display +
+                  '</span>' +
+                '</div>' +
+                '<div style="padding:14px; display:flex; flex-direction:column; flex:1;">' +
+                  '<div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">' +
+                    '<h4 style="margin:0; font-size:1.05rem; font-weight:800; color:#0F172A;">' + f.name + '</h4>' +
+                    '<span style="font-size:0.75rem; color:#64748B;">' + f.pref + '</span>' +
+                  '</div>' +
+                  '<div style="font-size:0.72rem; color:#B45309; font-weight:700; margin-bottom:6px;">發數：' + f.shots + '</div>' +
+                  '<p style="font-size:0.78rem; color:#475569; margin:0 0 10px 0; line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; flex:1;">' +
+                    f.highlights +
+                  '</p>' +
+                  '<div style="background:#FEF3C7; border-radius:8px; padding:6px 10px; font-size:0.72rem; color:#92400E; margin-bottom:12px;">' +
+                    '<strong>觀賞席：</strong>' + f.reserved_seats +
+                  '</div>' +
+                  '<div style="font-size:0.72rem; color:#64748B; padding-top:6px; border-top:1px dashed #E2E8F0;">' +
+                    '🚇 ' + f.transit +
+                  '</div>' +
+                '</div>' +
+              '</div>';
+            }).join('');
+          }
+        })
+        .catch(function(err) {
+          console.debug('Festivals fetch skipped:', err);
         });
     })();
   </script>

@@ -549,6 +549,10 @@
           <span>06. 親子幼童與同行申報</span>
           <span class="arrow">➔</span>
         </a>
+        <a href="#shopping-coupons" class="toc-item-link" style="background:#FFFBEB; border-color:#FDE68A;">
+          <span style="color:#B45309; font-weight:800;">07. 必備購物藥妝優惠券 🎁</span>
+          <span class="arrow" style="color:#B45309;">➔</span>
+        </a>
       </nav>
 
       <!-- 01. Visit Japan Web -->
@@ -667,6 +671,21 @@
           <li><strong>家庭優先通關通道（Priority Lane）：</strong>攜帶未滿 2 歲嬰兒或坐輪椅長者之家庭，抵達入境查驗大廳時可主動洽詢現場引導人員，多數機場設有家庭優先禮遇專櫃，縮短排隊等候時間。
           </li>
         </ul>
+      </section>
+
+      <!-- 07. 必備免稅與購物藥妝優惠券庫 -->
+      <section class="rule-section-card" id="shopping-coupons" style="border: 2px solid #F59E0B; background: #FFFDF9;">
+        <span class="rule-sec-kicker" style="color:#D97706;">SECTION 07 ｜ 旅客特惠實用專區</span>
+        <h2 class="rule-sec-h2">2025/2026 日本必備免稅＋超值購物藥妝電器優惠券全集</h2>
+        <div class="rule-sec-sub">唐吉訶德・Bic Camera・松本清・尚都樂客 ｜ 結帳前出示即享 10% 免稅 ＋ 最高額外 8% 折扣</div>
+        <p class="rule-sec-p" style="margin-bottom:20px;">
+          配合日本免稅規定（單筆未稅滿 5,000 日圓），結帳時搭配以下專屬優惠券條碼，除可享 10% 免稅外，還能疊加享有各店家專屬的 3%~8% 額外現折優惠！建議將本頁加入書籤，結帳時直接點開向店員出示。
+        </p>
+
+        <!-- 優惠券卡片列表容器 -->
+        <div id="couponsContainer" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;">
+          <!-- 由 JS 自動讀取 /data/coupons.json 渲染 -->
+        </div>
       </section>
     </article>
   </main>
@@ -927,6 +946,44 @@
   </footer>
 
   <script src="/js/tabi_core.js"></script>
+  <script>
+    // 自動讀取 /data/coupons.json 渲染優惠券專區
+    (function() {
+      fetch('/data/coupons.json', { cache: 'no-store' })
+        .then(function(res) { return res.json(); })
+        .then(function(coupons) {
+          var container = document.getElementById('couponsContainer');
+          if (container && Array.isArray(coupons)) {
+            container.innerHTML = coupons.map(function(c) {
+              return '<div style="background:#FFFFFF; border-radius:16px; border:1px solid #E2E8F0; padding:18px; box-shadow:0 4px 12px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">' +
+                '<div>' +
+                  '<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">' +
+                    '<span style="background:#FEF3C7; color:#B45309; font-size:0.72rem; font-weight:800; padding:3px 8px; border-radius:999px;">' + c.badge + '</span>' +
+                    '<span style="font-size:0.75rem; color:#64748B;">' + c.jp + '</span>' +
+                  '</div>' +
+                  '<h3 style="font-size:1.05rem; font-weight:800; color:#0F172A; margin:0 0 6px 0;">' + c.name + '</h3>' +
+                  '<div style="font-size:0.78rem; font-weight:800; color:#DC2626; margin-bottom:6px;">' + c.discount + '</div>' +
+                  '<div style="font-size:0.75rem; color:#475569; margin-bottom:10px;">門檻：' + c.condition + '</div>' +
+                  '<div style="background:#F8FAFC; border-radius:8px; padding:8px 10px; font-size:0.72rem; color:#334155; margin-bottom:14px;">' +
+                    '<strong style="color:#0F172A;">人氣必買：</strong>' + c.popular_items.join('、') +
+                  '</div>' +
+                '</div>' +
+                '<div>' +
+                  '<div style="font-size:0.7rem; color:#94A3B8; margin-bottom:8px;">💡 ' + c.usage + '</div>' +
+                  '<button onclick="alert(\'請於【' + c.name + '】結帳時向店員出示護照與折扣畫面，即可享 10% 免稅 + 折扣！\')" ' +
+                    'style="width:100%; padding:10px 0; background:#EA580C; color:#FFF; border:none; border-radius:10px; font-size:0.84rem; font-weight:800; cursor:pointer; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s;">' +
+                    '📱 結帳時點此出示折扣碼' +
+                  '</button>' +
+                '</div>' +
+              '</div>';
+            }).join('');
+          }
+        })
+        .catch(function(err) {
+          console.debug('Coupons fetch skipped:', err);
+        });
+    })();
+  </script>
 </body>
 
 </html>

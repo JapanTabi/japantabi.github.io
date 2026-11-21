@@ -1478,6 +1478,28 @@
       </div>
     </section>
 
+    <!-- 🚗 全日本自駕必停：公路休息站「道の駅」補給指南 -->
+    <section class="michinoeki-section" id="michinoekiSection" style="margin: 24px 0 32px 0;">
+      <div style="background:#FFFFFF; border-radius:20px; border:1px solid #E2E8F0; padding:24px 28px; box-shadow:0 8px 30px rgba(15,23,42,0.03);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:16px; flex-wrap:wrap; gap:8px;">
+          <div>
+            <div style="font-size:0.75rem; font-weight:800; color:#059669; letter-spacing:0.05em; text-transform:uppercase;">OFFICIAL ROAD STATION REST-STOP</div>
+            <h3 style="font-size:1.25rem; font-weight:900; color:#0F172A; margin:2px 0 0 0; display:flex; align-items:center; gap:8px;">
+              <span>🚗 沖繩自駕最強補給站 ｜ 道の駅（公路休息站）嚴選</span>
+            </h3>
+          </div>
+          <div style="font-size:0.78rem; color:#64748B; font-weight:600;">
+            免費停車・24H清潔公廁・現烤海鮮・阿古豬美食與水族館平價門票
+          </div>
+        </div>
+
+        <!-- 休息站卡片橫向滑動容器 -->
+        <div id="michinoekiContainer" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;">
+          <!-- 由 JS 自動讀取 /data/roadside_stations.json 渲染 -->
+        </div>
+      </div>
+    </section>
+
 
 
     <!-- 🚙 專屬模組 2: 沖繩租車自駕安全手冊與救援專區 (海島大自然冒險配色、高專業信賴感) -->
@@ -2662,6 +2684,44 @@
         targetPanel.style.display = 'block';
       }
     }
+
+    // 自動讀取 /data/roadside_stations.json 渲染沖繩公路休息站
+    (function() {
+      fetch('data/roadside_stations.json', { cache: 'no-store' })
+        .then(function(res) { return res.json(); })
+        .then(function(stations) {
+          var container = document.getElementById('michinoekiContainer');
+          if (container && Array.isArray(stations)) {
+            // 優先篩選沖繩地區休息站
+            var okinawaStations = stations.filter(function(s) { return s.region === 'okinawa'; });
+            container.innerHTML = okinawaStations.map(function(s) {
+              return '<div style="background:#FFFFFF; border-radius:16px; border:1px solid #E2E8F0; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.03); display:flex; flex-direction:column;">' +
+                '<div style="position:relative; height:140px; overflow:hidden;">' +
+                  '<img src="' + s.image + '" alt="' + s.name + '" style="width:100%; height:100%; object-fit:cover;" loading="lazy">' +
+                  '<span style="position:absolute; top:10px; left:10px; background:#059669; color:#FFF; font-size:0.7rem; font-weight:800; padding:3px 8px; border-radius:999px;">' +
+                    s.badge +
+                  '</span>' +
+                '</div>' +
+                '<div style="padding:16px; display:flex; flex-direction:column; flex:1;">' +
+                  '<div style="font-size:0.75rem; color:#64748B; font-weight:600; margin-bottom:2px;">' + s.area + ' ｜ ' + s.highway + '</div>' +
+                  '<h4 style="margin:0 0 6px 0; font-size:1.05rem; font-weight:800; color:#0F172A;">' + s.name + '</h4>' +
+                  '<p style="font-size:0.78rem; color:#475569; margin:0 0 10px 0; line-height:1.45; flex:1;">' + s.highlights + '</p>' +
+                  '<div style="background:#F0FDF4; border:1px solid #DCFCE7; border-radius:8px; padding:6px 10px; font-size:0.72rem; color:#166534; margin-bottom:10px;">' +
+                    '<strong>必吃推薦：</strong>' + s.must_try.join('、') +
+                  '</div>' +
+                  '<div style="display:flex; justify-content:space-between; align-items:center; font-size:0.72rem; color:#64748B; padding-top:8px; border-top:1px dashed #E2E8F0;">' +
+                    '<span>🅿️ ' + s.facilities.parking.split('（')[0] + '</span>' +
+                    '<span style="color:#0284C7; font-weight:700;">MapCode: ' + s.mapcode + '</span>' +
+                  '</div>' +
+                '</div>' +
+              '</div>';
+            }).join('');
+          }
+        })
+        .catch(function(err) {
+          console.debug('Michinoeki fetch skipped:', err);
+        });
+    })();
   </script>
 
 </body>

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "donki",
+    "name": "唐吉訶德（驚安之殿堂 DON DON DONKI）",
+    "jp": "ドン・キホーテ",
+    "category": "綜合雜貨・零食・藥妝・伴手禮",
+    "discount": "10% 免稅 ＋ 最高額外 5%~7% 折扣",
+    "condition": "未稅滿 10,000 日圓享 5% 折扣；滿 30,000 日圓享 7% 折扣",
+    "badge": "人氣第一・24H必逛",
+    "popular_items": ["一蘭拉麵盒裝", "合利他命 EX Plus", "日本零食伴手禮", "蒸氣眼罩", "行李箱"],
+    "usage": "結帳前出示電子條碼，由店員掃描折扣（不可直接使用截圖列印條碼，需開啟網頁出示）。",
+    "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=600&q=80",
+    "coupon_url": "https://japan-tabi.donki.coupon/"
+  },
+  {
+    "id": "biccamera",
+    "name": "Bic Camera（必客家美樂電器）",
+    "jp": "ビックカメラ",
+    "category": "3C數位・家電・藥妝・手錶名酒",
+    "discount": "10% 免稅 ＋ 相機家電 7% / 藥妝化妝品 5% / 日本清酒 3%",
+    "condition": "外國旅客單筆消費達免稅門檻 5,000 日圓（未稅）以上",
+    "badge": "電器霸主・中文服務",
+    "popular_items": ["Panasonic 吹風機", "象印／虎牌電鍋", "Dyson 吸塵器", "Nintendo Switch", "日本威士忌"],
+    "usage": "結帳時向店員出示護照與手機優惠券畫面即可享有連動優惠。",
+    "image": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600&q=80",
+    "coupon_url": "https://japan-tabi.biccamera.coupon/"
+  },
+  {
+    "id": "matsukiyo",
+    "name": "松本清藥妝（Matsumoto Kiyoshi）",
+    "jp": "マツモトキヨシ",
+    "category": "藥品・保健品・美妝保養・個人護理",
+    "discount": "10% 免稅 ＋ 滿額最高再折 3% ~ 7%",
+    "condition": "滿 10,000 日圓享額外 3%；滿 30,000 日圓享 5%；滿 50,000 日圓享 7% 折扣",
+    "badge": "日本最大藥妝連鎖",
+    "popular_items": ["EVE 止痛藥", "DHC 保健品系列", "WAKAMOTO", "資生堂美白防曬", "Rohto 樂敦眼藥水"],
+    "usage": "免稅結帳櫃檯向店員出示優惠券條碼掃描折抵。",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80",
+    "coupon_url": "https://japan-tabi.matsukiyo.coupon/"
+  },
+  {
+    "id": "sundrug",
+    "name": "尚都樂客藥妝（Sundrug）",
+    "jp": "サンドラッグ",
+    "category": "家庭常備藥・保養品・零食",
+    "discount": "10% 免稅 ＋ 額外最高 3% ~ 8% 折扣",
+    "condition": "滿 10,000 日圓享 3%；滿 30,000 日圓享 5%；滿 50,000 日圓享 8% 折扣",
+    "badge": "在地價格最親民",
+    "popular_items": ["大正感冒微粒", "太田胃散", "龍角散", "休足時間", "Melano CC 精華液"],
+    "usage": "結帳時出示條碼，Sundrug 店內常有折扣特價商品可疊加免稅。",
+    "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80",
+    "coupon_url": "https://japan-tabi.sundrug.coupon/"
+  },
+  {
+    "id": "edion",
+    "name": "愛電王（EDION 電器）",
+    "jp": "エディオン",
+    "category": "家電・生活雜貨・保溫瓶・伴手禮",
+    "discount": "10% 免稅 ＋ 電器 7% / 藥妝雜貨 5% 折扣",
+    "condition": "購物滿未稅 5,000 日圓以上適用免稅",
+    "badge": "關西機場直營・退稅便捷",
+    "popular_items": ["美容導入儀", "咖啡機", "空氣清淨機", "保溫杯", "手錶"],
+    "usage": "大阪難波本店與各大門市皆有中文退稅服務，出示條碼即享折抵。",
+    "image": "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=600&q=80",
+    "coupon_url": "https://japan-tabi.edion.coupon/"
+  },
+  {
+    "id": "takashimaya",
+    "name": "高島屋百貨（Takashimaya）",
+    "jp": "髙島屋",
+    "category": "專櫃精品・化妝品・服飾・地下街銘菓",
+    "discount": "10% 免稅 ＋ 專屬 95 折 Hello Kitty 貴賓折扣卡",
+    "condition": "外國旅客出示護照領取 95 折卡，單筆滿 3,000 日圓（未稅）即可折抵",
+    "badge": "百年貴婦百貨・伴手禮天堂",
+    "popular_items": ["SUQQU / POLA / 肌膚之鑰", "日本高級和菓子", "名牌童裝服飾", "頂級生鮮水果"],
+    "usage": "購物前先至退稅櫃台或服務中心出示護照領取 Kitty 卡，結帳時直接打 95 折後再辦理免稅。",
+    "image": "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=600&q=80",
+    "coupon_url": "https://japan-tabi.takashimaya.coupon/"
+  }
+]
