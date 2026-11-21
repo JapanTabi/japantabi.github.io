@@ -1,0 +1,66 @@
+{
+  "updated_at": "2026-11-22 00:59:45",
+  "source": "Japan Meteorological Agency (JMA) 官方開放數據",
+  "cities": [
+    {
+      "key": "tokyo",
+      "name": "東京",
+      "name_en": "Tokyo",
+      "weather": "晴れ",
+      "icon": "☀️",
+      "pop": "0%",
+      "temp_min": "5°C",
+      "temp_max": "14°C"
+    },
+    {
+      "key": "osaka",
+      "name": "大阪",
+      "name_en": "Osaka",
+      "weather": "くもり 所により 雨",
+      "icon": "🌧️",
+      "pop": "30%",
+      "temp_min": "7°C",
+      "temp_max": "13°C"
+    },
+    {
+      "key": "kyoto",
+      "name": "京都",
+      "name_en": "Kyoto",
+      "weather": "晴れ 夜 くもり 所により 雨",
+      "icon": "🌧️",
+      "pop": "20%",
+      "temp_min": "4°C",
+      "temp_max": "13°C"
+    },
+    {
+      "key": "sapporo",
+      "name": "札幌",
+      "name_en": "Sapporo",
+      "weather": "くもり 夜のはじめ頃 雪",
+      "icon": "❄️",
+      "pop": "40%",
+      "temp_min": "-1°C",
+      "temp_max": "4°C"
+    },
+    {
+      "key": "fukuoka",
+      "name": "福岡",
+      "name_en": "Fukuoka",
+      "weather": "くもり 時々 雨 所により 雷 を伴う",
+      "icon": "🌧️",
+      "pop": "60%",
+      "temp_min": "9°C",
+      "temp_max": "12°C"
+    },
+    {
+      "key": "okinawa",
+      "name": "沖繩",
+      "name_en": "Okinawa",
+      "weather": "晴れ",
+      "icon": "☀️",
+      "pop": "0%",
+      "temp_min": "17°C",
+      "temp_max": "23°C"
+    }
+  ]
+}

@@ -38,17 +38,20 @@ jobs:
         if: github.event_name == 'schedule' || inputs.update_snow == true
         with:
           python-version: "3.12"
-      - name: Update snow report
+      - name: Update snow report and exchange rates
         if: github.event_name == 'schedule' || inputs.update_snow == true
-        run: python scripts/update_snow.py
+        run: |
+          python scripts/update_snow.py
+          python scripts/update_rates.py
+          python scripts/update_weather.py
       - name: Commit updated report
         if: github.event_name == 'schedule' || inputs.update_snow == true
         run: |
-          if [ -n "$(git status --porcelain public/data/snow_today.json)" ]; then
+          if [ -n "$(git status --porcelain public/data/snow_today.json public/data/exchange_rate.json public/data/weather_today.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public/data/snow_today.json
-            git commit -m "chore: update daily snow report"
+            git add public/data/snow_today.json public/data/exchange_rate.json public/data/weather_today.json
+            git commit -m "chore: update daily snow report, rates and weather"
             git push
           fi
       - run: npm ci

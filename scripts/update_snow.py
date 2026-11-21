@@ -16,12 +16,25 @@ from datetime import datetime, timedelta, timezone
 
 JST = timezone(timedelta(hours=9))
 
-# name 為前端顯示名稱。富士天神山座標為近似值，可自行修正。
+# 全日本 12 大熱門滑雪場精準座標
 LOCATIONS = [
-    {"key": "niseko",  "name": "二世谷",     "lat": 42.8048, "lon": 140.6874},
-    {"key": "rusutsu", "name": "留壽都",     "lat": 42.7525, "lon": 140.9069},
-    {"key": "kiroro",  "name": "喜樂樂",     "lat": 43.0762, "lon": 140.9839},
-    {"key": "fujiten", "name": "富士天神山", "lat": 35.4800, "lon": 138.7300},
+    # 北海道
+    {"key": "niseko",   "name": "二世谷聯合",   "lat": 42.8048, "lon": 140.6874},
+    {"key": "rusutsu",  "name": "留壽都",       "lat": 42.7525, "lon": 140.9069},
+    {"key": "kiroro",   "name": "喜樂樂",       "lat": 43.0762, "lon": 140.9839},
+    {"key": "furano",   "name": "富良野",       "lat": 43.3422, "lon": 142.3556},
+    {"key": "tomamu",   "name": "星野TOMAMU",   "lat": 43.0641, "lon": 142.6314},
+    # 長野 / 白馬 / 志賀高原
+    {"key": "hakuba",   "name": "白馬八方尾根", "lat": 36.7022, "lon": 137.8378},
+    {"key": "nozawa",   "name": "野澤溫泉",     "lat": 36.9224, "lon": 138.4497},
+    {"key": "shiga",    "name": "志賀高原",     "lat": 36.7214, "lon": 138.5133},
+    # 新潟 / 湯澤
+    {"key": "naeba",    "name": "苗場滑雪場",   "lat": 36.7925, "lon": 138.7878},
+    {"key": "gala",     "name": "GALA湯澤",     "lat": 36.9506, "lon": 138.7997},
+    # 東北
+    {"key": "zao",      "name": "藏王溫泉",     "lat": 38.1636, "lon": 140.3986},
+    # 關東近郊 / 富士
+    {"key": "fujiten",  "name": "富士天神山",   "lat": 35.4800, "lon": 138.7300},
 ]
 
 API = "https://api.open-meteo.com/v1/forecast"
@@ -86,6 +99,13 @@ def main():
             "name": sunny["name"],
             "stat": "晴天率 %d%%" % sunny["sunny_pct"],
         },
+        "resorts": {
+            r["name"]: {
+                "snowfall_cm": r["snowfall_cm"],
+                "depth_cm": r["depth_cm"],
+                "sunny_pct": r["sunny_pct"]
+            } for r in results
+        }
     }
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
