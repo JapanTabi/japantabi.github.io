@@ -150,6 +150,10 @@
     .catch(function (error) {
       messages = { 'zh-TW': sourceMessages };
       hasMessages = true;
+      // A partial dictionary must never leave dynamically rendered controls in
+      // the requested language: sourceMessages only contains Traditional
+      // Chinese.  Switch the shared language state before page listeners run.
+      current = 'zh-TW';
       document.documentElement.dataset.i18nState = 'fallback';
       if (domReady) {
         syncState();
