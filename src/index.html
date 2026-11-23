@@ -3,11 +3,22 @@
 
 <head>
   <script src="/js/lang_switcher.js"></script>
+  <script src="/js/translation_memory.js"></script>
+  <script src="/js/site_i18n.js"></script>
+  <script src="/js/booking_locale.js"></script>
+  <script src="/js/spot_identity.js"></script>
+  <script src="/js/spot_i18n.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/images/japan_tabi_logo.png">
   <link rel="manifest" href="/manifest.json">
   <title>日旅報報 JAPAN TABI ｜ 全日本四季時令前線・花火大會・極上粉雪・觀光名所官方指南</title>
+  <meta name="description" content="日本旅遊報報整理日本花季、煙火、滑雪、溫泉與旅遊景點，提供交通、收藏與行程規劃資訊。">
+  <meta property="og:title" content="日旅報報 JAPAN TABI ｜ 全日本四季時令前線・花火大會・極上粉雪・觀光名所官方指南">
+  <meta property="og:description" content="日本旅遊報報整理日本花季、煙火、滑雪、溫泉與旅遊景點，提供交通、收藏與行程規劃資訊。">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:title" content="日旅報報 JAPAN TABI ｜ 全日本四季時令前線・花火大會・極上粉雪・觀光名所官方指南">
+  <meta name="twitter:description" content="日本旅遊報報整理日本花季、煙火、滑雪、溫泉與旅遊景點，提供交通、收藏與行程規劃資訊。">
 
   <!-- Editorial Typography: Kinfolk & Cereal Aesthetic (與 japan_special_edition.html 同步) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,25 +47,25 @@
   <!-- 頂部 Header：匯率資訊、品牌識別與導覽 -->
   <header class="app-header home-header">
     <div class="header-left">
-      <div class="header-rate-pill" id="headerRatePill" title="每日定時同步匯率 (來源：ECB)">
-        <span class="header-rate-label">JPY / TWD <span>每日匯率</span></span>
+      <div class="header-rate-pill" id="headerRatePill" title="每日定時同步匯率 (來源：ECB)" data-i18n-title="rate.source">
+        <span class="header-rate-label">JPY / TWD <span data-i18n="rate.label">每日匯率</span></span>
         <span id="headerJpyRate">1 JPY ≈ NT$ 0.2065</span>
       </div>
     </div>
 
     <!-- 🌟 官網正中間品牌標誌與文字排版 (54px 官方雙環 Logo，精準居中對齊) -->
     <div class="header-center">
-      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI">
+      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI" data-i18n-title="brand.name">
         <div class="fuji-logo-box">
           <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo" class="brand-tabi-logo">
         </div>
         <div class="brand-text">
           <h1 id="brandTitle">
-            <span class="brand-title-zh" id="brandTitleZh">日旅報報</span>
+            <span class="brand-title-zh" id="brandTitleZh" data-i18n="brand.name">日旅報報</span>
           </h1>
           <div class="brand-sub-official-wrap">
             <span class="brand-title-en" id="brandTitleEn">JAPAN TABI</span>
-            <span class="brand-tag-official" id="brandTag">日本觀光情報</span>
+            <span class="brand-tag-official" id="brandTag" data-i18n="brand.tag">日本觀光情報</span>
           </div>
         </div>
       </a>
@@ -64,29 +75,29 @@
     <div class="header-right">
       <div class="header-nav-scroll">
         <a href="japan_entry_rules.html" class="header-entry-pill" title="最新日本入境規範、免稅新制與海關申報手冊"
-          style="background:#EA580C; color:#FFFFFF; font-weight:700; font-size:0.82rem; padding:5px 12px; border-radius:999px; text-decoration:none; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; margin-right:4px;">
-          <span>最新入境規範</span>
+          style="background:#EA580C; color:#FFFFFF; font-weight:700; font-size:0.82rem; padding:5px 12px; border-radius:999px; text-decoration:none; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; margin-right:4px;" data-i18n-title="nav.entry">
+          <span data-i18n="nav.entry">最新入境規範</span>
         </a>
-        <a href="japan_flight_deals.html" class="header-nav-link " title="日本空港手帖・機場探索指南">
-          <span>查機票</span>
+        <a href="japan_flight_deals.html" class="header-nav-link " title="日本空港手帖・機場探索指南" data-i18n-title="nav.flights">
+          <span data-i18n="nav.flights">查機票</span>
         </a>
-        <a href="japan_charter_rental.html" class="header-nav-link " title="日本客製包車 ＆ 自駕租車指南">
-          <span>包車/租車</span>
+        <a href="japan_charter_rental.html" class="header-nav-link " title="日本客製包車 ＆ 自駕租車指南" data-i18n-title="nav.charter">
+          <span data-i18n="nav.charter">包車/租車</span>
         </a>
-        <a href="japan_okinawa_drive.html" class="header-nav-link " title="沖繩海島不繞路自駕攻略">
-          <span>沖繩自駕</span>
+        <a href="japan_okinawa_drive.html" class="header-nav-link " title="沖繩海島不繞路自駕攻略" data-i18n-title="nav.okinawa">
+          <span data-i18n="nav.okinawa">沖繩自駕</span>
         </a>
-        <a href="japan_inbound_rankings.html" class="header-nav-link " title="日本排行榜">
-          <span>日本排行</span>
+        <a href="japan_inbound_rankings.html" class="header-nav-link " title="日本排行榜" data-i18n-title="nav.rankings">
+          <span data-i18n="nav.rankings">日本排行</span>
         </a>
-        <a href="japan_special_edition.html" class="header-nav-link " title="深度文章・高質感日本文化與戶外誌">
-          <span>深度文章</span>
+        <a href="japan_special_edition.html" class="header-nav-link " title="深度文章・高質感日本文化與戶外誌" data-i18n-title="nav.articles">
+          <span data-i18n="nav.articles">深度文章</span>
         </a>
       </div>
 
       <!-- 🌐 前台多國語言切換器 (Language Selector) -->
       <div class="lang-selector-dropdown-wrap" id="langSelectorWrap">
-        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言">
+        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言" data-i18n-title="langLabel">
           <span class="util-btn-icon">🌐</span>
           <span id="currentLangLabel">Language</span>
           <span class="lang-arrow" id="langArrow">▾</span>
@@ -136,9 +147,7 @@
           <!-- 🌟 細長法式風情英文 Slogan -->
           <div class="hero-slogan-en">From Spring Blooms to Winter Snow — Every Encounter, Once in a Lifetime.</div>
           <!-- 🌟 中文主標 -->
-          <h1 class="hero-slogan-zh">
-            春櫻冬雪，每一場與日本的相遇，<br>都是一期一會。
-          </h1>
+          <h1 class="hero-slogan-zh" data-i18n="home.hero">春櫻冬雪，每一場與日本的相遇，都是一期一會。</h1>
           <!-- 🌟 日文美學對照 -->
           <div class="hero-slogan-ja">春の桜、冬の雪。すべての出逢いを、一期一会に。</div>
 
@@ -146,11 +155,11 @@
           <div id="heroWeatherStrip" style="margin-top:16px; display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); padding:6px 14px; border-radius:999px; font-size:0.8rem; color:#1E293B; box-shadow:0 2px 8px rgba(0,0,0,0.06); border:1px solid rgba(255,255,255,0.6);">
             <span style="font-weight:800; color:#0284C7; display:flex; align-items:center; gap:4px;">
               <span>🇯🇵</span>
-              <span>日本官方今日天氣</span>
+              <span data-i18n="weather.title">日本官方今日天氣</span>
             </span>
             <span style="color:#CBD5E1;">|</span>
-            <div id="heroWeatherList" aria-live="polite" aria-busy="true" tabindex="0" aria-label="各城市天氣，可橫向捲動" style="display:flex; align-items:center; gap:12px; font-weight:600;">
-              <span>載入中...</span>
+            <div id="heroWeatherList" aria-live="polite" aria-busy="true" tabindex="0" aria-label="各城市天氣，可橫向捲動" style="display:flex; align-items:center; gap:12px; font-weight:600;" data-i18n-aria-label="weather.scroll">
+              <span data-i18n="weather.loading">載入中...</span>
             </div>
           </div>
         </div>
@@ -164,25 +173,25 @@
             <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=500&q=80"
               alt="Sakura" loading="lazy">
             <div class="float-card-overlay">
-              <span class="float-badge">🌸 櫻花盛典</span>
-              <div class="float-title">目黑川櫻並木</div>
-              <div class="float-sub">滿開吹雪水岸絕景</div>
+              <span class="float-badge" data-i18n="home.season.sakura">🌸 櫻花盛典</span>
+              <div class="float-title" data-i18n="home.preview.sakura.name">目黑川櫻並木</div>
+              <div class="float-sub" data-i18n="home.preview.sakura.description">滿開吹雪水岸絕景</div>
             </div>
           </div>
           <div class="floating-preview-card card-medium" onclick="switchMasterHub('flower', null); scrollToDeals();">
             <img src="/images/hero_float_momiji.jpg" alt="Momiji" loading="lazy">
             <div class="float-card-overlay">
-              <span class="float-badge" style="color:#FCA5A5;">🍁 秋楓見頃</span>
-              <div class="float-title">京都紅葉古道</div>
-              <div class="float-sub">寺院落葉紅毯絕景</div>
+              <span class="float-badge" style="color:#FCA5A5;" data-i18n="home.season.momiji">🍁 秋楓見頃</span>
+              <div class="float-title" data-i18n="home.preview.momiji.name">京都紅葉古道</div>
+              <div class="float-sub" data-i18n="home.preview.momiji.description">寺院落葉紅毯絕景</div>
             </div>
           </div>
           <div class="floating-preview-card card-short" onclick="switchMasterHub('snow', null); scrollToDeals();">
             <img src="/images/hero_float_snow_biei.jpg" alt="Snow" loading="lazy">
             <div class="float-card-overlay">
-              <span class="float-badge" style="color:#7DD3FC;">❄️ 冬雪青池</span>
-              <div class="float-title">北海道美瑛青池</div>
-              <div class="float-sub">銀白積雪湖面倒影</div>
+              <span class="float-badge" style="color:#7DD3FC;" data-i18n="home.preview.snow.name">❄️ 冬雪青池</span>
+              <div class="float-title" data-i18n="home.preview.snow.name">北海道美瑛青池</div>
+              <div class="float-sub" data-i18n="home.preview.snow.description">銀白積雪湖面倒影</div>
             </div>
           </div>
         </div>
@@ -204,22 +213,22 @@
         <!-- 1. 賞花前線 -->
         <div class="deal-big-card active" id="dealCard_flower" onclick="switchMasterHub('flower', this)">
           <div class="deal-card-img-wrap">
-            <img src="/images/menu_sakura.jpg" alt="賞花前線" loading="lazy">
+            <img src="/images/menu_sakura.jpg" alt="賞花前線" loading="lazy" data-i18n-alt="home.menu.flower">
           </div>
           <div class="deal-card-bottom-bar">
-            <h3 class="deal-item-name">賞花前線</h3>
+            <h3 class="deal-item-name" data-i18n="home.menu.flower">賞花前線</h3>
             <span class="deal-item-arrow">➔</span>
           </div>
         </div>
 
         <!-- 2. 極上粉雪 -->
         <div class="deal-big-card" id="dealCard_snow" onclick="window.location.href='japan_ski_resorts.html'"
-          title="全日本 27 大雪場・粉雪即時速報・初學與教練指南">
+          title="全日本 27 大雪場・粉雪即時速報・初學與教練指南" data-i18n-title="footer.skiDescription">
           <div class="deal-card-img-wrap">
-            <img src="/images/menu_snow.jpg" alt="極上粉雪" loading="lazy">
+            <img src="/images/menu_snow.jpg" alt="極上粉雪" loading="lazy" data-i18n-alt="home.season.snow">
           </div>
           <div class="deal-card-bottom-bar">
-            <h3 class="deal-item-name">⛷️ 日本滑雪預約教練</h3>
+            <h3 class="deal-item-name" data-i18n="home.menu.snow">⛷️ 日本滑雪預約教練</h3>
             <span class="deal-item-arrow">➔</span>
           </div>
         </div>
@@ -228,10 +237,10 @@
         <div class="deal-big-card" id="dealCard_camp_charter"
           onclick="window.location.href='japan_charter_rental.html'">
           <div class="deal-card-img-wrap">
-            <img src="/images/menu_camp.jpg" alt="露營與自駕" loading="lazy">
+            <img src="/images/menu_camp.jpg" alt="露營與自駕" loading="lazy" data-i18n-alt="home.menu.camp">
           </div>
           <div class="deal-card-bottom-bar">
-            <h3 class="deal-item-name">露營與自駕</h3>
+            <h3 class="deal-item-name" data-i18n="home.menu.camp">露營與自駕</h3>
             <span class="deal-item-arrow">➔</span>
           </div>
         </div>
@@ -239,10 +248,10 @@
         <!-- 4. 鐵道之旅 -->
         <div class="deal-big-card" id="dealCard_topics" onclick="window.location.href='japan_train_tour.html'">
           <div class="deal-card-img-wrap">
-            <img src="/images/menu_train.jpg" alt="鐵道之旅" loading="lazy">
+            <img src="/images/menu_train.jpg" alt="鐵道之旅" loading="lazy" data-i18n-alt="home.menu.train">
           </div>
           <div class="deal-card-bottom-bar">
-            <h3 class="deal-item-name">鐵道之旅</h3>
+            <h3 class="deal-item-name" data-i18n="home.menu.train">鐵道之旅</h3>
             <span class="deal-item-arrow">➔</span>
           </div>
         </div>
@@ -250,22 +259,22 @@
         <!-- 5. 遊樂園 -->
         <div class="deal-big-card" id="dealCard_park" onclick="window.location.href='japan_theme_parks.html'">
           <div class="deal-card-img-wrap">
-            <img src="/images/theme_amusement_park.jpg" alt="遊樂園" loading="lazy">
+            <img src="/images/theme_amusement_park.jpg" alt="遊樂園" loading="lazy" data-i18n-alt="home.menu.park">
           </div>
           <div class="deal-card-bottom-bar">
-            <h3 class="deal-item-name">遊樂園</h3>
+            <h3 class="deal-item-name" data-i18n="home.menu.park">遊樂園</h3>
             <span class="deal-item-arrow">➔</span>
           </div>
         </div>
 
         <!-- 6. 日本名湯 ♨️ -->
         <div class="deal-big-card" id="dealCard_hotspring" onclick="document.getElementById('hotSpringSection').scrollIntoView({behavior:'smooth'})"
-          title="日本名湯百選・草津箱根有馬登別・日歸入浴與一泊二食">
+          title="日本名湯百選・草津箱根有馬登別・日歸入浴與一泊二食" data-i18n-title="home.onsen.description">
           <div class="deal-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=600&q=80" alt="日本名湯" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=600&q=80" alt="日本名湯" loading="lazy" data-i18n-alt="home.menu.onsen">
           </div>
           <div class="deal-card-bottom-bar">
-            <h3 class="deal-item-name">♨️ 日本名湯</h3>
+            <h3 class="deal-item-name" data-i18n="home.menu.onsen">♨️ 日本名湯</h3>
             <span class="deal-item-arrow">➔</span>
           </div>
         </div>
@@ -278,15 +287,16 @@
         <div>
           <div style="font-size:0.75rem; font-weight:800; color:#0284C7; letter-spacing:0.05em; text-transform:uppercase;">JAPAN ONSEN SELECTION</div>
           <h2 style="font-size:1.35rem; font-weight:900; color:#0F172A; margin:2px 0 0 0; display:flex; align-items:center; gap:8px;">
-            <span>♨️ 日本名湯百選 ｜ 極上溫泉案內</span>
+            <span data-i18n="home.onsen.title">♨️ 日本名湯百選 ｜ 極上溫泉案內</span>
           </h2>
         </div>
-        <div style="font-size:0.8rem; color:#64748B; font-weight:600;">
+        <div style="font-size:0.8rem; color:#64748B; font-weight:600;" data-i18n="home.onsen.description">
           草津・箱根・有馬・城崎・由布院 ｜ 官方泉質與日歸外湯指南
         </div>
       </div>
 
       <!-- 橫向滑動名湯卡片容器 -->
+      <p id="hotSpringTranslationNotice" class="showcase-notice" hidden aria-live="polite"></p>
       <div id="hotSpringCardsScroller" style="display:grid; grid-auto-flow:column; grid-auto-columns:minmax(280px, 320px); gap:16px; overflow-x:auto; padding-bottom:12px; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
         <!-- 由 JS 動態讀取 /data/hot_springs.json 渲染 -->
       </div>
@@ -298,15 +308,16 @@
         <div>
           <div style="font-size:0.75rem; font-weight:800; color:#D97706; letter-spacing:0.05em; text-transform:uppercase;">TRADITIONAL FESTIVALS & FIREWORKS</div>
           <h2 style="font-size:1.35rem; font-weight:900; color:#0F172A; margin:2px 0 0 0; display:flex; align-items:center; gap:8px;">
-            <span>🎆 2026 日本花火大會 ＆ 傳統祭典全典</span>
+            <span data-i18n="home.festivals.title">🎆 2026 日本花火大會 ＆ 傳統祭典全典</span>
           </h2>
         </div>
-        <div style="font-size:0.8rem; color:#64748B; font-weight:600;">
+        <div style="font-size:0.8rem; color:#64748B; font-weight:600;" data-i18n="home.festivals.description">
           長岡祭・大曲花火・隅田川・淀川・祇園祭 ｜ 萬發連發觀覽席指南
         </div>
       </div>
 
       <!-- 橫向滑動祭典卡片容器 -->
+      <p id="festivalTranslationNotice" class="showcase-notice" hidden aria-live="polite"></p>
       <div id="festivalCardsScroller" style="display:grid; grid-auto-flow:column; grid-auto-columns:minmax(290px, 330px); gap:16px; overflow-x:auto; padding-bottom:12px; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
         <!-- 由 JS 動態讀取 /data/festivals.json 渲染 -->
       </div>
@@ -322,12 +333,12 @@
         </div>
         <div style="display:flex; align-items:center; gap:10px;">
           <span
-            style="font-size:0.75rem; color:#64748B; font-weight:800; background:#F1F5F9; padding:4px 10px; border-radius:12px;">
+            style="font-size:0.75rem; color:#64748B; font-weight:800; background:#F1F5F9; padding:4px 10px; border-radius:12px;" data-i18n="home.feed.scroll">
             👉 往右滑看更多現場 (12+)
           </span>
           <button class="btn-upload-banner" onclick="openLiveReportModal('upload')">
             <span>📸</span>
-            <span id="uploadBtnText">我要分享最新實況 ➔</span>
+            <span id="uploadBtnText" data-i18n="home.share">我要分享最新實況 ➔</span>
           </button>
         </div>
       </div>
@@ -391,6 +402,7 @@
       <!-- JS 動態生成專屬篩選膠囊 -->
     </div>
 
+    <p id="spotTranslationNotice" class="showcase-notice" hidden aria-live="polite"></p>
     <div class="spots-grid-layout" id="cards-container">
       <!-- JS 動態生成卡片 -->
     </div>
@@ -4862,9 +4874,9 @@
               <span>🛡️</span> <span>1. 租車保險制度全解析 (CDW vs NOC)</span>
             </div>
             <div style="font-size:0.8rem; color:#475569; line-height:1.6;">
-              • <b>基本強制險</b>：保費內建，賠償對方人身與車輛，但有「自負額 (約5~10萬日圓)」。<br>
-              • <b>CDW 免責補償險</b>：免除事故發生時自己的車輛自負額，強烈建議每日必保！<br>
-              • <b>NOC 營業損失賠償</b>：車輛送修期間賠償租車公司的營運損失（自開回店約 2 萬日圓，無法開回約 5 萬日圓）。加購「安心全包險 (TAS)」即可全額免除。
+              • <b>基本強制險</b>：法定自賠責保險主要保障對方人身損害，不保障車損；租車附加的對人、對物及車損保險與自負額須逐項查合約。<br>
+              • <b>CDW 免責補償險</b>：依方案條件補償約定自負額；除外責任、事故申報及適用車種須向租車公司確認。<br>
+              • <b>NOC 營業損失賠償</b>：車輛無法營運的補償費用，金額與是否可豁免依租車合約及保障方案判定，不保證加購後任何事故均免責。
             </div>
           </div>
 
@@ -4872,12 +4884,12 @@
           <div style="background:#F8FAFC; border:1px solid #E2E8F0; padding:18px; border-radius:10px;">
             <div
               style="font-weight:900; color:#0F172A; font-size:1rem; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
-              <span>📄</span> <span>2. 自駕行前必備 3 大正本證件 (缺一不可)</span>
+              <span>📄</span> <span>2. 依駕照核發地確認自駕證件</span>
             </div>
             <div style="font-size:0.8rem; color:#475569; line-height:1.6;">
-              • <b>台灣旅客三寶</b>：① 台灣駕照「正本」＋ ② 台灣監理所核發之「日文譯本正本」＋ ③ 中華民國「護照正本」。<br>
-              • <b>重要禁忌</b>：台灣旅客切勿攜帶國際駕照 (IDP)，日本法律不承認台灣國際駕照！<br>
-              • <b>香港/澳門旅客</b>：需備 1949 年日內瓦公約「國際駕照 (IDP) 正本」＋ 本地駕照 ＋ 護照。
+              • <b>持台灣核發駕照者</b>：① 有效台灣駕照正本＋ ② 日本認可的日文譯本＋ ③ 護照等入境日期證明；取車文件另依租車公司要求。<br>
+              • <b>重要禁忌</b>：台灣核發的國際駕照不能取代有效台灣駕照與認可日譯本；持其他地區核發駕照者依核發地與證件制度判定，不以國籍判定。<br>
+              • <b>持港澳核發駕照者</b>：需備 1949 年日內瓦公約「國際駕照 (IDP) 正本」＋ 本地駕照 ＋ 護照。
             </div>
           </div>
 
@@ -4889,9 +4901,9 @@
             </div>
             <div style="font-size:0.8rem; color:#475569; line-height:1.6;">
               • <b>靠左行駛口訣</b>：「左小轉、右大轉、駕駛人靠近馬路中線」。<br>
-              • <b>一時停止 (止まれ)</b>：看到倒三角形紅色標誌，車輪必須「完全靜止 3 秒」，左右張望確認安全後方可前行！<br>
+              • <b>一時停止 (止まれ)</b>：須在停止線前完全停止並確認安全；沒有一律必須靜止 3 秒的法定秒數。<br>
               • <b>行人絕對路權</b>：綠燈轉彎只要斑馬線有行人，一律停車禮讓，嚴禁鳴喇叭催促。<br>
-              • <b>平交道</b>：無論柵欄是否升起，一律在停止線前完全煞停 1 秒再通過。<br>
+              • <b>平交道</b>：通過前須依標誌及號誌規定停止並確認安全；有交通號誌控制時依其指示，不以固定停車秒數判定。<br>
               • <b>高速公路</b>：右側為超車道，超車完畢務必打燈切回左側行車道。
             </div>
           </div>
@@ -4905,7 +4917,7 @@
             <div style="font-size:0.8rem; color:#475569; line-height:1.6;">
               • <b>擋板式 (フラップ式)</b>：倒車停妥後約 3 分鐘車底板會升起鎖住。繳費時至精算機輸入車位號碼 (車室番號) 投幣，擋板完全降平後再開出。<br>
               • <b>閘門式</b>：入口抽停車票卡，取車前至事前精算機或出口閘門插卡繳費。<br>
-              • <b>切勿違規臨停</b>：日本取締違停極為嚴格，穿綠色制服的民間巡查員 (駐車監視員) 拍照 2 分鐘即可開單罰鍰 15,000 日圓！
+              • <b>切勿違規臨停</b>：依現場標誌停車，違規處理依車種、地點與違規類型而異，不存在保證可停的寬限秒數或一律相同罰款。
             </div>
           </div>
 
@@ -4970,7 +4982,7 @@
               <b>A: 第一時間必須做三件事：</b><br>
               ① 撥打 <b>110 (日本警察)</b> 報案（如有傷患同時撥打 <b>119 救護車</b>）。<br>
               ② 撥打租車合約書上的「事故緊急聯絡中心電話」。<br>
-              ③ <b>重要關鍵</b>：日本法律規定無論多微小刮傷，皆<b>必須取得警方「交通事故證明書」</b>！若未報警逕自離開現場，所有保險 (CDW/NOC) 一律失效，將承擔全額修車費與刑事責任。
+              ③ <b>重要關鍵</b>：事故時須依規定報警、救護並通知租車公司，保存申報紀錄；事故證明、保障是否適用及責任依個案與合約處理，不能保證任何方案均全額理賠。
             </div>
           </div>
 
@@ -4981,10 +4993,10 @@
             </div>
             <div style="color:#334155; line-height:1.6;">
               <b>A: 缺一不可，絕不可用影本或手機照片代替：</b><br>
-              ① <b>台灣駕照正本</b>（注意有效期限，若過期請先在台灣換發新照）。<br>
-              ② <b>監理所日文譯本正本</b>（規費 100 元，不可用國際駕照代替）。<br>
+              ① <b>台灣駕照正本</b>（有效性須依核發機關規定確認，不只依卡面舊印效期判斷）。<br>
+              ② <b>監理所日文譯本正本</b>（費用與核發方式請查核發機關；台灣核發國際駕照不能替代）。<br>
               ③ <b>護照正本</b>。<br>
-              *(港澳或其他國家旅客則需攜帶日內瓦公約 1949 國際駕照 IDP + 本地駕照 + 護照)*。
+              持其他地區駕照者，請依日本警察廳公告確認適用國際駕照或認可日譯本制度；資格依駕照核發地而非國籍判定。
             </div>
           </div>
 
@@ -6960,28 +6972,75 @@
           <span>🛫</span> <span>台北 ⇄ 札幌機票</span>
         </button>
         <button onclick="window.open(buildTripHotelUrl('東京'), '_blank')"
+          style="background:#FFF; border:1px solid #D9C9B8; color:#4A3E31; padding:7px 14px; border-radius:20px; font-size:0.78rem; font-weight:800; cursor:pointer; display:inline-flex; align-items:center; gap:4px; transition:all 0.2s;"
+          onmouseover="this.style.background='#F5EBE1'" onmouseout="this.style.background='#FFF'">
+          <span>🏨</span> <span>日本優質飯店 (5.5%回饋)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="tabi-footer"
+    style="background:#FAF8F5; border-top:1px solid #1E293B; padding:72px 24px 48px; margin-top:80px; position:relative; z-index:10;">
+    <!-- 🌸 《日旅報報》品牌創立精神 (BRAND MANIFESTO - 深度圖案美學特刊版) -->
+    <div class="tabi-footer-manifesto-box">
+      <div class="tabi-footer-manifesto-left"
+        style="display:flex; flex-direction:column; align-items:flex-start; gap:10px; padding-right:32px; border-right:1px solid #E2E8F0;">
+        <span
+          style="font-family:'Cinzel', serif; font-size:0.68rem; font-weight:700; letter-spacing:2.5px; color:#92400E;">BRAND
+          MANIFESTO</span>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:40px; height:40px; border-radius:50%; overflow:hidden; flex-shrink:0;"><img
+              src="./images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
+              style="width:100%; height:100%; object-fit:cover;"></div>
+          <div>
+            <div
+              style="font-family:'Shippori Mincho', serif; font-size:1.05rem; font-weight:700; color:#0F172A; letter-spacing:1px; line-height:1.2;">
+              JAPAN TABI</div>
+            <div style="font-size:0.7rem; color:#64748B; margin-top:2px;" data-i18n="footer.foundingTitle">日旅報報 品牌創立</div>
+          </div>
+        </div>
+      </div>
+      <div class="tabi-footer-manifesto-right">
+        <h3
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.05rem; font-weight:700; color:#0F172A; margin:0 0 10px; letter-spacing:1px;" data-i18n="footer.foundingLabel">
+          《日旅報報》品牌創立：</h3>
+        <p
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:0.9rem; color:#1E293B; line-height:1.8; margin:0 0 4px;" data-i18n="footer.foundingQuote">
+          「因為太喜歡日本，想把四季最動人、最真實的美麗，完整介紹給全世界熱愛旅行的人。」</p>
+        <p
+          style="font-family:'Shippori Mincho', serif; font-size:0.8rem; color:#64748B; font-style:italic; line-height:1.8; margin:0;">
+          「日本が大好きだからこそ、四季折々の息をのむ美しさを、世界中の旅人へ届けたい。」</p>
+      </div>
+    </div>
+
+
+    <div class="tabi-footer-cols">
+
+      <!-- 第 1 欄：品牌官方認證 -->
+      <div>
         <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
           <div style="width:32px; height:32px; border-radius:50%; overflow:hidden; border:1px solid #E2E8F0;">
             <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo"
               style="width:100%; height:100%; object-fit:cover;">
           </div>
           <h4
-            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;">
+            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;" data-i18n="footer.brand">
             日旅報報 JAPAN TABI</h4>
         </div>
-        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;">
+        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;" data-i18n="footer.description">
           日本の四季を彩る花期前線・夏の夜空を彩る花火大会・パウダースノー観測・名所特約ガイド。現地取材に基づき厳選された観光情報を、最高水準の自由旅行へお届けします。
         </p>
         <div
           style="padding:12px 16px; background:#FFFFFF; border-left:3.5px solid #92400E; border-top:1px solid #E2E8F0; border-right:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0; border-radius:8px; font-size:0.76rem; color:#64748B; line-height:1.65; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
-          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;">🏅 官方特約觀測現地取材認證</div>
-          <div>全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
+          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;" data-i18n="footer.accreditation">🏅 官方特約觀測現地取材認證</div>
+          <div data-i18n="footer.copyrightNotice">全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
         </div>
         <div
           style="font-size:0.78rem; color:#64748B; line-height:1.75; padding:10px 14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
-          <div>✉️ <strong>《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
+          <div>✉️ <strong data-i18n="footer.contact">《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
               style="color:#92400E; text-decoration:none; font-weight:700;">himydream.studio0220@gmail.com</a></div>
-          <div style="margin-top:3px;">📍 <strong>日本連絡處：</strong>東京都港区 ｜ JAPAN TABI 編集室 企画推進部</div>
+          <div style="margin-top:3px;">📍 <strong data-i18n="footer.japanOffice">日本連絡處：</strong><span data-i18n="footer.officeAddress">東京都港区 ｜ JAPAN TABI 編集室 企画推進部</span></div>
         </div>
 
       </div>
@@ -6989,46 +7048,45 @@
       <!-- 第 2 欄：核心專欄導覽 (完整串連頁面連結) -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.explore">
           探索日本
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
-          <li><a href="index.html" class="footer-nav-link"><span>首頁情報 ｜ 賞花玩雪最前線</span></a></li>
-          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span>機場手帖 ｜ 11大空港散策中心</span></a></li>
-          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span>私人包車 ｜ 彈性包車自由行</span></a></li>
-          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span>沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
-          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span>美食指南 ｜ 必吃米其林百名店</span></a></li>
+          <li><a href="index.html" class="footer-nav-link"><span data-i18n="footer.homeLink">首頁情報 ｜ 賞花玩雪最前線</span></a></li>
+          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span data-i18n="footer.airportsLink">機場手帖 ｜ 11大空港散策中心</span></a></li>
+          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span data-i18n="footer.charterLink">私人包車 ｜ 彈性包車自由行</span></a></li>
+          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span data-i18n="footer.okinawaLink">沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
+          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span data-i18n="footer.foodLink">美食指南 ｜ 必吃米其林百名店</span></a></li>
           <li><a href="japan_special_edition.html" class="footer-nav-link"
-              style="color:#92400E; font-weight:700;"><span>深度報導 ｜ 日本文化特刊報導</span></a></li>
+              style="color:#92400E; font-weight:700;"><span data-i18n="footer.storiesLink">深度報導 ｜ 日本文化特刊報導</span></a></li>
         </ul>
       </div>
 
       <!-- 第 3 欄：專題企劃 ＆ 攻略指南 -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.practical">
           實用專區
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
           <li><a href="japan_ski_resorts.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;">全日本 27
+                style="display:block; color:#0F172A;" data-i18n="footer.skiLink">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;" data-i18n="footer.skiDescription">全日本 27
                 大雪場・中文教練・即時雪況速報</small></a></li>
           <li><a href="japan_entry_rules.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">最新入境規範專頁</strong><small style="color:#64748B;">2025/2026 免稅新制・VJW
-                申報手冊</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.entryLink">最新入境規範專頁</strong><small style="color:#64748B;" data-i18n="footer.entryDescription">2026 年 11 月退稅制・VJW 申報指南</small></a></li>
           <li><a href="japan_theme_parks.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">遊樂園攻略</strong><small style="color:#64748B;">迪士尼・環球影城
+                style="display:block; color:#0F172A;" data-i18n="footer.parksLink">遊樂園攻略</strong><small style="color:#64748B;" data-i18n="footer.parksDescription">迪士尼・環球影城
                 USJ・吉卜力公園</small></a></li>
           <li><a href="japan_train_tour.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">火車和搭車指南</strong><small style="color:#64748B;">新幹線・JR
+                style="display:block; color:#0F172A;" data-i18n="footer.trainsLink">火車和搭車指南</strong><small style="color:#64748B;" data-i18n="footer.trainsDescription">新幹線・JR
                 Pass・觀光列車乘車券</small></a></li>
           <li><a href="japan_flight_deals.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;">全日本 11
+                style="display:block; color:#0F172A;" data-i18n="footer.airportGuide">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;" data-i18n="footer.airportDescription">全日本 11
                 大核心機場・必吃美食・展望台・免稅伴手禮</small></a></li>
         </ul>
       </div>
@@ -7036,26 +7094,26 @@
       <!-- 第 4 欄：特別刊號推薦 (深度文章直達連結) -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.selected">
           日本精選
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">沖繩自駕特刊</strong><small
-                style="color:#64748B;">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.okinawaStory">沖繩自駕特刊</strong><small
+                style="color:#64748B;" data-i18n="footer.okinawaDescription">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本米其林和牛</strong><small
-                style="color:#64748B;">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.wagyuStory">日本米其林和牛</strong><small
+                style="color:#64748B;" data-i18n="footer.wagyuDescription">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">溫泉名湯特輯</strong><small
-                style="color:#64748B;">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.onsenStory">溫泉名湯特輯</strong><small
+                style="color:#64748B;" data-i18n="footer.onsenDescription">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本世界遺產</strong><small
-                style="color:#64748B;">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.heritageStory">日本世界遺產</strong><small
+                style="color:#64748B;" data-i18n="footer.heritageDescription">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
         </ul>
       </div>
 
@@ -7068,12 +7126,12 @@
         <span style="font-weight:700; color:#334155;">© JAPAN TABI ジャパン・タビ ｜ 全日本観光情報局 All Rights Reserved.</span>
         <a href="japan_privacy_policy.html"
           style="color:#64748B; text-decoration:none; margin-left:8px; font-weight:600; transition:color 0.2s;"
-          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'">隱私權政策</a>
+          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'" data-i18n="privacy">隱私權政策</a>
         <div style="display:flex; align-items:center; gap:12px;">
           <!-- Instagram -->
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》官方 Instagram"
             style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
-            onmouseout="this.style.color='#64748B'">
+            onmouseout="this.style.color='#64748B'" data-i18n-title="social.instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
               stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -7084,7 +7142,7 @@
           <!-- Threads -->
           <a href="https://www.threads.net" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》Threads"
             style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
-            onmouseout="this.style.color='#64748B'">
+            onmouseout="this.style.color='#64748B'" data-i18n-title="social.threads">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 3.328 0 6.273-1.624 8.077-4.116-.367-.375-.72-.764-1.057-1.168-1.47 2.05-3.9 3.384-6.65 3.384-4.524 0-8.2-3.676-8.2-8.2s3.676-8.2 8.2-8.2 8.2 3.676 8.2 8.2c0 2.39-.77 4.542-2.316 5.867-1.18.995-2.766 1.433-4.534 1.258-2.678-.266-4.59-2.368-4.59-5.045 0-2.88 2.21-5.18 5.14-5.18 1.94 0 3.518.95 4.19 2.52.17.41.31.85.4 1.3h-1.85c-.08-.3-.21-.58-.38-.83-.45-.66-1.3-1.09-2.36-1.09-1.85 0-3.24 1.45-3.24 3.28 0 1.74 1.25 3.14 3.01 3.31 1.28.13 2.37-.18 3.12-.81.98-.83 1.5-2.22 1.5-3.96 0-5.4-4.32-9.8-9.67-9.8z" />
@@ -7096,7 +7154,7 @@
       <button onclick="window.scrollTo({top:0, behavior:'smooth'})"
         style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:999px; padding:6px 16px; font-weight:700; cursor:pointer; color:#334155; transition:all 0.2s;"
         onmouseover="this.style.borderColor='#92400E'; this.style.color='#92400E';"
-        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';">
+        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';" data-i18n="backToTop">
         ▲ 回到頂部
       </button>
     </div>
@@ -7110,23 +7168,23 @@
     <span class="square-hub-badge" id="favCountBadge">0</span>
 
     <!-- 上半部：我的日旅行程收藏本 -->
-    <button class="square-hub-item hub-item-fav" onclick="openFavoritesDrawer()" aria-label="查看我的日旅行程收藏本">
+    <button class="square-hub-item hub-item-fav" onclick="openFavoritesDrawer()" aria-label="查看我的日旅行程收藏本" data-i18n-aria-label="favorites.title">
       <span class="hub-icon-wrap"><svg width="14" height="14" viewBox="0 0 24 24" fill="#E11D48" stroke="#E11D48"
           stroke-width="1.5">
           <path
             d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
           </path>
         </svg></span>
-      <span class="hub-label">收藏</span>
+      <span class="hub-label" data-i18n="favorites.label">收藏</span>
     </button>
 
     <!-- 中間微細分隔線 -->
     <div class="square-hub-divider"></div>
 
     <!-- 下半部：日幣免稅試算 -->
-    <button class="square-hub-item hub-item-fx" onclick="openFxCalculator()" aria-label="日幣即時匯率與10%免稅試算">
+    <button class="square-hub-item hub-item-fx" onclick="openFxCalculator()" aria-label="日幣即時匯率與10%免稅試算" data-i18n-aria-label="favorites.tax">
       <span class="hub-icon-wrap" style="font-size:14px; line-height:1;">💴</span>
-      <span class="hub-label">免稅</span>
+      <span class="hub-label" data-i18n="favorites.tax">免稅</span>
     </button>
   </div>
 
@@ -7137,13 +7195,13 @@
       <div>
         <div style="display:flex; align-items:center; gap:8px;">
           <span style="font-size:20px;">❤️</span>
-          <h3 style="font-size:1.15rem; font-weight:900; color:#1E293B; margin:0;">我的日旅行程收藏本</h3>
+          <h3 style="font-size:1.15rem; font-weight:900; color:#1E293B; margin:0;" data-i18n="favorites.title">我的日旅行程收藏本</h3>
         </div>
-        <div style="font-size:0.75rem; color:#64748B; margin-top:3px;">
+        <div style="font-size:0.75rem; color:#64748B; margin-top:3px;" data-i18n="favorites.subtitle">
           免登入離線自動保存 ｜ 關閉視窗不遺失 ｜ 日本排行程必備
         </div>
       </div>
-      <button class="btn-close-circle" onclick="closeFavoritesDrawer()">✕</button>
+      <button class="btn-close-circle" onclick="closeFavoritesDrawer()" data-i18n-aria-label="favorites.close">✕</button>
     </div>
 
     <div class="fav-drawer-body" id="favListContainer">
@@ -7152,10 +7210,10 @@
 
     <div class="fav-drawer-footer">
       <button class="btn-fav-copy-all" onclick="copyMyFavoritesItinerary()">
-        <span>📋 匯出我的排程清單</span>
+        <span data-i18n="favorites.export">📋 匯出我的排程清單</span>
       </button>
       <button class="btn-fav-clear" onclick="clearAllFavorites()">
-        <span>🗑️ 全部清空</span>
+        <span data-i18n="favorites.clear">🗑️ 全部清空</span>
       </button>
     </div>
   </div>
@@ -7166,7 +7224,7 @@
     <div class="fx-calc-header">
       <div style="display:flex; align-items:center; gap:8px;">
         <span style="font-size:20px;">💴</span>
-        <h3 style="font-size:1.1rem; font-weight:900; color:#1E293B; margin:0;">日幣即時匯率 ＆ 免稅試算</h3>
+        <h3 style="font-size:1.1rem; font-weight:900; color:#1E293B; margin:0;">日幣參考匯率 ＆ 退稅情境試算</h3>
       </div>
       <button class="btn-close-circle" onclick="closeFxCalculator()">✕</button>
     </div>
@@ -7191,7 +7249,7 @@
       <!-- 快捷金額標籤 -->
       <div class="fx-quick-tags">
         <button onclick="setQuickJpy(1000)">¥1,000</button>
-        <button onclick="setQuickJpy(5500)">¥5,500 (免稅門檻)</button>
+        <button onclick="setQuickJpy(5500)">¥5,500 (10% 稅率示例)</button>
         <button onclick="setQuickJpy(10000)">¥10,000</button>
         <button onclick="setQuickJpy(30000)">¥30,000</button>
         <button onclick="setQuickJpy(50000)">¥50,000</button>
@@ -7211,25 +7269,25 @@
 
         <!-- 2. 日本 10% 退稅價 -->
         <div class="fx-card fx-card-taxfree">
-          <div class="fx-card-lbl">✨ 10% 免稅後 (Tax Free)</div>
+          <div class="fx-card-lbl">一般稅率 10%：預估未稅金額</div>
           <div>
             <div class="fx-card-twd text-emerald" id="fxTaxFreeTwd">NT$ 1,955</div>
-            <div class="fx-card-jpy" id="fxTaxFreeJpy">未稅 ¥9,091 (現省 NT$ 195)</div>
+            <div class="fx-card-jpy" id="fxTaxFreeJpy">預估未稅 ¥9,091（未扣手續費）</div>
           </div>
         </div>
 
         <!-- 3. 免稅 + 5% 優惠券 -->
         <div class="fx-card fx-card-coupon">
-          <div class="fx-card-lbl">🎉 免稅 + 百貨/唐吉 5% 券</div>
+          <div class="fx-card-lbl">輕減稅率 8%：預估未稅金額</div>
           <div>
-            <div class="fx-card-twd text-rose" id="fxCouponTwd">NT$ 1,857</div>
-            <div class="fx-card-jpy" id="fxCouponJpy">實付 ¥8,636 (現折 8.6 折！)</div>
+            <div class="fx-card-twd text-rose" id="fxCouponTwd">NT$ 1,991</div>
+            <div class="fx-card-jpy" id="fxCouponJpy">預估未稅 ¥9,259（未扣手續費）</div>
           </div>
         </div>
       </div>
 
       <div class="fx-tax-tip">
-        💡 <b>日本免稅購物秘笈：</b>同一店家當日購買一般品或消耗品，含稅累積滿 <b>¥5,500（未稅 ¥5,000）</b>即可出示護照正本享有免稅。消耗品（藥妝、食品）出境前請勿拆封！
+        💡 <b>2026-11-01 起適用退稅制：</b>購買時先支付含稅價格，符合資格且同店同日未稅合計滿 ¥5,000，並在購買起 90 日內取得海關攜出確認後，由店家或受託業者退款。10% 與 8% 為不同商品稅率的情境示例，不能相加；未扣退款費用，也不保證取得優惠券。實際稅率、資格及費用請向店家確認。
       </div>
     </div>
   </div>
@@ -7445,6 +7503,8 @@
 
   <script src="/js/pages/home/outbound-links.js"></script>
   <script src="/js/tabi_core.js"></script>
+  <script src="/js/pages/home/weather.js"></script>
+  <script src="/js/pages/home/showcases.js"></script>
   <script>
     // 自動讀取 public/data/exchange_rate.json 更新頂部匯率膠囊
     (function() {
@@ -7462,113 +7522,6 @@
           console.debug('Exchange rate fetch skipped:', err);
         });
 
-      // 自動讀取 public/data/weather_today.json 更新主要城市天氣
-      var weatherList = document.getElementById('heroWeatherList');
-      fetch('data/weather_today.json', { cache: 'no-store', signal: AbortSignal.timeout(10000) })
-        .then(function(res) {
-          if (!res.ok) throw new Error('Weather request failed: ' + res.status);
-          return res.json();
-        })
-        .then(function(data) {
-          if (!Array.isArray(data.cities) || !data.cities.length) {
-            throw new Error('No weather data available');
-          }
-          var cities = data.cities.map(function(city) {
-            if (!city || !city.name) throw new Error('Invalid city weather');
-            var item = document.createElement('span');
-            var temperature = [city.temp_min, city.temp_max].filter(function(value) {
-              return value && value !== '--';
-            });
-            item.textContent = [city.name, city.icon, temperature.join('–') || '氣溫暫無資料'].filter(Boolean).join(' ');
-            item.title = [city.weather, city.pop ? '降雨機率 ' + city.pop : ''].filter(Boolean).join('・');
-            return item;
-          });
-          weatherList.replaceChildren.apply(weatherList, cities);
-        })
-        .catch(function(err) {
-          weatherList.textContent = '天氣資料暫時無法載入，請稍後再試';
-          console.debug('Weather fetch skipped:', err);
-        })
-        .finally(function() {
-          weatherList.setAttribute('aria-busy', 'false');
-        });
-
-      // 自動讀取 public/data/hot_springs.json 渲染名湯模組
-      fetch('data/hot_springs.json', { cache: 'no-store' })
-        .then(function(res) { return res.json(); })
-        .then(function(springs) {
-          var container = document.getElementById('hotSpringCardsScroller');
-          if (container && Array.isArray(springs)) {
-            container.innerHTML = springs.map(function(s) {
-              return '<div style="background:#FFF; border-radius:18px; border:1px solid #E2E8F0; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.04); display:flex; flex-direction:column; scroll-snap-align:start;">' +
-                '<div style="position:relative; height:150px; overflow:hidden;">' +
-                  '<img src="' + s.image + '" alt="' + s.name + '" style="width:100%; height:100%; object-fit:cover;" loading="lazy">' +
-                  '<span style="position:absolute; top:10px; left:10px; background:rgba(15,23,42,0.75); color:#FFF; font-size:0.7rem; font-weight:700; padding:3px 8px; border-radius:999px; backdrop-filter:blur(4px);">' +
-                    '#' + s.rank + ' ' + s.pref +
-                  '</span>' +
-                '</div>' +
-                '<div style="padding:14px; display:flex; flex-direction:column; flex:1;">' +
-                  '<div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">' +
-                    '<h4 style="margin:0; font-size:1.05rem; font-weight:800; color:#0F172A;">' + s.name + '</h4>' +
-                    '<span style="font-size:0.75rem; color:#64748B;">' + s.jp + '</span>' +
-                  '</div>' +
-                  '<div style="font-size:0.72rem; color:#0284C7; font-weight:700; margin-bottom:8px;">' + s.spring_quality + '</div>' +
-                  '<p style="font-size:0.78rem; color:#475569; margin:0 0 12px 0; line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; flex:1;">' +
-                    s.highlights +
-                  '</p>' +
-                  '<div style="background:#F8FAFC; border-radius:8px; padding:6px 10px; font-size:0.72rem; color:#334155; margin-bottom:12px;">' +
-                    '<span style="font-weight:700; color:#0F172A;">♨️ 日歸推薦：</span>' + s.day_trip +
-                  '</div>' +
-                  '<a href="https://tw.trip.com/?Allianceid=9507030&SID=325761227&trip_sub1=' + encodeURIComponent(s.booking_keyword) + '" target="_blank" rel="noopener sponsored" ' +
-                    'style="display:block; text-align:center; padding:8px 0; background:#FFF1F2; border:1px solid #FECDD3; color:#E11D48; border-radius:10px; font-size:0.8rem; font-weight:800; text-decoration:none; transition:all 0.2s;">' +
-                    '查詢 ' + s.name + ' 一泊二食空房 ➔' +
-                  '</a>' +
-                '</div>' +
-              '</div>';
-            }).join('');
-          }
-        })
-        .catch(function(err) {
-          console.debug('Hot springs fetch skipped:', err);
-        });
-
-      // 自動讀取 public/data/festivals.json 渲染花火大會與傳統祭典
-      fetch('data/festivals.json', { cache: 'no-store' })
-        .then(function(res) { return res.json(); })
-        .then(function(festivals) {
-          var container = document.getElementById('festivalCardsScroller');
-          if (container && Array.isArray(festivals)) {
-            container.innerHTML = festivals.map(function(f) {
-              return '<div style="background:#FFF; border-radius:18px; border:1px solid #E2E8F0; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.04); display:flex; flex-direction:column; scroll-snap-align:start;">' +
-                '<div style="position:relative; height:150px; overflow:hidden;">' +
-                  '<img src="' + f.image + '" alt="' + f.name + '" style="width:100%; height:100%; object-fit:cover;" loading="lazy">' +
-                  '<span style="position:absolute; top:10px; left:10px; background:rgba(217,119,6,0.9); color:#FFF; font-size:0.7rem; font-weight:800; padding:3px 8px; border-radius:999px; backdrop-filter:blur(4px);">' +
-                    f.scale.split('・')[0] + ' ｜ ' + f.date_display +
-                  '</span>' +
-                '</div>' +
-                '<div style="padding:14px; display:flex; flex-direction:column; flex:1;">' +
-                  '<div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">' +
-                    '<h4 style="margin:0; font-size:1.05rem; font-weight:800; color:#0F172A;">' + f.name + '</h4>' +
-                    '<span style="font-size:0.75rem; color:#64748B;">' + f.pref + '</span>' +
-                  '</div>' +
-                  '<div style="font-size:0.72rem; color:#B45309; font-weight:700; margin-bottom:6px;">發數：' + f.shots + '</div>' +
-                  '<p style="font-size:0.78rem; color:#475569; margin:0 0 10px 0; line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; flex:1;">' +
-                    f.highlights +
-                  '</p>' +
-                  '<div style="background:#FEF3C7; border-radius:8px; padding:6px 10px; font-size:0.72rem; color:#92400E; margin-bottom:12px;">' +
-                    '<strong>觀賞席：</strong>' + f.reserved_seats +
-                  '</div>' +
-                  '<div style="font-size:0.72rem; color:#64748B; padding-top:6px; border-top:1px dashed #E2E8F0;">' +
-                    '🚇 ' + f.transit +
-                  '</div>' +
-                '</div>' +
-              '</div>';
-            }).join('');
-          }
-        })
-        .catch(function(err) {
-          console.debug('Festivals fetch skipped:', err);
-        });
     })();
   </script>
 </body>

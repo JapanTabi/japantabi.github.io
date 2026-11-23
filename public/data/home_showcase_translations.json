@@ -1,0 +1,1082 @@
+{
+  "zh-TW": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "草津溫泉",
+        "spring_quality": "酸性泉・硫磺泉（PH值約 2.1 強酸性）",
+        "highlights": "白旗源泉與湯畑周邊煙霧繚繞，保留江戶時代以檜木板攪拌降溫的「揉湯」民俗表演，酸性泉質殺菌力極強。",
+        "day_trip": "大瀧乃湯、西之河原露天風呂、御座之湯"
+      },
+      "hakone": {
+        "name": "箱根溫泉鄉",
+        "spring_quality": "單純泉・氯化物泉・硫磺泉（箱根十七湯多元泉質）",
+        "highlights": "東京近郊首選溫泉鄉，自江戶時代即為名湯，擁有高達十七處泉源聚落，可一邊泡湯一邊遠眺富士山絕景。",
+        "day_trip": "箱根小涌園 Yunessun、天山湯治鄉、箱根湯寮"
+      },
+      "arima": {
+        "name": "有馬溫泉",
+        "spring_quality": "金泉（含鐵強鹽泉）與 銀泉（碳酸泉・氡泉）",
+        "highlights": "豐臣秀吉極度鍾愛的千年名湯，罕見同時擁有富含鐵質鹽分的紅褐色「金泉」與透明碳酸的「銀泉」。",
+        "day_trip": "金之湯（公共浴場）、銀之湯、太閣之湯"
+      },
+      "kinosaki": {
+        "name": "城崎溫泉",
+        "spring_quality": "食鹽泉・弱放射能泉（中性低張性泉）",
+        "highlights": "關西最具情調的溫泉街，住客穿著浴衣和木屐漫步於柳樹河畔，憑通行證暢泡「御所の湯」、「一の湯」等七大特色外湯。",
+        "day_trip": "城崎七大外湯（御所の湯、一の湯、鴻の湯、曼陀羅湯、地藏湯、柳湯、里の湯）"
+      },
+      "yufuin": {
+        "name": "由布院溫泉（湯布院）",
+        "spring_quality": "單純溫泉・弱鹼性泉",
+        "highlights": "九州女性人氣冠軍溫泉小鎮，擁有絕美金鱗湖晨霧與由布岳景致，沿途林立文青咖啡館、B-Speak 蛋糕與高質感獨立湯屋。",
+        "day_trip": "由布岳溫泉、夢想園露天風呂、下湯（金鱗湖畔混浴）"
+      },
+      "beppu": {
+        "name": "別府八湯",
+        "spring_quality": "含食鹽泉、碳酸氫鹽泉、硫磺泉（涵蓋世界10種泉質中的7種）",
+        "highlights": "溫泉湧出量全日本之冠，整個市區被溫泉白煙籠罩，擁有海地獄、血池地獄等奇景，竹瓦溫泉的熱砂浴更是一絕。",
+        "day_trip": "竹瓦溫泉（砂湯）、海地獄足湯、葫蘆溫泉（ひょうたん温泉）"
+      },
+      "gero": {
+        "name": "下呂溫泉",
+        "spring_quality": "鹼性單純泉（PH值 9.18 天使美肌湯）",
+        "highlights": "被譽為天下三大名泉的「美人湯」，泉質質地如同精華液般濃潤滑順，搭配飛驒川水岸風情與高檔飛驒牛懷石料理。",
+        "day_trip": "白鷺之湯、噴泉池（河原露天）、幸乃湯"
+      },
+      "noboribetsu": {
+        "name": "登別溫泉",
+        "spring_quality": "硫磺泉・食鹽泉・明礬泉（多達9種不同泉質）",
+        "highlights": "北海道最具代表性的溫泉之鄉，地獄谷噴氣孔滾沸震撼，多達九種相異泉質齊聚，被譽為溫泉的活地質博物館。",
+        "day_trip": "夢元佐木之湯、登別格蘭飯店日歸風呂"
+      },
+      "kurokawa": {
+        "name": "黑川溫泉",
+        "spring_quality": "弱酸性單純泉・含硫磺泉（三十間旅館各有專屬泉脈）",
+        "highlights": "深山秘境溫泉街的最高典範，全鎮景觀無招牌看板污染，購買一枚杉木「入湯手形」即可任選三家露天風呂泡湯。",
+        "day_trip": "持「入湯手形」可任選 3 處黑川旅館露天風呂（如山之宿新明館的洞窟風呂）"
+      },
+      "ginzan": {
+        "name": "銀山溫泉",
+        "spring_quality": "含食鹽・硫化氫泉（高溫弱酸性源泉）",
+        "highlights": "如同穿越回大正時代的浪漫溫泉街，多層木造瓦頂旅館沿銀山川兩岸排列，傍晚黃色瓦斯燈與冬日雪景如詩如畫。",
+        "day_trip": "白銀之湯（建築大師隈研吾設計）、しろがね湯、共同浴場"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "長岡祭大花火大會",
+        "date_display": "2026 年度已結束；下屆日期請查主辦公告",
+        "shots": "約 20,000 發（兩日合計）",
+        "badge": "S 級",
+        "highlights": "信濃川河畔長達 2 公里的「復興祈願鳳凰花火」與直徑達 650 公尺的「正三尺玉」，在交響樂襯托下照亮夜空，全場萬人感動落淚。",
+        "reserved_seats": "下屆售票日期與座位安排以主辦公告為準",
+        "transit": "JR 上越新幹線「長岡站」大手口出站步行約 30 分鐘"
+      },
+      "oomagari": {
+        "name": "全國花火競技大會（大曲之花火）",
+        "date_display": "2026 年度已結束；下屆日期請查主辦公告",
+        "shots": "約 18,000 發",
+        "badge": "S 級",
+        "highlights": "日本唯一兼具「白天煙火（晝花火）」與「夜間煙火」的頂級花火競技賽，全日本頂尖煙火師齊聚，創意創造連發極致藝術。",
+        "reserved_seats": "下屆售票日期與座位安排以主辦公告為準",
+        "transit": "JR 秋田新幹線「大曲站」步行約 30 分鐘"
+      },
+      "sumidagawa": {
+        "name": "隅田川花火大會",
+        "date_display": "2026/07/25 已結束；下屆日期待官方公告",
+        "shots": "約 20,000 發",
+        "badge": "S 級",
+        "highlights": "關東夏季最盛大傳統祭典！晴空塔在夜空點亮限定燈光秀，第一會場舉辦花火競賽，第二會場連發高空大玉，數百艘屋形船停泊河面奢華絕倫。",
+        "reserved_seats": "下屆觀覽安排與預約條件以主辦公告為準",
+        "transit": "地下鐵銀座線・都營淺草線・東武晴空塔線「淺草站」步行 5 分鐘"
+      },
+      "yodogawa": {
+        "name": "浪速淀川花火大會",
+        "date_display": "2026/10/17 已結束；下屆日期待官方公告",
+        "shots": "非公開（約 15,000 - 20,000 發）",
+        "badge": "A 級",
+        "highlights": "以大阪梅田摩天大樓天際線為背景，在淀川水面上以極快節奏施放半圓形「水中花火」與金色大垂柳冠菊，聲光立體震撼度爆表。",
+        "reserved_seats": "2026 年度活動已結束；下屆票券與入場時間請查官網",
+        "transit": "JR 東海道線「塚本站」或阪急神戶線「十三站」步行約 15 分鐘"
+      },
+      "atami": {
+        "name": "熱海海上花火大會",
+        "date_display": "2026/11/23、12/6、12/25；另有 2027 年場次",
+        "shots": "每場約 3,000 - 5,000 發",
+        "badge": "特色級",
+        "highlights": "自 1952 年開辦至今，熱海灣呈天然凹形盆地，花火爆炸聲在群山間迴盪如同自然巨型環繞音響！壓軸「空中大尼加拉瀑布」銀光傾瀉整座海灣。",
+        "reserved_seats": "免費觀覽區、住宿旅客區與其他觀覽方案依各場次公告確認",
+        "transit": "JR 東海道新幹線「熱海站」出站步行約 15 分鐘直達海灘"
+      },
+      "gion_festival": {
+        "name": "京都祇園祭（日本三大祭之首）",
+        "date_display": "例年 7 月祭期；下屆細節請查官方公告",
+        "shots": "傳統祭典・無煙火",
+        "badge": "國寶級",
+        "highlights": "平安時代流傳千年的除厄祭典！由人力牽引高達數噸的華麗「山鉾（移動的美術館）」在京都四條通與河原町巡行，宵山夜晚燈籠高掛、雅樂悠揚。",
+        "reserved_seats": "下屆觀覽席、售票日期及適用路段以官方公告為準",
+        "transit": "阪急京都線「烏丸站」或「京都河原町站」出站即達"
+      }
+    }
+  },
+  "zh-CN": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "草津温泉",
+        "spring_quality": "酸性泉、硫黄泉（pH 约 2.1，强酸性）",
+        "highlights": "白旗源泉与汤畑周围蒸汽缭绕，保留江户时代用桧木板搅拌降温的“揉汤”表演，酸性泉水具有很强的杀菌性。",
+        "day_trip": "大泷乃汤、西之河原露天风吕、御座之汤"
+      },
+      "hakone": {
+        "name": "箱根温泉乡",
+        "spring_quality": "单纯泉、氯化物泉、硫黄泉（箱根十七汤的多样泉质）",
+        "highlights": "东京近郊的热门温泉乡，自江户时代便是名汤，拥有十七处泉源聚落，可体验泡汤与富士山美景。",
+        "day_trip": "箱根小涌园 Yunessun、天山汤治乡、箱根汤寮"
+      },
+      "arima": {
+        "name": "有马温泉",
+        "spring_quality": "金泉（含铁强盐泉）与银泉（碳酸泉、氡泉）",
+        "highlights": "丰臣秀吉钟爱的千年名汤，同时拥有富含铁与盐分的红褐色“金泉”，以及清澈的碳酸“银泉”。",
+        "day_trip": "金之汤（公共浴场）、银之汤、太阁之汤"
+      },
+      "kinosaki": {
+        "name": "城崎温泉",
+        "spring_quality": "食盐泉、弱放射能泉（中性低张性泉）",
+        "highlights": "身穿浴衣与木屐漫步柳树河畔，持通行证体验“御所之汤”“一之汤”等七座特色外汤，感受关西温泉街风情。",
+        "day_trip": "城崎七大外汤：御所之汤、一之汤、鸿之汤、曼陀罗汤、地藏汤、柳汤、里之汤"
+      },
+      "yufuin": {
+        "name": "由布院温泉（汤布院）",
+        "spring_quality": "单纯温泉、弱碱性泉",
+        "highlights": "深受女性游客喜爱的九州温泉小镇，有金鳞湖晨雾与由布岳美景，沿途分布咖啡馆、B-Speak 蛋糕店和精致独立汤屋。",
+        "day_trip": "由布岳温泉、梦想园露天风吕、下汤（金鳞湖畔混浴）"
+      },
+      "beppu": {
+        "name": "别府八汤",
+        "spring_quality": "食盐泉、碳酸氢盐泉、硫黄泉（涵盖世界十种泉质中的七种）",
+        "highlights": "温泉涌出量居日本首位，市区白雾缭绕，有海地狱、血池地狱等奇景，竹瓦温泉的热砂浴尤其独特。",
+        "day_trip": "竹瓦温泉（砂汤）、海地狱足汤、葫芦温泉"
+      },
+      "gero": {
+        "name": "下吕温泉",
+        "spring_quality": "碱性单纯泉（pH 9.18，有“美肌汤”之称）",
+        "highlights": "被誉为日本三大名泉之一的“美人汤”，泉水如精华液般柔滑，搭配飞驒川河岸风景与飞驒牛怀石料理。",
+        "day_trip": "白鹭之汤、喷泉池（河岸露天池）、幸乃汤"
+      },
+      "noboribetsu": {
+        "name": "登别温泉",
+        "spring_quality": "硫黄泉、食盐泉、明矾泉（多达九种不同泉质）",
+        "highlights": "北海道代表性温泉乡，地狱谷喷气孔蒸腾，多达九种泉质汇集，宛如活的温泉地质博物馆。",
+        "day_trip": "梦元佐木之汤、登别格兰酒店日归温泉"
+      },
+      "kurokawa": {
+        "name": "黑川温泉",
+        "spring_quality": "弱酸性单纯泉、含硫黄泉（约三十家旅馆各有泉脉）",
+        "highlights": "深山中的和风温泉街，镇上景观不受招牌广告干扰。购买杉木“入汤手形”，即可任选三家露天风吕体验。",
+        "day_trip": "持“入汤手形”任选三处旅馆露天风吕，如山之宿新明馆洞窟风吕"
+      },
+      "ginzan": {
+        "name": "银山温泉",
+        "spring_quality": "含食盐、硫化氢泉（高温弱酸性源泉）",
+        "highlights": "仿佛回到大正时代的浪漫温泉街，多层木造瓦顶旅馆沿银山川两岸而立，黄昏煤气灯与冬日雪景如诗如画。",
+        "day_trip": "白银之汤（隈研吾设计）、しろがね汤及公共浴场"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "长冈祭大花火大会",
+        "shots": "约 20,000 发（两日合计）",
+        "badge": "S 级",
+        "highlights": "信浓川畔长达两公里的“复兴祈愿凤凰花火”与直径 650 米的“正三尺玉”，伴随交响乐点亮夜空，感动万千观众。",
+        "transit": "JR 上越新干线长冈站大手口出站，步行约 30 分钟",
+        "date_display": "2026 年度已结束；下届日期请查主办公告",
+        "reserved_seats": "下届售票日期与座位安排以主办公告为准"
+      },
+      "oomagari": {
+        "name": "全国花火竞技大会（大曲之花火）",
+        "shots": "约 18,000 发",
+        "badge": "S 级",
+        "highlights": "兼具白天与夜间烟火的顶级竞技赛，汇聚全日本顶尖烟火师，以创意连发演绎花火艺术。",
+        "transit": "JR 秋田新干线大曲站步行约 30 分钟",
+        "date_display": "2026 年度已结束；下届日期请查主办公告",
+        "reserved_seats": "下届售票日期与座位安排以主办公告为准"
+      },
+      "sumidagawa": {
+        "name": "隅田川花火大会",
+        "shots": "约 20,000 发",
+        "badge": "S 级",
+        "highlights": "关东夏季大型传统活动，晴空塔点亮特别灯光。第一会场举行花火竞赛，第二会场连发高空大玉，数百艘屋形船停泊河面。",
+        "transit": "银座线、都营浅草线或东武晴空塔线浅草站步行约 5 分钟",
+        "date_display": "2026/07/25 已结束；下届日期待官方公告",
+        "reserved_seats": "下届观览安排与预约条件以主办公告为准"
+      },
+      "yodogawa": {
+        "name": "浪速淀川花火大会",
+        "shots": "官方未公开（估计约 15,000–20,000 发）",
+        "badge": "A 级",
+        "highlights": "以大阪梅田高楼天际线为背景，在淀川水面快速连发半圆形水中花火与金色垂柳冠菊，带来立体声光震撼。",
+        "transit": "JR 东海道线塚本站或阪急神户线十三站，步行约 15 分钟",
+        "date_display": "2026/10/17 已结束；下届日期待官方公告",
+        "reserved_seats": "2026 年度活动已结束；下届票券与入场时间请查官网"
+      },
+      "atami": {
+        "name": "热海海上花火大会",
+        "shots": "每场约 3,000–5,000 发",
+        "badge": "特色级",
+        "highlights": "自 1952 年举办，热海湾三面环山，爆炸声在山间回荡，宛如天然环绕音响。压轴“空中大尼加拉瀑布”银光倾泻整座海湾。",
+        "transit": "JR 东海道新干线热海站步行约 15 分钟至海滩",
+        "date_display": "2026/11/23、12/6、12/25；另有 2027 年场次",
+        "reserved_seats": "免费观览区、住宿旅客区与其他观览方案依各场次公告确认"
+      },
+      "gion_festival": {
+        "name": "京都祇园祭（日本三大祭之一）",
+        "shots": "传统祭典，无烟火",
+        "badge": "国宝级",
+        "highlights": "自平安时代传承千年的祛灾祭典，重达数吨、宛如移动美术馆的华丽山鉾由人力牵引，巡行四条通与河原町；宵山灯笼高挂，雅乐悠扬。",
+        "transit": "阪急京都线乌丸站或京都河原町站出站即达",
+        "date_display": "例年 7 月祭期；下届细节请查官方公告",
+        "reserved_seats": "下届观览席、售票日期及适用路段以官方公告为准"
+      }
+    }
+  },
+  "en": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "Kusatsu Onsen",
+        "spring_quality": "Acidic and sulfur springs (strongly acidic, pH approx. 2.1)",
+        "highlights": "Steam rises around the Shirahata spring and Yubatake. Traditional yumomi performances use cypress boards to cool the strongly acidic, antibacterial waters, continuing a custom from the Edo period.",
+        "day_trip": "Ōtaki no Yu, Sainokawara Open-Air Bath and Gozanoyu"
+      },
+      "hakone": {
+        "name": "Hakone Onsen",
+        "spring_quality": "Simple, chloride and sulfur springs across Hakone’s 17 hot spring areas",
+        "highlights": "A favorite hot spring getaway near Tokyo since the Edo period, Hakone has 17 hot spring communities and opportunities to enjoy baths with views of Mount Fuji.",
+        "day_trip": "Hakone Kowakien Yunessun, Tenzan Tōjikyō and Hakone Yuryō"
+      },
+      "arima": {
+        "name": "Arima Onsen",
+        "spring_quality": "Kinsen: iron-rich saline water; Ginsen: carbonated and radon springs",
+        "highlights": "This ancient hot spring, beloved by Toyotomi Hideyoshi, offers both reddish-brown, iron-rich saline Kinsen and clear, carbonated Ginsen waters.",
+        "day_trip": "Kin no Yu public bath, Gin no Yu and Taikō no Yu"
+      },
+      "kinosaki": {
+        "name": "Kinosaki Onsen",
+        "spring_quality": "Saline and mildly radioactive springs (neutral, hypotonic waters)",
+        "highlights": "Stroll along the willow-lined river in a yukata and wooden geta. A bath pass opens the town’s seven distinctive public baths, including Goshono-yu and Ichino-yu.",
+        "day_trip": "The seven public baths: Goshono-yu, Ichino-yu, Kōno-yu, Mandara-yu, Jizō-yu, Yanagi-yu and Satono-yu"
+      },
+      "yufuin": {
+        "name": "Yufuin Onsen",
+        "spring_quality": "Simple, mildly alkaline hot springs",
+        "highlights": "A Kyushu hot spring town especially popular with women, known for morning mist on Lake Kinrin and Mount Yufu views, with cafés, B-Speak cakes and refined private baths along the way.",
+        "day_trip": "Yufudake Onsen, Musōen open-air baths and Shitanyu mixed bathing by Lake Kinrin"
+      },
+      "beppu": {
+        "name": "Beppu’s Eight Hot Springs",
+        "spring_quality": "Saline, bicarbonate and sulfur springs (seven of the world’s ten spring types)",
+        "highlights": "Japan’s leading hot spring area by water output, Beppu is veiled in steam. Explore the striking Umi Jigoku and Chinoike Jigoku pools, then try Takegawara Onsen’s distinctive hot sand bath.",
+        "day_trip": "Takegawara Onsen sand bath, Umi Jigoku footbath and Hyōtan Onsen"
+      },
+      "gero": {
+        "name": "Gero Onsen",
+        "spring_quality": "Alkaline simple spring (pH 9.18), known as a beauty bath",
+        "highlights": "One of Japan’s three celebrated hot springs, Gero is known for silky “beauty bath” waters, scenery along the Hida River and fine Hida beef kaiseki dining.",
+        "day_trip": "Shirasagi no Yu, riverside Funsenchi and Sachi no Yu"
+      },
+      "noboribetsu": {
+        "name": "Noboribetsu Onsen",
+        "spring_quality": "Sulfur, saline and alum springs, with up to nine water types",
+        "highlights": "One of Hokkaido’s signature hot spring towns, with steaming volcanic vents in Jigokudani and up to nine spring types: a living geological museum of hot springs.",
+        "day_trip": "Yumoto Sagiriyu and day-use baths at Noboribetsu Grand Hotel"
+      },
+      "kurokawa": {
+        "name": "Kurokawa Onsen",
+        "spring_quality": "Mildly acidic simple and sulfur springs; around 30 inns have their own sources",
+        "highlights": "A secluded mountain hot spring town with a harmonious streetscape free of intrusive signage. A cedar nyūtō tegata pass lets you choose three open-air baths.",
+        "day_trip": "Use a nyūtō tegata pass for three ryokan open-air baths, such as Shinmeikan’s cave bath"
+      },
+      "ginzan": {
+        "name": "Ginzan Onsen",
+        "spring_quality": "Saline and hydrogen sulfide springs (hot, mildly acidic sources)",
+        "highlights": "Step into Taishō-era romance: multistory wooden inns with tiled roofs line the Ginzan River, where warm gas lamps at dusk and winter snow create a picturesque scene.",
+        "day_trip": "Shirogane-yu, designed by Kengo Kuma, and public baths"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "Nagaoka Festival Grand Fireworks",
+        "shots": "Approx. 20,000 shells over two days",
+        "badge": "Grade S",
+        "highlights": "Along the Shinano River, the 2 km Phoenix fireworks tribute to recovery and 650 m-wide Shōsanjakudama bursts illuminate the sky to orchestral music, moving vast crowds.",
+        "transit": "About 30 minutes on foot from the Ōte exit of JR Nagaoka Station (Jōetsu Shinkansen)",
+        "date_display": "The 2026 year has ended; please check the organizer announcement for the next date.",
+        "reserved_seats": "The ticket sales date and seating arrangements for the next session shall be subject to the organizer’s announcement."
+      },
+      "oomagari": {
+        "name": "Ōmagari National Fireworks Competition",
+        "shots": "Approx. 18,000 shells",
+        "badge": "Grade S",
+        "highlights": "A premier competition featuring both daytime and nighttime fireworks. Leading pyrotechnicians from across Japan showcase creative sequences and the artistry of fireworks.",
+        "transit": "About 30 minutes on foot from JR Ōmagari Station (Akita Shinkansen)",
+        "date_display": "The 2026 year has ended; please check the organizer announcement for the next date.",
+        "reserved_seats": "The ticket sales date and seating arrangements for the next session shall be subject to the organizer’s announcement."
+      },
+      "sumidagawa": {
+        "name": "Sumida River Fireworks Festival",
+        "shots": "Approx. 20,000 shells",
+        "badge": "Grade S",
+        "highlights": "A major Kantō summer tradition with special Tokyo Skytree lighting. Venue 1 hosts a fireworks competition, Venue 2 launches large aerial bursts, and hundreds of yakatabune boats gather on the river.",
+        "transit": "About 5 minutes on foot from Asakusa Station (Ginza, Toei Asakusa or Tobu Skytree lines)",
+        "date_display": "2026/07/25 has ended; the next date will be officially announced",
+        "reserved_seats": "The arrangements and reservation conditions for the next visit shall be subject to the organizer’s announcement."
+      },
+      "yodogawa": {
+        "name": "Naniwa Yodogawa Fireworks Festival",
+        "shots": "Not officially disclosed; estimated 15,000–20,000 shells",
+        "badge": "Grade A",
+        "highlights": "With Osaka Umeda’s skyline as a backdrop, rapid semicircular fireworks spread across the Yodo River alongside golden willow-like bursts for an immersive display of sound and light.",
+        "transit": "About 15 minutes on foot from JR Tsukamoto Station (Tōkaidō Line) or Hankyu Jūsō Station (Kobe Line)",
+        "date_display": "2026/10/17 has ended; the next date will be officially announced",
+        "reserved_seats": "The 2026 annual event has ended; please check the official website for tickets and admission times for the next event"
+      },
+      "atami": {
+        "name": "Atami Sea Fireworks Festival",
+        "shots": "Approx. 3,000–5,000 shells per event",
+        "badge": "Special selection",
+        "highlights": "Held since 1952, the festival uses Atami Bay’s mountain-ringed setting as a natural surround-sound arena. The grand finale, Aerial Niagara, pours silver light across the bay.",
+        "transit": "About 15 minutes on foot from JR Atami Station (Tōkaidō Shinkansen) to the beach",
+        "date_display": "2026/11/23, 12/6, 12/25; there are also events in 2027",
+        "reserved_seats": "The free viewing area, accommodation tourist area and other viewing plans shall be confirmed according to the announcement of each event."
+      },
+      "gion_festival": {
+        "name": "Kyoto Gion Festival",
+        "shots": "Traditional festival; no fireworks",
+        "badge": "Heritage highlight",
+        "highlights": "A millennium-old rite to ward off misfortune, rooted in the Heian period. Ornate, multi-ton yamahoko floats are pulled through Shijō and Kawaramachi like moving museums; lanterns and court music fill the Yoiyama evenings.",
+        "transit": "Steps from Karasuma or Kyoto-Kawaramachi Station on the Hankyu Kyoto Line",
+        "date_display": "The festival is usually held in July every year; please check the official announcement for details of the next festival.",
+        "reserved_seats": "The viewing seats, ticket sales date and applicable road sections for the next session shall be subject to the official announcement."
+      }
+    }
+  },
+  "ja": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "草津温泉",
+        "spring_quality": "酸性泉・硫黄泉（pH約2.1の強酸性）",
+        "highlights": "白旗源泉や湯畑には湯けむりが立ちのぼります。檜の板で湯をかき混ぜて冷ます江戸時代からの「湯もみ」が伝わり、強酸性の湯は高い殺菌性を持ちます。",
+        "day_trip": "大滝乃湯・西の河原露天風呂・御座之湯"
+      },
+      "hakone": {
+        "name": "箱根温泉",
+        "spring_quality": "単純泉・塩化物泉・硫黄泉（箱根十七湯の多彩な泉質）",
+        "highlights": "江戸時代から名湯として親しまれてきた東京近郊の温泉地。十七の温泉郷があり、富士山の絶景と温泉を楽しめます。",
+        "day_trip": "箱根小涌園ユネッサン・天山湯治郷・箱根湯寮"
+      },
+      "arima": {
+        "name": "有馬温泉",
+        "spring_quality": "金泉（含鉄強塩泉）・銀泉（炭酸泉・ラドン泉）",
+        "highlights": "豊臣秀吉が愛した歴史ある名湯。鉄分と塩分を含む赤褐色の「金泉」と、透明な炭酸泉の「銀泉」を楽しめます。",
+        "day_trip": "金の湯・銀の湯・太閤の湯"
+      },
+      "kinosaki": {
+        "name": "城崎温泉",
+        "spring_quality": "食塩泉・弱放射能泉（中性低張性泉）",
+        "highlights": "浴衣と下駄で柳並木の川沿いを散策。入浴パスで御所の湯や一の湯など、個性豊かな七つの外湯を巡る温泉街です。",
+        "day_trip": "七つの外湯：御所の湯・一の湯・鴻の湯・まんだら湯・地蔵湯・柳湯・さとの湯"
+      },
+      "yufuin": {
+        "name": "由布院温泉（湯布院）",
+        "spring_quality": "単純温泉・弱アルカリ性泉",
+        "highlights": "女性にも人気の九州の温泉地。金鱗湖の朝霧や由布岳の景色を楽しめ、カフェ、B-speakのケーキ、上質な貸切風呂が揃います。",
+        "day_trip": "由布岳温泉・夢想園の露天風呂・下ん湯（金鱗湖畔の混浴）"
+      },
+      "beppu": {
+        "name": "別府八湯",
+        "spring_quality": "食塩泉・炭酸水素塩泉・硫黄泉（世界の10種の泉質のうち7種）",
+        "highlights": "日本一の温泉湧出量を誇り、街には湯けむりが漂います。海地獄や血の池地獄の景観に加え、竹瓦温泉の砂湯も名物です。",
+        "day_trip": "竹瓦温泉の砂湯・海地獄の足湯・ひょうたん温泉"
+      },
+      "gero": {
+        "name": "下呂温泉",
+        "spring_quality": "アルカリ性単純泉（pH9.18の美肌の湯）",
+        "highlights": "日本三名泉の一つとされる「美人の湯」。美容液のようになめらかな湯と、飛騨川の景観、飛騨牛の会席料理を楽しめます。",
+        "day_trip": "白鷺の湯・河原の噴泉池・幸乃湯"
+      },
+      "noboribetsu": {
+        "name": "登別温泉",
+        "spring_quality": "硫黄泉・食塩泉・明礬泉（最大9種類の泉質）",
+        "highlights": "北海道を代表する温泉地。地獄谷の噴気孔から湯けむりが上がり、最大九種類の泉質が集まる「生きた温泉地質博物館」です。",
+        "day_trip": "夢元さぎり湯・登別グランドホテルの日帰り入浴"
+      },
+      "kurokawa": {
+        "name": "黒川温泉",
+        "spring_quality": "弱酸性単純泉・含硫黄泉（約30軒の旅館が独自の源泉を持つ）",
+        "highlights": "深山に佇む温泉街は、派手な看板のない統一感ある景観が魅力。杉の「入湯手形」で、好きな露天風呂を三か所巡れます。",
+        "day_trip": "入湯手形で旅館の露天風呂を三か所選択（山の宿新明館の洞窟風呂など）"
+      },
+      "ginzan": {
+        "name": "銀山温泉",
+        "spring_quality": "含食塩・硫化水素泉（高温の弱酸性源泉）",
+        "highlights": "大正時代の浪漫を感じる温泉街。銀山川沿いに瓦屋根の木造旅館が並び、夕暮れのガス灯と冬の雪景色が幻想的です。",
+        "day_trip": "隈研吾設計のしろがね湯などの共同浴場"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "長岡まつり大花火大会",
+        "shots": "約20,000発（2日間合計）",
+        "badge": "S級",
+        "highlights": "信濃川沿いに約2km広がる復興祈願花火「フェニックス」と、直径約650mの「正三尺玉」。交響楽とともに夜空を彩り、多くの観客を感動で包みます。",
+        "transit": "JR上越新幹線・長岡駅大手口から徒歩約30分",
+        "date_display": "2026 年は終わりました。次回の日程は主催者発表をご確認ください。",
+        "reserved_seats": "次回のチケット販売日および座席配置は主催者が発表するものとします。"
+      },
+      "oomagari": {
+        "name": "全国花火競技大会「大曲の花火」",
+        "shots": "約18,000発",
+        "badge": "S級",
+        "highlights": "昼花火と夜花火の両方を楽しめる最高峰の競技大会。全国の花火師が集まり、創造性豊かな連続演出で花火の芸術を競います。",
+        "transit": "JR秋田新幹線・大曲駅から徒歩約30分",
+        "date_display": "2026 年は終わりました。次回の日程は主催者発表をご確認ください。",
+        "reserved_seats": "次回のチケット販売日および座席配置は主催者が発表するものとします。"
+      },
+      "sumidagawa": {
+        "name": "隅田川花火大会",
+        "shots": "約20,000発",
+        "badge": "S級",
+        "highlights": "関東の夏を代表する行事。東京スカイツリーの特別点灯に加え、第1会場では花火コンクール、第2会場では大玉の連続演出が行われ、川には多くの屋形船が並びます。",
+        "transit": "銀座線・都営浅草線・東武スカイツリーライン浅草駅から徒歩約5分",
+        "date_display": "2026/07/25は終了しました。次回の日程は正式に発表されます",
+        "reserved_seats": "次回のご来場の手配および予約条件は主催者の発表に準じます。"
+      },
+      "yodogawa": {
+        "name": "なにわ淀川花火大会",
+        "shots": "非公表（約15,000〜20,000発と推定）",
+        "badge": "A級",
+        "highlights": "大阪・梅田の高層ビル群を背景に、淀川の水面に半円形の水中花火が次々と開き、金色の冠菊とともに迫力ある音と光を楽しめます。",
+        "transit": "JR東海道線塚本駅または阪急神戸線十三駅から徒歩約15分",
+        "date_display": "2026/10/17 は終了しました。次回の日程は正式に発表されます",
+        "reserved_seats": "2026 年の年次イベントは終了しました。次回イベントのチケットと入場時間については公式ウェブサイトをご確認ください。"
+      },
+      "atami": {
+        "name": "熱海海上花火大会",
+        "shots": "1回約3,000〜5,000発",
+        "badge": "特色級",
+        "highlights": "1952年から続く花火大会。三方を山に囲まれた熱海湾では音が反響し、天然の音響効果が生まれます。フィナーレの「大空中ナイアガラ」が湾を銀色に照らします。",
+        "transit": "JR東海道新幹線・熱海駅から海岸まで徒歩約15分",
+        "date_display": "2026/11/23、12/6、12/25; 2027年にもイベントがあります",
+        "reserved_seats": "無料観覧エリア、宿泊観光エリア、その他観覧プランについては、各イベントの発表に合わせて確認させていただきます。"
+      },
+      "gion_festival": {
+        "name": "京都祇園祭（日本三大祭の一つ）",
+        "shots": "伝統祭礼・花火なし",
+        "badge": "国宝級",
+        "highlights": "平安時代から続く厄除けの祭礼。数トンにもなる豪華な山鉾が「動く美術館」として四条通や河原町を巡り、宵山には提灯と雅な音楽が街を彩ります。",
+        "transit": "阪急京都線・烏丸駅または京都河原町駅下車すぐ",
+        "date_display": "フェスティバルは通常、毎年 7 月に開催されます。次回のフェスティバルの詳細については公式発表をご確認ください。",
+        "reserved_seats": "次回セッションの観覧席、チケット発売日、対象道路区間は公式発表に準じます。"
+      }
+    }
+  },
+  "ko": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "구사쓰 온천",
+        "spring_quality": "산성천·유황천 (pH 약 2.1의 강산성)",
+        "highlights": "시라하타 원천과 유바타케 주변에 수증기가 피어오릅니다. 에도 시대부터 전해진 유모미 공연에서는 편백나무 판으로 항균성이 강한 산성 온천수를 저어 식힙니다.",
+        "day_trip": "오타키노유·사이노카와라 노천탕·고자노유"
+      },
+      "hakone": {
+        "name": "하코네 온천",
+        "spring_quality": "단순천·염화물천·유황천 (하코네 17개 온천 지역의 다양한 수질)",
+        "highlights": "에도 시대부터 사랑받은 도쿄 근교 온천지로 17개 온천 마을이 있습니다. 온천과 함께 후지산의 아름다운 전망을 즐길 수 있습니다.",
+        "day_trip": "하코네 고와키엔 유넷산·덴잔 도지쿄·하코네 유료"
+      },
+      "arima": {
+        "name": "아리마 온천",
+        "spring_quality": "금천: 철분이 풍부한 강염천 / 은천: 탄산천·라돈천",
+        "highlights": "도요토미 히데요시가 사랑한 오랜 온천지입니다. 철분과 염분이 풍부한 적갈색 금천과 투명한 탄산 은천을 함께 즐길 수 있습니다.",
+        "day_trip": "공중탕 킨노유·긴노유·다이코노유"
+      },
+      "kinosaki": {
+        "name": "기노사키 온천",
+        "spring_quality": "식염천·약방사능천 (중성 저장성 온천)",
+        "highlights": "유카타와 나막신 차림으로 버드나무가 늘어선 강변을 거닐어 보세요. 입욕 패스로 고쇼노유와 이치노유 등 개성 있는 7개 공중탕을 둘러볼 수 있습니다.",
+        "day_trip": "7개 공중탕: 고쇼노유·이치노유·고노유·만다라유·지조유·야나기유·사토노유"
+      },
+      "yufuin": {
+        "name": "유후인 온천",
+        "spring_quality": "단순온천·약알칼리성 온천",
+        "highlights": "여성 여행자에게 특히 인기 있는 규슈 온천 마을입니다. 긴린코의 아침 안개와 유후다케 전망, 카페와 B-speak 케이크, 품격 있는 프라이빗 탕을 즐겨 보세요.",
+        "day_trip": "유후다케 온천·무소엔 노천탕·긴린코 호반 혼욕탕 시탄유"
+      },
+      "beppu": {
+        "name": "벳푸 8대 온천",
+        "spring_quality": "식염천·탄산수소염천·유황천 (세계 10가지 수질 중 7가지)",
+        "highlights": "일본 최대의 온천 용출량을 자랑하며 시내에 수증기가 피어오릅니다. 우미지옥과 치노이케지옥의 독특한 풍경, 다케가와라 온천의 뜨거운 모래찜질이 명물입니다.",
+        "day_trip": "다케가와라 온천 모래찜질·우미지옥 족욕·효탄 온천"
+      },
+      "gero": {
+        "name": "게로 온천",
+        "spring_quality": "알칼리성 단순천 (pH 9.18, 미인탕으로 유명)",
+        "highlights": "일본 3대 명천 중 하나로 꼽히는 미인탕입니다. 에센스처럼 매끄러운 온천수와 히다강 풍경, 고급 히다규 가이세키 요리를 즐겨 보세요.",
+        "day_trip": "시라사기노유·강변 분센치·사치노유"
+      },
+      "noboribetsu": {
+        "name": "노보리베쓰 온천",
+        "spring_quality": "유황천·식염천·명반천 등 최대 9가지 수질",
+        "highlights": "홋카이도를 대표하는 온천지입니다. 지고쿠다니 분기공의 뜨거운 수증기와 최대 9가지 수질이 어우러져 살아 있는 온천 지질 박물관으로 불립니다.",
+        "day_trip": "유모토 사기리유·노보리베쓰 그랜드 호텔 당일 입욕"
+      },
+      "kurokawa": {
+        "name": "구로카와 온천",
+        "spring_quality": "약산성 단순천·함유황천 (약 30개 료칸의 독자 원천)",
+        "highlights": "깊은 산속의 온천 마을로 화려한 광고판 없이 조화로운 풍경을 유지합니다. 삼나무 입욕 패스 뉴토테가타를 구입하면 노천탕 3곳을 선택할 수 있습니다.",
+        "day_trip": "입욕 패스로 료칸 노천탕 3곳 선택 (신메이칸 동굴탕 등)"
+      },
+      "ginzan": {
+        "name": "긴잔 온천",
+        "spring_quality": "식염·황화수소 함유 온천 (고온의 약산성 원천)",
+        "highlights": "다이쇼 시대로 돌아간 듯 낭만적인 온천 거리입니다. 긴잔강 양쪽으로 기와지붕의 다층 목조 료칸이 늘어서고, 저녁 가스등과 겨울 설경이 어우러집니다.",
+        "day_trip": "구마 겐고가 설계한 시로가네유 등 공중탕"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "나가오카 축제 대불꽃놀이",
+        "shots": "약 20,000발 (이틀 합계)",
+        "badge": "S등급",
+        "highlights": "시나노강을 따라 2km에 걸친 부흥 기원 피닉스 불꽃과 지름 650m의 쇼산자쿠다마가 관현악에 맞춰 밤하늘을 수놓으며 수많은 관객에게 감동을 선사합니다.",
+        "transit": "JR 조에쓰 신칸센 나가오카역 오테 출구에서 도보 약 30분",
+        "date_display": "2026년이 끝났습니다. 다음 날짜는 주최측 공지를 확인해주세요.",
+        "reserved_seats": "다음 회차의 티켓 판매 날짜와 좌석 배정은 주최 측의 공지에 따릅니다."
+      },
+      "oomagari": {
+        "name": "전국 불꽃놀이 경기대회·오마가리 불꽃놀이",
+        "shots": "약 18,000발",
+        "badge": "S등급",
+        "highlights": "낮과 밤 불꽃을 모두 선보이는 최정상급 경기대회입니다. 일본 각지의 뛰어난 불꽃 장인이 모여 창의적인 연속 연출로 불꽃 예술을 겨룹니다.",
+        "transit": "JR 아키타 신칸센 오마가리역에서 도보 약 30분",
+        "date_display": "2026년이 끝났습니다. 다음 날짜는 주최측 공지를 확인해주세요.",
+        "reserved_seats": "다음 회차의 티켓 판매 날짜와 좌석 배정은 주최 측의 공지에 따릅니다."
+      },
+      "sumidagawa": {
+        "name": "스미다강 불꽃축제",
+        "shots": "약 20,000발",
+        "badge": "S등급",
+        "highlights": "간토의 여름을 대표하는 전통 행사로 도쿄 스카이트리도 특별 조명을 선보입니다. 제1회장의 불꽃 경연, 제2회장의 대형 공중 불꽃, 강 위에 모인 수백 척의 야카타부네가 장관입니다.",
+        "transit": "긴자선·도에이 아사쿠사선·도부 스카이트리 라인 아사쿠사역에서 도보 약 5분",
+        "date_display": "2026년 7월 25일 종료되었습니다. 다음 날짜는 공식적으로 발표될 것이다",
+        "reserved_seats": "다음 방문을 위한 준비 및 예약 조건은 주최측의 공지에 따릅니다."
+      },
+      "yodogawa": {
+        "name": "나니와 요도가와 불꽃축제",
+        "shots": "공식 비공개 (약 15,000~20,000발 추정)",
+        "badge": "A등급",
+        "highlights": "오사카 우메다의 고층 빌딩을 배경으로 요도강 수면에 반원형 수중 불꽃과 황금빛 버드나무 모양 불꽃이 빠르게 펼쳐져 입체적인 빛과 소리를 선사합니다.",
+        "transit": "JR 도카이도선 쓰카모토역 또는 한큐 고베선 주소역에서 도보 약 15분",
+        "date_display": "2026/10/17이 종료되었습니다. 다음 날짜는 공식적으로 발표될 것이다",
+        "reserved_seats": "2026년 연례 행사가 종료되었습니다. 다음 이벤트 티켓 및 입장 시간은 공식 웹사이트에서 확인하세요."
+      },
+      "atami": {
+        "name": "아타미 해상 불꽃축제",
+        "shots": "회당 약 3,000~5,000발",
+        "badge": "특선",
+        "highlights": "1952년부터 이어진 축제로, 삼면이 산으로 둘러싸인 아타미만에 폭음이 울려 천연 서라운드 효과를 냅니다. 피날레 공중 나이아가라가 만 전체에 은빛을 쏟아냅니다.",
+        "transit": "JR 도카이도 신칸센 아타미역에서 해변까지 도보 약 15분",
+        "date_display": "2026년 11월 23일, 12/6, 12/25; 2027년에도 이벤트가 있어요",
+        "reserved_seats": "무료관람지역, 숙박관광지역, 기타 관람계획은 각 행사별 공지에 따라 확정됩니다."
+      },
+      "gion_festival": {
+        "name": "교토 기온 마쓰리",
+        "shots": "전통 축제, 불꽃놀이 없음",
+        "badge": "문화유산 특선",
+        "highlights": "헤이안 시대부터 천 년간 이어진 액막이 축제입니다. 움직이는 미술관 같은 수 톤의 화려한 야마호코를 사람이 끌며 시조도리와 가와라마치를 순행하고, 요이야마에는 등불과 전통 음악이 거리를 채웁니다.",
+        "transit": "한큐 교토선 가라스마역 또는 교토카와라마치역에서 바로 연결",
+        "date_display": "축제는 보통 매년 7월에 열립니다. 다음 페스티벌에 대한 자세한 내용은 공식 공지를 확인해주세요.",
+        "reserved_seats": "관람석, 티켓 판매일, 다음 회차 적용 구간은 공식 발표에 따릅니다."
+      }
+    }
+  },
+  "th": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "คุซัตสึออนเซ็น",
+        "spring_quality": "น้ำแร่กรดและกำมะถัน (กรดจัด pH ประมาณ 2.1)",
+        "highlights": "ไอน้ำลอยรอบต้นน้ำชิราฮาตะและยูบาตาเกะ มีการแสดงยูโมมิที่สืบจากยุคเอโดะ ใช้แผ่นไม้ฮิโนกิกวนน้ำกรดจัดที่มีฤทธิ์ฆ่าเชื้อเพื่อลดอุณหภูมิ",
+        "day_trip": "โอทาคิโนะยุ บ่อกลางแจ้งไซโนะคาวาระ และโกซาโนะยุ"
+      },
+      "hakone": {
+        "name": "ฮาโกเนะออนเซ็น",
+        "spring_quality": "น้ำแร่ธรรมดา คลอไรด์ และกำมะถัน ในย่านออนเซ็น 17 แห่งของฮาโกเนะ",
+        "highlights": "แหล่งออนเซ็นยอดนิยมใกล้โตเกียวที่มีชื่อเสียงตั้งแต่ยุคเอโดะ ประกอบด้วยชุมชนออนเซ็น 17 แห่ง พร้อมโอกาสแช่น้ำชมวิวภูเขาไฟฟูจิ",
+        "day_trip": "ฮาโกเนะโควาคิเอ็นยูเนสซัน เท็นซันโทจิเกียว และฮาโกเนะยูเรียว"
+      },
+      "arima": {
+        "name": "อาริมะออนเซ็น",
+        "spring_quality": "คินเซ็น: น้ำเกลือเข้มข้นที่มีธาตุเหล็ก / กินเซ็น: น้ำแร่คาร์บอเนตและเรดอน",
+        "highlights": "ออนเซ็นเก่าแก่ที่โทโยโทมิ ฮิเดโยชิชื่นชอบ มีทั้งคินเซ็นสีน้ำตาลแดงที่อุดมด้วยเหล็กและเกลือ และกินเซ็นคาร์บอเนตใส",
+        "day_trip": "คินโนะยุ (บ่อสาธารณะ) กินโนะยุ และไทโคโนะยุ"
+      },
+      "kinosaki": {
+        "name": "คิโนซากิออนเซ็น",
+        "spring_quality": "น้ำแร่เกลือและกัมมันตรังสีอ่อน (น้ำเป็นกลาง ความเข้มข้นต่ำ)",
+        "highlights": "เดินริมแม่น้ำที่เรียงรายด้วยต้นหลิวในชุดยูกาตะและเกี๊ยะไม้ ใช้บัตรผ่านแช่บ่อสาธารณะเจ็ดแห่ง เช่น โกโชโนะยุและอิจิโนะยุ",
+        "day_trip": "บ่อสาธารณะทั้งเจ็ด: Goshono-yu, Ichino-yu, Kōno-yu, Mandara-yu, Jizō-yu, Yanagi-yu และ Satono-yu"
+      },
+      "yufuin": {
+        "name": "ยูฟุอินออนเซ็น",
+        "spring_quality": "น้ำแร่ธรรมดาและด่างอ่อน",
+        "highlights": "เมืองออนเซ็นในคิวชูที่ได้รับความนิยมในหมู่นักท่องเที่ยวหญิง ชมหมอกเช้าที่ทะเลสาบคินรินและภูเขายุฟุ พร้อมคาเฟ่ เค้ก B-Speak และบ่อส่วนตัวบรรยากาศดี",
+        "day_trip": "ยุฟุดาเกะออนเซ็น บ่อกลางแจ้งมุโซเอ็น และชิตันยุแบบแช่รวมริมทะเลสาบคินริน"
+      },
+      "beppu": {
+        "name": "ออนเซ็นทั้งแปดแห่งเบปปุ",
+        "spring_quality": "น้ำแร่เกลือ ไบคาร์บอเนต และกำมะถัน (มีเจ็ดในสิบประเภทน้ำแร่ของโลก)",
+        "highlights": "เบปปุมีปริมาณน้ำพุร้อนสูงที่สุดในญี่ปุ่น เมืองปกคลุมด้วยไอน้ำ ชมบ่ออุมิจิโกกุและชิโนอิเกะจิโกกุ แล้วลองอาบทรายร้อนอันโดดเด่นที่ทาเคงาวาระออนเซ็น",
+        "day_trip": "อาบทรายทาเคงาวาระออนเซ็น บ่อแช่เท้าอุมิจิโกกุ และเฮียวตันออนเซ็น"
+      },
+      "gero": {
+        "name": "เกโระออนเซ็น",
+        "spring_quality": "น้ำแร่ธรรมดาชนิดด่าง pH 9.18 ขึ้นชื่อว่าเป็นน้ำแร่เพื่อผิวสวย",
+        "highlights": "หนึ่งในสามออนเซ็นชื่อดังของญี่ปุ่น มีน้ำแร่เพื่อผิวสวยที่ลื่นนุ่มราวเซรั่ม พร้อมวิวแม่น้ำฮิดะและอาหารไคเซกิเนื้อฮิดะชั้นดี",
+        "day_trip": "ชิราซางิโนะยุ ฟุนเซ็นจิริมแม่น้ำ และซาจิโนะยุ"
+      },
+      "noboribetsu": {
+        "name": "โนโบริเบ็ตสึออนเซ็น",
+        "spring_quality": "น้ำแร่กำมะถัน เกลือ และสารส้ม รวมมากถึงเก้าประเภท",
+        "highlights": "ออนเซ็นตัวแทนของฮอกไกโด มีปล่องไอน้ำร้อนในจิโกกุดานิและน้ำแร่ถึงเก้าประเภท ราวกับพิพิธภัณฑ์ธรณีวิทยาออนเซ็นที่มีชีวิต",
+        "day_trip": "ยูโมโตะซางิริยุ และออนเซ็นแบบใช้บริการรายวันที่โรงแรมโนโบริเบ็ตสึแกรนด์"
+      },
+      "kurokawa": {
+        "name": "คุโรคาวะออนเซ็น",
+        "spring_quality": "น้ำแร่ธรรมดากรดอ่อนและกำมะถัน เรียวกังราว 30 แห่งมีต้นน้ำของตนเอง",
+        "highlights": "เมืองออนเซ็นสงบกลางภูเขาที่ไม่มีป้ายโฆษณารบกวนทิวทัศน์ ซื้อบัตรไม้นิวโตเทงาตะเพื่อเลือกแช่บ่อกลางแจ้งสามแห่ง",
+        "day_trip": "ใช้บัตรนิวโตเทงาตะเลือกบ่อเรียวกังสามแห่ง เช่น บ่อถ้ำของชินเมคัง"
+      },
+      "ginzan": {
+        "name": "กินซังออนเซ็น",
+        "spring_quality": "น้ำแร่เกลือและไฮโดรเจนซัลไฟด์ (ต้นน้ำร้อนจัด กรดอ่อน)",
+        "highlights": "เมืองออนเซ็นโรแมนติกราวย้อนสู่ยุคไทโช เรียวกังไม้หลายชั้นหลังคากระเบื้องเรียงริมแม่น้ำกินซัง แสงตะเกียงแก๊สยามเย็นและหิมะฤดูหนาวงดงามราวภาพวาด",
+        "day_trip": "ชิโรกาเนะยุ ออกแบบโดยเค็งโงะ คูมะ และบ่อสาธารณะ"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "เทศกาลดอกไม้ไฟนางาโอกะ",
+        "shots": "ประมาณ 20,000 นัด รวมสองวัน",
+        "badge": "ระดับ S",
+        "highlights": "ดอกไม้ไฟฟีนิกซ์เพื่อฟื้นฟูเมืองทอดยาวสองกิโลเมตรริมแม่น้ำชินาโนะ และโชซันจากุดามะขนาดเส้นผ่านศูนย์กลาง 650 เมตร ส่องฟ้าพร้อมดนตรีออร์เคสตรา สร้างความประทับใจแก่ผู้ชมมากมาย",
+        "transit": "เดินประมาณ 30 นาทีจากทางออกโอเตะ สถานี JR นางาโอกะ สายโจเอ็ตสึชินคันเซ็น",
+        "date_display": "2026  สิ้นสุดแล้ว; โปรดตรวจสอบประกาศของผู้จัดงานสำหรับวันถัดไป",
+        "reserved_seats": "วันจำหน่ายตั๋วและการจัดที่นั่งสำหรับเซสชั่นถัดไปจะเป็นไปตามประกาศของผู้จัดงาน"
+      },
+      "oomagari": {
+        "name": "การแข่งขันดอกไม้ไฟแห่งชาติ โอมาการิ",
+        "shots": "ประมาณ 18,000 นัด",
+        "badge": "ระดับ S",
+        "highlights": "การแข่งขันชั้นนำที่มีทั้งดอกไม้ไฟกลางวันและกลางคืน ช่างดอกไม้ไฟชั้นยอดจากทั่วญี่ปุ่นแสดงศิลปะผ่านการยิงต่อเนื่องอย่างสร้างสรรค์",
+        "transit": "เดินประมาณ 30 นาทีจากสถานี JR โอมาการิ สายอาคิตะชินคันเซ็น",
+        "date_display": "2026  สิ้นสุดแล้ว; โปรดตรวจสอบประกาศของผู้จัดงานสำหรับวันถัดไป",
+        "reserved_seats": "วันจำหน่ายตั๋วและการจัดที่นั่งสำหรับเซสชั่นถัดไปจะเป็นไปตามประกาศของผู้จัดงาน"
+      },
+      "sumidagawa": {
+        "name": "เทศกาลดอกไม้ไฟแม่น้ำสุมิดะ",
+        "shots": "ประมาณ 20,000 นัด",
+        "badge": "ระดับ S",
+        "highlights": "งานฤดูร้อนสำคัญของคันโตพร้อมไฟพิเศษที่โตเกียวสกายทรี พื้นที่แรกจัดประกวดดอกไม้ไฟ พื้นที่สองยิงดอกไม้ไฟลูกใหญ่ และมีเรือยากาตะบุเนะหลายร้อยลำบนแม่น้ำ",
+        "transit": "เดินประมาณ 5 นาทีจากสถานีอาซากุสะ สายกินซะ โทเออาซากุสะ หรือโทบุสกายทรี",
+        "date_display": "2026/07/25 สิ้นสุดแล้ว วันถัดไปจะประกาศอย่างเป็นทางการ",
+        "reserved_seats": "การจัดเตรียมและเงื่อนไขการจองสำหรับการเยี่ยมชมครั้งต่อไปจะเป็นไปตามประกาศของผู้จัดงาน"
+      },
+      "yodogawa": {
+        "name": "เทศกาลดอกไม้ไฟนานิวะโยโดงาวะ",
+        "shots": "ไม่เปิดเผยอย่างเป็นทางการ ประมาณ 15,000–20,000 นัด",
+        "badge": "ระดับ A",
+        "highlights": "ฉากหลังเป็นเส้นขอบฟ้าอาคารสูงย่านอุเมดะ โอซาก้า ดอกไม้ไฟครึ่งวงกลมยิงต่อเนื่องบนแม่น้ำโยโดะ พร้อมประกายสีทองคล้ายกิ่งหลิว สร้างแสงเสียงรอบทิศ",
+        "transit": "เดินประมาณ 15 นาทีจากสถานี JR สึกาโมโตะ สายโทไคโด หรือสถานีจูโซ สายฮังคิวโกเบ",
+        "date_display": "2026 / 10 / 17  สิ้นสุดแล้ว; วันถัดไปจะประกาศอย่างเป็นทางการ",
+        "reserved_seats": "กิจกรรม  2026  สิ้นสุดลงแล้ว โปรดตรวจสอบเว็บไซต์อย่างเป็นทางการเพื่อดูตั๋วและเวลาเข้าชมเซสชันถัดไป"
+      },
+      "atami": {
+        "name": "เทศกาลดอกไม้ไฟทะเลอาตามิ",
+        "shots": "ประมาณ 3,000–5,000 นัดต่อครั้ง",
+        "badge": "ไฮไลต์พิเศษ",
+        "highlights": "จัดมาตั้งแต่ปี 1952 อ่าวอาตามิมีภูเขาล้อมสามด้าน เสียงดอกไม้ไฟก้องราวระบบเสียงธรรมชาติ ปิดท้ายด้วยไนแอการากลางอากาศที่เทแสงสีเงินทั่วอ่าว",
+        "transit": "เดินประมาณ 15 นาทีจากสถานี JR อาตามิ สายโทไคโดชินคันเซ็นถึงชายหาด",
+        "date_display": "2026 / 11 / 23 ,  12 / 6 ,  12 / 25 ; และ  2027",
+        "reserved_seats": "พื้นที่ชมฟรี พื้นที่ท่องเที่ยว ที่พัก และแผนการชมอื่น ๆ จะได้รับการยืนยันตามประกาศของแต่ละงาน"
+      },
+      "gion_festival": {
+        "name": "เทศกาลกิอง เกียวโต",
+        "shots": "เทศกาลดั้งเดิม ไม่มีดอกไม้ไฟ",
+        "badge": "ไฮไลต์มรดกวัฒนธรรม",
+        "highlights": "พิธีขจัดเคราะห์ที่สืบพันปีจากยุคเฮอัน รถแห่ยามาโฮโกะหนักหลายตันงดงามราวพิพิธภัณฑ์เคลื่อนที่ ถูกคนลากผ่านชิโจและคาวารามาจิ ยามค่ำโยอิยามะมีโคมไฟและดนตรีราชสำนัก",
+        "transit": "ใกล้ทางออกสถานีคาราสุมะหรือเกียวโตคาวารามาจิ สายฮังคิวเกียวโต",
+        "date_display": "โดยปกติเทศกาลจะจัดขึ้นในเดือนกรกฎาคมของทุกปี โปรดตรวจสอบประกาศอย่างเป็นทางการสำหรับรายละเอียดของเทศกาลครั้งต่อไป",
+        "reserved_seats": "ที่นั่งชม วันที่จำหน่ายตั๋ว และส่วนถนนที่เกี่ยวข้องสำหรับเซสชั่นถัดไปจะต้องเป็นไปตามประกาศอย่างเป็นทางการ"
+      }
+    }
+  },
+  "vi": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "Kusatsu Onsen",
+        "spring_quality": "Suối axit và lưu huỳnh (axit mạnh, pH khoảng 2,1)",
+        "highlights": "Hơi nước bao quanh nguồn Shirahata và Yubatake. Màn biểu diễn yumomi từ thời Edo dùng ván bách khuấy làm nguội nước suối axit mạnh có tính kháng khuẩn.",
+        "day_trip": "Ōtaki no Yu, bồn ngoài trời Sainokawara và Gozanoyu"
+      },
+      "hakone": {
+        "name": "Hakone Onsen",
+        "spring_quality": "Suối đơn thuần, clorua và lưu huỳnh tại 17 khu onsen Hakone",
+        "highlights": "Điểm nghỉ onsen nổi tiếng gần Tokyo từ thời Edo, với 17 khu suối khoáng và trải nghiệm tắm ngắm núi Phú Sĩ.",
+        "day_trip": "Hakone Kowakien Yunessun, Tenzan Tōjikyō và Hakone Yuryō"
+      },
+      "arima": {
+        "name": "Arima Onsen",
+        "spring_quality": "Kinsen: nước mặn giàu sắt; Ginsen: suối cacbonat và radon",
+        "highlights": "Onsen lâu đời được Toyotomi Hideyoshi yêu thích, có cả Kinsen nâu đỏ giàu sắt và muối lẫn Ginsen cacbonat trong suốt.",
+        "day_trip": "Nhà tắm công cộng Kin no Yu, Gin no Yu và Taikō no Yu"
+      },
+      "kinosaki": {
+        "name": "Kinosaki Onsen",
+        "spring_quality": "Suối muối và phóng xạ nhẹ (nước trung tính, nhược trương)",
+        "highlights": "Mặc yukata và guốc geta dạo bờ sông rợp liễu. Vé tắm cho phép trải nghiệm bảy nhà tắm công cộng, gồm Goshono-yu và Ichino-yu.",
+        "day_trip": "Bảy nhà tắm: Goshono-yu, Ichino-yu, Kōno-yu, Mandara-yu, Jizō-yu, Yanagi-yu và Satono-yu"
+      },
+      "yufuin": {
+        "name": "Yufuin Onsen",
+        "spring_quality": "Suối khoáng đơn thuần, kiềm nhẹ",
+        "highlights": "Thị trấn onsen Kyushu đặc biệt được du khách nữ yêu thích, với sương sớm hồ Kinrin, cảnh núi Yufu, quán cà phê, bánh B-Speak và phòng tắm riêng tinh tế.",
+        "day_trip": "Yufudake Onsen, bồn ngoài trời Musōen và Shitanyu tắm chung bên hồ Kinrin"
+      },
+      "beppu": {
+        "name": "Tám suối khoáng Beppu",
+        "spring_quality": "Suối muối, bicacbonat và lưu huỳnh (bảy trong mười loại nước khoáng trên thế giới)",
+        "highlights": "Có lưu lượng suối khoáng lớn nhất Nhật Bản, Beppu phủ đầy hơi nước, nổi bật với Umi Jigoku, Chinoike Jigoku và trải nghiệm tắm cát nóng tại Takegawara Onsen.",
+        "day_trip": "Tắm cát Takegawara Onsen, ngâm chân Umi Jigoku và Hyōtan Onsen"
+      },
+      "gero": {
+        "name": "Gero Onsen",
+        "spring_quality": "Suối đơn thuần kiềm (pH 9,18), nổi tiếng là nước tắm đẹp da",
+        "highlights": "Một trong ba suối khoáng nổi tiếng Nhật Bản, Gero có nước “mỹ nhân thang” mượt như tinh chất, cảnh sông Hida và ẩm thực kaiseki bò Hida cao cấp.",
+        "day_trip": "Shirasagi no Yu, Funsenchi ven sông và Sachi no Yu"
+      },
+      "noboribetsu": {
+        "name": "Noboribetsu Onsen",
+        "spring_quality": "Suối lưu huỳnh, muối và phèn, với tới chín loại nước khoáng",
+        "highlights": "Thị trấn onsen tiêu biểu của Hokkaido, với các lỗ phun hơi ở Jigokudani và tới chín loại nước khoáng, như một bảo tàng địa chất suối nóng sống động.",
+        "day_trip": "Yumoto Sagiriyu và tắm trong ngày tại Noboribetsu Grand Hotel"
+      },
+      "kurokawa": {
+        "name": "Kurokawa Onsen",
+        "spring_quality": "Suối đơn thuần axit nhẹ và lưu huỳnh; khoảng 30 ryokan có nguồn riêng",
+        "highlights": "Thị trấn onsen yên bình giữa núi, giữ cảnh quan hài hòa không bị biển quảng cáo che lấp. Thẻ gỗ tuyết tùng nyūtō tegata cho phép chọn ba bồn tắm ngoài trời.",
+        "day_trip": "Dùng thẻ nyūtō tegata chọn ba bồn ngoài trời của ryokan, như bồn hang động Shinmeikan"
+      },
+      "ginzan": {
+        "name": "Ginzan Onsen",
+        "spring_quality": "Suối chứa muối và hydro sunfua (nguồn nhiệt cao, axit nhẹ)",
+        "highlights": "Thị trấn onsen lãng mạn như thời Taishō, với ryokan gỗ nhiều tầng mái ngói dọc sông Ginzan, đèn gas ấm lúc chạng vạng và tuyết mùa đông đẹp như tranh.",
+        "day_trip": "Shirogane-yu do Kengo Kuma thiết kế và các nhà tắm công cộng"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "Đại hội pháo hoa lễ hội Nagaoka",
+        "shots": "Khoảng 20.000 quả trong hai ngày",
+        "badge": "Hạng S",
+        "highlights": "Bên sông Shinano, màn Phoenix cầu phục hồi trải dài 2 km và Shōsanjakudama đường kính 650 m thắp sáng trời đêm cùng nhạc giao hưởng, làm xúc động đông đảo khán giả.",
+        "transit": "Đi bộ khoảng 30 phút từ cửa Ōte, ga JR Nagaoka trên tuyến Jōetsu Shinkansen",
+        "date_display": "Năm 2026 đã kết thúc; vui lòng kiểm tra thông báo của người tổ chức để biết ngày tiếp theo.",
+        "reserved_seats": "Ngày bán vé và sắp xếp chỗ ngồi cho phiên tiếp theo sẽ do ban tổ chức thông báo."
+      },
+      "oomagari": {
+        "name": "Cuộc thi pháo hoa toàn quốc Ōmagari",
+        "shots": "Khoảng 18.000 quả",
+        "badge": "Hạng S",
+        "highlights": "Cuộc thi hàng đầu với cả pháo hoa ban ngày và ban đêm, quy tụ nghệ nhân khắp Nhật Bản thể hiện chuỗi trình diễn sáng tạo và nghệ thuật pháo hoa.",
+        "transit": "Đi bộ khoảng 30 phút từ ga JR Ōmagari trên tuyến Akita Shinkansen",
+        "date_display": "Năm 2026 đã kết thúc; vui lòng kiểm tra thông báo của người tổ chức để biết ngày tiếp theo.",
+        "reserved_seats": "Ngày bán vé và sắp xếp chỗ ngồi cho phiên tiếp theo sẽ do ban tổ chức thông báo."
+      },
+      "sumidagawa": {
+        "name": "Lễ hội pháo hoa sông Sumida",
+        "shots": "Khoảng 20.000 quả",
+        "badge": "Hạng S",
+        "highlights": "Sự kiện truyền thống lớn mùa hè Kantō với đèn đặc biệt trên Tokyo Skytree. Điểm 1 tổ chức thi pháo hoa, điểm 2 bắn pháo cỡ lớn, hàng trăm thuyền yakatabune tụ hội trên sông.",
+        "transit": "Đi bộ khoảng 5 phút từ ga Asakusa, tuyến Ginza, Toei Asakusa hoặc Tobu Skytree",
+        "date_display": "25/07/2026 đã kết thúc; ngày tiếp theo sẽ được công bố chính thức",
+        "reserved_seats": "Việc sắp xếp và điều kiện đặt chỗ cho lần tham quan tiếp theo sẽ tùy thuộc vào thông báo của ban tổ chức."
+      },
+      "yodogawa": {
+        "name": "Lễ hội pháo hoa Naniwa Yodogawa",
+        "shots": "Không công bố chính thức; ước tính 15.000–20.000 quả",
+        "badge": "Hạng A",
+        "highlights": "Với đường chân trời Umeda ở Osaka làm nền, pháo hoa bán nguyệt liên tục nở trên sông Yodo cùng những chùm vàng như liễu rủ, tạo trải nghiệm ánh sáng và âm thanh sống động.",
+        "transit": "Đi bộ khoảng 15 phút từ ga JR Tsukamoto (Tōkaidō) hoặc Hankyu Jūsō (Kobe)",
+        "date_display": "2026/10/17 đã kết thúc; ngày tiếp theo sẽ được công bố chính thức",
+        "reserved_seats": "Sự kiện thường niên năm 2026 đã kết thúc; vui lòng kiểm tra trang web chính thức để biết vé và thời gian vào cửa cho sự kiện tiếp theo"
+      },
+      "atami": {
+        "name": "Lễ hội pháo hoa trên biển Atami",
+        "shots": "Khoảng 3.000–5.000 quả mỗi đợt",
+        "badge": "Nét đặc sắc",
+        "highlights": "Bắt đầu từ năm 1952, lễ hội tận dụng vịnh Atami có núi bao ba phía để tạo âm thanh vang tự nhiên. Màn kết Aerial Niagara trút ánh bạc khắp vịnh.",
+        "transit": "Đi bộ khoảng 15 phút từ ga JR Atami (Tōkaidō Shinkansen) đến bãi biển",
+        "date_display": "23/11/2026, 6/12, 25/12; cũng có những sự kiện vào năm 2027",
+        "reserved_seats": "Khu vực xem miễn phí, khu du lịch lưu trú và các kế hoạch xem khác sẽ được xác nhận theo thông báo của từng sự kiện."
+      },
+      "gion_festival": {
+        "name": "Lễ hội Gion ở Kyoto",
+        "shots": "Lễ hội truyền thống, không có pháo hoa",
+        "badge": "Di sản nổi bật",
+        "highlights": "Nghi lễ xua tai ương có từ thời Heian, kéo dài hơn nghìn năm. Xe yamahoko lộng lẫy nặng nhiều tấn như bảo tàng di động được kéo qua Shijō và Kawaramachi; đêm Yoiyama rực đèn lồng và nhạc cung đình.",
+        "transit": "Ngay ngoài ga Karasuma hoặc Kyoto-Kawaramachi, tuyến Hankyu Kyoto",
+        "date_display": "7  Thời gian lễ hội hàng tháng; vui lòng kiểm tra thông báo chính thức để biết chi tiết về năm tới",
+        "reserved_seats": "Chỗ ngồi xem, ngày bán vé và các đoạn đường áp dụng cho phiên tiếp theo sẽ được thông báo chính thức."
+      }
+    }
+  },
+  "hi": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "कुसात्सु ऑनसेन",
+        "spring_quality": "अम्लीय और सल्फ़र युक्त झरने (तेज़ अम्लीय, pH लगभग 2.1)",
+        "highlights": "शिराहाता स्रोत और युबाताके के आसपास भाप उठती है। एदो काल से चली आ रही युमोमी प्रस्तुति में सरू की तख्तियों से तेज़ अम्लीय, जीवाणुरोधी पानी को हिलाकर ठंडा किया जाता है।",
+        "day_trip": "ओताकि नो यु, साइनोकावारा खुला स्नान और गोज़ानोयु"
+      },
+      "hakone": {
+        "name": "हाकोने ऑनसेन",
+        "spring_quality": "हाकोने के 17 गर्म झरना क्षेत्रों में साधारण, क्लोराइड और सल्फ़र युक्त जल",
+        "highlights": "एदो काल से लोकप्रिय टोक्यो के पास का यह गर्म झरना क्षेत्र 17 ऑनसेन समुदायों और फ़ूजी पर्वत के दृश्यों वाले स्नान अनुभवों के लिए प्रसिद्ध है।",
+        "day_trip": "हाकोने कोवाकिएन युनेस्सुन, तेनज़ान तोजिक्यो और हाकोने युर्यो"
+      },
+      "arima": {
+        "name": "अरिमा ऑनसेन",
+        "spring_quality": "किन्सेन: लौह युक्त खारा जल; गिन्सेन: कार्बोनेट और रेडॉन युक्त झरने",
+        "highlights": "तोयोतोमी हिदेयोशी का प्रिय यह प्राचीन झरना लाल-भूरे लौह और नमक युक्त किन्सेन तथा पारदर्शी कार्बोनेट युक्त गिन्सेन दोनों प्रदान करता है।",
+        "day_trip": "किन नो यु सार्वजनिक स्नान, गिन नो यु और ताइको नो यु"
+      },
+      "kinosaki": {
+        "name": "किनोसाकी ऑनसेन",
+        "spring_quality": "खारे और हल्के रेडियोधर्मी झरने (तटस्थ, हाइपोटोनिक जल)",
+        "highlights": "युकाता और लकड़ी के गेता पहनकर विलो वृक्षों वाले नदी तट पर टहलें। स्नान पास से गोशोनो-यु और इचिनो-यु सहित सात विशिष्ट सार्वजनिक स्नानगृहों का आनंद लें।",
+        "day_trip": "सात सार्वजनिक स्नान: Goshono-yu, Ichino-yu, Kōno-yu, Mandara-yu, Jizō-yu, Yanagi-yu और Satono-yu"
+      },
+      "yufuin": {
+        "name": "युफुइन ऑनसेन",
+        "spring_quality": "साधारण, हल्के क्षारीय गर्म झरने",
+        "highlights": "महिला यात्रियों में विशेष रूप से लोकप्रिय क्यूशू का यह ऑनसेन नगर किनरिन झील की सुबह की धुंध, युफु पर्वत, कैफ़े, B-Speak केक और सुरुचिपूर्ण निजी स्नान के लिए जाना जाता है।",
+        "day_trip": "युफुदाके ऑनसेन, मुसोएन के खुले स्नान और किनरिन झील के पास शितान्यु मिश्रित स्नान"
+      },
+      "beppu": {
+        "name": "बेप्पु के आठ गर्म झरने",
+        "spring_quality": "खारे, बाइकार्बोनेट और सल्फ़र युक्त झरने (विश्व के दस प्रकारों में से सात)",
+        "highlights": "जापान में गर्म पानी के सर्वाधिक प्रवाह वाला बेप्पु भाप से ढका रहता है। उमी जिगोकु और चिनोइके जिगोकु के अनोखे कुंड देखें और ताकेगावारा ऑनसेन का गर्म रेत स्नान आज़माएँ।",
+        "day_trip": "ताकेगावारा ऑनसेन रेत स्नान, उमी जिगोकु पैरों का स्नान और ह्योतान ऑनसेन"
+      },
+      "gero": {
+        "name": "गेरो ऑनसेन",
+        "spring_quality": "क्षारीय साधारण झरना (pH 9.18), सौंदर्य स्नान के रूप में प्रसिद्ध",
+        "highlights": "जापान के तीन प्रसिद्ध गर्म झरनों में शामिल गेरो अपने रेशमी सौंदर्य-स्नान जल, हिदा नदी के दृश्यों और उम्दा हिदा बीफ़ काइसेकी भोजन के लिए जाना जाता है।",
+        "day_trip": "शिरासागि नो यु, नदी किनारे फुनसेनची और साची नो यु"
+      },
+      "noboribetsu": {
+        "name": "नोबोरिबेत्सु ऑनसेन",
+        "spring_quality": "सल्फ़र, खारे और फिटकरी युक्त झरने, कुल नौ प्रकार तक",
+        "highlights": "होक्काइदो का प्रमुख ऑनसेन नगर, जहाँ जिगोकुदानी के ज्वालामुखीय छिद्रों से भाप उठती है। नौ प्रकार तक के झरने इसे गर्म झरनों का जीवंत भूवैज्ञानिक संग्रहालय बनाते हैं।",
+        "day_trip": "युमोतो सागिरियु और नोबोरिबेत्सु ग्रैंड होटल के दिन के स्नान"
+      },
+      "kurokawa": {
+        "name": "कुरोकावा ऑनसेन",
+        "spring_quality": "हल्के अम्लीय साधारण और सल्फ़र युक्त झरने; लगभग 30 सरायों के अपने स्रोत",
+        "highlights": "पहाड़ों में बसा शांत ऑनसेन नगर, जिसकी सड़कों पर भड़कीले विज्ञापन नहीं हैं। देवदार का न्यूतो तेगाता पास लेकर अपनी पसंद के तीन खुले स्नान चुन सकते हैं।",
+        "day_trip": "न्यूतो तेगाता से तीन रयोकान के खुले स्नान चुनें, जैसे शिनमेइकान का गुफा स्नान"
+      },
+      "ginzan": {
+        "name": "गिनज़ान ऑनसेन",
+        "spring_quality": "खारे और हाइड्रोजन सल्फ़ाइड युक्त झरने (गर्म, हल्के अम्लीय स्रोत)",
+        "highlights": "ताइशो काल का रोमांस महसूस करें: गिनज़ान नदी के किनारे टाइल वाली छतों की बहुमंज़िला लकड़ी की सरायें, शाम के गैस लैम्प और सर्दियों की बर्फ़ एक सुंदर दृश्य रचते हैं।",
+        "day_trip": "केन्गो कुमा द्वारा डिज़ाइन किया गया शिरोगाने-यु और सार्वजनिक स्नानगृह"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "नागाओका महोत्सव की भव्य आतिशबाज़ी",
+        "shots": "दो दिनों में लगभग 20,000 गोले",
+        "badge": "S श्रेणी",
+        "highlights": "शिनानो नदी के किनारे पुनर्निर्माण की प्रार्थना वाला 2 किमी लंबा फ़ीनिक्स प्रदर्शन और 650 मीटर चौड़े शोसानजाकुदामा गोले ऑर्केस्ट्रा संगीत के साथ आकाश रोशन करते हैं और विशाल दर्शक समूह को भावुक कर देते हैं।",
+        "transit": "जोएत्सु शिंकान्सेन के JR नागाओका स्टेशन के ओते निकास से लगभग 30 मिनट पैदल",
+        "date_display": "2026 वर्ष समाप्त हो गया है; कृपया अगली तारीख के लिए आयोजक की घोषणा देखें।",
+        "reserved_seats": "अगले सत्र के लिए टिकट बिक्री की तारीख और बैठने की व्यवस्था आयोजक की घोषणा के अधीन होगी।"
+      },
+      "oomagari": {
+        "name": "ओमागारी राष्ट्रीय आतिशबाज़ी प्रतियोगिता",
+        "shots": "लगभग 18,000 गोले",
+        "badge": "S श्रेणी",
+        "highlights": "दिन और रात दोनों में आतिशबाज़ी वाली इस प्रमुख प्रतियोगिता में जापान भर के श्रेष्ठ आतिशबाज़ रचनात्मक क्रम और अपनी कला का प्रदर्शन करते हैं।",
+        "transit": "अकिता शिंकान्सेन के JR ओमागारी स्टेशन से लगभग 30 मिनट पैदल",
+        "date_display": "2026 वर्ष समाप्त हो गया है; कृपया अगली तारीख के लिए आयोजक की घोषणा देखें।",
+        "reserved_seats": "अगले सत्र के लिए टिकट बिक्री की तारीख और बैठने की व्यवस्था आयोजक की घोषणा के अधीन होगी।"
+      },
+      "sumidagawa": {
+        "name": "सुमिदा नदी आतिशबाज़ी महोत्सव",
+        "shots": "लगभग 20,000 गोले",
+        "badge": "S श्रेणी",
+        "highlights": "कांतो की इस प्रमुख ग्रीष्म परंपरा में टोक्यो स्काईट्री की विशेष रोशनी होती है। पहले स्थल पर प्रतियोगिता, दूसरे पर बड़े हवाई गोले और नदी पर सैकड़ों याकाताबुने नौकाएँ दृश्य को खास बनाते हैं।",
+        "transit": "गिन्ज़ा, तोएइ असाकुसा या तोबु स्काईट्री लाइन के असाकुसा स्टेशन से लगभग 5 मिनट पैदल",
+        "date_display": "2026/07/25 समाप्त हो गया है; अगली तारीख की आधिकारिक घोषणा की जाएगी",
+        "reserved_seats": "अगली यात्रा के लिए व्यवस्थाएं और आरक्षण की शर्तें आयोजक की घोषणा के अधीन होंगी।"
+      },
+      "yodogawa": {
+        "name": "नानिवा योदोगावा आतिशबाज़ी महोत्सव",
+        "shots": "आधिकारिक संख्या अघोषित; अनुमानित 15,000–20,000 गोले",
+        "badge": "A श्रेणी",
+        "highlights": "ओसाका उमेदा की ऊँची इमारतों की पृष्ठभूमि में योदो नदी पर तेज़ी से अर्धवृत्ताकार आतिशबाज़ी और सुनहरी विलो जैसी बौछारें खुलती हैं, जिससे ध्वनि और प्रकाश का जीवंत अनुभव मिलता है।",
+        "transit": "JR तोकाइदो लाइन के त्सुकामोतो स्टेशन या हांक्यु कोबे लाइन के जूसो स्टेशन से लगभग 15 मिनट पैदल",
+        "date_display": "2026/10/17 समाप्त हो गया है; अगली तारीख की आधिकारिक घोषणा की जाएगी",
+        "reserved_seats": "2026 का वार्षिक आयोजन समाप्त हो गया है; कृपया अगले कार्यक्रम के लिए टिकट और प्रवेश समय के लिए आधिकारिक वेबसाइट देखें"
+      },
+      "atami": {
+        "name": "अतामी समुद्री आतिशबाज़ी महोत्सव",
+        "shots": "प्रति आयोजन लगभग 3,000–5,000 गोले",
+        "badge": "विशेष चयन",
+        "highlights": "1952 से आयोजित यह उत्सव तीन ओर पहाड़ों से घिरी अतामी खाड़ी को प्राकृतिक सराउंड-साउंड मंच बनाता है। समापन का एरियल नियाग्रा पूरी खाड़ी पर चाँदी जैसी रोशनी बरसाता है।",
+        "transit": "JR तोकाइदो शिंकान्सेन के अतामी स्टेशन से समुद्र तट तक लगभग 15 मिनट पैदल",
+        "date_display": "2026/11/23, 12/6, 12/25; 2027 में भी घटनाएँ हैं",
+        "reserved_seats": "प्रत्येक कार्यक्रम की घोषणा के अनुसार निःशुल्क देखने का क्षेत्र, आवास पर्यटन क्षेत्र और अन्य देखने की योजनाओं की पुष्टि की जाएगी।"
+      },
+      "gion_festival": {
+        "name": "क्योटो गिओन महोत्सव",
+        "shots": "पारंपरिक उत्सव; आतिशबाज़ी नहीं",
+        "badge": "सांस्कृतिक धरोहर विशेष",
+        "highlights": "हेइआन काल से चली आ रही दुर्भाग्य दूर करने की हज़ार वर्ष पुरानी परंपरा। कई टन भारी सजे यामाहोको रथ चलते संग्रहालयों की तरह शिजो और कावारामाची से खींचे जाते हैं; योइयामा की शामें लालटेनों और दरबारी संगीत से भरती हैं।",
+        "transit": "हांक्यु क्योटो लाइन के कारासुमा या क्योटो-कावारामाची स्टेशन से तुरंत पहुँच",
+        "date_display": "यह त्यौहार आमतौर पर हर साल जुलाई में आयोजित किया जाता है; कृपया अगले त्यौहार के विवरण के लिए आधिकारिक घोषणा देखें।",
+        "reserved_seats": "अगले सत्र के लिए देखने की सीटें, टिकट बिक्री की तारीख और लागू सड़क खंड आधिकारिक घोषणा के अधीन होंगे।"
+      }
+    }
+  },
+  "es": {
+    "hot_springs": {
+      "kusatsu": {
+        "name": "Kusatsu Onsen",
+        "spring_quality": "Aguas ácidas y sulfurosas (acidez elevada, pH aprox. 2,1)",
+        "highlights": "El vapor envuelve el manantial Shirahata y Yubatake. La tradición yumomi, heredada del periodo Edo, enfría las aguas muy ácidas y antibacterianas removiéndolas con tablas de ciprés.",
+        "day_trip": "Ōtaki no Yu, baño al aire libre Sainokawara y Gozanoyu"
+      },
+      "hakone": {
+        "name": "Hakone Onsen",
+        "spring_quality": "Aguas simples, cloruradas y sulfurosas en las 17 zonas termales de Hakone",
+        "highlights": "Escapada termal cerca de Tokio desde el periodo Edo, con 17 comunidades de onsen y oportunidades de bañarse con vistas al monte Fuji.",
+        "day_trip": "Hakone Kowakien Yunessun, Tenzan Tōjikyō y Hakone Yuryō"
+      },
+      "arima": {
+        "name": "Arima Onsen",
+        "spring_quality": "Kinsen: aguas salinas ricas en hierro; Ginsen: aguas carbonatadas y con radón",
+        "highlights": "Este antiguo onsen, favorito de Toyotomi Hideyoshi, ofrece Kinsen rojizo rico en hierro y sal, y Ginsen transparente y carbonatado.",
+        "day_trip": "Baño público Kin no Yu, Gin no Yu y Taikō no Yu"
+      },
+      "kinosaki": {
+        "name": "Kinosaki Onsen",
+        "spring_quality": "Aguas salinas y débilmente radiactivas (neutras e hipotónicas)",
+        "highlights": "Pasea en yukata y sandalias geta junto al río bordeado de sauces. El pase de baños permite recorrer siete baños públicos, como Goshono-yu e Ichino-yu.",
+        "day_trip": "Los siete baños: Goshono-yu, Ichino-yu, Kōno-yu, Mandara-yu, Jizō-yu, Yanagi-yu y Satono-yu"
+      },
+      "yufuin": {
+        "name": "Yufuin Onsen",
+        "spring_quality": "Aguas termales simples y ligeramente alcalinas",
+        "highlights": "Pueblo termal de Kyūshū especialmente popular entre viajeras, con la niebla matinal del lago Kinrin, vistas al monte Yufu, cafés, pasteles B-Speak y cuidados baños privados.",
+        "day_trip": "Yufudake Onsen, baños al aire libre de Musōen y baño mixto Shitanyu junto al lago Kinrin"
+      },
+      "beppu": {
+        "name": "Los ocho onsen de Beppu",
+        "spring_quality": "Aguas salinas, bicarbonatadas y sulfurosas (siete de los diez tipos de aguas termales del mundo)",
+        "highlights": "Beppu, líder de Japón por caudal termal, está envuelto en vapor. Destacan las piscinas Umi Jigoku y Chinoike Jigoku y el singular baño de arena caliente de Takegawara Onsen.",
+        "day_trip": "Baño de arena Takegawara Onsen, pediluvio Umi Jigoku y Hyōtan Onsen"
+      },
+      "gero": {
+        "name": "Gero Onsen",
+        "spring_quality": "Agua simple alcalina (pH 9,18), conocida como baño de belleza",
+        "highlights": "Uno de los tres onsen más célebres de Japón, Gero ofrece aguas sedosas de belleza, paisajes del río Hida y refinada cocina kaiseki con ternera de Hida.",
+        "day_trip": "Shirasagi no Yu, Funsenchi junto al río y Sachi no Yu"
+      },
+      "noboribetsu": {
+        "name": "Noboribetsu Onsen",
+        "spring_quality": "Aguas sulfurosas, salinas y de alumbre, con hasta nueve tipos de agua",
+        "highlights": "Uno de los pueblos termales emblemáticos de Hokkaido, con fumarolas en Jigokudani y hasta nueve tipos de aguas: un museo geológico vivo de los onsen.",
+        "day_trip": "Yumoto Sagiriyu y baños de día del Noboribetsu Grand Hotel"
+      },
+      "kurokawa": {
+        "name": "Kurokawa Onsen",
+        "spring_quality": "Aguas simples ligeramente ácidas y sulfurosas; unas 30 posadas tienen fuentes propias",
+        "highlights": "Pueblo termal apartado en la montaña, con un paisaje armonioso sin carteles intrusivos. El pase de cedro nyūtō tegata permite elegir tres baños al aire libre.",
+        "day_trip": "Con el pase nyūtō tegata, elige tres baños de ryokan, como el baño en cueva de Shinmeikan"
+      },
+      "ginzan": {
+        "name": "Ginzan Onsen",
+        "spring_quality": "Aguas salinas y con sulfuro de hidrógeno (fuentes calientes y ligeramente ácidas)",
+        "highlights": "Viaja al romanticismo de la era Taishō: posadas de madera de varias plantas y tejados de tejas bordean el río Ginzan, entre farolas de gas al atardecer y nieve invernal.",
+        "day_trip": "Shirogane-yu, diseñado por Kengo Kuma, y baños públicos"
+      }
+    },
+    "festivals": {
+      "nagaoka": {
+        "name": "Gran espectáculo de fuegos de Nagaoka",
+        "shots": "Aprox. 20.000 lanzamientos en dos días",
+        "badge": "Categoría S",
+        "highlights": "Junto al río Shinano, el homenaje a la recuperación Phoenix se extiende 2 km y los estallidos Shōsanjakudama alcanzan 650 m de diámetro. La música orquestal acompaña un espectáculo que emociona a grandes multitudes.",
+        "transit": "Unos 30 minutos a pie desde la salida Ōte de la estación JR Nagaoka (Jōetsu Shinkansen)",
+        "date_display": "El año 2026 ha terminado; Por favor consulte el anuncio del organizador para la próxima fecha.",
+        "reserved_seats": "La fecha de venta de entradas y la disposición de asientos para la próxima sesión estarán sujetas al anuncio del organizador."
+      },
+      "oomagari": {
+        "name": "Concurso Nacional de Fuegos Artificiales de Ōmagari",
+        "shots": "Aprox. 18.000 lanzamientos",
+        "badge": "Categoría S",
+        "highlights": "Concurso de primer nivel con fuegos diurnos y nocturnos. Los mejores pirotécnicos de Japón compiten con secuencias creativas que muestran el arte de la pirotecnia.",
+        "transit": "Unos 30 minutos a pie desde JR Ōmagari (Akita Shinkansen)",
+        "date_display": "El año 2026 ha terminado; Por favor consulte el anuncio del organizador para la próxima fecha.",
+        "reserved_seats": "La fecha de venta de entradas y la disposición de asientos para la próxima sesión estarán sujetas al anuncio del organizador."
+      },
+      "sumidagawa": {
+        "name": "Festival de Fuegos Artificiales del río Sumida",
+        "shots": "Aprox. 20.000 lanzamientos",
+        "badge": "Categoría S",
+        "highlights": "Gran tradición veraniega de Kantō con iluminación especial de Tokyo Skytree. El recinto 1 acoge un concurso, el 2 lanza grandes fuegos aéreos y cientos de barcos yakatabune se reúnen en el río.",
+        "transit": "Unos 5 minutos a pie desde Asakusa (líneas Ginza, Toei Asakusa o Tobu Skytree)",
+        "date_display": "2026/07/25 ha finalizado; la próxima fecha será anunciada oficialmente",
+        "reserved_seats": "Las disposiciones y condiciones de reserva para la próxima visita estarán sujetas al anuncio del organizador."
+      },
+      "yodogawa": {
+        "name": "Festival de Fuegos Artificiales Naniwa Yodogawa",
+        "shots": "Cifra no publicada; se estiman entre 15.000 y 20.000 lanzamientos",
+        "badge": "Categoría A",
+        "highlights": "Con los rascacielos de Umeda como fondo, fuegos semicirculares se suceden sobre el río Yodo junto a estallidos dorados en forma de sauce, creando una experiencia envolvente de luz y sonido.",
+        "transit": "Unos 15 minutos a pie desde JR Tsukamoto (línea Tōkaidō) o Hankyu Jūsō (línea Kobe)",
+        "date_display": "2026/10/17 ha finalizado; la próxima fecha será anunciada oficialmente",
+        "reserved_seats": "El evento anual de 2026 ha finalizado; Consulte el sitio web oficial para conocer las entradas y los horarios de admisión para el próximo evento."
+      },
+      "atami": {
+        "name": "Festival de Fuegos Artificiales Marítimos de Atami",
+        "shots": "Aprox. 3.000–5.000 lanzamientos por evento",
+        "badge": "Selección especial",
+        "highlights": "Desde 1952, el festival aprovecha la bahía de Atami, rodeada de montañas por tres lados, como auditorio natural. El final Niágara Aéreo derrama luz plateada por toda la bahía.",
+        "transit": "Unos 15 minutos a pie desde JR Atami (Tōkaidō Shinkansen) hasta la playa",
+        "date_display": "2026/11/23, 6/12, 25/12; También hay eventos en 2027.",
+        "reserved_seats": "La zona de visionado libre, zona turística de alojamiento y otros planes de visionado se confirmarán según la convocatoria de cada evento."
+      },
+      "gion_festival": {
+        "name": "Festival Gion de Kioto",
+        "shots": "Festival tradicional, sin fuegos artificiales",
+        "badge": "Patrimonio destacado",
+        "highlights": "Rito milenario contra la mala fortuna, originado en el periodo Heian. Las carrozas yamahoko, de varias toneladas y semejantes a museos móviles, recorren Shijō y Kawaramachi; faroles y música cortesana animan las noches de Yoiyama.",
+        "transit": "A pocos pasos de Karasuma o Kyoto-Kawaramachi, en la línea Hankyu Kyoto",
+        "date_display": "El festival suele celebrarse en julio de cada año; Consulte el anuncio oficial para conocer los detalles del próximo festival.",
+        "reserved_seats": "Los asientos para espectadores, la fecha de venta de entradas y los tramos de carretera aplicables para la próxima sesión estarán sujetos al anuncio oficial."
+      }
+    }
+  }
+}

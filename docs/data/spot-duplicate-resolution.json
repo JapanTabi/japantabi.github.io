@@ -1,0 +1,1091 @@
+{
+  "reviewedAt": "2026-11-23",
+  "before": 580,
+  "after": 565,
+  "groups": [
+    {
+      "id": "ashikaga_fuji",
+      "resolution": "same-place-merged",
+      "canonicalId": "ashikaga_fuji",
+      "records": [
+        {
+          "id": "ashikaga_fuji",
+          "theme": "wisteria",
+          "category": "flower",
+          "region": "kanto",
+          "title": "足利花卉公園 大藤盛典",
+          "subtitle": "樹齡160年奇蹟大藤！CNN評選世界夢幻旅行地",
+          "tag": "櫪木・足利市",
+          "bloomStatus": "💜 盛開見頃 (100%)",
+          "species": "大藤・白藤・八重黑龍藤 (350株)",
+          "hasNightLight": true,
+          "desc": "千坪大藤架垂下宛如《阿凡達》靈魂之樹般壯麗的紫色瀑布，夜間燈光映射水池如夢似幻。",
+          "locationDetail": "JR 兩毛線「足利花卉公園站」徒步 3 分鐘即達",
+          "img": "./images/ashikaga_wisteria_night.jpg",
+          "ticketLabel": "預約紫藤花入場券",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=足利花卉&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://tw.trip.com/hotels/list?Allianceid=9507030&SID=325761227&trip_sub1=%E6%97%A5%E6%9C%AC%E5%A0%B1%E5%A0%B1&trip_sub3=D20905663",
+          "charterUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%8C%85%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson",
+          "nightHours": "🏮 17:30 - 20:30 (紫藤花瀑光影倒影點燈)",
+          "nightImg": "./images/ashikaga_wisteria_night.jpg"
+        },
+        {
+          "id": "ashikaga_fuji",
+          "theme": "flower",
+          "category": "flower",
+          "region": "tokyo",
+          "title": "櫪木・足利花卉公園",
+          "subtitle": "CNN 評選世界九大夢幻之樹！160年奇蹟大藤紫浪瀑布",
+          "tag": "💜 關東・櫪木縣",
+          "species": "大藤・白藤隧道・八重黑龍藤",
+          "locationDetail": "JR兩毛線「足利花卉公園站」步行 3 分鐘",
+          "dataSource": "足利花卉公園官方每日花期開花%數",
+          "img": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=700&q=80",
+          "desc": "花穗長達 1.8 公尺如紫色天空瀑布，微風徐來紫浪輕漾、芳香四溢，夜間點燈倒映水鏡如阿凡達仙境。",
+          "activityText": "💜 預定紫藤花季入場券",
+          "activityTextEn": "💜 Ashikaga Wisteria Pass",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E8%B6%B3%E5%88%A9%E8%8A%B1%E5%8D%89%E5%85%AC%E5%9C%92%20%E7%B4%AB%E8%97%A4&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%A7%8C%E6%9C%A8+%E8%B6%B3%E5%88%A9",
+          "cafe": {
+            "tag": "🍦 賞花推薦和風茶房",
+            "name": "足利花卉公園 和風茶房",
+            "feature": "大藤棚第一排・必嚐紫藤花香濃霜淇淋",
+            "img": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=200&q=80"
+          },
+          "report": {
+            "hasReport": true,
+            "stampDate": "2025/05 親訪",
+            "headline": "【足利花卉公園特派員報導】160 年奇蹟大藤！夜間點燈倒影拍攝法與專車攻略",
+            "author": "站長關東特派員",
+            "date": "2025 年 5 月 2 日滿開取材",
+            "weather": "暮色涼爽 17°C",
+            "camera": "Canon EOS R6 Mark II",
+            "pitfalls": [
+              "紫藤盛開期僅約 7 天，出發前 3 天務必查閱官網即時開花百分比。",
+              "傍晚 17:30 點燈時天色尚存一抹幽藍，配合聚光燈是拍照最夢幻時刻。"
+            ],
+            "lead": "萬千紫藤花穗在夜空中垂落，淡雅花香讓人彷彿置身非現實的幻境之中。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kiyomizu_momiji",
+      "resolution": "same-place-merged",
+      "canonicalId": "kiyomizu_momiji",
+      "records": [
+        {
+          "id": "kiyomizu_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kansai",
+          "title": "京都 清水寺 斷崖夜楓",
+          "momijiCafe": {
+            "name": "音羽茶屋 (清水寺秋楓景觀露台)",
+            "feature": "音羽瀑布旁清幽露台・俯瞰錦雲溪滿山萬株火紅楓葉樹冠・黑糖蕨餅佐抹茶"
+          },
+          "subtitle": "清水舞台懸空萬株楓海！秋季夜間藍色雷射觀音光束",
+          "tag": "京都・東山區",
+          "bloomStatus": "🍁 見頃火紅 (100%)",
+          "species": "千株伊呂波楓・古木山紅葉",
+          "hasNightLight": true,
+          "nightHours": "🏮 17:30 - 21:00 (夜楓特別拝觀・藍色觀音慈光)",
+          "nightImg": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=700&q=80",
+          "desc": "國寶清水舞台自斷崖突出，俯瞰錦繡如火的錦雲溪楓海。夜間自境內射出的藍色慈光劃破夜空。",
+          "locationDetail": "京阪電車「清水五條站」步行 20 分鐘",
+          "img": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "清水寺預約門票",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%B8%85%E6%B0%B4%E5%AF%BA&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Kyoto&aid=2422002",
+          "charterUrl": "https://www.klook.com/zh-TW/search/result/?query=%E4%BA%AC%E9%83%BD%E5%8C%85%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson"
+        },
+        {
+          "id": "kiyomizu_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kansai",
+          "title": "京都清水寺・音羽山夜楓舞台",
+          "subtitle": "秋夜特別拜觀！千手觀音慈悲藍色青龍光束柱",
+          "tag": "關西・京都",
+          "bloomStatus": "🍁 見頃盛開 (100%)",
+          "species": "千株山紅葉、伊呂波楓",
+          "desc": "懸空舞台俯瞰千年古都秋夜錦繡，一道青龍藍色光束刺破天際，1000株楓紅如燃燒火焰圍繞清水舞台。",
+          "locationDetail": "京阪電車祇園四條站 / 清水五條站步行15分",
+          "nightHours": "🏮 17:30 - 21:00 (夜間特別拜觀・最後入場 20:30)",
+          "hasNightLight": true,
+          "img": "./images/momiji_kiyomizu_night.jpg",
+          "nightImg": "./images/momiji_kiyomizu_night.jpg",
+          "ticketLabel": "預定行程",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%B8%85%E6%B0%B4%E5%AF%BA%E9%96%80%E7%A5%A8&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Kiyomizu-dera+Kyoto"
+        }
+      ]
+    },
+    {
+      "id": "eikando_momiji",
+      "resolution": "same-place-merged",
+      "canonicalId": "eikando_momiji",
+      "records": [
+        {
+          "id": "eikando_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kansai",
+          "title": "京都 永觀堂 禪林寺",
+          "momijiCafe": {
+            "name": "永觀堂 放生池 楓之茶寮",
+            "feature": "放生池錦鯉池畔・倒影極上秋色・現刷宇治抹茶與京都八橋生菓子"
+          },
+          "subtitle": "「紅葉之永觀堂」！3000株楓葉倒映放生池絕景",
+          "tag": "京都・左京區",
+          "bloomStatus": "🍁 盛紅極致 (100%)",
+          "species": "3,000株伊呂波楓・迴廊倒影",
+          "hasNightLight": true,
+          "nightHours": "🏮 17:30 - 20:30 (放生池夜楓倒影特別點燈)",
+          "nightImg": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=700&q=80",
+          "desc": "自古即被譽為「秋天當屬永觀堂」，沿多寶塔與木造臥龍廊漫步，池泉倒映火紅楓葉如夢似幻。",
+          "locationDetail": "京都市營地下鐵「蹴上站」步行 15 分鐘",
+          "img": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "永觀堂夜楓門票",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%B0%B8%E8%A7%80%E5%A0%82&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Kyoto&aid=2422002",
+          "charterUrl": "https://www.klook.com/zh-TW/search/result/?query=%E4%BA%AC%E9%83%BD%E5%8C%85%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson"
+        },
+        {
+          "id": "eikando_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kansai",
+          "title": "京都永觀堂・禪林寺",
+          "subtitle": "日本紅葉之冠「秋是永觀堂」！3,000株楓木環繞放生池倒影",
+          "tag": "🍁 關西・京都",
+          "species": "伊呂波楓・野村楓",
+          "bloomStatus": "🍁 見頃火紅 (100%)",
+          "hasNightLight": true,
+          "isTemple": true,
+          "nightHours": "🏮 17:30 - 20:30 (錦雲橋與放生池鏡面夜楓投影)",
+          "nightImg": "./images/momiji_eikando_night.jpg",
+          "desc": "自古享有「秋天就是永觀堂」美譽！放生池畔的多寶塔與漫山楓林相映成趣，夜間點燈倒影如水彩畫般純粹。",
+          "locationDetail": "地下鐵東西線蹴上站步行 15 分鐘",
+          "img": "./images/momiji_eikando_night.jpg",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%B0%B8%E8%A7%80%E5%A0%82&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E4%BA%AC%E9%83%BD+%E6%B0%B8%E8%A7%80%E5%A0%82"
+        }
+      ]
+    },
+    {
+      "id": "tofukuji_momiji",
+      "resolution": "same-place-merged",
+      "canonicalId": "tofukuji_momiji",
+      "records": [
+        {
+          "id": "tofukuji_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kansai",
+          "title": "京都 東福寺 通天橋",
+          "momijiCafe": {
+            "name": "東福寺 通天橋 景觀茶室",
+            "feature": "洗玉澗溪谷紅葉海第一排・秋日專屬木質長凳眺望席"
+          },
+          "subtitle": "通天橋眺望洗玉澗！萬株洗玉澗紅葉雲海震撼",
+          "tag": "京都・東山區",
+          "bloomStatus": "🍁 見頃盛開 (100%)",
+          "species": "三葉楓 (通天紅葉)",
+          "hasNightLight": false,
+          "desc": "京都最壯觀的紅葉峽谷！站在通天橋上遠眺洗玉澗，兩千株黃紅相間的三葉楓如波濤雲海。",
+          "locationDetail": "JR・京阪電車「東福寺站」步行 10 分鐘",
+          "img": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "東福寺參拜券",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%9D%B1%E7%A6%8F%E5%AF%BA&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Kyoto&aid=2422002",
+          "charterUrl": "https://www.klook.com/zh-TW/search/result/?query=%E4%BA%AC%E9%83%BD%E5%8C%85%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson"
+        },
+        {
+          "id": "tofukuji_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kansai",
+          "title": "京都東福寺・通天橋紅葉溪谷",
+          "subtitle": "洗玉澗宛如燃燒的紅葉地毯！2000株楓樹構成通天橋紅海",
+          "tag": "🍁 關西・京都",
+          "species": "通天紅葉・三角楓",
+          "bloomStatus": "🍁 見頃火紅 (100%)",
+          "hasNightLight": false,
+          "isTemple": true,
+          "desc": "臨濟宗大本山！站在通天橋居高臨下俯瞰洗玉澗溪谷，宛如踏在火紅楓海波濤之上，京都第一壯闊秋景。",
+          "locationDetail": "JR奈良線 / 京阪本線「東福寺站」步行 10 分鐘",
+          "img": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=80",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%9D%B1%E7%A6%8F%E5%AF%BA&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E4%BA%AC%E9%83%BD+%E6%9D%B1%E7%A6%8F%E5%AF%BA"
+        }
+      ]
+    },
+    {
+      "id": "kawaguchiko_momiji",
+      "resolution": "same-place-merged",
+      "canonicalId": "kawaguchiko_momiji",
+      "records": [
+        {
+          "id": "kawaguchiko_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "chubu",
+          "title": "山梨 河口湖紅葉迴廊",
+          "momijiCafe": {
+            "name": "久保田一竹美術館 露台 CAFE",
+            "feature": "河口湖紅葉迴廊百年巨木環繞露天座・富士天然水冷萃・直面靈峰紅葉"
+          },
+          "subtitle": "富士山雪冠 ＋ 60株百年巨木夜間紅葉點燈",
+          "tag": "山梨・富士河口湖町",
+          "bloomStatus": "🍁 見頃火紅 (100%)",
+          "species": "百年古木伊呂波楓 (150米天然迴廊)",
+          "hasNightLight": true,
+          "nightHours": "🏮 16:30 - 21:30 (河口湖畔夜楓光雕盛典)",
+          "nightImg": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=700&q=80",
+          "desc": "落葉鋪滿河道的紅色地毯，沿迴廊漫步即可眺望白雪積冠的富士山，是全日本最具代表性的秋日名信片景致。",
+          "locationDetail": "富士急行線「河口湖站」搭乘河口湖周遊巴士約 20 分鐘",
+          "img": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "河口湖賞楓一日遊",
+          "klookUrl": "https://www.klook.com/zh-TW/activity/3977-mount-fuji-classic-route-day-tour-tokyo/?aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Fujikawaguchiko&aid=2422002",
+          "charterUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%E5%8C%85%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson"
+        },
+        {
+          "id": "kawaguchiko_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "tokyo",
+          "title": "富士河口湖紅葉迴廊",
+          "subtitle": "60株巨木紅葉沿梨川綿延！遠眺富士山頂積雪",
+          "tag": "🍁 關東・山梨縣",
+          "species": "巨木楓樹・雞爪槭",
+          "locationDetail": "河口湖站轉乘復古周遊巴士至久保田一竹美術館前",
+          "dataSource": "富士河口湖町觀光課紅葉情報",
+          "img": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=700&q=80",
+          "desc": "巨木紅葉形成的天然火紅隧道，入夜後點燈照射川畔落葉，遠處白雪覆頂的富士山宛如浮世繪名畫。",
+          "activityText": "🚠 預定富士全景纜車券",
+          "activityTextEn": "🚠 Fuji Panoramic Ropeway",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%AF%8C%E5%A3%AB%E5%B1%B1%20%E6%B2%B3%E5%8F%A3%E6%B9%96%20%E7%BA%9C%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E5%B1%B1%E6%A2%A8+%E6%B2%B3%E5%8F%A3%E6%B9%96",
+          "cafe": {
+            "tag": "🍵 賞楓推薦富士景觀茶寮",
+            "name": "河口湖畔 日式甘味茶房",
+            "feature": "池畔品嚐信玄餅與抹茶，正面遙望富士山倒影",
+            "img": "https://images.unsplash.com/photo-1545048702-7936070012e7?auto=format&fit=crop&w=200&q=80"
+          },
+          "report": {
+            "hasReport": true,
+            "stampDate": "2025/11 親訪",
+            "headline": "【河口湖紅葉特派員報導】富士山與紅葉同框機位！夜間點燈防寒與交通",
+            "author": "站長富士特派組",
+            "date": "2025 年 11 月 15 日親測",
+            "weather": "晴空冷冽 7°C",
+            "camera": "Sony A7C II + 24-70mm GM",
+            "pitfalls": [
+              "紅葉季周邊車流量極大易堵車，建議租腳踏車沿湖畔騎行最愜意。",
+              "入夜後氣溫驟降至 5°C 以下，務必準備羽絨外套與保暖手套。"
+            ],
+            "lead": "火紅的楓葉迴廊與遠方雪白的富士山同框，是每位攝影愛好者一生夢寐以求的構圖。"
+          }
+        },
+        {
+          "id": "kawaguchiko_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "chubu",
+          "title": "山梨河口湖・紅葉迴廊",
+          "subtitle": "富士山與紅葉共演！60株百年巨木夜間點燈",
+          "tag": "中部・山梨",
+          "bloomStatus": "🍁 見頃盛開 (100%)",
+          "species": "古木梨川紅葉、山紅葉",
+          "desc": "梨川兩側長約150公尺的古老巨木形成宛如火焰燃燒的紅葉隧道，夜間燈光自下仰射，落葉鋪滿河床宛如紅毯，背景即是富士山。",
+          "locationDetail": "富士急行河口湖站搭乘周遊巴士「久保田一竹美術館」下車",
+          "nightHours": "🏮 16:30 - 21:30 (富士河口湖紅葉祭點燈)",
+          "hasNightLight": true,
+          "img": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=700&q=80",
+          "nightImg": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "預定行程",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%B4%85%E8%91%89&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Fujikawaguchiko"
+        }
+      ]
+    },
+    {
+      "id": "korankei_momiji",
+      "resolution": "same-place-merged",
+      "canonicalId": "korankei_momiji",
+      "records": [
+        {
+          "id": "korankei_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "chubu",
+          "title": "愛知 豐田香嵐溪",
+          "subtitle": "日本屈指可數紅葉聖地！4,000株楓樹倒映巴川水波",
+          "tag": "愛知・豐田市",
+          "bloomStatus": "🍁 見頃盛開 (100%)",
+          "species": "11種約4,000株楓樹 (待月橋朱紅點綴)",
+          "hasNightLight": true,
+          "nightHours": "🏮 日落至 21:00 (整座飯盛山金色燈光投射)",
+          "nightImg": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=700&q=80",
+          "desc": "自寬永年間香積寺三榮和尚一株株親植，入夜後整座飯盛山披上金色燈光，巴川水面波光瀲灩震撼無比。",
+          "locationDetail": "名鐵豐田線「淨水站」搭乘直達名鐵巴士約 60 分鐘",
+          "img": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "香嵐溪賞楓專車",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E9%A6%99%E5%B5%90%E6%BA%AA&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Toyota&aid=2422002",
+          "charterUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%8C%85%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson"
+        },
+        {
+          "id": "korankei_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "chubu",
+          "title": "愛知香嵐溪・巴川夜楓",
+          "subtitle": "東海第一紅葉名所！四千株楓樹倒映巴川水面",
+          "tag": "中部・愛知",
+          "bloomStatus": "🍁 見頃盛開 (100%)",
+          "species": "11種楓樹、伊呂波楓、大紅葉",
+          "desc": "飯盛山香積寺第十一世三榮和尚一株一株親手栽種，如今4000株楓樹沿巴川兩岸鋪展，夜間投射燈穿透朱紅待月橋，美得攝人心魄。",
+          "locationDetail": "名鐵名鐵豐田線淨水站轉乘巴士約45分",
+          "nightHours": "🏮 17:00 - 21:00 (香嵐溪紅葉祭每日點燈)",
+          "hasNightLight": true,
+          "img": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=700&q=80",
+          "nightImg": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "預定行程",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E9%A6%99%E5%B5%90%E6%BA%AA&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Toyota+Aichi"
+        }
+      ]
+    },
+    {
+      "id": "rikugien_momiji",
+      "resolution": "same-place-merged",
+      "canonicalId": "rikugien_momiji",
+      "records": [
+        {
+          "id": "rikugien_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kanto",
+          "title": "東京 六義園 回遊大名庭園",
+          "subtitle": "江戶代表回遊式山水！朱紅楓葉池泉夜間燈光秀",
+          "tag": "東京・文京區",
+          "bloomStatus": "🍁 見頃極致 (100%)",
+          "species": "約400株伊呂波楓・銀杏",
+          "hasNightLight": true,
+          "nightHours": "🏮 18:00 - 20:30 (庭園秋之夜楓特別觀覽)",
+          "nightImg": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=700&q=80",
+          "desc": "江戶第五代將軍德川綱吉側用人柳澤吉保花費7年營造，水波中倒映的朱紅山紅葉在夜間燈光下宛如仙境。",
+          "locationDetail": "JR 山手線「駒込站」步行 7 分鐘",
+          "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80",
+          "ticketLabel": "六義園夜楓券",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%85%AD%E7%BE%A9%E5%9C%92&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Tokyo&aid=2422002",
+          "charterUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%9D%B1%E4%BA%AC%E5%8C%85%E8%BB%8A&aid=123436&utm_medium=affiliate-alwayson"
+        },
+        {
+          "id": "rikugien_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kanto",
+          "title": "東京六義園・大名庭園秋夜",
+          "subtitle": "都心水鏡倒影！江戶回遊式築山泉水庭園",
+          "tag": "東京・文京區",
+          "bloomStatus": "🍁 見頃盛開 (100%)",
+          "species": "560株伊呂波楓、銀杏、野村楓",
+          "desc": "江戶時代大名柳澤吉保歷時七年打造。渡月橋與大泉水池倒映整片金黃與火紅，夜間投射燈與竹林光影秀交織出極致幽玄氛圍。",
+          "locationDetail": "JR山手線 / 地鐵南北線駒込站步行7分",
+          "nightHours": "🏮 18:00 - 20:30 (庭園之秋特別夜間點燈)",
+          "hasNightLight": true,
+          "img": "./images/momiji_rikugien_night.jpg",
+          "nightImg": "./images/momiji_rikugien_night.jpg",
+          "ticketLabel": "預定行程",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%85%AD%E7%BE%A9%E5%9C%92%E9%96%80%E7%A5%A8&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=Komagome+Tokyo"
+        },
+        {
+          "id": "rikugien_momiji",
+          "theme": "momiji",
+          "category": "flower",
+          "region": "kanto",
+          "title": "東京六義園・大名庭園夜楓",
+          "subtitle": "江戶迴遊式假山泉水庭園！池畔吹上茶屋夜楓倒影",
+          "tag": "🍁 東京・文京區",
+          "species": "伊呂波楓・銀杏",
+          "bloomStatus": "🍁 見頃火紅 (100%)",
+          "hasNightLight": true,
+          "isTemple": false,
+          "nightHours": "🏮 18:00 - 20:30 (大泉水池畔倒影・藍紅燈光光雕)",
+          "nightImg": "./images/momiji_rikugien_night.jpg",
+          "desc": "東京都內第一夜楓名勝！池泉周圍 400 株紅葉倒映平靜水面，燈光與茶屋古韻交融出幽玄意境。",
+          "locationDetail": "JR山手線 / 地下鐵南北線駒込站步行 7 分鐘",
+          "img": "./images/momiji_rikugien_night.jpg",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%85%AD%E7%BE%A9%E5%9C%92&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E9%A7%92%E8%BE%BC"
+        }
+      ]
+    },
+    {
+      "id": "meguro_sakura",
+      "resolution": "same-place-merged",
+      "canonicalId": "meguro_sakura",
+      "records": [
+        {
+          "id": "meguro_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "kanto",
+          "title": "目黑川櫻並木",
+          "subtitle": "800株染井吉野櫻形成4km粉紅水岸",
+          "tag": "東京・目黑區",
+          "bloomStatus": "🌸 滿開吹雪 (100%)",
+          "species": "染井吉野櫻 (800株)",
+          "hasNightLight": true,
+          "nightHours": "🏮 17:00 - 20:00 (南部橋～中之橋粉紅燈籠點燈)",
+          "nightImg": "./images/meguro_night_sakura.jpg",
+          "prominentNightNotice": "『夜間點燈』目黑川櫻並木・800株染井吉野櫻形成4km粉紅水岸",
+          "desc": "東京最經典水岸櫻花隧道，落花漂浮川面形成夢幻粉紅花毯。入夜後粉紅雪洞紙燈籠點亮水波，形成浪漫粉紅倒影。",
+          "locationDetail": "中目黑站出站步行1分鐘即達川畔步道",
+          "img": "./images/meguro_day_sakura.jpg",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E7%9B%AE%E9%BB%91%E5%B7%9D%20%E6%AB%BB%E8%8A%B1&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E4%B8%AD%E7%9B%AE%E9%BB%91"
+        },
+        {
+          "id": "meguro_sakura",
+          "theme": "sakura",
+          "rescueRoute": {
+            "badge": "🌸 染井吉野櫻已吹雪？",
+            "message": "附近替代景點推薦：車程 20 分鐘直達「新宿御苑（一葉/關山八重櫻滿開中）」或「濱離宮恩賜庭園」，花期可延長至 4 月下旬！",
+            "targetSpotId": "shinjuku_late_sakura",
+            "actionText": "➔ 一鍵切換看接力備案名所"
+          },
+          "perks": {
+            "cafes": [
+              {
+                "name": "星巴克臻選® 東京烘焙工坊",
+                "feature": "隈研吾大師操刀・4F 露台平視櫻花花頂・手沖櫻花特調",
+                "tags": [
+                  "露台第一排",
+                  "外帶免排隊",
+                  "步行 6 分鐘"
+                ],
+                "waitHint": "建議 06:45 抽發券機號碼牌",
+                "img": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=260&q=80"
+              },
+              {
+                "name": "ONIBUS COFFEE 中目黑",
+                "feature": "古典木造古民家・2F 窗景伴隨電車與粉櫻・手沖神店",
+                "tags": [
+                  "窗景電車",
+                  "手沖冠軍",
+                  "步行 3 分鐘"
+                ],
+                "waitHint": "現場候位約 15～20 分鐘",
+                "img": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=260&q=80"
+              }
+            ],
+            "michelin": [
+              {
+                "name": "米其林一星・割烹中目黑「いし井」",
+                "feature": "春季櫻鯛盛宴・江戶前旬味懷石・專屬保證入席",
+                "tags": [
+                  "⭐ 米其林一星",
+                  "免日文電話代訂",
+                  "高客單保證席"
+                ],
+                "priceTwd": 4800,
+                "priceJpy": 22800,
+                "affiliateType": "KKday × Tabelog 保證席",
+                "affiliateUrl": "https://www.kkday.com/zh-tw/product/productlist?keyword=%E7%B1%B3%E5%85%B6%E6%9E%97%20%E6%9D%B1%E4%BA%AC&aid=123436&utm_medium=affiliate-alwayson",
+                "affiliateBtnText": "代訂米其林保證席 ➔"
+              },
+              {
+                "name": "目黑川「黑毛和牛 寿喜焼 桜坂」川景席",
+                "feature": "A5 特選黑毛和牛・窗外直接俯瞰目黑川夜櫻光影水波",
+                "tags": [
+                  "🥩 A5黑毛和牛",
+                  "目黑川第一排夜櫻",
+                  "獨家 95 折套餐"
+                ],
+                "priceTwd": 3600,
+                "priceJpy": 17100,
+                "affiliateType": "Klook 美食套餐 (獨家 95 折)",
+                "affiliateUrl": "https://www.klook.com/zh-TW/search/result/?query=%E7%9B%AE%E9%BB%91%E5%B7%9D%20%E5%92%8C%E7%89%9B&aid=123436&utm_medium=affiliate-alwayson",
+                "affiliateBtnText": "搶訂川景和牛席 ➔"
+              }
+            ],
+            "walkGuide": {
+              "spotName": "目黑川櫻並木核心段 (中之橋～南部橋)",
+              "steps": [
+                {
+                  "step": "1",
+                  "title": "出站口",
+                  "desc": "東急東橫線／日比谷線「中目黑站」【正面改札口】出站。"
+                },
+                {
+                  "step": "2",
+                  "title": "橫越路口",
+                  "desc": "依號誌過馬路橫越山手通，直行約 80 公尺見「中之橋」（川面起點）。"
+                },
+                {
+                  "step": "3",
+                  "title": "川畔綠道",
+                  "desc": "過橋右轉步入「目黑川櫻並木步道」，沿水岸林蔭緩步向前欣賞落櫻倒影。"
+                },
+                {
+                  "step": "4",
+                  "title": "精華取景",
+                  "desc": "步行約 3 分鐘抵達「南部橋」與「朝日橋」，為晨光倒影與夜間打燈最佳拍攝點！"
+                }
+              ],
+              "tips": "💡 站長叮嚀：全段平坦無階梯，推嬰兒車或長輩散策全程無障礙；清晨 07:00 前前往人潮最少。"
+            }
+          },
+          "category": "flower",
+          "region": "tokyo",
+          "title": "目黑川櫻並木",
+          "subtitle": "800株染井吉野櫻形成4km粉紅水岸",
+          "hasNightLight": true,
+          "nightHours": "🏮 17:00 - 20:00 (南部橋～中之橋粉紅燈籠點燈)",
+          "nightImg": "./images/meguro_night_sakura.jpg",
+          "prominentNightNotice": "『夜間點燈』目黑川櫻並木・800株染井吉野櫻形成4km粉紅水岸",
+          "tag": "🌸 東京・目黑區",
+          "species": "染井吉野櫻 (Somei Yoshino)",
+          "locationDetail": "中目黑站出站步行 1 分鐘，沿川延伸至池尻大橋段",
+          "dataSource": "日本氣象協會 (JWA) 2026 前線觀測",
+          "img": "https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=700&q=80",
+          "desc": "東京最浪漫水岸花道！清晨微光灑在川面形成粉紅地毯，入夜後粉紅雪洞紙燈籠點亮水波。",
+          "activityText": "🌸 預約櫻花遊船",
+          "activityTextEn": "🌸 Sakura Cruise Tour",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E7%9B%AE%E9%BB%91%E5%B7%9D%20%E6%AB%BB%E8%8A%B1%20%E9%81%8A%E8%88%B9&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E4%B8%AD%E7%9B%AE%E9%BB%91",
+          "cafe": {
+            "tag": "☕ 賞櫻推薦景觀咖啡",
+            "name": "星巴克臻選® 東京烘焙工坊",
+            "feature": "隈研吾木造美學・4F 露台平視櫻花花頂（需先抽號碼牌）",
+            "img": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=200&q=80"
+          },
+          "report": {
+            "hasReport": true,
+            "stampDate": "2026/03 親訪",
+            "headline": "【目黑川櫻花特派員報導】清晨 7:30 南部橋晨拍與 4F 露台免排隊實戰技巧",
+            "author": "站長・南特派員",
+            "date": "2026 年 3 月 28 日親測",
+            "weather": "晴時多雲 16°C",
+            "camera": "Sony A7C II + 24-70mm GM II",
+            "pitfalls": [
+              "千萬別在下午 14:00 擠在中之橋，光線全背且寸步難行。",
+              "推薦清晨 07:15 抵達南部橋，晨光順光打在櫻花倒影，背景完全淨空！",
+              "星巴克請於 06:45 抽發券機號碼牌，沿川散步 40 分鐘正好叫號上 4F 露台！"
+            ],
+            "lead": "今年目黑川盛開得格外燦爛！為大家整理出最舒服的散策節奏與免排隊享受櫻花手沖咖啡的順序。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chidorigafuchi",
+      "resolution": "same-place-merged",
+      "canonicalId": "chidorigafuchi",
+      "records": [
+        {
+          "id": "chidorigafuchi",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "kanto",
+          "title": "千鳥之淵綠道",
+          "hasNightLight": true,
+          "nightHours": "🏮 18:00 - 22:00 (皇居護城河水壁柔光投影・夜舟體驗)",
+          "nightImg": "./images/chidorigafuchi_night.jpg",
+          "subtitle": "皇居護城河兩岸260株垂櫻倒影",
+          "tag": "東京・千代田區",
+          "bloomStatus": "🌸 滿開 (95%)",
+          "species": "染井吉野櫻、大島櫻",
+          "desc": "護城河兩岸粉櫻傾瀉入水，泛舟水面仰望櫻花覆蓋蒼穹絕景。",
+          "locationDetail": "九段下站2號出口步行3分鐘",
+          "img": "./images/chidorigafuchi_day.jpg",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%8D%83%E9%B3%A5%E4%B9%8B%E6%B7%B5&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E4%B8%AD%E7%9B%AE%E9%BB%91"
+        },
+        {
+          "id": "chidorigafuchi",
+          "theme": "sakura",
+          "rescueRoute": {
+            "badge": "🌸 皇居護城河吹雪中？",
+            "message": "花期凋謝別慌！搭乘地鐵 15 分鐘直達「新宿御苑」或「小石川後樂園」，晚開八重櫻接棒盛開至 4 月下旬！",
+            "targetSpotId": "shinjuku_late_sakura",
+            "actionText": "➔ 一鍵切換看接力備案名所"
+          },
+          "perks": {
+            "cafes": [
+              {
+                "name": "北之丸公園 Cafe 33",
+                "feature": "落地窗俯瞰護城河櫻樹・日式手工焙茶拿鐵與櫻花蒙布朗",
+                "tags": [
+                  "護城河窗景",
+                  "焙茶甜點",
+                  "步行 4 分鐘"
+                ],
+                "waitHint": "花季露台席位約需等候 20 分鐘",
+                "img": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=260&q=80"
+              },
+              {
+                "name": "DIXANS 神保町 (法式手沖咖啡)",
+                "feature": "東京文青名店・現烤厚切黑糖吐司・手沖耶加雪菲配櫻景散步",
+                "tags": [
+                  "文青烘焙",
+                  "手沖精品",
+                  "步行 8 分鐘"
+                ],
+                "waitHint": "提供外帶杯，邊喝邊漫步護城河綠道最愜意",
+                "img": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=260&q=80"
+              }
+            ],
+            "michelin": [
+              {
+                "name": "紀尾井町 割烹「福田」米其林二星京料理",
+                "feature": "東京最優雅京料理老舖・當季櫻鯛與春筍御飯・預約困難店",
+                "tags": [
+                  "⭐⭐ 米其林二星",
+                  "日本政商名流愛店",
+                  "保證席位代訂"
+                ],
+                "priceTwd": 6500,
+                "priceJpy": 30800,
+                "affiliateType": "KKday × Tabelog 專人代訂",
+                "affiliateUrl": "https://www.kkday.com/zh-tw/product/productlist?keyword=%E7%B1%B3%E5%85%B6%E6%9E%97%20%E6%9D%B1%E4%BA%AC&aid=123436&utm_medium=affiliate-alwayson",
+                "affiliateBtnText": "代訂米其林二星席 ➔"
+              },
+              {
+                "name": "靖國神社參道「八千代」江戶前鰻魚重",
+                "feature": "特選國產活鰻現烤・傳承百年蒲燒醬汁・賞櫻必吃熱氣蒸騰鰻魚飯",
+                "tags": [
+                  "🍱 炭火活鰻",
+                  "百年傳承醬汁",
+                  "步行 5 分鐘"
+                ],
+                "priceTwd": 2200,
+                "priceJpy": 10450,
+                "affiliateType": "Klook 美食套餐 (免排隊預約)",
+                "affiliateUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%9D%B1%E4%BA%AC%20%E9%B0%BB%E9%AD%9A&aid=123436&utm_medium=affiliate-alwayson",
+                "affiliateBtnText": "預訂蒲燒鰻魚套餐 ➔"
+              }
+            ],
+            "walkGuide": {
+              "spotName": "千鳥之淵護城河划船場散策路線",
+              "steps": [
+                {
+                  "step": "1",
+                  "title": "地鐵出站",
+                  "desc": "東京地鐵半藏門線／東西線／都營新宿線「九段下站」【2號出口】出站。"
+                },
+                {
+                  "step": "2",
+                  "title": "步道入口",
+                  "desc": "出站直行沿靖國通步行約 150 公尺，見內堀通左轉，即達千鳥之淵綠道北端入口。"
+                },
+                {
+                  "step": "3",
+                  "title": "划船場取號",
+                  "desc": "沿著綠道緩步直行 300 公尺見「千鳥之淵乘船場」，若想划船請先於取號機抽號碼券。"
+                },
+                {
+                  "step": "4",
+                  "title": "櫻花隧道",
+                  "desc": "沿護城河崖壁步道繼續南行至半藏門，可將 260 株古木櫻樹傾瀉入水的極景一覽無餘！"
+                }
+              ],
+              "tips": "💡 站長叮嚀：划船人潮極多，強烈建議 09:00 前抵達排隊；夜間 18:00 起護城河點亮 LED 燈，夜櫻倒影絕美。"
+            }
+          },
+          "category": "flower",
+          "region": "tokyo",
+          "title": "千鳥之淵綠道",
+          "subtitle": "皇居護城河兩岸 260 株櫻樹倒映碧綠水面",
+          "tag": "🌸 東京・千代田區",
+          "species": "染井吉野櫻・大島櫻",
+          "locationDetail": "半藏門線九段下站 2 號出口步行 3 分鐘",
+          "dataSource": "千代田區觀光協會即時開花狀況",
+          "img": "./images/chidorigafuchi_day.jpg",
+          "desc": "東京最震撼的划船賞櫻勝地！微風徐來櫻花吹雪飄入水面，抬頭即可仰望鋪天蓋地的淡粉花海。",
+          "activityText": "🛶 預訂護城河划船券",
+          "activityTextEn": "🛶 Rowboat Reservation",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%8D%83%E9%B3%A5%E4%B9%8B%E6%B7%B5%20%E6%AB%BB%E8%8A%B1&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E4%B9%9D%E6%AE%B5%E4%B8%8B",
+          "cafe": {
+            "tag": "☕ 賞櫻推薦景觀咖啡",
+            "name": "北之丸公園 Cafe 33",
+            "feature": "落地窗俯瞰護城河櫻樹・供應日式手工焙茶拿鐵",
+            "img": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=200&q=80"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shinjuku_late_sakura",
+      "resolution": "same-place-merged",
+      "canonicalId": "shinjuku_late_sakura",
+      "records": [
+        {
+          "id": "shinjuku_late_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "kanto",
+          "title": "新宿御苑 (晚櫻救援名所)",
+          "subtitle": "65種、千株八重櫻延續至4月下旬",
+          "tag": "東京・新宿區",
+          "bloomStatus": "🌸 八重櫻滿開中",
+          "species": "一葉櫻、關山櫻、普賢象",
+          "desc": "當吉野櫻凋謝時八重櫻花團錦簇接棒盛開，草坪野餐最舒服。",
+          "locationDetail": "千駄谷門、新宿門出站步行5分鐘",
+          "img": "./images/shinjuku_gyoen_sakura.jpg",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%96%B0%E5%AE%BF%E5%BE%A1%E8%8B%91&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E6%96%B0%E5%AE%BF"
+        },
+        {
+          "id": "shinjuku_late_sakura",
+          "theme": "sakura",
+          "perks": {
+            "cafes": [
+              {
+                "name": "新宿御苑 翔天亭茶室",
+                "feature": "庭園池畔品嚐正統宇治抹茶與當日現作櫻餅點心",
+                "tags": [
+                  "池畔茶室",
+                  "當日現作櫻餅",
+                  "步行 4 分鐘"
+                ],
+                "waitHint": "午後約需等候 10 分鐘",
+                "img": "https://images.unsplash.com/photo-1545048702-7936070012e7?auto=format&fit=crop&w=260&q=80"
+              },
+              {
+                "name": "Cafe La Boheme 新宿御苑",
+                "feature": "落地大窗俯瞰新宿御苑綠意・知名動畫取景義式人氣名店",
+                "tags": [
+                  "綠意大窗",
+                  "人氣義大利麵",
+                  "步行 5 分鐘"
+                ],
+                "waitHint": "建議提前線上預約或避開正餐尖峰",
+                "img": "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=260&q=80"
+              }
+            ],
+            "michelin": [
+              {
+                "name": "新宿 割烹「中島」米其林一星柳川鍋套餐",
+                "feature": "新宿唯一米其林一星割烹料理・老江戶沙丁魚柳川風懷石",
+                "tags": [
+                  "⭐ 米其林一星",
+                  "江戶割烹老舖",
+                  "超高CP值席位"
+                ],
+                "priceTwd": 2800,
+                "priceJpy": 13300,
+                "affiliateType": "KKday × Tabelog 保證席",
+                "affiliateUrl": "https://www.kkday.com/zh-tw/product/productlist?keyword=%E6%96%B0%E5%AE%BF%20%E7%B1%B3%E5%85%B6%E6%9E%97&aid=123436&utm_medium=affiliate-alwayson",
+                "affiliateBtnText": "代訂米其林席位 ➔"
+              },
+              {
+                "name": "今半 新宿高島屋店・極上黑毛和牛壽喜燒",
+                "feature": "百年傳統極上霜降和牛・特製秘傳割下醬汁・專人桌邊現煮服務",
+                "tags": [
+                  "🥩 百年老舖",
+                  "A5極上和牛",
+                  "窗景包廂"
+                ],
+                "priceTwd": 4200,
+                "priceJpy": 19950,
+                "affiliateType": "Klook 美食套餐 (保證入席)",
+                "affiliateUrl": "https://www.klook.com/zh-TW/search/result/?query=%E4%BB%8A%E5%8D%8A%20%E6%96%B0%E5%AE%BF&aid=123436&utm_medium=affiliate-alwayson",
+                "affiliateBtnText": "預約保證入席 ➔"
+              }
+            ],
+            "walkGuide": {
+              "spotName": "新宿御苑晚櫻核心步道 (千駄谷門～草坪大溫室)",
+              "steps": [
+                {
+                  "step": "1",
+                  "title": "避人潮推薦",
+                  "desc": "搭乘 JR 總武線至「千駄谷站」出站，步行 5 分鐘由「千駄谷門」入園（避開新宿門 80% 人潮）。"
+                },
+                {
+                  "step": "2",
+                  "title": "直通櫻林",
+                  "desc": "入園安檢後（禁攜酒精），沿右側林道直行 150 公尺，即抵達晚開八重櫻／一葉櫻核心草坪區。"
+                },
+                {
+                  "step": "3",
+                  "title": "巨型花團",
+                  "desc": "漫步至舊御涼亭（台灣閣），遠眺關山櫻如繡球花團錦簇垂入水塘倒影。"
+                },
+                {
+                  "step": "4",
+                  "title": "草地野餐",
+                  "desc": "在溫室前草皮鋪上野餐墊，微風徐來享受粉櫻雪片飄落的午後野餐時光。"
+                }
+              ],
+              "tips": "💡 站長叮嚀：園區需購買門票（大人 ¥500），建議先線上購票刷 QR Code 秒通關，免現場排售票機。"
+            }
+          },
+          "category": "flower",
+          "region": "tokyo",
+          "title": "新宿御苑 (晚櫻救援名所)",
+          "subtitle": "65種、千株櫻花！花期延續至4月下旬的避難所",
+          "tag": "🌸 東京・新宿區",
+          "species": "八重櫻（一葉、普賢象、關山）",
+          "locationDetail": "千駄谷門、新宿門步行 5 分鐘，草坪庭園區",
+          "dataSource": "環境省新宿御苑管理事務所花期監測",
+          "img": "./images/shinjuku_gyoen_sakura.jpg",
+          "desc": "下週出發花謝了？別慌！新宿御苑擁有大批「八重櫻、一葉、普賢象」，當吉野櫻凋落時這裡才正盛開！",
+          "activityText": "👘 預約和服散策體驗",
+          "activityTextEn": "👘 Kimono Rental Tokyo",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E6%96%B0%E5%AE%BF%20%E5%92%8C%E6%9C%8D%E9%AB%94%E9%A9%97&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E6%96%B0%E5%AE%BF",
+          "cafe": {
+            "tag": "☕ 賞櫻推薦日式茶室",
+            "name": "新宿御苑 翔天亭茶室",
+            "feature": "池畔品嚐正統宇治抹茶與當日現做櫻餅點心",
+            "img": "https://images.unsplash.com/photo-1545048702-7936070012e7?auto=format&fit=crop&w=200&q=80"
+          },
+          "report": {
+            "hasReport": true,
+            "stampDate": "2026/04 親訪",
+            "headline": "【4月中旬東京晚櫻特派員報導】新宿御苑八重櫻花海！私房草地野餐指南",
+            "author": "站長・南特派員",
+            "date": "2026 年 4 月 10 日晚櫻取材",
+            "weather": "溫暖晴天 20°C",
+            "camera": "Sony A7C II + 50mm F1.4",
+            "pitfalls": [
+              "園內禁止攜帶酒精飲料，入園需安檢，請準備無酒精飲品。",
+              "新宿門人潮最多，建議從「千駄谷門」入園，散步直接切入八重櫻核心區！"
+            ],
+            "lead": "即使 4 月中旬才到東京，也能在新宿御苑遇見飽滿如粉紅繡球的晚櫻盛宴，是站長最私房的避撲空口袋名單！"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ueno_park",
+      "resolution": "same-place-merged",
+      "canonicalId": "ueno_park",
+      "records": [
+        {
+          "id": "ueno_park",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "kanto",
+          "title": "上野恩賜公園",
+          "hasNightLight": true,
+          "nightHours": "🏮 17:30 - 20:00 (不忍池畔雪洞千燈綻放)",
+          "nightImg": "./images/ueno_park_night_sakura.jpg",
+          "subtitle": "江戶時代起即為日本第一賞櫻名所",
+          "tag": "東京・台東區",
+          "bloomStatus": "🌸 滿開 (90%)",
+          "species": "染井吉野櫻、寒櫻",
+          "desc": "千株櫻樹大道盛開，不忍池畔微風徐來，歷史悠久的庶民花見盛會。",
+          "locationDetail": "JR上野站公園口出站即達",
+          "img": "./images/ueno_park_day_sakura.jpg",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E4%B8%8A%E9%87%8E%20%E6%AB%BB%E8%8A%B1&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E4%B8%8A%E9%87%8E"
+        },
+        {
+          "id": "ueno_park",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "tokyo",
+          "title": "上野恩賜公園",
+          "subtitle": "800株櫻花樹林立！自江戶時代起即為日本第一賞櫻名所",
+          "tag": "🌸 東京・台東區",
+          "species": "染井吉野櫻・山櫻・寒櫻",
+          "locationDetail": "JR上野站公園口出閘即達",
+          "dataSource": "東京都西部公園綠地事務所花期觀測",
+          "img": "./images/ueno_park_day.jpg",
+          "desc": "櫻花大道綿延如粉色隧道，不忍池弁天堂倒映萬千花影，充滿熱鬧的日式野餐氣息。",
+          "activityText": "🎟️ 預定美術館特展聯票",
+          "activityTextEn": "🎟️ Museum Combo Pass",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E4%B8%8A%E9%87%8E%20%E7%BE%8E%E8%A1%93%E9%A4%A8%20%E9%96%80%E7%A5%A8&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9D%B1%E4%BA%AC+%E4%B8%8A%E9%87%8E",
+          "cafe": {
+            "tag": "☕ 賞櫻推薦露台茶房",
+            "name": "上野之森 PARK SIDE CAFE",
+            "feature": "森林露台席享受櫻花芬多精與特製鬆餅",
+            "img": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=200&q=80"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hirosaki_sakura",
+      "resolution": "same-place-merged",
+      "canonicalId": "hirosaki_sakura",
+      "records": [
+        {
+          "id": "hirosaki_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "tohoku",
+          "title": "青森 弘前公園",
+          "subtitle": "日本第一櫻吹雪・天守閣夜櫻與外濠粉紅花筏",
+          "tag": "青森・弘前市",
+          "bloomStatus": "🌸 滿開吹雪花筏",
+          "species": "染井吉野櫻、枝垂櫻 (2,600株)",
+          "desc": "外濠水面完全被億萬花瓣覆蓋成粉紅花毯「花筏」，夜間天守閣點燈與遠處岩木山藍調暮色交織，美至屏息。",
+          "locationDetail": "JR弘前站搭乘巴士15分鐘至市役所前",
+          "img": "./images/towada_sakura.jpg",
+          "nightImg": "./images/hirosaki_castle_night.jpg",
+          "hasNightLight": true,
+          "nightHours": "🏮 18:00 - 21:30 夜間點燈",
+          "cafe": {
+            "name": "星巴克 弘前公園前店 (大正浪漫登錄有形文化財洋館)",
+            "feature": "舊陸軍第八師團長官舍・在百年西洋木造洋館品嚐特調・步行1分鐘即達"
+          },
+          "japanFood": {
+            "name": "弘前市內津輕鄉土料理 割烹・三味線居酒屋",
+            "feature": "青森太宰治蘋果豬・津輕海峽生猛刺身・津輕三味線現場演奏席"
+          },
+          "mapUrl": "https://maps.google.com/?q=弘前公園",
+          "ticketLabel": "預約門票",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%BC%98%E5%89%8D%E5%85%AC%E5%9C%92%20%E6%AB%BB%E8%8A%B1&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E5%BC%98%E5%89%8D"
+        },
+        {
+          "id": "hirosaki_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "tohoku",
+          "title": "弘前公園櫻花護城河",
+          "subtitle": "日本第一櫻！2,600株櫻樹與粉紅花筏絕景",
+          "tag": "🌸 東北・青森縣",
+          "species": "染井吉野櫻・枝垂櫻・八重櫻",
+          "locationDetail": "JR弘前站搭乘土手町循環巴士 10 分鐘市役所前下車",
+          "dataSource": "弘前觀光Convention協會每日實時推移",
+          "img": "https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=700&q=80",
+          "desc": "掉落的花瓣將護城河徹底填滿，形成世界級的「粉紅水面花毯（花筏）」，一生必看一次的絕景。",
+          "activityText": "🌸 預約東北賞櫻專車",
+          "activityTextEn": "🌸 Tohoku Cherry Tour",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%BC%98%E5%89%8D%E5%85%AC%E5%9C%92%20%E6%AB%BB%E8%8A%B1&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E9%9D%92%E6%A3%AE+%E5%BC%98%E5%89%8D",
+          "cafe": {
+            "tag": "☕ 賞櫻推薦洋館咖啡",
+            "name": "藤田紀念庭園 大正浪漫喫茶室",
+            "feature": "大正洋館享用青森蘋果派與窗外落櫻庭園",
+            "img": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=200&q=80"
+          },
+          "report": {
+            "hasReport": true,
+            "stampDate": "2025/04 親訪",
+            "headline": "【弘前公園花筏特派員報導】粉紅護城河拍攝角度全整理！夜間點燈倒影攻略",
+            "author": "站長東北特派組",
+            "date": "2025 年 4 月 29 日花筏盛期",
+            "weather": "晴天 15°C",
+            "camera": "Sony A7 IV + 24-105mm G",
+            "pitfalls": [
+              "花筏形成約在滿開後 2-3 天，請緊盯吹雪預報。",
+              "東門外護城河是拍花筏最密集的經典機位，建議清晨 6 點順光拍攝。"
+            ],
+            "lead": "整座護城河全被粉紅色花瓣鋪滿，彷彿一條粉紅天鵝絨大道，美到不可思議！"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kenrokuen_sakura",
+      "resolution": "same-place-merged",
+      "canonicalId": "kenrokuen_sakura",
+      "records": [
+        {
+          "id": "kenrokuen_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "chubu",
+          "title": "石川 金澤兼六園",
+          "subtitle": "日本三大名園・400株兼六園菊櫻",
+          "tag": "石川・金澤市",
+          "bloomStatus": "🌸 名園盛開 (無料開園)",
+          "species": "兼六園菊櫻",
+          "desc": "兼具六種造園景觀的名園，琴柱燈籠旁曲水流觴與名木櫻花交相輝映。",
+          "locationDetail": "JR金澤站轉搭巴士15分鐘",
+          "img": "https://images.unsplash.com/photo-1545048702-7936070012e7?auto=format&fit=crop&w=700&q=80",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%85%BC%E5%85%AD%E5%9C%92&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E9%87%91%E6%BE%A4"
+        },
+        {
+          "id": "kenrokuen_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "tohoku",
+          "title": "石川金澤・兼六園櫻花盛典",
+          "subtitle": "日本三大名園之首！徽軫燈籠與霞之池畔400株櫻花",
+          "tag": "🌸 北陸・石川縣",
+          "species": "兼六園菊櫻・兼六園熊谷櫻・旭櫻",
+          "locationDetail": "JR金澤站兼六園口搭乘公車 15 分鐘至兼六園下下車",
+          "dataSource": "金澤城・兼六園管理事務所花期實報",
+          "img": "https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=700&q=80",
+          "desc": "歷代加賀藩主耗費百年打造的林泉回遊式名園。春櫻盛開時免費開園，夜間更開放徽軫燈籠特別點燈！",
+          "activityText": "🍵 預約金澤茶道體驗",
+          "activityTextEn": "🍵 Kanazawa Tea Ceremony",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E9%87%91%E6%BE%A4%20%E5%85%BC%E5%85%AD%E5%9C%92%20%E8%8C%B6%E9%81%93&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E7%9F%B3%E5%B7%9D+%E9%87%91%E6%BE%A4",
+          "cafe": {
+            "tag": "🍵 賞櫻推薦園內茶房",
+            "name": "兼六園 時雨亭",
+            "feature": "藩主御殿品嚐正統加賀藩抹茶與季節和菓子",
+            "img": "https://images.unsplash.com/photo-1545048702-7936070012e7?auto=format&fit=crop&w=200&q=80"
+          }
+        }
+      ]
+    },
+    {
+      "id": "maruyama_park_sakura",
+      "resolution": "separate-places",
+      "records": [
+        {
+          "id": "maruyama_park_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "hokkaido",
+          "title": "札幌 圓山公園",
+          "subtitle": "札幌市民賞櫻吃烤羊肉成吉思汗名所",
+          "tag": "北海道・札幌市",
+          "bloomStatus": "🌸 滿開見頃",
+          "species": "蝦夷山櫻",
+          "desc": "北海道傳統花見習俗，在盛開的蝦夷山櫻下享受炭火成吉思汗烤羊肉。",
+          "locationDetail": "地鐵圓山公園站出閘即達",
+          "img": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%9C%93%E5%B1%B1%E5%85%AC%E5%9C%92%20%E6%9C%AD%E5%B9%8C&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E6%9C%AD%E5%B9%8C"
+        },
+        {
+          "id": "maruyama_park_sakura",
+          "theme": "sakura",
+          "category": "flower",
+          "region": "kansai",
+          "title": "圓山公園祇園枝垂櫻",
+          "subtitle": "京都歷史最悠久公園・地標「祇園夜櫻」一休名木",
+          "tag": "京都・東山區",
+          "bloomStatus": "🌸 滿開 (100%)",
+          "species": "一重白彼岸枝垂櫻（第二代）、染井吉野櫻",
+          "desc": "八坂神社後方京都最具代表性的夜間賞櫻集會地，樹齡近百年的初代名木子嗣枝垂如瀑布，篝火夜景極具魔力。",
+          "locationDetail": "京阪電車祇園四條站出站步行8分鐘",
+          "img": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=700&q=80",
+          "klookUrl": "https://www.klook.com/zh-TW/search/result/?query=%E5%9C%93%E5%B1%B1%E5%85%AC%E5%9C%92%20%E4%BA%AC%E9%83%BD&aid=123436&utm_medium=affiliate-alwayson",
+          "bookingUrl": "https://www.booking.com/searchresults.zh-tw.html?ss=%E7%A5%87%E5%9C%92",
+          "cafe": {
+            "name": "長樂館 (Chourakukan)",
+            "feature": "明治時代菸草大王迎賓洋館・華麗洛可可沙龍英式下午茶"
+          },
+          "japanFood": {
+            "name": "祇園 丸山 (Gion Maruyama)",
+            "feature": "米其林二星京料理・極致細膩的季節美學會席"
+          },
+          "hotel": {
+            "name": "京都 祇園 四條 索拉利亞西鐵酒店",
+            "feature": "出門即是鴨川與先斗町・大浴場洗去漫步疲憊"
+          }
+        }
+      ]
+    }
+  ]
+}

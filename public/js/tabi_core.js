@@ -11,6 +11,11 @@
 (function () {
   'use strict';
 
+  function coreText(key, source, params) {
+    const text = TabiLang.t(key, params);
+    return text === key ? source : text;
+  }
+
   const STORAGE_KEY = 'TABI_FAVORITES_V1';
   const TRIP_SHORT_URL = 'https://www.trip.com/t/fgyJcXow1X2';
   const TRIP_AFFILIATE_QUERY = 'Allianceid=9507030&SID=325761227&trip_sub1=%E6%97%A5%E6%9C%AC%E5%A0%B1%E5%A0%B1&trip_sub3=D20905663&linkhub_token=sl_fgyJcXow1X2';
@@ -73,7 +78,8 @@
   function getFavorites() {
     try {
       const data = localStorage.getItem(STORAGE_KEY);
-      return data ? JSON.parse(data) : [];
+      const parsed = data ? JSON.parse(data) : [];
+      return Array.isArray(parsed) ? parsed : [];
     } catch (e) {
       console.warn('[TABI] Failed to read localStorage', e);
       return [];
@@ -91,26 +97,34 @@
     window.dispatchEvent(new CustomEvent('tabi:favorites-updated', { detail: favs }));
   }
 
-  function isFavorite(id) {
+  function sameFavorite(item, id, title, region) {
+    const left = window.TabiSpotIdentity ? TabiSpotIdentity.resolve(item) : item;
+    const right = window.TabiSpotIdentity ? TabiSpotIdentity.resolve({id, title, region}) : {id, title, region};
+    if (String(left.id) !== String(right.id)) return false;
+    if (title === undefined) return true;
+    return left.title === right.title && (!right.region || !left.region || left.region === right.region);
+  }
+  function isFavorite(id, title, region) {
     if (!id) return false;
-    const favs = getFavorites();
-    return favs.some(item => String(item.id) === String(id));
+    return getFavorites().some(item => sameFavorite(item, id, title, region));
   }
 
   // 3. 加入 / 移除收藏核心方法
   window.toggleFavorite = function (id, type, title, img, region, tag, extra = {}) {
     if (!id || !title) return;
+    if (window.TabiSpotIdentity) { const resolved = TabiSpotIdentity.resolve({id, title, region}); id = resolved.id; title = resolved.title; region = resolved.region; }
     id = String(id);
     let favs = getFavorites();
-    const idx = favs.findIndex(item => String(item.id) === id);
+    const idx = extra.savedSnapshot ? favs.findIndex(item => String(item.id) === String(extra.savedSnapshot.id) && item.title === extra.savedSnapshot.title && item.region === extra.savedSnapshot.region) : favs.findIndex(item => sameFavorite(item, id, title, region));
+    const displayTitle = TabiSpotI18n.favorite({ id, title, region }).title;
 
     if (idx > -1) {
       favs.splice(idx, 1);
-      showTabiToast(`已從行程收藏本移除：${title}`, '💔');
+      showTabiToast(coreText('home.favoriteRemoved', `已從行程收藏本移除：${displayTitle}`, { title: displayTitle }), '💔');
     } else {
       // 嘗試從全域資料庫比對補全情報
-      let spot = null;
-      if (typeof window.SPOTS_DATABASE !== 'undefined' && Array.isArray(window.SPOTS_DATABASE)) {
+      let spot = TabiSpotI18n.findSource(id, title, region);
+      if (!spot && typeof window.SPOTS_DATABASE !== 'undefined' && Array.isArray(window.SPOTS_DATABASE)) {
         spot = window.SPOTS_DATABASE.find(s => String(s.id) === id);
       }
       const allTrains = typeof window.TRAINS_DATA !== 'undefined' ? window.TRAINS_DATA : (typeof window.TRAINS_DATABASE !== 'undefined' ? window.TRAINS_DATABASE : null);
@@ -128,6 +142,7 @@
       favs.unshift({
         id,
         type: type || 'spot',
+        sourceKey: TabiSpotI18n.key({ id, title, region }),
         title,
         img: img || './images/japan_tabi_logo.png',
         region: region || (spot ? (spot.region || spot.route_category || '') : ''),
@@ -140,7 +155,7 @@
         navUrl,
         addedAt: new Date().toISOString()
       });
-      showTabiToast(`已加入行程收藏本：${title}`, '❤️');
+      showTabiToast(coreText('home.favoriteAdded', `已加入行程收藏本：${displayTitle}`, { title: displayTitle }), '❤️');
     }
 
     saveFavorites(favs);
@@ -172,130 +187,148 @@
   // 5. 更新所有畫面中的卡片愛心圖示狀態
   window.updateAllHeartButtons = function () {
     const favs = getFavorites();
-    const favMap = new Set(favs.map(f => String(f.id)));
+
 
     // 支援通用屬性 data-fav-id
     document.querySelectorAll('.btn-card-fav[data-fav-id]').forEach(btn => {
       const id = btn.getAttribute('data-fav-id');
-      const active = favMap.has(String(id));
+      const card = btn.closest('[data-spot-id]');
+      const active = card ? isFavorite(id, card.dataset.sourceTitle, card.dataset.sourceRegion) : isFavorite(id);
       if (active) {
         btn.classList.add('active');
         btn.innerHTML = getHeartSvg(true, 12);
-        btn.setAttribute('title', '已在行程收藏本');
+        btn.setAttribute('title', coreText('favorites.saved', '已在行程收藏本'));
       } else {
         btn.classList.remove('active');
         btn.innerHTML = getHeartSvg(false, 12);
-        btn.setAttribute('title', '加入我的行程收藏');
+        btn.setAttribute('title', coreText('favorites.add', '加入我的行程收藏'));
       }
     });
 
     // 針對非 data-fav-id 的靜態按鈕
     document.querySelectorAll('[id^="trainFavBtn_"]').forEach(btn => {
       const id = btn.id.replace('trainFavBtn_', '');
-      const active = favMap.has(String(id));
+      const active = isFavorite(id);
       if (active) {
         btn.classList.add('active');
-        btn.innerHTML = getHeartSvg(true, 12) + ' 已在收藏本';
+        btn.innerHTML = getHeartSvg(true, 12) + ' ' + coreText('favorites.saved', '已在收藏本');
       } else {
         btn.classList.remove('active');
-        btn.innerHTML = getHeartSvg(false, 12) + ' 加入行程收藏';
+        btn.innerHTML = getHeartSvg(false, 12) + ' ' + coreText('favorites.add', '加入行程收藏');
       }
     });
   };
 
-  // 6. 展開/折疊手風琴卡片內容 (Accordion Detail)
-  window.toggleFavExpand = function (id) {
-    const panel = document.getElementById(`fav-detail-${id}`);
-    const btn = document.getElementById(`fav-expand-btn-${id}`);
+  function regionLabel(region) {
+    if (!region) return coreText('favorites.japan', '日本');
+    const key = 'home.region.' + region;
+    const label = TabiLang.t(key);
+    return label === key ? region : label;
+  }
+  function node(tag, className, text) {
+    const element = document.createElement(tag);
+    if (className) element.className = className;
+    if (text !== undefined) element.textContent = text;
+    return element;
+  }
+  function externalLink(url, label, className) {
+    try {
+      const parsed = new URL(url, location.href);
+      if (!['https:', 'http:'].includes(parsed.protocol)) return null;
+      const link = node('a', 'fav-detail-btn ' + className, label);
+      link.href = parsed.href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      return link;
+    } catch { return null; }
+  }
+  // Drawer details use an identity key, so two different places sharing an old ID stay separate.
+  window.toggleFavExpand = function (identity) {
+    let panel = document.getElementById('fav-detail-' + identity);
+    if (!panel) panel = Array.from(document.querySelectorAll('.fav-item-card')).find(card => card.dataset.sourceId === String(identity))?.querySelector('.fav-detail-panel');
     if (!panel) return;
-    const isHidden = panel.style.display === 'none' || panel.style.display === '';
-    if (isHidden) {
-      panel.style.display = 'block';
-      if (btn) btn.innerHTML = '收起 ▲';
-    } else {
-      panel.style.display = 'none';
-      if (btn) btn.innerHTML = '展開 ▼';
-    }
+    const card = panel.closest('.fav-item-card');
+    panel.hidden = !panel.hidden;
+    const expanded = !panel.hidden;
+    card.querySelector('.btn-fav-expand-toggle').textContent = coreText(expanded ? 'favorites.collapse' : 'favorites.expand', expanded ? '收起 ▲' : '展開 ▼');
+    card.querySelector('.fav-item-main').setAttribute('aria-expanded', String(expanded));
   };
-
-  // 7. 渲染收藏匣列表 (包含完整折疊卡片內容)
   window.renderFavoritesList = function () {
     const container = document.getElementById('favListContainer');
     if (!container) return;
+    const expanded = new Set(Array.from(container.querySelectorAll('.fav-detail-panel:not([hidden])')).map(panel => panel.closest('.fav-item-card').dataset.favoriteKey));
+    const scroll = container.scrollTop;
     const favs = getFavorites();
-
-    if (favs.length === 0) {
-      container.innerHTML = `
-        <div style="text-align:center; padding:60px 20px; color:#94A3B8;">
-          <div style="font-size:36px; margin-bottom:12px;">🤍</div>
-          <div style="font-size:0.95rem; font-weight:800; color:#334155;">您的行程收藏匣是空的</div>
-          <div style="font-size:0.76rem; color:#94A3B8; margin-top:6px; line-height:1.65; max-width:280px; margin-left:auto; margin-right:auto;">
-            瀏覽全站景點、沖繩自駕美食或特急列車時，點擊卡片右上角愛心即可隨時保存排程！
-          </div>
-        </div>
-      `;
-      return;
+    const fragment = document.createDocumentFragment();
+    if (!favs.length) {
+      const empty = node('div', 'favorites-empty-state');
+      empty.append(node('div', '', '🤍'), node('h4', '', coreText('favorites.empty', '您的行程收藏匣是空的')), node('p', '', coreText('favorites.emptyHint', '點擊景點卡片的愛心即可收藏。')));
+      fragment.append(empty);
     }
-
-    container.innerHTML = favs.map(item => {
-      const safeTitle = (item.title || '').replace(/'/g, "\\'");
-      const hotelSearchUrl = getTripHotelUrl(item.region || item.title);
-      const navUrl = item.navUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.title)}`;
-
-      return `
-        <div class="fav-item-card" id="fav-card-${item.id}">
-          <div class="fav-item-main" onclick="toggleFavExpand('${item.id}')">
-            <img src="${item.img}" alt="${item.title}" class="fav-thumb" onerror="this.src='./images/japan_tabi_logo.png'">
-            <div class="fav-item-info">
-              <div class="fav-item-tag">${item.tag || '日旅情報'}</div>
-              <div class="fav-item-title" title="${item.title}">${item.title}</div>
-              <div class="fav-item-region">${item.region ? '📍 ' + item.region : '🗾 日本精選'}</div>
-            </div>
-            <div class="fav-item-actions">
-              <button class="btn-fav-expand-toggle" id="fav-expand-btn-${item.id}" onclick="toggleFavExpand('${item.id}'); event.stopPropagation();" title="點擊展開/收起詳細攻略">
-                展開 ▼
-              </button>
-              <button class="btn-fav-remove" onclick="toggleFavorite('${item.id}', '${item.type}', '${safeTitle}', '${item.img}'); event.stopPropagation();" title="從收藏匣移除">
-                ✕
-              </button>
-            </div>
-          </div>
-
-          <!-- 折疊手風琴卡片內容 (可點擊展開查看完整資訊) -->
-          <div class="fav-detail-panel" id="fav-detail-${item.id}" style="display:none;">
-            ${item.desc ? `
-              <div class="fav-detail-desc">
-                <strong style="color:#0F172A; display:block; margin-bottom:3px;">📝 名所特色簡介：</strong>
-                ${item.desc}
-              </div>` : ''}
-
-            ${(item.location || item.mapcode) ? `
-              <div class="fav-detail-meta">
-                ${item.location ? `<div>📍 <strong>交通指南：</strong>${item.location}</div>` : ''}
-                ${item.mapcode ? `<div>🚗 <strong>MapCode 導航：</strong><code>${item.mapcode}</code></div>` : ''}
-              </div>` : ''}
-
-            ${item.tips ? `
-              <div class="fav-detail-tip">
-                💡 觀測秘笈：${item.tips}
-              </div>` : ''}
-
-            <div class="fav-detail-links">
-              <a href="${navUrl}" target="_blank" rel="noopener noreferrer" class="fav-detail-btn fav-btn-nav">
-                🗺️ Google 導航 ↗
-              </a>
-              <a href="${hotelSearchUrl}" target="_blank" rel="noopener noreferrer" class="fav-detail-btn fav-btn-hotel">
-                🏨 周邊飯店比價 ↗
-              </a>
-              ${item.link ? `
-              <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="fav-detail-btn fav-btn-booking">
-                🎟️ 預約 / 票券 ↗
-              </a>` : ''}
-            </div>
-          </div>
-        </div>
-      `;
-    }).join('');
+    let sourceNotice = false;
+    favs.forEach(source => {
+      const item = TabiSpotI18n.favorite(source);
+      if (!item.copyTranslated) sourceNotice = true;
+      const identity = encodeURIComponent(TabiSpotI18n.key(source));
+      const card = node('div', 'fav-item-card');
+      card.dataset.favoriteKey = identity;
+      card.dataset.sourceId = source.id;
+      card.dataset.copyLanguage = item.copyLanguage;
+      const main = node('div', 'fav-item-main');
+      main.tabIndex = 0;
+      main.setAttribute('role', 'button');
+      main.setAttribute('aria-expanded', String(expanded.has(identity)));
+      const toggle = () => window.toggleFavExpand(identity);
+      main.onclick = event => { if (!event.target.closest('button,a')) toggle(); };
+      main.onkeydown = event => { if (event.target === main && ['Enter', ' '].includes(event.key)) { event.preventDefault(); toggle(); } };
+      const image = node('img', 'fav-thumb');
+      image.src = source.img || './images/japan_tabi_logo.png';
+      image.alt = item.title || '';
+      image.onerror = function () { this.onerror = null; this.src = './images/japan_tabi_logo.png'; };
+      const info = node('div', 'fav-item-info');
+      info.append(node('div', 'fav-item-tag', item.tag || coreText('favorites.defaultTag', '日本名所')), node('div', 'fav-item-title', item.title), node('div', 'fav-item-region', '📍 ' + regionLabel(source.region)));
+      info.querySelector('.fav-item-title').title = item.title || '';
+      const actions = node('div', 'fav-item-actions');
+      const expand = node('button', 'btn-fav-expand-toggle', coreText(expanded.has(identity) ? 'favorites.collapse' : 'favorites.expand', expanded.has(identity) ? '收起 ▲' : '展開 ▼'));
+      expand.type = 'button';
+      expand.title = coreText('favorites.toggle', '展開或收起景點詳情');
+      expand.onclick = event => { event.stopPropagation(); toggle(); };
+      const remove = node('button', 'btn-fav-remove', '✕');
+      remove.type = 'button';
+      remove.title = coreText('favorites.remove', '從收藏匣移除');
+      remove.setAttribute('aria-label', remove.title);
+      remove.onclick = event => { event.stopPropagation(); window.toggleFavorite(source.id, source.type, source.title, source.img, source.region, source.tag, {savedSnapshot: source}); };
+      actions.append(expand, remove);
+      main.append(image, info, actions);
+      const panel = node('div', 'fav-detail-panel');
+      panel.id = 'fav-detail-' + identity;
+      panel.hidden = !expanded.has(identity);
+      main.setAttribute('aria-controls', panel.id);
+      function detail(value, key, className) {
+        if (!value) return;
+        const block = node('div', className);
+        block.append(node('strong', '', coreText('favorites.' + key, key) + ': '), node('span', '', value));
+        panel.append(block);
+      }
+      detail(item.desc, 'description', 'fav-detail-desc');
+      detail(item.location, 'transit', 'fav-detail-meta');
+      detail(source.mapcode, 'mapcode', 'fav-detail-meta');
+      detail(item.tips, 'tips', 'fav-detail-tip');
+      const links = node('div', 'fav-detail-links');
+      const nav = externalLink(source.navUrl || 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(source.title), coreText('favorites.navigate', '🗺️ Google 導航 ↗'), 'fav-btn-nav');
+      const hotels = externalLink(getTripHotelUrl(source.region || source.title), coreText('favorites.hotels', '🏨 周邊飯店比價 ↗'), 'fav-btn-hotel');
+      const ticket = source.link && externalLink(source.link, coreText('favorites.tickets', '🎟️ 預約／票券 ↗'), 'fav-btn-booking');
+      [nav, hotels, ticket].filter(Boolean).forEach(link => links.append(link));
+      panel.append(links);
+      card.append(main, panel);
+      fragment.append(card);
+    });
+    if (sourceNotice && TabiLang.get() !== 'zh-TW') {
+      const notice = node('p', 'favorites-source-notice', coreText('spots.sourceNotice', '部分景點內容以原文顯示。'));
+      fragment.prepend(notice);
+    }
+    container.replaceChildren(fragment);
+    container.scrollTop = scroll;
   };
 
   // 8. 抽屜開關
@@ -320,36 +353,39 @@
   window.copyAllFavorites = function () {
     const favs = getFavorites();
     if (favs.length === 0) {
-      showTabiToast('收藏匣目前沒有景點可複製', 'ℹ️');
+      showTabiToast(coreText('home.nothingToExport', '收藏匣目前沒有景點可複製'), 'ℹ️');
       return;
     }
-    const lines = [
-      `🇯🇵【日旅報報 JAPAN TABI】我的日旅行程口袋名單 (共 ${favs.length} 處)：\n`
-    ];
-    favs.forEach((item, i) => {
-      lines.push(`${i + 1}. ${item.title} (${item.region || '日本'})`);
-      if (item.mapcode) lines.push(`   🚗 MapCode: ${item.mapcode}`);
-      if (item.location) lines.push(`   📍 交通: ${item.location}`);
-      if (item.tips) lines.push(`   💡 備註: ${item.tips}`);
+    const lines = [coreText('favorites.exportTitle', '我的日本行程清單（' + favs.length + ' 處）', { count: favs.length }), ''];
+    favs.forEach((source, i) => {
+      const item = TabiSpotI18n.favorite(source);
+      lines.push(`${i + 1}. ${item.title} (${regionLabel(source.region)})`);
+      if (item.desc) lines.push('   ' + coreText('favorites.description', '名所特色簡介') + ': ' + item.desc);
+      if (source.mapcode) lines.push('   MapCode: ' + source.mapcode);
+      if (item.location) lines.push('   ' + coreText('favorites.transit', '交通指南') + ': ' + item.location);
+      if (item.tips) lines.push('   ' + coreText('favorites.tips', '觀測秘笈') + ': ' + item.tips);
       lines.push('');
     });
-    lines.push(`來源：《日旅報報 JAPAN TABI》官方特約觀測現地取材認證`);
+    lines.push(coreText('favorites.source', '來源：JAPAN TABI 日旅報報'));
+    lines.push(window.location.href);
 
     navigator.clipboard.writeText(lines.join('\n')).then(() => {
-      showTabiToast(`成功複製 ${favs.length} 個景點攻略到剪貼簿！`, '📋');
+      showTabiToast(coreText('home.copiedCount', `成功複製 ${favs.length} 個景點攻略到剪貼簿！`, { count: favs.length }), '📋');
     }).catch(() => {
-      showTabiToast('複製失敗，請手動選取文字', '⚠️');
+      showTabiToast(coreText('home.copyFailed', '複製失敗，請手動選取文字'), '⚠️');
     });
   };
+
+  window.copyMyFavoritesItinerary = window.copyAllFavorites;
 
   // 10. 清空收藏匣
   window.clearAllFavorites = function () {
     const favs = getFavorites();
     if (favs.length === 0) return;
-    if (confirm(`確定要清空所有收藏的 ${favs.length} 個日本行程景點嗎？`)) {
+    if (confirm(coreText('home.clearConfirmCount', `確定要清空所有收藏的 ${favs.length} 個日本行程景點嗎？`, { count: favs.length }))) {
       saveFavorites([]);
       renderFavoritesList();
-      showTabiToast('已清空所有行程收藏', '🗑️');
+      showTabiToast(coreText('home.cleared', '已清空所有行程收藏'), '🗑️');
     }
   };
 
@@ -365,7 +401,12 @@
 
     const toast = document.createElement('div');
     toast.className = 'tabi-toast';
-    toast.innerHTML = `<span style="font-size:15px;">${icon}</span><span>${msg}</span>`;
+    const iconEl = document.createElement('span');
+    iconEl.style.fontSize = '15px';
+    iconEl.textContent = icon;
+    const messageEl = document.createElement('span');
+    messageEl.textContent = msg;
+    toast.append(iconEl, messageEl);
     container.appendChild(toast);
 
     setTimeout(() => {
@@ -392,22 +433,18 @@
     if (normTwdEl) normTwdEl.textContent = `NT$ ${normTwd.toLocaleString()}`;
     if (normJpyEl) normJpyEl.textContent = `含稅 ¥${Math.round(jpy).toLocaleString()}`;
 
-    // 2. 10% 退稅價 (未稅金額 = 含稅 / 1.1)
-    const taxFreeJpy = Math.round(jpy / 1.1);
-    const taxFreeTwd = Math.round(taxFreeJpy * rate);
-    const savedTwd = normTwd - taxFreeTwd;
-    const tfTwdEl = document.getElementById('fxTaxFreeTwd');
-    const tfJpyEl = document.getElementById('fxTaxFreeJpy');
-    if (tfTwdEl) tfTwdEl.textContent = `NT$ ${taxFreeTwd.toLocaleString()}`;
-    if (tfJpyEl) tfJpyEl.textContent = `未稅 ¥${taxFreeJpy.toLocaleString()} (現省 NT$ ${savedTwd.toLocaleString()})`;
-
-    // 3. 免稅 + 百貨/唐吉 5% 優惠券折抵 (未稅 * 0.95)
-    const couponJpy = Math.round(taxFreeJpy * 0.95);
-    const couponTwd = Math.round(couponJpy * rate);
-    const cpTwdEl = document.getElementById('fxCouponTwd');
-    const cpJpyEl = document.getElementById('fxCouponJpy');
-    if (cpTwdEl) cpTwdEl.textContent = `NT$ ${couponTwd.toLocaleString()}`;
-    if (cpJpyEl) cpJpyEl.textContent = `實付 ¥${couponJpy.toLocaleString()} (現省 NT$ ${(normTwd - couponTwd).toLocaleString()})`;
+    // Scenarios only: the actual shop determines eligibility, tax rate and fees.
+    function estimate(divisor, twdId, jpyId) {
+      const net = jpy / divisor;
+      const eligibleAmount = net >= 5000;
+      const estimateJpy = eligibleAmount ? Math.round(net) : Math.round(jpy);
+      const twdEl = document.getElementById(twdId);
+      const jpyEl = document.getElementById(jpyId);
+      if (twdEl) twdEl.textContent = `NT$ ${Math.round(estimateJpy * rate).toLocaleString()}`;
+      if (jpyEl) jpyEl.textContent = eligibleAmount ? `預估未稅 ¥${estimateJpy.toLocaleString()}（未扣手續費）` : '未達未稅 ¥5,000 門檻，按含稅金額顯示';
+    }
+    estimate(1.1, 'fxTaxFreeTwd', 'fxTaxFreeJpy');
+    estimate(1.08, 'fxCouponTwd', 'fxCouponJpy');
   };
 
   window.setQuickJpy = function (val) {
@@ -449,14 +486,14 @@
       hub.id = 'floatingQuickBar';
       hub.innerHTML = `
         <span class="square-hub-badge" id="favCountBadge" style="display:none;">0</span>
-        <button class="square-hub-item hub-item-fav" onclick="openFavoritesDrawer()" aria-label="查看我的日旅行程收藏本" title="查看行程收藏本">
+        <button class="square-hub-item hub-item-fav" onclick="openFavoritesDrawer()" aria-label="查看我的日旅行程收藏本" data-i18n-aria-label="favorites.title" title="查看行程收藏本" data-i18n-title="favorites.title">
           <span class="hub-icon-wrap">${getHeartSvg(true, 14)}</span>
-          <span class="hub-label">收藏</span>
+          <span class="hub-label" data-i18n="favorites.label">收藏</span>
         </button>
         <div class="square-hub-divider"></div>
-        <button class="square-hub-item hub-item-fx" onclick="openFxCalculator()" aria-label="日幣即時匯率與10%免稅試算" title="日幣即時匯率與10%免稅試算">
+        <button class="square-hub-item hub-item-fx" onclick="openFxCalculator()" aria-label="日幣即時匯率與10%免稅試算" data-i18n-aria-label="favorites.tax" title="日幣即時匯率與10%免稅試算" data-i18n-title="favorites.tax">
           <span class="hub-icon-wrap" style="font-size:14px; line-height:1;">💴</span>
-          <span class="hub-label">免稅</span>
+          <span class="hub-label" data-i18n="favorites.tax">免稅</span>
         </button>
       `;
       document.body.appendChild(hub);
@@ -491,22 +528,22 @@
           <div>
             <div style="display:flex; align-items:center; gap:8px;">
               ${getHeartSvg(true, 16)}
-              <h3 style="font-size:1.1rem; font-weight:900; color:#1E293B; margin:0;">我的日旅行程收藏本</h3>
+              <h3 style="font-size:1.1rem; font-weight:900; color:#1E293B; margin:0;" data-i18n="favorites.title">我的日旅行程收藏本</h3>
             </div>
-            <div style="font-size:0.74rem; color:#64748B; margin-top:3px;">
+            <div style="font-size:0.74rem; color:#64748B; margin-top:3px;" data-i18n="favorites.subtitle">
               免登入離線自動保存 ｜ 關閉視窗不遺失 ｜ 點擊卡片可展開完整攻略
             </div>
           </div>
-          <button class="btn-fav-remove" onclick="closeFavoritesDrawer()" style="font-size:18px; padding:6px 10px;">✕</button>
+          <button class="btn-fav-remove" onclick="closeFavoritesDrawer()" data-i18n-aria-label="favorites.close" style="font-size:18px; padding:6px 10px;">✕</button>
         </div>
         
         <div class="fav-drawer-body" id="favListContainer"></div>
 
         <div class="fav-drawer-footer">
-          <button class="btn-fav-copy-all" onclick="copyAllFavorites()">
+          <button class="btn-fav-copy-all" onclick="copyAllFavorites()" data-i18n="favorites.export">
             📋 一鍵複製所有行程清單
           </button>
-          <button class="btn-fav-clear" onclick="clearAllFavorites()">
+          <button class="btn-fav-clear" onclick="clearAllFavorites()" data-i18n="favorites.clear">
             全部清空
           </button>
         </div>
@@ -529,7 +566,7 @@
         <div class="fx-calc-header">
           <div style="display:flex; align-items:center; gap:8px;">
             <span style="font-size:20px;">💴</span>
-            <h3>日幣即時匯率 ＆ 免稅試算</h3>
+            <h3>日幣參考匯率 ＆ 退稅情境試算</h3>
           </div>
           <button class="btn-close-circle" onclick="closeFxCalculator()" aria-label="關閉試算小工具">✕</button>
         </div>
@@ -553,7 +590,7 @@
           <!-- 快捷金額標籤 -->
           <div class="fx-quick-tags">
             <button onclick="setQuickJpy(1000)">¥1,000</button>
-            <button onclick="setQuickJpy(5500)">¥5,500 (免稅門檻)</button>
+            <button onclick="setQuickJpy(5500)">¥5,500 (10% 稅率示例)</button>
             <button onclick="setQuickJpy(10000)">¥10,000</button>
             <button onclick="setQuickJpy(30000)">¥30,000</button>
             <button onclick="setQuickJpy(50000)">¥50,000</button>
@@ -573,25 +610,25 @@
 
             <!-- 2. 日本 10% 退稅價 -->
             <div class="fx-card fx-card-taxfree">
-              <div class="fx-card-lbl">✨ 10% 免稅後 (Tax Free)</div>
+              <div class="fx-card-lbl">一般稅率 10%：預估未稅金額</div>
               <div>
                 <div class="fx-card-twd text-emerald" id="fxTaxFreeTwd">NT$ 1,955</div>
-                <div class="fx-card-jpy" id="fxTaxFreeJpy">未稅 ¥9,091 (現省 NT$ 195)</div>
+                <div class="fx-card-jpy" id="fxTaxFreeJpy">預估未稅 ¥9,091（未扣手續費）</div>
               </div>
             </div>
 
-            <!-- 3. 免稅 + 5% 優惠券 -->
+            <!-- 3. Reduced-rate scenario -->
             <div class="fx-card fx-card-coupon">
-              <div class="fx-card-lbl">🎉 免稅 + 百貨/唐吉 5% 券</div>
+              <div class="fx-card-lbl">輕減稅率 8%：預估未稅金額</div>
               <div>
-                <div class="fx-card-twd text-rose" id="fxCouponTwd">NT$ 1,857</div>
-                <div class="fx-card-jpy" id="fxCouponJpy">實付 ¥8,636 (現折 8.6 折！)</div>
+                <div class="fx-card-twd text-rose" id="fxCouponTwd">NT$ 1,991</div>
+                <div class="fx-card-jpy" id="fxCouponJpy">預估未稅 ¥9,259（未扣手續費）</div>
               </div>
             </div>
           </div>
 
           <div class="fx-tax-tip">
-            💡 <b>日本免稅購物秘笈：</b>同一店家當日購買一般品或消耗品，含稅累積滿 <b>¥5,500（未稅 ¥5,000）</b>即可出示護照正本享有免稅。消耗品（藥妝、食品）出境前請勿拆封！
+            💡 <b>2026-11-01 起適用退稅制：</b>購買時先支付含稅價格，符合資格且同店同日未稅合計滿 ¥5,000，並在購買起 90 日內取得海關攜出確認後，由店家或受託業者退款。10% 與 8% 為不同商品稅率的情境示例，不能相加；未扣退款費用，也不保證取得優惠券。實際稅率、資格及費用請向店家確認。
           </div>
         </div>
       `;
@@ -599,7 +636,7 @@
     }
 
     updateFavoriteBadge();
-    updateAllHeartButtons();
+    refreshFavoriteLanguage();
   }
 
 
@@ -685,7 +722,7 @@
         }
       }
 
-      // (D) Booking.com 歐美外國用戶 Travelpayouts / 多幣別智慧分流
+      // (D) Booking.com language routing with an independent currency default
       else if (href.indexOf('booking.com') > -1) {
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
@@ -699,16 +736,8 @@
           'th': 'th',
           'ko': 'ko'
         };
-        var bookingCurs = {
-          'zh-tw': 'TWD',
-          'zh-cn': 'CNY',
-          'en': 'USD',
-          'ja': 'JPY',
-          'th': 'THB',
-          'ko': 'KRW'
-        };
         var bLoc = bookingLocs[locale] || 'zh-tw';
-        var bCur = bookingCurs[locale] || 'TWD';
+        var bCur = 'TWD'; // Display language does not select a currency.
 
         var newHref = href.replace(/searchresults\.[a-z\-]+\.html/, 'searchresults.' + bLoc + '.html');
         if (newHref.indexOf('selected_currency=') === -1) {
@@ -719,6 +748,18 @@
       }
     }, true);
   }
+
+  function refreshFavoriteLanguage() {
+    updateAllHeartButtons();
+    renderFavoritesList();
+    const drawer = document.getElementById('favoritesDrawer');
+    if (drawer) TabiLang.render(drawer);
+    const hub = document.getElementById('floatingQuickBar');
+    if (hub) TabiLang.render(hub);
+  }
+  TabiLang.onChange(refreshFavoriteLanguage);
+  TabiSpotI18n.ready.then(refreshFavoriteLanguage);
+  document.addEventListener('DOMContentLoaded', refreshFavoriteLanguage);
 
   // 14. 官方防盜版、著作權防護與轉載追蹤
   function initCopyrightProtection() {

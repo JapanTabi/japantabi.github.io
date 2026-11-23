@@ -1,0 +1,12 @@
+{
+  "name": "일본 여행 뉴스｜도쿄, 오사카 실시간 꽃계절, 불꽃놀이, 스노우 리조트 및 명소 앱",
+  "short_name": "일본 여행 뉴스",
+  "description": "대만 관광객을 위해 특별히 제작된 실시간 꽃 시즌(WNI), 불꽃놀이, 눈 시즌 스키장, 온천, 일본 각지의 클룩 티켓 및 주변 호텔을 안내하는 원클릭 쇼핑 가이드 앱",
+  "start_url": "../../../index.html?lang=ko",
+  "display": "standalone",
+  "background_color": "#fff9f6",
+  "theme_color": "#e04f5f",
+  "lang": "ko",
+  "scope": "../../../",
+  "id": "../../../index.html"
+}

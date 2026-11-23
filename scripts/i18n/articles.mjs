@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {parse} from 'parse5';
+const doc=parse(fs.readFileSync('src/japan_special_edition.html','utf8'));
+function all(n,predicate,out=[]){if(predicate(n))out.push(n);for(const c of n.childNodes||[])all(c,predicate,out);return out;}
+const attr=(n,k)=>(n.attrs||[]).find(a=>a.name===k)?.value;
+const cls=(n,k)=>(attr(n,'class')||'').split(/\s+/).includes(k);
+const text=n=>n.nodeName==='#text'?n.value:(n.childNodes||[]).map(text).join('').trim();
+const specials=all(doc,n=>cls(n,'trip-card-item')).map(n=>({id:'special-'+attr(n,'onclick').match(/\d+/)[0],lang:'zh-tw',title:text(all(n,c=>cls(c,'trip-card-title'))[0]),category:'food',excerpt:text(all(n,c=>cls(c,'trip-card-meta'))[0]),cover:attr(all(n,c=>c.tagName==='img')[0],'src').replace(/^\//,'./'),readTime:15,date:'',link:'japan_special_edition.html?vol='+attr(n,'onclick').match(/\d+/)[0]}));
+const source=[{id:'guide-ski',lang:'zh-tw',title:'日本滑雪場指南：雪況、交通、教練與住宿',category:'ski',excerpt:'比較日本滑雪場的雪況、交通、教練、票券與住宿，依程度與地區規劃滑雪旅程。',cover:'https://images.unsplash.com/photo-1551524559-8af4e6624178?auto=format&fit=crop&w=800&q=75',readTime:8,date:'',link:'japan_ski_resorts.html'},{id:'guide-parks',lang:'zh-tw',title:'日本主題樂園指南：門票、交通與親子攻略',category:'themepark',excerpt:'整理日本主題樂園的門票、交通、住宿與親子攻略，開啟詳細指南規劃行程。',cover:'https://images.unsplash.com/photo-1542640244-7e672d6cef4e?auto=format&fit=crop&w=800&q=75',readTime:12,date:'',link:'japan_theme_parks.html'},...specials];
+source.forEach(a=>{if(a.id==='special-1'||a.id==='special-3')a.category='flower';if(a.id==='special-2')a.category='transit';});
+fs.writeFileSync('public/data/articles/article_catalog.js','/* Canonical article catalog. Display translations are applied from the offline nine-language catalog. */\nwindow.articlesDatabase = '+JSON.stringify(source,null,2)+';\n');
+let html=fs.readFileSync('src/articles.html','utf8').replace(/<script src="\/data\/articles\/articles_(?:zh-tw|en|ja)\.js"><\/script>\n/g,'');if(!html.includes('/data/articles/article_catalog.js'))html=html.replace('<script>\n(function(){','<script src="/data/articles/article_catalog.js"></script>\n<script>\n(function(){');html=html.replace('var list=window.articlesDatabase.filter(function(a){return TabiLang.normalize(a.lang)===lang});','var list=window.articlesDatabase;');html=html.replace("esc(a.link)","esc(articleLink(a.link, lang))");html=html.replace('  function renderPills(list){',"  function articleLink(link, lang) { var url = new URL(link, location.href); url.searchParams.set('lang', lang); return url.href; }\n  function renderPills(list){");fs.writeFileSync('src/articles.html',html);
+console.log('Article catalog:',source.length,'working destinations');

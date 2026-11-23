@@ -1,0 +1,12 @@
+{
+  "name": "Japan Travel News ｜ Temporadas de flores, fuegos artificiales, estaciones de nieve y atracciones en tiempo real de Tokio y Osaka",
+  "short_name": "Noticias de viajes de Japón",
+  "description": "Una aplicación de guía de compras con un solo clic para temporadas de flores (WNI) en tiempo real, espectáculos de fuegos artificiales, estaciones de esquí de temporada de nieve, aguas termales y boletos para Klook y hoteles circundantes en varias regiones de Japón, creada especialmente para turistas taiwaneses.",
+  "start_url": "../../../index.html?lang=es",
+  "display": "standalone",
+  "background_color": "#fff9f6",
+  "theme_color": "#e04f5f",
+  "lang": "es",
+  "scope": "../../../",
+  "id": "../../../index.html"
+}

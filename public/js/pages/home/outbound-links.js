@@ -34,9 +34,8 @@
         a.rel = 'noopener noreferrer';
         const l = (typeof currentLang !== 'undefined') ? currentLang : 'zh-TW';
         const locMap = { 'en': 'en-gb', 'th': 'th', 'ja': 'ja', 'ko': 'ko', 'zh-CN': 'zh-cn', 'zh-TW': 'zh-tw' };
-        const curMap = { 'en': 'USD', 'th': 'THB', 'ja': 'JPY', 'ko': 'KRW', 'zh-CN': 'CNY', 'zh-TW': 'TWD' };
         const loc = locMap[l] || 'zh-tw';
-        const cur = curMap[l] || 'TWD';
+        const cur = 'TWD'; // Keep the site currency default independent of display language.
         let newHref = href.replace(/searchresults\.[a-z\-]+\.html/, `searchresults.${loc}.html`);
         if (!newHref.includes('aid=')) {
           const sep = newHref.includes('?') ? '&' : '?';

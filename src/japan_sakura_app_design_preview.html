@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+  <script src="/js/lang_switcher.js"></script>
+  <script src="/js/translation_memory.js"></script>
+  <script src="/js/site_i18n.js"></script>
+  <script src="/js/booking_locale.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>日旅報報 | 全日本景點導覽・花火大會等級庫・動態時令咖啡與和風地圖</title>
+  <meta name="description" content="日本旅遊報報的花季、雪場與旅遊景點介面預覽，探索分類、地圖、收藏及景點詳細資訊。">
+  <meta property="og:title" content="日旅報報 | 全日本景點導覽・花火大會等級庫・動態時令咖啡與和風地圖">
+  <meta property="og:description" content="日本旅遊報報的花季、雪場與旅遊景點介面預覽，探索分類、地圖、收藏及景點詳細資訊。">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:title" content="日旅報報 | 全日本景點導覽・花火大會等級庫・動態時令咖啡與和風地圖">
+  <meta name="twitter:description" content="日本旅遊報報的花季、雪場與旅遊景點介面預覽，探索分類、地圖、收藏及景點詳細資訊。">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -193,6 +203,7 @@
   </style>
 </head>
 <body class="theme-spot min-h-screen flex flex-col relative">
+<p class="preview-data-note" style="padding:12px;text-align:center">介面示例：花況、人潮與營業時段非即時資料，請勿作為出發依據。</p>
 
   <!-- Seasonal background particle canvas -->
   <canvas id="particle-canvas"></canvas>
@@ -234,7 +245,8 @@
 
       <!-- 右側按鈕：語言切換 + 我的收藏愛心 -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <button onclick="toggleLanguage()" id="lang-toggle-btn" class="px-3 py-1.5 rounded-2xl bg-white border border-theme shadow-sm hover:scale-105 active:scale-95 transition flex items-center gap-1 text-xs font-black text-theme-deep flex-shrink-0" title="切換語言 / Switch Language">
+        <select id="previewLanguage" aria-label="Language" onchange="TabiLang.set(this.value)"></select>
+        <button onclick="document.getElementById('previewLanguage').focus()" id="lang-toggle-btn" class="px-3 py-1.5 rounded-2xl bg-white border border-theme shadow-sm hover:scale-105 active:scale-95 transition flex items-center gap-1 text-xs font-black text-theme-deep flex-shrink-0" title="切換語言 / Switch Language">
           <span>🌐</span>
           <span id="lang-label">EN</span>
         </button>
@@ -816,7 +828,13 @@
   <!-- ================= JavaScript 資料庫、時令咖啡切換與 Leaflet 地圖控制器 ================= -->
   <script>
     const AFFILIATE_AID = "123436";
-    let currentLang = localStorage.getItem('tabi_lang') || 'zh';
+    document.addEventListener('DOMContentLoaded', function () {
+      const select = document.getElementById('previewLanguage');
+      TabiLang.SUPPORTED.forEach(function (lang) { const option = new Option(TabiLang.names[lang], lang); select.add(option); });
+      select.value = TabiLang.get();
+      TabiLang.onChange(function (lang) { select.value = lang; });
+    });
+    const currentLang = 'zh';
 
     function appendAffiliateParams(url, subId) {
       if (!url) return "#";

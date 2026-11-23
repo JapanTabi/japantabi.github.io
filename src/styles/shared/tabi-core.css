@@ -180,7 +180,7 @@
   max-width: 92vw;
   background: #FFFFFF;
   box-shadow: -10px 0 35px rgba(0, 0, 0, 0.15);
-  z-index: 9999;
+  z-index: 10002;
   transform: translateX(100%);
   transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
@@ -541,7 +541,7 @@
   border-bottom: 1px solid #E5E0D6 !important;
   padding: 10px 32px !important;
   display: grid !important;
-  grid-template-columns: 1fr auto 1fr !important;
+  grid-template-columns: auto minmax(0, 1fr) !important;
   align-items: center !important;
   gap: 16px !important;
   height: 72px !important;
@@ -549,9 +549,12 @@
   box-sizing: border-box !important;
 }
 .header-left { display: flex !important; align-items: center !important; justify-self: start !important; }
+.header-left:empty { display: none !important; }
 .header-center { display: flex !important; align-items: center !important; justify-content: center !important; justify-self: center !important; }
-.header-right { display: flex !important; align-items: center !important; justify-self: end !important; gap: 12px !important; flex-wrap: nowrap !important; }
-.header-nav-scroll { display: flex !important; align-items: center !important; justify-content: center !important; gap: 12px !important; flex-wrap: nowrap !important; }
+.header-right { display: flex !important; align-items: center !important; justify-self: end !important; gap: 12px !important; flex-wrap: nowrap !important; min-width: 0; max-width: 100%; }
+.header-nav-scroll { display: flex !important; align-items: center !important; justify-content: flex-start !important; gap: 12px !important; flex-wrap: nowrap !important; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.header-nav-scroll::-webkit-scrollbar { display: none; }
+.header-nav-scroll > a, .lang-selector-dropdown-wrap { flex-shrink: 0; }
 
 .brand-wrap { display: flex !important; align-items: center !important; gap: 14px !important; text-decoration: none !important; color: inherit !important; white-space: nowrap !important; flex-shrink: 0 !important; }
 .fuji-logo-box {
@@ -644,6 +647,12 @@
   .header-nav-scroll { flex: 1 1 auto !important; min-width: 0 !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; scrollbar-width: none !important; padding-bottom: 4px !important; }
   .header-nav-scroll::-webkit-scrollbar { display: none !important; }
   .lang-selector-dropdown-wrap { flex-shrink: 0 !important; }
+}
+
+/* Longer translated names must fit the mobile header without widening the page. */
+@media (max-width: 600px) {
+  .app-header .brand-tag-official { display: none !important; }
+  .app-header .header-center { min-width: 0; max-width: 100%; }
 }
 
 /* 全站統一字型變數 (單一來源) */
@@ -844,4 +853,36 @@
 .btn-close-circle:hover {
   background: #F1F5F9;
   color: #0F172A;
+}
+
+/* Favorites keep long translations readable and native hidden panels fully closed. */
+.fav-detail-panel[hidden] { display: none !important; }
+.fav-detail-panel { overflow-wrap: anywhere; }
+.fav-item-main:focus-visible { outline: 2px solid #094f8d; outline-offset: 4px; border-radius: 8px; }
+.fav-drawer-header > div, .fav-drawer-header h3 { min-width: 0; overflow-wrap: anywhere; }
+.fav-drawer-footer > button { min-width: 0; white-space: normal; line-height: 1.5; }
+.favorites-empty-state { padding: 48px 20px; text-align: center; color: #64748b; }
+.favorites-empty-state > div { font-size: 2rem; }
+.favorites-empty-state h4 { margin: 12px 0 8px; color: #334155; }
+.favorites-empty-state p, .favorites-source-notice { font-size: .78rem; line-height: 1.6; }
+.favorites-source-notice { margin: 0 0 12px; color: #64748b; }
+@media (max-width: 420px) {
+  .fav-item-main { gap: 8px; flex-wrap: wrap; }
+  .fav-item-actions { margin-left: auto; }
+}
+
+/* Longer translated labels must fit the existing cards and reading columns. */
+html:not([lang^="zh"]) :where(h1, h2, h3, h4, p, li, label, .card-subtitle-line, .card-floating-badge) {
+  overflow-wrap: anywhere;
+}
+html:not([lang^="zh"]) .meta-tag-pill {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 900px) {
+  .app-header .header-right {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
 }

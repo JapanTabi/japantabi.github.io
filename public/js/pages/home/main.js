@@ -237,7 +237,7 @@
       });
 
       setLanguage(langCode);
-      showToast(`🌐 語言已切換為：${langName}`, '✨');
+      showToast(homeText('home.languageChanged', `語言已切換為：${langName}`, { language: langName }), '✨');
     }
 
     // 點擊空白處自動關閉語言選單
@@ -247,6 +247,21 @@
         wrap.classList.remove('open');
       }
     });
+
+    function homeText(key, source, params) {
+      const text = TabiLang.t(key, params);
+      return text === key ? source : text;
+    }
+
+    function seasonLabel(season) {
+      const source = {
+        sakura: '櫻花', wisteria: '紫藤', nemophila: '粉蝶花', hydrangea: '繡球花',
+        momiji: '紅葉', ginkgo: '銀杏', lavender: '薰衣草', shibazakura: '芝櫻',
+        cosmos: '波斯菊', ume: '梅花', snow: '雪場', hanabi: '花火大會',
+        train: '觀光列車', park: '主題樂園'
+      };
+      return homeText('home.season.' + (source[season] ? season : 'spots'), source[season] || '精選名所');
+    }
 
     function setLanguage(lang) {
       lang = TabiLang.normalize(lang) || TabiLang.get();
@@ -284,6 +299,9 @@
         }
       });
 
+      renderSubContextPills();
+      renderDynamicRegionBar();
+      renderFeatureFilterBar();
       TabiLang.refresh();
 
       renderCards();
@@ -318,7 +336,6 @@
 
       if (isSnowMode) {
         if (iconEl) iconEl.innerText = '❄️';
-        if (titleEl) titleEl.innerText = '雪季最前線：全日本雪場現場即時分享';
         if (feedSec) {
           feedSec.style.background = 'linear-gradient(135deg, #E0F2FE 0%, #EDE9FE 100%)';
           feedSec.style.borderColor = '#BAE6FD';
@@ -326,7 +343,6 @@
         }
       } else if (currentSeason === 'momiji') {
         if (iconEl) iconEl.innerText = '🍁';
-        if (titleEl) titleEl.innerText = '紅葉最前線：全日本秋季賞楓現場即時分享';
         if (feedSec) {
           feedSec.style.background = '';
           feedSec.style.borderColor = '';
@@ -334,7 +350,6 @@
         }
       } else if (currentSeason === 'ginkgo') {
         if (iconEl) iconEl.innerText = '🍂';
-        if (titleEl) titleEl.innerText = '銀杏最前線：全日本黃金銀杏現場即時分享';
         if (feedSec) {
           feedSec.style.background = '';
           feedSec.style.borderColor = '';
@@ -342,7 +357,6 @@
         }
       } else {
         if (iconEl) iconEl.innerText = '🌸';
-        if (titleEl) titleEl.innerText = '賞櫻最前線：全日本花季現場即時分享';
         if (feedSec) {
           feedSec.style.background = '';
           feedSec.style.borderColor = '';
@@ -350,10 +364,11 @@
         }
       }
 
+      if (titleEl) titleEl.textContent = homeText('home.feed.title', seasonLabel(isSnowMode ? 'snow' : currentSeason) + '：全日本現場即時分享', { season: seasonLabel(isSnowMode ? 'snow' : currentSeason) });
+      if (btnEl) btnEl.textContent = homeText('home.share', '我要分享最新實況 ➔');
+
       const hintKey = 'feed_' + currentSeason + '_hint';
-      const btnKey = 'feed_' + currentSeason + '_btn';
       if (hintEl && t && t[hintKey]) hintEl.innerText = t[hintKey];
-      if (btnEl && t && t[btnKey]) btnEl.innerText = t[btnKey];
 
       // 依據當前季節過濾回報，全部景點顯示綜合推薦
       const filteredFeeds = COMMUNITY_FEEDS.filter(item => {
@@ -373,7 +388,7 @@
                 ${getHeartSvg(isFav, 12)}
               </button>
               <div class="card-floating-badge">${item.tag}</div>
-              <div class="card-bloom-status-tag">${item.bloomStatus || '🌸 滿開 (100%)'}</div>
+              <div class="card-bloom-status-tag">${item.bloomStatus || '季節景觀參考，非即時花況'}</div>
             </div>
             <div class="card-body">
               <div class="card-title-header">
@@ -472,10 +487,11 @@
           <button class="sub-context-pill ${isActive ? 'active' : ''}" 
                   data-id="${item.id}" 
                   onclick="handleSubItemSelection('${item.id}', this)">
-            <span class="sub-pill-name">${item.name}</span>
+            <span class="sub-pill-name" data-i18n="${item.type === 'season' ? 'home.season.' + item.val : 'home.sub.' + item.id}">${item.name}</span>
           </button>
         `;
       }).join('');
+      TabiLang.render(container);
     }
 
     function handleSubItemSelection(itemId, btn) {
@@ -533,20 +549,6 @@
           window[item.val]();
           return;
         }
-      }
-
-      // ⛩️ 更新看板標題
-      const titleHint = document.getElementById('spotsCountHint');
-      if (titleHint) {
-        const titles = {
-          'sakura': '🌸 櫻花名所',
-          'wisteria': '💜 紫藤名所',
-          'nemophila': '💙 粉蝶花海名所',
-          'hydrangea': '🪻 繡球花名所',
-          'momiji': '🍁 紅葉名所',
-          'ginkgo': '🍂 黃金銀杏名所'
-        };
-        titleHint.textContent = titles[currentSeason] || '即時精選名所';
       }
 
       renderDynamicRegionBar();
@@ -774,82 +776,82 @@
         bar.style.display = 'flex';
         bar.innerHTML = `
           <button class="feature-filter-pill pill-wisteria ${currentWisteriaFeature === 'all' ? 'active' : ''}" onclick="selectWisteriaFeature('all', this)">
-            <span>全部紫藤 (ALL)</span>
+            <span data-i18n="home.feature.wisteria.all">全部紫藤 (ALL)</span>
           </button>
           <button class="feature-filter-pill pill-wisteria ${currentWisteriaFeature === 'night' ? 'active' : ''}" onclick="selectWisteriaFeature('night', this)">
-            <span>夜藤點燈</span>
+            <span data-i18n="home.feature.wisteria.night">夜藤點燈</span>
           </button>
           <button class="feature-filter-pill pill-wisteria ${currentWisteriaFeature === 'ancient' ? 'active' : ''}" onclick="selectWisteriaFeature('ancient', this)">
-            <span>樹齡百年奇蹟大藤</span>
+            <span data-i18n="home.feature.wisteria.ancient">樹齡百年奇蹟大藤</span>
           </button>
           <button class="feature-filter-pill pill-wisteria ${currentWisteriaFeature === 'tunnel' ? 'active' : ''}" onclick="selectWisteriaFeature('tunnel', this)">
-            <span>百米紫藤長廊</span>
+            <span data-i18n="home.feature.wisteria.tunnel">百米紫藤長廊</span>
           </button>
           <button class="feature-filter-pill pill-wisteria ${currentWisteriaFeature === 'white' ? 'active' : ''}" onclick="selectWisteriaFeature('white', this)">
-            <span>珍稀白藤・八重黑龍藤</span>
+            <span data-i18n="home.feature.wisteria.white">珍稀白藤・八重黑龍藤</span>
           </button>
         `;
       } else if (activeTheme === 'nemophila') {
         bar.style.display = 'flex';
         bar.innerHTML = `
           <button class="feature-filter-pill pill-nemophila ${currentNemophilaFeature === 'all' ? 'active' : ''}" onclick="selectNemophilaFeature('all', this)">
-            <span>全部粉蝶花 (ALL)</span>
+            <span data-i18n="home.feature.nemophila.all">全部粉蝶花 (ALL)</span>
           </button>
           <button class="feature-filter-pill pill-nemophila ${currentNemophilaFeature === 'night' ? 'active' : ''}" onclick="selectNemophilaFeature('night', this)">
-            <span>夜間點燈 / 幻藍之夜</span>
+            <span data-i18n="home.feature.nemophila.night">夜間點燈 / 幻藍之夜</span>
           </button>
           <button class="feature-filter-pill pill-nemophila ${currentNemophilaFeature === 'hill' ? 'active' : ''}" onclick="selectNemophilaFeature('hill', this)">
-            <span>蔚藍山丘花海</span>
+            <span data-i18n="home.feature.nemophila.hill">蔚藍山丘花海</span>
           </button>
           <button class="feature-filter-pill pill-nemophila ${currentNemophilaFeature === 'sunset' ? 'active' : ''}" onclick="selectNemophilaFeature('sunset', this)">
-            <span>海風夕陽花田</span>
+            <span data-i18n="home.feature.nemophila.sunset">海風夕陽花田</span>
           </button>
           <button class="feature-filter-pill pill-nemophila ${currentNemophilaFeature === 'train' ? 'active' : ''}" onclick="selectNemophilaFeature('train', this)">
-            <span>觀光鐵道花丘</span>
+            <span data-i18n="home.feature.nemophila.train">觀光鐵道花丘</span>
           </button>
           <button class="feature-filter-pill pill-nemophila ${currentNemophilaFeature === 'ferris' ? 'active' : ''}" onclick="selectNemophilaFeature('ferris', this)">
-            <span>摩天輪花海全景</span>
+            <span data-i18n="home.feature.nemophila.ferris">摩天輪花海全景</span>
           </button>
         `;
       } else if (activeTheme === 'hydrangea') {
         bar.style.display = 'flex';
         bar.innerHTML = `
           <button class="feature-filter-pill pill-hydrangea ${currentHydrangeaFeature === 'all' ? 'active' : ''}" onclick="selectHydrangeaFeature('all', this)">
-            <span>🪻 全部繡球花 (ALL)</span>
+            <span data-i18n="home.feature.hydrangea.all">🪻 全部繡球花 (ALL)</span>
           </button>
           <button class="feature-filter-pill pill-hydrangea ${currentHydrangeaFeature === 'temple' ? 'active' : ''}" onclick="selectHydrangeaFeature('temple', this)">
-            <span>⛩️ 古寺紫陽花階梯</span>
+            <span data-i18n="home.feature.hydrangea.temple">⛩️ 古寺紫陽花階梯</span>
           </button>
           <button class="feature-filter-pill pill-hydrangea ${currentHydrangeaFeature === 'train' ? 'active' : ''}" onclick="selectHydrangeaFeature('train', this)">
-            <span>🚂 江之電鐵道繡球花</span>
+            <span data-i18n="home.feature.hydrangea.train">🚂 江之電鐵道繡球花</span>
           </button>
           <button class="feature-filter-pill pill-hydrangea ${currentHydrangeaFeature === 'sea' ? 'active' : ''}" onclick="selectHydrangeaFeature('sea', this)">
-            <span>🌊 蔚藍海景花道</span>
+            <span data-i18n="home.feature.hydrangea.sea">🌊 蔚藍海景花道</span>
           </button>
           <button class="feature-filter-pill pill-hydrangea ${currentHydrangeaFeature === 'water' ? 'active' : ''}" onclick="selectHydrangeaFeature('water', this)">
-            <span>💧 雨後苔庭水鏡</span>
+            <span data-i18n="home.feature.hydrangea.water">💧 雨後苔庭水鏡</span>
           </button>
         `;
       } else if (activeTheme === 'momiji') {
         bar.style.display = 'flex';
         bar.innerHTML = `
           <button class="feature-filter-pill pill-momiji ${currentMomijiFeature === 'all' ? 'active' : ''}" onclick="selectMomijiFeature('all', this)">
-            <span>全部紅葉名所 (ALL)</span>
+            <span data-i18n="home.feature.momiji.all">全部紅葉名所 (ALL)</span>
           </button>
           <button class="feature-filter-pill pill-momiji ${currentMomijiFeature === 'night' ? 'active' : ''}" onclick="selectMomijiFeature('night', this)">
-            <span>夜楓點燈</span>
+            <span data-i18n="home.feature.momiji.night">夜楓點燈</span>
           </button>
           <button class="feature-filter-pill pill-momiji ${currentMomijiFeature === 'temple' ? 'active' : ''}" onclick="selectMomijiFeature('temple', this)">
-            <span>寺廟庭園名楓</span>
+            <span data-i18n="home.feature.momiji.temple">寺廟庭園名楓</span>
           </button>
           <button class="feature-filter-pill pill-momiji ${currentMomijiFeature === 'peak' ? 'active' : ''}" onclick="selectMomijiFeature('peak', this)">
-            <span>見頃火紅</span>
+            <span data-i18n="home.feature.momiji.peak">見頃火紅</span>
           </button>
           <button class="feature-filter-pill pill-momiji ${currentMomijiFeature === 'gorge' ? 'active' : ''}" onclick="selectMomijiFeature('gorge', this)">
-            <span>溪谷峽谷絕景</span>
+            <span data-i18n="home.feature.momiji.gorge">溪谷峽谷絕景</span>
           </button>
-          <button class="feature-filter-pill pill-momiji-cafe ${currentMomijiFeature === 'cafe' ? 'active' : ''}" onclick="selectMomijiFeature('cafe', this)" title="賞楓紅葉景觀咖啡名所">
-            <span><img src="./images/icon_cafe.png" style="width:15px; height:15px; object-fit:contain; vertical-align:-2px; margin-right:3px;">賞楓咖啡店</span>
+          <button class="feature-filter-pill pill-momiji-cafe ${currentMomijiFeature === 'cafe' ? 'active' : ''}" onclick="selectMomijiFeature('cafe', this)" title="賞楓紅葉景觀咖啡名所" data-i18n-title="home.feature.momiji.cafe">
+            <span><img src="./images/icon_cafe.png" style="width:15px; height:15px; object-fit:contain; vertical-align:-2px; margin-right:3px;"><span data-i18n="home.feature.momiji.cafe">賞楓咖啡店</span></span>
           </button>
         `;
       } else if (activeTheme === 'ginkgo') {
@@ -860,28 +862,29 @@
         bar.style.display = 'flex';
         bar.innerHTML = `
           <button class="feature-filter-pill pill-sakura ${currentSakuraFeature === 'all' ? 'active' : ''}" onclick="selectSakuraFeature('all', this)">
-            <span>全部櫻花 (ALL)</span>
+            <span data-i18n="home.feature.sakura.all">全部櫻花 (ALL)</span>
           </button>
           <button class="feature-filter-pill pill-sakura ${currentSakuraFeature === 'night' ? 'active' : ''}" onclick="selectSakuraFeature('night', this)">
-            <span>夜櫻點燈</span>
+            <span data-i18n="home.feature.sakura.night">夜櫻點燈</span>
           </button>
           <button class="feature-filter-pill pill-sakura ${currentSakuraFeature === 'full_bloom' ? 'active' : ''}" onclick="selectSakuraFeature('full_bloom', this)">
-            <span>滿開吹雪</span>
+            <span data-i18n="home.feature.sakura.full_bloom">滿開吹雪</span>
           </button>
           <button class="feature-filter-pill pill-sakura ${currentSakuraFeature === 'yaezakura' ? 'active' : ''}" onclick="selectSakuraFeature('yaezakura', this)">
-            <span>晚開八重櫻</span>
+            <span data-i18n="home.feature.sakura.yaezakura">晚開八重櫻</span>
           </button>
           <button class="feature-filter-pill pill-sakura ${currentSakuraFeature === 'yoshino' ? 'active' : ''}" onclick="selectSakuraFeature('yoshino', this)">
-            <span>染井吉野櫻</span>
+            <span data-i18n="home.feature.sakura.yoshino">染井吉野櫻</span>
           </button>
-          <button class="feature-filter-pill pill-sakura-cafe ${currentSakuraFeature === 'cafe' ? 'active' : ''}" onclick="selectSakuraFeature('cafe', this)" title="全日本 40 家近距離賞櫻景觀咖啡名所">
-            <span><img src="./images/icon_cafe.png" style="width:15px; height:15px; object-fit:contain; vertical-align:-2px; margin-right:3px;">賞櫻咖啡店</span>
+          <button class="feature-filter-pill pill-sakura-cafe ${currentSakuraFeature === 'cafe' ? 'active' : ''}" onclick="selectSakuraFeature('cafe', this)" title="全日本 40 家近距離賞櫻景觀咖啡名所" data-i18n-title="home.feature.sakura.cafe">
+            <span><img src="./images/icon_cafe.png" style="width:15px; height:15px; object-fit:contain; vertical-align:-2px; margin-right:3px;"><span data-i18n="home.feature.sakura.cafe">賞櫻咖啡店</span></span>
           </button>
         `;
       } else {
         bar.style.display = 'none';
         bar.innerHTML = '';
       }
+      TabiLang.render(bar);
     }
 
     function renderDynamicRegionBar() {
@@ -893,19 +896,19 @@
         bar.innerHTML = `
           <div class="region-pills-scroll" style="display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px; scrollbar-width: none; -webkit-overflow-scrolling: touch;">
             <button class="region-pill ${currentCampRegion === 'all' ? 'active' : ''}" onclick="selectCampRegion('all', this)">
-              <span>全日本 (15)</span>
+              <span><span data-i18n="home.region.japan">全日本</span> (15)</span>
             </button>
             <button class="region-pill ${currentCampRegion === 'fuji' ? 'active' : ''}" onclick="selectCampRegion('fuji', this)">
-              <span>富士五湖 (5)</span>
+              <span><span data-i18n="home.region.fuji">富士五湖</span> (5)</span>
             </button>
             <button class="region-pill ${currentCampRegion === 'hokkaido' ? 'active' : ''}" onclick="selectCampRegion('hokkaido', this)">
-              <span>北海道 (3)</span>
+              <span><span data-i18n="home.region.hokkaido">北海道</span> (3)</span>
             </button>
             <button class="region-pill ${currentCampRegion === 'nagano' ? 'active' : ''}" onclick="selectCampRegion('nagano', this)">
-              <span>長野 (3)</span>
+              <span><span data-i18n="home.region.nagano">長野</span> (3)</span>
             </button>
             <button class="region-pill ${currentCampRegion === 'kansai_izu' ? 'active' : ''}" onclick="selectCampRegion('kansai_izu', this)">
-              <span>關西伊豆 (4)</span>
+              <span><span data-i18n="home.region.kansaiIzu">關西伊豆</span> (4)</span>
             </button>
           </div>
         `;
@@ -914,72 +917,66 @@
         bar.innerHTML = `
           <div class="region-pills-scroll" style="display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px; scrollbar-width: none; -webkit-overflow-scrolling: touch;">
             <button class="region-pill ${currentSnowRegion === 'all' ? 'active' : ''}" onclick="selectSnowRegion('all', this)">
-              <span>全日本雪場 (27)</span>
+              <span><span data-i18n="home.region.allSnow">全日本雪場</span> (27)</span>
             </button>
             <button class="region-pill ${currentSnowRegion === 'hokkaido' ? 'active' : ''}" onclick="selectSnowRegion('hokkaido', this)">
-              <span>❄️ 北海道 (7)</span>
+              <span>❄️ <span data-i18n="home.region.hokkaido">北海道</span> (7)</span>
             </button>
             <button class="region-pill ${currentSnowRegion === 'niigata' ? 'active' : ''}" onclick="selectSnowRegion('niigata', this)">
-              <span>🌾 新潟・湯澤 (6)</span>
+              <span>🌾 <span data-i18n="home.region.niigata">新潟・湯澤</span> (6)</span>
             </button>
             <button class="region-pill ${currentSnowRegion === 'nagano' ? 'active' : ''}" onclick="selectSnowRegion('nagano', this)">
-              <span>🏔️ 長野・白馬 (6)</span>
+              <span>🏔️ <span data-i18n="home.region.hakuba">長野・白馬</span> (6)</span>
             </button>
             <button class="region-pill ${currentSnowRegion === 'tohoku' ? 'active' : ''}" onclick="selectSnowRegion('tohoku', this)">
-              <span>🌲 東北・藏王 (4)</span>
+              <span>🌲 <span data-i18n="home.region.zao">東北・藏王</span> (4)</span>
             </button>
             <button class="region-pill ${currentSnowRegion === 'gunma' ? 'active' : ''}" onclick="selectSnowRegion('gunma', this)">
-              <span>♨️ 富士・關東 (4)</span>
+              <span>♨️ <span data-i18n="home.region.fujiKanto">富士・關東</span> (4)</span>
             </button>
             <button class="region-pill ${currentSnowRegion === 'olympic_fis' ? 'active' : ''}" onclick="selectSnowRegion('olympic_fis', this)">
-              <span>🏆 冬奧FIS賽道 (6)</span>
+              <span>🏆 <span data-i18n="home.region.fis">冬奧FIS賽道</span> (6)</span>
             </button>
           </div>
         `;
       } else if (currentMasterHub === 'flower') {
         bar.style.display = 'block';
-        const labels = {
-          'wisteria': '紫藤',
-          'nemophila': '粉蝶花',
-          'hydrangea': '繡球花',
-          'momiji': '紅葉',
-          'ginkgo': '銀杏',
-          'sakura': '櫻花'
-        };
-        const curLabel = labels[currentSeason] || '名所';
 
         bar.innerHTML = `
           <div class="region-pills-scroll" style="display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px; scrollbar-width: none; -webkit-overflow-scrolling: touch;">
             <button class="region-pill ${currentSakuraRegion === 'all' ? 'active' : ''}" data-region="all" onclick="selectSakuraRegion('all', this)">
-              <span>全部${curLabel} (ALL)</span>
+              <span id="allSeasonRegionLabel"></span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'kanto' ? 'active' : ''}" data-region="kanto" onclick="selectSakuraRegion('kanto', this)">
-              <span>東京・關東</span>
+              <span data-i18n="home.region.kanto">東京・關東</span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'kansai' ? 'active' : ''}" data-region="kansai" onclick="selectSakuraRegion('kansai', this)">
-              <span>京都・大阪・關西</span>
+              <span data-i18n="home.region.kansai">京都・大阪・關西</span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'tohoku' ? 'active' : ''}" data-region="tohoku" onclick="selectSakuraRegion('tohoku', this)">
-              <span>東北</span>
+              <span data-i18n="home.region.tohoku">東北</span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'chubu' ? 'active' : ''}" data-region="chubu" onclick="selectSakuraRegion('chubu', this)">
-              <span>中部・北陸</span>
+              <span data-i18n="home.region.chubu">中部・北陸</span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'hokkaido' ? 'active' : ''}" data-region="hokkaido" onclick="selectSakuraRegion('hokkaido', this)">
-              <span>北海道</span>
+              <span data-i18n="home.region.hokkaido">北海道</span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'chugoku' ? 'active' : ''}" data-region="chugoku" onclick="selectSakuraRegion('chugoku', this)">
-              <span>中國地區</span>
+              <span data-i18n="home.region.chugoku">中國地區</span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'shikoku' ? 'active' : ''}" data-region="shikoku" onclick="selectSakuraRegion('shikoku', this)">
-              <span>四國</span>
+              <span data-i18n="home.region.shikoku">四國</span>
             </button>
             <button class="region-pill ${currentSakuraRegion === 'kyushu' ? 'active' : ''}" data-region="kyushu" onclick="selectSakuraRegion('kyushu', this)">
-              <span>九州</span>
+              <span data-i18n="home.region.kyushu">九州</span>
             </button>
           </div>
         `;
       }
+      const allLabel = bar.querySelector('#allSeasonRegionLabel');
+      if (allLabel) allLabel.textContent = homeText('home.allSeason', '全部' + seasonLabel(currentSeason), { season: seasonLabel(currentSeason) });
+      TabiLang.render(bar);
     }
 
     let currentViewMode = 'grid';
@@ -1004,11 +1001,12 @@
       const isExpanded = details.classList.contains('expanded');
       if (isExpanded) {
         details.classList.remove('expanded');
-        btn.innerHTML = '<span>展開詳情 ▾</span>';
+        btn.innerHTML = '<span data-i18n="home.expand">展開詳情 ▾</span>';
       } else {
         details.classList.add('expanded');
-        btn.innerHTML = '<span>收折詳情 ▴</span>';
+        btn.innerHTML = '<span data-i18n="home.collapse">收折詳情 ▴</span>';
       }
+      TabiLang.render(btn);
     }
 
 
@@ -1086,6 +1084,19 @@
     }
 
     function renderCards() {
+      try {
+        renderCardsContent();
+      } finally {
+        const cards = document.getElementById('cards-container');
+        if (cards) {
+          TabiSpotI18n.render(cards);
+          TabiLang.render(cards);
+          if (typeof window.updateAllHeartButtons === 'function') window.updateAllHeartButtons();
+        }
+      }
+    }
+
+    function renderCardsContent() {
       const container = document.getElementById('cards-container');
       if (!container) return;
       container.innerHTML = '';
@@ -1144,7 +1155,7 @@
             if (currentSakuraFeature === 'night') {
               if (!(item.hasNightLight || (item.nightHours && item.nightHours.length > 0))) return false;
             } else if (currentSakuraFeature === 'full_bloom') {
-              const b = (item.bloomStatus || '') + (item.desc || '');
+              const b = (item.bloomReference === 'peak' ? '滿開' : '') + (item.desc || '');
               if (!(b.includes('100%') || b.includes('滿開') || b.includes('吹雪'))) return false;
             } else if (currentSakuraFeature === 'yaezakura') {
               const s = (item.species || '') + (item.title || '') + (item.subtitle || '');
@@ -1200,7 +1211,7 @@
               const t = (item.title || '') + (item.subtitle || '') + (item.desc || '');
               if (!(item.isTemple || t.includes('寺') || t.includes('院') || t.includes('堂') || t.includes('神社'))) return false;
             } else if (currentMomijiFeature === 'peak') {
-              const b = (item.bloomStatus || '') + (item.desc || '');
+              const b = (item.bloomReference === 'peak' ? '滿開' : '') + (item.desc || '');
               if (!(b.includes('見頃') || b.includes('100%') || b.includes('火紅') || b.includes('盛紅'))) return false;
             } else if (currentMomijiFeature === 'gorge') {
               const t = (item.title || '') + (item.subtitle || '') + (item.desc || '');
@@ -1269,26 +1280,20 @@
         return true;
       });
 
-      // 更新即時名所計數
+      // Count and label follow the selected language without changing filter values.
       const hint = document.getElementById('spotsCountHint');
       if (hint) {
-        const seasonName = {
-          'spots': '全日本精選',
-          'sakura': '🌸 櫻花名所',
-          'hanabi': '🎆 夏夜花火',
-          'snow': '❄️ 極上雪場',
-          'momiji': '🍁 秋楓見頃',
-          'ginkgo': '🍂 金黃銀杏'
-        }[currentSeason] || '即時名所';
-        hint.textContent = `${seasonName} (${filtered.length})`;
+        const count = new Intl.NumberFormat(TabiLang.get()).format(filtered.length);
+        hint.textContent = homeText('home.count', seasonLabel(currentSeason) + ' (' + count + ')', { season: seasonLabel(currentSeason), count: count });
       }
 
       if (filtered.length === 0) {
         container.className = 'spots-grid-layout';
         container.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:60px 20px; color:#A0AEC0;">
           <div style="font-size:38px; margin-bottom:8px;">⛩️</div>
-          <div style="font-size:1rem; font-weight:900;">此條件下暫無景點，請點選「全部收錄」查看！</div>
+          <div style="font-size:1rem; font-weight:900;" data-i18n="home.empty">此條件下暫無景點，請點選「全部」查看！</div>
         </div>`;
+        TabiLang.render(container);
         return;
       }
 
@@ -1298,6 +1303,7 @@
         filtered.forEach(item => {
           const itemEl = document.createElement('div');
           itemEl.className = 'spot-list-item';
+          TabiSpotI18n.attach(itemEl, item);
           itemEl.onclick = () => openReadingSheet(item.id);
 
           let metricTag = '';
@@ -1313,7 +1319,7 @@
               <div class="spot-list-tags">
                 <span class="spot-list-tag">${item.tag}</span>
                 ${metricTag}
-                ${item.report && item.report.hasReport ? `<span class="spot-list-tag" style="color:#E11D48; background:#FFF1F5;">⚡ 特派員實測</span>` : ''}
+                ${item.report && item.report.hasReport ? `<span class="spot-list-tag" style="color:#E11D48; background:#FFF1F5;">歷史編輯紀錄</span>` : ''}
               </div>
             </div>
             <div class="spot-list-arrow">➔</div>
@@ -1323,15 +1329,8 @@
         return;
       }
 
-      // 依 ID 去除重複項目
-      const seenIds = new Set();
-      const uniqueFiltered = [];
-      filtered.forEach(it => {
-        if (!seenIds.has(it.id)) {
-          seenIds.add(it.id);
-          uniqueFiltered.push(it);
-        }
-      });
+      // Source IDs are checked for uniqueness; never silently hide conflicting records.
+      const uniqueFiltered = filtered;
 
       // 標準卡片模式 (3 欄 Grid + 漸進式揭露縮短高度 40%)
       container.className = 'spots-grid-layout';
@@ -1346,8 +1345,9 @@
         card.className = `tabi-card theme-${item.theme} ${isNight ? 'is-night-theme-card' : ''} ${isNightMomiji ? 'card-night-momiji' : ''}`;
         card.id = `spot-card-${item.id}`;
         card.setAttribute('data-spot-id', item.id);
+        TabiSpotI18n.attach(card, item);
 
-        const isFav = isFavorite(item.id);
+        const isFav = isFavorite(item.id, item.title, item.region);
         const klookFinalUrl = ensureKlookAffiliate(item.klookUrl, item);
         const bookingFinalUrl = ensureBookingAffiliate(item.bookingUrl, item);
         const isFlowerOrMomiji = (item.theme === 'sakura' || item.theme === 'momiji' || item.category === 'flower');
@@ -1357,7 +1357,7 @@
         const nightPhoto = item.nightImg || defaultNightPhoto;
         const activeCoverImg = isNight ? nightPhoto : item.img;
 
-        // 站長親訪認證標籤
+        // 站長歷史紀錄標籤
         const verifyBadge = (item.report && item.report.hasReport)
           ? `<span class="live-verify-badge">⚡ 今早 07:30 現場實測</span>`
           : ``;
@@ -1412,104 +1412,104 @@
         } else if (item.theme === 'camp') {
           statusTagText = item.siteStatus || item.viewRating || '⛺ 絕景露營席位';
         } else if (item.theme === 'wisteria') {
-          statusTagText = item.bloomStatus || '💜 盛開見頃 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'nemophila') {
-          statusTagText = item.bloomStatus || '🩵 盛開花海 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'hydrangea') {
-          statusTagText = item.bloomStatus || '💠 見頃盛開 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'momiji') {
-          statusTagText = item.bloomStatus || '🍁 見頃火紅 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'ginkgo') {
-          statusTagText = item.bloomStatus || '🍂 純金見頃 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'lavender') {
-          statusTagText = item.bloomStatus || '🪻 薰衣草見頃 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'shibazakura') {
-          statusTagText = item.bloomStatus || '🌸 芝櫻地毯見頃 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'cosmos') {
-          statusTagText = item.bloomStatus || '💮 波斯菊盛開 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'ume') {
-          statusTagText = item.bloomStatus || '🌺 早春梅花見頃 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else if (item.theme === 'sakura') {
-          statusTagText = item.bloomStatus || '🌸 滿開 (100%)';
+          statusTagText = item.bloomStatus || '季節景觀參考，非即時花況';
         } else {
           statusTagText = item.bloomStatus || '✨ 即時推薦';
         }
 
-        // 情境專屬元數據 (避免露營/滑雪出現「櫻花品種：染井吉野櫻」)
+        // 情境專屬元數據 (避免露營/滑雪出現「櫻花<span data-i18n="spotUI.species">品種</span>：染井吉野櫻」)
         let metaRowContent = '';
         if (item.theme === 'snow') {
           metaRowContent = `
             <span class="meta-tag-pill">⛷️ 雪質：${item.species || '100% 天然輕粉雪 JAPOW'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '新幹線 / 巴士直達雪場'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '新幹線 / 巴士直達雪場'}</span>
           `;
         } else if (item.theme === 'camp') {
           metaRowContent = `
             <span class="meta-tag-pill">⛺ 營地：${item.campTypeInfo ? item.campTypeInfo.split('｜')[0].trim() : (item.siteStatus || '絕景露營')}</span>
-            <span class="meta-tag-pill">🛣️ 交通：${item.navInfo || item.locationDetail || '自駕導航直達'}</span>
+            <span class="meta-tag-pill">🛣️ <span data-i18n="spotUI.transit">交通</span>：${item.navInfo || item.locationDetail || '自駕導航直達'}</span>
           `;
         } else if (item.theme === 'wisteria') {
           metaRowContent = `
-            <span class="meta-tag-pill">💜 特色：${item.species || '樹齡160年奇蹟大藤'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '鄰近車站步行即達'}</span>
+            <span class="meta-tag-pill">💜 <span data-i18n="spotUI.feature">特色</span>：${item.species || '樹齡160年奇蹟大藤'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '鄰近車站步行即達'}</span>
             ${item.hasNightLight ? `<span class="meta-tag-pill" style="color:#7E22CE; background:#FAF5FF; border-color:#E9D5FF;">${item.nightHours || '🏮 夜間紫藤光影點燈'}</span>` : ''}
           `;
         } else if (item.theme === 'nemophila') {
           metaRowContent = `
-            <span class="meta-tag-pill">🩵 特色：${item.species || '琉璃唐草530萬株純藍花毯'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '直達接駁巴士即達'}</span>
+            <span class="meta-tag-pill">🩵 <span data-i18n="spotUI.feature">特色</span>：${item.species || '琉璃唐草530萬株純藍花毯'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '直達接駁巴士即達'}</span>
           `;
         } else if (item.theme === 'hydrangea') {
           metaRowContent = `
-            <span class="meta-tag-pill">💠 特色：${item.species || '明月院藍姬繡球2,500株'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '古道步行即達'}</span>
+            <span class="meta-tag-pill">💠 <span data-i18n="spotUI.feature">特色</span>：${item.species || '明月院藍姬繡球2,500株'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '古道步行即達'}</span>
             ${item.hasNightLight ? `<span class="meta-tag-pill" style="color:#6D28D9; background:#F5F3FF; border-color:#DDD6FE;">${item.nightHours || '🏮 夜間紫陽花點燈'}</span>` : ''}
           `;
         } else if (item.theme === 'ginkgo') {
           metaRowContent = `
-            <span class="meta-tag-pill">🍂 特色：${item.species || '300米純金大道・百年修剪並木'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '地鐵出站即達'}</span>
+            <span class="meta-tag-pill">🍂 <span data-i18n="spotUI.feature">特色</span>：${item.species || '300米純金大道・百年修剪並木'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '地鐵出站即達'}</span>
             ${item.hasNightLight ? `<span class="meta-tag-pill" style="color:#854D0E; background:#FEFCE8; border-color:#FEF08A;">${item.nightHours || '🏮 16:30 - 19:30 銀杏夜間彩燈'}</span>` : ''}
           `;
         } else if (item.theme === 'lavender') {
           metaRowContent = `
-            <span class="meta-tag-pill">🪻 特色：${item.species || '濃紫早咲・丘陵紫色花毯'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || 'JR 富良野線直達'}</span>
+            <span class="meta-tag-pill">🪻 <span data-i18n="spotUI.feature">特色</span>：${item.species || '濃紫早咲・丘陵紫色花毯'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || 'JR 富良野線直達'}</span>
             ${item.hasNightLight ? `<span class="meta-tag-pill" style="color:#6D28D9; background:#FAF5FF; border-color:#DDD6FE;">${item.nightHours || '🏮 夜間薰衣草光影點燈'}</span>` : ''}
           `;
         } else if (item.theme === 'shibazakura') {
           metaRowContent = `
-            <span class="meta-tag-pill">🌸 特色：${item.species || '粉紅・白・淡紫百萬株芝櫻花毯'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '直達接駁巴士即達'}</span>
+            <span class="meta-tag-pill">🌸 <span data-i18n="spotUI.feature">特色</span>：${item.species || '粉紅・白・淡紫百萬株芝櫻花毯'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '直達接駁巴士即達'}</span>
             ${item.hasNightLight ? `<span class="meta-tag-pill" style="color:#BE185D; background:#FDF2F8; border-color:#FBCFE8;">${item.nightHours || '🏮 夜間芝櫻特別點燈'}</span>` : ''}
           `;
         } else if (item.theme === 'cosmos') {
           metaRowContent = `
-            <span class="meta-tag-pill">💮 特色：${item.species || '大波斯菊盛開・秋櫻黃金夕陽'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '公園入口步行即達'}</span>
+            <span class="meta-tag-pill">💮 <span data-i18n="spotUI.feature">特色</span>：${item.species || '大波斯菊盛開・秋櫻黃金夕陽'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '公園入口步行即達'}</span>
             ${item.hasNightLight ? `<span class="meta-tag-pill" style="color:#B45309; background:#FEF3C7; border-color:#FDE68A;">${item.nightHours || '🏮 秋夜波斯菊點燈'}</span>` : ''}
           `;
         } else if (item.theme === 'ume') {
           metaRowContent = `
-            <span class="meta-tag-pill">🌺 特色：${item.species || '神木飛梅・極上白梅紅梅'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '神社參道步行即達'}</span>
+            <span class="meta-tag-pill">🌺 <span data-i18n="spotUI.feature">特色</span>：${item.species || '神木飛梅・極上白梅紅梅'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '神社參道步行即達'}</span>
             ${item.hasNightLight ? `<span class="meta-tag-pill" style="color:#BE123C; background:#FFF1F2; border-color:#FECDD3;">${item.nightHours || '🏮 夜梅特別點燈'}</span>` : ''}
           `;
         } else if (item.theme === 'momiji') {
           metaRowContent = `
-            <span class="meta-tag-pill">🍁 品種：${item.species || '伊呂波楓・山紅葉'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '鄰近車站步行即達'}</span>
+            <span class="meta-tag-pill">🍁 <span data-i18n="spotUI.species">品種</span>：${item.species || '伊呂波楓・山紅葉'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '鄰近車站步行即達'}</span>
             ${(isNight || item.hasNightLight) ? `<span class="meta-tag-pill spot-night-meta" style="color:#BE123C; background:#FFF1F2; border-color:#FDA4AF;">${item.nightHours || '🏮 17:00 - 20:30 夜間點燈'}</span>` : ''}
           `;
         } else if (item.theme === 'sakura') {
           metaRowContent = `
-            <span class="meta-tag-pill">🌸 品種：${item.species || '染井吉野櫻'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '鄰近地鐵站步行即達'}</span>
+            <span class="meta-tag-pill">🌸 <span data-i18n="spotUI.species">品種</span>：${item.species || '染井吉野櫻'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '鄰近地鐵站步行即達'}</span>
             ${(isNight || item.hasNightLight) ? `<span class="meta-tag-pill spot-night-meta" style="color:#BE123C; background:#FFF1F2; border-color:#FDA4AF; display:${(isNight || item.hasNightLight) ? 'inline-flex' : 'none'};">${item.nightHours || '🏮 17:00 - 20:00 夜間點燈'}</span>` : ''}
           `;
         } else {
           metaRowContent = `
-            <span class="meta-tag-pill">📍 特色：${item.species || safeSubtitle || '全日本精選絕景'}</span>
-            <span class="meta-tag-pill">🚇 交通：${item.locationDetail || '鄰近車站步行即達'}</span>
+            <span class="meta-tag-pill">📍 <span data-i18n="spotUI.feature">特色</span>：${item.species || safeSubtitle || '全日本精選絕景'}</span>
+            <span class="meta-tag-pill">🚇 <span data-i18n="spotUI.transit">交通</span>：${item.locationDetail || '鄰近車站步行即達'}</span>
           `;
         }
 
@@ -1575,8 +1575,8 @@
                 <img src="./images/icon_cafe.png" alt="cafe" style="width:28px; height:28px; object-fit:contain; flex-shrink:0; margin-top:2px;">
                 <div style="flex:1;">
                   <div style="font-size:0.75rem; font-weight:800; letter-spacing:0.06em; color:#BE185D; margin-bottom:3px; display:flex; align-items:center; gap:6px;">
-                    <span>🌸 看櫻花喝咖啡推薦店家</span>
-                    <span style="background:#FCE7F3; color:#9D174D; font-size:0.68rem; padding:1px 6px; border-radius:4px; font-weight:700;">步行即達</span>
+                    <span data-i18n="spotUI.cafeSakura">🌸 看櫻花喝咖啡推薦店家</span>
+                    <span style="background:#FCE7F3; color:#9D174D; font-size:0.68rem; padding:1px 6px; border-radius:4px; font-weight:700;" data-i18n="spotUI.walkable">步行即達</span>
                   </div>
                   <div style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.02rem; font-weight:900; color:#0F172A; letter-spacing:-0.01em; line-height:1.35; margin-bottom:2px;">
                     ${item.sakuraCafe.name}
@@ -1593,8 +1593,8 @@
                 <img src="./images/icon_cafe.png" alt="cafe" style="width:28px; height:28px; object-fit:contain; flex-shrink:0; margin-top:2px;">
                 <div style="flex:1;">
                   <div style="font-size:0.75rem; font-weight:800; letter-spacing:0.06em; color:#92400E; margin-bottom:3px; display:flex; align-items:center; gap:6px;">
-                    <span>🍁 看楓葉喝咖啡推薦店家</span>
-                    <span style="background:#EFE7DE; color:#78350F; font-size:0.68rem; padding:1px 6px; border-radius:4px; font-weight:700;">楓景名座</span>
+                    <span data-i18n="spotUI.cafeMomiji">🍁 看楓葉喝咖啡推薦店家</span>
+                    <span style="background:#EFE7DE; color:#78350F; font-size:0.68rem; padding:1px 6px; border-radius:4px; font-weight:700;" data-i18n="spotUI.autumnView">楓景名座</span>
                   </div>
                   <div style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.02rem; font-weight:900; color:#0F172A; letter-spacing:-0.01em; line-height:1.35; margin-bottom:2px;">
                     ${item.momijiCafe.name}
@@ -1776,7 +1776,7 @@
                 </button>
                 <div class="camp-qa-accordion-panel" id="campQa_${item.id}">
                   <b>【外國人自駕露營防踩雷須知】</b><br>
-                  • <b>駕照必備</b>：台灣旅客必須備妥「台灣駕照正本 ＋ 日文譯本 ＋ 護照」（國際駕照無效）。<br>
+                  • <b>駕照必備</b>：台灣旅客必須備妥「台灣駕照正本 ＋ 日文譯本 ＋ 護照」（台灣核發 IDP 不能取代上述文件）。<br>
                   • <b>車宿規定</b>：不可在一般超商停車場過夜，必須停靠合法的 RV Park 或汽車露營場。<br>
                   • <b>車高限制</b>：露營車高度達 2.8～3.1m，嚴禁進入市區立體或地下機械停車場。<br>
                   • <b>冬季防滑</b>：冬季山區行駛（12月~4月）租車請務必勾選「Studless 雪胎」。
@@ -1786,10 +1786,10 @@
             <!-- 🌟 名所卡片微型膠囊切換器 (預設美食日料，自由切換住宿) -->
             <div class="spot-pills-switcher">
               <button class="spot-switch-pill active" id="tabBtn_${item.id}_food" onclick="switchSpotCardTab('${item.id}', 'food', this); event.stopPropagation();">
-                <span>美食日料</span>
+                <span data-i18n="spotUI.food">美食日料</span>
               </button>
               <button class="spot-switch-pill" id="tabBtn_${item.id}_stay" onclick="switchSpotCardTab('${item.id}', 'stay', this); event.stopPropagation();">
-                <span>推薦住宿</span>
+                <span data-i18n="spotUI.stay">推薦住宿</span>
               </button>
             </div>
 
@@ -1829,13 +1829,13 @@
             ` : (item.category === 'hanabi' || item.theme === 'hanabi') ? `
               <div class="card-action-bar hanabi-action-bar">
                 <a href="${item.yukataUrl || 'https://www.klook.com/zh-TW/search/result/?query=%E6%B5%B4%E8%A1%A3%E9%AB%94%E9%A9%97&aid=123436&utm_medium=affiliate-alwayson'}" target="_blank" class="btn-act-clean btn-act-secondary" title="預約浴衣" onclick="event.stopPropagation();">
-                  <span>浴衣體驗</span>
+                  <span data-i18n="spotUI.yukata">浴衣體驗</span>
                 </a>
                 <a href="${item.houseboatUrl || klookFinalUrl}" target="_blank" class="btn-act-clean btn-act-primary" title="預約觀覽席或屋形船" onclick="event.stopPropagation();">
-                  <span>觀覽席票</span>
+                  <span data-i18n="spotUI.viewingSeats">觀覽席票</span>
                 </a>
                 <a href="${bookingFinalUrl}" target="_blank" class="btn-act-clean btn-act-secondary" title="預約周邊住宿" onclick="event.stopPropagation();">
-                  <span>查看訂房</span>
+                  <span data-i18n="spotUI.booking">查看訂房</span>
                 </a>
               </div>
             ` : `
@@ -1844,10 +1844,10 @@
                   <span>${isNightMomiji ? '夜間門票' : '預約門票'}</span>
                 </a>
                 <a href="${bookingFinalUrl}" target="_blank" class="btn-act-clean btn-act-secondary" onclick="event.stopPropagation();">
-                  <span>查看訂房</span>
+                  <span data-i18n="spotUI.booking">查看訂房</span>
                 </a>
                 <a href="${item.charterUrl || 'japan_charter_rental.html'}" target="_blank" class="btn-act-clean btn-act-tertiary" onclick="event.stopPropagation();" title="包車一日遊直達景點">
-                  <span>包車直達</span>
+                  <span data-i18n="spotUI.charter">包車直達</span>
                 </a>
               </div>
             `}
@@ -1961,11 +1961,11 @@
 
         ${pitfallsHtml}
 
-        <!-- 🏅 官方特約觀測現地取材認證標章 -->
+        <!-- 🏅 旅遊資料整理標章 -->
         <div class="official-verify-badge-stamp">
           <div style="font-size:26px;">🏅</div>
           <div>
-            <div style="font-weight:900; font-size:0.88rem; color:#78350F;">日旅報報 官方特約觀測現地取材認證</div>
+            <div style="font-weight:900; font-size:0.88rem; color:#78350F;">日旅報報 旅遊資料整理</div>
             <div style="font-size:0.75rem; color:#92400E; margin-top:3px; line-height:1.5;">
               本文情報經現地特派員實地走訪校驗｜嚴禁未經授權爬蟲搬運、AI 仿製與商業轉載。
             </div>
@@ -2576,9 +2576,8 @@
     function ensureBookingAffiliate(url, item) {
       const l = (typeof currentLang !== 'undefined') ? currentLang : 'zh-TW';
       const locMap = { 'en': 'en-gb', 'th': 'th', 'ja': 'ja', 'ko': 'ko', 'zh-CN': 'zh-cn', 'zh-TW': 'zh-tw' };
-      const curMap = { 'en': 'USD', 'th': 'THB', 'ja': 'JPY', 'ko': 'KRW', 'zh-CN': 'CNY', 'zh-TW': 'TWD' };
       const loc = locMap[l] || 'zh-tw';
-      const cur = curMap[l] || 'TWD';
+      const cur = 'TWD'; // Keep the site currency default independent of display language.
       const city = getSpotCity(item);
 
       // 提取景點純淨名稱，組合成名所景點周邊 3~5km 精準搜尋（例如：舞鶴公園 福岡、千鳥之淵 東京）
@@ -3184,6 +3183,7 @@
           fetch('data/i18n.json', { cache: 'no-store' }).then(r => r.json())
         ]).then(function (data) {
           SPOTS_DATABASE = data[0];
+          TabiSpotI18n.registerSources(SPOTS_DATABASE);
           TRAINS_DATABASE = data[1];
           COMMUNITY_FEEDS = data[2];
           MASTER_HUBS_CONFIG = data[3];
@@ -3197,10 +3197,11 @@
     }
 
     TabiLang.onChange(setLanguage);
+    TabiSpotI18n.ready.then(function () { return loadAllData(); }).then(function () { renderCards(); }).catch(function (error) { console.debug('Spot localization skipped:', error); });
 
     loadAllData().then(function () {
       renderDynamicRegionBar();
-      setLanguage(currentLang);
+      setLanguage(TabiLang.get());
       renderCards();
       renderCommunityFeeds();
       initCanvasFX();
@@ -3291,7 +3292,7 @@
       const idx = favs.findIndex(item => String(item.id) === String(id));
       if (idx > -1) {
         favs.splice(idx, 1);
-        if (typeof showToast === 'function') showToast('已從行程收藏本移除：' + title, '💔');
+        if (typeof showToast === 'function') showToast(homeText('home.favoriteRemoved', '已從行程收藏本移除：' + title, { title: title }), '💔');
       } else {
         let spot = null;
         if (typeof SPOTS_DATABASE !== 'undefined') spot = SPOTS_DATABASE.find(s => String(s.id) === String(id));
@@ -3317,7 +3318,7 @@
           navUrl: navUrl,
           addedAt: new Date().toISOString()
         });
-        if (typeof showToast === 'function') showToast('已加入行程收藏本：' + title, '❤️');
+        if (typeof showToast === 'function') showToast(homeText('home.favoriteAdded', '已加入行程收藏本：' + title, { title: title }), '❤️');
       }
       try { localStorage.setItem('TABI_FAVORITES_V1', JSON.stringify(favs)); } catch (e) { }
       updateFavoriteBadge();
@@ -3396,18 +3397,18 @@
     }
 
     function clearAllFavorites() {
-      if (confirm('確定要清空所有收藏的日本行程景點嗎？')) {
+      if (confirm(homeText('home.clearConfirm', '確定要清空所有收藏的日本行程景點嗎？'))) {
         saveFavorites([]);
         renderCards();
         renderFavoritesList();
-        showToast('已清空所有行程收藏！', '🗑️');
+        showToast(homeText('home.cleared', '已清空所有行程收藏！'), '🗑️');
       }
     }
 
     function copyMyFavoritesItinerary() {
       const favs = getFavorites();
       if (favs.length === 0) {
-        showToast('目前尚無收藏項目可匯出！', '⚠️');
+        showToast(homeText('home.nothingToExport', '目前尚無收藏項目可匯出！'), '⚠️');
         return;
       }
       let text = "🎌【我的日本旅行排程清單 ｜ 日旅報報 收藏本】\n";
@@ -3419,9 +3420,9 @@
       text += "行程規劃來源：《日旅報報 JAPAN TABI》\n" + window.location.href;
 
       navigator.clipboard.writeText(text).then(() => {
-        showToast('已複製行程文字清單至剪貼簿！可直接貼至記事本。', '📋');
+        showToast(homeText('home.copied', '已複製行程文字清單至剪貼簿！可直接貼至記事本。'), '📋');
       }).catch(() => {
-        showToast('複製失敗，請手動複製！', '⚠️');
+        showToast(homeText('home.copyFailed', '複製失敗，請手動複製！'), '⚠️');
       });
     }
 
@@ -3572,27 +3573,27 @@
     }
 
     function copyDrivingChecklist() {
-      const text = `🎌【日本自駕出發前必備備忘錄 ｜ 日旅報報 官方認證】
+      const text = `🎌【日本自駕出發前必備備忘錄 ｜ 日旅報報 行前資料整理】
 =========================================
 1. 🪪 證件清單：
-   - 台灣旅客：台灣駕照實體正本 ＋ 監理站日文譯本正本 ＋ 護照正本 (國際駕照在日無效！)
+   - 台灣旅客：台灣駕照實體正本 ＋ 監理站日文譯本正本 ＋ 護照正本 (台灣核發 IDP 不適用此替代方式；其他駕照依核發地規定)
    - 港澳旅客：國際駕照 (IDP 1949公約) ＋ 本地駕照正本 ＋ 護照正本
 2. 💳 ETC 與過路費：
    - 取車時加租 ETC 卡片 (閘道減速至 20km/h 通過)
 3. ⛽ 加油要點：
    - 汽油車加「Regular (レギュラー，紅色油槍)」，切勿加錯柴油軽油！
 4. 🛑 重要交規：
-   - 鐵路平交道前方必須「一時停止」完全煞停 3 秒確認無車
+   - 鐵路平交道前方必須「一時停止」完全停車，確認左右及列車動態安全後再通過
    - 右轉車必須絕對禮讓對向直行車與左轉車先行
-   - 嚴禁路邊違規停車，違者重罰 15,000~25,000 日圓
+   - 嚴禁路邊違規停車，違規處理與金額依違規種類、車種及程序而異
 5. 🆘 緊急求助 SOP：
    - 報警：110 ｜ 救護：119 ｜ 道路救援：#8139
-   - 即使輕微擦撞也必須報警開立「事故證明書」，保險方可理賠！
+   - 發生事故應報警並聯絡租車公司，保留所需紀錄；理賠與自負額仍依合約判定。
 =========================================
 來源：《日旅報報 JAPAN TABI》日本自駕指南
 ${window.location.href}`;
 
-      navigator.clipboard.writeText(text).then(() => {
+      navigator.clipboard.writeText(window.TabiI18n ? text.split('\n').map(function (line) { return TabiI18n.text(line); }).join('\n') : text).then(() => {
         showToast('已複製自駕備忘錄清單至剪貼簿！可貼至手機備忘錄。', '📋');
       }).catch(() => {
         showToast('複製成功！', '📋');

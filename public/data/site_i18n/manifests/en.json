@@ -1,0 +1,12 @@
+{
+  "name": "Japan Travel News｜Tokyo and Osaka real-time flower seasons, fireworks, snow resorts and attractions App",
+  "short_name": "Japan Travel News",
+  "description": "A one-click shopping guide app for real-time flower seasons (WNI), fireworks displays, snow season ski resorts, hot springs and Klook tickets and surrounding hotels in various regions of Japan specially created for Taiwanese tourists",
+  "start_url": "../../../index.html?lang=en",
+  "display": "standalone",
+  "background_color": "#fff9f6",
+  "theme_color": "#e04f5f",
+  "lang": "en",
+  "scope": "../../../",
+  "id": "../../../index.html"
+}

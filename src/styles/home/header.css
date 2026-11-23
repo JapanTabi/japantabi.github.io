@@ -25,7 +25,7 @@
 .home-header .header-rate-label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   color: #094f8d;
   font-size: 0.65rem;
   font-weight: 700;
@@ -36,7 +36,7 @@
   color: #787b80;
   font-size: 0.6rem;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
 }
 
 .home-header #headerJpyRate {
@@ -89,8 +89,8 @@
   }
 
   .home-header .header-left { padding-right: 12px; }
-  .home-header .header-rate-label { gap: 6px; font-size: 0.6rem; }
-  .home-header .header-rate-label > span { font-size: 0.55rem; }
+  .home-header .header-rate-label { flex-direction: column; align-items: flex-start; gap: 1px; font-size: 0.6rem; }
+  .home-header .header-rate-label > span { font-size: 0.55rem; white-space: normal; }
   .home-header #headerJpyRate { font-size: 0.72rem; }
   .home-header .brand-wrap { gap: 8px !important; }
   .home-header .fuji-logo-box { width: 40px !important; height: 40px !important; }

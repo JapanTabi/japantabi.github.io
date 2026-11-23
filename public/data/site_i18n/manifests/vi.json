@@ -1,0 +1,12 @@
+{
+  "name": "Tin tức du lịch Nhật Bản｜Tokyo và Osaka Mùa hoa thời gian thực, pháo hoa, khu nghỉ dưỡng tuyết và các điểm tham quan Ứng dụng",
+  "short_name": "Tin tức du lịch Nhật Bản",
+  "description": "Ứng dụng hướng dẫn mua sắm chỉ bằng một cú nhấp chuột cho các mùa hoa theo thời gian thực (WNI), màn bắn pháo hoa, khu nghỉ dưỡng trượt tuyết mùa tuyết, suối nước nóng và vé Klook cũng như các khách sạn xung quanh ở nhiều vùng khác nhau của Nhật Bản được tạo riêng cho khách du lịch Đài Loan",
+  "start_url": "../../../index.html?lang=vi",
+  "display": "standalone",
+  "background_color": "#fff9f6",
+  "theme_color": "#e04f5f",
+  "lang": "vi",
+  "scope": "../../../",
+  "id": "../../../index.html"
+}

@@ -3,10 +3,21 @@
 
 <head>
   <script src="/js/lang_switcher.js"></script>
+  <script src="/js/translation_memory.js"></script>
+  <script src="/js/site_i18n.js"></script>
+  <script src="/js/booking_locale.js"></script>
+  <script src="/js/spot_identity.js"></script>
+  <script src="/js/spot_i18n.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/images/japan_tabi_logo.png">
   <title>日本經典鐵道之旅 ｜ 日旅報報 JAPAN TABI 官方旗艦指南</title>
+  <meta name="description" content="比較日本觀光列車與新幹線的路線、車廂、餐飲、交通及預約方式，規劃鐵道旅程。">
+  <meta property="og:title" content="日本經典鐵道之旅 ｜ 日旅報報 JAPAN TABI 官方旗艦指南">
+  <meta property="og:description" content="比較日本觀光列車與新幹線的路線、車廂、餐飲、交通及預約方式，規劃鐵道旅程。">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:title" content="日本經典鐵道之旅 ｜ 日旅報報 JAPAN TABI 官方旗艦指南">
+  <meta name="twitter:description" content="比較日本觀光列車與新幹線的路線、車廂、餐飲、交通及預約方式，規劃鐵道旅程。">
 
   <!-- Editorial Typography: Kinfolk & Cereal Aesthetic (與 japan_special_edition.html 同步) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1164,17 +1175,17 @@
 
     <!-- 🌟 官網正中間品牌標誌與文字排版 (54px 官方雙環 Logo，精準居中對齊) -->
     <div class="header-center">
-      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI">
+      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI" data-i18n-title="brand.name">
         <div class="fuji-logo-box">
           <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo" class="brand-tabi-logo">
         </div>
         <div class="brand-text">
           <h1 id="brandTitle">
-            <span class="brand-title-zh" id="brandTitleZh">日旅報報</span>
+            <span class="brand-title-zh" id="brandTitleZh" data-i18n="brand.name">日旅報報</span>
           </h1>
           <div class="brand-sub-official-wrap">
             <span class="brand-title-en" id="brandTitleEn">JAPAN TABI</span>
-            <span class="brand-tag-official" id="brandTag">日本觀光情報</span>
+            <span class="brand-tag-official" id="brandTag" data-i18n="brand.tag">日本觀光情報</span>
           </div>
         </div>
       </a>
@@ -1183,28 +1194,28 @@
     <!-- 🌟 頂部右側統一功能按鈕群 (純文字無外框無ICON ＋ 🌐 Language 保留外框與ICON) -->
     <div class="header-right">
       <a href="japan_entry_rules.html" class="header-entry-pill" title="最新日本入境規範、免稅新制與海關申報手冊"
-        style="background:#EA580C; color:#FFFFFF; font-weight:700; font-size:0.82rem; padding:5px 12px; border-radius:999px; text-decoration:none; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; margin-right:4px;">
-        <span>最新入境規範</span>
+        style="background:#EA580C; color:#FFFFFF; font-weight:700; font-size:0.82rem; padding:5px 12px; border-radius:999px; text-decoration:none; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s; white-space:nowrap; display:inline-flex; align-items:center; gap:4px; margin-right:4px;" data-i18n-title="nav.entry">
+        <span data-i18n="nav.entry">最新入境規範</span>
       </a>
-      <a href="japan_flight_deals.html" class="header-nav-link " title="日本空港手帖・機場探索指南">
-        <span>查機票</span>
+      <a href="japan_flight_deals.html" class="header-nav-link " title="日本空港手帖・機場探索指南" data-i18n-title="nav.flights">
+        <span data-i18n="nav.flights">查機票</span>
       </a>
-      <a href="japan_charter_rental.html" class="header-nav-link " title="日本客製包車 ＆ 自駕租車指南">
-        <span>包車/租車</span>
+      <a href="japan_charter_rental.html" class="header-nav-link " title="日本客製包車 ＆ 自駕租車指南" data-i18n-title="nav.charter">
+        <span data-i18n="nav.charter">包車/租車</span>
       </a>
-      <a href="japan_okinawa_drive.html" class="header-nav-link " title="沖繩海島不繞路自駕攻略">
-        <span>沖繩自駕</span>
+      <a href="japan_okinawa_drive.html" class="header-nav-link " title="沖繩海島不繞路自駕攻略" data-i18n-title="nav.okinawa">
+        <span data-i18n="nav.okinawa">沖繩自駕</span>
       </a>
-      <a href="japan_inbound_rankings.html" class="header-nav-link " title="日本排行榜">
-        <span>日本排行</span>
+      <a href="japan_inbound_rankings.html" class="header-nav-link " title="日本排行榜" data-i18n-title="nav.rankings">
+        <span data-i18n="nav.rankings">日本排行</span>
       </a>
-      <a href="japan_special_edition.html" class="header-nav-link " title="深度文章・高質感日本文化與戶外誌">
-        <span>深度文章</span>
+      <a href="japan_special_edition.html" class="header-nav-link " title="深度文章・高質感日本文化與戶外誌" data-i18n-title="nav.articles">
+        <span data-i18n="nav.articles">深度文章</span>
       </a>
 
       <!-- 🌐 前台多國語言切換器 (Language Selector) -->
       <div class="lang-selector-dropdown-wrap" id="langSelectorWrap">
-        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言">
+        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言" data-i18n-title="langLabel">
           <span class="util-btn-icon">🌐</span>
           <span id="currentLangLabel">Language</span>
           <span class="lang-arrow" id="langArrow">▾</span>
@@ -2074,16 +2085,16 @@
             <div
               style="font-family:'Shippori Mincho', serif; font-size:1.05rem; font-weight:700; color:#0F172A; letter-spacing:1px; line-height:1.2;">
               JAPAN TABI</div>
-            <div style="font-size:0.7rem; color:#64748B; margin-top:2px;">日旅報報 品牌創立</div>
+            <div style="font-size:0.7rem; color:#64748B; margin-top:2px;" data-i18n="footer.foundingTitle">日旅報報 品牌創立</div>
           </div>
         </div>
       </div>
       <div class="tabi-footer-manifesto-right">
         <h3
-          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.05rem; font-weight:700; color:#0F172A; margin:0 0 10px; letter-spacing:1px;">
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.05rem; font-weight:700; color:#0F172A; margin:0 0 10px; letter-spacing:1px;" data-i18n="footer.foundingLabel">
           《日旅報報》品牌創立：</h3>
         <p
-          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:0.9rem; color:#1E293B; line-height:1.8; margin:0 0 4px;">
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:0.9rem; color:#1E293B; line-height:1.8; margin:0 0 4px;" data-i18n="footer.foundingQuote">
           「因為太喜歡日本，想把四季最動人、最真實的美麗，完整介紹給全世界熱愛旅行的人。」</p>
         <p
           style="font-family:'Shippori Mincho', serif; font-size:0.8rem; color:#64748B; font-style:italic; line-height:1.8; margin:0;">
@@ -2102,68 +2113,67 @@
               style="width:100%; height:100%; object-fit:cover;">
           </div>
           <h4
-            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;">
+            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;" data-i18n="footer.brand">
             日旅報報 JAPAN TABI</h4>
         </div>
-        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;">
+        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;" data-i18n="footer.description">
           日本の四季を彩る花期前線・夏の夜空を彩る花火大会・パウダースノー観測・名所特約ガイド。現地取材に基づき厳選された観光情報を、最高水準の自由旅行へお届けします。
         </p>
         <div
           style="padding:12px 16px; background:#FFFFFF; border-left:3.5px solid #92400E; border-top:1px solid #E2E8F0; border-right:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0; border-radius:8px; font-size:0.76rem; color:#64748B; line-height:1.65; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
-          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;">🏅 官方特約觀測現地取材認證</div>
-          <div>全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
+          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;" data-i18n="footer.accreditation">🏅 官方特約觀測現地取材認證</div>
+          <div data-i18n="footer.copyrightNotice">全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
         </div>
         <div
           style="font-size:0.78rem; color:#64748B; line-height:1.75; padding:10px 14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
-          <div>✉️ <strong>《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
+          <div>✉️ <strong data-i18n="footer.contact">《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
               style="color:#92400E; text-decoration:none; font-weight:700;">himydream.studio0220@gmail.com</a></div>
-          <div style="margin-top:3px;">📍 <strong>日本連絡處：</strong>東京都港区 ｜ JAPAN TABI 編集室 企画推進部</div>
+          <div style="margin-top:3px;">📍 <strong data-i18n="footer.japanOffice">日本連絡處：</strong><span data-i18n="footer.officeAddress">東京都港区 ｜ JAPAN TABI 編集室 企画推進部</span></div>
         </div>
       </div>
 
       <!-- 第 2 欄：核心專欄導覽 (完整串連頁面連結) -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.explore">
           探索日本
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
-          <li><a href="index.html" class="footer-nav-link"><span>首頁情報 ｜ 賞花玩雪最前線</span></a></li>
-          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span>機場手帖 ｜ 11大空港散策中心</span></a></li>
-          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span>私人包車 ｜ 彈性包車自由行</span></a></li>
-          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span>沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
-          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span>美食指南 ｜ 必吃米其林百名店</span></a></li>
+          <li><a href="index.html" class="footer-nav-link"><span data-i18n="footer.homeLink">首頁情報 ｜ 賞花玩雪最前線</span></a></li>
+          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span data-i18n="footer.airportsLink">機場手帖 ｜ 11大空港散策中心</span></a></li>
+          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span data-i18n="footer.charterLink">私人包車 ｜ 彈性包車自由行</span></a></li>
+          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span data-i18n="footer.okinawaLink">沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
+          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span data-i18n="footer.foodLink">美食指南 ｜ 必吃米其林百名店</span></a></li>
           <li><a href="japan_special_edition.html" class="footer-nav-link"
-              style="color:#92400E; font-weight:700;"><span>深度報導 ｜ 日本文化特刊報導</span></a></li>
+              style="color:#92400E; font-weight:700;"><span data-i18n="footer.storiesLink">深度報導 ｜ 日本文化特刊報導</span></a></li>
         </ul>
       </div>
 
       <!-- 第 3 欄：專題企劃 ＆ 攻略指南 -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.practical">
           實用專區
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
           <li><a href="japan_ski_resorts.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;">全日本 27
+                style="display:block; color:#0F172A;" data-i18n="footer.skiLink">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;" data-i18n="footer.skiDescription">全日本 27
                 大雪場・中文教練・即時雪況速報</small></a></li>
           <li><a href="japan_entry_rules.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">最新入境規範專頁</strong><small style="color:#64748B;">2025/2026 免稅新制・VJW
-                申報手冊</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.entryLink">最新入境規範專頁</strong><small style="color:#64748B;" data-i18n="footer.entryDescription">2026 年 11 月退稅制・VJW 申報指南</small></a></li>
           <li><a href="japan_theme_parks.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">遊樂園攻略</strong><small style="color:#64748B;">迪士尼・環球影城
+                style="display:block; color:#0F172A;" data-i18n="footer.parksLink">遊樂園攻略</strong><small style="color:#64748B;" data-i18n="footer.parksDescription">迪士尼・環球影城
                 USJ・吉卜力公園</small></a></li>
           <li><a href="japan_train_tour.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">火車和搭車指南</strong><small style="color:#64748B;">新幹線・JR
+                style="display:block; color:#0F172A;" data-i18n="footer.trainsLink">火車和搭車指南</strong><small style="color:#64748B;" data-i18n="footer.trainsDescription">新幹線・JR
                 Pass・觀光列車乘車券</small></a></li>
           <li><a href="japan_flight_deals.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;">全日本 11
+                style="display:block; color:#0F172A;" data-i18n="footer.airportGuide">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;" data-i18n="footer.airportDescription">全日本 11
                 大核心機場・必吃美食・展望台・免稅伴手禮</small></a></li>
         </ul>
       </div>
@@ -2171,26 +2181,26 @@
       <!-- 第 4 欄：特別刊號推薦 (深度文章直達連結) -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.selected">
           日本精選
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">沖繩自駕特刊</strong><small
-                style="color:#64748B;">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.okinawaStory">沖繩自駕特刊</strong><small
+                style="color:#64748B;" data-i18n="footer.okinawaDescription">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本米其林和牛</strong><small
-                style="color:#64748B;">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.wagyuStory">日本米其林和牛</strong><small
+                style="color:#64748B;" data-i18n="footer.wagyuDescription">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">溫泉名湯特輯</strong><small
-                style="color:#64748B;">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.onsenStory">溫泉名湯特輯</strong><small
+                style="color:#64748B;" data-i18n="footer.onsenDescription">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本世界遺產</strong><small
-                style="color:#64748B;">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.heritageStory">日本世界遺產</strong><small
+                style="color:#64748B;" data-i18n="footer.heritageDescription">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
         </ul>
       </div>
 
@@ -2203,12 +2213,12 @@
         <span style="font-weight:700; color:#334155;">© JAPAN TABI ジャパン・タビ ｜ 全日本観光情報局 All Rights Reserved.</span>
         <a href="japan_privacy_policy.html"
           style="color:#64748B; text-decoration:none; margin-left:8px; font-weight:600; transition:color 0.2s;"
-          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'">隱私權政策</a>
+          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'" data-i18n="privacy">隱私權政策</a>
         <div style="display:flex; align-items:center; gap:12px;">
           <!-- Instagram -->
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》官方 Instagram"
             style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
-            onmouseout="this.style.color='#64748B'">
+            onmouseout="this.style.color='#64748B'" data-i18n-title="social.instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
               stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -2219,7 +2229,7 @@
           <!-- Threads -->
           <a href="https://www.threads.net" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》Threads"
             style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
-            onmouseout="this.style.color='#64748B'">
+            onmouseout="this.style.color='#64748B'" data-i18n-title="social.threads">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 3.328 0 6.273-1.624 8.077-4.116-.367-.375-.72-.764-1.057-1.168-1.47 2.05-3.9 3.384-6.65 3.384-4.524 0-8.2-3.676-8.2-8.2s3.676-8.2 8.2-8.2 8.2 3.676 8.2 8.2c0 2.39-.77 4.542-2.316 5.867-1.18.995-2.766 1.433-4.534 1.258-2.678-.266-4.59-2.368-4.59-5.045 0-2.88 2.21-5.18 5.14-5.18 1.94 0 3.518.95 4.19 2.52.17.41.31.85.4 1.3h-1.85c-.08-.3-.21-.58-.38-.83-.45-.66-1.3-1.09-2.36-1.09-1.85 0-3.24 1.45-3.24 3.28 0 1.74 1.25 3.14 3.01 3.31 1.28.13 2.37-.18 3.12-.81.98-.83 1.5-2.22 1.5-3.96 0-5.4-4.32-9.8-9.67-9.8z" />
@@ -2231,7 +2241,7 @@
       <button onclick="window.scrollTo({top:0, behavior:'smooth'})"
         style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:999px; padding:6px 16px; font-weight:700; cursor:pointer; color:#334155; transition:all 0.2s;"
         onmouseover="this.style.borderColor='#92400E'; this.style.color='#92400E';"
-        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';">
+        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';" data-i18n="backToTop">
         ▲ 回到頂部
       </button>
     </div>
@@ -2682,9 +2692,8 @@
         a.target = '_blank';
         a.rel = 'noopener noreferrer';
         const locMap = { 'en': 'en-gb', 'th': 'th', 'ja': 'ja', 'ko': 'ko', 'zh-CN': 'zh-cn', 'zh-TW': 'zh-tw' };
-        const curMap = { 'en': 'USD', 'th': 'THB', 'ja': 'JPY', 'ko': 'KRW', 'zh-CN': 'CNY', 'zh-TW': 'TWD' };
         const loc = locMap[savedLang] || 'zh-tw';
-        const cur = curMap[savedLang] || 'TWD';
+        const cur = 'TWD'; // Keep the site currency default independent of display language.
         let newHref = href.replace(/searchresults\.[a-z\-]+\.html/, `searchresults.${loc}.html`);
         if (!newHref.includes('aid=')) {
           const sep = newHref.includes('?') ? '&' : '?';

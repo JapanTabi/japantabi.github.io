@@ -1,0 +1,55 @@
+.showcase-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 4%);
+  scroll-snap-align: start;
+  color: #475569;
+}
+.showcase-image-wrap { position: relative; height: 150px; flex-shrink: 0; overflow: hidden; }
+.showcase-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.showcase-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  width: fit-content;
+  max-width: calc(100% - 20px);
+  padding: 4px 8px;
+  border-radius: 10px;
+  color: #fff;
+  background: rgb(15 23 42 / 85%);
+  font-size: .7rem;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  backdrop-filter: blur(4px);
+}
+.showcase-festival .showcase-badge { background: rgb(180 83 9 / 92%); }
+.showcase-body { display: flex; flex-direction: column; flex: 1; min-width: 0; padding: 14px; overflow-wrap: anywhere; }
+.showcase-body h3 { margin: 0 0 4px; color: #0f172a; font-size: 1.05rem; font-weight: 800; line-height: 1.4; }
+.showcase-original, .showcase-location { margin-bottom: 6px; color: #64748b; font-size: .75rem; }
+.showcase-original[hidden] { display: none; }
+.showcase-meta { margin-bottom: 8px; color: #0284c7; font-size: .72rem; font-weight: 700; line-height: 1.5; }
+.showcase-festival .showcase-meta { color: #b45309; }
+.showcase-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0 0 12px;
+  font-size: .78rem;
+  line-height: 1.5;
+}
+.showcase-detail { padding: 8px 10px; margin-top: auto; margin-bottom: 12px; border-radius: 8px; background: #f8fafc; color: #334155; font-size: .72rem; line-height: 1.5; }
+.showcase-detail-label { color: #0f172a; }
+.showcase-festival .showcase-detail { background: #fef3c7; color: #92400e; }
+.showcase-festival .showcase-detail-label { color: inherit; }
+.showcase-booking { display: block; padding: 8px; border: 1px solid #fecdd3; border-radius: 10px; background: #fff1f2; color: #e11d48; font-size: .8rem; font-weight: 800; line-height: 1.5; text-align: center; text-decoration: none; }
+.showcase-booking:hover { background: #ffe4e6; }
+.showcase-transit { margin: 0; padding-top: 8px; border-top: 1px dashed #e2e8f0; font-size: .72rem; line-height: 1.5; }
+.showcase-state, .showcase-notice { margin: 0; padding: 12px 0; color: #64748b; font-size: .8rem; line-height: 1.5; }

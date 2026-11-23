@@ -1,0 +1,2613 @@
+{
+  "entries": {
+    "hirosaki_night_sakura": {
+      "source": {
+        "id": "hirosaki_night_sakura",
+        "theme": "sakura",
+        "region": "tohoku",
+        "fields": {
+          "title": "弘前公園（鷹揚園）",
+          "subtitle": "日本三大夜櫻之一！2600株櫻花染紅護城河櫻花花筏",
+          "tag": "青森・弘前市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・枝垂櫻 (2600株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 22:00 (護城河夜櫻花筏與天守閣點燈)；本季日期與時段以官方公告為準",
+          "desc": "全日本公認最美夜櫻！弘前城本丸與護城河水面完全被粉紅花瓣覆蓋，夜間燈火映照成著名的「粉紅花毯花筏」，如幻境般震撼。",
+          "locationDetail": "JR 奧羽本線「弘前站」搭乘市內公車約 15 分鐘至市役所前",
+          "sakuraCafe.name": "STARBUCKS 弘前公園前店 (有形文化財洋館)",
+          "sakuraCafe.feature": "大正建築紅磚洋房・弘前外濠櫻花花筏徒步1分鐘・弘前限定滴濾咖啡"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "弘前公園（鷹揚園）",
+          "subtitle": "日本三大夜櫻之一！2600株櫻花染紅護城河櫻花花筏",
+          "tag": "青森・弘前市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・枝垂櫻 (2600株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 22:00 (護城河夜櫻花筏與天守閣點燈)；本季日期與時段以官方公告為準",
+          "desc": "全日本公認最美夜櫻！弘前城本丸與護城河水面完全被粉紅花瓣覆蓋，夜間燈火映照成著名的「粉紅花毯花筏」，如幻境般震撼。",
+          "locationDetail": "JR 奧羽本線「弘前站」搭乘市內公車約 15 分鐘至市役所前",
+          "sakuraCafe.name": "STARBUCKS 弘前公園前店 (有形文化財洋館)",
+          "sakuraCafe.feature": "大正建築紅磚洋房・弘前外濠櫻花花筏徒步1分鐘・弘前限定滴濾咖啡"
+        },
+        "zh-CN": {
+          "title": "弘前公园（鹰扬园）",
+          "subtitle": "日本三大夜樱之一，2,600 株樱花与护城河花筏",
+          "tag": "青森・弘前市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、垂枝樱（2,600 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:30–22:00：护城河花筏与天守阁亮灯；本季日期与时段以官方公告为准",
+          "desc": "弘前城本丸与护城河被粉红花瓣覆盖，夜灯映照出著名的花筏，形成如梦似幻的夜樱景色。",
+          "locationDetail": "JR 奥羽本线弘前站乘市内巴士约 15 分钟至市役所前",
+          "sakuraCafe.name": "STARBUCKS 弘前公园前店（有形文化财洋馆）",
+          "sakuraCafe.feature": "大正时代红砖洋馆，步行一分钟可达外濠花筏，提供弘前限定滴滤咖啡"
+        },
+        "en": {
+          "title": "Hirosaki Park (Ōyōen)",
+          "subtitle": "One of Japan’s three great night-sakura sights: 2,600 trees and petal rafts on the moat",
+          "tag": "Hirosaki, Aomori",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and weeping cherries (2,600 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:30–22:00: illuminated moat petals and castle tower; confirm this season’s dates and hours with the organizer",
+          "desc": "Pink petals blanket Hirosaki Castle’s inner grounds and moat. Night lighting reveals the famous floating petal rafts, creating a dreamlike cherry blossom scene.",
+          "locationDetail": "From JR Hirosaki Station (Ōu Main Line), take a city bus about 15 minutes to Shiyakusho-mae",
+          "sakuraCafe.name": "Starbucks Hirosaki Kōen-mae (registered heritage building)",
+          "sakuraCafe.feature": "A Taishō-era red-brick building, one minute from the moat’s petal rafts, with Hirosaki-exclusive drip coffee"
+        },
+        "ja": {
+          "title": "弘前公園（鷹揚園）",
+          "subtitle": "日本三大夜桜の一つ。2,600本の桜と外濠の花筏",
+          "tag": "青森県弘前市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・しだれ桜（2,600本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:30〜22:00：外濠の花筏と天守をライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "弘前城本丸や濠をピンクの花びらが彩ります。夜の灯りに照らされる名物の花筏が、幻想的な夜桜の風景を生み出します。",
+          "locationDetail": "JR奥羽本線弘前駅から市内バス約15分、市役所前下車",
+          "sakuraCafe.name": "スターバックス弘前公園前店（登録有形文化財）",
+          "sakuraCafe.feature": "大正時代の赤レンガ洋館。外濠の花筏まで徒歩1分、弘前限定のドリップコーヒーも"
+        },
+        "ko": {
+          "title": "히로사키 공원",
+          "subtitle": "일본 3대 야간 벚꽃 명소, 벚나무 2,600그루와 해자의 꽃잎 뗏목",
+          "tag": "아오모리현 히로사키시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·수양벚꽃 (2,600그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:30~22:00: 해자 꽃잎과 천수각 야간 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "히로사키성 본성과 해자가 분홍 꽃잎으로 물듭니다. 밤 조명 아래 유명한 꽃잎 뗏목이 드러나 환상적인 벚꽃 풍경을 만듭니다.",
+          "locationDetail": "JR 오우 본선 히로사키역에서 시내버스 약 15분, 시야쿠쇼마에 하차",
+          "sakuraCafe.name": "스타벅스 히로사키 공원 앞점 (등록 유형문화재 건물)",
+          "sakuraCafe.feature": "다이쇼 시대 붉은 벽돌 건물, 해자 꽃잎 뗏목까지 도보 1분, 히로사키 한정 드립 커피"
+        },
+        "th": {
+          "title": "สวนฮิโรซากิ",
+          "subtitle": "หนึ่งในสามจุดชมซากุระกลางคืนชื่อดังของญี่ปุ่น ต้นซากุระ 2,600 ต้นและแพกลีบในคูน้ำ",
+          "tag": "เมืองฮิโรซากิ อาโอโมริ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและซากุระกิ่งย้อย (2,600 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:30–22:00: ประดับไฟแพกลีบซากุระในคูน้ำและหอปราสาท โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "กลีบซากุระสีชมพูปกคลุมเขตปราสาทชั้นในและคูน้ำฮิโรซากิ แสงยามค่ำเผยแพกลีบอันโด่งดัง สร้างภาพซากุระราวความฝัน",
+          "locationDetail": "จากสถานี JR ฮิโรซากิ สายโออุ นั่งรถบัสเมืองประมาณ 15 นาที ลงชิยากุโชมาเอะ",
+          "sakuraCafe.name": "สตาร์บัคส์ฮิโรซากิโคเอ็นมาเอะ (อาคารมรดกขึ้นทะเบียน)",
+          "sakuraCafe.feature": "อาคารอิฐแดงยุคไทโช เดินหนึ่งนาทีถึงแพกลีบในคูน้ำ พร้อมกาแฟดริปเฉพาะฮิโรซากิ"
+        },
+        "vi": {
+          "title": "Công viên Hirosaki",
+          "subtitle": "Một trong ba điểm ngắm anh đào đêm nổi tiếng Nhật Bản, 2.600 cây và bè cánh hoa trên hào",
+          "tag": "Hirosaki, Aomori",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào rủ (2.600 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:30–22:00: thắp sáng bè cánh hoa trên hào và tháp thành; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Cánh hoa hồng phủ khu thành trong và hào của lâu đài Hirosaki. Ánh đèn đêm soi những bè cánh hoa nổi tiếng, tạo cảnh anh đào như mơ.",
+          "locationDetail": "Từ ga JR Hirosaki (tuyến Ōu), đi xe buýt nội thành khoảng 15 phút đến Shiyakusho-mae",
+          "sakuraCafe.name": "Starbucks Hirosaki Kōen-mae (tòa nhà di sản đã đăng ký)",
+          "sakuraCafe.feature": "Biệt thự gạch đỏ thời Taishō, cách bè cánh hoa trên hào một phút đi bộ, có cà phê drip riêng của Hirosaki"
+        },
+        "hi": {
+          "title": "हिरोसाकी पार्क",
+          "subtitle": "जापान के तीन प्रसिद्ध रात्रि-सकुरा स्थलों में एक: 2,600 पेड़ और खाई पर पंखुड़ियों की चादर",
+          "tag": "हिरोसाकी, आओमोरी",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और झुके हुए सकुरा (2,600 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:30–22:00: खाई की पंखुड़ियों और महल के मुख्य टावर की रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "गुलाबी पंखुड़ियाँ हिरोसाकी महल के भीतरी परिसर और खाई को ढक देती हैं। रात की रोशनी में प्रसिद्ध तैरती पंखुड़ियों की चादर एक स्वप्निल दृश्य बनाती है।",
+          "locationDetail": "JR ओउ मुख्य लाइन के हिरोसाकी स्टेशन से सिटी बस द्वारा लगभग 15 मिनट में शियाकुशो-माए",
+          "sakuraCafe.name": "स्टारबक्स हिरोसाकी कोएन-माए (पंजीकृत विरासत भवन)",
+          "sakuraCafe.feature": "ताइशो काल का लाल ईंटों का भवन, खाई की पंखुड़ियों से एक मिनट पैदल, हिरोसाकी-विशेष ड्रिप कॉफ़ी के साथ"
+        },
+        "es": {
+          "title": "Parque de Hirosaki",
+          "subtitle": "Uno de los tres grandes lugares de sakura nocturno de Japón: 2.600 árboles y pétalos en el foso",
+          "tag": "Hirosaki, Aomori",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos llorones (2.600 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:30–22:00: iluminación de pétalos en el foso y torre del castillo; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Los pétalos rosados cubren el recinto interior y el foso del castillo de Hirosaki. La iluminación nocturna revela sus famosas alfombras flotantes y crea un paisaje de ensueño.",
+          "locationDetail": "Desde JR Hirosaki (línea Ōu), autobús urbano unos 15 minutos hasta Shiyakusho-mae",
+          "sakuraCafe.name": "Starbucks Hirosaki Kōen-mae (edificio patrimonial registrado)",
+          "sakuraCafe.feature": "Edificio de ladrillo rojo de la era Taishō, a un minuto de los pétalos del foso, con café de filtro exclusivo de Hirosaki"
+        }
+      }
+    },
+    "takada_night_sakura": {
+      "source": {
+        "id": "takada_night_sakura",
+        "theme": "sakura",
+        "region": "chubu",
+        "fields": {
+          "title": "高田城址公園",
+          "subtitle": "日本三大夜櫻首屈一指！三層櫓倒映櫻花雪浪",
+          "tag": "新潟・上越市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (4000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (高田三重櫓夜櫻點燈與櫻花大道)；本季日期與時段以官方公告為準",
+          "desc": "德川家康六男松平忠輝居城。4000株櫻花在3000盞紙雪洞燈籠照耀下，與護城河三層櫓同框倒映，美不勝收。",
+          "locationDetail": "越後心動鐵道「高田站」徒步 15 分鐘"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "高田城址公園",
+          "subtitle": "日本三大夜櫻首屈一指！三層櫓倒映櫻花雪浪",
+          "tag": "新潟・上越市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (4000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (高田三重櫓夜櫻點燈與櫻花大道)；本季日期與時段以官方公告為準",
+          "desc": "德川家康六男松平忠輝居城。4000株櫻花在3000盞紙雪洞燈籠照耀下，與護城河三層櫓同框倒映，美不勝收。",
+          "locationDetail": "越後心動鐵道「高田站」徒步 15 分鐘"
+        },
+        "zh-CN": {
+          "title": "高田城址公园",
+          "subtitle": "日本三大夜樱之一，三层橹倒映樱花海",
+          "tag": "新潟・上越市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱（4,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–21:00：三重橹与樱花大道亮灯；本季日期与时段以官方公告为准",
+          "desc": "德川家康六子松平忠辉的居城。4,000 株樱花在 3,000 盏纸灯笼照耀下，与护城河及三层橹同框倒映。",
+          "locationDetail": "越后心动铁道高田站步行约 15 分钟"
+        },
+        "en": {
+          "title": "Takada Castle Site Park",
+          "subtitle": "One of Japan’s three great night-sakura sights, with a three-story turret reflected among blossoms",
+          "tag": "Jōetsu, Niigata",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino cherries (4,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–21:00: three-story turret and cherry blossom avenue illuminations; confirm this season’s dates and hours with the organizer",
+          "desc": "The former castle of Matsudaira Tadateru, Tokugawa Ieyasu’s sixth son. Around 4,000 cherry trees glow beneath 3,000 paper lanterns, reflected with the three-story turret in the moat.",
+          "locationDetail": "About 15 minutes on foot from Takada Station on the Echigo Tokimeki Railway"
+        },
+        "ja": {
+          "title": "高田城址公園",
+          "subtitle": "日本三大夜桜の一つ。三重櫓と桜が水面を彩る",
+          "tag": "新潟県上越市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ（4,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜21:00：三重櫓と桜並木をライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "徳川家康の六男・松平忠輝の居城跡。約4,000本の桜が3,000個のぼんぼりに照らされ、三重櫓とともに濠に映ります。",
+          "locationDetail": "えちごトキめき鉄道高田駅から徒歩約15分"
+        },
+        "ko": {
+          "title": "다카다성터 공원",
+          "subtitle": "일본 3대 야간 벚꽃 명소, 꽃물결에 비치는 3층 망루",
+          "tag": "니가타현 조에쓰시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노 벚꽃 (4,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~21:00: 3층 망루와 벚꽃길 야간 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "도쿠가와 이에야스의 여섯째 아들 마쓰다이라 다다테루의 성터입니다. 벚나무 약 4,000그루가 종이등 3,000개의 빛 아래 3층 망루와 함께 해자에 비칩니다.",
+          "locationDetail": "에치고 도키메키 철도 다카다역에서 도보 약 15분"
+        },
+        "th": {
+          "title": "สวนซากปราสาททาคาดะ",
+          "subtitle": "หนึ่งในสามจุดชมซากุระกลางคืนชื่อดัง พร้อมเงาหอคอยสามชั้นท่ามกลางดอกไม้",
+          "tag": "เมืองโจเอ็ตสึ นีงาตะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "ซากุระโซเมอิโยชิโนะ (4,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–21:00: ประดับไฟหอคอยสามชั้นและทางซากุระ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "อดีตปราสาทของมัตสึไดระ ทาดาเตรุ บุตรคนที่หกของโทกูงาวะ อิเอยาสุ ซากุระราว 4,000 ต้นสว่างด้วยโคมกระดาษ 3,000 ดวง สะท้อนคู่หอคอยสามชั้นในคูน้ำ",
+          "locationDetail": "เดินประมาณ 15 นาทีจากสถานีทาคาดะ รถไฟเอจิโกะโทคิเมกิ"
+        },
+        "vi": {
+          "title": "Công viên di tích thành Takada",
+          "subtitle": "Một trong ba điểm anh đào đêm nổi tiếng, tháp ba tầng soi giữa biển hoa",
+          "tag": "Jōetsu, Niigata",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào Somei Yoshino (4.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–21:00: thắp sáng tháp ba tầng và đại lộ anh đào; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Thành cũ của Matsudaira Tadateru, con trai thứ sáu của Tokugawa Ieyasu. Khoảng 4.000 cây anh đào dưới 3.000 đèn lồng giấy soi cùng tháp ba tầng xuống hào.",
+          "locationDetail": "Đi bộ khoảng 15 phút từ ga Takada, đường sắt Echigo Tokimeki"
+        },
+        "hi": {
+          "title": "ताकादा महल स्थल पार्क",
+          "subtitle": "जापान के तीन प्रसिद्ध रात्रि-सकुरा स्थलों में एक, फूलों के बीच झलकता तीन मंज़िला बुर्ज",
+          "tag": "जोएत्सु, नीगाता",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो सकुरा (4,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–21:00: तीन मंज़िला बुर्ज और सकुरा पथ की रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "तोकुगावा इएयासु के छठे पुत्र मात्सुदाइरा तदातेरु का पूर्व महल। लगभग 4,000 सकुरा पेड़ 3,000 कागज़ी लालटेनों में चमकते हैं और तीन मंज़िला बुर्ज के साथ खाई में प्रतिबिंबित होते हैं।",
+          "locationDetail": "एचिगो तोकिमेकि रेलवे के ताकादा स्टेशन से लगभग 15 मिनट पैदल"
+        },
+        "es": {
+          "title": "Parque del Castillo de Takada",
+          "subtitle": "Uno de los tres grandes lugares de sakura nocturno, con una torre de tres plantas reflejada entre flores",
+          "tag": "Jōetsu, Niigata",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Somei Yoshino (4.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–21:00: iluminación de la torre de tres plantas y la avenida de cerezos; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Antiguo castillo de Matsudaira Tadateru, sexto hijo de Tokugawa Ieyasu. Unos 4.000 cerezos brillan bajo 3.000 faroles de papel y se reflejan con la torre de tres plantas en el foso.",
+          "locationDetail": "Unos 15 minutos a pie desde Takada, ferrocarril Echigo Tokimeki"
+        }
+      }
+    },
+    "ueno_park_night_spot": {
+      "source": {
+        "id": "ueno_park_night_spot",
+        "theme": "sakura",
+        "region": "kanto",
+        "fields": {
+          "title": "上野恩賜公園",
+          "subtitle": "東京下町百年經典夜櫻！不忍池畔千盞紙燈籠倒影",
+          "tag": "東京・台東區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・山櫻 (1200株)",
+          "nightHours": "歷年夜間時段參考：🏮 17:30 - 20:00 (櫻花大道紙雪洞燈籠點燈)；本季日期與時段以官方公告為準",
+          "desc": "自江戶時代起即為日本第一花見勝地。長達數百公尺的櫻花主步道兩側懸掛1000盞古雅紙雪洞燈籠，夜晚人潮熙攘充滿江戶花見節慶熱情。",
+          "locationDetail": "JR / 東京地下鐵「上野站」公園口出站即達",
+          "sakuraCafe.name": "STARBUCKS COFFEE 上野恩賜公園店",
+          "sakuraCafe.feature": "櫻花林圍繞之木造自然採光玻璃屋・戶外大木桌第一排・櫻花限定抹茶戚風"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "上野恩賜公園",
+          "subtitle": "東京下町百年經典夜櫻！不忍池畔千盞紙燈籠倒影",
+          "tag": "東京・台東區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・山櫻 (1200株)",
+          "nightHours": "歷年夜間時段參考：🏮 17:30 - 20:00 (櫻花大道紙雪洞燈籠點燈)；本季日期與時段以官方公告為準",
+          "desc": "自江戶時代起即為日本第一花見勝地。長達數百公尺的櫻花主步道兩側懸掛1000盞古雅紙雪洞燈籠，夜晚人潮熙攘充滿江戶花見節慶熱情。",
+          "locationDetail": "JR / 東京地下鐵「上野站」公園口出站即達",
+          "sakuraCafe.name": "STARBUCKS COFFEE 上野恩賜公園店",
+          "sakuraCafe.feature": "櫻花林圍繞之木造自然採光玻璃屋・戶外大木桌第一排・櫻花限定抹茶戚風"
+        },
+        "zh-CN": {
+          "title": "上野恩赐公园",
+          "subtitle": "东京下町经典夜樱，纸灯笼倒映不忍池畔",
+          "tag": "东京・台东区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、山樱（1,200 株）",
+          "nightHours": "往年夜间时段参考：🏮 17:30–20:00：樱花大道纸灯笼亮灯；本季日期与时段以官方公告为准",
+          "desc": "自江户时代起就是著名赏花地。数百米长的樱花步道两侧悬挂约 1,000 盏纸灯笼，夜晚人潮热闹，充满传统花见气氛。",
+          "locationDetail": "JR 或东京地下铁上野站公园口出站即达",
+          "sakuraCafe.name": "STARBUCKS COFFEE 上野恩赐公园店",
+          "sakuraCafe.feature": "樱花林中的木造玻璃屋与自然采光，户外木桌近距离赏花，供应樱花限定抹茶戚风"
+        },
+        "en": {
+          "title": "Ueno Park",
+          "subtitle": "Classic Tokyo night blossoms and lantern reflections by Shinobazu Pond",
+          "tag": "Taitō, Tokyo",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and mountain cherries (1,200 trees)",
+          "nightHours": "Past-season evening hours: 🏮 17:30–20:00: paper lanterns along the cherry blossom avenue; confirm this season’s dates and hours with the organizer",
+          "desc": "A celebrated blossom-viewing spot since the Edo period. About 1,000 paper lanterns line a cherry avenue stretching hundreds of meters, filling the lively evenings with traditional hanami atmosphere.",
+          "locationDetail": "Just outside the Park Exit of JR / Tokyo Metro Ueno Station",
+          "sakuraCafe.name": "Starbucks Coffee Ueno Onshi Park",
+          "sakuraCafe.feature": "A bright timber-and-glass café among cherry trees, with outdoor wooden tables and seasonal matcha chiffon cake"
+        },
+        "ja": {
+          "title": "上野恩賜公園",
+          "subtitle": "東京下町の夜桜。ぼんぼりと不忍池の風景",
+          "tag": "東京都台東区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・ヤマザクラ（1,200本）",
+          "nightHours": "過去の夜間時間の参考：🏮 17:30〜20:00：桜並木のぼんぼりを点灯。今季の日程・時間は公式発表を確認してください",
+          "desc": "江戸時代から親しまれる花見の名所。数百メートルの桜並木に約1,000個のぼんぼりが並び、夜も賑やかな花見の風情を楽しめます。",
+          "locationDetail": "JR・東京メトロ上野駅公園口からすぐ",
+          "sakuraCafe.name": "スターバックス上野恩賜公園店",
+          "sakuraCafe.feature": "桜に囲まれた自然光の入る木造ガラス張りのカフェ。屋外の木製テーブルと桜限定の抹茶シフォン"
+        },
+        "ko": {
+          "title": "우에노 공원",
+          "subtitle": "도쿄의 전통 야간 벚꽃, 시노바즈 연못가의 등불",
+          "tag": "도쿄도 다이토구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·산벚꽃 (1,200그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 17:30~20:00: 벚꽃길 종이등 점등 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "에도 시대부터 사랑받은 꽃놀이 명소입니다. 수백 미터 벚꽃길 양옆에 종이등 약 1,000개가 걸려 밤에도 활기찬 전통 하나미 분위기를 즐길 수 있습니다.",
+          "locationDetail": "JR·도쿄 메트로 우에노역 공원 출구에서 바로 연결",
+          "sakuraCafe.name": "스타벅스 우에노 온시 공원점",
+          "sakuraCafe.feature": "벚나무에 둘러싸인 채광 좋은 목조 유리 카페, 야외 나무 테이블과 벚꽃 시즌 한정 말차 시폰"
+        },
+        "th": {
+          "title": "สวนอุเอโนะ",
+          "subtitle": "ซากุระกลางคืนแบบดั้งเดิมของโตเกียวและเงาโคมริมบ่อชิโนบาซุ",
+          "tag": "เขตไทโตะ โตเกียว",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและซากุระภูเขา (1,200 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 17:30–20:00: โคมกระดาษตามทางซากุระ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "จุดชมดอกไม้ที่มีชื่อเสียงตั้งแต่ยุคเอโดะ โคมกระดาษราว 1,000 ดวงเรียงตามทางซากุระหลายร้อยเมตร ยามค่ำคึกคักด้วยบรรยากาศฮานามิแบบดั้งเดิม",
+          "locationDetail": "ใกล้ทางออกสวนสาธารณะของสถานี JR/โตเกียวเมโทรอุเอโนะ",
+          "sakuraCafe.name": "สตาร์บัคส์คอฟฟี่สวนอุเอโนะ",
+          "sakuraCafe.feature": "คาเฟ่ไม้และกระจกสว่างท่ามกลางซากุระ มีโต๊ะไม้กลางแจ้งและชิฟฟอนมัทฉะตามฤดูกาล"
+        },
+        "vi": {
+          "title": "Công viên Ueno",
+          "subtitle": "Anh đào đêm truyền thống Tokyo và bóng đèn lồng bên hồ Shinobazu",
+          "tag": "Taitō, Tokyo",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào núi (1.200 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 17:30–20:00: đèn lồng giấy dọc đại lộ anh đào; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Nổi tiếng về ngắm hoa từ thời Edo, lối anh đào dài hàng trăm mét được trang trí khoảng 1.000 đèn lồng giấy, tạo không khí hanami truyền thống nhộn nhịp về đêm.",
+          "locationDetail": "Ngay ngoài cửa Công viên của ga JR / Tokyo Metro Ueno",
+          "sakuraCafe.name": "Starbucks Coffee Ueno Onshi Park",
+          "sakuraCafe.feature": "Quán gỗ và kính sáng tự nhiên giữa cây anh đào, bàn gỗ ngoài trời và bánh chiffon matcha theo mùa"
+        },
+        "hi": {
+          "title": "उएनो पार्क",
+          "subtitle": "टोक्यो के पुराने इलाके की रात्रि-सकुरा और शिनोबाज़ु तालाब के पास लालटेनें",
+          "tag": "ताइतो, टोक्यो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और पहाड़ी सकुरा (1,200 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 17:30–20:00: सकुरा पथ की कागज़ी लालटेनें; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "एदो काल से प्रसिद्ध फूल-दर्शन स्थल। सैकड़ों मीटर लंबे सकुरा पथ पर लगभग 1,000 कागज़ी लालटेनें सजी हैं, और जीवंत शामें पारंपरिक हनामी का माहौल रचती हैं।",
+          "locationDetail": "JR / टोक्यो मेट्रो उएनो स्टेशन के पार्क निकास के ठीक बाहर",
+          "sakuraCafe.name": "स्टारबक्स कॉफ़ी उएनो ओन्शि पार्क",
+          "sakuraCafe.feature": "सकुरा पेड़ों के बीच उजला लकड़ी और काँच का कैफ़े, बाहर लकड़ी की मेज़ें और मौसमी माचा शिफ़ॉन केक"
+        },
+        "es": {
+          "title": "Parque de Ueno",
+          "subtitle": "Cerezos nocturnos clásicos de Tokio y reflejos de faroles junto al estanque Shinobazu",
+          "tag": "Taitō, Tokio",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos de montaña (1.200 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 17:30–20:00: faroles de papel en la avenida de cerezos; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Lugar célebre para ver flores desde el periodo Edo. Unos 1.000 faroles de papel recorren cientos de metros de cerezos y llenan las animadas noches del ambiente tradicional de hanami.",
+          "locationDetail": "Junto a la salida Parque de la estación JR / Tokyo Metro Ueno",
+          "sakuraCafe.name": "Starbucks Coffee Ueno Onshi Park",
+          "sakuraCafe.feature": "Café luminoso de madera y cristal entre cerezos, con mesas exteriores de madera y chiffon de matcha de temporada"
+        }
+      }
+    },
+    "osaka_castle_nishinomaru": {
+      "source": {
+        "id": "osaka_castle_nishinomaru",
+        "theme": "sakura",
+        "region": "kansai",
+        "fields": {
+          "title": "大阪城公園（西之丸庭園）",
+          "subtitle": "天守閣點燈與巨石護城河！3000株櫻花春夜燈光饗宴",
+          "tag": "大阪・中央區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (3000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (西之丸庭園夜櫻與天守閣光雕)；本季日期與時段以官方公告為準",
+          "desc": "西之丸庭園約300株染井吉野櫻在夜間被金色暖光照亮，背景矗立著巍峨壯觀的大阪城天守閣，是關西最震撼的夜櫻構圖。",
+          "locationDetail": "Osaka Metro「谷町四丁目站」徒步 10 分鐘",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "西之丸庭園天守閣倒影・300株吉野櫻護城河露台・手工烘焙義式濃縮"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "大阪城公園（西之丸庭園）",
+          "subtitle": "天守閣點燈與巨石護城河！3000株櫻花春夜燈光饗宴",
+          "tag": "大阪・中央區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (3000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (西之丸庭園夜櫻與天守閣光雕)；本季日期與時段以官方公告為準",
+          "desc": "西之丸庭園約300株染井吉野櫻在夜間被金色暖光照亮，背景矗立著巍峨壯觀的大阪城天守閣，是關西最震撼的夜櫻構圖。",
+          "locationDetail": "Osaka Metro「谷町四丁目站」徒步 10 分鐘",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "西之丸庭園天守閣倒影・300株吉野櫻護城河露台・手工烘焙義式濃縮"
+        },
+        "zh-CN": {
+          "title": "大阪城公园（西之丸庭园）",
+          "subtitle": "天守阁与巨石护城河亮灯，3,000 株樱花点缀春夜",
+          "tag": "大阪・中央区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱（3,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–21:00：西之丸庭园夜樱与天守阁灯光；本季日期与时段以官方公告为准",
+          "desc": "西之丸庭园约 300 株染井吉野樱在夜间被暖金色灯光照亮，身后是大阪城天守阁，形成壮观的关西夜樱景色。",
+          "locationDetail": "Osaka Metro 谷町四丁目站步行约 10 分钟",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "西之丸庭园与天守阁倒影，300 株吉野樱护城河露台，手工烘焙意式浓缩咖啡"
+        },
+        "en": {
+          "title": "Osaka Castle Park (Nishinomaru Garden)",
+          "subtitle": "Illuminated castle towers and stone-lined moats, with 3,000 cherry trees lighting up spring nights",
+          "tag": "Chūō, Osaka",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino cherries (3,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–21:00: night blossoms in Nishinomaru Garden and castle tower lighting; confirm this season’s dates and hours with the organizer",
+          "desc": "Around 300 Somei Yoshino cherry trees in Nishinomaru Garden glow under warm golden lights at night, with Osaka Castle’s imposing main tower rising behind them: a striking Kansai night-sakura scene.",
+          "locationDetail": "About 10 minutes on foot from Tanimachi 4-chōme Station (Osaka Metro)",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "Castle reflections by Nishinomaru Garden, a moat-side terrace among 300 Yoshino cherries, and artisan-roasted espresso"
+        },
+        "ja": {
+          "title": "大阪城公園（西の丸庭園）",
+          "subtitle": "天守と石垣の濠を照らす灯り。3,000本の桜が彩る春の夜",
+          "tag": "大阪市中央区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ（3,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜21:00：西の丸庭園の夜桜と天守のライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "西の丸庭園の約300本のソメイヨシノが、夜には暖かな金色の光に包まれます。背後にそびえる大阪城天守とともに、関西を代表する壮観な夜桜の風景を楽しめます。",
+          "locationDetail": "Osaka Metro谷町四丁目駅から徒歩約10分",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "西の丸庭園と天守の水鏡、300本の吉野桜を望む濠沿いテラス、自家焙煎エスプレッソ"
+        },
+        "ko": {
+          "title": "오사카성 공원·니시노마루 정원",
+          "subtitle": "천수각과 거대한 해자 석벽의 조명, 벚나무 3,000그루가 수놓는 봄밤",
+          "tag": "오사카시 주오구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노 벚꽃 (3,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~21:00: 니시노마루 정원 야간 벚꽃과 천수각 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "니시노마루 정원의 소메이요시노 약 300그루가 밤이면 따뜻한 금빛 조명에 물듭니다. 뒤로 우뚝 선 오사카성 천수각과 어우러져 간사이의 장관을 이루는 야간 벚꽃 풍경입니다.",
+          "locationDetail": "오사카 메트로 다니마치욘초메역에서 도보 약 10분",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "니시노마루 정원과 천수각의 반영, 요시노 벚나무 300그루를 바라보는 해자 테라스, 수제 로스팅 에스프레소"
+        },
+        "th": {
+          "title": "สวนปราสาทโอซาก้า (สวนนิชิโนมารุ)",
+          "subtitle": "หอปราสาทและคูน้ำกำแพงหินประดับไฟ พร้อมซากุระ 3,000 ต้นในคืนฤดูใบไม้ผลิ",
+          "tag": "เขตชูโอ โอซาก้า",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "ซากุระโซเมอิโยชิโนะ (3,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–21:00: ซากุระกลางคืนในสวนนิชิโนมารุและแสงไฟหอปราสาท โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ซากุระโซเมอิโยชิโนะราว 300 ต้นในสวนนิชิโนมารุส่องสว่างใต้แสงสีทองอบอุ่นยามค่ำ โดยมีหอปราสาทโอซาก้าสูงตระหง่านเป็นฉากหลัง เป็นภาพซากุระกลางคืนอันโดดเด่นของคันไซ",
+          "locationDetail": "เดินประมาณ 10 นาทีจากสถานีทานิมาจิยงโจเมะ Osaka Metro",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "เงาสะท้อนปราสาทริมสวนนิชิโนมารุ ระเบียงคูน้ำชมซากุระโยชิโนะ 300 ต้น และเอสเปรสโซคั่วอย่างพิถีพิถัน"
+        },
+        "vi": {
+          "title": "Công viên thành Osaka (vườn Nishinomaru)",
+          "subtitle": "Tháp thành và hào đá được chiếu sáng, 3.000 cây anh đào tô điểm đêm xuân",
+          "tag": "Chūō, Osaka",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào Somei Yoshino (3.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–21:00: anh đào đêm ở vườn Nishinomaru và ánh sáng tháp thành; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Khoảng 300 cây Somei Yoshino trong vườn Nishinomaru tỏa sáng dưới ánh đèn vàng ấm về đêm. Tháp chính thành Osaka sừng sững phía sau tạo nên khung cảnh anh đào đêm ngoạn mục của Kansai.",
+          "locationDetail": "Đi bộ khoảng 10 phút từ ga Tanimachi 4-chōme (Osaka Metro)",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "Bóng tháp thành bên vườn Nishinomaru, sân hiên cạnh hào với 300 cây Yoshino và espresso rang thủ công"
+        },
+        "hi": {
+          "title": "ओसाका महल पार्क (निशिनोमारु उद्यान)",
+          "subtitle": "रोशन मुख्य टावर और पत्थर की खाइयाँ, वसंत की रातों में 3,000 सकुरा पेड़",
+          "tag": "चूओ, ओसाका",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो सकुरा (3,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–21:00: निशिनोमारु उद्यान की रात्रि-सकुरा और महल टावर की रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "निशिनोमारु उद्यान के लगभग 300 सोमेई योशिनो पेड़ रात में सुनहरी गर्म रोशनी में चमकते हैं। पीछे खड़ा ओसाका महल का विशाल मुख्य टावर कंसाई की रात्रि-सकुरा का शानदार दृश्य रचता है।",
+          "locationDetail": "ओसाका मेट्रो के तानिमाची 4-चोमे स्टेशन से लगभग 10 मिनट पैदल",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "निशिनोमारु उद्यान के पास महल के प्रतिबिंब, 300 योशिनो पेड़ों के बीच खाई किनारे टैरेस और कारीगरों की भुनी एस्प्रेसो"
+        },
+        "es": {
+          "title": "Parque del Castillo de Osaka (jardín Nishinomaru)",
+          "subtitle": "Torres y fosos de piedra iluminados, con 3.000 cerezos que animan las noches primaverales",
+          "tag": "Chūō, Osaka",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Somei Yoshino (3.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–21:00: cerezos nocturnos en Nishinomaru e iluminación de la torre; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Unos 300 cerezos Somei Yoshino del jardín Nishinomaru brillan de noche bajo luces doradas. La imponente torre del Castillo de Osaka se alza detrás, formando una de las vistas nocturnas más espectaculares de Kansai.",
+          "locationDetail": "Unos 10 minutos a pie desde Tanimachi 4-chōme (Osaka Metro)",
+          "sakuraCafe.name": "JO-TERRACE OSAKA - ALOFT CAFE",
+          "sakuraCafe.feature": "Reflejos del castillo junto a Nishinomaru, terraza al borde del foso entre 300 cerezos Yoshino y espresso de tueste artesanal"
+        }
+      }
+    },
+    "himeji_castle_night_sakura": {
+      "source": {
+        "id": "himeji_castle_night_sakura",
+        "theme": "sakura",
+        "region": "kansai",
+        "fields": {
+          "title": "姬路城",
+          "subtitle": "世界遺產國寶白鷺城！三之丸千本夜櫻特別公開",
+          "tag": "兵庫・姬路市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・垂櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (姬路城夜櫻會特別點燈)；本季日期與時段以官方公告為準",
+          "desc": "雪白無瑕的白鷺城大天守閣在夜間投射燈下格外神聖，西之丸百間廊下與三之丸廣場上的櫻花林倒映於護城河水面，宛若白色飛鷺掠過花海。",
+          "locationDetail": "JR 山陽新幹線「姬路站」北口徒步 15 分鐘",
+          "sakuraCafe.name": "姬路城 好古園 茶室「雙樹庵」",
+          "sakuraCafe.feature": "白鷺城世界遺產御屋敷庭園・櫻花水榭點心茶房・眺望天守閣飛簷"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "姬路城",
+          "subtitle": "世界遺產國寶白鷺城！三之丸千本夜櫻特別公開",
+          "tag": "兵庫・姬路市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・垂櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (姬路城夜櫻會特別點燈)；本季日期與時段以官方公告為準",
+          "desc": "雪白無瑕的白鷺城大天守閣在夜間投射燈下格外神聖，西之丸百間廊下與三之丸廣場上的櫻花林倒映於護城河水面，宛若白色飛鷺掠過花海。",
+          "locationDetail": "JR 山陽新幹線「姬路站」北口徒步 15 分鐘",
+          "sakuraCafe.name": "姬路城 好古園 茶室「雙樹庵」",
+          "sakuraCafe.feature": "白鷺城世界遺產御屋敷庭園・櫻花水榭點心茶房・眺望天守閣飛簷"
+        },
+        "zh-CN": {
+          "title": "姬路城",
+          "subtitle": "世界遗产国宝白鹭城，三之丸千株夜樱特别开放",
+          "tag": "兵库・姬路市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、垂枝樱（1,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:30–21:00：姬路城夜樱会特别亮灯；本季日期与时段以官方公告为准",
+          "desc": "洁白的白鹭城大天守在夜灯下格外庄严。西之丸百间廊下与三之丸广场的樱花映入护城河，宛如白鹭掠过花海。",
+          "locationDetail": "JR 山阳新干线姬路站北口步行约 15 分钟",
+          "sakuraCafe.name": "姬路城好古园茶室“双树庵”",
+          "sakuraCafe.feature": "白鹭城世界遗产旁的宅邸庭园，樱花水榭茶点，远眺天守阁飞檐"
+        },
+        "en": {
+          "title": "Himeji Castle",
+          "subtitle": "World Heritage White Heron Castle: special evening access to a thousand cherry trees in Sannomaru",
+          "tag": "Himeji, Hyōgo",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and weeping cherries (1,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:30–21:00: special Himeji Castle night-sakura illuminations; confirm this season’s dates and hours with the organizer",
+          "desc": "The pristine White Heron Castle glows majestically under night lighting. Cherry trees around Nishinomaru’s Hyakken Rōka corridor and Sannomaru Square reflect in the moat, like a white heron gliding over blossoms.",
+          "locationDetail": "About 15 minutes on foot from the north exit of JR Himeji Station (Sanyō Shinkansen)",
+          "sakuraCafe.name": "Sōju-an Tea House, Kōko-en Garden",
+          "sakuraCafe.feature": "A former-residence garden beside the World Heritage castle, with cherry blossom views, tea and sweets, and vistas of the castle’s sweeping eaves"
+        },
+        "ja": {
+          "title": "姫路城",
+          "subtitle": "世界遺産・国宝の白鷺城。三の丸の千本桜を楽しむ夜間特別公開",
+          "tag": "兵庫県姫路市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・しだれ桜（1,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:30〜21:00：姫路城夜桜会の特別ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "真っ白な白鷺城の大天守が夜の照明で厳かに浮かびます。西の丸百間廊下や三の丸広場の桜が濠に映り、花の海を白鷺が舞うような景色です。",
+          "locationDetail": "JR山陽新幹線姫路駅北口から徒歩約15分",
+          "sakuraCafe.name": "姫路城好古園・茶室「双樹庵」",
+          "sakuraCafe.feature": "世界遺産の白鷺城に隣接する御屋敷庭園。桜と水辺を望む茶席で、菓子とともに天守の軒を眺める"
+        },
+        "ko": {
+          "title": "히메지성",
+          "subtitle": "세계유산이자 국보인 백로성, 산노마루의 천 그루 야간 벚꽃 특별 공개",
+          "tag": "효고현 히메지시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·수양벚꽃 (1,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:30~21:00: 히메지성 야간 벚꽃 특별 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "새하얀 백로성의 대천수각이 야간 조명 아래 장엄하게 빛납니다. 니시노마루 햣켄로카와 산노마루 광장의 벚꽃이 해자에 비쳐, 꽃바다 위를 흰 백로가 나는 듯합니다.",
+          "locationDetail": "JR 산요 신칸센 히메지역 북쪽 출구에서 도보 약 15분",
+          "sakuraCafe.name": "히메지성 고코엔 다실 소주안",
+          "sakuraCafe.feature": "세계유산 백로성 옆 옛 저택 정원에서 벚꽃과 물가를 바라보며 다과를 즐기고 천수각 처마를 감상"
+        },
+        "th": {
+          "title": "ปราสาทฮิเมจิ",
+          "subtitle": "ปราสาทนกกระสาขาวมรดกโลกและสมบัติชาติ เปิดชมซากุระยามค่ำราวพันต้นที่ซันโนะมารุ",
+          "tag": "เมืองฮิเมจิ เฮียวโงะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและซากุระกิ่งย้อย (1,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:30–21:00: ประดับไฟพิเศษชมซากุระกลางคืนที่ปราสาทฮิเมจิ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "หอหลักสีขาวของปราสาทนกกระสาขาวโดดเด่นสง่างามใต้ไฟยามค่ำ ซากุระรอบระเบียงฮักเค็นโรกะฝั่งนิชิโนมารุและลานซันโนะมารุสะท้อนในคูน้ำ ราวนกกระสาขาวบินเหนือทะเลดอกไม้",
+          "locationDetail": "เดินประมาณ 15 นาทีจากทางออกเหนือของสถานี JR ฮิเมจิ สายซันโยชินคันเซ็น",
+          "sakuraCafe.name": "ห้องชาโซจุอัน สวนโคโคเอ็น ปราสาทฮิเมจิ",
+          "sakuraCafe.feature": "สวนคฤหาสน์ข้างปราสาทมรดกโลก พร้อมน้ำชาและขนมริมศาลาชมซากุระ มองเห็นชายคาหอปราสาท"
+        },
+        "vi": {
+          "title": "Thành Himeji",
+          "subtitle": "Thành Diệc Trắng, Di sản Thế giới và Quốc bảo, mở cửa đặc biệt ngắm nghìn cây anh đào đêm ở Sannomaru",
+          "tag": "Himeji, Hyōgo",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào rủ (1.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:30–21:00: thắp sáng đặc biệt đêm anh đào thành Himeji; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Tháp chính trắng tinh của Thành Diệc Trắng rực lên trang nghiêm dưới ánh đèn đêm. Anh đào quanh hành lang Hyakken Rōka ở Nishinomaru và quảng trường Sannomaru soi xuống hào như cánh diệc trắng lướt trên biển hoa.",
+          "locationDetail": "Đi bộ khoảng 15 phút từ cửa bắc ga JR Himeji (Sanyō Shinkansen)",
+          "sakuraCafe.name": "Trà thất Sōju-an, vườn Kōko-en",
+          "sakuraCafe.feature": "Vườn dinh thự cạnh thành Di sản Thế giới, thưởng trà bánh bên cảnh anh đào và mặt nước, ngắm mái hiên tháp thành"
+        },
+        "hi": {
+          "title": "हिमेजी महल",
+          "subtitle": "विश्व धरोहर और राष्ट्रीय निधि व्हाइट हेरॉन कैसल: सन्नोमारु के हज़ार सकुरा पेड़ों के लिए विशेष रात्रि प्रवेश",
+          "tag": "हिमेजी, ह्योगो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और झुके हुए सकुरा (1,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:30–21:00: हिमेजी महल की विशेष रात्रि-सकुरा रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "सफ़ेद व्हाइट हेरॉन कैसल का मुख्य टावर रात की रोशनी में भव्य दिखता है। निशिनोमारु के ह्याक्केन रोका गलियारे और सन्नोमारु चौक के सकुरा खाई में ऐसे झलकते हैं जैसे फूलों के ऊपर सफ़ेद बगुला उड़ रहा हो।",
+          "locationDetail": "सान्यो शिंकान्सेन के JR हिमेजी स्टेशन के उत्तरी निकास से लगभग 15 मिनट पैदल",
+          "sakuraCafe.name": "सो-जु-अन चायघर, कोको-एन उद्यान",
+          "sakuraCafe.feature": "विश्व धरोहर महल के पास पुराने निवास का उद्यान, सकुरा और पानी के दृश्यों के बीच चाय-मिठाइयाँ तथा महल की उठी हुई छतों का नज़ारा"
+        },
+        "es": {
+          "title": "Castillo de Himeji",
+          "subtitle": "El Castillo de la Garza Blanca, Patrimonio Mundial y Tesoro Nacional: apertura nocturna especial entre mil cerezos de Sannomaru",
+          "tag": "Himeji, Hyōgo",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos llorones (1.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:30–21:00: iluminación especial de cerezos nocturnos en Himeji; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "La torre blanca del Castillo de la Garza Blanca brilla majestuosa de noche. Los cerezos del corredor Hyakken Rōka de Nishinomaru y la plaza Sannomaru se reflejan en el foso como una garza blanca sobre un mar de flores.",
+          "locationDetail": "Unos 15 minutos a pie desde la salida norte de JR Himeji (Sanyō Shinkansen)",
+          "sakuraCafe.name": "Casa de té Sōju-an, jardín Kōko-en",
+          "sakuraCafe.feature": "Jardín de antigua residencia junto al castillo Patrimonio Mundial, con té y dulces entre cerezos y vistas a los aleros de la torre"
+        }
+      }
+    },
+    "nagoya_castle_night_sakura": {
+      "source": {
+        "id": "nagoya_castle_night_sakura",
+        "theme": "sakura",
+        "region": "chubu",
+        "fields": {
+          "title": "名古屋城",
+          "subtitle": "金鯱守護尾張第一名城！天守閣與本丸御殿夜櫻光影",
+          "tag": "愛知・名古屋市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・枝垂櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 20:30 (名古屋城春之陣夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "德川家康所築名城，屋頂金光璀璨的「金鯱」在夜間打光下熠熠生輝，城郭內約1000株櫻花齊放，護城河兩岸粉紅綿延。",
+          "locationDetail": "名古屋市營地下鐵 名城線「名古屋城站」徒步 5 分鐘",
+          "sakuraCafe.name": "金鯱橫丁 宗春區 TERRACE CAFE",
+          "sakuraCafe.feature": "名古屋城天守閣與本丸御殿旁・金箔櫻花拿鐵・特等景觀木平台"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "名古屋城",
+          "subtitle": "金鯱守護尾張第一名城！天守閣與本丸御殿夜櫻光影",
+          "tag": "愛知・名古屋市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・枝垂櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 20:30 (名古屋城春之陣夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "德川家康所築名城，屋頂金光璀璨的「金鯱」在夜間打光下熠熠生輝，城郭內約1000株櫻花齊放，護城河兩岸粉紅綿延。",
+          "locationDetail": "名古屋市營地下鐵 名城線「名古屋城站」徒步 5 分鐘",
+          "sakuraCafe.name": "金鯱橫丁 宗春區 TERRACE CAFE",
+          "sakuraCafe.feature": "名古屋城天守閣與本丸御殿旁・金箔櫻花拿鐵・特等景觀木平台"
+        },
+        "zh-CN": {
+          "title": "名古屋城",
+          "subtitle": "金鯱守护尾张名城，天守阁与本丸御殿的夜樱光影",
+          "tag": "爱知・名古屋市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、垂枝樱（1,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–20:30：名古屋城春之阵夜樱亮灯；本季日期与时段以官方公告为准",
+          "desc": "德川家康所建名城，屋顶金鯱在夜灯下闪耀。城内约 1,000 株樱花齐放，护城河两岸粉红连绵。",
+          "locationDetail": "名古屋市营地铁名城线名古屋城站步行约 5 分钟",
+          "sakuraCafe.name": "金鯱横丁宗春区 TERRACE CAFE",
+          "sakuraCafe.feature": "天守阁与本丸御殿旁，金箔樱花拿铁与景观木平台"
+        },
+        "en": {
+          "title": "Nagoya Castle",
+          "subtitle": "Golden shachi guard Owari’s landmark castle, with night blossoms around the main tower and Honmaru Palace",
+          "tag": "Nagoya, Aichi",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and weeping cherries (1,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–20:30: night-sakura illuminations during Nagoya Castle’s spring festival; confirm this season’s dates and hours with the organizer",
+          "desc": "Built by Tokugawa Ieyasu, the castle’s golden rooftop shachi sparkle under night lighting. Around 1,000 cherry trees bloom within the grounds, spreading pink along both sides of the moat.",
+          "locationDetail": "About 5 minutes on foot from Nagoyajō Station on the Meijō subway line",
+          "sakuraCafe.name": "TERRACE CAFE, Muneharu Zone, Kinshachi Yokocho",
+          "sakuraCafe.feature": "Beside the castle tower and Honmaru Palace, with gold-leaf sakura lattes and a wooden viewing terrace"
+        },
+        "ja": {
+          "title": "名古屋城",
+          "subtitle": "金鯱が守る尾張の名城。天守と本丸御殿を彩る夜桜",
+          "tag": "愛知県名古屋市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・しだれ桜（1,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜20:30：名古屋城春まつりの夜桜ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "徳川家康が築いた名城。屋根の金鯱が夜の照明で輝き、城内の約1,000本の桜が咲き揃います。濠の両岸にもピンクの景色が続きます。",
+          "locationDetail": "名古屋市営地下鉄名城線名古屋城駅から徒歩約5分",
+          "sakuraCafe.name": "金シャチ横丁・宗春ゾーン TERRACE CAFE",
+          "sakuraCafe.feature": "天守と本丸御殿のそば。金箔の桜ラテと眺めのよいウッドテラス"
+        },
+        "ko": {
+          "title": "나고야성",
+          "subtitle": "금빛 샤치가 지키는 오와리의 명성, 천수각과 혼마루 어전의 야간 벚꽃",
+          "tag": "아이치현 나고야시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·수양벚꽃 (1,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~20:30: 나고야성 봄 축제 야간 벚꽃 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "도쿠가와 이에야스가 세운 성으로, 지붕의 금빛 샤치가 야간 조명 아래 빛납니다. 성 안 약 1,000그루의 벚꽃이 피어나고 해자 양쪽으로 분홍 풍경이 이어집니다.",
+          "locationDetail": "나고야 시영 지하철 메이조선 나고야조역에서 도보 약 5분",
+          "sakuraCafe.name": "긴샤치 요코초 무네하루 구역 TERRACE CAFE",
+          "sakuraCafe.feature": "천수각과 혼마루 어전 옆, 금박 벚꽃 라테와 전망 좋은 나무 테라스"
+        },
+        "th": {
+          "title": "ปราสาทนาโงยะ",
+          "subtitle": "ปราสาทสำคัญแห่งโอวาริที่มีชาจิทองคำเฝ้า พร้อมซากุระกลางคืนรอบหอหลักและวังฮนมารุ",
+          "tag": "เมืองนาโงยะ ไอจิ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและซากุระกิ่งย้อย (1,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–20:30: ประดับไฟซากุระกลางคืนในเทศกาลฤดูใบไม้ผลิปราสาทนาโงยะ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ปราสาทที่โทกูงาวะ อิเอยาสุสร้าง ชาจิทองบนหลังคาเปล่งประกายใต้ไฟยามค่ำ ซากุระราว 1,000 ต้นในเขตปราสาทบานพร้อมกัน แต่งสีชมพูตลอดสองฝั่งคูน้ำ",
+          "locationDetail": "เดินประมาณ 5 นาทีจากสถานีนาโงยะโจ รถไฟใต้ดินสายเมโจ",
+          "sakuraCafe.name": "TERRACE CAFE โซนมุเนฮารุ คินชาจิโยโคโจ",
+          "sakuraCafe.feature": "ใกล้หอปราสาทและวังฮนมารุ พร้อมลาเต้ซากุระทองคำเปลวและระเบียงไม้ชมวิว"
+        },
+        "vi": {
+          "title": "Thành Nagoya",
+          "subtitle": "Thành nổi tiếng vùng Owari với cá shachi vàng, anh đào đêm quanh tháp chính và cung Honmaru",
+          "tag": "Nagoya, Aichi",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào rủ (1.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–20:30: thắp sáng anh đào đêm trong lễ hội mùa xuân thành Nagoya; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Do Tokugawa Ieyasu xây dựng, thành có tượng shachi vàng trên mái lấp lánh dưới đèn đêm. Khoảng 1.000 cây anh đào nở trong khuôn viên, sắc hồng trải dài hai bờ hào.",
+          "locationDetail": "Đi bộ khoảng 5 phút từ ga Nagoyajō, tuyến metro Meijō",
+          "sakuraCafe.name": "TERRACE CAFE, khu Muneharu, Kinshachi Yokocho",
+          "sakuraCafe.feature": "Cạnh tháp thành và cung Honmaru, có latte anh đào phủ vàng lá và sân gỗ ngắm cảnh"
+        },
+        "hi": {
+          "title": "नागोया महल",
+          "subtitle": "सुनहरे शाची से सजा ओवारी का प्रमुख महल, मुख्य टावर और होनमारु महल के आसपास रात्रि-सकुरा",
+          "tag": "नागोया, आइची",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और झुके हुए सकुरा (1,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–20:30: नागोया महल के वसंत उत्सव में रात्रि-सकुरा रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "तोकुगावा इएयासु द्वारा बनवाए गए इस महल की छत पर सुनहरे शाची रात की रोशनी में चमकते हैं। परिसर में लगभग 1,000 सकुरा पेड़ खिलते हैं और खाई के दोनों किनारों पर गुलाबी रंग बिखेरते हैं।",
+          "locationDetail": "नागोया मेट्रो की मेइजो लाइन के नागोयाजो स्टेशन से लगभग 5 मिनट पैदल",
+          "sakuraCafe.name": "TERRACE CAFE, मुनेहारु ज़ोन, किनशाची योकोचो",
+          "sakuraCafe.feature": "मुख्य टावर और होनमारु महल के पास, सोने की पत्ती वाले सकुरा लाते और लकड़ी के दृश्य-मंच के साथ"
+        },
+        "es": {
+          "title": "Castillo de Nagoya",
+          "subtitle": "Los shachi dorados custodian el emblemático castillo de Owari entre cerezos nocturnos junto a la torre y el palacio Honmaru",
+          "tag": "Nagoya, Aichi",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos llorones (1.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–20:30: iluminación nocturna de cerezos en el festival primaveral del castillo; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Construido por Tokugawa Ieyasu, sus shachi dorados relucen de noche sobre el tejado. Unos 1.000 cerezos florecen en el recinto y tiñen de rosa ambas orillas del foso.",
+          "locationDetail": "Unos 5 minutos a pie desde Nagoyajō, línea de metro Meijō",
+          "sakuraCafe.name": "TERRACE CAFE, zona Muneharu de Kinshachi Yokocho",
+          "sakuraCafe.feature": "Junto a la torre y el palacio Honmaru, con latte de sakura con pan de oro y terraza de madera con vistas"
+        }
+      }
+    },
+    "kumamoto_castle_night_sakura": {
+      "source": {
+        "id": "kumamoto_castle_night_sakura",
+        "theme": "sakura",
+        "region": "kyushu",
+        "fields": {
+          "title": "熊本城",
+          "subtitle": "日本三大名城黑色天守！石垣「武者返」夜櫻威嚴壯麗",
+          "tag": "熊本・熊本市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・肥後櫻 (800株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (熊本城夜間特別開園夜櫻光雕)；本季日期與時段以官方公告為準",
+          "desc": "名將加藤清正所建難攻不落的銀杏城。黑色外壁天守閣與高聳陡峭的「武者返」巨石垣旁，粉嫩櫻花在春夜燈光下形成強烈黑白對比。",
+          "locationDetail": "熊本市電「熊本城・市役所前」徒步 3 分鐘"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "熊本城",
+          "subtitle": "日本三大名城黑色天守！石垣「武者返」夜櫻威嚴壯麗",
+          "tag": "熊本・熊本市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・肥後櫻 (800株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (熊本城夜間特別開園夜櫻光雕)；本季日期與時段以官方公告為準",
+          "desc": "名將加藤清正所建難攻不落的銀杏城。黑色外壁天守閣與高聳陡峭的「武者返」巨石垣旁，粉嫩櫻花在春夜燈光下形成強烈黑白對比。",
+          "locationDetail": "熊本市電「熊本城・市役所前」徒步 3 分鐘"
+        },
+        "zh-CN": {
+          "title": "熊本城",
+          "subtitle": "日本三大名城的黑色天守，武者返石垣旁的壮丽夜樱",
+          "tag": "熊本・熊本市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、肥后樱（800 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–21:00：熊本城夜间特别开放与夜樱灯光；本季日期与时段以官方公告为准",
+          "desc": "加藤清正所建、以坚固闻名的银杏城。黑色天守外墙与陡峭的武者返巨石垣旁，粉色樱花在春夜灯光下形成鲜明对比。",
+          "locationDetail": "熊本市电熊本城・市役所前站步行约 3 分钟"
+        },
+        "en": {
+          "title": "Kumamoto Castle",
+          "subtitle": "A black-walled keep among Japan’s three great castles, with night blossoms beside the musha-gaeshi stone walls",
+          "tag": "Kumamoto City, Kumamoto",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and Higo cherries (800 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–21:00: special evening opening and night-sakura lighting at Kumamoto Castle; confirm this season’s dates and hours with the organizer",
+          "desc": "Built by Katō Kiyomasa, the formidable “Ginkgo Castle” pairs a black-walled keep with steep musha-gaeshi stone defenses. Soft pink blossoms create a striking contrast under spring night lighting.",
+          "locationDetail": "About 3 minutes on foot from Kumamoto Castle / City Hall tram stop"
+        },
+        "ja": {
+          "title": "熊本城",
+          "subtitle": "日本三名城の黒い天守。「武者返し」の石垣と壮麗な夜桜",
+          "tag": "熊本県熊本市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・肥後桜（800本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜21:00：熊本城の夜間特別開園と夜桜ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "加藤清正が築いた堅固な「銀杏城」。黒い外壁の天守と急勾配の「武者返し」の石垣に、春の夜の灯りで照らされた淡い桜が鮮やかに映えます。",
+          "locationDetail": "熊本市電「熊本城・市役所前」電停から徒歩約3分"
+        },
+        "ko": {
+          "title": "구마모토성",
+          "subtitle": "일본 3대 명성의 검은 천수각, 무샤가에시 석벽 곁의 장엄한 야간 벚꽃",
+          "tag": "구마모토현 구마모토시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·히고 벚꽃 (800그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~21:00: 구마모토성 야간 특별 개장과 벚꽃 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "가토 기요마사가 세운 견고한 은행나무 성입니다. 검은 외벽의 천수각과 가파른 무샤가에시 석벽 곁에서 연분홍 벚꽃이 봄밤 조명 아래 선명한 대비를 이룹니다.",
+          "locationDetail": "구마모토 시영전차 구마모토조·시야쿠쇼마에 정류장에서 도보 약 3분"
+        },
+        "th": {
+          "title": "ปราสาทคุมาโมโตะ",
+          "subtitle": "หอปราสาทสีดำแห่งหนึ่งในสามปราสาทสำคัญของญี่ปุ่น กับซากุระกลางคืนข้างกำแพงมุชากาเอชิ",
+          "tag": "เมืองคุมาโมโตะ จังหวัดคุมาโมโตะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและซากุระฮิโงะ (800 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–21:00: เปิดปราสาทคุมาโมโตะช่วงค่ำเป็นพิเศษพร้อมไฟชมซากุระ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ปราสาทแปะก๊วยอันแข็งแกร่งที่คาโตะ คิโยมัสะสร้าง ผนังดำของหอหลักและกำแพงหินมุชากาเอชิสูงชันตัดกับซากุระสีชมพูอ่อนใต้ไฟคืนฤดูใบไม้ผลิอย่างโดดเด่น",
+          "locationDetail": "เดินประมาณ 3 นาทีจากป้ายรถรางคุมาโมโตะโจ–ชิยากุโชมาเอะ"
+        },
+        "vi": {
+          "title": "Thành Kumamoto",
+          "subtitle": "Tháp thành đen của một trong ba thành nổi tiếng Nhật Bản, anh đào đêm bên tường đá musha-gaeshi",
+          "tag": "Thành phố Kumamoto, tỉnh Kumamoto",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào Higo (800 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–21:00: mở cửa đặc biệt buổi tối và thắp sáng anh đào tại thành Kumamoto; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Do Katō Kiyomasa xây dựng, “thành Bạch Quả” nổi tiếng kiên cố với tháp tường đen và tường đá musha-gaeshi dốc đứng. Anh đào hồng nhạt tạo tương phản nổi bật dưới đèn đêm xuân.",
+          "locationDetail": "Đi bộ khoảng 3 phút từ trạm xe điện Kumamoto Castle / City Hall"
+        },
+        "hi": {
+          "title": "कुमामोतो महल",
+          "subtitle": "जापान के तीन महान महलों में शामिल काला मुख्य टावर, मुशा-गाएशी पत्थर की दीवारों के पास रात्रि-सकुरा",
+          "tag": "कुमामोतो शहर, कुमामोतो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और हिगो सकुरा (800 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–21:00: कुमामोतो महल में विशेष सायंकालीन प्रवेश और रात्रि-सकुरा रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "कातो कियोमासा का बनाया मज़बूत “गिंकगो कैसल” काले मुख्य टावर और खड़ी मुशा-गाएशी पत्थर की सुरक्षा दीवारों के लिए जाना जाता है। वसंत की रात में हल्के गुलाबी फूल इनसे आकर्षक विरोधाभास बनाते हैं।",
+          "locationDetail": "कुमामोतो कैसल / सिटी हॉल ट्राम स्टॉप से लगभग 3 मिनट पैदल"
+        },
+        "es": {
+          "title": "Castillo de Kumamoto",
+          "subtitle": "Torre negra de uno de los tres grandes castillos de Japón, con cerezos nocturnos junto a los muros musha-gaeshi",
+          "tag": "Ciudad de Kumamoto, Kumamoto",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos Higo (800 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–21:00: apertura nocturna especial e iluminación de cerezos en Kumamoto; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Construido por Katō Kiyomasa, el robusto «Castillo del Ginkgo» combina una torre de paredes negras con empinados muros musha-gaeshi. Los cerezos rosados crean un fuerte contraste bajo las luces de las noches primaverales.",
+          "locationDetail": "Unos 3 minutos a pie desde la parada de tranvía Kumamoto Castle / City Hall"
+        }
+      }
+    },
+    "matsumoto_castle_night_sakura": {
+      "source": {
+        "id": "matsumoto_castle_night_sakura",
+        "theme": "sakura",
+        "region": "chubu",
+        "fields": {
+          "title": "松本城",
+          "subtitle": "國寶現存最古老五重六層天守！水堀夜櫻倒影光之迴廊",
+          "tag": "長野・松本市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・駒櫻 (300株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (國寶松本城夜櫻會與光之迴廊)；本季日期與時段以官方公告為準",
+          "desc": "黑色五重天守閣倒映在平靜的護城河水中，夜晚護城河外圍打上柔和射燈，形成如夢似幻的「光之迴廊」，遠眺北阿爾卑斯殘雪雪峰。",
+          "locationDetail": "JR 篠之井線「松本站」徒步 15 分鐘",
+          "sakuraCafe.name": "信州松本城 城堡咖啡 (Castle Terrace)",
+          "sakuraCafe.feature": "國寶黑城護城河水鏡・北阿爾卑斯殘雪與倒影櫻花・長野在地信濃烘焙"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "松本城",
+          "subtitle": "國寶現存最古老五重六層天守！水堀夜櫻倒影光之迴廊",
+          "tag": "長野・松本市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・駒櫻 (300株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (國寶松本城夜櫻會與光之迴廊)；本季日期與時段以官方公告為準",
+          "desc": "黑色五重天守閣倒映在平靜的護城河水中，夜晚護城河外圍打上柔和射燈，形成如夢似幻的「光之迴廊」，遠眺北阿爾卑斯殘雪雪峰。",
+          "locationDetail": "JR 篠之井線「松本站」徒步 15 分鐘",
+          "sakuraCafe.name": "信州松本城 城堡咖啡 (Castle Terrace)",
+          "sakuraCafe.feature": "國寶黑城護城河水鏡・北阿爾卑斯殘雪與倒影櫻花・長野在地信濃烘焙"
+        },
+        "zh-CN": {
+          "title": "松本城",
+          "subtitle": "国宝五重六层天守，护城河夜樱倒映成光之回廊",
+          "tag": "长野・松本市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、驹樱（300 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:30–21:00：国宝松本城夜樱会与光之回廊；本季日期与时段以官方公告为准",
+          "desc": "黑色五重天守倒映在平静的护城河中。夜晚柔和灯光围绕护城河形成光之回廊，远处可望见北阿尔卑斯残雪山峰。",
+          "locationDetail": "JR 筱之井线松本站步行约 15 分钟",
+          "sakuraCafe.name": "信州松本城城堡咖啡（Castle Terrace）",
+          "sakuraCafe.feature": "国宝黑城与护城河倒影，北阿尔卑斯残雪和樱花水镜，长野当地烘焙咖啡"
+        },
+        "en": {
+          "title": "Matsumoto Castle",
+          "subtitle": "An ancient National Treasure keep with five exterior tiers and six floors, reflected with night blossoms in a corridor of light",
+          "tag": "Matsumoto, Nagano",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and Koma-zakura cherries (300 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:30–21:00: Matsumoto Castle night blossoms and Corridor of Light; confirm this season’s dates and hours with the organizer",
+          "desc": "The black five-tiered keep reflects in the still moat. Gentle lights around the water form a dreamlike Corridor of Light at night, with lingering snow on the distant Northern Alps.",
+          "locationDetail": "About 15 minutes on foot from JR Matsumoto Station (Shinonoi Line)",
+          "sakuraCafe.name": "Matsumoto Castle Café (Castle Terrace)",
+          "sakuraCafe.feature": "Reflections of the black National Treasure castle, cherry blossoms and snowy Northern Alps, with locally roasted Nagano coffee"
+        },
+        "ja": {
+          "title": "松本城",
+          "subtitle": "国宝の五重六階天守。濠の夜桜が映る光の回廊",
+          "tag": "長野県松本市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・駒桜（300本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:30〜21:00：国宝松本城の夜桜会と光の回廊。今季の日程・時間は公式発表を確認してください",
+          "desc": "黒い五重天守が静かな濠に映ります。夜には濠の周囲を柔らかな光が包み、幻想的な「光の回廊」に。遠くには残雪を抱く北アルプスを望めます。",
+          "locationDetail": "JR篠ノ井線松本駅から徒歩約15分",
+          "sakuraCafe.name": "信州松本城・キャッスルテラスカフェ",
+          "sakuraCafe.feature": "国宝の黒い城と濠の水鏡、北アルプスの残雪と桜の眺め、長野の地元焙煎コーヒー"
+        },
+        "ko": {
+          "title": "마쓰모토성",
+          "subtitle": "국보인 5중 6층 천수각, 해자에 비치는 야간 벚꽃과 빛의 회랑",
+          "tag": "나가노현 마쓰모토시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·고마자쿠라 벚꽃 (300그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:30~21:00: 국보 마쓰모토성 야간 벚꽃과 빛의 회랑 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "검은 5중 천수각이 고요한 해자에 비칩니다. 밤에는 해자 주변의 부드러운 조명이 환상적인 빛의 회랑을 이루고, 멀리 잔설이 남은 북알프스 봉우리를 바라볼 수 있습니다.",
+          "locationDetail": "JR 시노노이선 마쓰모토역에서 도보 약 15분",
+          "sakuraCafe.name": "신슈 마쓰모토성 캐슬 테라스 카페",
+          "sakuraCafe.feature": "국보인 검은 성과 해자의 반영, 북알프스 잔설과 벚꽃 물그림자, 나가노 현지 로스팅 커피"
+        },
+        "th": {
+          "title": "ปราสาทมัตสึโมโตะ",
+          "subtitle": "หอปราสาทสมบัติชาติภายนอกห้าชั้นภายในหกชั้น กับเงาซากุระกลางคืนและทางเดินแห่งแสงริมคูน้ำ",
+          "tag": "เมืองมัตสึโมโตะ นากาโนะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและโคมะซากุระ (300 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:30–21:00: งานชมซากุระกลางคืนปราสาทมัตสึโมโตะและทางเดินแห่งแสง โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "หอปราสาทดำห้าชั้นสะท้อนในคูน้ำสงบ ยามค่ำไฟนุ่มนวลรอบน้ำสร้างทางเดินแห่งแสงราวความฝัน พร้อมยอดเขานอร์เทิร์นแอลป์ที่ยังมีหิมะอยู่ไกลออกไป",
+          "locationDetail": "เดินประมาณ 15 นาทีจากสถานี JR มัตสึโมโตะ สายชิโนโนอิ",
+          "sakuraCafe.name": "คาเฟ่ปราสาทมัตสึโมโตะ (Castle Terrace)",
+          "sakuraCafe.feature": "เงาสะท้อนปราสาทดำสมบัติชาติ ซากุระและหิมะบนยอดนอร์เทิร์นแอลป์ พร้อมกาแฟคั่วท้องถิ่นนากาโนะ"
+        },
+        "vi": {
+          "title": "Thành Matsumoto",
+          "subtitle": "Tháp Quốc bảo năm tầng bên ngoài, sáu tầng bên trong, anh đào đêm phản chiếu thành hành lang ánh sáng",
+          "tag": "Matsumoto, Nagano",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và Koma-zakura (300 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:30–21:00: đêm anh đào thành Matsumoto và Hành lang Ánh sáng; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Tháp đen năm tầng soi xuống hào phẳng lặng. Ánh đèn dịu quanh nước tạo Hành lang Ánh sáng huyền ảo về đêm, xa xa là các đỉnh Bắc Alps còn tuyết.",
+          "locationDetail": "Đi bộ khoảng 15 phút từ ga JR Matsumoto (tuyến Shinonoi)",
+          "sakuraCafe.name": "Cà phê thành Matsumoto (Castle Terrace)",
+          "sakuraCafe.feature": "Bóng thành đen Quốc bảo, anh đào và Bắc Alps còn tuyết trên hào, cùng cà phê rang địa phương Nagano"
+        },
+        "hi": {
+          "title": "मात्सुमोतो महल",
+          "subtitle": "राष्ट्रीय निधि मुख्य टावर: बाहर पाँच स्तर, भीतर छह मंज़िलें; खाई में रात्रि-सकुरा का प्रकाश गलियारा",
+          "tag": "मात्सुमोतो, नागानो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और कोमा-ज़ाकुरा (300 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:30–21:00: मात्सुमोतो महल की रात्रि-सकुरा और प्रकाश गलियारा; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "काला पाँच-स्तरीय मुख्य टावर शांत खाई में प्रतिबिंबित होता है। रात में पानी के आसपास हल्की रोशनी स्वप्निल प्रकाश गलियारा बनाती है, और दूर उत्तरी आल्प्स की चोटियों पर बची हुई बर्फ़ दिखती है।",
+          "locationDetail": "JR शिनोनोइ लाइन के मात्सुमोतो स्टेशन से लगभग 15 मिनट पैदल",
+          "sakuraCafe.name": "मात्सुमोतो महल कैफ़े (Castle Terrace)",
+          "sakuraCafe.feature": "काले राष्ट्रीय निधि महल, सकुरा और बर्फ़ीले उत्तरी आल्प्स के प्रतिबिंब, नागानो की स्थानीय भुनी कॉफ़ी के साथ"
+        },
+        "es": {
+          "title": "Castillo de Matsumoto",
+          "subtitle": "Torre Tesoro Nacional de cinco niveles exteriores y seis plantas, reflejada con cerezos nocturnos en un corredor de luz",
+          "tag": "Matsumoto, Nagano",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y Koma-zakura (300 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:30–21:00: cerezos nocturnos del castillo de Matsumoto y Corredor de Luz; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "La torre negra de cinco niveles se refleja en el foso tranquilo. Las luces suaves alrededor del agua crean de noche un Corredor de Luz, con las cumbres nevadas de los Alpes del Norte al fondo.",
+          "locationDetail": "Unos 15 minutos a pie desde JR Matsumoto (línea Shinonoi)",
+          "sakuraCafe.name": "Café del Castillo de Matsumoto (Castle Terrace)",
+          "sakuraCafe.feature": "Reflejos del castillo negro Tesoro Nacional, cerezos y Alpes del Norte nevados, con café de tueste local de Nagano"
+        }
+      }
+    },
+    "odawara_castle_night_sakura": {
+      "source": {
+        "id": "odawara_castle_night_sakura",
+        "theme": "sakura",
+        "region": "kanto",
+        "fields": {
+          "title": "小田原城址公園",
+          "subtitle": "戰國北條氏關東霸主本據！護城河朱紅拱橋夜櫻倒影",
+          "tag": "神奈川・小田原市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (320株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (天守閣與學橋夜間櫻花點燈)；本季日期與時段以官方公告為準",
+          "desc": "護城河上的朱紅色「學橋」與盛開的粉白吉野櫻倒映水面，夜晚燈火照耀白壁天守閣，宛如江戶時代的繪卷重現。",
+          "locationDetail": "JR / 小田急線「小田原站」徒步 10 分鐘",
+          "sakuraCafe.name": "小田原城 本丸茶屋 (Honmaru Tea House)",
+          "sakuraCafe.feature": "天守閣巨石石垣櫻花樹下・現烤櫻花醬油糰子與靜岡掛川深蒸茶"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "小田原城址公園",
+          "subtitle": "戰國北條氏關東霸主本據！護城河朱紅拱橋夜櫻倒影",
+          "tag": "神奈川・小田原市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (320株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (天守閣與學橋夜間櫻花點燈)；本季日期與時段以官方公告為準",
+          "desc": "護城河上的朱紅色「學橋」與盛開的粉白吉野櫻倒映水面，夜晚燈火照耀白壁天守閣，宛如江戶時代的繪卷重現。",
+          "locationDetail": "JR / 小田急線「小田原站」徒步 10 分鐘",
+          "sakuraCafe.name": "小田原城 本丸茶屋 (Honmaru Tea House)",
+          "sakuraCafe.feature": "天守閣巨石石垣櫻花樹下・現烤櫻花醬油糰子與靜岡掛川深蒸茶"
+        },
+        "zh-CN": {
+          "title": "小田原城址公园",
+          "subtitle": "战国北条氏的关东据点，朱红拱桥映照夜樱",
+          "tag": "神奈川・小田原市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱（320 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–21:00：天守阁与学桥夜樱亮灯；本季日期与时段以官方公告为准",
+          "desc": "护城河上朱红色的学桥与粉白吉野樱倒映水面，夜灯照亮白壁天守，仿佛江户时代绘卷重现。",
+          "locationDetail": "JR 或小田急线小田原站步行约 10 分钟",
+          "sakuraCafe.name": "小田原城本丸茶屋（Honmaru Tea House）",
+          "sakuraCafe.feature": "天守巨石垣旁的樱花树下，现烤樱花酱油团子与静冈挂川深蒸茶"
+        },
+        "en": {
+          "title": "Odawara Castle Park",
+          "subtitle": "The Hōjō clan’s Sengoku-era Kantō stronghold, with a vermilion bridge reflected among night blossoms",
+          "tag": "Odawara, Kanagawa",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino cherries (320 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–21:00: castle tower and Gakubashi Bridge cherry blossom illuminations; confirm this season’s dates and hours with the organizer",
+          "desc": "The vermilion Gakubashi Bridge and pink-white Yoshino blossoms reflect in the moat. At night, lights illuminate the white-walled keep, evoking an Edo-period picture scroll.",
+          "locationDetail": "About 10 minutes on foot from Odawara Station (JR / Odakyu lines)",
+          "sakuraCafe.name": "Honmaru Tea House, Odawara Castle",
+          "sakuraCafe.feature": "Under cherry trees beside the keep’s stone walls, with freshly grilled sakura soy-sauce dango and deep-steamed Kakegawa tea from Shizuoka"
+        },
+        "ja": {
+          "title": "小田原城址公園",
+          "subtitle": "戦国北条氏の関東拠点。朱塗りの橋と夜桜の水鏡",
+          "tag": "神奈川県小田原市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ（320本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜21:00：天守と学橋の夜桜ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "濠に架かる朱塗りの学橋と、淡いピンクや白の吉野桜が水面に映ります。夜の灯りが白壁の天守を照らし、江戸時代の絵巻のような風景に。",
+          "locationDetail": "JR・小田急線小田原駅から徒歩約10分",
+          "sakuraCafe.name": "小田原城・本丸茶屋",
+          "sakuraCafe.feature": "天守の石垣脇の桜の下で、焼きたての桜醤油団子と静岡・掛川の深蒸し茶"
+        },
+        "ko": {
+          "title": "오다와라성 공원",
+          "subtitle": "전국시대 호조 가문의 간토 거점, 붉은 아치교와 야간 벚꽃의 반영",
+          "tag": "가나가와현 오다와라시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노 벚꽃 (320그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~21:00: 천수각과 가쿠바시 다리의 야간 벚꽃 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "해자 위 붉은 가쿠바시 다리와 분홍빛·흰빛 요시노 벚꽃이 수면에 비칩니다. 밤 조명이 흰 벽의 천수각을 비춰 에도 시대 두루마리 그림을 보는 듯합니다.",
+          "locationDetail": "JR·오다큐선 오다와라역에서 도보 약 10분",
+          "sakuraCafe.name": "오다와라성 혼마루 찻집",
+          "sakuraCafe.feature": "천수각 석벽 옆 벚나무 아래에서 갓 구운 벚꽃 간장 경단과 시즈오카 가케가와 심증차"
+        },
+        "th": {
+          "title": "สวนปราสาทโอดาวาระ",
+          "subtitle": "ฐานที่มั่นคันโตของตระกูลโฮโจในยุคเซ็งโงกุ พร้อมสะพานแดงสะท้อนท่ามกลางซากุระกลางคืน",
+          "tag": "เมืองโอดาวาระ คานางาวะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "ซากุระโซเมอิโยชิโนะ (320 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–21:00: ประดับไฟซากุระที่หอปราสาทและสะพานกาคุบาชิ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "สะพานกาคุบาชิสีแดงและซากุระโยชิโนะสีชมพูขาวสะท้อนในคูน้ำ ยามค่ำแสงไฟส่องผนังขาวของหอปราสาท ราวภาพม้วนจากยุคเอโดะ",
+          "locationDetail": "เดินประมาณ 10 นาทีจากสถานีโอดาวาระ สาย JR หรือโอดาคิว",
+          "sakuraCafe.name": "ห้องชาฮนมารุ ปราสาทโอดาวาระ",
+          "sakuraCafe.feature": "ใต้ต้นซากุระข้างกำแพงหินหอปราสาท พร้อมดังโงะซอสโชยุซากุระย่างสดและชาคาเคกาวะนึ่งลึกจากชิซูโอกะ"
+        },
+        "vi": {
+          "title": "Công viên thành Odawara",
+          "subtitle": "Cứ điểm Kantō thời Sengoku của dòng Hōjō, cầu đỏ phản chiếu giữa anh đào đêm",
+          "tag": "Odawara, Kanagawa",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào Somei Yoshino (320 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–21:00: thắp sáng anh đào ở tháp thành và cầu Gakubashi; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Cầu Gakubashi đỏ cùng hoa Yoshino hồng trắng soi xuống hào. Đèn đêm chiếu tháp thành tường trắng, gợi một cuộn tranh thời Edo.",
+          "locationDetail": "Đi bộ khoảng 10 phút từ ga Odawara (JR / Odakyu)",
+          "sakuraCafe.name": "Trà quán Honmaru, thành Odawara",
+          "sakuraCafe.feature": "Dưới tán anh đào cạnh tường đá tháp thành, thưởng dango nướng xốt tương anh đào và trà hấp kỹ Kakegawa từ Shizuoka"
+        },
+        "hi": {
+          "title": "ओदावारा महल पार्क",
+          "subtitle": "सेंगोकु काल में होजो कबीले का कांतो गढ़, रात्रि-सकुरा के बीच सिंदूरी पुल का प्रतिबिंब",
+          "tag": "ओदावारा, कानागावा",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो सकुरा (320 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–21:00: मुख्य टावर और गाकुबाशी पुल की सकुरा रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "सिंदूरी गाकुबाशी पुल और गुलाबी-सफ़ेद योशिनो फूल खाई में झलकते हैं। रात की रोशनी सफ़ेद दीवारों वाले मुख्य टावर को चमकाती है, मानो एदो काल का चित्रपट जीवंत हो उठा हो।",
+          "locationDetail": "JR / ओदाक्यु लाइन के ओदावारा स्टेशन से लगभग 10 मिनट पैदल",
+          "sakuraCafe.name": "होनमारु चायघर, ओदावारा महल",
+          "sakuraCafe.feature": "मुख्य टावर की पत्थर दीवारों के पास सकुरा पेड़ों के नीचे ताज़े भुने सकुरा सोया-सॉस दांगो और शिज़ुओका की काकेगावा डीप-स्टीम्ड चाय"
+        },
+        "es": {
+          "title": "Parque del Castillo de Odawara",
+          "subtitle": "Bastión de Kantō del clan Hōjō en la era Sengoku, con un puente bermellón reflejado entre cerezos nocturnos",
+          "tag": "Odawara, Kanagawa",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Somei Yoshino (320 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–21:00: iluminación de cerezos junto a la torre y el puente Gakubashi; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "El puente bermellón Gakubashi y los cerezos Yoshino rosados y blancos se reflejan en el foso. De noche, las luces iluminan la torre de paredes blancas y evocan un rollo pictórico de la era Edo.",
+          "locationDetail": "Unos 10 minutos a pie desde Odawara (líneas JR / Odakyu)",
+          "sakuraCafe.name": "Casa de té Honmaru, Castillo de Odawara",
+          "sakuraCafe.feature": "Bajo los cerezos junto a los muros de la torre, con dango recién asado con salsa de soja y sakura, y té Kakegawa de vaporización intensa de Shizuoka"
+        }
+      }
+    },
+    "okazaki_park_night_sakura": {
+      "source": {
+        "id": "okazaki_park_night_sakura",
+        "theme": "sakura",
+        "region": "chubu",
+        "fields": {
+          "title": "岡崎公園（岡崎城）",
+          "subtitle": "德川家康公誕生地！東海第一乙川水岸夜櫻祭",
+          "tag": "愛知・岡崎市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (800株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:30 (東海第一岡崎櫻花祭水岸夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "被譽為東海地方第一的夜櫻名所！乙川與伊賀川沿岸數百株櫻花掛滿紙燈籠，屋形船自花海下方穿行，岡崎城天守閣在燈光中傲然屹立。",
+          "locationDetail": "名鐵 名古屋本線「東岡崎站」徒步 15 分鐘",
+          "sakuraCafe.name": "岡崎城 乙川水岸櫻花茶房",
+          "sakuraCafe.feature": "德川家康誕生地・日本夜櫻百選・乙川舟遊河畔席・八丁味噌甘味"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "岡崎公園（岡崎城）",
+          "subtitle": "德川家康公誕生地！東海第一乙川水岸夜櫻祭",
+          "tag": "愛知・岡崎市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (800株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:30 (東海第一岡崎櫻花祭水岸夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "被譽為東海地方第一的夜櫻名所！乙川與伊賀川沿岸數百株櫻花掛滿紙燈籠，屋形船自花海下方穿行，岡崎城天守閣在燈光中傲然屹立。",
+          "locationDetail": "名鐵 名古屋本線「東岡崎站」徒步 15 分鐘",
+          "sakuraCafe.name": "岡崎城 乙川水岸櫻花茶房",
+          "sakuraCafe.feature": "德川家康誕生地・日本夜櫻百選・乙川舟遊河畔席・八丁味噌甘味"
+        },
+        "zh-CN": {
+          "title": "冈崎公园（冈崎城）",
+          "subtitle": "德川家康诞生地，东海著名的乙川水岸夜樱祭",
+          "tag": "爱知・冈崎市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱（800 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–21:30：冈崎樱花祭水岸夜樱亮灯；本季日期与时段以官方公告为准",
+          "desc": "被誉为东海首屈一指的夜樱名所。乙川与伊贺川沿岸数百株樱花挂满纸灯笼，屋形船穿行花海之下，冈崎城天守阁在灯光中巍然耸立。",
+          "locationDetail": "名铁名古屋本线东冈崎站步行约 15 分钟",
+          "sakuraCafe.name": "冈崎城 乙川水岸樱花茶房",
+          "sakuraCafe.feature": "德川家康诞生地、日本夜樱百选、乙川游船河畔席与八丁味噌甜点"
+        },
+        "en": {
+          "title": "Okazaki Park (Okazaki Castle)",
+          "subtitle": "Tokugawa Ieyasu’s birthplace: a celebrated night-sakura festival beside the Oto River",
+          "tag": "Okazaki, Aichi",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino cherries (800 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–21:30: riverside night-sakura lighting at the Okazaki Cherry Blossom Festival; confirm this season’s dates and hours with the organizer",
+          "desc": "Celebrated as a leading night-sakura spot in the Tōkai region, hundreds of cherry trees along the Oto and Iga rivers are hung with paper lanterns. Yakatabune boats pass beneath the blossoms as Okazaki Castle’s keep rises above the lights.",
+          "locationDetail": "About 15 minutes on foot from Higashi-Okazaki Station on the Meitetsu Nagoya Main Line",
+          "sakuraCafe.name": "Okazaki Castle Oto Riverside Sakura Tea House",
+          "sakuraCafe.feature": "Tokugawa Ieyasu’s birthplace, a top-100 night-sakura selection, riverside seating by Oto River boat trips, and Hatchō miso sweets"
+        },
+        "ja": {
+          "title": "岡崎公園（岡崎城）",
+          "subtitle": "徳川家康生誕の地。乙川沿いを彩る東海屈指の夜桜まつり",
+          "tag": "愛知県岡崎市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ（800本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜21:30：岡崎の桜まつり、水辺の夜桜ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "東海屈指の夜桜の名所。乙川と伊賀川沿いの数百本の桜に提灯がともり、花の下を屋形船が進みます。岡崎城の天守がライトアップの中に堂々と浮かび上がります。",
+          "locationDetail": "名鉄名古屋本線東岡崎駅から徒歩約15分",
+          "sakuraCafe.name": "岡崎城 乙川水辺の桜茶房",
+          "sakuraCafe.feature": "徳川家康生誕の地・日本の夜桜百選・乙川の舟遊びを望む川辺の席・八丁味噌の甘味"
+        },
+        "ko": {
+          "title": "오카자키 공원 (오카자키성)",
+          "subtitle": "도쿠가와 이에야스의 탄생지, 오토강 물가를 밝히는 도카이의 야간 벚꽃 축제",
+          "tag": "아이치현 오카자키시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노 (800그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~21:30: 오카자키 벚꽃 축제 강변 야간 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "도카이 지방을 대표하는 야간 벚꽃 명소입니다. 오토강과 이가강을 따라 수백 그루의 벚나무에 종이등이 걸리고, 야카타부네 유람선이 꽃 아래를 지납니다. 오카자키성 천수각이 조명 속에 우뚝 솟아 있습니다.",
+          "locationDetail": "메이테쓰 나고야 본선 히가시오카자키역에서 도보 약 15분",
+          "sakuraCafe.name": "오카자키성 오토강변 벚꽃 찻집",
+          "sakuraCafe.feature": "도쿠가와 이에야스 탄생지, 일본 야간 벚꽃 100선, 오토강 뱃놀이를 바라보는 강변 좌석과 핫초 미소 디저트"
+        },
+        "th": {
+          "title": "สวนโอกาซากิ (ปราสาทโอกาซากิ)",
+          "subtitle": "บ้านเกิดโทกูงาวะ อิเอยาซุ กับเทศกาลซากุระกลางคืนริมแม่น้ำโอโตะชื่อดังแห่งโทไก",
+          "tag": "เมืองโอกาซากิ ไอจิ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะ (800 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–21:30: ประดับไฟซากุระริมน้ำในเทศกาลซากุระโอกาซากิ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "จุดชมซากุระกลางคืนชั้นนำของภูมิภาคโทไก ต้นซากุระหลายร้อยต้นริมแม่น้ำโอโตะและอิงะแขวนโคมกระดาษ เรือยากาตาบูเนะแล่นผ่านใต้แนวดอกไม้ ขณะที่หอปราสาทโอกาซากิตั้งตระหง่านท่ามกลางแสงไฟ",
+          "locationDetail": "เดินประมาณ 15 นาทีจากสถานีฮิงาชิโอกาซากิ สายเมเท็ตสึนาโกย่า",
+          "sakuraCafe.name": "โรงน้ำชาซากุระริมแม่น้ำโอโตะ ปราสาทโอกาซากิ",
+          "sakuraCafe.feature": "บ้านเกิดโทกูงาวะ อิเอยาซุ หนึ่งในร้อยจุดชมซากุระกลางคืนของญี่ปุ่น ที่นั่งริมน้ำชมเรือแม่น้ำโอโตะ และขนมฮัตโจมิโสะ"
+        },
+        "vi": {
+          "title": "Công viên Okazaki (lâu đài Okazaki)",
+          "subtitle": "Nơi sinh Tokugawa Ieyasu, lễ hội anh đào đêm nổi tiếng vùng Tōkai bên sông Oto",
+          "tag": "Okazaki, Aichi",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào Somei Yoshino (800 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–21:30: thắp sáng anh đào ven sông trong lễ hội hoa anh đào Okazaki; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Được xem là điểm ngắm anh đào đêm hàng đầu vùng Tōkai. Hàng trăm cây ven sông Oto và Iga treo đầy đèn lồng giấy, thuyền yakatabune lướt dưới tán hoa, còn tháp lâu đài Okazaki sừng sững trong ánh đèn.",
+          "locationDetail": "Đi bộ khoảng 15 phút từ ga Higashi-Okazaki, tuyến chính Meitetsu Nagoya",
+          "sakuraCafe.name": "Quán trà sakura ven sông Oto, lâu đài Okazaki",
+          "sakuraCafe.feature": "Nơi sinh Tokugawa Ieyasu, thuộc tuyển chọn 100 điểm ngắm anh đào đêm Nhật Bản, chỗ ngồi ven sông ngắm thuyền Oto và món ngọt miso Hatchō"
+        },
+        "hi": {
+          "title": "ओकाज़ाकी पार्क (ओकाज़ाकी महल)",
+          "subtitle": "तोकुगावा इएयासु का जन्मस्थान: ओतो नदी किनारे तोकाई का प्रसिद्ध रात्रि-सकुरा उत्सव",
+          "tag": "ओकाज़ाकी, आइची",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो चेरी (800 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–21:30: ओकाज़ाकी सकुरा उत्सव में नदी किनारे रात्रि प्रकाश-सज्जा; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "तोकाई क्षेत्र के प्रमुख रात्रि-सकुरा स्थलों में गिना जाता है। ओतो और इगा नदियों के किनारे सैकड़ों चेरी वृक्षों पर कागज़ी लालटेन लटकी हैं। फूलों के नीचे याकाताबुने नौकाएँ गुजरती हैं और रोशनी में ओकाज़ाकी महल का मुख्य बुर्ज भव्य दिखता है।",
+          "locationDetail": "मेइतेत्सु नागोया मुख्य लाइन के हिगाशी-ओकाज़ाकी स्टेशन से लगभग 15 मिनट पैदल",
+          "sakuraCafe.name": "ओकाज़ाकी महल ओतो नदीतट सकुरा चायघर",
+          "sakuraCafe.feature": "तोकुगावा इएयासु का जन्मस्थान, जापान के 100 चुने हुए रात्रि-सकुरा स्थल, ओतो नदी की नौकाओं के पास तटवर्ती बैठक और हाच्चो मिसो मिठाइयाँ"
+        },
+        "es": {
+          "title": "Parque de Okazaki (castillo de Okazaki)",
+          "subtitle": "Cuna de Tokugawa Ieyasu: un célebre festival de cerezos nocturnos junto al río Oto, en Tōkai",
+          "tag": "Okazaki, Aichi",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Somei Yoshino (800 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–21:30: iluminación de cerezos junto al río durante el Festival del Cerezo de Okazaki; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Considerado uno de los principales lugares de Tōkai para ver cerezos de noche. Cientos de árboles junto a los ríos Oto e Iga lucen farolillos de papel; las barcas yakatabune pasan bajo las flores y la torre del castillo de Okazaki se alza entre las luces.",
+          "locationDetail": "A unos 15 minutos a pie de la estación Higashi-Okazaki, línea principal Meitetsu Nagoya",
+          "sakuraCafe.name": "Casa de té Sakura del río Oto, castillo de Okazaki",
+          "sakuraCafe.feature": "Cuna de Tokugawa Ieyasu, selección de 100 lugares de cerezos nocturnos de Japón, asientos junto a los paseos en barca del Oto y dulces de miso Hatchō"
+        }
+      }
+    },
+    "koriyama_castle_night_sakura": {
+      "source": {
+        "id": "koriyama_castle_night_sakura",
+        "theme": "sakura",
+        "region": "kansai",
+        "fields": {
+          "title": "郡山城跡",
+          "subtitle": "日本櫻花名所百選！古城石垣千本御殿櫻燈影",
+          "tag": "奈良・大和郡山市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (大和郡山城祭燈籠點燈)；本季日期與時段以官方公告為準",
+          "desc": "豐臣秀吉之弟豐臣秀長居城。城址護城河與石垣上栽植千株吉野櫻，每年春季舉辦城祭，600盞紙雪洞燈籠映照護城河如詩如畫。",
+          "locationDetail": "近鐵 橿原線「近鐵郡山站」徒步 7 分鐘",
+          "sakuraCafe.name": "郡山城跡 天守台茶房",
+          "sakuraCafe.feature": "天守台石垣由上往下俯瞰櫻花海・大和茶與吉野葛餅"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "郡山城跡",
+          "subtitle": "日本櫻花名所百選！古城石垣千本御殿櫻燈影",
+          "tag": "奈良・大和郡山市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (大和郡山城祭燈籠點燈)；本季日期與時段以官方公告為準",
+          "desc": "豐臣秀吉之弟豐臣秀長居城。城址護城河與石垣上栽植千株吉野櫻，每年春季舉辦城祭，600盞紙雪洞燈籠映照護城河如詩如畫。",
+          "locationDetail": "近鐵 橿原線「近鐵郡山站」徒步 7 分鐘",
+          "sakuraCafe.name": "郡山城跡 天守台茶房",
+          "sakuraCafe.feature": "天守台石垣由上往下俯瞰櫻花海・大和茶與吉野葛餅"
+        },
+        "zh-CN": {
+          "title": "郡山城迹",
+          "subtitle": "日本樱花名所百选，古城石垣与千株御殿樱的灯影",
+          "tag": "奈良・大和郡山市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱（1,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–21:00：大和郡山城祭灯笼亮灯；本季日期与时段以官方公告为准",
+          "desc": "丰臣秀吉之弟丰臣秀长的居城。城迹护城河与石垣旁种植千株吉野樱，每年春季举行城祭，600 盏纸灯笼映照护城河，景致如诗如画。",
+          "locationDetail": "近铁橿原线近铁郡山站步行约 7 分钟",
+          "sakuraCafe.name": "郡山城迹 天守台茶房",
+          "sakuraCafe.feature": "从天守台石垣俯瞰樱花海，品尝大和茶与吉野葛饼"
+        },
+        "en": {
+          "title": "Kōriyama Castle Ruins",
+          "subtitle": "One of Japan’s top 100 cherry blossom spots: lantern-lit stone walls and a thousand palace cherries",
+          "tag": "Yamatokōriyama, Nara",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino cherries (1,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–21:00: lantern lighting at the Yamato Kōriyama Castle Festival; confirm this season’s dates and hours with the organizer",
+          "desc": "Once the residence of Toyotomi Hidenaga, younger brother of Toyotomi Hideyoshi. A thousand Yoshino cherries grow beside the moat and stone walls. The annual spring castle festival lights 600 paper lanterns, casting picturesque reflections on the water.",
+          "locationDetail": "About 7 minutes on foot from Kintetsu-Kōriyama Station on the Kintetsu Kashihara Line",
+          "sakuraCafe.name": "Kōriyama Castle Ruins Keep Platform Tea House",
+          "sakuraCafe.feature": "Views down from the keep platform’s stone walls over a sea of cherry trees, with Yamato tea and Yoshino kudzu sweets"
+        },
+        "ja": {
+          "title": "郡山城跡",
+          "subtitle": "日本さくら名所100選。古城の石垣と千本の御殿桜を彩る灯り",
+          "tag": "奈良県大和郡山市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ（1,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜21:00：大和郡山お城まつりのぼんぼり点灯。今季の日程・時間は公式発表を確認してください",
+          "desc": "豊臣秀吉の弟、豊臣秀長の居城。濠や石垣沿いに千本の桜が植えられ、毎年春にはお城まつりが開かれます。600基のぼんぼりが濠に映り、絵のような風景を生み出します。",
+          "locationDetail": "近鉄橿原線近鉄郡山駅から徒歩約7分",
+          "sakuraCafe.name": "郡山城跡 天守台茶房",
+          "sakuraCafe.feature": "天守台の石垣から見下ろす桜・大和茶と吉野葛餅"
+        },
+        "ko": {
+          "title": "고리야마성 터",
+          "subtitle": "일본 벚꽃 명소 100선, 옛 성의 돌담과 천 그루 벚꽃을 비추는 등불",
+          "tag": "나라현 야마토코리야마시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노 (1,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~21:00: 야마토코리야마 성 축제 등불 점등 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "도요토미 히데요시의 동생 히데나가가 거주한 성입니다. 해자와 돌담 주변에 천 그루의 벚나무가 자라고, 매년 봄 성 축제 때 종이등 600개가 물에 비쳐 그림 같은 풍경을 만듭니다.",
+          "locationDetail": "긴테쓰 가시하라선 긴테쓰코리야마역에서 도보 약 7분",
+          "sakuraCafe.name": "고리야마성 터 천수대 찻집",
+          "sakuraCafe.feature": "천수대 돌담에서 내려다보는 벚꽃, 야마토차와 요시노 구즈모치"
+        },
+        "th": {
+          "title": "ซากปราสาทโคริยามะ",
+          "subtitle": "หนึ่งในร้อยจุดชมซากุระของญี่ปุ่น กำแพงหินเก่าและซากุระพันต้นใต้แสงโคม",
+          "tag": "เมืองยามาโตะโคริยามะ นารา",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะ (1,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–21:00: จุดโคมในเทศกาลปราสาทยามาโตะโคริยามะ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "อดีตที่พำนักของโทโยโทมิ ฮิเดนางะ น้องชายของฮิเดโยชิ ซากุระโยชิโนะพันต้นขึ้นอยู่ข้างคูน้ำและกำแพงหิน ทุกฤดูใบไม้ผลิมีเทศกาลปราสาท โคมกระดาษ 600 ดวงสะท้อนบนคูน้ำงดงามราวภาพวาด",
+          "locationDetail": "เดินประมาณ 7 นาทีจากสถานีคินเท็ตสึโคริยามะ สายคินเท็ตสึคาชิฮาระ",
+          "sakuraCafe.name": "โรงน้ำชาฐานหอปราสาท ซากปราสาทโคริยามะ",
+          "sakuraCafe.feature": "ชมทะเลซากุระจากกำแพงหินฐานหอปราสาท พร้อมชายามาโตะและขนมคุซุโมจิโยชิโนะ"
+        },
+        "vi": {
+          "title": "Di tích lâu đài Kōriyama",
+          "subtitle": "Một trong 100 điểm ngắm anh đào của Nhật Bản, tường đá cổ và nghìn cây anh đào dưới ánh đèn",
+          "tag": "Yamatokōriyama, Nara",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào Somei Yoshino (1.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–21:00: đèn lồng tại lễ hội lâu đài Yamato Kōriyama; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Từng là nơi ở của Toyotomi Hidenaga, em trai Toyotomi Hideyoshi. Một nghìn cây anh đào Yoshino mọc bên hào và tường đá. Lễ hội lâu đài mỗi mùa xuân thắp 600 đèn lồng giấy, soi bóng xuống hào như tranh vẽ.",
+          "locationDetail": "Đi bộ khoảng 7 phút từ ga Kintetsu-Kōriyama, tuyến Kintetsu Kashihara",
+          "sakuraCafe.name": "Quán trà nền tháp chính, di tích lâu đài Kōriyama",
+          "sakuraCafe.feature": "Từ tường đá nền tháp nhìn xuống biển hoa anh đào, thưởng thức trà Yamato và bánh bột sắn dây Yoshino"
+        },
+        "hi": {
+          "title": "कोरियामा महल के अवशेष",
+          "subtitle": "जापान के 100 चुनिंदा सकुरा स्थलों में एक: पुराने पत्थर के परकोटे और हज़ार चेरी वृक्षों पर लालटेन की रोशनी",
+          "tag": "यामातोकोरियामा, नारा",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो चेरी (1,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–21:00: यामातो कोरियामा महल उत्सव में लालटेन की रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "यह तोयोतोमी हिदेयोशी के छोटे भाई हिदेनागा का निवास था। खाई और पत्थर की दीवारों के पास हज़ार योशिनो चेरी वृक्ष हैं। हर वसंत महल उत्सव में 600 कागज़ी लालटेन खाई पर चित्र जैसी छवि बनाती हैं।",
+          "locationDetail": "किन्तेत्सु काशिहारा लाइन के किन्तेत्सु-कोरियामा स्टेशन से लगभग 7 मिनट पैदल",
+          "sakuraCafe.name": "कोरियामा महल अवशेष मुख्य बुर्ज चबूतरा चायघर",
+          "sakuraCafe.feature": "मुख्य बुर्ज के पत्थर के चबूतरे से चेरी वृक्षों का नज़ारा, यामातो चाय और योशिनो कुज़ु मिठाई"
+        },
+        "es": {
+          "title": "Ruinas del castillo de Kōriyama",
+          "subtitle": "Uno de los 100 mejores lugares de cerezos de Japón: antiguas murallas y mil cerezos bajo farolillos",
+          "tag": "Yamatokōriyama, Nara",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Somei Yoshino (1.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–21:00: farolillos del Festival del Castillo de Yamato Kōriyama; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Fue residencia de Toyotomi Hidenaga, hermano menor de Toyotomi Hideyoshi. Mil cerezos Yoshino crecen junto al foso y las murallas de piedra. Cada primavera, el festival del castillo enciende 600 farolillos de papel que se reflejan en el agua como una pintura.",
+          "locationDetail": "A unos 7 minutos a pie de la estación Kintetsu-Kōriyama, línea Kintetsu Kashihara",
+          "sakuraCafe.name": "Casa de té de la base de la torre, ruinas del castillo de Kōriyama",
+          "sakuraCafe.feature": "Vistas desde los muros de la base de la torre sobre un mar de cerezos, con té Yamato y dulces de kudzu de Yoshino"
+        }
+      }
+    },
+    "takato_castle_night_sakura": {
+      "source": {
+        "id": "takato_castle_night_sakura",
+        "theme": "sakura",
+        "region": "chubu",
+        "fields": {
+          "title": "高遠城址公園",
+          "subtitle": "天下第一櫻！1500株特有高遠小彼岸櫻粉紅迷境",
+          "tag": "長野・伊那市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "高遠小彼岸櫻 (1500株全日本獨家)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (天下第一櫻高遠城夜櫻光雕)；本季日期與時段以官方公告為準",
+          "desc": "被譽為「天下第一櫻」，花色比一般吉野櫻更深邃嬌紅。古老白兔橋與護城河在夜晚打上微光，落櫻如紅雪飄落，被評為日本三大夜櫻之一。",
+          "locationDetail": "JR 飯田線「伊那市站」搭乘巴士約 25 分鐘",
+          "sakuraCafe.name": "天下第一櫻露天茶房 (高遠さくら茶屋)",
+          "sakuraCafe.feature": "1500株小彼岸櫻粉紅花海長凳・高遠饅頭與信州現榨蘋果汁"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "高遠城址公園",
+          "subtitle": "天下第一櫻！1500株特有高遠小彼岸櫻粉紅迷境",
+          "tag": "長野・伊那市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "高遠小彼岸櫻 (1500株全日本獨家)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (天下第一櫻高遠城夜櫻光雕)；本季日期與時段以官方公告為準",
+          "desc": "被譽為「天下第一櫻」，花色比一般吉野櫻更深邃嬌紅。古老白兔橋與護城河在夜晚打上微光，落櫻如紅雪飄落，被評為日本三大夜櫻之一。",
+          "locationDetail": "JR 飯田線「伊那市站」搭乘巴士約 25 分鐘",
+          "sakuraCafe.name": "天下第一櫻露天茶房 (高遠さくら茶屋)",
+          "sakuraCafe.feature": "1500株小彼岸櫻粉紅花海長凳・高遠饅頭與信州現榨蘋果汁"
+        },
+        "zh-CN": {
+          "title": "高远城址公园",
+          "subtitle": "天下第一樱，1,500 株特有高远小彼岸樱交织粉红秘境",
+          "tag": "长野・伊那市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "高远小彼岸樱（1,500 株，日本独有）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–22:00：高远城「天下第一樱」夜樱灯光秀；本季日期与时段以官方公告为准",
+          "desc": "被誉为「天下第一樱」，花色比一般吉野樱更深红。古老的白兔桥与护城河在夜间泛起微光，落樱如红雪飘落，被评为日本三大夜樱之一。",
+          "locationDetail": "JR 饭田线伊那市站乘巴士约 25 分钟",
+          "sakuraCafe.name": "天下第一樱露天茶房（高遠さくら茶屋）",
+          "sakuraCafe.feature": "在 1,500 株小彼岸樱的粉红花海长椅上，享用高远馒头与信州鲜榨苹果汁"
+        },
+        "en": {
+          "title": "Takatō Castle Ruins Park",
+          "subtitle": "“The finest cherry blossoms under heaven”: a pink wonderland of 1,500 distinctive Takatō Kohigan cherries",
+          "tag": "Ina, Nagano",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Takatō Kohigan cherries (1,500 trees, unique to Japan)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–22:00: Takatō Castle’s “finest blossoms under heaven” night-sakura light show; confirm this season’s dates and hours with the organizer",
+          "desc": "Known as “the finest cherry blossoms under heaven,” these flowers are a deeper pink than typical Yoshino cherries. Gentle night lighting illuminates the old Hakuto Bridge and moat as petals fall like crimson snow, a scene ranked among Japan’s three great night-sakura sights.",
+          "locationDetail": "About 25 minutes by bus from Inashi Station on the JR Iida Line",
+          "sakuraCafe.name": "Finest Blossoms Open-Air Tea House (Takatō Sakura Chaya)",
+          "sakuraCafe.feature": "Benches amid 1,500 pink Kohigan cherry trees, with Takatō manjū sweets and freshly pressed Shinshū apple juice"
+        },
+        "ja": {
+          "title": "高遠城址公園",
+          "subtitle": "天下第一の桜。1,500本のタカトオコヒガンザクラが織りなすピンクの世界",
+          "tag": "長野県伊那市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "タカトオコヒガンザクラ（1,500本、日本固有）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜22:00：高遠城「天下第一の桜」夜桜ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "「天下第一の桜」と称され、一般的なソメイヨシノよりも濃いピンク色が特徴です。夜は古い白兎橋と濠がほのかな光に包まれ、紅い雪のように花びらが舞います。日本三大夜桜の一つと評される景色です。",
+          "locationDetail": "JR飯田線伊那市駅からバス約25分",
+          "sakuraCafe.name": "天下第一の桜・露天茶房（高遠さくら茶屋）",
+          "sakuraCafe.feature": "1,500本のコヒガンザクラに囲まれたベンチ・高遠まんじゅうと信州の搾りたてリンゴジュース"
+        },
+        "ko": {
+          "title": "다카토성 터 공원",
+          "subtitle": "천하제일의 벚꽃, 다카토 고히간 벚나무 1,500그루가 펼치는 분홍빛 세상",
+          "tag": "나가노현 이나시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "다카토 고히간 벚꽃 (1,500그루, 일본 고유)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~22:00: 다카토성 천하제일 벚꽃 야간 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "천하제일의 벚꽃으로 불리며 일반 요시노 벚꽃보다 진한 분홍빛이 특징입니다. 밤에는 옛 하쿠토 다리와 해자가 은은하게 빛나고, 꽃잎이 붉은 눈처럼 흩날립니다. 일본 3대 야간 벚꽃 중 하나로 꼽히는 풍경입니다.",
+          "locationDetail": "JR 이다선 이나시역에서 버스로 약 25분",
+          "sakuraCafe.name": "천하제일 벚꽃 야외 찻집 (다카토 사쿠라 차야)",
+          "sakuraCafe.feature": "고히간 벚나무 1,500그루의 분홍 꽃밭 속 벤치, 다카토 만주와 신슈의 갓 짠 사과 주스"
+        },
+        "th": {
+          "title": "สวนซากปราสาททาคาโตะ",
+          "subtitle": "ซากุระงามที่สุดใต้หล้า โลกสีชมพูของทาคาโตะโคฮิงังซากุระพันธุ์เฉพาะ 1,500 ต้น",
+          "tag": "เมืองอินะ นากาโนะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "ทาคาโตะโคฮิงังซากุระ (1,500 ต้น พันธุ์เฉพาะญี่ปุ่น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–22:00: แสงสีซากุระกลางคืนปราสาททาคาโตะ “งามที่สุดใต้หล้า” โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ได้รับสมญาว่าซากุระงามที่สุดใต้หล้า ดอกมีสีชมพูเข้มกว่าโยชิโนะทั่วไป ยามค่ำสะพานฮาคุโตะเก่าและคูน้ำเรืองแสงอ่อน กลีบปลิวราวหิมะสีแดง เป็นทิวทัศน์ที่ได้รับการยกย่องเป็นหนึ่งในสามจุดชมซากุระกลางคืนชั้นนำของญี่ปุ่น",
+          "locationDetail": "นั่งรถบัสประมาณ 25 นาทีจากสถานีอินาชิ สาย JR อีดะ",
+          "sakuraCafe.name": "โรงน้ำชากลางแจ้งซากุระงามที่สุดใต้หล้า (ทาคาโตะซากุระชายะ)",
+          "sakuraCafe.feature": "ม้านั่งท่ามกลางโคฮิงังซากุระสีชมพู 1,500 ต้น พร้อมมันจูทาคาโตะและน้ำแอปเปิลคั้นสดจากชินชู"
+        },
+        "vi": {
+          "title": "Công viên di tích lâu đài Takatō",
+          "subtitle": "“Anh đào đẹp nhất thiên hạ”, thế giới hồng của 1.500 cây Takatō Kohigan đặc trưng",
+          "tag": "Ina, Nagano",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào Takatō Kohigan (1.500 cây, đặc hữu Nhật Bản)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–22:00: trình diễn ánh sáng anh đào đêm “đẹp nhất thiên hạ” ở lâu đài Takatō; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Được mệnh danh là “anh đào đẹp nhất thiên hạ”, hoa có màu hồng đậm hơn Yoshino thông thường. Ánh đèn dịu chiếu lên cầu Hakuto cổ và hào, cánh hoa rơi như tuyết đỏ, tạo cảnh được xếp vào ba điểm ngắm anh đào đêm lớn của Nhật Bản.",
+          "locationDetail": "Đi xe buýt khoảng 25 phút từ ga Inashi, tuyến JR Iida",
+          "sakuraCafe.name": "Quán trà ngoài trời Anh Đào Đẹp Nhất Thiên Hạ (Takatō Sakura Chaya)",
+          "sakuraCafe.feature": "Ghế dài giữa 1.500 cây Kohigan hồng, bánh manjū Takatō và nước táo Shinshū ép tươi"
+        },
+        "hi": {
+          "title": "ताकातो महल अवशेष पार्क",
+          "subtitle": "“संसार के सबसे सुंदर सकुरा”: 1,500 विशिष्ट ताकातो कोहिगान चेरी वृक्षों की गुलाबी दुनिया",
+          "tag": "इना, नागानो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "ताकातो कोहिगान चेरी (1,500 पेड़, जापान की विशिष्ट किस्म)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–22:00: ताकातो महल के “संसार के सबसे सुंदर सकुरा” का रात्रि प्रकाश प्रदर्शन; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "“संसार के सबसे सुंदर सकुरा” कहे जाने वाले इन फूलों का गुलाबी रंग आम योशिनो चेरी से गहरा है। रात की हल्की रोशनी पुराने हाकुतो पुल और खाई को चमकाती है। लाल बर्फ़ जैसी गिरती पंखुड़ियों का यह दृश्य जापान के तीन प्रमुख रात्रि-सकुरा दृश्यों में गिना जाता है।",
+          "locationDetail": "JR ईदा लाइन के इनाशी स्टेशन से बस द्वारा लगभग 25 मिनट",
+          "sakuraCafe.name": "सर्वश्रेष्ठ सकुरा खुला चायघर (ताकातो सकुरा चाया)",
+          "sakuraCafe.feature": "1,500 गुलाबी कोहिगान चेरी वृक्षों के बीच बेंच, ताकातो मंजू मिठाई और शिन्शू का ताज़ा सेब का रस"
+        },
+        "es": {
+          "title": "Parque de las ruinas del castillo de Takatō",
+          "subtitle": "“Los cerezos más bellos bajo el cielo”: un mundo rosa de 1.500 singulares Takatō Kohigan",
+          "tag": "Ina, Nagano",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Takatō Kohigan (1.500 árboles, variedad propia de Japón)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–22:00: espectáculo nocturno de los “cerezos más bellos bajo el cielo” de Takatō; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Conocidas como “las flores de cerezo más bellas bajo el cielo”, tienen un rosa más intenso que las Yoshino habituales. Una luz tenue ilumina el antiguo puente Hakuto y el foso mientras caen pétalos como nieve roja, en una escena considerada entre los tres grandes paisajes de cerezos nocturnos de Japón.",
+          "locationDetail": "A unos 25 minutos en autobús de la estación Inashi, línea JR Iida",
+          "sakuraCafe.name": "Casa de té al aire libre de los Cerezos Más Bellos (Takatō Sakura Chaya)",
+          "sakuraCafe.feature": "Bancos entre 1.500 cerezos Kohigan rosados, manjū de Takatō y zumo de manzana de Shinshū recién exprimido"
+        }
+      }
+    },
+    "tsuruga_castle_night_sakura": {
+      "source": {
+        "id": "tsuruga_castle_night_sakura",
+        "theme": "sakura",
+        "region": "tohoku",
+        "fields": {
+          "title": "鶴之城（若松城）",
+          "subtitle": "東日本最大級夜櫻光雕！紅瓦天守閣與護城河倒影",
+          "tag": "福島・會津若松市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・八重櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:30 (鶴之城史蹟夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "會津精神象徵名城。夜間全城公園點亮燈火，為東日本規模最大的夜櫻點燈活動，赤瓦五層天守閣與盛開櫻花倒映在內護城河水面，莊嚴神聖。",
+          "locationDetail": "JR 會津若松站搭乘市內觀光巴士至「鶴之城北口」"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "鶴之城（若松城）",
+          "subtitle": "東日本最大級夜櫻光雕！紅瓦天守閣與護城河倒影",
+          "tag": "福島・會津若松市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・八重櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:30 (鶴之城史蹟夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "會津精神象徵名城。夜間全城公園點亮燈火，為東日本規模最大的夜櫻點燈活動，赤瓦五層天守閣與盛開櫻花倒映在內護城河水面，莊嚴神聖。",
+          "locationDetail": "JR 會津若松站搭乘市內觀光巴士至「鶴之城北口」"
+        },
+        "zh-CN": {
+          "title": "鹤之城（若松城）",
+          "subtitle": "东日本最大级夜樱灯光秀，红瓦天守阁与护城河倒影",
+          "tag": "福岛・会津若松市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、八重樱（1,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:30–21:30：鹤之城史迹夜樱亮灯；本季日期与时段以官方公告为准",
+          "desc": "象征会津精神的名城。夜间全园亮灯，举办东日本最大规模的夜樱灯光活动。红瓦五层天守阁与盛开樱花倒映在内护城河中，庄严静谧。",
+          "locationDetail": "JR 会津若松站乘市内观光巴士至鹤之城北口"
+        },
+        "en": {
+          "title": "Tsuruga Castle (Wakamatsu Castle)",
+          "subtitle": "One of eastern Japan’s largest night-sakura light displays, with a red-tiled keep reflected in the moat",
+          "tag": "Aizuwakamatsu, Fukushima",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and double-flowered cherries (1,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:30–21:30: night-sakura lighting at the Tsuruga Castle historic site; confirm this season’s dates and hours with the organizer",
+          "desc": "A celebrated castle symbolizing the spirit of Aizu. The entire park lights up at night for eastern Japan’s largest night-sakura illumination event. The red-tiled five-tiered keep and blooming cherries reflect in the inner moat in a serene, majestic scene.",
+          "locationDetail": "From JR Aizuwakamatsu Station, take a city sightseeing bus to Tsurugajō Kitaguchi"
+        },
+        "ja": {
+          "title": "鶴ヶ城（若松城）",
+          "subtitle": "東日本最大級の夜桜ライトアップ。赤瓦の天守と濠に映る桜",
+          "tag": "福島県会津若松市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・八重桜（1,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:30〜21:30：鶴ヶ城史跡の夜桜ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "会津の精神を象徴する名城。夜は公園全体が灯りに包まれ、東日本最大規模の夜桜ライトアップが行われます。赤瓦の五層天守と満開の桜が内濠に映り、荘厳な風景を生み出します。",
+          "locationDetail": "JR会津若松駅からまちなか周遊バスで鶴ヶ城北口下車"
+        },
+        "ko": {
+          "title": "쓰루가성 (와카마쓰성)",
+          "subtitle": "동일본 최대급 야간 벚꽃 조명, 붉은 기와 천수각과 해자의 반영",
+          "tag": "후쿠시마현 아이즈와카마쓰시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·겹벚꽃 (1,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:30~21:30: 쓰루가성 사적지 야간 벚꽃 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "아이즈 정신을 상징하는 명성입니다. 밤에는 공원 전체에 불이 켜져 동일본 최대 규모의 야간 벚꽃 조명 행사가 펼쳐집니다. 붉은 기와의 5층 천수각과 만개한 벚꽃이 안쪽 해자에 비쳐 장엄한 풍경을 이룹니다.",
+          "locationDetail": "JR 아이즈와카마쓰역에서 시내 관광버스로 쓰루가조 기타구치 하차"
+        },
+        "th": {
+          "title": "ปราสาทสึรุกะ (ปราสาทวากามัตสึ)",
+          "subtitle": "งานไฟซากุระกลางคืนขนาดใหญ่ระดับแนวหน้าของญี่ปุ่นตะวันออก หอปราสาทกระเบื้องแดงสะท้อนในคูน้ำ",
+          "tag": "เมืองไอซุวากามัตสึ ฟุกุชิมะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและซากุระกลีบซ้อน (1,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:30–21:30: ประดับไฟซากุระกลางคืน ณ โบราณสถานปราสาทสึรุกะ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ปราสาทชื่อดังสัญลักษณ์แห่งจิตวิญญาณไอซุ ยามค่ำสวนทั้งแห่งสว่างไสวในงานไฟซากุระกลางคืนที่ใหญ่ที่สุดของญี่ปุ่นตะวันออก หอปราสาทห้าชั้นหลังคากระเบื้องแดงและซากุระบานสะท้อนในคูน้ำชั้นในอย่างสง่างาม",
+          "locationDetail": "จากสถานี JR ไอซุวากามัตสึ นั่งรถบัสท่องเที่ยวเมืองไปลงสึรุกะโจคิตะกุจิ"
+        },
+        "vi": {
+          "title": "Lâu đài Tsuruga (lâu đài Wakamatsu)",
+          "subtitle": "Ánh sáng anh đào đêm quy mô hàng đầu miền đông Nhật Bản, tháp ngói đỏ soi bóng trên hào",
+          "tag": "Aizuwakamatsu, Fukushima",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào cánh kép (1.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:30–21:30: thắp sáng anh đào đêm tại di tích lâu đài Tsuruga; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Tòa thành nổi tiếng tượng trưng cho tinh thần Aizu. Ban đêm cả công viên sáng đèn trong sự kiện anh đào đêm lớn nhất miền đông Nhật Bản. Tháp năm tầng ngói đỏ cùng hoa anh đào nở rộ soi bóng xuống hào trong, tạo cảnh trang nghiêm.",
+          "locationDetail": "Từ ga JR Aizuwakamatsu, đi xe buýt tham quan nội thành đến Tsurugajō Kitaguchi"
+        },
+        "hi": {
+          "title": "त्सुरुगा महल (वाकामात्सु महल)",
+          "subtitle": "पूर्वी जापान के सबसे बड़े रात्रि-सकुरा प्रकाश प्रदर्शनों में एक, खाई में लाल छत वाले बुर्ज का प्रतिबिंब",
+          "tag": "आइज़ुवाकामात्सु, फुकुशिमा",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और दोहरी पंखुड़ी वाली चेरी (1,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:30–21:30: त्सुरुगा महल ऐतिहासिक स्थल पर रात्रि-सकुरा रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "आइज़ु की भावना का प्रतीक यह प्रसिद्ध महल रात में जगमगाता है। पूरे पार्क में पूर्वी जापान का सबसे बड़ा रात्रि-सकुरा प्रकाश उत्सव होता है। लाल टाइलों वाला पाँच-स्तरीय बुर्ज और खिले चेरी फूल भीतरी खाई में प्रतिबिंबित होकर भव्य, शांत दृश्य बनाते हैं।",
+          "locationDetail": "JR आइज़ुवाकामात्सु स्टेशन से नगर पर्यटन बस लेकर त्सुरुगाजो कितागुची उतरें"
+        },
+        "es": {
+          "title": "Castillo de Tsuruga (castillo de Wakamatsu)",
+          "subtitle": "Una de las mayores iluminaciones de cerezos del este de Japón, con una torre de tejas rojas reflejada en el foso",
+          "tag": "Aizuwakamatsu, Fukushima",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos de flor doble (1.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:30–21:30: iluminación de cerezos nocturnos en el recinto histórico de Tsuruga; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Un célebre castillo que simboliza el espíritu de Aizu. Todo el parque se ilumina de noche en el mayor evento de cerezos nocturnos del este de Japón. La torre de cinco niveles y tejas rojas y los cerezos en flor se reflejan en el foso interior en una escena solemne.",
+          "locationDetail": "Desde la estación JR Aizuwakamatsu, tomar el autobús turístico urbano hasta Tsurugajō Kitaguchi"
+        }
+      }
+    },
+    "matsuyama_castle_night_sakura": {
+      "source": {
+        "id": "matsuyama_castle_night_sakura",
+        "theme": "sakura",
+        "region": "shikoku",
+        "fields": {
+          "title": "松山城公園",
+          "subtitle": "勝山山頂連立式天守！夜櫻俯瞰道後溫泉萬家燈火",
+          "tag": "愛媛・松山市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・椿寒櫻 (200株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (松山城天守閣與本丸夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "聳立於標高132公尺勝山之頂。搭乘纜車直達本丸廣場，在夜間櫻花林中不僅可近距離欣賞現存天守閣，還能遠眺松山市夜景與瀨戶內海。",
+          "locationDetail": "伊予鐵道市內電車「大街道站」徒步 5 分鐘至纜車站"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "松山城公園",
+          "subtitle": "勝山山頂連立式天守！夜櫻俯瞰道後溫泉萬家燈火",
+          "tag": "愛媛・松山市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・椿寒櫻 (200株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 21:00 (松山城天守閣與本丸夜櫻點燈)；本季日期與時段以官方公告為準",
+          "desc": "聳立於標高132公尺勝山之頂。搭乘纜車直達本丸廣場，在夜間櫻花林中不僅可近距離欣賞現存天守閣，還能遠眺松山市夜景與瀨戶內海。",
+          "locationDetail": "伊予鐵道市內電車「大街道站」徒步 5 分鐘至纜車站"
+        },
+        "zh-CN": {
+          "title": "松山城公园",
+          "subtitle": "胜山山顶的连立式天守，夜樱与道后温泉万家灯火",
+          "tag": "爱媛・松山市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、椿寒樱（200 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–21:00：松山城天守阁与本丸夜樱亮灯；本季日期与时段以官方公告为准",
+          "desc": "耸立于海拔 132 米的胜山之巅。乘缆车直达本丸广场，在夜间樱花林中既可近距离欣赏现存天守阁，也可远眺松山市夜景与濑户内海。",
+          "locationDetail": "伊予铁道市内电车大街道站步行约 5 分钟至缆车站"
+        },
+        "en": {
+          "title": "Matsuyama Castle Park",
+          "subtitle": "A linked keep complex atop Katsuyama, with night blossoms above the lights of Dōgo Onsen",
+          "tag": "Matsuyama, Ehime",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and Tsubaki Kanzakura cherries (200 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–21:00: night-sakura lighting around Matsuyama Castle’s keep and inner grounds; confirm this season’s dates and hours with the organizer",
+          "desc": "Standing atop 132-meter-high Katsuyama, the castle is reached by ropeway to the Honmaru plaza. Among the cherry trees at night, admire the surviving original keep up close and look out over Matsuyama’s city lights and the Seto Inland Sea.",
+          "locationDetail": "About 5 minutes on foot from Ōkaidō tram stop (Iyotetsu city tram) to the ropeway station"
+        },
+        "ja": {
+          "title": "松山城公園",
+          "subtitle": "勝山山頂の連立式天守。夜桜と道後温泉の街明かりを望む",
+          "tag": "愛媛県松山市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・ツバキカンザクラ（200本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜21:00：松山城天守と本丸の夜桜ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "標高132メートルの勝山山頂にそびえます。ロープウェイで本丸広場へ。夜の桜並木から現存天守を間近に眺め、松山市街の夜景や瀬戸内海まで見渡せます。",
+          "locationDetail": "伊予鉄道市内電車大街道駅からロープウェイ乗り場まで徒歩約5分"
+        },
+        "ko": {
+          "title": "마쓰야마성 공원",
+          "subtitle": "가쓰야마 정상의 연결식 천수각, 야간 벚꽃 너머 도고 온천의 불빛",
+          "tag": "에히메현 마쓰야마시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·쓰바키칸자쿠라 (200그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~21:00: 마쓰야마성 천수각과 본성 야간 벚꽃 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "해발 132m의 가쓰야마 정상에 우뚝 솟아 있습니다. 로프웨이로 본성 광장에 올라 밤 벚꽃 숲에서 현존 천수각을 가까이 감상하고, 마쓰야마 시내 야경과 세토 내해를 바라볼 수 있습니다.",
+          "locationDetail": "이요테쓰 시내 전차 오카이도역에서 로프웨이 승강장까지 도보 약 5분"
+        },
+        "th": {
+          "title": "สวนปราสาทมัตสึยามะ",
+          "subtitle": "หมู่หอปราสาทเชื่อมต่อบนยอดเขาคัตสึยามะ ชมซากุระกลางคืนเหนือแสงเมืองโดโกะออนเซ็น",
+          "tag": "เมืองมัตสึยามะ เอฮิเมะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและสึบากิคันซากุระ (200 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–21:00: ประดับไฟซากุระรอบหอปราสาทมัตสึยามะและเขตฮนมารุ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ตั้งตระหง่านบนยอดเขาคัตสึยามะสูง 132 เมตร นั่งกระเช้าไปยังลานฮนมารุ ท่ามกลางซากุระยามค่ำสามารถชมหอปราสาทดั้งเดิมที่ยังคงอยู่ได้อย่างใกล้ชิด พร้อมมองไกลถึงแสงเมืองมัตสึยามะและทะเลในเซโตะ",
+          "locationDetail": "เดินประมาณ 5 นาทีจากป้ายรถรางโอไคโดะของอิโยเท็ตสึไปยังสถานีกระเช้า"
+        },
+        "vi": {
+          "title": "Công viên lâu đài Matsuyama",
+          "subtitle": "Cụm tháp thành liên kết trên đỉnh Katsuyama, anh đào đêm nhìn xuống ánh đèn Dōgo Onsen",
+          "tag": "Matsuyama, Ehime",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và Tsubaki Kanzakura (200 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–21:00: thắp sáng anh đào quanh tháp chính và khu Honmaru lâu đài Matsuyama; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Sừng sững trên đỉnh Katsuyama cao 132 mét. Đi cáp treo đến quảng trường Honmaru, rồi giữa rừng anh đào đêm ngắm gần tháp thành nguyên gốc còn tồn tại và phóng tầm mắt ra ánh đèn thành phố Matsuyama cùng biển nội địa Seto.",
+          "locationDetail": "Đi bộ khoảng 5 phút từ trạm xe điện Ōkaidō của Iyotetsu đến ga cáp treo"
+        },
+        "hi": {
+          "title": "मात्सुयामा महल पार्क",
+          "subtitle": "कात्सुयामा शिखर पर जुड़े हुए बुर्ज, रात के सकुरा और दोगो ओनसेन की जगमगाहट",
+          "tag": "मात्सुयामा, एहिमे",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और त्सुबाकी कानज़ाकुरा चेरी (200 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–21:00: मात्सुयामा महल के मुख्य बुर्ज और होनमारु में रात्रि-सकुरा रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "132 मीटर ऊँची कात्सुयामा पहाड़ी के शिखर पर स्थित है। रोपवे से होनमारु चौक तक पहुँचें। रात के चेरी वृक्षों के बीच बचे हुए मूल बुर्ज को पास से देखें और मात्सुयामा की शहरी रोशनी व सेतो अंतर्देशीय सागर का दूर तक नज़ारा लें।",
+          "locationDetail": "इयोतेत्सु नगर ट्राम के ओकाइदो स्टॉप से रोपवे स्टेशन तक लगभग 5 मिनट पैदल"
+        },
+        "es": {
+          "title": "Parque del castillo de Matsuyama",
+          "subtitle": "Torres conectadas en la cima de Katsuyama, cerezos nocturnos sobre las luces de Dōgo Onsen",
+          "tag": "Matsuyama, Ehime",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y Tsubaki Kanzakura (200 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–21:00: iluminación de cerezos en la torre y el recinto Honmaru de Matsuyama; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Se alza en la cima de Katsuyama, a 132 metros de altitud. El teleférico lleva hasta la plaza Honmaru. Entre los cerezos de noche se puede admirar de cerca la torre original conservada y contemplar las luces de Matsuyama y el mar Interior de Seto.",
+          "locationDetail": "A unos 5 minutos a pie de la parada Ōkaidō del tranvía urbano Iyotetsu hasta el teleférico"
+        }
+      }
+    },
+    "kochi_castle_night_sakura": {
+      "source": {
+        "id": "kochi_castle_night_sakura",
+        "theme": "sakura",
+        "region": "shikoku",
+        "fields": {
+          "title": "高知公園（高知城）",
+          "subtitle": "日本唯一天守與本丸御殿全存名城！追手門夜櫻璀璨",
+          "tag": "高知・高知市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (220株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (高知城花回廊夜間點燈)；本季日期與時段以官方公告為準",
+          "desc": "南海第一名城高知城，春季舉辦「花回廊」盛會。追手門前巨大石階被燈火照亮，盛開的櫻花倒映在護城河水面，充滿南國歷史豪氣。",
+          "locationDetail": "土佐電交通「高知城前」路面電車站徒步 3 分鐘"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "高知公園（高知城）",
+          "subtitle": "日本唯一天守與本丸御殿全存名城！追手門夜櫻璀璨",
+          "tag": "高知・高知市",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (220株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (高知城花回廊夜間點燈)；本季日期與時段以官方公告為準",
+          "desc": "南海第一名城高知城，春季舉辦「花回廊」盛會。追手門前巨大石階被燈火照亮，盛開的櫻花倒映在護城河水面，充滿南國歷史豪氣。",
+          "locationDetail": "土佐電交通「高知城前」路面電車站徒步 3 分鐘"
+        },
+        "zh-CN": {
+          "title": "高知公园（高知城）",
+          "subtitle": "日本唯一天守与本丸御殿完整保留的名城，追手门夜樱璀璨",
+          "tag": "高知・高知市",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱（220 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–22:00：高知城花回廊夜间亮灯；本季日期与时段以官方公告为准",
+          "desc": "素有南海第一名城之称的高知城，春季举办「花回廊」盛会。追手门前的巨大石阶被灯火照亮，盛开樱花倒映在护城河中，洋溢南国历史豪情。",
+          "locationDetail": "土佐电交通高知城前电车站步行约 3 分钟"
+        },
+        "en": {
+          "title": "Kōchi Park (Kōchi Castle)",
+          "subtitle": "Japan’s only castle retaining both its keep and complete Honmaru palace, with night blossoms at Ōtemon Gate",
+          "tag": "Kōchi City, Kōchi",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino cherries (220 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–22:00: Kōchi Castle Flower Corridor night lighting; confirm this season’s dates and hours with the organizer",
+          "desc": "Known as the finest castle of the southern seas, Kōchi Castle hosts the Flower Corridor festival in spring. Lights illuminate the broad stone steps before Ōtemon Gate, and blooming cherries reflect in the moat, evoking the grandeur of this southern region’s history.",
+          "locationDetail": "About 3 minutes on foot from Kōchijō-mae tram stop (Tosaden Kōtsū)"
+        },
+        "ja": {
+          "title": "高知公園（高知城）",
+          "subtitle": "天守と本丸御殿がともに完全に残る日本唯一の城。追手門を彩る夜桜",
+          "tag": "高知県高知市",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ（220本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜22:00：高知城花回廊の夜間ライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "南海の名城と称される高知城では、春に「花回廊」が開催されます。追手門前の大きな石段に灯りがともり、満開の桜が濠に映り込み、南国の雄大な歴史を感じさせます。",
+          "locationDetail": "とさでん交通高知城前電停から徒歩約3分"
+        },
+        "ko": {
+          "title": "고치 공원 (고치성)",
+          "subtitle": "일본에서 유일하게 천수각과 본성 궁전이 모두 온전히 남은 성, 오테몬의 밤 벚꽃",
+          "tag": "고치현 고치시",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노 (220그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~22:00: 고치성 꽃 회랑 야간 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "남해 제일의 명성으로 불리는 고치성에서는 봄에 꽃 회랑 행사가 열립니다. 오테몬 앞 거대한 돌계단에 불이 켜지고, 만개한 벚꽃이 해자에 비쳐 남국 역사의 웅장함을 느끼게 합니다.",
+          "locationDetail": "도사덴 교통 고치조마에 전차 정류장에서 도보 약 3분"
+        },
+        "th": {
+          "title": "สวนโคจิ (ปราสาทโคจิ)",
+          "subtitle": "ปราสาทแห่งเดียวของญี่ปุ่นที่ยังมีทั้งหอปราสาทและวังฮนมารุครบถ้วน ซากุระยามค่ำที่ประตูโอเตะมง",
+          "tag": "เมืองโคจิ โคจิ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะ (220 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–22:00: ประดับไฟกลางคืนในงานระเบียงดอกไม้ปราสาทโคจิ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ปราสาทโคจิได้รับยกย่องเป็นปราสาทชั้นเลิศแห่งทะเลใต้ และจัดงานระเบียงดอกไม้ในฤดูใบไม้ผลิ แสงไฟส่องบันไดหินขนาดใหญ่หน้าประตูโอเตะมง ซากุระบานสะท้อนในคูน้ำ ชวนสัมผัสความยิ่งใหญ่ของประวัติศาสตร์แดนใต้",
+          "locationDetail": "เดินประมาณ 3 นาทีจากป้ายรถรางโคจิโจมาเอะของโทซาเด็นโคสึ"
+        },
+        "vi": {
+          "title": "Công viên Kōchi (lâu đài Kōchi)",
+          "subtitle": "Lâu đài duy nhất Nhật Bản còn nguyên cả tháp chính và cung điện Honmaru, anh đào đêm rực rỡ ở cổng Ōtemon",
+          "tag": "Thành phố Kōchi, Kōchi",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào Somei Yoshino (220 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–22:00: chiếu sáng đêm lễ hội Hành Lang Hoa ở lâu đài Kōchi; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Được ca ngợi là tòa thành hàng đầu vùng biển phía nam, lâu đài Kōchi tổ chức lễ hội Hành Lang Hoa vào mùa xuân. Ánh đèn soi các bậc đá lớn trước cổng Ōtemon, hoa anh đào nở rộ in bóng xuống hào, gợi vẻ hào hùng của lịch sử miền nam.",
+          "locationDetail": "Đi bộ khoảng 3 phút từ trạm xe điện Kōchijō-mae của Tosaden Kōtsū"
+        },
+        "hi": {
+          "title": "कोची पार्क (कोची महल)",
+          "subtitle": "जापान का एकमात्र महल जहाँ मुख्य बुर्ज और पूरा होनमारु महल दोनों बचे हैं, ओतेमोन द्वार पर रात्रि-सकुरा",
+          "tag": "कोची शहर, कोची",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो चेरी (220 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–22:00: कोची महल पुष्प गलियारे की रात्रि प्रकाश-सज्जा; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "दक्षिणी समुद्र क्षेत्र का श्रेष्ठ महल कहलाने वाला कोची महल वसंत में पुष्प गलियारा उत्सव आयोजित करता है। ओतेमोन द्वार के सामने विशाल पत्थर की सीढ़ियाँ रोशनी से जगमगाती हैं। खिले चेरी फूल खाई में प्रतिबिंबित होकर दक्षिण के भव्य इतिहास की झलक देते हैं।",
+          "locationDetail": "तोसादेन कोत्सू के कोचिजो-माए ट्राम स्टॉप से लगभग 3 मिनट पैदल"
+        },
+        "es": {
+          "title": "Parque de Kōchi (castillo de Kōchi)",
+          "subtitle": "El único castillo de Japón que conserva la torre y todo el palacio Honmaru, con cerezos nocturnos en la puerta Ōtemon",
+          "tag": "Ciudad de Kōchi, Kōchi",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Somei Yoshino (220 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–22:00: iluminación nocturna del Corredor de Flores del castillo de Kōchi; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Conocido como el gran castillo de los mares del sur, Kōchi celebra en primavera el festival del Corredor de Flores. Las luces iluminan la amplia escalinata de piedra ante la puerta Ōtemon, y los cerezos en flor se reflejan en el foso, evocando la grandeza histórica de esta región meridional.",
+          "locationDetail": "A unos 3 minutos a pie de la parada Kōchijō-mae del tranvía Tosaden Kōtsū"
+        }
+      }
+    },
+    "maidzuru_park_night_sakura": {
+      "source": {
+        "id": "maidzuru_park_night_sakura",
+        "theme": "sakura",
+        "region": "kyushu",
+        "fields": {
+          "title": "舞鶴公園（福岡城跡）",
+          "subtitle": "黑田官兵衛福岡城！千株櫻花幻彩天守台夜景",
+          "tag": "福岡・中央區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・山櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (福岡城櫻花祭夜間幻彩點燈)；本季日期與時段以官方公告為準",
+          "desc": "福岡第一賞櫻勝地！天守台遺跡、下之橋御門與多聞櫓在多色光影投射下變幻萬千，登上天守台可俯瞰整個福岡市區璀璨夜景。",
+          "locationDetail": "福岡市地下鐵 空港線「大濠公園站」徒步 5 分鐘",
+          "sakuraCafe.name": "舞鶴公園 鴻臚館 TERRACE CAFE",
+          "sakuraCafe.feature": "福岡城跡黑田官兵衛石垣・夜櫻點燈與福岡塔同框露台・八女玉露茶"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "舞鶴公園（福岡城跡）",
+          "subtitle": "黑田官兵衛福岡城！千株櫻花幻彩天守台夜景",
+          "tag": "福岡・中央區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・山櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (福岡城櫻花祭夜間幻彩點燈)；本季日期與時段以官方公告為準",
+          "desc": "福岡第一賞櫻勝地！天守台遺跡、下之橋御門與多聞櫓在多色光影投射下變幻萬千，登上天守台可俯瞰整個福岡市區璀璨夜景。",
+          "locationDetail": "福岡市地下鐵 空港線「大濠公園站」徒步 5 分鐘",
+          "sakuraCafe.name": "舞鶴公園 鴻臚館 TERRACE CAFE",
+          "sakuraCafe.feature": "福岡城跡黑田官兵衛石垣・夜櫻點燈與福岡塔同框露台・八女玉露茶"
+        },
+        "zh-CN": {
+          "title": "舞鹤公园（福冈城迹）",
+          "subtitle": "黑田官兵卫的福冈城，千株樱花与幻彩天守台夜景",
+          "tag": "福冈・中央区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、山樱（1,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–22:00：福冈城樱花祭夜间幻彩亮灯；本季日期与时段以官方公告为准",
+          "desc": "福冈首屈一指的赏樱名所。天守台遗迹、下之桥御门与多闻橹在多彩灯光下变幻，登上天守台还能俯瞰福冈市区璀璨夜景。",
+          "locationDetail": "福冈市地铁空港线大濠公园站步行约 5 分钟",
+          "sakuraCafe.name": "舞鹤公园 鸿胪馆 TERRACE CAFE",
+          "sakuraCafe.feature": "福冈城迹黑田官兵卫石垣，露台同赏夜樱灯光与福冈塔，品尝八女玉露茶"
+        },
+        "en": {
+          "title": "Maizuru Park (Fukuoka Castle Ruins)",
+          "subtitle": "Kuroda Kanbei’s Fukuoka Castle, with a thousand cherry trees and colorful night views from the keep platform",
+          "tag": "Chūō, Fukuoka",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and mountain cherries (1,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–22:00: colorful night lighting at the Fukuoka Castle Sakura Festival; confirm this season’s dates and hours with the organizer",
+          "desc": "One of Fukuoka’s foremost cherry blossom spots. Multicolored lights transform the keep platform ruins, Shimonohashi Gate and Tamon Turret. Climb the keep platform for sweeping views of Fukuoka’s sparkling city lights.",
+          "locationDetail": "About 5 minutes on foot from Ōhorikōen Station on the Fukuoka Subway Airport Line",
+          "sakuraCafe.name": "Maizuru Park Kōrokan TERRACE CAFE",
+          "sakuraCafe.feature": "Kuroda Kanbei’s stone walls at Fukuoka Castle Ruins, terrace views of illuminated cherries and Fukuoka Tower, and Yame gyokuro tea"
+        },
+        "ja": {
+          "title": "舞鶴公園（福岡城跡）",
+          "subtitle": "黒田官兵衛ゆかりの福岡城。千本の桜と天守台を彩る夜景",
+          "tag": "福岡市中央区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・ヤマザクラ（1,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜22:00：福岡城さくらまつりの夜間カラーライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "福岡を代表する桜の名所。天守台跡、下之橋御門、多聞櫓が色とりどりの光で表情を変えます。天守台に上ると、きらめく福岡市街の夜景を見渡せます。",
+          "locationDetail": "福岡市地下鉄空港線大濠公園駅から徒歩約5分",
+          "sakuraCafe.name": "舞鶴公園 鴻臚館 TERRACE CAFE",
+          "sakuraCafe.feature": "福岡城跡の黒田官兵衛ゆかりの石垣・夜桜と福岡タワーを望むテラス・八女玉露"
+        },
+        "ko": {
+          "title": "마이즈루 공원 (후쿠오카성 터)",
+          "subtitle": "구로다 간베이의 후쿠오카성, 천 그루 벚꽃과 다채로운 천수대 야경",
+          "tag": "후쿠오카시 주오구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·산벚꽃 (1,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~22:00: 후쿠오카성 벚꽃 축제 다채로운 야간 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "후쿠오카를 대표하는 벚꽃 명소입니다. 천수대 유적과 시모노하시 문, 다몬 망루가 다양한 빛으로 모습을 바꿉니다. 천수대에 오르면 반짝이는 후쿠오카 도심 야경을 한눈에 볼 수 있습니다.",
+          "locationDetail": "후쿠오카 지하철 공항선 오호리코엔역에서 도보 약 5분",
+          "sakuraCafe.name": "마이즈루 공원 고로칸 TERRACE CAFE",
+          "sakuraCafe.feature": "후쿠오카성 터의 구로다 간베이 돌담, 야간 벚꽃과 후쿠오카 타워를 함께 보는 테라스, 야메 교쿠로차"
+        },
+        "th": {
+          "title": "สวนไมซุรุ (ซากปราสาทฟุกุโอกะ)",
+          "subtitle": "ปราสาทฟุกุโอกะของคุโรดะ คัมเบ กับซากุระพันต้นและแสงสียามค่ำบนฐานหอปราสาท",
+          "tag": "เขตชูโอ เมืองฟุกุโอกะ",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและยามาซากุระ (1,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–22:00: แสงสีซากุระกลางคืนในเทศกาลปราสาทฟุกุโอกะ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "จุดชมซากุระชั้นนำของฟุกุโอกะ แสงหลากสีเปลี่ยนบรรยากาศของฐานหอปราสาท ประตูชิโมโนะฮาชิ และป้อมทามง ขึ้นไปบนฐานหอปราสาทเพื่อชมแสงเมืองฟุกุโอกะอันงดงามได้ทั่วสายตา",
+          "locationDetail": "เดินประมาณ 5 นาทีจากสถานีโอโฮริโคเอ็น รถไฟใต้ดินฟุกุโอกะสายสนามบิน",
+          "sakuraCafe.name": "สวนไมซุรุ โคโรกัง TERRACE CAFE",
+          "sakuraCafe.feature": "กำแพงหินคุโรดะ คัมเบ ณ ซากปราสาทฟุกุโอกะ ระเบียงชมซากุระประดับไฟพร้อมฟุกุโอกะทาวเวอร์ และชาเกียวคุโระยาเมะ"
+        },
+        "vi": {
+          "title": "Công viên Maizuru (di tích lâu đài Fukuoka)",
+          "subtitle": "Lâu đài Fukuoka của Kuroda Kanbei, nghìn cây anh đào và đêm rực sắc trên nền tháp chính",
+          "tag": "Chūō, Fukuoka",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào núi (1.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–22:00: ánh sáng đa sắc đêm tại lễ hội anh đào lâu đài Fukuoka; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Một trong những điểm ngắm anh đào hàng đầu Fukuoka. Ánh đèn nhiều màu biến đổi diện mạo nền tháp chính, cổng Shimonohashi và tháp canh Tamon. Lên nền tháp để ngắm toàn cảnh ánh đèn thành phố Fukuoka.",
+          "locationDetail": "Đi bộ khoảng 5 phút từ ga Ōhorikōen, tuyến Sân bay của tàu điện ngầm Fukuoka",
+          "sakuraCafe.name": "TERRACE CAFE Kōrokan, công viên Maizuru",
+          "sakuraCafe.feature": "Tường đá Kuroda Kanbei tại di tích lâu đài Fukuoka, sân hiên ngắm anh đào thắp sáng cùng tháp Fukuoka, và trà gyokuro Yame"
+        },
+        "hi": {
+          "title": "माइज़ुरु पार्क (फुकुओका महल के अवशेष)",
+          "subtitle": "कुरोदा कानबेई का फुकुओका महल, हज़ार चेरी वृक्ष और मुख्य बुर्ज के चबूतरे की रंगीन रात",
+          "tag": "चूओ, फुकुओका",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और पहाड़ी चेरी (1,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–22:00: फुकुओका महल सकुरा उत्सव की रंगीन रात्रि रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "फुकुओका के प्रमुख सकुरा स्थलों में एक। रंगीन रोशनी मुख्य बुर्ज के चबूतरे, शिमोनोहाशी द्वार और तामोन मीनार का रूप बदल देती है। चबूतरे पर चढ़कर फुकुओका शहर की जगमगाती रात का विस्तृत नज़ारा लें।",
+          "locationDetail": "फुकुओका सबवे एयरपोर्ट लाइन के ओहोरिकोएन स्टेशन से लगभग 5 मिनट पैदल",
+          "sakuraCafe.name": "माइज़ुरु पार्क कोरोकान TERRACE CAFE",
+          "sakuraCafe.feature": "फुकुओका महल अवशेष में कुरोदा कानबेई की पत्थर की दीवारें, रोशन सकुरा और फुकुओका टावर वाली छत, और यामे ग्योकुरो चाय"
+        },
+        "es": {
+          "title": "Parque Maizuru (ruinas del castillo de Fukuoka)",
+          "subtitle": "El castillo de Fukuoka de Kuroda Kanbei, mil cerezos y luces de colores en la base de la torre",
+          "tag": "Chūō, Fukuoka",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos de montaña (1.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–22:00: iluminación nocturna de colores del Festival Sakura del Castillo de Fukuoka; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Uno de los principales lugares de Fukuoka para ver cerezos. Las luces multicolores transforman las ruinas de la base de la torre, la puerta Shimonohashi y la torre Tamon. Desde la base se contempla una amplia vista de las luces de la ciudad.",
+          "locationDetail": "A unos 5 minutos a pie de la estación Ōhorikōen, línea Aeropuerto del metro de Fukuoka",
+          "sakuraCafe.name": "TERRACE CAFE Kōrokan, parque Maizuru",
+          "sakuraCafe.feature": "Muros de Kuroda Kanbei en las ruinas del castillo, terraza con vistas a los cerezos iluminados y la torre de Fukuoka, y té gyokuro de Yame"
+        }
+      }
+    },
+    "meguro_sakura_official_night": {
+      "source": {
+        "id": "meguro_sakura_official_night",
+        "theme": "sakura",
+        "region": "kanto",
+        "fields": {
+          "title": "目黑川櫻並木",
+          "subtitle": "東京第一人氣夜櫻！800株櫻花交織粉紅隧道與紅燈籠",
+          "tag": "東京・目黑區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (800株・長達4公里)",
+          "nightHours": "歷年夜間時段參考：🏮 17:00 - 20:00 (目黑川沿岸粉紅紙燈籠點燈)；本季日期與時段以官方公告為準",
+          "desc": "長達4公里的目黑川兩岸，800株染井吉野櫻枝椏在河面中央交匯成粉紅穹頂，夜間兩岸點亮櫻花色紙燈籠，手捧粉紅氣泡香檳漫步是最具魅力的東京夜生活。",
+          "locationDetail": "東急東橫線 / 東京地下鐵「中目黑站」徒步 2 分鐘",
+          "sakuraCafe.name": "STARBUCKS RESERVE ROASTERY TOKYO (星巴克臻選東京烘焙工坊)",
+          "sakuraCafe.feature": "中目黑櫻花第一排・4層旗艦建築・3F戶外露台直面落櫻水面・威士忌桶桶陳冷萃"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "目黑川櫻並木",
+          "subtitle": "東京第一人氣夜櫻！800株櫻花交織粉紅隧道與紅燈籠",
+          "tag": "東京・目黑區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻 (800株・長達4公里)",
+          "nightHours": "歷年夜間時段參考：🏮 17:00 - 20:00 (目黑川沿岸粉紅紙燈籠點燈)；本季日期與時段以官方公告為準",
+          "desc": "長達4公里的目黑川兩岸，800株染井吉野櫻枝椏在河面中央交匯成粉紅穹頂，夜間兩岸點亮櫻花色紙燈籠，手捧粉紅氣泡香檳漫步是最具魅力的東京夜生活。",
+          "locationDetail": "東急東橫線 / 東京地下鐵「中目黑站」徒步 2 分鐘",
+          "sakuraCafe.name": "STARBUCKS RESERVE ROASTERY TOKYO (星巴克臻選東京烘焙工坊)",
+          "sakuraCafe.feature": "中目黑櫻花第一排・4層旗艦建築・3F戶外露台直面落櫻水面・威士忌桶桶陳冷萃"
+        },
+        "zh-CN": {
+          "title": "目黑川樱花大道",
+          "subtitle": "东京热门夜樱，800 株樱花交织粉红隧道与红灯笼",
+          "tag": "东京・目黑区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱（800 株，绵延 4 公里）",
+          "nightHours": "往年夜间时段参考：🏮 17:00–20:00：目黑川沿岸粉红纸灯笼亮灯；本季日期与时段以官方公告为准",
+          "desc": "绵延 4 公里的目黑川两岸，800 株染井吉野樱的枝条在河面上交织成粉红穹顶。夜间两岸亮起樱花色纸灯笼，手捧粉红气泡香槟漫步，感受迷人的东京夜生活。",
+          "locationDetail": "东急东横线／东京地铁中目黑站步行约 2 分钟",
+          "sakuraCafe.name": "STARBUCKS RESERVE ROASTERY TOKYO（星巴克臻选东京烘焙工坊）",
+          "sakuraCafe.feature": "中目黑樱花第一排，四层旗舰建筑，三楼户外露台直面落樱水面，供应威士忌桶陈冷萃"
+        },
+        "en": {
+          "title": "Meguro River Cherry Blossom Avenue",
+          "subtitle": "A Tokyo night-sakura favorite: 800 trees form a pink tunnel lined with red lanterns",
+          "tag": "Meguro, Tokyo",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino cherries (800 trees along 4 km)",
+          "nightHours": "Past-season evening hours: 🏮 17:00–20:00: pink paper lanterns along the Meguro River; confirm this season’s dates and hours with the organizer",
+          "desc": "Along four kilometers of the Meguro River, the branches of 800 Somei Yoshino cherries meet over the water to form a pink canopy. Blossom-colored paper lanterns light both banks at night; strolling with a glass of pink sparkling Champagne captures the charm of Tokyo nightlife.",
+          "locationDetail": "About 2 minutes on foot from Nakameguro Station (Tōkyū Tōyoko Line / Tokyo Metro)",
+          "sakuraCafe.name": "STARBUCKS RESERVE ROASTERY TOKYO",
+          "sakuraCafe.feature": "Front-row Nakameguro cherry blossom views, a four-story flagship building, a third-floor outdoor terrace facing the petal-covered water, and whiskey barrel-aged cold brew"
+        },
+        "ja": {
+          "title": "目黒川の桜並木",
+          "subtitle": "東京で人気の夜桜。800本の桜が織りなすピンクのトンネルと赤い提灯",
+          "tag": "東京都目黒区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ（800本、約4km）",
+          "nightHours": "過去の夜間時間の参考：🏮 17:00〜20:00：目黒川沿いのピンクの提灯点灯。今季の日程・時間は公式発表を確認してください",
+          "desc": "約4キロにわたる目黒川の両岸で、800本のソメイヨシノの枝が水面の上に重なり、ピンクの天蓋を作ります。夜は桜色の提灯がともり、ロゼのシャンパンを片手に歩く、魅力あふれる東京の夜を楽しめます。",
+          "locationDetail": "東急東横線・東京メトロ中目黒駅から徒歩約2分",
+          "sakuraCafe.name": "スターバックス リザーブ ロースタリー 東京",
+          "sakuraCafe.feature": "中目黒の桜を間近に望む4階建ての旗艦店・3階屋外テラスから花びらの浮かぶ水面を眺望・ウイスキー樽熟成コールドブリュー"
+        },
+        "ko": {
+          "title": "메구로강 벚꽃길",
+          "subtitle": "도쿄의 인기 야간 벚꽃, 800그루가 만드는 분홍 터널과 붉은 등불",
+          "tag": "도쿄도 메구로구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노 (800그루, 약 4km)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 17:00~20:00: 메구로강변 분홍 종이등 점등 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "약 4km에 걸친 메구로강 양쪽의 소메이요시노 800그루가 수면 위로 가지를 맞대 분홍빛 지붕을 만듭니다. 밤에는 벚꽃색 종이등이 켜지고, 분홍 샴페인을 들고 거닐며 매력적인 도쿄의 밤을 즐길 수 있습니다.",
+          "locationDetail": "도큐 도요코선·도쿄 메트로 나카메구로역에서 도보 약 2분",
+          "sakuraCafe.name": "스타벅스 리저브 로스터리 도쿄",
+          "sakuraCafe.feature": "나카메구로 벚꽃 바로 앞 4층 플래그십 매장, 꽃잎 뜬 수면을 마주한 3층 야외 테라스, 위스키 배럴 숙성 콜드브루"
+        },
+        "th": {
+          "title": "แนวซากุระแม่น้ำเมกุโระ",
+          "subtitle": "ซากุระกลางคืนยอดนิยมในโตเกียว 800 ต้นสร้างอุโมงค์สีชมพูเคียงโคมแดง",
+          "tag": "เขตเมกุโระ โตเกียว",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะ (800 ต้น ตลอดระยะ 4 กม.)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 17:00–20:00: จุดโคมกระดาษสีชมพูริมแม่น้ำเมกุโระ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ตลอดสี่กิโลเมตรริมแม่น้ำเมกุโระ กิ่งโซเมอิโยชิโนะ 800 ต้นจากสองฝั่งประสานเหนือผิวน้ำเป็นหลังคาสีชมพู ยามค่ำมีโคมกระดาษสีซากุระส่องสว่าง เดินจิบแชมเปญสีชมพูเพื่อสัมผัสเสน่ห์ยามราตรีของโตเกียว",
+          "locationDetail": "เดินประมาณ 2 นาทีจากสถานีนากาเมกุโระ สายโทคิวโทโยโกะหรือโตเกียวเมโทร",
+          "sakuraCafe.name": "STARBUCKS RESERVE ROASTERY TOKYO",
+          "sakuraCafe.feature": "ชมซากุระนากาเมกุโระแถวหน้า อาคารแฟล็กชิปสี่ชั้น ระเบียงกลางแจ้งชั้นสามหันสู่ผิวน้ำที่มีกลีบร่วง และกาแฟโคลด์บริวบ่มถังวิสกี้"
+        },
+        "vi": {
+          "title": "Đường anh đào ven sông Meguro",
+          "subtitle": "Điểm anh đào đêm nổi tiếng Tokyo, 800 cây tạo đường hầm hồng bên đèn lồng đỏ",
+          "tag": "Meguro, Tokyo",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino (800 cây dọc 4 km)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 17:00–20:00: đèn lồng giấy hồng dọc sông Meguro; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Dọc bốn kilômét hai bờ sông Meguro, cành của 800 cây Somei Yoshino giao nhau trên mặt nước thành mái vòm hồng. Ban đêm, đèn lồng giấy màu hoa sáng lên; dạo bước với ly champagne hồng là cách tận hưởng đêm Tokyo đầy cuốn hút.",
+          "locationDetail": "Đi bộ khoảng 2 phút từ ga Nakameguro, tuyến Tōkyū Tōyoko hoặc Tokyo Metro",
+          "sakuraCafe.name": "STARBUCKS RESERVE ROASTERY TOKYO",
+          "sakuraCafe.feature": "Vị trí sát anh đào Nakameguro, cửa hàng chủ lực bốn tầng, sân hiên ngoài trời tầng ba nhìn thẳng mặt nước đầy cánh hoa, và cà phê cold brew ủ thùng whiskey"
+        },
+        "hi": {
+          "title": "मेगुरो नदी चेरी मार्ग",
+          "subtitle": "टोक्यो का लोकप्रिय रात्रि-सकुरा स्थल: 800 पेड़ों की गुलाबी सुरंग और लाल लालटेन",
+          "tag": "मेगुरो, टोक्यो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो चेरी (4 किमी में 800 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 17:00–20:00: मेगुरो नदी किनारे गुलाबी कागज़ी लालटेन; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "मेगुरो नदी के चार किलोमीटर लंबे दोनों तटों पर 800 सोमेई योशिनो चेरी वृक्षों की शाखाएँ पानी के ऊपर मिलकर गुलाबी छत बनाती हैं। रात में सकुरा रंग की कागज़ी लालटेन जलती हैं। गुलाबी शैम्पेन के साथ टहलना टोक्यो की रात का आकर्षक अनुभव है।",
+          "locationDetail": "तोक्यू तोयोको लाइन या टोक्यो मेट्रो के नाकामेगुरो स्टेशन से लगभग 2 मिनट पैदल",
+          "sakuraCafe.name": "स्टारबक्स रिज़र्व रोस्टरी टोक्यो",
+          "sakuraCafe.feature": "नाकामेगुरो सकुरा के बिल्कुल सामने चार-मंज़िला प्रमुख स्टोर, पंखुड़ियों वाले पानी की ओर तीसरी मंज़िल की खुली छत, और व्हिस्की बैरल में परिपक्व कोल्ड ब्रू"
+        },
+        "es": {
+          "title": "Paseo de los cerezos del río Meguro",
+          "subtitle": "Un favorito de las noches de Tokio: 800 cerezos forman un túnel rosa entre farolillos rojos",
+          "tag": "Meguro, Tokio",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezos Somei Yoshino (800 árboles a lo largo de 4 km)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 17:00–20:00: farolillos de papel rosa junto al río Meguro; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "A lo largo de cuatro kilómetros, las ramas de 800 cerezos Somei Yoshino se unen sobre el río Meguro formando una bóveda rosa. De noche, ambas orillas se iluminan con farolillos del color de las flores; pasear con champán rosado permite disfrutar del encanto nocturno de Tokio.",
+          "locationDetail": "A unos 2 minutos a pie de la estación Nakameguro, línea Tōkyū Tōyoko o Tokyo Metro",
+          "sakuraCafe.name": "STARBUCKS RESERVE ROASTERY TOKYO",
+          "sakuraCafe.feature": "Primera fila ante los cerezos de Nakameguro, edificio insignia de cuatro plantas, terraza exterior en la tercera planta frente al agua cubierta de pétalos y cold brew envejecido en barricas de whiskey"
+        }
+      }
+    },
+    "chidorigafuchi_official_night": {
+      "source": {
+        "id": "chidorigafuchi_official_night",
+        "theme": "sakura",
+        "region": "kanto",
+        "fields": {
+          "title": "千鳥之淵綠道",
+          "subtitle": "皇居護城河絕美櫻花花瀑！划木舟夜櫻倒影光廊",
+          "tag": "東京・千代田區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・大島櫻 (260株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (千鳥之淵護城河夜間LED綠道光雕)；本季日期與時段以官方公告為準",
+          "desc": "沿著皇居護城河延伸700公尺的櫻花步道。巨大櫻枝斜向水面垂落，夜晚點亮冷白色與淡粉色LED投射光，划著小舟在水面穿行如入童話秘境。",
+          "locationDetail": "東京地下鐵 半藏門線「半藏門站」或「九段下站」徒步 5 分鐘",
+          "sakuraCafe.name": "CANAL CAFE (飯田橋水上船屋咖啡)",
+          "sakuraCafe.feature": "皇居外濠護城河水上甲板席・落櫻花筏垂水・石窯現烤披薩與義式拿鐵"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "千鳥之淵綠道",
+          "subtitle": "皇居護城河絕美櫻花花瀑！划木舟夜櫻倒影光廊",
+          "tag": "東京・千代田區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・大島櫻 (260株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:00 - 22:00 (千鳥之淵護城河夜間LED綠道光雕)；本季日期與時段以官方公告為準",
+          "desc": "沿著皇居護城河延伸700公尺的櫻花步道。巨大櫻枝斜向水面垂落，夜晚點亮冷白色與淡粉色LED投射光，划著小舟在水面穿行如入童話秘境。",
+          "locationDetail": "東京地下鐵 半藏門線「半藏門站」或「九段下站」徒步 5 分鐘",
+          "sakuraCafe.name": "CANAL CAFE (飯田橋水上船屋咖啡)",
+          "sakuraCafe.feature": "皇居外濠護城河水上甲板席・落櫻花筏垂水・石窯現烤披薩與義式拿鐵"
+        },
+        "zh-CN": {
+          "title": "千鸟之渊绿道",
+          "subtitle": "皇居护城河樱花瀑布，泛舟穿行夜樱倒影光廊",
+          "tag": "东京・千代田区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、大岛樱（260 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:00–22:00：千鸟之渊护城河绿道夜间 LED 灯光秀；本季日期与时段以官方公告为准",
+          "desc": "沿皇居护城河延伸 700 米的樱花步道。巨大枝条斜垂水面，夜晚冷白与淡粉色 LED 灯映照，划着小舟穿行其间，宛如进入童话秘境。",
+          "locationDetail": "东京地铁半藏门线半藏门站或九段下站步行约 5 分钟",
+          "sakuraCafe.name": "CANAL CAFE（饭田桥水上船屋咖啡）",
+          "sakuraCafe.feature": "皇居外濠水上甲板席，落樱花筏与垂水樱枝，石窑现烤披萨和意式拿铁"
+        },
+        "en": {
+          "title": "Chidorigafuchi Greenway",
+          "subtitle": "Cascades of blossoms over the Imperial Palace moat: row through a corridor of night-sakura reflections",
+          "tag": "Chiyoda, Tokyo",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino and Ōshima cherries (260 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:00–22:00: nighttime LED lighting along Chidorigafuchi’s moat-side greenway; confirm this season’s dates and hours with the organizer",
+          "desc": "A 700-meter cherry blossom path beside the Imperial Palace moat. Great branches lean down toward the water, lit at night by cool-white and pale-pink LEDs. Rowing a small boat beneath them feels like entering a fairy-tale world.",
+          "locationDetail": "About 5 minutes on foot from Hanzōmon or Kudanshita Station on the Tokyo Metro Hanzōmon Line",
+          "sakuraCafe.name": "CANAL CAFE (Iidabashi waterside boathouse café)",
+          "sakuraCafe.feature": "Deck seating on the Imperial Palace’s outer moat, floating petals and overhanging cherries, stone-oven pizza and Italian-style lattes"
+        },
+        "ja": {
+          "title": "千鳥ヶ淵緑道",
+          "subtitle": "皇居の濠に流れ落ちる桜。ボートで楽しむ夜桜と光の回廊",
+          "tag": "東京都千代田区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・オオシマザクラ（260本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:00〜22:00：千鳥ヶ淵の濠沿い緑道をLEDでライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "皇居の濠沿いに約700メートル続く桜の散歩道。大きな枝が水面へと垂れ、夜は白色と淡いピンクのLEDに照らされます。小舟で進むと、おとぎ話の世界に入り込んだような気分に。",
+          "locationDetail": "東京メトロ半蔵門線半蔵門駅または九段下駅から徒歩約5分",
+          "sakuraCafe.name": "CANAL CAFE（飯田橋の水辺のボートハウスカフェ）",
+          "sakuraCafe.feature": "皇居外濠の水上デッキ席・花筏と水面に垂れる桜・石窯焼きピザとイタリアンラテ"
+        },
+        "ko": {
+          "title": "지도리가후치 산책로",
+          "subtitle": "황거 해자의 벚꽃 폭포, 배를 저어 지나는 야간 벚꽃 반영의 빛 회랑",
+          "tag": "도쿄도 지요다구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·오시마 벚꽃 (260그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:00~22:00: 지도리가후치 해자 산책로 야간 LED 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "황거 해자를 따라 약 700m 이어지는 벚꽃 산책로입니다. 거대한 가지가 수면으로 드리워지고, 밤에는 차가운 흰빛과 연분홍 LED가 비춥니다. 작은 배를 저어 지나면 동화 속 비밀 정원에 들어온 듯합니다.",
+          "locationDetail": "도쿄 메트로 한조몬선 한조몬역 또는 구단시타역에서 도보 약 5분",
+          "sakuraCafe.name": "CANAL CAFE (이다바시 수상 보트하우스 카페)",
+          "sakuraCafe.feature": "황거 바깥 해자의 수상 데크 좌석, 꽃잎 뗏목과 물가로 드리운 벚꽃, 화덕 피자와 이탈리아식 라테"
+        },
+        "th": {
+          "title": "ทางเดินจิโดริงาฟุจิ",
+          "subtitle": "ม่านซากุระเหนือคูน้ำพระราชวัง พายเรือผ่านเงาสะท้อนซากุระในระเบียงแสงยามค่ำ",
+          "tag": "เขตชิโยดะ โตเกียว",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะและโอชิมะซากุระ (260 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:00–22:00: ไฟ LED ยามค่ำตามทางเดินริมคูน้ำจิโดริงาฟุจิ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "ทางเดินชมซากุระยาว 700 เมตรเลียบคูน้ำพระราชวังอิมพีเรียล กิ่งใหญ่โน้มลงสู่ผิวน้ำ ยามค่ำมีไฟ LED สีขาวเย็นและชมพูอ่อน การพายเรือเล็กผ่านใต้กิ่งให้ความรู้สึกราวเข้าสู่โลกเทพนิยาย",
+          "locationDetail": "เดินประมาณ 5 นาทีจากสถานีฮันโซมงหรือคุดันชิตะ สายโตเกียวเมโทรฮันโซมง",
+          "sakuraCafe.name": "CANAL CAFE (คาเฟ่โรงเรือริมน้ำอีดาบาชิ)",
+          "sakuraCafe.feature": "ที่นั่งเด็คลอยน้ำริมคูน้ำชั้นนอกพระราชวัง แพกลีบและกิ่งซากุระเหนือน้ำ พิซซ่าเตาหินและลาเต้อิตาเลียน"
+        },
+        "vi": {
+          "title": "Lối đi xanh Chidorigafuchi",
+          "subtitle": "Thác anh đào trên hào Hoàng cung, chèo thuyền giữa hành lang phản chiếu hoa đêm",
+          "tag": "Chiyoda, Tokyo",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino và anh đào Ōshima (260 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:00–22:00: đèn LED đêm dọc lối xanh bên hào Chidorigafuchi; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Lối đi anh đào dài 700 mét dọc hào Hoàng cung. Những cành lớn nghiêng xuống mặt nước, ban đêm được chiếu bằng LED trắng lạnh và hồng nhạt. Chèo thuyền nhỏ qua đây như bước vào thế giới cổ tích.",
+          "locationDetail": "Đi bộ khoảng 5 phút từ ga Hanzōmon hoặc Kudanshita, tuyến Tokyo Metro Hanzōmon",
+          "sakuraCafe.name": "CANAL CAFE (quán cà phê nhà thuyền ven nước Iidabashi)",
+          "sakuraCafe.feature": "Chỗ ngồi trên sàn gỗ nổi ở hào ngoài Hoàng cung, bè cánh hoa và cành anh đào rủ, pizza lò đá và latte kiểu Ý"
+        },
+        "hi": {
+          "title": "चिदोरिगाफुची हरित पथ",
+          "subtitle": "इंपीरियल पैलेस की खाई पर फूलों के झरने, रात के सकुरा प्रतिबिंबों की रोशनी में नौकायन",
+          "tag": "चियोदा, टोक्यो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो और ओशिमा चेरी (260 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:00–22:00: चिदोरिगाफुची की खाई किनारे हरित पथ पर रात्रि LED रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "इंपीरियल पैलेस की खाई के साथ 700 मीटर लंबा सकुरा पथ। बड़ी शाखाएँ पानी की ओर झुकती हैं और रात में ठंडी सफ़ेद तथा हल्की गुलाबी LED से चमकती हैं। छोटी नाव चलाते हुए इनके बीच से गुजरना परियों की दुनिया में जाने जैसा है।",
+          "locationDetail": "टोक्यो मेट्रो हानज़ोमोन लाइन के हानज़ोमोन या कुदानशिता स्टेशन से लगभग 5 मिनट पैदल",
+          "sakuraCafe.name": "CANAL CAFE (ईदाबाशी का जलतट बोटहाउस कैफ़े)",
+          "sakuraCafe.feature": "इंपीरियल पैलेस की बाहरी खाई पर डेक बैठक, तैरती पंखुड़ियाँ और पानी पर झुकी चेरी शाखाएँ, पत्थर के ओवन का पिज़्ज़ा और इतालवी शैली का लाते"
+        },
+        "es": {
+          "title": "Paseo verde de Chidorigafuchi",
+          "subtitle": "Cascadas de flores sobre el foso del Palacio Imperial: remar entre reflejos nocturnos de cerezos",
+          "tag": "Chiyoda, Tokio",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino y cerezos Ōshima (260 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:00–22:00: iluminación LED nocturna del paseo junto al foso de Chidorigafuchi; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Un paseo de cerezos de 700 metros junto al foso del Palacio Imperial. Las grandes ramas se inclinan sobre el agua y, de noche, luces LED blancas frías y rosa pálido las iluminan. Remar en una pequeña barca entre ellas parece adentrarse en un cuento.",
+          "locationDetail": "A unos 5 minutos a pie de Hanzōmon o Kudanshita, línea Hanzōmon de Tokyo Metro",
+          "sakuraCafe.name": "CANAL CAFE (cafetería del embarcadero de Iidabashi)",
+          "sakuraCafe.feature": "Asientos en una terraza sobre el foso exterior del Palacio Imperial, pétalos flotantes y cerezos sobre el agua, pizza al horno de piedra y latte italiano"
+        }
+      }
+    },
+    "rikugien_official_night": {
+      "source": {
+        "id": "rikugien_official_night",
+        "theme": "sakura",
+        "region": "kanto",
+        "fields": {
+          "title": "六義園",
+          "subtitle": "高15公尺巨型瀑布枝垂櫻！江戶大名庭園夜間春之特別公開",
+          "tag": "東京・文京區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "巨型枝垂櫻 (樹齡70年)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (六義園夜櫻特別夜間開園入場)；本季日期與時段以官方公告為準",
+          "desc": "江戶幕府五代將軍側近柳澤吉保歷時七年打造的回遊式大名庭園。正門前樹高15米、寬20米的巨大枝垂櫻宛如粉紅瀑布，夜晚透過光影營造出極致幽玄氛圍。",
+          "locationDetail": "JR 山手線 / 東京地下鐵 南北線「駒込站」徒步 2 分鐘",
+          "sakuraCafe.name": "吹上茶屋 (六義園大泉水湖畔茶室)",
+          "sakuraCafe.feature": "江戶大名庭園水岸長凳・春季櫻花限定生菓子與手刷宇治抹茶"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "六義園",
+          "subtitle": "高15公尺巨型瀑布枝垂櫻！江戶大名庭園夜間春之特別公開",
+          "tag": "東京・文京區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "巨型枝垂櫻 (樹齡70年)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (六義園夜櫻特別夜間開園入場)；本季日期與時段以官方公告為準",
+          "desc": "江戶幕府五代將軍側近柳澤吉保歷時七年打造的回遊式大名庭園。正門前樹高15米、寬20米的巨大枝垂櫻宛如粉紅瀑布，夜晚透過光影營造出極致幽玄氛圍。",
+          "locationDetail": "JR 山手線 / 東京地下鐵 南北線「駒込站」徒步 2 分鐘",
+          "sakuraCafe.name": "吹上茶屋 (六義園大泉水湖畔茶室)",
+          "sakuraCafe.feature": "江戶大名庭園水岸長凳・春季櫻花限定生菓子與手刷宇治抹茶"
+        },
+        "zh-CN": {
+          "title": "六义园",
+          "subtitle": "15 米高巨型瀑布垂樱，江户大名庭园春季特别夜间开放",
+          "tag": "东京・文京区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "巨型垂枝樱（树龄 70 年）",
+          "nightHours": "往年夜间时段参考：🏮 18:30–21:00：六义园夜樱特别夜间开放；本季日期与时段以官方公告为准",
+          "desc": "江户幕府第五代将军近臣柳泽吉保历时七年建造的回游式大名庭园。正门前高 15 米、宽 20 米的巨型垂樱宛如粉红瀑布，夜间光影更添幽玄氛围。",
+          "locationDetail": "JR 山手线／东京地铁南北线驹込站步行约 2 分钟",
+          "sakuraCafe.name": "吹上茶屋（六义园大泉水池畔茶室）",
+          "sakuraCafe.feature": "江户大名庭园水岸长凳，春季樱花限定生果子与手刷宇治抹茶"
+        },
+        "en": {
+          "title": "Rikugien Gardens",
+          "subtitle": "A 15-meter weeping cherry waterfall: special spring evening access to an Edo-era lord’s garden",
+          "tag": "Bunkyō, Tokyo",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Giant weeping cherry (70 years old)",
+          "nightHours": "Past-season evening hours: 🏮 18:30–21:00: special night-sakura evening opening at Rikugien; confirm this season’s dates and hours with the organizer",
+          "desc": "A strolling garden built over seven years by Yanagisawa Yoshiyasu, a close adviser to the fifth Tokugawa shogun. Near the main gate, a giant weeping cherry 15 meters tall and 20 meters wide resembles a pink waterfall. Night lighting creates a deeply atmospheric scene.",
+          "locationDetail": "About 2 minutes on foot from Komagome Station (JR Yamanote Line / Tokyo Metro Namboku Line)",
+          "sakuraCafe.name": "Fukiage Chaya (tea house beside Rikugien’s Daisensui Pond)",
+          "sakuraCafe.feature": "Waterside benches in an Edo-era lord’s garden, spring-only sakura fresh wagashi and hand-whisked Uji matcha"
+        },
+        "ja": {
+          "title": "六義園",
+          "subtitle": "高さ15メートルのしだれ桜の滝。江戸の大名庭園を春の夜間特別公開",
+          "tag": "東京都文京区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "大しだれ桜（樹齢70年）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:30〜21:00：六義園の夜桜特別夜間開園。今季の日程・時間は公式発表を確認してください",
+          "desc": "五代将軍の側近、柳沢吉保が7年をかけて築いた回遊式大名庭園。正門近くの高さ15メートル、幅20メートルのしだれ桜は、まるでピンクの滝のよう。夜の光が幽玄な雰囲気を演出します。",
+          "locationDetail": "JR山手線・東京メトロ南北線駒込駅から徒歩約2分",
+          "sakuraCafe.name": "吹上茶屋（六義園・大泉水のほとり）",
+          "sakuraCafe.feature": "江戸の大名庭園の水辺のベンチ・春限定の桜の生菓子と手だての宇治抹茶"
+        },
+        "ko": {
+          "title": "리쿠기엔",
+          "subtitle": "높이 15m의 거대한 수양벚꽃 폭포, 에도 다이묘 정원의 봄 특별 야간 개방",
+          "tag": "도쿄도 분쿄구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "거대한 수양벚꽃 (수령 70년)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:30~21:00: 리쿠기엔 야간 벚꽃 특별 개방 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "에도 막부 5대 쇼군의 측근 야나기사와 요시야스가 7년에 걸쳐 조성한 회유식 다이묘 정원입니다. 정문 근처의 높이 15m, 너비 20m 수양벚꽃이 분홍 폭포처럼 펼쳐지고, 밤 조명이 그윽한 분위기를 만듭니다.",
+          "locationDetail": "JR 야마노테선·도쿄 메트로 난보쿠선 고마고메역에서 도보 약 2분",
+          "sakuraCafe.name": "후키아게 차야 (리쿠기엔 다이센스이 연못가 찻집)",
+          "sakuraCafe.feature": "에도 다이묘 정원의 물가 벤치, 봄 한정 벚꽃 생과자와 직접 휘저은 우지 말차"
+        },
+        "th": {
+          "title": "สวนริคุงิเอน",
+          "subtitle": "ซากุระกิ่งย้อยสูง 15 เมตรราวน้ำตก เปิดสวนไดเมียวยุคเอโดะเป็นพิเศษในคืนฤดูใบไม้ผลิ",
+          "tag": "เขตบุงเกียว โตเกียว",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "ซากุระกิ่งย้อยขนาดใหญ่ (อายุ 70 ปี)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:30–21:00: เปิดสวนริคุงิเอนชมซากุระกลางคืนเป็นพิเศษ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "สวนไดเมียวแบบเดินชมที่ยานางิซาวะ โยชิยาสุ คนสนิทของโชกุนโทกูงาวะรุ่นที่ห้า ใช้เวลาสร้างเจ็ดปี ใกล้ประตูหลักมีซากุระกิ่งย้อยสูง 15 เมตร กว้าง 20 เมตรราวน้ำตกสีชมพู แสงไฟยามค่ำสร้างบรรยากาศลึกล้ำชวนฝัน",
+          "locationDetail": "เดินประมาณ 2 นาทีจากสถานีโคมาโกเมะ สาย JR ยามาโนเตะหรือโตเกียวเมโทรนัมโบกุ",
+          "sakuraCafe.name": "ฟุกิอาเกะชายะ (โรงน้ำชาริมสระไดเซ็นซุยในสวนริคุงิเอน)",
+          "sakuraCafe.feature": "ม้านั่งริมน้ำในสวนไดเมียวยุคเอโดะ ขนมวากาชิสดธีมซากุระเฉพาะฤดูใบไม้ผลิ และมัทฉะอุจิตีด้วยมือ"
+        },
+        "vi": {
+          "title": "Vườn Rikugien",
+          "subtitle": "Thác anh đào rủ cao 15 mét, đợt mở cửa đêm mùa xuân đặc biệt của vườn lãnh chúa thời Edo",
+          "tag": "Bunkyō, Tokyo",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Anh đào rủ khổng lồ (70 năm tuổi)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:30–21:00: mở cửa đặc biệt ngắm anh đào đêm ở Rikugien; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Khu vườn dạo bộ của lãnh chúa được Yanagisawa Yoshiyasu, cận thần của shogun Tokugawa đời thứ năm, xây trong bảy năm. Gần cổng chính, cây anh đào rủ cao 15 mét, rộng 20 mét như thác hồng. Ánh sáng đêm tạo bầu không khí sâu lắng, huyền ảo.",
+          "locationDetail": "Đi bộ khoảng 2 phút từ ga Komagome, tuyến JR Yamanote hoặc Tokyo Metro Namboku",
+          "sakuraCafe.name": "Fukiage Chaya (quán trà bên hồ Daisensui của Rikugien)",
+          "sakuraCafe.feature": "Ghế ven nước trong vườn lãnh chúa thời Edo, bánh wagashi tươi hoa anh đào riêng mùa xuân và matcha Uji đánh bằng tay"
+        },
+        "hi": {
+          "title": "रिकुगिएन उद्यान",
+          "subtitle": "15 मीटर ऊँचे झूलती शाखाओं वाले विशाल चेरी वृक्ष का पुष्प झरना, एदोकालीन सामंत के बाग़ में वसंत की विशेष शाम",
+          "tag": "बुनक्यो, टोक्यो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "विशाल झूलती शाखाओं वाला चेरी वृक्ष (70 वर्ष पुराना)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:30–21:00: रिकुगिएन में रात्रि-सकुरा के लिए विशेष शाम का प्रवेश; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "पाँचवें तोकुगावा शोगुन के निकट सलाहकार यानागिसावा योशियासु ने यह भ्रमण उद्यान सात वर्षों में बनवाया। मुख्य द्वार के पास 15 मीटर ऊँचा और 20 मीटर चौड़ा झूलती शाखाओं वाला चेरी वृक्ष गुलाबी झरने जैसा दिखता है। रात की रोशनी गहरा, स्वप्निल वातावरण बनाती है।",
+          "locationDetail": "JR यामानोते लाइन या टोक्यो मेट्रो नामबोकु लाइन के कोमागोमे स्टेशन से लगभग 2 मिनट पैदल",
+          "sakuraCafe.name": "फुकिआगे चाया (रिकुगिएन के दाइसेन्सुई तालाब किनारे चायघर)",
+          "sakuraCafe.feature": "एदोकालीन सामंत के बाग़ में जलतट की बेंच, केवल वसंत में मिलने वाली ताज़ा सकुरा वागाशी और हाथ से फेंटी उजी माचा"
+        },
+        "es": {
+          "title": "Jardines Rikugien",
+          "subtitle": "Una cascada de cerezo llorón de 15 metros: apertura nocturna especial de primavera en un jardín señorial de Edo",
+          "tag": "Bunkyō, Tokio",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Cerezo llorón gigante (70 años)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:30–21:00: apertura nocturna especial para ver cerezos en Rikugien; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Un jardín de paseo que Yanagisawa Yoshiyasu, cercano consejero del quinto shogun Tokugawa, construyó durante siete años. Junto a la entrada principal, un cerezo llorón de 15 metros de alto y 20 de ancho parece una cascada rosa. La iluminación nocturna crea un ambiente de gran misterio y belleza.",
+          "locationDetail": "A unos 2 minutos a pie de Komagome, línea JR Yamanote o Namboku de Tokyo Metro",
+          "sakuraCafe.name": "Fukiage Chaya (casa de té junto al estanque Daisensui de Rikugien)",
+          "sakuraCafe.feature": "Bancos junto al agua en un jardín señorial de Edo, wagashi frescos de sakura exclusivos de primavera y matcha de Uji batido a mano"
+        }
+      }
+    },
+    "sumida_park_official_night": {
+      "source": {
+        "id": "sumida_park_official_night",
+        "theme": "sakura",
+        "region": "kanto",
+        "fields": {
+          "title": "隅田公園",
+          "subtitle": "晴空塔與吾妻橋璀璨倒影！屋形船航行隅田川櫻花水道",
+          "tag": "東京・台東區／墨田區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・大島櫻・里櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (隅田川水岸夜櫻與晴空塔點燈)；本季日期與時段以官方公告為準",
+          "desc": "德川八代將軍吉宗為庶民打造的賞櫻勝地。橫跨隅田川兩岸長達1公里，夜晚盛開櫻花與璀璨變幻色彩的東京晴空塔同框，搭乘屋形船從水面觀賞格外奢華浪漫。",
+          "locationDetail": "東武伊勢崎線 / 東京地下鐵 銀座線「淺草站」徒步 3 分鐘",
+          "sakuraCafe.name": "SUZU CAFE 神谷町 / CAFE ME 隅田川露台店",
+          "sakuraCafe.feature": "隅田川水岸第一排・晴空塔與百株櫻並木同框・手沖單品與草莓千層"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "隅田公園",
+          "subtitle": "晴空塔與吾妻橋璀璨倒影！屋形船航行隅田川櫻花水道",
+          "tag": "東京・台東區／墨田區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "染井吉野櫻・大島櫻・里櫻 (1000株)",
+          "nightHours": "歷年夜間時段參考：🏮 18:30 - 21:00 (隅田川水岸夜櫻與晴空塔點燈)；本季日期與時段以官方公告為準",
+          "desc": "德川八代將軍吉宗為庶民打造的賞櫻勝地。橫跨隅田川兩岸長達1公里，夜晚盛開櫻花與璀璨變幻色彩的東京晴空塔同框，搭乘屋形船從水面觀賞格外奢華浪漫。",
+          "locationDetail": "東武伊勢崎線 / 東京地下鐵 銀座線「淺草站」徒步 3 分鐘",
+          "sakuraCafe.name": "SUZU CAFE 神谷町 / CAFE ME 隅田川露台店",
+          "sakuraCafe.feature": "隅田川水岸第一排・晴空塔與百株櫻並木同框・手沖單品與草莓千層"
+        },
+        "zh-CN": {
+          "title": "隅田公园",
+          "subtitle": "晴空塔与吾妻桥璀璨倒影，屋形船航行隅田川樱花水道",
+          "tag": "东京・台东区／墨田区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "染井吉野樱、大岛樱、里樱（1,000 株）",
+          "nightHours": "往年夜间时段参考：🏮 18:30–21:00：隅田川水岸夜樱与晴空塔亮灯；本季日期与时段以官方公告为准",
+          "desc": "德川第八代将军吉宗为百姓打造的赏樱名所。横跨隅田川两岸约 1 公里，夜间盛开樱花与变幻色彩的东京晴空塔相映，乘屋形船从水上观赏格外浪漫。",
+          "locationDetail": "东武伊势崎线／东京地铁银座线浅草站步行约 3 分钟",
+          "sakuraCafe.name": "SUZU CAFE 神谷町／CAFE ME 隅田川露台店",
+          "sakuraCafe.feature": "隅田川水岸第一排，同赏晴空塔与百株樱花大道，手冲单品咖啡与草莓千层"
+        },
+        "en": {
+          "title": "Sumida Park",
+          "subtitle": "Sparkling reflections of Tokyo Skytree and Azuma Bridge, with yakatabune boats on a cherry-lined waterway",
+          "tag": "Taitō / Sumida, Tokyo",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Somei Yoshino, Ōshima and Sato cherries (1,000 trees)",
+          "nightHours": "Past-season evening hours: 🏮 18:30–21:00: Sumida River night blossoms and Tokyo Skytree lighting; confirm this season’s dates and hours with the organizer",
+          "desc": "A cherry blossom spot created for ordinary people by the eighth Tokugawa shogun, Yoshimune. Stretching one kilometer along both banks of the Sumida River, it pairs blooming cherries with Tokyo Skytree’s changing colors at night. Viewing them from a yakatabune boat adds a luxurious, romantic touch.",
+          "locationDetail": "About 3 minutes on foot from Asakusa Station (Tōbu Isesaki Line / Tokyo Metro Ginza Line)",
+          "sakuraCafe.name": "SUZU CAFE Kamiyachō / CAFE ME Sumida River Terrace",
+          "sakuraCafe.feature": "Front-row riverside seating, views of Tokyo Skytree and a hundred cherry trees, single-origin pour-over coffee and strawberry mille-crêpe cake"
+        },
+        "ja": {
+          "title": "隅田公園",
+          "subtitle": "東京スカイツリーと吾妻橋のきらめく水鏡。屋形船で楽しむ隅田川の桜",
+          "tag": "東京都台東区・墨田区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノ・オオシマザクラ・サトザクラ（1,000本）",
+          "nightHours": "過去の夜間時間の参考：🏮 18:30〜21:00：隅田川沿いの夜桜と東京スカイツリーのライトアップ。今季の日程・時間は公式発表を確認してください",
+          "desc": "八代将軍徳川吉宗が庶民のために整えた桜の名所。隅田川の両岸約1キロにわたり、夜は満開の桜と色を変える東京スカイツリーが競演します。屋形船から眺めると、いっそうぜいたくでロマンチックなひとときに。",
+          "locationDetail": "東武伊勢崎線・東京メトロ銀座線浅草駅から徒歩約3分",
+          "sakuraCafe.name": "SUZU CAFE 神谷町／CAFE ME 隅田川テラス店",
+          "sakuraCafe.feature": "隅田川沿いの特等席・東京スカイツリーと百本の桜並木・シングルオリジンのハンドドリップとイチゴのミルクレープ"
+        },
+        "ko": {
+          "title": "스미다 공원",
+          "subtitle": "도쿄 스카이트리와 아즈마 다리의 반영, 벚꽃 수로를 지나는 야카타부네",
+          "tag": "도쿄도 다이토구·스미다구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "소메이요시노·오시마 벚꽃·사토자쿠라 (1,000그루)",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 18:30~21:00: 스미다강변 야간 벚꽃과 도쿄 스카이트리 조명 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "도쿠가와 8대 쇼군 요시무네가 서민을 위해 조성한 벚꽃 명소입니다. 스미다강 양쪽으로 약 1km 이어지며, 밤에는 만개한 벚꽃과 색을 바꾸는 도쿄 스카이트리가 어우러집니다. 야카타부네에서 바라보면 더욱 호화롭고 낭만적입니다.",
+          "locationDetail": "도부 이세사키선·도쿄 메트로 긴자선 아사쿠사역에서 도보 약 3분",
+          "sakuraCafe.name": "SUZU CAFE 가미야초 / CAFE ME 스미다강 테라스점",
+          "sakuraCafe.feature": "스미다강 바로 앞 좌석, 도쿄 스카이트리와 백 그루 벚꽃길 전망, 싱글 오리진 핸드드립과 딸기 밀크레이프"
+        },
+        "th": {
+          "title": "สวนสุมิดะ",
+          "subtitle": "เงาสะท้อนสกายทรีและสะพานอาซูมะ เรือยากาตาบูเนะล่องทางน้ำซากุระแม่น้ำสุมิดะ",
+          "tag": "เขตไทโตและสุมิดะ โตเกียว",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะ โอชิมะซากุระ และซาโตะซากุระ (1,000 ต้น)",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 18:30–21:00: ประดับไฟซากุระริมแม่น้ำสุมิดะและโตเกียวสกายทรี โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "จุดชมซากุระที่โทกูงาวะ โยชิมูเนะ โชกุนรุ่นที่แปดจัดให้ประชาชนทั่วไป ยาวราวหนึ่งกิโลเมตรตามสองฝั่งแม่น้ำสุมิดะ ยามค่ำซากุระบานอยู่เคียงโตเกียวสกายทรีที่เปลี่ยนสี การชมจากเรือยากาตาบูเนะให้บรรยากาศหรูหราโรแมนติก",
+          "locationDetail": "เดินประมาณ 3 นาทีจากสถานีอาซากุสะ สายโทบุอิเซซากิหรือโตเกียวเมโทรกินซ่า",
+          "sakuraCafe.name": "SUZU CAFE คามิยาโจ / CAFE ME สาขาระเบียงแม่น้ำสุมิดะ",
+          "sakuraCafe.feature": "ที่นั่งแถวหน้าริมสุมิดะ ชมสกายทรีพร้อมแนวซากุระร้อยต้น กาแฟดริปซิงเกิลออริจินและเค้กเครปสตรอว์เบอร์รี"
+        },
+        "vi": {
+          "title": "Công viên Sumida",
+          "subtitle": "Bóng Skytree và cầu Azuma lung linh, thuyền yakatabune qua dòng sông rợp anh đào",
+          "tag": "Taitō / Sumida, Tokyo",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino, Ōshima và Sato-zakura (1.000 cây)",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 18:30–21:00: thắp sáng anh đào ven sông Sumida và Tokyo Skytree; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Điểm ngắm anh đào được shogun Tokugawa đời thứ tám Yoshimune tạo cho dân thường. Trải dài một kilômét dọc hai bờ Sumida, ban đêm hoa nở rộ cùng Tokyo Skytree đổi màu. Ngắm từ thuyền yakatabune mang đến trải nghiệm đặc biệt sang trọng, lãng mạn.",
+          "locationDetail": "Đi bộ khoảng 3 phút từ ga Asakusa, tuyến Tōbu Isesaki hoặc Tokyo Metro Ginza",
+          "sakuraCafe.name": "SUZU CAFE Kamiyachō / CAFE ME sân hiên sông Sumida",
+          "sakuraCafe.feature": "Chỗ ngồi sát bờ Sumida, ngắm Skytree cùng một trăm cây anh đào, cà phê pour-over single-origin và bánh mille-crêpe dâu"
+        },
+        "hi": {
+          "title": "सुमिदा पार्क",
+          "subtitle": "स्काईट्री और अज़ुमा पुल के चमकते प्रतिबिंब, चेरी किनारों वाली सुमिदा नदी पर याकाताबुने नौकाएँ",
+          "tag": "ताइतो / सुमिदा, टोक्यो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "सोमेई योशिनो, ओशिमा और सातो चेरी (1,000 पेड़)",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 18:30–21:00: सुमिदा नदीतट के रात्रि-सकुरा और टोक्यो स्काईट्री की रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "आठवें तोकुगावा शोगुन योशिमुने ने यह सकुरा स्थल आम लोगों के लिए बनवाया। सुमिदा नदी के दोनों किनारों पर एक किलोमीटर तक फैले खिले चेरी फूल रात में रंग बदलते टोक्यो स्काईट्री के साथ दिखते हैं। याकाताबुने नौका से इन्हें देखना विशेष भव्य और रोमांटिक लगता है।",
+          "locationDetail": "तोबु इसेसाकी लाइन या टोक्यो मेट्रो गिन्ज़ा लाइन के असाकुसा स्टेशन से लगभग 3 मिनट पैदल",
+          "sakuraCafe.name": "SUZU CAFE कामियाचो / CAFE ME सुमिदा नदी टेरेस",
+          "sakuraCafe.feature": "सुमिदा नदी के बिल्कुल सामने बैठक, स्काईट्री और सौ चेरी वृक्षों के नज़ारे, सिंगल-ऑरिजिन पोर-ओवर कॉफ़ी और स्ट्रॉबेरी मिल-क्रेप केक"
+        },
+        "es": {
+          "title": "Parque Sumida",
+          "subtitle": "Reflejos brillantes de Skytree y el puente Azuma, con barcas yakatabune entre orillas de cerezos",
+          "tag": "Taitō / Sumida, Tokio",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Somei Yoshino, Ōshima y Sato-zakura (1.000 árboles)",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 18:30–21:00: iluminación de cerezos junto al Sumida y de Tokyo Skytree; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Un lugar de cerezos creado para el pueblo por Yoshimune, octavo shogun Tokugawa. Se extiende un kilómetro por ambas orillas del Sumida, donde de noche las flores comparten escena con los colores cambiantes de Tokyo Skytree. Contemplarlas desde una barca yakatabune resulta especialmente lujoso y romántico.",
+          "locationDetail": "A unos 3 minutos a pie de Asakusa, línea Tōbu Isesaki o Ginza de Tokyo Metro",
+          "sakuraCafe.name": "SUZU CAFE Kamiyachō / CAFE ME Terraza del río Sumida",
+          "sakuraCafe.feature": "Primera fila junto al Sumida, vistas de Skytree y un centenar de cerezos, café de origen único filtrado a mano y tarta de crepes de fresa"
+        }
+      }
+    },
+    "roppongi_moori_night": {
+      "source": {
+        "id": "roppongi_moori_night",
+        "theme": "sakura",
+        "region": "kanto",
+        "fields": {
+          "title": "六本木新城 毛利庭園",
+          "subtitle": "東京鐵塔背景下的江戶諸侯庭園！都會摩天大樓現代夜櫻",
+          "tag": "東京・港區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "老木染井吉野櫻・垂櫻",
+          "nightHours": "歷年夜間時段參考：🏮 17:30 - 23:00 (毛利庭園池泉與東京鐵塔光影夜櫻)；本季日期與時段以官方公告為準",
+          "desc": "在六本木之丘現代高樓叢林中保留的江戶大名庭園。池塘周圍盛開的古櫻在精緻燈光打映下，襯托出遠方經典紅色東京鐵塔，充滿成熟摩登魅力。",
+          "locationDetail": "東京地下鐵 日比谷線 / 都營大江戶線「六本木站」徒步 1 分鐘",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "毛利庭園池畔・六本木櫻坂夜櫻點燈景觀露台席・法式烘焙與經典熱巧克力"
+        }
+      },
+      "translations": {
+        "zh-TW": {
+          "title": "六本木新城 毛利庭園",
+          "subtitle": "東京鐵塔背景下的江戶諸侯庭園！都會摩天大樓現代夜櫻",
+          "tag": "東京・港區",
+          "bloomStatus": "季節景觀參考，非即時花況",
+          "species": "老木染井吉野櫻・垂櫻",
+          "nightHours": "歷年夜間時段參考：🏮 17:30 - 23:00 (毛利庭園池泉與東京鐵塔光影夜櫻)；本季日期與時段以官方公告為準",
+          "desc": "在六本木之丘現代高樓叢林中保留的江戶大名庭園。池塘周圍盛開的古櫻在精緻燈光打映下，襯托出遠方經典紅色東京鐵塔，充滿成熟摩登魅力。",
+          "locationDetail": "東京地下鐵 日比谷線 / 都營大江戶線「六本木站」徒步 1 分鐘",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "毛利庭園池畔・六本木櫻坂夜櫻點燈景觀露台席・法式烘焙與經典熱巧克力"
+        },
+        "zh-CN": {
+          "title": "六本木新城 毛利庭园",
+          "subtitle": "东京铁塔映衬江户诸侯庭园，摩天楼间的都市夜樱",
+          "tag": "东京・港区",
+          "bloomStatus": "季节景观参考，非实时花况",
+          "species": "老树染井吉野樱、垂枝樱",
+          "nightHours": "往年夜间时段参考：🏮 17:30–23:00：毛利庭园池泉与东京铁塔光影夜樱；本季日期与时段以官方公告为准",
+          "desc": "保留于六本木新城现代高楼之间的江户大名庭园。池塘周围盛开的古樱在精致灯光下，与远处经典红色东京铁塔相映，展现成熟时尚的魅力。",
+          "locationDetail": "东京地铁日比谷线／都营大江户线六本木站步行约 1 分钟",
+          "sakuraCafe.name": "Buvette Tokyo／Roppongi Hills Cafe",
+          "sakuraCafe.feature": "毛利庭园池畔，六本木樱坂夜樱景观露台席，法式烘焙与经典热巧克力"
+        },
+        "en": {
+          "title": "Mōri Garden, Roppongi Hills",
+          "subtitle": "An Edo-era lord’s garden with Tokyo Tower beyond: urban night blossoms among modern skyscrapers",
+          "tag": "Minato, Tokyo",
+          "bloomStatus": "Seasonal scenery reference; not a live bloom report",
+          "species": "Old Somei Yoshino trees and weeping cherries",
+          "nightHours": "Past-season evening hours: 🏮 17:30–23:00: night blossoms around Mōri Garden’s pond with Tokyo Tower lighting; confirm this season’s dates and hours with the organizer",
+          "desc": "An Edo-era lord’s garden preserved among Roppongi Hills’ modern towers. Carefully placed lighting illuminates old cherry trees around the pond, setting off the classic red Tokyo Tower in the distance for a sophisticated urban scene.",
+          "locationDetail": "About 1 minute on foot from Roppongi Station (Tokyo Metro Hibiya Line / Toei Ōedo Line)",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "Pondside at Mōri Garden, terrace views of illuminated cherries on Roppongi Sakurazaka, French pastries and classic hot chocolate"
+        },
+        "ja": {
+          "title": "六本木ヒルズ 毛利庭園",
+          "subtitle": "東京タワーを背景にした江戸の大名庭園。高層ビルに囲まれた都会の夜桜",
+          "tag": "東京都港区",
+          "bloomStatus": "季節の景観参考・開花のリアルタイム情報ではありません",
+          "species": "ソメイヨシノの古木・しだれ桜",
+          "nightHours": "過去の夜間時間の参考：🏮 17:30〜23:00：毛利庭園の池と東京タワーの灯りに映える夜桜。今季の日程・時間は公式発表を確認してください",
+          "desc": "六本木ヒルズの高層ビル群の中に残る江戸の大名庭園。池の周りの桜の古木が繊細な照明に浮かび、遠くの赤い東京タワーを引き立てます。大人の都会らしい魅力が漂う風景です。",
+          "locationDetail": "東京メトロ日比谷線・都営大江戸線六本木駅から徒歩約1分",
+          "sakuraCafe.name": "Buvette Tokyo／Roppongi Hills Cafe",
+          "sakuraCafe.feature": "毛利庭園の池のほとり・六本木さくら坂の夜桜を望むテラス席・フランス菓子と定番のホットチョコレート"
+        },
+        "ko": {
+          "title": "롯폰기 힐스 모리 정원",
+          "subtitle": "도쿄 타워를 배경으로 한 에도 다이묘 정원, 고층 빌딩 사이의 도심 밤 벚꽃",
+          "tag": "도쿄도 미나토구",
+          "bloomStatus": "계절 경관 참고용·실시간 개화 정보 아님",
+          "species": "오래된 소메이요시노·수양벚꽃",
+          "nightHours": "지난 시즌 야간 시간 참고: 🏮 17:30~23:00: 모리 정원 연못과 도쿄 타워 불빛 속 야간 벚꽃 · 이번 시즌 일정과 시간은 공식 발표 확인",
+          "desc": "롯폰기 힐스의 현대적 고층 빌딩 사이에 보존된 에도 다이묘 정원입니다. 연못 주변의 오래된 벚나무가 섬세한 조명에 빛나며 멀리 보이는 붉은 도쿄 타워와 어우러져 세련된 도심의 매력을 자아냅니다.",
+          "locationDetail": "도쿄 메트로 히비야선·도에이 오에도선 롯폰기역에서 도보 약 1분",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "모리 정원 연못가, 롯폰기 사쿠라자카 밤 벚꽃 전망 테라스, 프랑스식 구움과자와 클래식 핫초콜릿"
+        },
+        "th": {
+          "title": "สวนโมริ รปปงงิฮิลส์",
+          "subtitle": "สวนไดเมียวยุคเอโดะกับฉากหลังโตเกียวทาวเวอร์ ซากุระกลางคืนท่ามกลางตึกระฟ้า",
+          "tag": "เขตมินาโตะ โตเกียว",
+          "bloomStatus": "ข้อมูลทิวทัศน์ตามฤดูกาล ไม่ใช่รายงานการบานสด",
+          "species": "โซเมอิโยชิโนะเก่าแก่และซากุระกิ่งย้อย",
+          "nightHours": "เวลาเข้าชมกลางคืนในฤดูกาลที่ผ่านมา: 🏮 17:30–23:00: ซากุระยามค่ำรอบสระสวนโมริและแสงโตเกียวทาวเวอร์ โปรดตรวจสอบวันและเวลาฤดูกาลนี้จากประกาศทางการ",
+          "desc": "สวนไดเมียวยุคเอโดะที่อนุรักษ์ไว้ท่ามกลางอาคารสมัยใหม่ของรปปงงิฮิลส์ ต้นซากุระเก่าแก่รอบสระได้รับแสงอย่างประณีต ขับโตเกียวทาวเวอร์สีแดงที่อยู่ไกลให้เด่น เป็นทิวทัศน์เมืองที่มีเสน่ห์สง่างาม",
+          "locationDetail": "เดินประมาณ 1 นาทีจากสถานีรปปงงิ สายโตเกียวเมโทรฮิบิยะหรือโทเอโอเอโดะ",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "ริมสระสวนโมริ ระเบียงชมซากุระประดับไฟบนรปปงงิซากุระซากะ ขนมอบฝรั่งเศสและช็อกโกแลตร้อนคลาสสิก"
+        },
+        "vi": {
+          "title": "Vườn Mōri, Roppongi Hills",
+          "subtitle": "Vườn lãnh chúa thời Edo với nền tháp Tokyo, anh đào đêm đô thị giữa các tòa chọc trời",
+          "tag": "Minato, Tokyo",
+          "bloomStatus": "Tham khảo cảnh theo mùa, không phải tình hình hoa trực tiếp",
+          "species": "Somei Yoshino cổ thụ và anh đào rủ",
+          "nightHours": "Giờ buổi tối các mùa trước: 🏮 17:30–23:00: anh đào đêm quanh hồ vườn Mōri cùng ánh sáng tháp Tokyo; kiểm tra ngày và giờ mùa này trên thông báo chính thức",
+          "desc": "Vườn lãnh chúa thời Edo được giữ lại giữa các tòa cao tầng hiện đại của Roppongi Hills. Ánh sáng tinh tế chiếu các gốc anh đào cổ quanh hồ, tôn tháp Tokyo đỏ ở phía xa, tạo vẻ quyến rũ đô thị thanh lịch.",
+          "locationDetail": "Đi bộ khoảng 1 phút từ ga Roppongi, tuyến Tokyo Metro Hibiya hoặc Toei Ōedo",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "Bên hồ vườn Mōri, sân hiên ngắm anh đào đêm trên dốc Roppongi Sakurazaka, bánh nướng Pháp và sô-cô-la nóng cổ điển"
+        },
+        "hi": {
+          "title": "मोरी उद्यान, रोप्पोंगी हिल्स",
+          "subtitle": "टोक्यो टावर की पृष्ठभूमि में एदोकालीन सामंत का बाग़, आधुनिक ऊँची इमारतों के बीच रात्रि-सकुरा",
+          "tag": "मिनातो, टोक्यो",
+          "bloomStatus": "मौसमी दृश्य का संदर्भ; फूलों की ताज़ा स्थिति नहीं",
+          "species": "पुराने सोमेई योशिनो और झूलती शाखाओं वाले चेरी वृक्ष",
+          "nightHours": "पिछले मौसम के रात्रि समय का संदर्भ: 🏮 17:30–23:00: मोरी उद्यान के तालाब के रात्रि-सकुरा और टोक्यो टावर की रोशनी; इस मौसम की तारीख और समय आधिकारिक घोषणा से जाँचें",
+          "desc": "रोप्पोंगी हिल्स की आधुनिक ऊँची इमारतों के बीच सुरक्षित एदोकालीन सामंत का उद्यान। तालाब के आसपास पुराने चेरी वृक्ष बारीक प्रकाश-सज्जा में चमकते हैं और दूर लाल टोक्यो टावर को उभारते हैं। दृश्य में परिष्कृत शहरी आकर्षण है।",
+          "locationDetail": "टोक्यो मेट्रो हिबिया लाइन या तोएई ओएदो लाइन के रोप्पोंगी स्टेशन से लगभग 1 मिनट पैदल",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "मोरी उद्यान के तालाब किनारे, रोप्पोंगी सकुराज़ाका के रोशन चेरी दृश्यों वाली छत, फ़्रांसीसी बेकरी व्यंजन और पारंपरिक हॉट चॉकलेट"
+        },
+        "es": {
+          "title": "Jardín Mōri, Roppongi Hills",
+          "subtitle": "Un jardín señorial de Edo con la torre de Tokio al fondo, cerezos nocturnos entre rascacielos",
+          "tag": "Minato, Tokio",
+          "bloomStatus": "Referencia estacional; no es un informe de floración en directo",
+          "species": "Antiguos Somei Yoshino y cerezos llorones",
+          "nightHours": "Horario nocturno de temporadas anteriores: 🏮 17:30–23:00: cerezos nocturnos en el estanque del jardín Mōri y luces de la torre de Tokio; consulta las fechas y horas de esta temporada en el anuncio oficial",
+          "desc": "Un jardín señorial de Edo conservado entre las modernas torres de Roppongi Hills. Una iluminación delicada realza los antiguos cerezos junto al estanque y destaca la clásica torre roja de Tokio a lo lejos, creando una escena urbana sofisticada.",
+          "locationDetail": "A 1 minuto a pie aproximadamente de Roppongi, línea Hibiya de Tokyo Metro u Ōedo de Toei",
+          "sakuraCafe.name": "Buvette Tokyo / Roppongi Hills Cafe",
+          "sakuraCafe.feature": "Junto al estanque Mōri, terraza con vistas a los cerezos iluminados de Roppongi Sakurazaka, repostería francesa y chocolate caliente clásico"
+        }
+      }
+    }
+  }
+}

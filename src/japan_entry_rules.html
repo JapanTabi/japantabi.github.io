@@ -3,10 +3,21 @@
 
 <head>
   <script src="/js/lang_switcher.js"></script>
+  <script src="/js/translation_memory.js"></script>
+  <script src="/js/site_i18n.js"></script>
+  <script src="/js/booking_locale.js"></script>
+  <script src="/js/spot_identity.js"></script>
+  <script src="/js/spot_i18n.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="/images/japan_tabi_logo.png">
-  <title>2025/2026 最新日本入境規範與免稅新制全典 ｜ 日旅報報 JAPAN TABI 官方特約指南</title>
+  <title>日本入境與免稅指南：2026 年 11 月查核 ｜ 日旅報報 JAPAN TABI 官方特約指南</title>
+  <meta name="description" content="依旅客適用條件查看日本入境、Visit Japan Web、海關及免稅說明，出發前確認所需文件與申報規則。">
+  <meta property="og:title" content="日本入境與免稅指南：2026 年 11 月查核 ｜ 日旅報報 JAPAN TABI 官方特約指南">
+  <meta property="og:description" content="依旅客適用條件查看日本入境、Visit Japan Web、海關及免稅說明，出發前確認所需文件與申報規則。">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:title" content="日本入境與免稅指南：2026 年 11 月查核 ｜ 日旅報報 JAPAN TABI 官方特約指南">
+  <meta name="twitter:description" content="依旅客適用條件查看日本入境、Visit Japan Web、海關及免稅說明，出發前確認所需文件與申報規則。">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -418,17 +429,17 @@
 
     <!-- 🌟 官網正中間品牌標誌與文字排版 (54px 官方雙環 Logo，精準居中對齊) -->
     <div class="header-center">
-      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI">
+      <a href="index.html" class="brand-wrap brand-centered" title="日旅報報 JAPAN TABI" data-i18n-title="brand.name">
         <div class="fuji-logo-box">
           <img src="/images/japan_tabi_logo.png" alt="JAPAN TABI Logo" class="brand-tabi-logo">
         </div>
         <div class="brand-text">
           <h1 id="brandTitle">
-            <span class="brand-title-zh" id="brandTitleZh">日旅報報</span>
+            <span class="brand-title-zh" id="brandTitleZh" data-i18n="brand.name">日旅報報</span>
           </h1>
           <div class="brand-sub-official-wrap">
             <span class="brand-title-en" id="brandTitleEn">JAPAN TABI</span>
-            <span class="brand-tag-official" id="brandTag">日本觀光情報</span>
+            <span class="brand-tag-official" id="brandTag" data-i18n="brand.tag">日本觀光情報</span>
           </div>
         </div>
       </a>
@@ -438,30 +449,30 @@
     <div class="header-right">
       <div class="header-nav-scroll">
         <a href="japan_entry_rules.html" class="header-entry-pill" title="最新日本入境規範、免稅新制與海關申報手冊"
-          style="background:#C2410C; box-shadow:0 2px 10px rgba(194,65,12,0.35);">
-          <span>最新入境規範</span>
+          style="background:#C2410C; box-shadow:0 2px 10px rgba(194,65,12,0.35);" data-i18n-title="nav.entry">
+          <span data-i18n="nav.entry">最新入境規範</span>
         </a>
-        <a href="japan_flight_deals.html" class="header-nav-link" title="日本空港手帖・機場探索指南">
-          <span>查機票</span>
+        <a href="japan_flight_deals.html" class="header-nav-link" title="日本空港手帖・機場探索指南" data-i18n-title="nav.flights">
+          <span data-i18n="nav.flights">查機票</span>
         </a>
-        <a href="japan_charter_rental.html" class="header-nav-link" title="日本客製包車 ＆ 自駕租車指南">
-          <span>包車/租車</span>
+        <a href="japan_charter_rental.html" class="header-nav-link" title="日本客製包車 ＆ 自駕租車指南" data-i18n-title="nav.charter">
+          <span data-i18n="nav.charter">包車/租車</span>
         </a>
-        <a href="japan_okinawa_drive.html" class="header-nav-link" title="沖繩海島不繞路自駕攻略">
-          <span>沖繩自駕</span>
+        <a href="japan_okinawa_drive.html" class="header-nav-link" title="沖繩海島不繞路自駕攻略" data-i18n-title="nav.okinawa">
+          <span data-i18n="nav.okinawa">沖繩自駕</span>
         </a>
-        <a href="japan_inbound_rankings.html" class="header-nav-link" title="日本排行榜">
-          <span>日本排行</span>
+        <a href="japan_inbound_rankings.html" class="header-nav-link" title="日本排行榜" data-i18n-title="nav.rankings">
+          <span data-i18n="nav.rankings">日本排行</span>
         </a>
-        <a href="japan_special_edition.html" class="header-nav-link" title="深度文章・高質感日本文化與戶外誌">
-          <span>深度文章</span>
+        <a href="japan_special_edition.html" class="header-nav-link" title="深度文章・高質感日本文化與戶外誌" data-i18n-title="nav.articles">
+          <span data-i18n="nav.articles">深度文章</span>
         </a>
 
       </div>
 
       <!-- 🌐 前台多國語言切換器 (Language Selector) -->
       <div class="lang-selector-dropdown-wrap" id="langSelectorWrap">
-        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言">
+        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言" data-i18n-title="langLabel">
           <span class="util-btn-icon">🌐</span>
           <span id="currentLangLabel">Language</span>
           <span class="lang-arrow" id="langArrow">▾</span>
@@ -508,18 +519,17 @@
 
     <article class="editorial-frame">
       <header class="editorial-header">
-        <span class="editorial-kicker">OFFICIAL COMPLIANCE MASTERCLASS ｜ 官方規章對照指南</span>
-        <h1 class="editorial-h1">2025/2026 最新日本入境規範與免稅新制權威全典</h1>
+        <span class="editorial-kicker">TRAVEL RULES GUIDE ｜ 官方來源查核指南</span>
+        <h1 class="editorial-h1">日本入境與免稅指南：2026 年 11 月查核</h1>
         <div class="editorial-h1-ja">日本入国手続・Visit Japan Web・免税新制の完全解説</div>
         <p class="editorial-lead">
-          彙整日本外務省（MOFA）、數位廳 Visit Japan Web、財務省稅關（Japan Customs）與農林水產省動植物檢疫所最新公佈之法令規章。從免稅先付後退防轉賣新制、二合一快速通關 QR
-          Code、違禁品嚴格紅線至常備藥品攜帶上限，出發前 5 分鐘完整對照，杜絕卡關或重罰。
+          依日本國稅廳、數位廳、海關、厚生勞動省與農林水產省公開資料整理。查核日期為 2026-11-23；適用條件依國籍、旅行證件、購物日期與攜帶物品而異，實際程序請以主管機關公告為準。
         </p>
         <div class="editorial-badges-row">
-          <span class="editorial-pill-badge highlight">🏅 日本政府官方規章對照認證</span>
-          <span class="editorial-pill-badge">🛂 觀光免簽 90 天完整守則</span>
-          <span class="editorial-pill-badge">✈️ 先付後退新制 100% 解析</span>
-          <span class="editorial-pill-badge">🚨 肉製品 300 萬日圓裁罰紅線</span>
+          <span class="editorial-pill-badge highlight">📚 依官方來源整理，非政府認證</span>
+          <span class="editorial-pill-badge">🛂 免簽依護照與停留條件判定</span>
+          <span class="editorial-pill-badge">✈️ 2026-11-01 起適用退稅制</span>
+          <span class="editorial-pill-badge">🚨 肉製品須先確認准入與檢疫條件</span>
         </div>
       </header>
 
@@ -542,7 +552,7 @@
           <span class="arrow">➔</span>
         </a>
         <a href="#medicine-cash" class="toc-item-link">
-          <span>05. 常備藥品與現金上限</span>
+          <span>05. 常備藥品與現金申報</span>
           <span class="arrow">➔</span>
         </a>
         <a href="#family-infant" class="toc-item-link">
@@ -550,143 +560,31 @@
           <span class="arrow">➔</span>
         </a>
         <a href="#shopping-coupons" class="toc-item-link" style="background:#FFFBEB; border-color:#FDE68A;">
-          <span style="color:#B45309; font-weight:800;">07. 必備購物藥妝優惠券 🎁</span>
+          <span style="color:#B45309; font-weight:800;">07. 店家官方活動與條件查詢</span>
           <span class="arrow" style="color:#B45309;">➔</span>
         </a>
       </nav>
 
       <!-- 01. Visit Japan Web -->
-      <section class="rule-section-card" id="vjw">
-        <span class="rule-sec-kicker">SECTION 01</span>
-        <h2 class="rule-sec-h2">Visit Japan Web (VJW) 線上申報與二合一 QR Code 深度手冊</h2>
-        <div class="rule-sec-sub">日本數位廳官方入境審查與海關電子申報統一平台 ｜ 2025/2026 最新版本</div>
-        <p class="rule-sec-p">
-          日本政府全面推行「Visit Japan Web (VJW)」數位申報系統，旅客可於抵達日本前，透過智慧型手機預先完成「入境審查準備（外國人入境紀錄）」以及「海關申報準備（攜帶品・分開行李申報）」。
-        </p>
-        <div class="rule-callout note">
-          <b>💡 關鍵更新：二合一 QR Code 單一通關閘門</b>
-          最新版本 VJW 已正式將入境審查與海關申報整合為「單一 QR Code」，入境旅客於機場審查櫃檯與海關電子申報閘門一碼通用，無需重複切換螢幕，平均通關時間大幅縮減 40% 以上。
-        </div>
-        <ul class="rule-items-list">
-          <li><strong>建議登錄時機：</strong>建議於起飛前 3 至 7 天內完成帳號登錄與航班資訊填寫，最遲於班機抵達日本前 6 小時填妥。</li>
-          <li><strong>同行家人原則：</strong>嬰幼兒、學童或無法自行操作智慧型手機的年長者，可直接掛載於同一個成年主帳號底下的「同行家人」合併完成申報。</li>
-          <li><strong>離線備用截圖：</strong>填寫完成後系統生成的專屬 QR Code，請務必先於手機相簿中截圖保存。降落時即使機場 Wi-Fi 或國際漫遊瞬時壅塞，亦能從容離線出示。</li>
-        </ul>
-        <a href="https://services.digital.go.jp/visit-japan-web-zh-hant/" target="_blank" rel="noopener noreferrer"
-          class="btn-gov-link">
-          前往日本數位廳 Visit Japan Web 官方入口 ➔
-        </a>
-      </section>
+      <section class="rule-section-card" id="vjw"><span class="rule-sec-kicker">SECTION 01</span><h2 class="rule-sec-h2">Visit Japan Web：入境審查與海關申報</h2><div class="rule-sec-sub">查核日期：2026-11-23 ｜ 日本數位廳</div><p class="rule-sec-p">Visit Japan Web 是免費的官方線上入境手續服務，可事先登錄入境審查與海關申報資料。使用與否不改變簽證、上陸許可或檢疫規定；無法使用時請依機場提供的方式申報。</p><ul class="rule-items-list"><li><strong>QR Code：</strong>入境審查與海關申報可使用整合的 QR Code，但現場仍可能要求出示護照、回答問題或查驗行李。</li><li><strong>填寫時間：</strong>可提前準備並依實際航班更新資料；本頁不將「抵達前 6 小時」當成法定截止時間。</li><li><strong>同行家人：</strong>依官方規則登錄無法自行操作的同行家人；出示資料時應確認目前顯示的是正確旅客，不是一個 QR Code 代表所有人。</li><li><strong>備用方式：</strong>事先確認官方操作說明及資料是否完成，並準備護照與必要文件；通關時間依當日機場狀況而異。</li></ul><a href="https://services.digital.go.jp/en/visit-japan-web/" target="_blank" rel="noopener noreferrer" class="btn-gov-link">Visit Japan Web 官方說明 ➔</a></section>
 
       <!-- 02. 免稅新制出境退稅 -->
-      <section class="rule-section-card" id="tax-free">
-        <span class="rule-sec-kicker">SECTION 02</span>
-        <h2 class="rule-sec-h2">日本免稅制度重大變革：先付稅、機場出境過閘確認後退稅剖析</h2>
-        <div class="rule-sec-sub">徹底遏止免稅品境內轉賣 ｜ 接軌歐洲機場出境查驗退稅機制</div>
-        <p class="rule-sec-p">
-          日本觀光廳與財務省已拍板全面改革外國旅客購物免稅機制。過往旅客在藥妝店、電器行與百貨專櫃結帳時「現場直接免除 10%
-          消費稅」的舊有模式將正式走入歷史，全面改採「店面以含稅價格付款，出境機場出示商品核驗後方退還稅款」的新制度。
-        </p>
-        <div class="rule-callout warning">
-          <b>⚠️ 出境退稅核心流程與防坑規範</b>
-          旅客於市區免稅認證商店購物時，一律先支付含稅全額。出境時，海關將透過護照晶片連線雲端購物紀錄，於機場出境管制區自動閘門掃描確認商品隨身或經托運檢驗攜帶出境後，方將消費稅款退回原刷信用卡或電子支付帳戶。
-        </div>
-        <ul class="rule-items-list">
-          <li><strong>退稅門檻金額：</strong>同一旅客、同一免稅商店單日含稅消費總額達 5,000 日圓以上方可申報退稅。</li>
-          <li><strong>消耗品密封封條禁拆：</strong>藥妝、化妝品、零食特產等消耗品，專用透明密封袋一旦在出境前拆封，將立即視為境內使用並強制補徵 10% 消費稅。</li>
-          <li>
-            <strong>大件免稅品托運須知：</strong>若購買高價電器（如吹風機、水波爐）或大型精品需放入托運行李，報到時請務必主動向航空公司地勤告知，先由海關巡檢核驗後再行托運，避免因行李入艙無法出示商品而喪失退稅權益。
-          </li>
-          <li><strong>身分資格限制：</strong>僅限持有有效「短期滯在（停留 90 天以內）」簽證之外國觀光客享有免稅資格，長期留學簽證、工作簽證或打工度假者均不適用。</li>
-        </ul>
-      </section>
+      <section class="rule-section-card" id="tax-free"><span class="rule-sec-kicker">SECTION 02</span><h2 class="rule-sec-h2">日本免稅：2026 年 11 月 1 日起適用退稅制</h2><div class="rule-sec-sub">查核日期：2026-11-23 ｜ 日本國稅廳退稅制公告</div><p class="rule-sec-p">2026 年 11 月 1 日起的符合資格購物，採用先支付含稅價格、取得海關攜出確認後由店家或受託業者退款的制度。2026 年 10 月 31 日以前的購物適用舊制，不能把新舊規定混用。</p><ul class="rule-items-list"><li><strong>購買門檻：</strong>同一旅客在同一免稅店同一天的未稅購買金額合計須達 5,000 日圓；不是含稅 5,000 日圓。</li><li><strong>攜出期限：</strong>須在購買日起 90 日內出境並依海關要求提示商品；取得攜出確認後應確實出口；轉讓或消耗商品會影響攜出確認資格。</li><li><strong>包裝與上限：</strong>新制取消一般物品與消耗品的區分、消耗品特殊包裝及 50 萬日圓上限。飲食料品、藥品、化妝品等消耗品若已全部或部分消耗，無法按原購買商品取得攜出確認；非消耗品即使曾在日本使用，只要符合規定並最終攜出，仍可取得確認。</li><li><strong>退款方式：</strong>退款由店家或其受託業者辦理，方法、時間及手續費須購物前確認；不是海關閘門保證自動退回原信用卡。</li><li><strong>實際稅額：</strong>一般消費稅率為 10%，部分商品適用 8% 輕減稅率。退款與店家折扣是不同制度，不能保證所有商品一律退 10%。</li><li><strong>資格：</strong>適用合格非居住者，例如符合條件的短期滯在、外交或公用身分等；日本籍非居住者另有條件。依護照、上陸日期及身分判定，不由網站語言判定。</li><li><strong>托運：</strong>須能依海關要求出示商品。可能需要查驗的物品，應在行李交付航空公司前洽詢海關及航空公司。</li></ul><a href="https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/format/002.htm" target="_blank" rel="noopener noreferrer" class="btn-gov-link">國稅廳：現行退稅制與問答 ➔</a></section>
 
       <!-- 03. 護照效期與免簽證 -->
-      <section class="rule-section-card" id="passport-visa">
-        <span class="rule-sec-kicker">SECTION 03</span>
-        <h2 class="rule-sec-h2">護照有效期限原則與各國觀光免簽停留規範</h2>
-        <div class="rule-sec-sub">台灣、港澳特區護照免簽證待遇 ｜ 停留 90 天權益與回程機票核驗</div>
-        <p class="rule-sec-p">
-          持有載有國民身分證統一編號之台灣護照，以及香港特區護照、澳門特區護照者，前往日本從事觀光休閒、商務洽公、探親等不涉及有報酬活動，皆享有最長 90 天之免簽證入境待遇。
-        </p>
-        <div class="rule-callout note">
-          <b>🛂 護照效期官方認定原則</b>
-          日本入國管理局法規並無硬性規範「護照必須具備 6 個月以上效期」，其法定基準為護照於預計停留日本全程「均保持有效」。然而，考量突發班機延誤、行程延長或轉機國家對護照效期的嚴格查驗，強烈建議旅客出發時確保護照具備 6
-          個月以上效期。
-        </div>
-        <ul class="rule-items-list">
-          <li><strong>入境天數計算：</strong>90 天免簽天數自入境翌日起算第 1 天。免簽身分於日本境內不得直接申請變更為工作或居留簽。</li>
-          <li><strong>回程機票核驗義務：</strong>入境審查官有權隨機抽查旅客是否持有 90 天內離開日本之有效機票或船票證明，請備妥電子機票行程單以供查驗。</li>
-        </ul>
-      </section>
+      <section class="rule-section-card" id="passport-visa"><span class="rule-sec-kicker">SECTION 03</span><h2 class="rule-sec-h2">護照、免簽與停留期限：依國籍及旅行證件確認</h2><div class="rule-sec-sub">查核日期：2026-11-23 ｜ 日本政府觀光局與外務省免簽名單</div><p class="rule-sec-p">入境須持有效旅行證件，並符合簽證或免簽條件。免簽國家及地區的適用護照、事先登錄要求與可停留天數不同，多數短期滯在上限為 90 天，亦有 15 天或 30 天等情況。</p><ul class="rule-items-list"><li><strong>台灣、香港、澳門：</strong>應核對外務省名單對護照種類的條件；台灣護照是否載有身分證統一編號亦屬判定條件。不能把同一待遇套用至所有旅行證件。</li><li><strong>護照效期：</strong>至少確保在預定日本停留期間有效，並向承運航空公司及轉機地確認額外要求；「建議保留 6 個月效期」不是日本對所有旅客的統一法定要求。</li><li><strong>實際停留：</strong>以入境時取得的上陸許可及停留期限為準；免簽不是保證入境，也不允許未經許可的有報酬工作。</li><li><strong>行程證明：</strong>依查驗需要準備回程或續程機票、住宿與行程資料。居留資格變更或延長應依出入國在留管理廳規定辦理。</li></ul><a href="https://www.japan.travel/tw/plan/visa-info/" target="_blank" rel="noopener noreferrer" class="btn-gov-link">日本政府觀光局：簽證與免簽說明 ➔</a><a href="https://www.mofa.go.jp/j_info/visit/visa/short/novisa.html" target="_blank" rel="noopener noreferrer" class="btn-gov-link">外務省：各護照免簽條件 ➔</a></section>
 
       <!-- 04. 海關違禁品與紅線 -->
-      <section class="rule-section-card" id="customs-prohibited">
-        <span class="rule-sec-kicker">SECTION 04</span>
-        <h2 class="rule-sec-h2">動植物檢疫與海關違禁品紅線：肉製品 100% 嚴查裁罰</h2>
-        <div class="rule-sec-sub">最高裁處 3 年以下有期徒刑或 300 萬日圓罰金 ｜ 檢疫犬與 X 光全面查驗</div>
-        <div class="rule-callout danger">
-          <b>🚨 絕對禁止輸入品項（動植物檢疫最嚴格紅線）</b>
-          為阻絕非洲豬瘟、禽流感及口蹄疫等惡性傳染病，凡是牛、豬、雞、鴨、鵝等「任何形式肉製品」——不論是肉乾、肉鬆、含肉月餅、真空包香腸、熱狗、甚至含有肉塊之泡麵調理包，一律嚴禁攜入日本！未經檢疫之生鮮水果、種子、帶泥農作物亦全面禁止。
-        </div>
-        <ul class="rule-items-list">
-          <li><strong>電子煙與加熱煙油：</strong>日本嚴格管制含有尼古丁成分之電子煙油與未經核可之霧化器材，攜帶超量自用將被海關當場查扣。</li>
-          <li><strong>仿冒品與智慧財產權侵權物：</strong>偽造名牌商標之包袋、服飾、球鞋，即便宣稱為「個人自用」，在日本海關法規下均屬違法輸入，一經查驗直接沒入銷毀。</li>
-          <li><strong>防身噴霧與管制刀械：</strong>辣椒水、催淚瓦斯防身噴霧器或具攻擊性之折疊刀，未具合法正當理由攜入均屬違反日本銃砲刀劍類所持等取締法。</li>
-        </ul>
-        <a href="https://www.maff.go.jp/aqs/languages/bring_meat_tw.html" target="_blank" rel="noopener noreferrer"
-          class="btn-gov-link">
-          查看日本農林水產省動物檢疫所中文官網 ➔
-        </a>
-      </section>
+      <section class="rule-section-card" id="customs-prohibited"><span class="rule-sec-kicker">SECTION 04</span><h2 class="rule-sec-h2">肉製品、動植物與其他管制物品</h2><div class="rule-sec-sub">查核日期：2026-11-23 ｜ 日本農林水產省動物檢疫所</div><p class="rule-sec-p">肉製品及動植物的准入依品項、產地、疾病管制及證明文件而異；商業包裝、真空包裝或自用用途不等於免除檢疫。沒有確認合格條件時，請勿攜帶肉製品、水果或植物入境。</p><ul class="rule-items-list"><li><strong>肉與動物產品：</strong>符合准入條件時仍可能需要輸出國政府的檢查證明與入境檢疫；肉乾、香腸、肉餡食品等不能只因已煮熟或密封就認定可攜帶。</li><li><strong>違法輸入：</strong>個人違法輸入畜產品，最高可處 3 年以下拘禁刑或 300 萬日圓以下罰金，並可能併罰；不是每次違規一律罰 300 萬日圓。</li><li><strong>水果與植物：</strong>是否禁止、是否需植物檢疫證明與檢查，須依品種及輸出地確認。不要假定所有水果都相同，亦不要把安檢准予上機視為日本准予入境。</li><li><strong>其他管制：</strong>武器、刀械、噴霧及其他管制物品應另查日本海關規定，不能只憑航空公司行李規則判定。</li></ul><a href="https://www.maff.go.jp/aqs/english/product/import.html" target="_blank" rel="noopener noreferrer" class="btn-gov-link">動物檢疫所：旅客攜帶物品 ➔</a><a href="https://www.customs.go.jp/english/summary/passenger.htm" target="_blank" rel="noopener noreferrer" class="btn-gov-link">日本海關：旅客申報與管制物品 ➔</a></section>
 
-      <!-- 05. 常備藥品與現金上限 -->
-      <section class="rule-section-card" id="medicine-cash">
-        <span class="rule-sec-kicker">SECTION 05</span>
-        <h2 class="rule-sec-h2">個人常備藥品攜帶數量上限與 100 萬日圓現金申報義務</h2>
-        <div class="rule-sec-sub">厚生勞動省藥事法規自用基準 ｜ 現金、黃金製品與有價證券申報原則</div>
-        <p class="rule-sec-p">
-          旅客攜帶個人健康管理所需之常備藥品入境，受日本《醫藥品醫療機器等法》嚴格數量規範：
-        </p>
-        <ul class="rule-items-list">
-          <li><strong>非處方藥（成藥、維他命、感冒藥）：</strong>每種品項以不超過「2 個月自用量」為限。</li>
-          <li><strong>醫師處方藥：</strong>限攜帶「1 個月以內劑量」。如因慢性疾病需攜帶超過 1 個月劑量，必須隨身附帶合格主治醫師開具之英文診斷證明書與處方明細。</li>
-          <li><strong>嚴禁管制精神藥物：</strong>含有甲基安非他命前驅物、特定鴉片類可待因成分之強力鎮痛劑，嚴禁擅自攜入，入境前須向厚生勞動省關東信越厚生局申請進口許可。</li>
-          <li><strong>現金與黃金申報：</strong>攜帶總值超過 <strong>100 萬日圓</strong>（或等值外幣現鈔、旅行支票、本票）或黃金純金製品淨重超過 1
-            公斤者，依法必須填寫申報書主動走海關申報通道（紅色通道）。</li>
-        </ul>
-      </section>
+      <!-- 05. 常備藥品與現金申報 -->
+      <section class="rule-section-card" id="medicine-cash"><span class="rule-sec-kicker">SECTION 05</span><h2 class="rule-sec-h2">自用藥品、現金與黃金申報</h2><div class="rule-sec-sub">查核日期：2026-11-23 ｜ 厚生勞動省、麻藥取締部與日本海關</div><ul class="rule-items-list"><li><strong>一般藥品：</strong>符合厚生勞動省條件的一般內服藥通常可在 2 個月自用量內免辦輸入確認證；部分外用藥、化妝品與醫療器材另有數量規則。</li><li><strong>處方藥：</strong>通常限 1 個月自用量。超過免辦範圍時應事先辦理輸入確認證；只有英文處方或診斷證明不一定足夠。</li><li><strong>管制成分：</strong>麻醉藥、興奮劑原料與精神藥物等另依成分、劑量及數量規定處理；部分禁止輸入，部分須事前許可。不能把原居地合法處方當成日本的輸入許可。</li><li><strong>現金及支付工具：</strong>攜帶總值超過 100 萬日圓的現金或等值外幣、旅行支票及其他指定支付工具，須向海關申報；這是申報門檻，不是可攜帶金額上限。</li><li><strong>黃金：</strong>黃金條塊或黃金製品無論數量、重量、價值或新舊，均須在一般申報的對應問題據實回答。攜帶純度 90% 以上且重量超過 1 公斤的金條，另須提交支付工具等攜出入申報書。</li></ul><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/kojinyunyu/topics/tp010401-1.html" target="_blank" rel="noopener noreferrer" class="btn-gov-link">厚生勞動省：藥品個人輸入 ➔</a><a href="https://www.ncd.mhlw.go.jp/en/application2.html" target="_blank" rel="noopener noreferrer" class="btn-gov-link">麻藥取締部：管制藥品攜帶 ➔</a><a href="https://www.customs.go.jp/english/summary/passenger.htm" target="_blank" rel="noopener noreferrer" class="btn-gov-link">日本海關：現金與黃金申報 ➔</a></section>
 
       <!-- 06. 親子幼童與同行申報 -->
-      <section class="rule-section-card" id="family-infant">
-        <span class="rule-sec-kicker">SECTION 06</span>
-        <h2 class="rule-sec-h2">親子家庭通關、嬰兒推車與機場特別禮遇指南</h2>
-        <div class="rule-sec-sub">攜帶嬰幼兒、孕婦與行動不便長輩之國際機場人性化配套</div>
-        <p class="rule-sec-p">
-          為減輕家庭旅客長途飛行之疲勞，全日本主要國際機場（如成田 NRT、羽田 HND、關西 KIX、福岡 FUK、那霸 OKA）皆提供完善的親子通關服務：
-        </p>
-        <ul class="rule-items-list">
-          <li><strong>嬰幼兒配方奶與副食品：</strong>隨身攜帶之液態嬰兒奶、未開封副食品罐頭、保溫瓶沖泡熱水，在通過安檢時主動向查驗人員說明為幼童飲食，經個別儀器檢測後均可隨身帶上飛機。</li>
-          <li><strong>嬰兒推車機邊交付：</strong>絕大多數航空公司允許摺疊嬰兒推車在登機門前進行機邊托運，抵達日本後於空橋門口即可取回，免去抱持幼童長途步行的疲勞。</li>
-          <li><strong>家庭優先通關通道（Priority Lane）：</strong>攜帶未滿 2 歲嬰兒或坐輪椅長者之家庭，抵達入境查驗大廳時可主動洽詢現場引導人員，多數機場設有家庭優先禮遇專櫃，縮短排隊等候時間。
-          </li>
-        </ul>
-      </section>
+      <section class="rule-section-card" id="family-infant"><span class="rule-sec-kicker">SECTION 06</span><h2 class="rule-sec-h2">攜帶嬰幼兒與行動不便旅客的準備</h2><ul class="rule-items-list"><li><strong>嬰兒食品：</strong>嬰幼兒所需液體食品的安檢例外與查驗方式，應向出發及轉機機場確認；通過安檢後仍須遵守日本動植物檢疫與海關規則。</li><li><strong>推車：</strong>能否機邊交付、是否須托運及抵達後在哪裡領取，依航空公司、機型與機場安排，不保證皆可在空橋取回。</li><li><strong>協助：</strong>需要輪椅或協助時，提前聯絡航空公司並洽詢機場人員；優先通道及適用對象依當日機場安排，不是所有攜帶未滿 2 歲幼兒的家庭都保證享有快速通關。</li></ul></section>
 
       <!-- 07. 必備免稅與購物藥妝優惠券庫 -->
-      <section class="rule-section-card" id="shopping-coupons" style="border: 2px solid #F59E0B; background: #FFFDF9;">
-        <span class="rule-sec-kicker" style="color:#D97706;">SECTION 07 ｜ 旅客特惠實用專區</span>
-        <h2 class="rule-sec-h2">2025/2026 日本必備免稅＋超值購物藥妝電器優惠券全集</h2>
-        <div class="rule-sec-sub">唐吉訶德・Bic Camera・松本清・尚都樂客 ｜ 結帳前出示即享 10% 免稅 ＋ 最高額外 8% 折扣</div>
-        <p class="rule-sec-p" style="margin-bottom:20px;">
-          配合日本免稅規定（單筆未稅滿 5,000 日圓），結帳時搭配以下專屬優惠券條碼，除可享 10% 免稅外，還能疊加享有各店家專屬的 3%~8% 額外現折優惠！建議將本頁加入書籤，結帳時直接點開向店員出示。
-        </p>
-
-        <!-- 優惠券卡片列表容器 -->
-        <div id="couponsContainer" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px;">
-          <!-- 由 JS 自動讀取 /data/coupons.json 渲染 -->
-        </div>
-      </section>
+      <section class="rule-section-card" id="shopping-coupons" style="border: 2px solid #F59E0B; background: #FFFDF9;"><span class="rule-sec-kicker">SECTION 07</span><h2 class="rule-sec-h2">店家官方活動與退稅條件查詢</h2><p class="rule-sec-p">店家折扣、適用商品、門檻、有效日期與能否併用退稅，請購物前直接查看店家公告。以下提供官方查詢入口，不把未經確認的折扣數字、示意畫面或不存在的網址當成可使用的優惠券。</p><div id="couponsContainer" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;"></div></section>
     </article>
   </main>
 
@@ -782,16 +680,16 @@
             <div
               style="font-family:'Shippori Mincho', serif; font-size:1.05rem; font-weight:700; color:#0F172A; letter-spacing:1px; line-height:1.2;">
               JAPAN TABI</div>
-            <div style="font-size:0.7rem; color:#64748B; margin-top:2px;">日旅報報 品牌創立</div>
+            <div style="font-size:0.7rem; color:#64748B; margin-top:2px;" data-i18n="footer.foundingTitle">日旅報報 品牌創立</div>
           </div>
         </div>
       </div>
       <div class="tabi-footer-manifesto-right">
         <h3
-          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.05rem; font-weight:700; color:#0F172A; margin:0 0 10px; letter-spacing:1px;">
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.05rem; font-weight:700; color:#0F172A; margin:0 0 10px; letter-spacing:1px;" data-i18n="footer.foundingLabel">
           《日旅報報》品牌創立：</h3>
         <p
-          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:0.9rem; color:#1E293B; line-height:1.8; margin:0 0 4px;">
+          style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:0.9rem; color:#1E293B; line-height:1.8; margin:0 0 4px;" data-i18n="footer.foundingQuote">
           「因為太喜歡日本，想把四季最動人、最真實的美麗，完整介紹給全世界熱愛旅行的人。」</p>
         <p
           style="font-family:'Shippori Mincho', serif; font-size:0.8rem; color:#64748B; font-style:italic; line-height:1.8; margin:0;">
@@ -810,68 +708,67 @@
               style="width:100%; height:100%; object-fit:cover;">
           </div>
           <h4
-            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;">
+            style="font-family:'Shippori Mincho', 'Noto Serif TC', serif; font-size:1.15rem; font-weight:700; margin:0; color:#0F172A; letter-spacing:1px;" data-i18n="footer.brand">
             日旅報報 JAPAN TABI</h4>
         </div>
-        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;">
+        <p style="font-size:0.84rem; color:#475569; line-height:1.85; margin-bottom:16px;" data-i18n="footer.description">
           日本の四季を彩る花期前線・夏の夜空を彩る花火大会・パウダースノー観測・名所特約ガイド。現地取材に基づき厳選された観光情報を、最高水準の自由旅行へお届けします。
         </p>
         <div
           style="padding:12px 16px; background:#FFFFFF; border-left:3.5px solid #92400E; border-top:1px solid #E2E8F0; border-right:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0; border-radius:8px; font-size:0.76rem; color:#64748B; line-height:1.65; box-shadow:0 2px 8px rgba(0,0,0,0.03); margin-bottom:14px;">
-          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;">🏅 官方特約觀測現地取材認證</div>
-          <div>全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
+          <div style="font-weight:700; color:#92400E; margin-bottom:4px; letter-spacing:0.5px;" data-i18n="footer.accreditation">🏅 官方特約觀測現地取材認證</div>
+          <div data-i18n="footer.copyrightNotice">全站情報受著作權保護，未經授權禁止搬運與商業轉載。</div>
         </div>
         <div
           style="font-size:0.78rem; color:#64748B; line-height:1.75; padding:10px 14px; background:#F8FAFC; border:1px solid #E2E8F0; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.02);">
-          <div>✉️ <strong>《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
+          <div>✉️ <strong data-i18n="footer.contact">《日旅報報》合作聯繫信箱：</strong><a href="mailto:himydream.studio0220@gmail.com"
               style="color:#92400E; text-decoration:none; font-weight:700;">himydream.studio0220@gmail.com</a></div>
-          <div style="margin-top:3px;">📍 <strong>日本連絡處：</strong>東京都港区 ｜ JAPAN TABI 編集室 企画推進部</div>
+          <div style="margin-top:3px;">📍 <strong data-i18n="footer.japanOffice">日本連絡處：</strong><span data-i18n="footer.officeAddress">東京都港区 ｜ JAPAN TABI 編集室 企画推進部</span></div>
         </div>
       </div>
 
       <!-- 第 2 欄：核心專欄導覽 (完整串連頁面連結) -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.explore">
           探索日本
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
-          <li><a href="index.html" class="footer-nav-link"><span>首頁情報 ｜ 賞花玩雪最前線</span></a></li>
-          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span>機場手帖 ｜ 11大空港散策中心</span></a></li>
-          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span>私人包車 ｜ 彈性包車自由行</span></a></li>
-          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span>沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
-          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span>美食指南 ｜ 必吃米其林百名店</span></a></li>
+          <li><a href="index.html" class="footer-nav-link"><span data-i18n="footer.homeLink">首頁情報 ｜ 賞花玩雪最前線</span></a></li>
+          <li><a href="japan_flight_deals.html" class="footer-nav-link"><span data-i18n="footer.airportsLink">機場手帖 ｜ 11大空港散策中心</span></a></li>
+          <li><a href="japan_charter_rental.html" class="footer-nav-link"><span data-i18n="footer.charterLink">私人包車 ｜ 彈性包車自由行</span></a></li>
+          <li><a href="japan_okinawa_drive.html" class="footer-nav-link"><span data-i18n="footer.okinawaLink">沖繩自駕 ｜ 自駕環島全攻略</span></a></li>
+          <li><a href="japan_inbound_rankings.html" class="footer-nav-link"><span data-i18n="footer.foodLink">美食指南 ｜ 必吃米其林百名店</span></a></li>
           <li><a href="japan_special_edition.html" class="footer-nav-link"
-              style="color:#92400E; font-weight:700;"><span>深度報導 ｜ 日本文化特刊報導</span></a></li>
+              style="color:#92400E; font-weight:700;"><span data-i18n="footer.storiesLink">深度報導 ｜ 日本文化特刊報導</span></a></li>
         </ul>
       </div>
 
       <!-- 第 3 欄：專題企劃 ＆ 攻略指南 -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.practical">
           實用專區
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
           <li><a href="japan_ski_resorts.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;">全日本 27
+                style="display:block; color:#0F172A;" data-i18n="footer.skiLink">滑雪預約教練 ｜ 滑雪場名鑑</strong><small style="color:#64748B;" data-i18n="footer.skiDescription">全日本 27
                 大雪場・中文教練・即時雪況速報</small></a></li>
           <li><a href="japan_entry_rules.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">最新入境規範專頁</strong><small style="color:#64748B;">2025/2026 免稅新制・VJW
-                申報手冊</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.entryLink">最新入境規範專頁</strong><small style="color:#64748B;" data-i18n="footer.entryDescription">2026 年 11 月退稅制・VJW 申報指南</small></a></li>
           <li><a href="japan_theme_parks.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">遊樂園攻略</strong><small style="color:#64748B;">迪士尼・環球影城
+                style="display:block; color:#0F172A;" data-i18n="footer.parksLink">遊樂園攻略</strong><small style="color:#64748B;" data-i18n="footer.parksDescription">迪士尼・環球影城
                 USJ・吉卜力公園</small></a></li>
           <li><a href="japan_train_tour.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">火車和搭車指南</strong><small style="color:#64748B;">新幹線・JR
+                style="display:block; color:#0F172A;" data-i18n="footer.trainsLink">火車和搭車指南</strong><small style="color:#64748B;" data-i18n="footer.trainsDescription">新幹線・JR
                 Pass・觀光列車乘車券</small></a></li>
           <li><a href="japan_flight_deals.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;">全日本 11
+                style="display:block; color:#0F172A;" data-i18n="footer.airportGuide">日本空港手帖 ｜ 機場指南</strong><small style="color:#64748B;" data-i18n="footer.airportDescription">全日本 11
                 大核心機場・必吃美食・展望台・免稅伴手禮</small></a></li>
         </ul>
       </div>
@@ -879,26 +776,26 @@
       <!-- 第 4 欄：特別刊號推薦 (深度文章直達連結) -->
       <div>
         <h4
-          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;">
+          style="font-family:'Shippori Mincho', serif; font-size:0.96rem; font-weight:700; color:#0F172A; letter-spacing:1px; margin-bottom:16px; padding-bottom:8px; border-bottom:1.5px solid #0F172A;" data-i18n="footer.selected">
           日本精選
         </h4>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">沖繩自駕特刊</strong><small
-                style="color:#64748B;">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.okinawaStory">沖繩自駕特刊</strong><small
+                style="color:#64748B;" data-i18n="footer.okinawaDescription">絕景咖啡・海邊巡禮・那霸自駕全攻略</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本米其林和牛</strong><small
-                style="color:#64748B;">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.wagyuStory">日本米其林和牛</strong><small
+                style="color:#64748B;" data-i18n="footer.wagyuDescription">石垣牛・神戶牛・11大燒肉名店指南</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">溫泉名湯特輯</strong><small
-                style="color:#64748B;">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.onsenStory">溫泉名湯特輯</strong><small
+                style="color:#64748B;" data-i18n="footer.onsenDescription">太古雲霧靈湯・富士山景觀溫泉極致體驗</small></a></li>
           <li><a href="japan_special_edition.html"
               style="font-size:0.84rem; color:#334155; text-decoration:none; display:block;"><strong
-                style="display:block; color:#0F172A;">日本世界遺產</strong><small
-                style="color:#64748B;">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
+                style="display:block; color:#0F172A;" data-i18n="footer.heritageStory">日本世界遺產</strong><small
+                style="color:#64748B;" data-i18n="footer.heritageDescription">熊野古道朝聖・富士山神域・屋久島原始林</small></a></li>
         </ul>
       </div>
 
@@ -911,12 +808,12 @@
         <span style="font-weight:700; color:#334155;">© JAPAN TABI ジャパン・タビ ｜ 全日本観光情報局 All Rights Reserved.</span>
         <a href="japan_privacy_policy.html"
           style="color:#64748B; text-decoration:none; margin-left:8px; font-weight:600; transition:color 0.2s;"
-          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'">隱私權政策</a>
+          onmouseover="this.style.color='#C2410C'" onmouseout="this.style.color='#64748B'" data-i18n="privacy">隱私權政策</a>
         <div style="display:flex; align-items:center; gap:12px;">
           <!-- Instagram -->
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》官方 Instagram"
             style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
-            onmouseout="this.style.color='#64748B'">
+            onmouseout="this.style.color='#64748B'" data-i18n-title="social.instagram">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
               stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -927,7 +824,7 @@
           <!-- Threads -->
           <a href="https://www.threads.net" target="_blank" rel="noopener noreferrer" title="追蹤《日旅報報》Threads"
             style="color:#64748B; transition:color 0.2s;" onmouseover="this.style.color='#C2410C'"
-            onmouseout="this.style.color='#64748B'">
+            onmouseout="this.style.color='#64748B'" data-i18n-title="social.threads">
             <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10 3.328 0 6.273-1.624 8.077-4.116-.367-.375-.72-.764-1.057-1.168-1.47 2.05-3.9 3.384-6.65 3.384-4.524 0-8.2-3.676-8.2-8.2s3.676-8.2 8.2-8.2 8.2 3.676 8.2 8.2c0 2.39-.77 4.542-2.316 5.867-1.18.995-2.766 1.433-4.534 1.258-2.678-.266-4.59-2.368-4.59-5.045 0-2.88 2.21-5.18 5.14-5.18 1.94 0 3.518.95 4.19 2.52.17.41.31.85.4 1.3h-1.85c-.08-.3-.21-.58-.38-.83-.45-.66-1.3-1.09-2.36-1.09-1.85 0-3.24 1.45-3.24 3.28 0 1.74 1.25 3.14 3.01 3.31 1.28.13 2.37-.18 3.12-.81.98-.83 1.5-2.22 1.5-3.96 0-5.4-4.32-9.8-9.67-9.8z" />
@@ -939,51 +836,14 @@
       <button onclick="window.scrollTo({top:0, behavior:'smooth'})"
         style="background:#FFFFFF; border:1px solid #CBD5E1; border-radius:999px; padding:6px 16px; font-weight:700; cursor:pointer; color:#334155; transition:all 0.2s;"
         onmouseover="this.style.borderColor='#92400E'; this.style.color='#92400E';"
-        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';">
+        onmouseout="this.style.borderColor='#CBD5E1'; this.style.color='#334155';" data-i18n="backToTop">
         ▲ 回到頂部
       </button>
     </div>
   </footer>
 
   <script src="/js/tabi_core.js"></script>
-  <script>
-    // 自動讀取 /data/coupons.json 渲染優惠券專區
-    (function() {
-      fetch('data/coupons.json', { cache: 'no-store' })
-        .then(function(res) { return res.json(); })
-        .then(function(coupons) {
-          var container = document.getElementById('couponsContainer');
-          if (container && Array.isArray(coupons)) {
-            container.innerHTML = coupons.map(function(c) {
-              return '<div style="background:#FFFFFF; border-radius:16px; border:1px solid #E2E8F0; padding:18px; box-shadow:0 4px 12px rgba(0,0,0,0.03); display:flex; flex-direction:column; justify-content:space-between;">' +
-                '<div>' +
-                  '<div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">' +
-                    '<span style="background:#FEF3C7; color:#B45309; font-size:0.72rem; font-weight:800; padding:3px 8px; border-radius:999px;">' + c.badge + '</span>' +
-                    '<span style="font-size:0.75rem; color:#64748B;">' + c.jp + '</span>' +
-                  '</div>' +
-                  '<h3 style="font-size:1.05rem; font-weight:800; color:#0F172A; margin:0 0 6px 0;">' + c.name + '</h3>' +
-                  '<div style="font-size:0.78rem; font-weight:800; color:#DC2626; margin-bottom:6px;">' + c.discount + '</div>' +
-                  '<div style="font-size:0.75rem; color:#475569; margin-bottom:10px;">門檻：' + c.condition + '</div>' +
-                  '<div style="background:#F8FAFC; border-radius:8px; padding:8px 10px; font-size:0.72rem; color:#334155; margin-bottom:14px;">' +
-                    '<strong style="color:#0F172A;">人氣必買：</strong>' + c.popular_items.join('、') +
-                  '</div>' +
-                '</div>' +
-                '<div>' +
-                  '<div style="font-size:0.7rem; color:#94A3B8; margin-bottom:8px;">💡 ' + c.usage + '</div>' +
-                  '<button onclick="alert(\'請於【' + c.name + '】結帳時向店員出示護照與折扣畫面，即可享 10% 免稅 + 折扣！\')" ' +
-                    'style="width:100%; padding:10px 0; background:#EA580C; color:#FFF; border:none; border-radius:10px; font-size:0.84rem; font-weight:800; cursor:pointer; box-shadow:0 2px 8px rgba(234,88,12,0.25); transition:all 0.2s;">' +
-                    '📱 結帳時點此出示折扣碼' +
-                  '</button>' +
-                '</div>' +
-              '</div>';
-            }).join('');
-          }
-        })
-        .catch(function(err) {
-          console.debug('Coupons fetch skipped:', err);
-        });
-    })();
-  </script>
+  <script src="/js/pages/entry/coupons.js"></script>
 </body>
 
 </html>

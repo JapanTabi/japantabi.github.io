@@ -2,9 +2,20 @@
 <html lang="zh-Hant">
 <head>
   <script src="/js/lang_switcher.js"></script>
+  <script src="/js/translation_memory.js"></script>
+  <script src="/js/site_i18n.js"></script>
+  <script src="/js/booking_locale.js"></script>
+  <script src="/js/spot_identity.js"></script>
+  <script src="/js/spot_i18n.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>日本報報 ｜ Deep-Dive Articles</title>
+  <meta name="description" content="探索日本滑雪場、主題樂園與八篇深度特刊，閱讀交通、自然、餐飲及旅程規劃指南。">
+  <meta property="og:title" content="日本報報 ｜ Deep-Dive Articles">
+  <meta property="og:description" content="探索日本滑雪場、主題樂園與八篇深度特刊，閱讀交通、自然、餐飲及旅程規劃指南。">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:title" content="日本報報 ｜ Deep-Dive Articles">
+  <meta name="twitter:description" content="探索日本滑雪場、主題樂園與八篇深度特刊，閱讀交通、自然、餐飲及旅程規劃指南。">
 <style>
 :root{--bg:#F8F9FB;--blue:#3A6B9B;--orange:#E28743;--ice:#E3EEF8;--ink:#222;--sub:#666}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -68,10 +79,8 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
 <main class="grid" id="grid"></main>
 <footer id="footer"></footer>
 
-<script src="/data/articles/articles_zh-tw.js"></script>
-<script src="/data/articles/articles_en.js"></script>
-<script src="/data/articles/articles_ja.js"></script>
 
+<script src="/data/articles/article_catalog.js"></script>
 <script>
 (function(){
   var $=function(i){return document.getElementById(i)};
@@ -88,6 +97,7 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
     return h.base+"?Allianceid=9507030&SID=325761227&trip_sub1="+encodeURIComponent("日本報報_深度文章_"+lang)+"&trip_sub3=D20905663"+h.extra+"&redirect_url="+encodeURIComponent(target);
   }
 
+  function articleLink(link, lang) { var url = new URL(link, document.baseURI); url.searchParams.set('lang', lang); return url.href; }
   function renderPills(list){
     var cats=[];list.forEach(function(a){if(cats.indexOf(a.category)<0)cats.push(a.category)});
     if(cats.indexOf(cat)<0)cat="all";
@@ -97,7 +107,7 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
   function render(){
     var lang=TabiLang.get();
     // 嚴格語系隔離：只取目前語言的文章
-    var list=window.articlesDatabase.filter(function(a){return TabiLang.normalize(a.lang)===lang});
+    var list=window.articlesDatabase;
     renderPills(list);
     var shown=list.filter(function(a){return cat==="all"||a.category===cat});
     $("title").textContent=TabiLang.t("articlesTitle");
@@ -115,7 +125,7 @@ footer{border-top:2px solid var(--blue);text-align:center;color:var(--sub);font-
         '<span class="badge">'+esc(TabiLang.cat(a.category))+'</span></div>'+
         '<div class="body"><h2>'+esc(a.title)+'</h2><p>'+esc(a.excerpt)+'</p>'+
         '<div class="meta">⏱ '+(a.readTime||"")+' '+esc(TabiLang.t("min"))+(a.date?' ｜ '+esc(a.date):'')+'</div></div>'+
-        '<div class="acts"><a class="primary" href="'+esc(a.link)+'">'+esc(TabiLang.t("read"))+'</a>'+
+        '<div class="acts"><a class="primary" href="'+esc(articleLink(a.link, lang))+'">'+esc(TabiLang.t("read"))+'</a>'+
         '<a href="'+esc(aff)+'" target="_blank" rel="noopener sponsored">🎟️ '+esc(TabiLang.t("book"))+'</a></div></article>';
     }).join("");
   }

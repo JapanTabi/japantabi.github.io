@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.65.1",
+    "acorn-loose": "^8.5.2",
     "parse5": "^8.1.1",
     "vite": "^8.3.8"
   },
@@ -20,10 +21,13 @@
     "admin": "node admin/server.mjs",
     "test:admin": "node --test tests/admin-store.test.mjs && playwright test --config playwright.admin.config.js",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/i18n/build-locales.mjs",
     "preview": "vite preview",
     "check": "node scripts/check-project.mjs",
     "check:dist": "node scripts/check-project.mjs dist",
-    "test": "playwright test"
+    "test": "playwright test",
+    "i18n:extract": "node scripts/i18n/extract.mjs",
+    "i18n:translate": "python3 scripts/i18n/translate.py",
+    "check:i18n": "node scripts/i18n/extract.mjs --check && node scripts/i18n/validate.mjs && node --test tests/i18n-data.test.mjs && python3 tests/protected_translation_test.py"
   }
 }

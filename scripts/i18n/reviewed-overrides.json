@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "source": "必須預約特大荷物席。160 公分以下（登機箱）免預約，可放頭頂行李架或座位前。",
+      "translations": {
+        "ja": "特大荷物スペースつき座席は予約が必要です。三辺の合計が160cm以下の荷物は特大荷物の予約が不要で、荷物棚や座席前のスペースに置けます。"
+      },
+      "reason": "Remove the duplicated 160 and restore the omitted centimetre unit; specify that the limit refers to the sum of three dimensions."
+    }
+  ]
+}

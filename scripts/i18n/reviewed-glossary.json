@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "terms": [
+        "武甲山"
+      ],
+      "translations": {
+        "zh-CN": "武甲山",
+        "en": "Mount Bukō",
+        "ja": "武甲山",
+        "ko": "부코산",
+        "th": "ภูเขาบุโก",
+        "vi": "núi Bukō",
+        "hi": "माउंट बुको",
+        "es": "monte Bukō"
+      },
+      "reference": "https://navi.city.chichibu.lg.jp/p_flower/1808/"
+    },
+    {
+      "terms": [
+        "粉蝶花",
+        "琉璃唐草"
+      ],
+      "translations": {
+        "zh-CN": "粉蝶花（Nemophila）",
+        "en": "nemophila",
+        "ja": "ネモフィラ",
+        "ko": "네모필라",
+        "th": "เนโมฟีลา",
+        "vi": "hoa nemophila",
+        "hi": "नेमोफिला",
+        "es": "nemófila"
+      },
+      "reference": "https://hitachikaihin.jp/flower/nemophila/"
+    },
+    {
+      "terms": [
+        "芝櫻"
+      ],
+      "translations": {
+        "zh-CN": "芝樱",
+        "en": "moss phlox",
+        "ja": "シバザクラ",
+        "ko": "꽃잔디",
+        "th": "ชิบะซากุระ",
+        "vi": "hoa chi anh",
+        "hi": "मॉस फ़्लॉक्स",
+        "es": "Phlox subulata"
+      },
+      "reference": "https://navi.city.chichibu.lg.jp/p_flower/1808/"
+    },
+    {
+      "terms": [
+        "明月院"
+      ],
+      "translations": {
+        "zh-CN": "明月院",
+        "en": "Meigetsuin Temple",
+        "ja": "明月院",
+        "ko": "메이게쓰인",
+        "th": "วัดเมเก็ตสึอิน",
+        "vi": "chùa Meigetsuin",
+        "hi": "मेइगेत्सुइन मंदिर",
+        "es": "templo Meigetsuin"
+      }
+    },
+    {
+      "terms": [
+        "新津站"
+      ],
+      "translations": {
+        "zh-CN": "新津站",
+        "en": "Niitsu Station",
+        "ja": "新津駅",
+        "ko": "니쓰역",
+        "th": "สถานีนีอิตสึ",
+        "vi": "ga Niitsu",
+        "hi": "नीइत्सु स्टेशन",
+        "es": "estación de Niitsu"
+      }
+    },
+    {
+      "terms": [
+        "果無山脈"
+      ],
+      "translations": {
+        "zh-CN": "果无山脉",
+        "en": "Hatenashi Mountains",
+        "ja": "果無山脈",
+        "ko": "하테나시 산맥",
+        "th": "เทือกเขาฮาเตนาชิ",
+        "vi": "dãy núi Hatenashi",
+        "hi": "हातेनाशी पर्वतमाला",
+        "es": "montes Hatenashi"
+      }
+    },
+    {
+      "terms": [
+        "東海地區",
+        "東海地方"
+      ],
+      "translations": {
+        "zh-CN": "东海地区",
+        "en": "Tōkai region",
+        "ja": "東海地方",
+        "ko": "도카이 지방",
+        "th": "ภูมิภาคโทไก",
+        "vi": "vùng Tōkai",
+        "hi": "तोकाई क्षेत्र",
+        "es": "región de Tōkai"
+      }
+    },
+    {
+      "terms": [
+        "宇佐"
+      ],
+      "translations": {
+        "zh-CN": "宇佐",
+        "en": "Usa",
+        "ja": "宇佐",
+        "ko": "우사",
+        "th": "อุซะ",
+        "vi": "Usa",
+        "hi": "उसा",
+        "es": "Usa"
+      }
+    },
+    {
+      "terms": [
+        "姬繡球"
+      ],
+      "translations": {
+        "zh-CN": "姬绣球",
+        "en": "hime hydrangeas",
+        "ja": "ヒメアジサイ",
+        "ko": "히메수국",
+        "th": "ไฮเดรนเยียฮิเมะ",
+        "vi": "cẩm tú cầu hime",
+        "hi": "हिमे हाइड्रेंजिया",
+        "es": "hortensias hime"
+      }
+    }
+  ]
+}

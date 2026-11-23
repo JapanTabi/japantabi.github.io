@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  testMatch: 'site.spec.js',
+  testMatch: ['site.spec.js', 'i18n-complete.spec.js'],
   fullyParallel: true,
   workers: 2,
   use: { browserName: 'chromium' },

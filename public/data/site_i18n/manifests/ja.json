@@ -1,0 +1,12 @@
+{
+  "name": "Japan Travel News｜東京・大阪の花の季節・花火・スノーリゾート・観光スポットをリアルタイムに案内するアプリ",
+  "short_name": "日本旅行ニュース",
+  "description": "台湾人観光客向けに特別に作成された、日本各地のリアルタイムの花の季節（WNI）、花火大会、雪の季節のスキー場、温泉、KLOOKチケットと周辺ホテルのワンクリックショッピングガイドアプリ",
+  "start_url": "../../../index.html?lang=ja",
+  "display": "standalone",
+  "background_color": "#fff9f6",
+  "theme_color": "#e04f5f",
+  "lang": "ja",
+  "scope": "../../../",
+  "id": "../../../index.html"
+}
