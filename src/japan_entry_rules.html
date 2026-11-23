@@ -949,7 +949,7 @@
   <script>
     // 自動讀取 /data/coupons.json 渲染優惠券專區
     (function() {
-      fetch('/data/coupons.json', { cache: 'no-store' })
+      fetch('data/coupons.json', { cache: 'no-store' })
         .then(function(res) { return res.json(); })
         .then(function(coupons) {
           var container = document.getElementById('couponsContainer');

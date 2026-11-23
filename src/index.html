@@ -7449,7 +7449,7 @@
   <script>
     // 自動讀取 public/data/exchange_rate.json 更新頂部匯率膠囊
     (function() {
-      fetch('/data/exchange_rate.json', { cache: 'no-store' })
+      fetch('data/exchange_rate.json', { cache: 'no-store' })
         .then(function(res) { return res.json(); })
         .then(function(data) {
           if (data && data.rates && data.rates.TWD) {
@@ -7465,7 +7465,7 @@
 
       // 自動讀取 public/data/weather_today.json 更新主要城市天氣
       // 自動讀取 public/data/hot_springs.json 渲染名湯模組
-      fetch('/data/hot_springs.json', { cache: 'no-store' })
+      fetch('data/hot_springs.json', { cache: 'no-store' })
         .then(function(res) { return res.json(); })
         .then(function(springs) {
           var container = document.getElementById('hotSpringCardsScroller');
@@ -7504,7 +7504,7 @@
         });
 
       // 自動讀取 public/data/festivals.json 渲染花火大會與傳統祭典
-      fetch('/data/festivals.json', { cache: 'no-store' })
+      fetch('data/festivals.json', { cache: 'no-store' })
         .then(function(res) { return res.json(); })
         .then(function(festivals) {
           var container = document.getElementById('festivalCardsScroller');

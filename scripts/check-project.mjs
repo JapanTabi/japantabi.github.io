@@ -70,7 +70,7 @@ for (const path of files(assetRoot)) {
     }
   } else if (extname(path) === '.js') {
     checkScript(readFileSync(path, 'utf8'), path);
-    for (const match of readFileSync(path, 'utf8').matchAll(/fetch\(\s*['"](data\/[^'"]+\.json)['"]/g)) {
+    for (const match of readFileSync(path, 'utf8').matchAll(/fetch\(\s*['"](\/?data\/[^'"]+\.json)['"]/g)) {
       checkReference(match[1], resolve(pageRoot, 'index.html'));
     }
   }
@@ -78,7 +78,7 @@ for (const path of files(assetRoot)) {
 // Inline data requests also need to survive the directory migration.
 for (const name of pages) {
   const page = resolve(pageRoot, name);
-  for (const match of readFileSync(page, 'utf8').matchAll(/fetch\(\s*['"](data\/[^'"]+\.json)['"]/g)) {
+  for (const match of readFileSync(page, 'utf8').matchAll(/fetch\(\s*['"](\/?data\/[^'"]+\.json)['"]/g)) {
     checkReference(match[1], page);
   }
 }
