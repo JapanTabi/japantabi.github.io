@@ -36,6 +36,11 @@ for (const viewport of [{ width: 1280, height: 800 }, { width: 390, height: 844 
     const cards = page.locator('#cards-container > [id^="spot-card-"]');
     await expect(cards.first()).toBeVisible();
     expect(await cards.count()).toBeGreaterThan(1);
+    await expect(page.locator('#heroWeatherList')).toContainText('東京');
+    await expect(page.locator('#heroWeatherList')).toHaveAttribute('aria-busy', 'false');
+    await expect(page.locator('#heroWeatherList > span')).toHaveCount(6);
+    const weatherBounds = await page.locator('#heroWeatherStrip').boundingBox();
+    expect(weatherBounds.x + weatherBounds.width).toBeLessThanOrEqual(viewport.width);
 
     const favorite = cards.first().locator('[data-fav-id]').first();
     const id = await favorite.getAttribute('data-fav-id');
@@ -54,6 +59,13 @@ for (const viewport of [{ width: 1280, height: 800 }, { width: 390, height: 844 
     expect(await page.evaluate(() => localStorage.getItem('tabi_selected_lang'))).toBe('en');
   });
 }
+
+test('homepage weather shows an error when data cannot be loaded', async ({ page }) => {
+  await page.route('**/data/weather_today.json', route => route.fulfill({ status: 503, body: 'Unavailable' }));
+  await page.goto('./');
+  await expect(page.locator('#heroWeatherList')).toHaveText('天氣資料暫時無法載入，請稍後再試');
+  await expect(page.locator('#heroWeatherList')).toHaveAttribute('aria-busy', 'false');
+});
 
 test('language persists between home, articles and article pills', async ({ page }) => {
   const errors = [];

@@ -149,7 +149,7 @@
               <span>日本官方今日天氣</span>
             </span>
             <span style="color:#CBD5E1;">|</span>
-            <div id="heroWeatherList" style="display:flex; align-items:center; gap:12px; font-weight:600;">
+            <div id="heroWeatherList" aria-live="polite" aria-busy="true" tabindex="0" aria-label="各城市天氣，可橫向捲動" style="display:flex; align-items:center; gap:12px; font-weight:600;">
               <span>載入中...</span>
             </div>
           </div>
@@ -7463,6 +7463,36 @@
         });
 
       // 自動讀取 public/data/weather_today.json 更新主要城市天氣
+      var weatherList = document.getElementById('heroWeatherList');
+      fetch('data/weather_today.json', { cache: 'no-store', signal: AbortSignal.timeout(10000) })
+        .then(function(res) {
+          if (!res.ok) throw new Error('Weather request failed: ' + res.status);
+          return res.json();
+        })
+        .then(function(data) {
+          if (!Array.isArray(data.cities) || !data.cities.length) {
+            throw new Error('No weather data available');
+          }
+          var cities = data.cities.map(function(city) {
+            if (!city || !city.name) throw new Error('Invalid city weather');
+            var item = document.createElement('span');
+            var temperature = [city.temp_min, city.temp_max].filter(function(value) {
+              return value && value !== '--';
+            });
+            item.textContent = [city.name, city.icon, temperature.join('–') || '氣溫暫無資料'].filter(Boolean).join(' ');
+            item.title = [city.weather, city.pop ? '降雨機率 ' + city.pop : ''].filter(Boolean).join('・');
+            return item;
+          });
+          weatherList.replaceChildren.apply(weatherList, cities);
+        })
+        .catch(function(err) {
+          weatherList.textContent = '天氣資料暫時無法載入，請稍後再試';
+          console.debug('Weather fetch skipped:', err);
+        })
+        .finally(function() {
+          weatherList.setAttribute('aria-busy', 'false');
+        });
+
       // 自動讀取 public/data/hot_springs.json 渲染名湯模組
       fetch('data/hot_springs.json', { cache: 'no-store' })
         .then(function(res) { return res.json(); })
