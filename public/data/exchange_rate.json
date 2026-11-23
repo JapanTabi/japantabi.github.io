@@ -1,18 +1,18 @@
 {
   "base": "JPY",
-  "updated_at": "2026-11-22 09:48:15",
-  "date": "2026-11-22",
+  "updated_at": "2026-11-23 10:13:57",
+  "date": "2026-11-23",
   "source": "ExchangeRate-API Open",
   "rates": {
-    "TWD": 0.2072,
+    "TWD": 0.2074,
     "HKD": 0.0494,
     "USD": 0.0063,
     "EUR": 0.00574,
     "CNY": 0.0421
   },
   "jpy_per_unit": {
-    "TWD": 4.83,
+    "TWD": 4.82,
     "HKD": 20.26,
-    "USD": 158.76
+    "USD": 158.7
   }
 }
