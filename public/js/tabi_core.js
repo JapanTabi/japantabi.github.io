@@ -11,6 +11,8 @@
 (function () {
   'use strict';
 
+  const coreAssetUrl = document.currentScript && document.currentScript.src;
+
   function coreText(key, source, params) {
     const text = TabiLang.t(key, params);
     return text === key ? source : text;
@@ -477,6 +479,34 @@
     document.body.style.overflow = '';
   };
 
+  // Keep the header rate consistent across the home page and every guide page.
+  function mountHeaderRate() {
+    const headerLeft = document.querySelector('.app-header .header-left');
+    if (!headerLeft) return;
+    let rate = headerLeft.querySelector('.header-rate-pill');
+    if (!rate) {
+      rate = document.createElement('div');
+      rate.className = 'header-rate-pill';
+      rate.id = 'headerRatePill';
+      rate.title = '每日定時同步匯率 (來源：ECB)';
+      rate.dataset.i18nTitle = 'rate.source';
+      rate.innerHTML = '<span class="header-rate-label">JPY / TWD <span data-i18n="rate.label">每日匯率</span></span><span id="headerJpyRate">1 JPY ≈ NT$ 0.2065</span>';
+      headerLeft.appendChild(rate);
+      if (window.TabiLang) TabiLang.render(rate);
+    }
+    const value = rate.querySelector('#headerJpyRate');
+    if (!value) return;
+    const url = new URL('../data/exchange_rate.json', coreAssetUrl || location.href);
+    fetch(url, { cache: 'no-store' })
+      .then(response => response.ok ? response.json() : Promise.reject(new Error('Exchange rate unavailable')))
+      .then(data => {
+        if (data && data.rates && Number.isFinite(data.rates.TWD)) {
+          value.textContent = `1 JPY ≈ NT$ ${data.rates.TWD.toFixed(4)}`;
+        }
+      })
+      .catch(() => {});
+  }
+
   // 13. 自動掛載 DOM 元件 (Floating Hub, Favorites Drawer & FX Modal)
   function mountUI() {
     // (A) 檢查或注入浮動工具箱
@@ -805,11 +835,13 @@
   // DOM 載入後自動掛載
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => {
+      mountHeaderRate();
       mountUI();
       initCopyrightProtection();
       initAffiliateRouter();
     });
   } else {
+    mountHeaderRate();
     mountUI();
     initCopyrightProtection();
     initAffiliateRouter();

@@ -62,8 +62,7 @@ for (const viewport of [{ width: 1280, height: 800 }, { width: 390, height: 844 
     await expect.poll(() => page.evaluate(() => JSON.parse(localStorage.getItem('TABI_FAVORITES_V1') || '[]')))
       .toEqual(expect.arrayContaining([expect.objectContaining({ id })]));
 
-    await page.locator('#langDropdownTrigger').click();
-    await page.locator('.lang-menu-opt[data-lang="en"]').click();
+    await page.evaluate(() => TabiLang.set('en'));
     await expect.poll(() => page.evaluate(() => localStorage.getItem('tabi_selected_lang'))).toBe('en');
 
     await page.reload();
@@ -86,18 +85,17 @@ test('language persists between home, articles and article pills', async ({ page
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('./?lang=zh-Hant');
   await expect(page.locator('html')).toHaveAttribute('lang', 'zh-TW');
-  await page.locator('#langDropdownTrigger').click();
-  await page.locator('.lang-menu-opt[data-lang="en"]').click();
+  await page.evaluate(() => TabiLang.set('en'));
   await expect(page.locator('#brandTitleZh')).toHaveText('Tabi Report');
   await page.goto('articles.html');
   await expect(page.locator('#langSwitch')).toHaveValue('en');
   await page.selectOption('#langSwitch', 'ja');
   await expect(page.locator('#title')).toHaveText('ディープ記事ライブラリ');
   await page.goto('./');
-  await expect(page.locator('#currentLangLabel')).toHaveText('日本語');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
   await page.goto('japan_special_edition_fuji.html');
   await page.locator('.btn-trans-choice[data-lang="en"]').click();
-  await expect(page.locator('#currentLangLabel')).toHaveText('English');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.locator('#fuji_title')).not.toBeEmpty();
   await page.goto('articles.html');
   await expect(page.locator('#langSwitch')).toHaveValue('en');
@@ -138,8 +136,7 @@ for (const example of sharedUiCases) {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('./?lang=zh-TW');
     await expect(page.locator('html')).toHaveAttribute('data-i18n-state', 'ready');
-    await page.locator('#langDropdownTrigger').click();
-    await page.locator(`.lang-menu-opt[data-lang="${example.language}"]`).click();
+    await page.evaluate(language => TabiLang.set(language), example.language);
     await expect(page.locator('.app-header [data-i18n="nav.flights"]')).toHaveText(example.flights);
     await expect(page.locator('footer [data-i18n="privacy"]')).toHaveText(example.privacy);
     await expect(page.locator('#heroWeatherList')).toContainText(example.weather);
@@ -234,8 +231,7 @@ test('weather error messages change language without another request', async ({ 
   });
   await page.goto('./?lang=en');
   await expect(page.locator('#heroWeatherList')).toHaveText('Weather is unavailable. Please try again later.');
-  await page.locator('#langDropdownTrigger').click();
-  await page.locator('.lang-menu-opt[data-lang="es"]').click();
+  await page.evaluate(() => TabiLang.set('es'));
   await expect(page.locator('#heroWeatherList')).toHaveText('No se puede cargar el tiempo. Inténtalo más tarde.');
   expect(requests).toBe(1);
 });
@@ -250,8 +246,7 @@ test('home category, region and feature selections survive a language change', a
   await expect(cards.first()).toBeVisible();
   const ids = await cards.evaluateAll(elements => elements.map(el => el.id));
   await expect(page.locator('#feedTitleText')).toHaveText('Live reports from Japan · Wisteria');
-  await page.locator('#langDropdownTrigger').click();
-  await page.locator('.lang-menu-opt[data-lang="es"]').click();
+  await page.evaluate(() => TabiLang.set('es'));
   await expect(page.locator('#subContextPillsContainer .active')).toHaveAttribute('data-id', 'fuji_wisteria');
   await expect(page.locator('#sakuraRegionBar .active')).toHaveAttribute('data-region', 'kanto');
   await expect(page.locator('#featureFilterBar .active')).toHaveText('Glicinas iluminadas');
@@ -284,8 +279,7 @@ test('favorite toasts and clear confirmation use the current language', async ({
   await expect(cards.first()).toBeVisible();
   await cards.first().locator('[data-fav-id]').first().click();
   await expect(page.locator('#tabiToastContainer .tabi-toast').last()).toContainText('Saved:');
-  await page.locator('#langDropdownTrigger').click();
-  await page.locator('.lang-menu-opt[data-lang="es"]').click();
+  await page.evaluate(() => TabiLang.set('es'));
   // The actual drawer button invokes the shared favorites controller.
   await page.locator('.hub-item-fav').click();
   page.once('dialog', async dialog => {
@@ -306,11 +300,10 @@ test('home data loading cannot overwrite a language chosen before dictionaries a
   await page.route('**/data/spots.json', async route => { await spotsGate; await route.continue(); });
   try {
     await page.goto('./?lang=en', { waitUntil: 'domcontentloaded' });
-    await page.locator('#langDropdownTrigger').click();
-    await page.locator('.lang-menu-opt[data-lang="es"]').click();
+    await page.evaluate(() => TabiLang.set('es'));
     releaseSpots();
     await expect(page.locator('#cards-container > [id^="spot-card-"]').first()).toBeVisible();
-    await expect(page.locator('#currentLangLabel')).toHaveText('Español');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'es');
     releaseMessages();
     await expect(page.locator('.hero-slogan-zh')).toHaveText(uiMessages.es['home.hero']);
     await expect(page.locator('html')).toHaveAttribute('lang', 'es');
@@ -335,15 +328,13 @@ test('showcase translations reuse source requests, links and scroll positions', 
   const href = 'https://tw.trip.com/?Allianceid=9507030&SID=325761227&trip_sub1=' + encodeURIComponent(source.booking_keyword);
   await expect(spring.locator('a')).toHaveAttribute('href', href);
   const scroll = await page.locator('#hotSpringCardsScroller').evaluate(el => { el.scrollLeft = 500; return el.scrollLeft; });
-  await page.locator('#langDropdownTrigger').click();
-  await page.locator('.lang-menu-opt[data-lang="es"]').click();
+  await page.evaluate(() => TabiLang.set('es'));
   await expect(spring.locator('[data-field="meta"]')).toHaveText(showcaseMessages.es.hot_springs.kusatsu.spring_quality);
   await expect(spring.locator('a')).toContainText('con cena y desayuno');
   await expect(spring.locator('a')).toHaveAttribute('href', href);
   expect(await page.locator('#hotSpringCardsScroller').evaluate(el => el.scrollLeft)).toBe(scroll);
   await expect(spring.locator('.showcase-original')).toHaveText('草津温泉');
-  await page.locator('#langDropdownTrigger').click();
-  await page.locator('.lang-menu-opt[data-lang="ja"]').click();
+  await page.evaluate(() => TabiLang.set('ja'));
   await expect(spring.locator('h3')).toHaveText('草津温泉');
   await expect(spring.locator('.showcase-original')).toBeHidden();
   expect(Object.values(counts)).toEqual([1, 1, 1]);
@@ -365,8 +356,7 @@ test('a failed showcase dictionary preserves source cards and explains the fallb
   await expect(page.locator('#festivalCardsScroller [data-translation-state="source"]')).toHaveCount(6);
   await expect(page.locator('#hotSpringCardsScroller [data-showcase-id="kusatsu"] h3')).toHaveText('草津溫泉');
   await expect(page.locator('#hotSpringTranslationNotice')).toHaveText('Some content is shown in its original language.');
-  await page.locator('#langDropdownTrigger').click();
-  await page.locator('.lang-menu-opt[data-lang="es"]').click();
+  await page.evaluate(() => TabiLang.set('es'));
   await expect(page.locator('#festivalTranslationNotice')).toHaveText('Parte del contenido se muestra en su idioma original.');
 });
 

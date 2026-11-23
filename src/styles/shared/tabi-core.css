@@ -1,4 +1,6 @@
-/* ==========================================================================
+@import '../home/header.css';
+
+/* ===========================================================================
    日旅報報 JAPAN TABI - 核心樣式庫 (Core Stylesheet)
    包括：行程收藏本 (Favorites Drawer)、浮動工具箱 (Floating Hub)、
    小巧精緻愛心標籤、品牌宣言排版 (Brand Manifesto) 與防盜版通知
@@ -541,6 +543,7 @@
   border-bottom: 1px solid #E5E0D6 !important;
   padding: 10px 32px !important;
   display: grid !important;
+  /* Brand stays at the left; navigation follows it without a detached centre column. */
   grid-template-columns: auto minmax(0, 1fr) !important;
   align-items: center !important;
   gap: 16px !important;
@@ -548,11 +551,11 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
   box-sizing: border-box !important;
 }
-.header-left { display: flex !important; align-items: center !important; justify-self: start !important; }
+.header-left { display: flex !important; align-items: center !important; justify-self: end !important; grid-column: 3 !important; grid-row: 1 !important; }
 .header-left:empty { display: none !important; }
-.header-center { display: flex !important; align-items: center !important; justify-content: center !important; justify-self: center !important; }
-.header-right { display: flex !important; align-items: center !important; justify-self: end !important; gap: 12px !important; flex-wrap: nowrap !important; min-width: 0; max-width: 100%; }
-.header-nav-scroll { display: flex !important; align-items: center !important; justify-content: flex-start !important; gap: 12px !important; flex-wrap: nowrap !important; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.header-center { display: flex !important; align-items: center !important; justify-content: flex-start !important; justify-self: start !important; grid-column: 1 !important; grid-row: 1 !important; }
+.header-right { display: flex !important; align-items: center !important; justify-self: start !important; grid-column: 2 !important; grid-row: 1 !important; width: 100%; gap: 12px !important; flex-wrap: nowrap !important; min-width: 0; max-width: 100%; }
+.header-nav-scroll { display: flex !important; align-items: center !important; justify-content: flex-start !important; gap: 12px !important; flex-wrap: nowrap !important; min-width: 0; width: 100%; overflow-x: auto; scrollbar-width: none; }
 .header-nav-scroll::-webkit-scrollbar { display: none; }
 .header-nav-scroll > a, .lang-selector-dropdown-wrap { flex-shrink: 0; }
 
@@ -641,10 +644,11 @@
 }
 
 @media (max-width: 900px) {
-  .app-header { display: flex !important; flex-direction: column !important; gap: 10px !important; padding: 12px 16px !important; height: auto !important; }
-  .header-left { justify-self: center !important; }
-  .header-right { width: 100% !important; gap: 8px !important; }
-  .header-nav-scroll { flex: 1 1 auto !important; min-width: 0 !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; scrollbar-width: none !important; padding-bottom: 4px !important; }
+  .app-header, .home-header.app-header { display: grid !important; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; gap: 10px 12px !important; padding: 12px 16px !important; height: auto !important; }
+  .header-center { grid-column: 1 !important; grid-row: 1 !important; width: 100% !important; justify-content: center !important; }
+  .header-left { grid-column: 2 !important; grid-row: 1 !important; width: 100% !important; justify-self: stretch !important; justify-content: center !important; padding-left: 0 !important; border-left: 0 !important; }
+  .header-right { grid-column: 1 / -1 !important; grid-row: 2 !important; width: 100% !important; gap: 8px !important; }
+  .header-nav-scroll { flex: 1 1 auto !important; min-width: 0 !important; justify-content: center !important; overflow-x: auto !important; -webkit-overflow-scrolling: touch !important; scrollbar-width: none !important; padding-bottom: 4px !important; }
   .header-nav-scroll::-webkit-scrollbar { display: none !important; }
   .lang-selector-dropdown-wrap { flex-shrink: 0 !important; }
 }

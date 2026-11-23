@@ -1815,7 +1815,7 @@
 <body>
 
   <!-- 頂部與首頁一致的 Header (中央 LOGO 點選即回首頁) -->
-  <header class="app-header">
+  <header class="app-header home-header">
     <div class="header-left">
       <!-- 左側平衡留白，保障中央品牌在視覺上精準居中 -->
     </div>
@@ -1861,47 +1861,6 @@
           <span data-i18n="nav.articles">深度文章</span>
         </a>
 
-      </div>
-
-      <!-- 🌐 前台多國語言切換器 (Language Selector) -->
-      <div class="lang-selector-dropdown-wrap" id="langSelectorWrap">
-        <button class="header-lang-btn" id="langDropdownTrigger" onclick="toggleLangDropdown(event)" title="切換語言" data-i18n-title="langLabel">
-          <span class="util-btn-icon">🌐</span>
-          <span id="currentLangLabel">Language</span>
-          <span class="lang-arrow" id="langArrow">▾</span>
-        </button>
-        <div class="lang-dropdown-menu" id="langDropdownMenu">
-          <button class="lang-menu-opt active" data-lang="zh-TW" onclick="selectLanguage('zh-TW', '繁體中文')">
-            <span class="lang-flag">🇹🇼</span>
-            <span class="lang-name">繁體中文</span>
-            <span class="lang-check">✓</span>
-          </button>
-          <button class="lang-menu-opt" data-lang="en" onclick="selectLanguage('en', 'English')">
-            <span class="lang-flag">🇺🇸</span>
-            <span class="lang-name">English</span>
-            <span class="lang-check"></span>
-          </button>
-          <button class="lang-menu-opt" data-lang="ko" onclick="selectLanguage('ko', '한국어')">
-            <span class="lang-flag">🇰🇷</span>
-            <span class="lang-name">한국어</span>
-            <span class="lang-check"></span>
-          </button>
-          <button class="lang-menu-opt" data-lang="zh-CN" onclick="selectLanguage('zh-CN', '简体中文')">
-            <span class="lang-flag">🇨🇳</span>
-            <span class="lang-name">简体中文</span>
-            <span class="lang-check"></span>
-          </button>
-          <button class="lang-menu-opt" data-lang="th" onclick="selectLanguage('th', 'ไทย')">
-            <span class="lang-flag">🇹🇭</span>
-            <span class="lang-name">ไทย</span>
-            <span class="lang-check"></span>
-          </button>
-          <button class="lang-menu-opt" data-lang="ja" onclick="selectLanguage('ja', '日本語')">
-            <span class="lang-flag">🇯🇵</span>
-            <span class="lang-name">日本語</span>
-            <span class="lang-check"></span>
-          </button>
-        </div>
       </div>
     </div>
   </header>

@@ -119,6 +119,38 @@
     syncState();
     if (changed && hasMessages) notifyListeners();
   }
+  function mountFooterLanguageSelector() {
+    if (document.getElementById('footerLangSwitch')) return;
+    var backToTop = Array.from(document.querySelectorAll('button[onclick]')).find(function (button) {
+      return /window\.scrollTo\(\{\s*top\s*:\s*0/.test(button.getAttribute('onclick') || '');
+    });
+    if (!backToTop) return;
+
+    var style = document.createElement('style');
+    style.textContent = '.tabi-footer-actions{display:inline-flex;align-items:center;gap:12px;flex-shrink:0}.tabi-footer-lang{display:inline-flex;align-items:center}.tabi-footer-lang select{appearance:auto;background:#fff;border:1px solid #CBD5E1;border-radius:999px;padding:6px 12px;color:#334155;font:700 .82rem/1.25 inherit;cursor:pointer;max-width:150px}.tabi-footer-lang select:hover,.tabi-footer-lang select:focus{border-color:#92400E;color:#92400E;outline:none}';
+    document.head.appendChild(style);
+
+    var wrapper = document.createElement('span');
+    wrapper.className = 'tabi-footer-lang';
+    wrapper.setAttribute('data-i18n-skip', '');
+    var select = document.createElement('select');
+    select.id = 'footerLangSwitch';
+    select.setAttribute('aria-label', 'Language');
+    SUPPORTED.forEach(function (language) {
+      var option = document.createElement('option');
+      option.value = language;
+      option.textContent = FLAGS[language] + ' ' + NAMES[language];
+      select.appendChild(option);
+    });
+    select.value = current;
+    select.addEventListener('change', function () { apply(select.value); });
+    wrapper.appendChild(select);
+    var actions = document.createElement('span');
+    actions.className = 'tabi-footer-actions';
+    backToTop.before(actions);
+    actions.append(wrapper, backToTop);
+    listeners.push(function (language) { select.value = language; });
+  }
   window.TabiLang = {
     SUPPORTED: SUPPORTED,
     names: NAMES,
@@ -166,6 +198,7 @@
   syncState();
   document.addEventListener('DOMContentLoaded', function () {
     domReady = true;
+    mountFooterLanguageSelector();
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       sourceMessages[el.dataset.i18n] = el.textContent.trim();
     });
