@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25 12:51:34",
+  "updated_at": "2026-11-25 18:56:26",
   "source": "Japan Meteorological Agency (JMA) 官方開放數據",
   "cities": [
     {
@@ -9,38 +9,38 @@
       "weather": "晴れ",
       "icon": "☀️",
       "pop": "0%",
-      "temp_min": "15°C",
+      "temp_min": "5°C",
       "temp_max": "15°C"
     },
     {
       "key": "osaka",
       "name": "大阪",
       "name_en": "Osaka",
-      "weather": "晴れ 時々 くもり",
+      "weather": "晴れ",
       "icon": "☀️",
       "pop": "0%",
-      "temp_min": "13°C",
-      "temp_max": "13°C"
+      "temp_min": "6°C",
+      "temp_max": "14°C"
     },
     {
       "key": "kyoto",
       "name": "京都",
       "name_en": "Kyoto",
-      "weather": "晴れ 時々 くもり",
+      "weather": "晴れ 夜のはじめ頃 くもり",
       "icon": "☀️",
-      "pop": "10%",
-      "temp_min": "12°C",
-      "temp_max": "12°C"
+      "pop": "0%",
+      "temp_min": "3°C",
+      "temp_max": "14°C"
     },
     {
       "key": "sapporo",
       "name": "札幌",
       "name_en": "Sapporo",
-      "weather": "晴れ 時々 雪 で ふぶく",
+      "weather": "くもり 夜のはじめ頃 雪",
       "icon": "❄️",
-      "pop": "30%",
-      "temp_min": "0°C",
-      "temp_max": "0°C"
+      "pop": "40%",
+      "temp_min": "-1°C",
+      "temp_max": "8°C"
     },
     {
       "key": "fukuoka",
@@ -49,18 +49,18 @@
       "weather": "くもり 夜 晴れ",
       "icon": "☀️",
       "pop": "0%",
-      "temp_min": "12°C",
-      "temp_max": "12°C"
+      "temp_min": "8°C",
+      "temp_max": "15°C"
     },
     {
       "key": "okinawa",
       "name": "沖繩",
       "name_en": "Okinawa",
-      "weather": "くもり 時々 晴れ",
+      "weather": "晴れ 夜遅く くもり",
       "icon": "☀️",
       "pop": "10%",
-      "temp_min": "22°C",
-      "temp_max": "22°C"
+      "temp_min": "18°C",
+      "temp_max": "21°C"
     }
   ]
 }
