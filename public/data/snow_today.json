@@ -1,62 +1,77 @@
 {
-  "updated_at": "2026-11-24 14:05:00",
+  "updated_at": "2026-11-25 12:51:31",
   "snow_king": {
-    "name": "富良野",
-    "stat": "24h 新雪 +1cm"
+    "name": "二世谷聯合",
+    "stat": "24h 新雪 +5cm"
   },
   "depth_king": {
     "name": "藏王溫泉",
-    "stat": "預估積雪 23cm"
+    "stat": "預估積雪 18cm"
   },
   "sunny_pick": {
-    "name": "富士天神山",
-    "stat": "晴天率 48%"
+    "name": "喜樂樂",
+    "stat": "晴天率 96%"
   },
   "resorts": {
+    "二世谷聯合": {
+      "snowfall_cm": 5,
+      "depth_cm": 7,
+      "sunny_pct": 95
+    },
+    "留壽都": {
+      "snowfall_cm": 3,
+      "depth_cm": 3,
+      "sunny_pct": 95
+    },
+    "喜樂樂": {
+      "snowfall_cm": 2,
+      "depth_cm": 15,
+      "sunny_pct": 96
+    },
     "富良野": {
-      "snowfall_cm": 1,
-      "depth_cm": 1,
-      "sunny_pct": 0
+      "snowfall_cm": 2,
+      "depth_cm": 2,
+      "sunny_pct": 92
     },
     "星野TOMAMU": {
-      "snowfall_cm": 1,
-      "depth_cm": 5,
-      "sunny_pct": 0
+      "snowfall_cm": 3,
+      "depth_cm": 6,
+      "sunny_pct": 85
     },
     "白馬八方尾根": {
-      "snowfall_cm": 0,
-      "depth_cm": 16,
-      "sunny_pct": 0
+      "snowfall_cm": 1,
+      "depth_cm": 15,
+      "sunny_pct": 78
     },
     "野澤溫泉": {
       "snowfall_cm": 0,
-      "depth_cm": 0,
-      "sunny_pct": 23
+      "depth_cm": 1,
+      "sunny_pct": 14
     },
     "志賀高原": {
-      "snowfall_cm": 0,
+      "snowfall_cm": 4,
       "depth_cm": 4,
-      "sunny_pct": 30
+      "sunny_pct": 77
     },
     "苗場滑雪場": {
-      "snowfall_cm": 0,
-      "depth_cm": 0,
-      "sunny_pct": 36
+      "snowfall_cm": 3,
+      "depth_cm": 2,
+      "sunny_pct": 7
     },
     "GALA湯澤": {
       "snowfall_cm": 0,
-      "depth_cm": 0,
-      "sunny_pct": 31
+      "depth_cm": 4,
+      "sunny_pct": 19
     },
     "藏王溫泉": {
-      "snowfall_cm": 0,
-      "depth_cm": 23,
-      "sunny_pct": 30
+      "snowfall_cm": 4,
+      "depth_cm": 18,
+      "sunny_pct": 33
     },
     "富士天神山": {
       "snowfall_cm": 0,
       "depth_cm": 0,
-      "sunny_pct": 48
+      "sunny_pct": 89
     }
   }
 }

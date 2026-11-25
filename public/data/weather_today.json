@@ -1,66 +1,66 @@
 {
-  "updated_at": "2026-11-24 14:05:03",
+  "updated_at": "2026-11-25 12:51:34",
   "source": "Japan Meteorological Agency (JMA) 官方開放數據",
   "cities": [
     {
       "key": "tokyo",
       "name": "東京",
       "name_en": "Tokyo",
-      "weather": "くもり 昼過ぎ から 夕方 雨",
-      "icon": "🌧️",
-      "pop": "70%",
-      "temp_min": "19°C",
-      "temp_max": "19°C"
+      "weather": "晴れ",
+      "icon": "☀️",
+      "pop": "0%",
+      "temp_min": "15°C",
+      "temp_max": "15°C"
     },
     {
       "key": "osaka",
       "name": "大阪",
       "name_en": "Osaka",
-      "weather": "雨 夕方 から くもり 所により 昼過ぎ まで 雷 を伴う",
-      "icon": "🌧️",
-      "pop": "80%",
-      "temp_min": "14°C",
-      "temp_max": "14°C"
+      "weather": "晴れ 時々 くもり",
+      "icon": "☀️",
+      "pop": "0%",
+      "temp_min": "13°C",
+      "temp_max": "13°C"
     },
     {
       "key": "kyoto",
       "name": "京都",
       "name_en": "Kyoto",
-      "weather": "雨 夕方 から くもり 所により 雷 を伴う",
-      "icon": "🌧️",
-      "pop": "70%",
-      "temp_min": "13°C",
-      "temp_max": "13°C"
+      "weather": "晴れ 時々 くもり",
+      "icon": "☀️",
+      "pop": "10%",
+      "temp_min": "12°C",
+      "temp_max": "12°C"
     },
     {
       "key": "sapporo",
       "name": "札幌",
       "name_en": "Sapporo",
-      "weather": "くもり 時々 雨か雪 所により 雷 を伴う",
+      "weather": "晴れ 時々 雪 で ふぶく",
       "icon": "❄️",
-      "pop": "40%",
-      "temp_min": "8°C",
-      "temp_max": "9°C"
+      "pop": "30%",
+      "temp_min": "0°C",
+      "temp_max": "0°C"
     },
     {
       "key": "fukuoka",
       "name": "福岡",
       "name_en": "Fukuoka",
-      "weather": "くもり 所により 雨",
-      "icon": "🌧️",
-      "pop": "10%",
-      "temp_min": "15°C",
-      "temp_max": "15°C"
+      "weather": "くもり 夜 晴れ",
+      "icon": "☀️",
+      "pop": "0%",
+      "temp_min": "12°C",
+      "temp_max": "12°C"
     },
     {
       "key": "okinawa",
       "name": "沖繩",
       "name_en": "Okinawa",
-      "weather": "くもり 夜のはじめ頃 一時 雨",
-      "icon": "🌧️",
-      "pop": "40%",
-      "temp_min": "26°C",
-      "temp_max": "26°C"
+      "weather": "くもり 時々 晴れ",
+      "icon": "☀️",
+      "pop": "10%",
+      "temp_min": "22°C",
+      "temp_max": "22°C"
     }
   ]
 }
